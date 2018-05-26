@@ -224,10 +224,10 @@ with `-txconfirmtarget=<m>` (default: `2`).
 
 Sometimes, it is not possible to give good estimates, or an estimate
 at all. Therefore, a fallback value can be set with `-fallbackfee=<f>`
-(default: `0.0002` SHT/kB).
+(default: `0.0002` ACM/kB).
 
 At all times, Actinium Core will cap fees at `-maxtxfee=<x>` (default:
-0.10) SHT.
+0.10) ACM.
 Furthermore, Actinium Core will never create transactions paying less than
 the current minimum relay fee.
 Finally, a user can set the minimum fee rate for all transactions with
