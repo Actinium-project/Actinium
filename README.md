@@ -1,0 +1,2 @@
+# Actinium
+Cryptocurrency (PoW, Scrypt)
