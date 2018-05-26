@@ -100,8 +100,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1485561600; // January 28, 2017
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
-        // The best chain should have at least this much work. But we are a shitcoin!
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000023ddc06b357860");
+        // The best chain should have at least this much work.
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000002f625cb035f9bc");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x3f6243a04732bd9bc8b2a5af87dfe528d3fcfa457d1078bb44a4b9320f98b363"); //1300
@@ -125,7 +125,7 @@ public:
 
         // Note that of those with the service bits flag, most only support a subset of possible options
 
-        //vSeeds.emplace_back("seed.shit.supply", true);
+        //vSeeds.emplace_back("seed.actinium.org", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,53);  //N
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,8);   //4
@@ -155,7 +155,8 @@ public:
                 {15313, uint256S("0x944690e2499d10b2fad85abe40bd8d96a8e39e4cfc0cf9dd767e4745502d53e8")},
                 {20554, uint256S("0x2302ebfe233144e3c2453e5b7dbfe1d82ddfed7765e15e29c31585f76fb679a5")},
                 {25000, uint256S("0x910672dd97f309b2b9e31cc1d90c76f0ac3471d28d984c6de2248e90a47e98a4")},
-                {30000, uint256S("0xcc690003d9b0106669639e0599e2f36afd196081f341d5c9182f6d89ab6d33c8")}
+                {30000, uint256S("0xcc690003d9b0106669639e0599e2f36afd196081f341d5c9182f6d89ab6d33c8")},
+                {35060, uint256S("0xfaa21ea9167dd878dd3789a68455ef035877edcdb96ea15133693ef75de6f4a6")}
             }};
 
         // Data as of block 3f6243a04732bd9bc8b2a5af87dfe528d3fcfa457d1078bb44a4b9320f98b363 (height 1300).
