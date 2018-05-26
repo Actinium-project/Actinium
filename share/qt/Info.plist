@@ -17,13 +17,13 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>0.15.1, Copyright © 2009-2018 The Actinium Core developers</string>
+  <string>0.15.2, Copyright © 2009-2018 The Actinium Core developers</string>
 
   <key>CFBundleShortVersionString</key>
-  <string>0.15.1</string>
+  <string>0.15.2</string>
 
   <key>CFBundleVersion</key>
-  <string>0.15.1</string>
+  <string>0.15.2</string>
 
   <key>CFBundleSignature</key>
   <string>????</string>

@@ -370,16 +370,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-actiniumd_SOURCES = bitcoind.cpp
-actiniumd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-actiniumd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-actiniumd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+Actiniumd_SOURCES = bitcoind.cpp
+Actiniumd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+Actiniumd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+Actiniumd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-actiniumd_SOURCES += bitcoind-res.rc
+Actiniumd_SOURCES += bitcoind-res.rc
 endif
 
-actiniumd_LDADD = \
+Actiniumd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -393,38 +393,38 @@ actiniumd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-actiniumd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+Actiniumd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-actinium_cli_SOURCES = bitcoin-cli.cpp
-actinium_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-actinium_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-actinium_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+Actinium_cli_SOURCES = bitcoin-cli.cpp
+Actinium_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+Actinium_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+Actinium_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-actinium_cli_SOURCES += bitcoin-cli-res.rc
+Actinium_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-actinium_cli_LDADD = \
+Actinium_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-actinium_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+Actinium_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-actinium_tx_SOURCES = bitcoin-tx.cpp
-actinium_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-actinium_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-actinium_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+Actinium_tx_SOURCES = bitcoin-tx.cpp
+Actinium_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+Actinium_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+Actinium_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-actinium_tx_SOURCES += bitcoin-tx-res.rc
+Actinium_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-actinium_tx_LDADD = \
+Actinium_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -432,7 +432,7 @@ actinium_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-actinium_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+Actinium_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

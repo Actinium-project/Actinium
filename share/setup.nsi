@@ -5,16 +5,16 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.15.1
+!define VERSION 0.15.2
 !define COMPANY "Actinium Core project"
 !define URL https://Actinium.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/usr/src/projects/FlexCoin/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/usr/src/projects/FlexCoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/brakmic/projects/Actinium/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/brakmic/projects/Actinium/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/usr/src/projects/FlexCoin/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/brakmic/projects/Actinium/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Actinium Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\Actinium-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/usr/src/projects/FlexCoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/brakmic/projects/Actinium/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /usr/src/projects/FlexCoin/Actinium-${VERSION}-win64-setup.exe
+OutFile /home/brakmic/projects/Actinium/Actinium-${VERSION}-win64-setup.exe
 !if "64" == "64"
 InstallDir $PROGRAMFILES64\Actinium
 !else
@@ -58,7 +58,7 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion ${VERSION}.0
+VIProductVersion ${VERSION}.2
 VIAddVersionKey ProductName "Actinium Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /usr/src/projects/FlexCoin/release/Actinium-qt.exe
-    File /oname=COPYING.txt /usr/src/projects/FlexCoin/COPYING
-    File /oname=readme.txt /usr/src/projects/FlexCoin/doc/README_windows.txt
+    File /home/brakmic/projects/Actinium/release/Actinium-qt.exe
+    File /oname=COPYING.txt /home/brakmic/projects/Actinium/COPYING
+    File /oname=readme.txt /home/brakmic/projects/Actinium/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /usr/src/projects/FlexCoin/release/Actiniumd.exe
-    File /usr/src/projects/FlexCoin/release/Actinium-cli.exe
+    File /home/brakmic/projects/Actinium/release/Actiniumd.exe
+    File /home/brakmic/projects/Actinium/release/Actinium-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /usr/src/projects/FlexCoin/doc\*.*
+    File /r /home/brakmic/projects/Actinium/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
