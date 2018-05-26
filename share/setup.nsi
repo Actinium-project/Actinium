@@ -7,7 +7,7 @@ SetCompressor /SOLID lzma
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 0.15.2
 !define COMPANY "Actinium Core project"
-!define URL https://Actinium.org/
+!define URL http://Actinium.org/
 
 # MUI Symbol Definitions
 !define MUI_ICON "/home/brakmic/projects/Actinium/share/pixmaps/bitcoin.ico"
