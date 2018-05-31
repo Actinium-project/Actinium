@@ -128,9 +128,9 @@ public:
         //vSeeds.emplace_back("seed.actinium.org", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,53);  //N
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,8);   //4
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,80); //Z
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,73);  //W
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5); 
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,55); 
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,181);  // 7 (uncompressed) or T (compressed)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
@@ -156,7 +156,8 @@ public:
                 {20554, uint256S("0x2302ebfe233144e3c2453e5b7dbfe1d82ddfed7765e15e29c31585f76fb679a5")},
                 {25000, uint256S("0x910672dd97f309b2b9e31cc1d90c76f0ac3471d28d984c6de2248e90a47e98a4")},
                 {30000, uint256S("0xcc690003d9b0106669639e0599e2f36afd196081f341d5c9182f6d89ab6d33c8")},
-                {35060, uint256S("0xfaa21ea9167dd878dd3789a68455ef035877edcdb96ea15133693ef75de6f4a6")}
+                {35060, uint256S("0xfaa21ea9167dd878dd3789a68455ef035877edcdb96ea15133693ef75de6f4a6")},
+                {42384, uint256S("0x26f08f68ff269ae5f98fdb5e484bd9cefabdfd8f01291858909c0f57b1b2ec27")}
             }};
 
         // Data as of block 3f6243a04732bd9bc8b2a5af87dfe528d3fcfa457d1078bb44a4b9320f98b363 (height 1300).
