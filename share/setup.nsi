@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.15.2
+!define VERSION 0.16.0
 !define COMPANY "Actinium Core project"
 !define URL http://Actinium.org/
 
@@ -58,7 +58,7 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion ${VERSION}.2
+VIProductVersion ${VERSION}.0
 VIAddVersionKey ProductName "Actinium Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"

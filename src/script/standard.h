@@ -53,7 +53,8 @@ extern unsigned nMaxDatacarrierBytes;
  */
 static const unsigned int MANDATORY_SCRIPT_VERIFY_FLAGS = SCRIPT_VERIFY_P2SH;
 
-enum txnouttype {
+enum txnouttype
+{
     TX_NONSTANDARD,
     // 'standard' transaction types:
     TX_PUBKEY,
@@ -66,40 +67,40 @@ enum txnouttype {
     TX_WITNESS_UNKNOWN, //!< Only for Witness versions not already defined above
 };
 
-class CNoDestination
-{
+class CNoDestination {
 public:
-    friend bool operator==(const CNoDestination& a, const CNoDestination& b) { return true; }
-    friend bool operator<(const CNoDestination& a, const CNoDestination& b) { return true; }
+    friend bool operator==(const CNoDestination &a, const CNoDestination &b) { return true; }
+    friend bool operator<(const CNoDestination &a, const CNoDestination &b) { return true; }
 };
 
-struct WitnessV0ScriptHash : public uint256 {
+struct WitnessV0ScriptHash : public uint256
+{
     WitnessV0ScriptHash() : uint256() {}
     explicit WitnessV0ScriptHash(const uint256& hash) : uint256(hash) {}
     using uint256::uint256;
 };
 
-struct WitnessV0KeyHash : public uint160 {
+struct WitnessV0KeyHash : public uint160
+{
     WitnessV0KeyHash() : uint160() {}
     explicit WitnessV0KeyHash(const uint160& hash) : uint160(hash) {}
     using uint160::uint160;
 };
 
 //! CTxDestination subtype to encode any future Witness version
-struct WitnessUnknown {
+struct WitnessUnknown
+{
     unsigned int version;
     unsigned int length;
     unsigned char program[40];
 
-    friend bool operator==(const WitnessUnknown& w1, const WitnessUnknown& w2)
-    {
+    friend bool operator==(const WitnessUnknown& w1, const WitnessUnknown& w2) {
         if (w1.version != w2.version) return false;
         if (w1.length != w2.length) return false;
         return std::equal(w1.program, w1.program + w1.length, w2.program);
     }
 
-    friend bool operator<(const WitnessUnknown& w1, const WitnessUnknown& w2)
-    {
+    friend bool operator<(const WitnessUnknown& w1, const WitnessUnknown& w2) {
         if (w1.version < w2.version) return true;
         if (w1.version > w2.version) return false;
         if (w1.length < w2.length) return true;
@@ -137,7 +138,7 @@ const char* GetTxnOutputType(txnouttype t);
  * @param[out]  vSolutionsRet  Vector of parsed pubkeys and hashes
  * @return                     True if script matches standard template
  */
-bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, std::vector<std::vector<unsigned char>>& vSolutionsRet);
+bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, std::vector<std::vector<unsigned char> >& vSolutionsRet);
 
 /**
  * Parse a standard scriptPubKey for the destination address. Assigns result to
