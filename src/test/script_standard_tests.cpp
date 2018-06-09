@@ -2,13 +2,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "key.h"
-#include "keystore.h"
-#include "script/ismine.h"
-#include "script/script.h"
-#include "script/script_error.h"
-#include "script/standard.h"
-#include "test/test_bitcoin.h"
+#include <key.h>
+#include <keystore.h>
+#include <script/ismine.h>
+#include <script/script.h>
+#include <script/script_error.h>
+#include <script/standard.h>
+#include <test/test_bitcoin.h>
 
 #include <boost/test/unit_test.hpp>
 
@@ -26,7 +26,7 @@ BOOST_AUTO_TEST_CASE(script_standard_Solver_success)
 
     CScript s;
     txnouttype whichType;
-    std::vector<std::vector<unsigned char> > solutions;
+    std::vector<std::vector<unsigned char>> solutions;
 
     // TX_PUBKEY
     s.clear();
@@ -55,10 +55,7 @@ BOOST_AUTO_TEST_CASE(script_standard_Solver_success)
 
     // TX_MULTISIG
     s.clear();
-    s << OP_1 <<
-        ToByteVector(pubkeys[0]) <<
-        ToByteVector(pubkeys[1]) <<
-        OP_2 << OP_CHECKMULTISIG;
+    s << OP_1 << ToByteVector(pubkeys[0]) << ToByteVector(pubkeys[1]) << OP_2 << OP_CHECKMULTISIG;
     BOOST_CHECK(Solver(s, whichType, solutions));
     BOOST_CHECK_EQUAL(whichType, TX_MULTISIG);
     BOOST_CHECK_EQUAL(solutions.size(), 4);
@@ -68,11 +65,7 @@ BOOST_AUTO_TEST_CASE(script_standard_Solver_success)
     BOOST_CHECK(solutions[3] == std::vector<unsigned char>({2}));
 
     s.clear();
-    s << OP_2 <<
-        ToByteVector(pubkeys[0]) <<
-        ToByteVector(pubkeys[1]) <<
-        ToByteVector(pubkeys[2]) <<
-        OP_3 << OP_CHECKMULTISIG;
+    s << OP_2 << ToByteVector(pubkeys[0]) << ToByteVector(pubkeys[1]) << ToByteVector(pubkeys[2]) << OP_3 << OP_CHECKMULTISIG;
     BOOST_CHECK(Solver(s, whichType, solutions));
     BOOST_CHECK_EQUAL(whichType, TX_MULTISIG);
     BOOST_CHECK_EQUAL(solutions.size(), 5);
@@ -84,10 +77,7 @@ BOOST_AUTO_TEST_CASE(script_standard_Solver_success)
 
     // TX_NULL_DATA
     s.clear();
-    s << OP_RETURN <<
-        std::vector<unsigned char>({0}) <<
-        std::vector<unsigned char>({75}) <<
-        std::vector<unsigned char>({255});
+    s << OP_RETURN << std::vector<unsigned char>({0}) << std::vector<unsigned char>({75}) << std::vector<unsigned char>({255});
     BOOST_CHECK(Solver(s, whichType, solutions));
     BOOST_CHECK_EQUAL(whichType, TX_NULL_DATA);
     BOOST_CHECK_EQUAL(solutions.size(), 0);
@@ -102,8 +92,7 @@ BOOST_AUTO_TEST_CASE(script_standard_Solver_success)
 
     // TX_WITNESS_V0_SCRIPTHASH
     uint256 scriptHash;
-    CSHA256().Write(&redeemScript[0], redeemScript.size())
-        .Finalize(scriptHash.begin());
+    CSHA256().Write(&redeemScript[0], redeemScript.size()).Finalize(scriptHash.begin());
 
     s.clear();
     s << OP_0 << ToByteVector(scriptHash);
@@ -128,7 +117,7 @@ BOOST_AUTO_TEST_CASE(script_standard_Solver_failure)
 
     CScript s;
     txnouttype whichType;
-    std::vector<std::vector<unsigned char> > solutions;
+    std::vector<std::vector<unsigned char>> solutions;
 
     // TX_PUBKEY with incorrectly sized pubkey
     s.clear();
@@ -168,11 +157,6 @@ BOOST_AUTO_TEST_CASE(script_standard_Solver_failure)
     // TX_NULL_DATA with other opcodes
     s.clear();
     s << OP_RETURN << std::vector<unsigned char>({75}) << OP_ADD;
-    BOOST_CHECK(!Solver(s, whichType, solutions));
-
-    // TX_WITNESS with unknown version
-    s.clear();
-    s << OP_1 << ToByteVector(pubkey);
     BOOST_CHECK(!Solver(s, whichType, solutions));
 
     // TX_WITNESS with incorrect program size
@@ -225,13 +209,29 @@ BOOST_AUTO_TEST_CASE(script_standard_ExtractDestination)
 
     // TX_WITNESS_V0_KEYHASH
     s.clear();
-    s << OP_0 << ToByteVector(pubkey);
-    BOOST_CHECK(!ExtractDestination(s, address));
+    s << OP_0 << ToByteVector(pubkey.GetID());
+    BOOST_CHECK(ExtractDestination(s, address));
+    WitnessV0KeyHash keyhash;
+    CHash160().Write(pubkey.begin(), pubkey.size()).Finalize(keyhash.begin());
+    BOOST_CHECK(boost::get<WitnessV0KeyHash>(&address) && *boost::get<WitnessV0KeyHash>(&address) == keyhash);
 
     // TX_WITNESS_V0_SCRIPTHASH
     s.clear();
-    s << OP_0 << ToByteVector(CScriptID(redeemScript));
-    BOOST_CHECK(!ExtractDestination(s, address));
+    WitnessV0ScriptHash scripthash;
+    CSHA256().Write(redeemScript.data(), redeemScript.size()).Finalize(scripthash.begin());
+    s << OP_0 << ToByteVector(scripthash);
+    BOOST_CHECK(ExtractDestination(s, address));
+    BOOST_CHECK(boost::get<WitnessV0ScriptHash>(&address) && *boost::get<WitnessV0ScriptHash>(&address) == scripthash);
+
+    // TX_WITNESS with unknown version
+    s.clear();
+    s << OP_1 << ToByteVector(pubkey);
+    BOOST_CHECK(ExtractDestination(s, address));
+    WitnessUnknown unk;
+    unk.length = 33;
+    unk.version = 1;
+    std::copy(pubkey.begin(), pubkey.end(), unk.program);
+    BOOST_CHECK(boost::get<WitnessUnknown>(&address) && *boost::get<WitnessUnknown>(&address) == unk);
 }
 
 BOOST_AUTO_TEST_CASE(script_standard_ExtractDestinations)
@@ -281,10 +281,7 @@ BOOST_AUTO_TEST_CASE(script_standard_ExtractDestinations)
 
     // TX_MULTISIG
     s.clear();
-    s << OP_2 <<
-        ToByteVector(pubkeys[0]) <<
-        ToByteVector(pubkeys[1]) <<
-        OP_2 << OP_CHECKMULTISIG;
+    s << OP_2 << ToByteVector(pubkeys[0]) << ToByteVector(pubkeys[1]) << OP_2 << OP_CHECKMULTISIG;
     BOOST_CHECK(ExtractDestinations(s, whichType, addresses, nRequired));
     BOOST_CHECK_EQUAL(whichType, TX_MULTISIG);
     BOOST_CHECK_EQUAL(addresses.size(), 2);
@@ -297,16 +294,6 @@ BOOST_AUTO_TEST_CASE(script_standard_ExtractDestinations)
     // TX_NULL_DATA
     s.clear();
     s << OP_RETURN << std::vector<unsigned char>({75});
-    BOOST_CHECK(!ExtractDestinations(s, whichType, addresses, nRequired));
-
-    // TX_WITNESS_V0_KEYHASH
-    s.clear();
-    s << OP_0 << ToByteVector(pubkeys[0].GetID());
-    BOOST_CHECK(!ExtractDestinations(s, whichType, addresses, nRequired));
-
-    // TX_WITNESS_V0_SCRIPTHASH
-    s.clear();
-    s << OP_0 << ToByteVector(CScriptID(redeemScript));
     BOOST_CHECK(!ExtractDestinations(s, whichType, addresses, nRequired));
 }
 
@@ -347,11 +334,7 @@ BOOST_AUTO_TEST_CASE(script_standard_GetScriptFor_)
 
     // GetScriptForMultisig
     expected.clear();
-    expected << OP_2 <<
-        ToByteVector(pubkeys[0]) <<
-        ToByteVector(pubkeys[1]) <<
-        ToByteVector(pubkeys[2]) <<
-        OP_3 << OP_CHECKMULTISIG;
+    expected << OP_2 << ToByteVector(pubkeys[0]) << ToByteVector(pubkeys[1]) << ToByteVector(pubkeys[2]) << OP_3 << OP_CHECKMULTISIG;
     result = GetScriptForMultisig(2, std::vector<CPubKey>(pubkeys, pubkeys + 3));
     BOOST_CHECK(result == expected);
 
@@ -373,8 +356,7 @@ BOOST_AUTO_TEST_CASE(script_standard_GetScriptFor_)
     witnessScript << OP_1 << ToByteVector(pubkeys[0]) << OP_1 << OP_CHECKMULTISIG;
 
     uint256 scriptHash;
-    CSHA256().Write(&witnessScript[0], witnessScript.size())
-        .Finalize(scriptHash.begin());
+    CSHA256().Write(&witnessScript[0], witnessScript.size()).Finalize(scriptHash.begin());
 
     expected.clear();
     expected << OP_0 << ToByteVector(scriptHash);
@@ -507,12 +489,7 @@ BOOST_AUTO_TEST_CASE(script_standard_IsMine)
         scriptPubKey.clear();
         scriptPubKey << OP_0 << ToByteVector(pubkeys[0].GetID());
 
-        // Keystore has key, but no P2SH redeemScript
-        result = IsMine(keystore, scriptPubKey, isInvalid);
-        BOOST_CHECK_EQUAL(result, ISMINE_NO);
-        BOOST_CHECK(!isInvalid);
-
-        // Keystore has key and P2SH redeemScript
+        // Keystore implicitly has key and P2SH redeemScript
         keystore.AddCScript(scriptPubKey);
         result = IsMine(keystore, scriptPubKey, isInvalid);
         BOOST_CHECK_EQUAL(result, ISMINE_SPENDABLE);
@@ -544,10 +521,7 @@ BOOST_AUTO_TEST_CASE(script_standard_IsMine)
         CBasicKeyStore keystore;
 
         scriptPubKey.clear();
-        scriptPubKey << OP_2 <<
-            ToByteVector(uncompressedPubkey) <<
-            ToByteVector(pubkeys[1]) <<
-            OP_2 << OP_CHECKMULTISIG;
+        scriptPubKey << OP_2 << ToByteVector(uncompressedPubkey) << ToByteVector(pubkeys[1]) << OP_2 << OP_CHECKMULTISIG;
 
         // Keystore does not have any keys
         result = IsMine(keystore, scriptPubKey, isInvalid);
@@ -576,10 +550,7 @@ BOOST_AUTO_TEST_CASE(script_standard_IsMine)
         keystore.AddKey(keys[1]);
 
         CScript redeemScript;
-        redeemScript << OP_2 <<
-            ToByteVector(uncompressedPubkey) <<
-            ToByteVector(pubkeys[1]) <<
-            OP_2 << OP_CHECKMULTISIG;
+        redeemScript << OP_2 << ToByteVector(uncompressedPubkey) << ToByteVector(pubkeys[1]) << OP_2 << OP_CHECKMULTISIG;
 
         scriptPubKey.clear();
         scriptPubKey << OP_HASH160 << ToByteVector(CScriptID(redeemScript)) << OP_EQUAL;
@@ -603,14 +574,10 @@ BOOST_AUTO_TEST_CASE(script_standard_IsMine)
         keystore.AddKey(keys[1]);
 
         CScript witnessScript;
-        witnessScript << OP_2 <<
-            ToByteVector(pubkeys[0]) <<
-            ToByteVector(pubkeys[1]) <<
-            OP_2 << OP_CHECKMULTISIG;
+        witnessScript << OP_2 << ToByteVector(pubkeys[0]) << ToByteVector(pubkeys[1]) << OP_2 << OP_CHECKMULTISIG;
 
         uint256 scriptHash;
-        CSHA256().Write(&witnessScript[0], witnessScript.size())
-            .Finalize(scriptHash.begin());
+        CSHA256().Write(&witnessScript[0], witnessScript.size()).Finalize(scriptHash.begin());
 
         scriptPubKey.clear();
         scriptPubKey << OP_0 << ToByteVector(scriptHash);
@@ -640,14 +607,10 @@ BOOST_AUTO_TEST_CASE(script_standard_IsMine)
         keystore.AddKey(keys[1]);
 
         CScript witnessScript;
-        witnessScript << OP_2 <<
-            ToByteVector(uncompressedPubkey) <<
-            ToByteVector(pubkeys[1]) <<
-            OP_2 << OP_CHECKMULTISIG;
+        witnessScript << OP_2 << ToByteVector(uncompressedPubkey) << ToByteVector(pubkeys[1]) << OP_2 << OP_CHECKMULTISIG;
 
         uint256 scriptHash;
-        CSHA256().Write(&witnessScript[0], witnessScript.size())
-            .Finalize(scriptHash.begin());
+        CSHA256().Write(&witnessScript[0], witnessScript.size()).Finalize(scriptHash.begin());
 
         scriptPubKey.clear();
         scriptPubKey << OP_0 << ToByteVector(scriptHash);
@@ -675,14 +638,10 @@ BOOST_AUTO_TEST_CASE(script_standard_IsMine)
         CBasicKeyStore keystore;
 
         CScript witnessScript;
-        witnessScript << OP_2 <<
-            ToByteVector(pubkeys[0]) <<
-            ToByteVector(pubkeys[1]) <<
-            OP_2 << OP_CHECKMULTISIG;
+        witnessScript << OP_2 << ToByteVector(pubkeys[0]) << ToByteVector(pubkeys[1]) << OP_2 << OP_CHECKMULTISIG;
 
         uint256 scriptHash;
-        CSHA256().Write(&witnessScript[0], witnessScript.size())
-            .Finalize(scriptHash.begin());
+        CSHA256().Write(&witnessScript[0], witnessScript.size()).Finalize(scriptHash.begin());
 
         CScript redeemScript;
         redeemScript << OP_0 << ToByteVector(scriptHash);

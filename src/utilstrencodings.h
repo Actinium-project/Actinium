@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2009-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,18 +13,17 @@
 #include <string>
 #include <vector>
 
-#define BEGIN(a)            ((char*)&(a))
-#define END(a)              ((char*)&((&(a))[1]))
-#define UBEGIN(a)           ((unsigned char*)&(a))
-#define UEND(a)             ((unsigned char*)&((&(a))[1]))
-#define ARRAYLEN(array)     (sizeof(array)/sizeof((array)[0]))
+#define BEGIN(a) ((char*)&(a))
+#define END(a) ((char*)&((&(a))[1]))
+#define UBEGIN(a) ((unsigned char*)&(a))
+#define UEND(a) ((unsigned char*)&((&(a))[1]))
+#define ARRAYLEN(array) (sizeof(array) / sizeof((array)[0]))
 
 /** Used by SanitizeString() */
-enum SafeChars
-{
-    SAFE_CHARS_DEFAULT, //!< The full set of allowed chars
+enum SafeChars {
+    SAFE_CHARS_DEFAULT,    //!< The full set of allowed chars
     SAFE_CHARS_UA_COMMENT, //!< BIP-0014 subset
-    SAFE_CHARS_FILENAME, //!< Chars allowed in filenames
+    SAFE_CHARS_FILENAME,   //!< Chars allowed in filenames
 };
 
 /**
@@ -54,7 +53,7 @@ std::string DecodeBase32(const std::string& str);
 std::string EncodeBase32(const unsigned char* pch, size_t len);
 std::string EncodeBase32(const std::string& str);
 
-void SplitHostPort(std::string in, int &portOut, std::string &hostOut);
+void SplitHostPort(std::string in, int& portOut, std::string& hostOut);
 std::string i64tostr(int64_t n);
 std::string itostr(int n);
 int64_t atoi64(const char* psz);
@@ -66,57 +65,56 @@ int atoi(const std::string& str);
  * @returns true if the entire string could be parsed as valid integer,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
-bool ParseInt32(const std::string& str, int32_t *out);
+bool ParseInt32(const std::string& str, int32_t* out);
 
 /**
  * Convert string to signed 64-bit integer with strict parse error feedback.
  * @returns true if the entire string could be parsed as valid integer,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
-bool ParseInt64(const std::string& str, int64_t *out);
+bool ParseInt64(const std::string& str, int64_t* out);
 
 /**
  * Convert decimal string to unsigned 32-bit integer with strict parse error feedback.
  * @returns true if the entire string could be parsed as valid integer,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
-bool ParseUInt32(const std::string& str, uint32_t *out);
+bool ParseUInt32(const std::string& str, uint32_t* out);
 
 /**
  * Convert decimal string to unsigned 64-bit integer with strict parse error feedback.
  * @returns true if the entire string could be parsed as valid integer,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
-bool ParseUInt64(const std::string& str, uint64_t *out);
+bool ParseUInt64(const std::string& str, uint64_t* out);
 
 /**
  * Convert string to double with strict parse error feedback.
  * @returns true if the entire string could be parsed as valid double,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
-bool ParseDouble(const std::string& str, double *out);
+bool ParseDouble(const std::string& str, double* out);
 
-template<typename T>
-std::string HexStr(const T itbegin, const T itend, bool fSpaces=false)
+template <typename T>
+std::string HexStr(const T itbegin, const T itend, bool fSpaces = false)
 {
     std::string rv;
-    static const char hexmap[16] = { '0', '1', '2', '3', '4', '5', '6', '7',
-                                     '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
-    rv.reserve((itend-itbegin)*3);
-    for(T it = itbegin; it < itend; ++it)
-    {
+    static const char hexmap[16] = {'0', '1', '2', '3', '4', '5', '6', '7',
+        '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+    rv.reserve((itend - itbegin) * 3);
+    for (T it = itbegin; it < itend; ++it) {
         unsigned char val = (unsigned char)(*it);
-        if(fSpaces && it != itbegin)
+        if (fSpaces && it != itbegin)
             rv.push_back(' ');
-        rv.push_back(hexmap[val>>4]);
-        rv.push_back(hexmap[val&15]);
+        rv.push_back(hexmap[val >> 4]);
+        rv.push_back(hexmap[val & 15]);
     }
 
     return rv;
 }
 
-template<typename T>
-inline std::string HexStr(const T& vch, bool fSpaces=false)
+template <typename T>
+inline std::string HexStr(const T& vch, bool fSpaces = false)
 {
     return HexStr(vch.begin(), vch.end(), fSpaces);
 }
@@ -138,7 +136,7 @@ bool TimingResistantEqual(const T& a, const T& b)
     if (b.size() == 0) return a.size() == 0;
     size_t accumulator = a.size() ^ b.size();
     for (size_t i = 0; i < a.size(); i++)
-        accumulator |= a[i] ^ b[i%b.size()];
+        accumulator |= a[i] ^ b[i % b.size()];
     return accumulator == 0;
 }
 
@@ -147,6 +145,31 @@ bool TimingResistantEqual(const T& a, const T& b)
  * @returns true on success, false on error.
  * @note The result must be in the range (-10^18,10^18), otherwise an overflow error will trigger.
  */
-bool ParseFixedPoint(const std::string &val, int decimals, int64_t *amount_out);
+bool ParseFixedPoint(const std::string& val, int decimals, int64_t* amount_out);
+
+/** Convert from one power-of-2 number base to another. */
+template <int frombits, int tobits, bool pad, typename O, typename I>
+bool ConvertBits(O& out, I it, I end)
+{
+    size_t acc = 0;
+    size_t bits = 0;
+    constexpr size_t maxv = (1 << tobits) - 1;
+    constexpr size_t max_acc = (1 << (frombits + tobits - 1)) - 1;
+    while (it != end) {
+        acc = ((acc << frombits) | *it) & max_acc;
+        bits += frombits;
+        while (bits >= tobits) {
+            bits -= tobits;
+            out.push_back((acc >> bits) & maxv);
+        }
+        ++it;
+    }
+    if (pad) {
+        if (bits) out.push_back((acc << (tobits - bits)) & maxv);
+    } else if (bits >= frombits || ((acc << (tobits - bits)) & maxv)) {
+        return false;
+    }
+    return true;
+}
 
 #endif // BITCOIN_UTILSTRENCODINGS_H
