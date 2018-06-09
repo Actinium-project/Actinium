@@ -1947,7 +1947,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Litecoins</translation>
+        <translation>Poslať Actiniums</translation>
     </message>
     <message>
         <source>Coin Control Features</source>

@@ -1674,7 +1674,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Litecoins</translation>
+        <translation>Send Actiniums</translation>
     </message>
     <message>
         <source>Coin Control Features</source>

@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina Actinium adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Litecoins.</translation>
+        <translation>Detta är dina Actinium adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Actiniums.</translation>
     </message>
     <message>
         <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -2898,7 +2898,7 @@ Var vänlig och försök igen.</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Skicka Litecoins</translation>
+        <translation>Skicka Actiniums</translation>
     </message>
 </context>
 <context>
