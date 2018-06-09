@@ -42,11 +42,11 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
 	HiddenServiceDir /var/lib/tor/Actinium-service/
-	HiddenServicePort 9333 127.0.0.1:9333
+	HiddenServicePort 4334 127.0.0.1:4334
 	HiddenServicePort 19335 127.0.0.1:19335
 
 The directory can be different of course, but (both) port numbers should be equal to
-your Actiniumd's P2P listen port (9333 by default).
+your Actiniumd's P2P listen port (4334 by default).
 
 	-externalip=X   You can tell Actinium about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
