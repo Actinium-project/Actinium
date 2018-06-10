@@ -56,8 +56,8 @@ static int AppInitRawTx(int argc, char* argv[])
         // First part of help message is specific to this utility
         std::string strUsage = strprintf(_("%s Actinium-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  Actinium-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded litecoin transaction") + "\n" +
-              "  Actinium-tx [options] -create [commands]   " + _("Create hex-encoded litecoin transaction") + "\n" +
+              "  Actinium-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded Actinium transaction") + "\n" +
+              "  Actinium-tx [options] -create [commands]   " + _("Create hex-encoded Actinium transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

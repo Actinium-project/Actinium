@@ -415,7 +415,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Anmod om betalinger (genererer QR-koder og “litecoin:”-URI'er)</translation>
+        <translation>Anmod om betalinger (genererer QR-koder og “actinium:”-URI'er)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
