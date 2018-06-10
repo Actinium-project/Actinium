@@ -128,9 +128,9 @@ public:
         //vSeeds.emplace_back("seed.actinium.org", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,53);  //N
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5); 
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,55); 
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,181);  // 7 (uncompressed) or T (compressed)
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);   //3
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,55); //P
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,181); // 7 (uncompressed) or T (compressed)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 

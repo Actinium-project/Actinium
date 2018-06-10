@@ -63,3 +63,4 @@ Makefile.in
 
 # local files
 copybins.sh
+autom4te.cache/
