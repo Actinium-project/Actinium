@@ -616,7 +616,7 @@ fs::path static StartupShortcutPath()
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
         return GetSpecialFolderPath(CSIDL_STARTUP) / "Actinium.lnk";
-    if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet4"
+    if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet"
         return GetSpecialFolderPath(CSIDL_STARTUP) / "Actinium (testnet).lnk";
     return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Actinium (%s).lnk", chain);
 }
