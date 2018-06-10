@@ -216,7 +216,7 @@ public:
         pchMessageStart[1] = 0xd2;
         pchMessageStart[2] = 0xc7;
         pchMessageStart[3] = 0xf7;
-        nDefaultPort = 19335;
+        nDefaultPort = 4335;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1524650001, 19905, 0x1e0ffff0, 1, 50 * COIN);
@@ -229,10 +229,10 @@ public:
         // nodes with support for servicebits filtering should be at the top
         //vSeeds.emplace_back("testnet-seed.actinium.org", true);
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,107);  //k
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);  //2
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,63);  //S
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);  //c
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 43);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 196);
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1, 45);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 171);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
@@ -323,10 +323,10 @@ public:
             0
         };
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,107);  //k
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);  //2
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,63);  //S
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);  //c
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 40);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 193);
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1, 42);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 168);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
