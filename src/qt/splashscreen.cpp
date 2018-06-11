@@ -30,12 +30,12 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     QWidget(0, f), curAlignment(0)
 {
     // set reference point, paddings
-    int paddingRight            = 50;
-    int paddingTop              = 50;
-    int titleVersionVSpace      = 17;
-    int titleCopyrightVSpace    = 40;
+    // int paddingRight            = 50;
+    // int paddingTop              = 50;
+    // int titleVersionVSpace      = 17;
+    // int titleCopyrightVSpace    = 40;
 
-    float fontFactor            = 1.0;
+    // float fontFactor            = 1.0;
     float devicePixelRatio      = 1.0;
 #if QT_VERSION > 0x050100
     devicePixelRatio = ((QGuiApplication*)QCoreApplication::instance())->devicePixelRatio();
@@ -71,7 +71,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     // draw the bitcoin icon, expected size of PNG: 1024x1024
     QRect rectIcon(QPoint(0,0), QSize(512,512));
 
-    const QSize requiredSize(1024,1024);
+    // const QSize requiredSize(1024,1024);
     // QPixmap icon(networkStyle->getAppIcon().pixmap(requiredSize));
     QPixmap splashImg(":/icons/splashscreen");
 

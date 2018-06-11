@@ -531,14 +531,16 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/Actinium-project/Actinium>";
-    const std::string URL_WEBSITE = "<http://Actinium.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/actinium-project/actinium>";
+    const std::string URL_WEBSITE = "<https://actinium.org>";
+    const std::string URL_DISCORD = "<https://discord.gg/wssC5Rh>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
-           strprintf(_("Please contribute if you find %s useful. "
-                       "Visit %s for further information about the software."),
-               PACKAGE_NAME, URL_WEBSITE) +
+           strprintf(_("Join us on Discord: %s \n\n"
+                       "Please contribute if you find %s useful. \n"
+                       "Visit %s for further information about the software.\n "),
+               URL_DISCORD, PACKAGE_NAME, URL_WEBSITE) +
            "\n" +
            strprintf(_("The source code is available from %s."),
                URL_SOURCE_CODE) +
