@@ -49,7 +49,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Actinium"
-#define QAPP_ORG_DOMAIN "Actinium.org"
+#define QAPP_ORG_DOMAIN "actinium.org"
 #define QAPP_APP_NAME_DEFAULT "Actinium-Qt"
 #define QAPP_APP_NAME_TESTNET "Actinium-Qt-testnet"
 

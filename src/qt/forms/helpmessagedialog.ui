@@ -40,19 +40,19 @@
      <item>
       <widget class="QLabel" name="aboutLogo">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="maximumSize">
         <size>
-         <width>100</width>
-         <height>100</height>
+         <width>128</width>
+         <height>512</height>
         </size>
        </property>
        <property name="pixmap">
-        <pixmap resource="../bitcoin.qrc">:/icons/bitcoin</pixmap>
+        <pixmap resource="../bitcoin.qrc">:/icons/aboutDialog</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
