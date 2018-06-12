@@ -535,22 +535,14 @@ std::string LicenseInfo()
     const std::string URL_WEBSITE = "<https://actinium.org>";
     const std::string URL_DISCORD = "<https://discord.gg/wssC5Rh>";
 
-    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
-           "\n" +
-           strprintf(_("Join us on Discord: %s \n\n"
-                       "Please contribute if you find %s useful. \n"
-                       "Visit %s for further information about the software.\n "),
-               URL_DISCORD, PACKAGE_NAME, URL_WEBSITE) +
-           "\n" +
-           strprintf(_("The source code is available from %s."),
-               URL_SOURCE_CODE) +
-           "\n" +
-           "\n" +
-           _("This is experimental software.") + "\n" +
-           strprintf(_("Distributed under the MIT software license, see the accompanying file %s or %s"), "COPYING", "<https://opensource.org/licenses/MIT>") + "\n" +
-           "\n" +
-           strprintf(_("This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard."), "<https://www.openssl.org>") +
-           "\n";
+    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") +
+      _("\n\nThis is experimental software.  Use at your own risk.\n\n") +
+      strprintf(_("Visit %s for further information about the software.\n\n"), URL_WEBSITE) +
+      strprintf(_("Please contribute if you find %s useful. \n"), PACKAGE_NAME) +
+      strprintf(_("The source code is available from %s.\n"), URL_SOURCE_CODE) +
+      strprintf(_("Join us on Discord:  %s \n\n"), URL_DISCORD) +
+      strprintf(_("Distributed under the MIT software license, see the accompanying file %s or %s \n\n"), "COPYING", "<https://opensource.org/licenses/MIT>") +
+      strprintf(_("This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.\n"), "<https://www.openssl.org>");
 }
 
 static void BlockNotifyCallback(bool initialSync, const CBlockIndex *pBlockIndex)
