@@ -7,6 +7,9 @@ config.status
 configure
 libbitcoinconsensus.pc
 libtool
+share/qt/Info.plist
+share/setup.nsi
+src/config/bitcoin-config.h
 
 # Compiled Object files
 *.slo
