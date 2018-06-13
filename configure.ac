@@ -2,38 +2,22 @@ dnl require autoconf 2.60 (AS_ECHO/AS_ECHO_N)
 AC_PREREQ([2.60])
 define(_CLIENT_VERSION_MAJOR, 0)
 define(_CLIENT_VERSION_MINOR, 16)
-<<<<<<< HEAD
 define(_CLIENT_VERSION_REVISION, 1)
-=======
-define(_CLIENT_VERSION_REVISION, 0)
->>>>>>> upstream/0.16
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-<<<<<<< HEAD
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Actinium Core]])
 AC_INIT([Actinium Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/Actinium-project/Actinium/issues],[Actinium],[http://Actinium.org/])
-=======
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Litecoin Core]])
-AC_INIT([Litecoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/litecoin-project/litecoin/issues],[litecoin],[https://litecoin.org/])
->>>>>>> upstream/0.16
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-<<<<<<< HEAD
 BITCOIN_DAEMON_NAME=Actiniumd
 BITCOIN_GUI_NAME=Actinium-qt
 BITCOIN_CLI_NAME=Actinium-cli
 BITCOIN_TX_NAME=Actinium-tx
-=======
-BITCOIN_DAEMON_NAME=litecoind
-BITCOIN_GUI_NAME=litecoin-qt
-BITCOIN_CLI_NAME=litecoin-cli
-BITCOIN_TX_NAME=litecoin-tx
->>>>>>> upstream/0.16
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -178,15 +162,9 @@ AC_ARG_ENABLE([ccache],
 AC_ARG_ENABLE([lcov],
   [AS_HELP_STRING([--enable-lcov],
   [enable lcov testing (default is no)])],
-<<<<<<< HEAD
-  [use_lcov=yes],
-  [use_lcov=no])
-  
-=======
   [use_lcov=$enableval],
   [use_lcov=no])
 
->>>>>>> upstream/0.16
 AC_ARG_ENABLE([lcov-branch-coverage],
   [AS_HELP_STRING([--enable-lcov-branch-coverage],
   [enable lcov testing branch coverage (default is no)])],
@@ -199,16 +177,6 @@ AC_ARG_ENABLE([glibc-back-compat],
   [use_glibc_compat=$enableval],
   [use_glibc_compat=no])
 
-<<<<<<< HEAD
-AC_ARG_ENABLE([experimental-asm],
-  [AS_HELP_STRING([--enable-experimental-asm],
-  [Enable experimental assembly routines (default is no)])],
-  [experimental_asm=$enableval],
-  [experimental_asm=no])
-
-if test "x$experimental_asm" = xyes; then
-  AC_DEFINE(EXPERIMENTAL_ASM, 1, [Define this symbol to build in experimental assembly routines])
-=======
 AC_ARG_ENABLE([asm],
   [AS_HELP_STRING([--enable-asm],
   [Enable assembly routines (default is yes)])],
@@ -217,7 +185,6 @@ AC_ARG_ENABLE([asm],
 
 if test "x$use_asm" = xyes; then
   AC_DEFINE(USE_ASM, 1, [Define this symbol to build in assembly routines])
->>>>>>> upstream/0.16
 fi
 
 AC_ARG_WITH([system-univalue],
@@ -280,10 +247,7 @@ if test "x$enable_werror" = "xyes"; then
     AC_MSG_ERROR("enable-werror set but -Werror is not usable")
   fi
   AX_CHECK_COMPILE_FLAG([-Werror=vla],[ERROR_CXXFLAGS="$ERROR_CXXFLAGS -Werror=vla"],,[[$CXXFLAG_WERROR]])
-<<<<<<< HEAD
-=======
   AX_CHECK_COMPILE_FLAG([-Werror=thread-safety-analysis],[ERROR_CXXFLAGS="$ERROR_CXXFLAGS -Werror=thread-safety-analysis"],,[[$CXXFLAG_WERROR]])
->>>>>>> upstream/0.16
 fi
 
 if test "x$CXXFLAGS_overridden" = "xno"; then
@@ -292,10 +256,7 @@ if test "x$CXXFLAGS_overridden" = "xno"; then
   AX_CHECK_COMPILE_FLAG([-Wformat],[CXXFLAGS="$CXXFLAGS -Wformat"],,[[$CXXFLAG_WERROR]])
   AX_CHECK_COMPILE_FLAG([-Wvla],[CXXFLAGS="$CXXFLAGS -Wvla"],,[[$CXXFLAG_WERROR]])
   AX_CHECK_COMPILE_FLAG([-Wformat-security],[CXXFLAGS="$CXXFLAGS -Wformat-security"],,[[$CXXFLAG_WERROR]])
-<<<<<<< HEAD
-=======
   AX_CHECK_COMPILE_FLAG([-Wthread-safety-analysis],[CXXFLAGS="$CXXFLAGS -Wthread-safety-analysis"],,[[$CXXFLAG_WERROR]])
->>>>>>> upstream/0.16
 
   ## Some compilers (gcc) ignore unknown -Wno-* options, but warn about all
   ## unknown options if any other warning is produced. Test the -Wfoo case, and
@@ -338,11 +299,7 @@ CPPFLAGS="$CPPFLAGS -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS"
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-<<<<<<< HEAD
   [build Actinium-cli Actinium-tx (default=yes)])],
-=======
-  [build litecoin-cli bitcoin-tx (default=yes)])],
->>>>>>> upstream/0.16
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
@@ -354,11 +311,7 @@ AC_ARG_WITH([libs],
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
-<<<<<<< HEAD
   [build Actiniumd daemon (default=yes)])],
-=======
-  [build litecoind daemon (default=yes)])],
->>>>>>> upstream/0.16
   [build_bitcoind=$withval],
   [build_bitcoind=yes])
 
@@ -502,12 +455,10 @@ case $host in
    *openbsd*)
      LEVELDB_TARGET_FLAGS="-DOS_OPENBSD"
      ;;
-<<<<<<< HEAD
-=======
+
    *netbsd*)
      LEVELDB_TARGET_FLAGS="-DOS_NETBSD"
      ;;
->>>>>>> upstream/0.16
    *)
      OTHER_OS=`echo ${host_os} | awk '{print toupper($0)}'`
      AC_MSG_WARN([Guessing LevelDB OS as OS_${OTHER_OS}, please check whether this is correct, if not add an entry to configure.ac.])
@@ -718,8 +669,7 @@ AC_LINK_IFELSE([AC_LANG_SOURCE([
   ]
 )
 
-<<<<<<< HEAD
-=======
+
 TEMP_LDFLAGS="$LDFLAGS"
 LDFLAGS="$TEMP_LDFLAGS $PTHREAD_CFLAGS"
 AC_MSG_CHECKING([for thread_local support])
@@ -742,7 +692,6 @@ AC_LINK_IFELSE([AC_LANG_SOURCE([
 )
 LDFLAGS="$TEMP_LDFLAGS"
 
->>>>>>> upstream/0.16
 # Check for different ways of gathering OS randomness
 AC_MSG_CHECKING(for Linux getrandom syscall)
 AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <unistd.h>
@@ -823,12 +772,11 @@ define(MINIMUM_REQUIRED_BOOST, 1.47.0)
 
 dnl Check for boost libs
 AX_BOOST_BASE([MINIMUM_REQUIRED_BOOST])
-<<<<<<< HEAD
-=======
+
 if test x$want_boost = xno; then
     AC_MSG_ERROR([[only libbitcoinconsensus can be built without boost]])
 fi
->>>>>>> upstream/0.16
+
 AX_BOOST_SYSTEM
 AX_BOOST_FILESYSTEM
 AX_BOOST_PROGRAM_OPTIONS
@@ -919,23 +867,14 @@ TEMP_CPPFLAGS="$CPPFLAGS"
 CPPFLAGS="$CPPFLAGS $BOOST_CPPFLAGS"
 AC_MSG_CHECKING([for mismatched boost c++11 scoped enums])
 AC_LINK_IFELSE([AC_LANG_PROGRAM([[
-<<<<<<< HEAD
   #include "boost/config.hpp"
   #include "boost/version.hpp"
-=======
-  #include <boost/config.hpp>
-  #include <boost/version.hpp>
->>>>>>> upstream/0.16
   #if !defined(BOOST_NO_SCOPED_ENUMS) && !defined(BOOST_NO_CXX11_SCOPED_ENUMS) && BOOST_VERSION < 105700
   #define BOOST_NO_SCOPED_ENUMS
   #define BOOST_NO_CXX11_SCOPED_ENUMS
   #define CHECK
   #endif
-<<<<<<< HEAD
   #include "boost/filesystem.hpp"
-=======
-  #include <boost/filesystem.hpp>
->>>>>>> upstream/0.16
   ]],[[
   #if defined(CHECK)
     boost::filesystem::copy_file("foo", "bar");
@@ -1131,19 +1070,11 @@ AC_SUBST(UNIVALUE_LIBS)
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-<<<<<<< HEAD
 AC_MSG_CHECKING([whether to build Actiniumd])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
 AC_MSG_CHECKING([whether to build utils (Actinium-cli Actinium-tx)])
-=======
-AC_MSG_CHECKING([whether to build litecoind])
-AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
-AC_MSG_RESULT($build_bitcoind)
-
-AC_MSG_CHECKING([whether to build utils (litecoin-cli litecoin-tx)])
->>>>>>> upstream/0.16
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -1299,11 +1230,7 @@ AM_CONDITIONAL([USE_LCOV],[test x$use_lcov = xyes])
 AM_CONDITIONAL([GLIBC_BACK_COMPAT],[test x$use_glibc_compat = xyes])
 AM_CONDITIONAL([HARDEN],[test x$use_hardening = xyes])
 AM_CONDITIONAL([ENABLE_HWCRC32],[test x$enable_hwcrc32 = xyes])
-<<<<<<< HEAD
-AM_CONDITIONAL([EXPERIMENTAL_ASM],[test x$experimental_asm = xyes])
-=======
 AM_CONDITIONAL([USE_ASM],[test x$use_asm = xyes])
->>>>>>> upstream/0.16
 
 AC_DEFINE(CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MAJOR, [Major version])
 AC_DEFINE(CLIENT_VERSION_MINOR, _CLIENT_VERSION_MINOR, [Minor version])
@@ -1411,11 +1338,7 @@ case ${OS} in
    ;;
 esac
 
-<<<<<<< HEAD
 echo 
-=======
-echo
->>>>>>> upstream/0.16
 echo "Options used to compile and link:"
 echo "  with wallet   = $enable_wallet"
 echo "  with gui / qt = $bitcoin_enable_qt"
@@ -1427,17 +1350,10 @@ echo "  with zmq      = $use_zmq"
 echo "  with test     = $use_tests"
 echo "  with bench    = $use_bench"
 echo "  with upnp     = $use_upnp"
-<<<<<<< HEAD
-echo "  scrypt sse2   = $use_sse2"
-echo "  debug enabled = $enable_debug"
-echo "  werror        = $enable_werror"
-echo 
-=======
 echo "  use asm       = $use_asm"
 echo "  debug enabled = $enable_debug"
 echo "  werror        = $enable_werror"
 echo
->>>>>>> upstream/0.16
 echo "  target os     = $TARGET_OS"
 echo "  build os      = $BUILD_OS"
 echo
@@ -1448,8 +1364,5 @@ echo "  CXX           = $CXX"
 echo "  CXXFLAGS      = $CXXFLAGS"
 echo "  LDFLAGS       = $LDFLAGS"
 echo "  ARFLAGS       = $ARFLAGS"
-<<<<<<< HEAD
-echo 
-=======
+
 echo
->>>>>>> upstream/0.16
