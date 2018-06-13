@@ -3,6 +3,10 @@
 
 #logifiles
 config.log
+config.status
+configure
+libbitcoinconsensus.pc
+libtool
 
 # Compiled Object files
 *.slo
