@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-# Copyright (c) 2014-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2014-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test mempool limiting together/eviction with the wallet."""
@@ -21,12 +17,6 @@ class MempoolLimitTest(BitcoinTestFramework):
         txouts = gen_return_txouts()
         relayfee = self.nodes[0].getnetworkinfo()['relayfee']
 
-<<<<<<< HEAD
-        txids = []
-        utxos = create_confirmed_utxos(relayfee, self.nodes[0], 91)
-
-        #create a mempool tx that will be evicted
-=======
         self.log.info('Check that mempoolminfee is minrelytxfee')
         assert_equal(self.nodes[0].getmempoolinfo()['minrelaytxfee'], Decimal('0.00001000'))
         assert_equal(self.nodes[0].getmempoolinfo()['mempoolminfee'], Decimal('0.00001000'))
@@ -35,7 +25,6 @@ class MempoolLimitTest(BitcoinTestFramework):
         utxos = create_confirmed_utxos(relayfee, self.nodes[0], 91)
 
         self.log.info('Create a mempool tx that will be evicted')
->>>>>>> upstream/0.16
         us0 = utxos.pop()
         inputs = [{ "txid" : us0["txid"], "vout" : us0["vout"]}]
         outputs = {self.nodes[0].getnewaddress() : 0.01}
@@ -52,21 +41,14 @@ class MempoolLimitTest(BitcoinTestFramework):
             txids.append([])
             txids[i] = create_lots_of_big_transactions(self.nodes[0], txouts, utxos[30*i:30*i+30], 30, (i+1)*base_fee)
 
-<<<<<<< HEAD
-        # by now, the tx should be evicted, check confirmation state
-=======
         self.log.info('The tx should be evicted by now')
->>>>>>> upstream/0.16
         assert(txid not in self.nodes[0].getrawmempool())
         txdata = self.nodes[0].gettransaction(txid)
         assert(txdata['confirmations'] ==  0) #confirmation should still be 0
 
-<<<<<<< HEAD
-=======
         self.log.info('Check that mempoolminfee is larger than minrelytxfee')
         assert_equal(self.nodes[0].getmempoolinfo()['minrelaytxfee'], Decimal('0.00001000'))
         assert_greater_than(self.nodes[0].getmempoolinfo()['mempoolminfee'], Decimal('0.00001000'))
 
->>>>>>> upstream/0.16
 if __name__ == '__main__':
     MempoolLimitTest().main()

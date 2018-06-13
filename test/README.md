@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This directory contains integration tests that test Actiniumd and its
-=======
 This directory contains integration tests that test litecoind and its
->>>>>>> upstream/0.16
 utilities in their entirety. It does not contain unit tests, which
 can be found in [/src/test](/src/test), [/src/wallet/test](/src/wallet/test),
 etc.
@@ -10,17 +6,10 @@ etc.
 There are currently two sets of tests in this directory:
 
 - [functional](/test/functional) which test the functionality of 
-<<<<<<< HEAD
-Actiniumd and Actinium-qt by interacting with them through the RPC and P2P
-interfaces.
-- [util](test/util) which tests the Actinium utilities, currently only
-Actinium-tx.
-=======
 litecoind and litecoin-qt by interacting with them through the RPC and P2P
 interfaces.
 - [util](/test/util) which tests the litecoin utilities, currently only
 litecoin-tx.
->>>>>>> upstream/0.16
 
 The util tests are run as part of `make check` target. The functional
 tests are run by the travis continuous build process whenever a pull
@@ -81,25 +70,6 @@ options. Run `test_runner.py -h` to see them all.
 
 ##### Resource contention
 
-<<<<<<< HEAD
-The P2P and RPC ports used by the Actiniumd nodes-under-test are chosen to make
-conflicts with other processes unlikely. However, if there is another Actiniumd
-process running on the system (perhaps from a previous test which hasn't successfully
-killed all its Actiniumd nodes), then there may be a port conflict which will
-cause the test to fail. It is recommended that you run the tests on a system
-where no other Actiniumd processes are running.
-
-On linux, the test_framework will warn if there is another
-Actiniumd process running when the tests are started.
-
-If there are zombie Actiniumd processes after test failure, you can kill them
-by running the following commands. **Note that these commands will kill all
-Actiniumd processes running on the system, so should not be used if any non-test
-Actiniumd processes are being run.**
-
-```bash
-killall Actiniumd
-=======
 The P2P and RPC ports used by the litecoind nodes-under-test are chosen to make
 conflicts with other processes unlikely. However, if there is another litecoind
 process running on the system (perhaps from a previous test which hasn't successfully
@@ -117,17 +87,12 @@ litecoind processes are being run.**
 
 ```bash
 killall litecoind
->>>>>>> upstream/0.16
 ```
 
 or
 
 ```bash
-<<<<<<< HEAD
-pkill -9 Actiniumd
-=======
 pkill -9 litecoind
->>>>>>> upstream/0.16
 ```
 
 
@@ -138,19 +103,11 @@ functional test is run and is stored in test/cache. This speeds up
 test startup times since new blockchains don't need to be generated for
 each test. However, the cache may get into a bad state, in which case
 tests will fail. If this happens, remove the cache directory (and make
-<<<<<<< HEAD
-sure Actiniumd processes are stopped as above):
-
-```bash
-rm -rf cache
-killall Actiniumd
-=======
 sure litecoind processes are stopped as above):
 
 ```bash
 rm -rf cache
 killall litecoind
->>>>>>> upstream/0.16
 ```
 
 ##### Test logging
@@ -163,21 +120,13 @@ default:
 - when run directly, *all* logs are written to `test_framework.log` and INFO
   level and above are output to the console.
 - when run on Travis, no logs are output to the console. However, if a test
-<<<<<<< HEAD
-  fails, the `test_framework.log` and Actiniumd `debug.log`s will all be dumped
-=======
   fails, the `test_framework.log` and litecoind `debug.log`s will all be dumped
->>>>>>> upstream/0.16
   to the console to help troubleshooting.
 
 To change the level of logs output to the console, use the `-l` command line
 argument.
 
-<<<<<<< HEAD
-`test_framework.log` and Actiniumd `debug.log`s can be combined into a single
-=======
 `test_framework.log` and litecoind `debug.log`s can be combined into a single
->>>>>>> upstream/0.16
 aggregate log by running the `combine_logs.py` script. The output can be plain
 text, colorized text or html. For example:
 
@@ -204,15 +153,9 @@ import pdb; pdb.set_trace()
 ```
 
 anywhere in the test. You will then be able to inspect variables, as well as
-<<<<<<< HEAD
-call methods that interact with the Actiniumd nodes-under-test.
-
-If further introspection of the Actiniumd instances themselves becomes
-=======
 call methods that interact with the litecoind nodes-under-test.
 
 If further introspection of the litecoind instances themselves becomes
->>>>>>> upstream/0.16
 necessary, this can be accomplished by first setting a pdb breakpoint
 at an appropriate location, running the test to that point, then using
 `gdb` to attach to the process and debug.
@@ -226,13 +169,8 @@ For instance, to attach to `self.node[1]` during a run:
 use the directory path to get the pid from the pid file:
 
 ```bash
-<<<<<<< HEAD
-cat /tmp/user/1000/testo9vsdjo3/node1/regtest/Actiniumd.pid
-gdb /home/example/Actiniumd <pid>
-=======
 cat /tmp/user/1000/testo9vsdjo3/node1/regtest/litecoind.pid
 gdb /home/example/litecoind <pid>
->>>>>>> upstream/0.16
 ```
 
 Note: gdb attach step may require `sudo`

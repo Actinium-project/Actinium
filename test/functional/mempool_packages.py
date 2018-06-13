@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-# Copyright (c) 2014-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2014-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test descendant package tracking code."""
@@ -215,11 +211,7 @@ class MempoolPackagesTest(BitcoinTestFramework):
         value = send_value
 
         # Create tx1
-<<<<<<< HEAD
-        (tx1_id, tx1_value) = self.chain_transaction(self.nodes[0], tx0_id, 0, value, fee, 1)
-=======
         tx1_id, _ = self.chain_transaction(self.nodes[0], tx0_id, 0, value, fee, 1)
->>>>>>> upstream/0.16
 
         # Create tx2-7
         vout = 1

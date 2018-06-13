@@ -4,11 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 if [ $# -gt 1 ]; then
-<<<<<<< HEAD
-    cd "$2"
-=======
     cd "$2" || exit 1
->>>>>>> upstream/0.16
 fi
 if [ $# -gt 0 ]; then
     FILE="$1"
@@ -33,7 +29,6 @@ if [ "${BITCOIN_GENBUILD_NO_GIT}" != "1" -a -e "$(which git 2>/dev/null)" -a "$(
 
     # if latest commit is tagged and not dirty, then override using the tag name
     RAWDESC=$(git describe --abbrev=0 2>/dev/null)
-<<<<<<< HEAD
     #if [ "$(git rev-parse HEAD)" = "$(git rev-list -1 $RAWDESC 2>/dev/null)" ]; then
         git diff-index --quiet HEAD -- && DESC=$RAWDESC
     #fi
@@ -41,15 +36,6 @@ if [ "${BITCOIN_GENBUILD_NO_GIT}" != "1" -a -e "$(which git 2>/dev/null)" -a "$(
     # otherwise generate suffix from git, i.e. string like "59887e8-dirty"
     #SUFFIX=$(git rev-parse --short HEAD)
     #git diff-index --quiet HEAD -- || SUFFIX="$SUFFIX-dirty"
-=======
-    if [ "$(git rev-parse HEAD)" = "$(git rev-list -1 $RAWDESC 2>/dev/null)" ]; then
-        git diff-index --quiet HEAD -- && DESC=$RAWDESC
-    fi
-
-    # otherwise generate suffix from git, i.e. string like "59887e8-dirty"
-    SUFFIX=$(git rev-parse --short HEAD)
-    git diff-index --quiet HEAD -- || SUFFIX="$SUFFIX-dirty"
->>>>>>> upstream/0.16
 fi
 
 if [ -n "$DESC" ]; then

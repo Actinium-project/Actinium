@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-unitester
-=======
 
 object
 unitester
 test_json
 no_nul
->>>>>>> upstream/0.16
 
 *.trs
 *.log

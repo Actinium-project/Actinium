@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-# Copyright (c) 2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2016-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Create a blockchain cache.
@@ -20,10 +16,7 @@ class CreateCache(BitcoinTestFramework):
 
     def set_test_params(self):
         self.num_nodes = 0
-<<<<<<< HEAD
-=======
         self.supports_cli = True
->>>>>>> upstream/0.16
 
     def setup_network(self):
         pass

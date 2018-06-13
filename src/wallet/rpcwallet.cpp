@@ -140,22 +140,14 @@ UniValue getnewaddress(const JSONRPCRequest& request)
     if (request.fHelp || request.params.size() > 2)
         throw std::runtime_error(
             "getnewaddress ( \"account\" \"address_type\" )\n"
-<<<<<<< HEAD
             "\nReturns a new Actinium address for receiving payments.\n"
-=======
-            "\nReturns a new Litecoin address for receiving payments.\n"
->>>>>>> upstream/0.16
             "If 'account' is specified (DEPRECATED), it is added to the address book \n"
             "so payments received with the address will be credited to 'account'.\n"
             "\nArguments:\n"
             "1. \"account\"        (string, optional) DEPRECATED. The account name for the address to be linked to. If not provided, the default account \"\" is used. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.\n"
             "2. \"address_type\"   (string, optional) The address type to use. Options are \"legacy\", \"p2sh-segwit\", and \"bech32\". Default is set by -addresstype.\n"
             "\nResult:\n"
-<<<<<<< HEAD
             "\"address\"    (string) The new Actinium address\n"
-=======
-            "\"address\"    (string) The new litecoin address\n"
->>>>>>> upstream/0.16
             "\nExamples:\n"
             + HelpExampleCli("getnewaddress", "")
             + HelpExampleRpc("getnewaddress", "")

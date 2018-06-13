@@ -64,11 +64,7 @@ AC_DEFUN([BITCOIN_FIND_BDB48],[
   
   if test "x$BDB_LIBS" = "x"; then
     # TODO: Ideally this could find the library version and make sure it matches the headers being used
-<<<<<<< HEAD
-    for searchlib in db_cxx-4.8 db_cxx; do
-=======
     for searchlib in db_cxx-4.8 db_cxx db4_cxx; do
->>>>>>> upstream/0.16
       AC_CHECK_LIB([$searchlib],[main],[
         BDB_LIBS="-l${searchlib}"
         break

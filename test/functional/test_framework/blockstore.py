@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-# Copyright (c) 2015-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2015-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """BlockStore and TxStore helper classes."""
@@ -14,11 +10,7 @@ import dbm.dumb as dbmd
 
 logger = logging.getLogger("TestFramework.blockstore")
 
-<<<<<<< HEAD
-class BlockStore(object):
-=======
 class BlockStore():
->>>>>>> upstream/0.16
     """BlockStore helper class.
 
     BlockStore keeps a map of blocks and implements helper functions for
@@ -108,11 +100,7 @@ class BlockStore():
     def get_blocks(self, inv):
         responses = []
         for i in inv:
-<<<<<<< HEAD
-            if (i.type == 2): # MSG_BLOCK
-=======
             if (i.type == 2 or i.type == (2 | (1 << 30))): # MSG_BLOCK or MSG_WITNESS_BLOCK
->>>>>>> upstream/0.16
                 data = self.get(i.hash)
                 if data is not None:
                     # Use msg_generic to avoid re-serialization
@@ -139,11 +127,7 @@ class BlockStore():
         locator.vHave = r
         return locator
 
-<<<<<<< HEAD
-class TxStore(object):
-=======
 class TxStore():
->>>>>>> upstream/0.16
     def __init__(self, datadir):
         self.txDB = dbmd.open(datadir + "/transactions", 'c')
 
@@ -159,19 +143,6 @@ class TxStore():
             return None
         return value
 
-<<<<<<< HEAD
-    def get_transaction(self, txhash):
-        ret = None
-        serialized_tx = self.get(txhash)
-        if serialized_tx is not None:
-            f = BytesIO(serialized_tx)
-            ret = CTransaction()
-            ret.deserialize(f)
-            ret.calc_sha256()
-        return ret
-
-=======
->>>>>>> upstream/0.16
     def add_transaction(self, tx):
         tx.calc_sha256()
         try:
@@ -182,11 +153,7 @@ class TxStore():
     def get_transactions(self, inv):
         responses = []
         for i in inv:
-<<<<<<< HEAD
-            if (i.type == 1): # MSG_TX
-=======
             if (i.type == 1 or i.type == (1 | (1 << 30))): # MSG_TX or MSG_WITNESS_TX
->>>>>>> upstream/0.16
                 tx = self.get(i.hash)
                 if tx is not None:
                     responses.append(msg_generic(b"tx", tx))

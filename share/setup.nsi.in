@@ -50,15 +50,9 @@ Var StartMenuGroup
 # Installer attributes
 OutFile @abs_top_srcdir@/@PACKAGE_TARNAME@-${VERSION}-win@WINDOWS_BITS@-setup.exe
 !if "@WINDOWS_BITS@" == "64"
-<<<<<<< HEAD
 InstallDir $PROGRAMFILES64\Actinium
 !else
 InstallDir $PROGRAMFILES\Actinium
-=======
-InstallDir $PROGRAMFILES64\Litecoin
-!else
-InstallDir $PROGRAMFILES\Litecoin
->>>>>>> upstream/0.16
 !endif
 CRCCheck on
 XPStyle on
@@ -110,11 +104,7 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "@PACKAGE_TARNAME@" "URL Protocol" ""
-<<<<<<< HEAD
     WriteRegStr HKCR "@PACKAGE_TARNAME@" "" "URL:Actinium"
-=======
-    WriteRegStr HKCR "@PACKAGE_TARNAME@" "" "URL:Litecoin"
->>>>>>> upstream/0.16
     WriteRegStr HKCR "@PACKAGE_TARNAME@\DefaultIcon" "" $INSTDIR\@BITCOIN_GUI_NAME@@EXEEXT@
     WriteRegStr HKCR "@PACKAGE_TARNAME@\shell\open\command" "" '"$INSTDIR\@BITCOIN_GUI_NAME@@EXEEXT@" "%1"'
 SectionEnd
@@ -147,11 +137,7 @@ Section -un.post UNSEC0001
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\@PACKAGE_NAME@ (testnet, @WINDOWS_BITS@-bit).lnk"
-<<<<<<< HEAD
     Delete /REBOOTOK "$SMSTARTUP\Actinium.lnk"
-=======
-    Delete /REBOOTOK "$SMSTARTUP\Litecoin.lnk"
->>>>>>> upstream/0.16
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log

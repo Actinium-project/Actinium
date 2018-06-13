@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-# Copyright (c) 2014-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2014-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Helpful routines for regression testing."""
@@ -32,17 +28,10 @@ def assert_fee_amount(fee, tx_size, fee_per_kB):
     """Assert the fee was in range"""
     target_fee = tx_size * fee_per_kB / 1000
     if fee < target_fee:
-<<<<<<< HEAD
-        raise AssertionError("Fee of %s BTC too low! (Should be %s BTC)" % (str(fee), str(target_fee)))
-    # allow the wallet's estimation to be at most 2 bytes off
-    if fee > (tx_size + 2) * fee_per_kB / 1000:
-        raise AssertionError("Fee of %s BTC too high! (Should be %s BTC)" % (str(fee), str(target_fee)))
-=======
         raise AssertionError("Fee of %s LTC too low! (Should be %s LTC)" % (str(fee), str(target_fee)))
     # allow the wallet's estimation to be at most 2 bytes off
     if fee > (tx_size + 2) * fee_per_kB / 1000:
         raise AssertionError("Fee of %s LTC too high! (Should be %s LTC)" % (str(fee), str(target_fee)))
->>>>>>> upstream/0.16
 
 def assert_equal(thing1, thing2, *args):
     if thing1 != thing2 or any(thing1 != arg for arg in args):
@@ -298,11 +287,7 @@ def initialize_datadir(dirname, n):
     datadir = os.path.join(dirname, "node" + str(n))
     if not os.path.isdir(datadir):
         os.makedirs(datadir)
-<<<<<<< HEAD
-    with open(os.path.join(datadir, "actinium.conf"), 'w', encoding='utf8') as f:
-=======
     with open(os.path.join(datadir, "litecoin.conf"), 'w', encoding='utf8') as f:
->>>>>>> upstream/0.16
         f.write("regtest=1\n")
         f.write("port=" + str(p2p_port(n)) + "\n")
         f.write("rpcport=" + str(rpc_port(n)) + "\n")
@@ -315,13 +300,8 @@ def get_datadir_path(dirname, n):
 def get_auth_cookie(datadir):
     user = None
     password = None
-<<<<<<< HEAD
-    if os.path.isfile(os.path.join(datadir, "actinium.conf")):
-        with open(os.path.join(datadir, "actinium.conf"), 'r', encoding='utf8') as f:
-=======
     if os.path.isfile(os.path.join(datadir, "litecoin.conf")):
         with open(os.path.join(datadir, "litecoin.conf"), 'r', encoding='utf8') as f:
->>>>>>> upstream/0.16
             for line in f:
                 if line.startswith("rpcuser="):
                     assert user is None  # Ensure that there is only one rpcuser line
@@ -410,11 +390,7 @@ def sync_chain(rpc_connections, *, wait=1, timeout=60):
         timeout -= wait
     raise AssertionError("Chain sync failed: Best block hashes don't match")
 
-<<<<<<< HEAD
-def sync_mempools(rpc_connections, *, wait=1, timeout=60):
-=======
 def sync_mempools(rpc_connections, *, wait=1, timeout=60, flush_scheduler=True):
->>>>>>> upstream/0.16
     """
     Wait until everybody has the same transactions in their memory
     pools
@@ -426,12 +402,9 @@ def sync_mempools(rpc_connections, *, wait=1, timeout=60, flush_scheduler=True):
             if set(rpc_connections[i].getrawmempool()) == pool:
                 num_match = num_match + 1
         if num_match == len(rpc_connections):
-<<<<<<< HEAD
-=======
             if flush_scheduler:
                 for r in rpc_connections:
                     r.syncwithvalidationinterfacequeue()
->>>>>>> upstream/0.16
             return
         time.sleep(wait)
         timeout -= wait

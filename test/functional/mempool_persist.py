@@ -28,10 +28,6 @@ Test is as follows:
   - Restart node0 with -persistmempool. Verify that it has 5
     transactions in its mempool. This tests that -persistmempool=0
     does not overwrite a previously valid mempool stored on disk.
-<<<<<<< HEAD
-
-"""
-=======
   - Remove node0 mempool.dat and verify savemempool RPC recreates it
     and verify that node1 can load it and has 5 transaction in its
     mempool.
@@ -40,7 +36,6 @@ Test is as follows:
 
 """
 import os
->>>>>>> upstream/0.16
 import time
 
 from test_framework.test_framework import BitcoinTestFramework
@@ -62,27 +57,13 @@ class MempoolPersistTest(BitcoinTestFramework):
         self.log.debug("Send 5 transactions from node2 (to its own address)")
         for i in range(5):
             self.nodes[2].sendtoaddress(self.nodes[2].getnewaddress(), Decimal("10"))
-<<<<<<< HEAD
-=======
         node2_balance = self.nodes[2].getbalance()
->>>>>>> upstream/0.16
         self.sync_all()
 
         self.log.debug("Verify that node0 and node1 have 5 transactions in their mempools")
         assert_equal(len(self.nodes[0].getrawmempool()), 5)
         assert_equal(len(self.nodes[1].getrawmempool()), 5)
 
-<<<<<<< HEAD
-        self.log.debug("Stop-start node0 and node1. Verify that node0 has the transactions in its mempool and node1 does not.")
-        self.stop_nodes()
-        self.start_node(0)
-        self.start_node(1)
-        # Give bitcoind a second to reload the mempool
-        time.sleep(1)
-        wait_until(lambda: len(self.nodes[0].getrawmempool()) == 5)
-        assert_equal(len(self.nodes[1].getrawmempool()), 0)
-
-=======
         self.log.debug("Stop-start the nodes. Verify that node0 has the transactions in its mempool and node1 does not. Verify that node2 calculates its balance correctly after loading wallet transactions.")
         self.stop_nodes()
         self.start_node(1)  # Give this one a head-start, so we can be "extra-sure" that it didn't load anything later
@@ -98,7 +79,6 @@ class MempoolPersistTest(BitcoinTestFramework):
         self.nodes[2].syncwithvalidationinterfacequeue()  # Flush mempool to wallet
         assert_equal(node2_balance, self.nodes[2].getbalance())
 
->>>>>>> upstream/0.16
         self.log.debug("Stop-start node0 with -persistmempool=0. Verify that it doesn't load its mempool.dat file.")
         self.stop_nodes()
         self.start_node(0, extra_args=["-persistmempool=0"])
@@ -111,8 +91,6 @@ class MempoolPersistTest(BitcoinTestFramework):
         self.start_node(0)
         wait_until(lambda: len(self.nodes[0].getrawmempool()) == 5)
 
-<<<<<<< HEAD
-=======
         mempooldat0 = os.path.join(self.options.tmpdir, 'node0', 'regtest', 'mempool.dat')
         mempooldat1 = os.path.join(self.options.tmpdir, 'node1', 'regtest', 'mempool.dat')
         self.log.debug("Remove the mempool.dat file. Verify that savemempool to disk via RPC re-creates it")
@@ -135,6 +113,5 @@ class MempoolPersistTest(BitcoinTestFramework):
         assert_raises_rpc_error(-1, "Unable to dump mempool to disk", self.nodes[1].savemempool)
         os.remove(mempooldotnew1)
 
->>>>>>> upstream/0.16
 if __name__ == '__main__':
     MempoolPersistTest().main()

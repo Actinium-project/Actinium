@@ -113,11 +113,8 @@ static const char *filenames[] = {
         "fail39.json",               // invalid unicode: only second half of surrogate pair
         "fail40.json",               // invalid unicode: broken UTF-8
         "fail41.json",               // invalid unicode: unfinished UTF-8
-<<<<<<< HEAD
-=======
         "fail42.json",               // valid json with garbage following a nul byte
         "fail44.json",               // unterminated string
->>>>>>> upstream/0.16
         "fail3.json",
         "fail4.json",                // extra comma
         "fail5.json",
@@ -130,14 +127,11 @@ static const char *filenames[] = {
         "pass3.json",
         "round1.json",              // round-trip test
         "round2.json",              // unicode
-<<<<<<< HEAD
-=======
         "round3.json",              // bare string
         "round4.json",              // bare number
         "round5.json",              // bare true
         "round6.json",              // bare false
         "round7.json",              // bare null
->>>>>>> upstream/0.16
 };
 
 // Test \u handling

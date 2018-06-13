@@ -2,11 +2,7 @@
 # Copyright (c) 2017 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-<<<<<<< HEAD
-"""Class for Actiniumd node under test"""
-=======
 """Class for bitcoind node under test"""
->>>>>>> upstream/0.16
 
 import decimal
 import errno
@@ -14,54 +10,32 @@ import http.client
 import json
 import logging
 import os
-<<<<<<< HEAD
-import subprocess
-import time
-
-=======
 import re
 import subprocess
 import time
 
 from .authproxy import JSONRPCException
->>>>>>> upstream/0.16
 from .util import (
     assert_equal,
     get_rpc_proxy,
     rpc_url,
     wait_until,
-<<<<<<< HEAD
-)
-from .authproxy import JSONRPCException
-=======
     p2p_port,
 )
 
 # For Python 3.4 compatibility
 JSONDecodeError = getattr(json, "JSONDecodeError", ValueError)
->>>>>>> upstream/0.16
 
 BITCOIND_PROC_WAIT_TIMEOUT = 60
 
 class TestNode():
-<<<<<<< HEAD
-    """A class for representing a Actiniumd node under test.
-=======
     """A class for representing a bitcoind node under test.
->>>>>>> upstream/0.16
 
     This class contains:
 
     - state about the node (whether it's running, etc)
     - a Python subprocess.Popen object representing the running process
     - an RPC connection to the node
-<<<<<<< HEAD
-
-    To make things easier for the test writer, a bit of magic is happening under the covers.
-    Any unrecognised messages will be dispatched to the RPC connection."""
-
-    def __init__(self, i, dirname, extra_args, rpchost, timewait, binary, stderr, mocktime, coverage_dir):
-=======
     - one or more P2P connections to the node
 
 
@@ -69,7 +43,6 @@ class TestNode():
     be dispatched to the RPC connection."""
 
     def __init__(self, i, dirname, extra_args, rpchost, timewait, binary, stderr, mocktime, coverage_dir, use_cli=False):
->>>>>>> upstream/0.16
         self.index = i
         self.datadir = os.path.join(dirname, "node" + str(i))
         self.rpchost = rpchost
@@ -79,11 +52,7 @@ class TestNode():
             # Wait for up to 60 seconds for the RPC server to respond
             self.rpc_timeout = 60
         if binary is None:
-<<<<<<< HEAD
-            self.binary = os.getenv("ACTINIUMD", "Actiniumd")
-=======
             self.binary = os.getenv("LITECOIND", "litecoind")
->>>>>>> upstream/0.16
         else:
             self.binary = binary
         self.stderr = stderr
@@ -92,12 +61,8 @@ class TestNode():
         self.extra_args = extra_args
         self.args = [self.binary, "-datadir=" + self.datadir, "-server", "-keypool=1", "-discover=0", "-rest", "-logtimemicros", "-debug", "-debugexclude=libevent", "-debugexclude=leveldb", "-mocktime=" + str(mocktime), "-uacomment=testnode%d" % i]
 
-<<<<<<< HEAD
-        self.cli = TestNodeCLI(os.getenv("ACTINIUMCLI", "actinium-cli"), self.datadir)
-=======
         self.cli = TestNodeCLI(os.getenv("LITECOINCLI", "litecoin-cli"), self.datadir)
         self.use_cli = use_cli
->>>>>>> upstream/0.16
 
         self.running = False
         self.process = None
@@ -106,14 +71,6 @@ class TestNode():
         self.url = None
         self.log = logging.getLogger('TestFramework.node%d' % i)
 
-<<<<<<< HEAD
-    def __getattr__(self, *args, **kwargs):
-        """Dispatches any unrecognised messages to the RPC connection."""
-        assert self.rpc_connected and self.rpc is not None, "Error: no RPC connection"
-        return self.rpc.__getattr__(*args, **kwargs)
-
-    def start(self, extra_args=None, stderr=None):
-=======
         self.p2ps = []
 
     def __getattr__(self, name):
@@ -125,24 +82,11 @@ class TestNode():
             return getattr(self.rpc, name)
 
     def start(self, extra_args=None, stderr=None, *args, **kwargs):
->>>>>>> upstream/0.16
         """Start the node."""
         if extra_args is None:
             extra_args = self.extra_args
         if stderr is None:
             stderr = self.stderr
-<<<<<<< HEAD
-        self.process = subprocess.Popen(self.args + extra_args, stderr=stderr)
-        self.running = True
-        self.log.debug("Actiniumd started, waiting for RPC to come up")
-
-    def wait_for_rpc_connection(self):
-        """Sets up an RPC connection to the Actiniumd process. Returns False if unable to connect."""
-        # Poll at a rate of four times per second
-        poll_per_s = 4
-        for _ in range(poll_per_s * self.rpc_timeout):
-            assert self.process.poll() is None, "Actiniumd exited with status %i during initialization" % self.process.returncode
-=======
         self.process = subprocess.Popen(self.args + extra_args, stderr=stderr, *args, **kwargs)
         self.running = True
         self.log.debug("litecoind started, waiting for RPC to come up")
@@ -153,7 +97,6 @@ class TestNode():
         poll_per_s = 4
         for _ in range(poll_per_s * self.rpc_timeout):
             assert self.process.poll() is None, "litecoind exited with status %i during initialization" % self.process.returncode
->>>>>>> upstream/0.16
             try:
                 self.rpc = get_rpc_proxy(rpc_url(self.datadir, self.index, self.rpchost), self.index, timeout=self.rpc_timeout, coveragedir=self.coverage_dir)
                 self.rpc.getblockcount()
@@ -172,15 +115,6 @@ class TestNode():
                 if "No RPC credentials" not in str(e):
                     raise
             time.sleep(1.0 / poll_per_s)
-<<<<<<< HEAD
-        raise AssertionError("Unable to connect to Actiniumd")
-
-    def get_wallet_rpc(self, wallet_name):
-        assert self.rpc_connected
-        assert self.rpc
-        wallet_path = "wallet/%s" % wallet_name
-        return self.rpc / wallet_path
-=======
         raise AssertionError("Unable to connect to litecoind")
 
     def get_wallet_rpc(self, wallet_name):
@@ -191,7 +125,6 @@ class TestNode():
             assert self.rpc
             wallet_path = "wallet/%s" % wallet_name
             return self.rpc / wallet_path
->>>>>>> upstream/0.16
 
     def stop_node(self):
         """Stop the node."""
@@ -202,10 +135,7 @@ class TestNode():
             self.stop()
         except http.client.CannotSendRequest:
             self.log.exception("Unable to stop node.")
-<<<<<<< HEAD
-=======
         del self.p2ps[:]
->>>>>>> upstream/0.16
 
     def is_node_stopped(self):
         """Checks whether the node has stopped.
@@ -233,47 +163,11 @@ class TestNode():
     def node_encrypt_wallet(self, passphrase):
         """"Encrypts the wallet.
 
-<<<<<<< HEAD
-        This causes Actiniumd to shutdown, so this method takes
-=======
         This causes bitcoind to shutdown, so this method takes
->>>>>>> upstream/0.16
         care of cleaning up resources."""
         self.encryptwallet(passphrase)
         self.wait_until_stopped()
 
-<<<<<<< HEAD
-class TestNodeCLI():
-    """Interface to actinium-cli for an individual node"""
-
-    def __init__(self, binary, datadir):
-        self.args = []
-        self.binary = binary
-        self.datadir = datadir
-        self.input = None
-
-    def __call__(self, *args, input=None):
-        # TestNodeCLI is callable with actinium-cli command-line args
-        self.args = [str(arg) for arg in args]
-        self.input = input
-        return self
-
-    def __getattr__(self, command):
-        def dispatcher(*args, **kwargs):
-            return self.send_cli(command, *args, **kwargs)
-        return dispatcher
-
-    def send_cli(self, command, *args, **kwargs):
-        """Run actinium-cli command. Deserializes returned string as python object."""
-
-        pos_args = [str(arg) for arg in args]
-        named_args = [str(key) + "=" + str(value) for (key, value) in kwargs.items()]
-        assert not (pos_args and named_args), "Cannot use positional arguments and named arguments in the same actinium-cli call"
-        p_args = [self.binary, "-datadir=" + self.datadir] + self.args
-        if named_args:
-            p_args += ["-named"]
-        p_args += [command] + pos_args + named_args
-=======
     def add_p2p_connection(self, p2p_conn, *args, **kwargs):
         """Add a p2p connection to the node.
 
@@ -357,16 +251,10 @@ class TestNodeCLI():
             p_args += [command]
         p_args += pos_args + named_args
         self.log.debug("Running litecoin-cli command: %s" % command)
->>>>>>> upstream/0.16
         process = subprocess.Popen(p_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
         cli_stdout, cli_stderr = process.communicate(input=self.input)
         returncode = process.poll()
         if returncode:
-<<<<<<< HEAD
-            # Ignore cli_stdout, raise with cli_stderr
-            raise subprocess.CalledProcessError(returncode, self.binary, output=cli_stderr)
-        return json.loads(cli_stdout, parse_float=decimal.Decimal)
-=======
             match = re.match(r'error code: ([-0-9]+)\nerror message:\n(.*)', cli_stderr)
             if match:
                 code, message = match.groups()
@@ -377,4 +265,3 @@ class TestNodeCLI():
             return json.loads(cli_stdout, parse_float=decimal.Decimal)
         except JSONDecodeError:
             return cli_stdout.rstrip("\n")
->>>>>>> upstream/0.16

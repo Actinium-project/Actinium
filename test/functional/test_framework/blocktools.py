@@ -1,17 +1,9 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-# Copyright (c) 2015-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2015-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Utilities for manipulating blocks and transactions."""
 
-<<<<<<< HEAD
-from .mininode import *
-from .script import CScript, OP_TRUE, OP_CHECKSIG, OP_RETURN
-=======
 from .address import (
     key_to_p2sh_p2wpkh,
     key_to_p2wpkh,
@@ -30,7 +22,6 @@ from .script import (
     hash160,
 )
 from .util import assert_equal
->>>>>>> upstream/0.16
 
 # Create a block (with regtest difficulty)
 def create_block(hashprev, coinbase, nTime=None):
@@ -133,8 +124,6 @@ def get_legacy_sigopcount_tx(tx, fAccurate=True):
         # scriptSig might be of type bytes, so convert to CScript for the moment
         count += CScript(j.scriptSig).GetSigOpCount(fAccurate)
     return count
-<<<<<<< HEAD
-=======
 
 # Create a scriptPubKey corresponding to either a P2WPKH output for the
 # given pubkey, or a P2WSH output of a 1-of-1 multisig for the given
@@ -181,4 +170,3 @@ def send_to_witness(use_p2wsh, node, utxo, pubkey, encode_p2sh, amount, sign=Tru
             tx_to_witness = ToHex(tx)
 
     return node.sendrawtransaction(tx_to_witness)
->>>>>>> upstream/0.16

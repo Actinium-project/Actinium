@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-# Copyright (c) 2015-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2015-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Utilities for doing coverage analysis on the RPC interface.
@@ -18,11 +14,7 @@ import os
 REFERENCE_FILENAME = 'rpc_interface.txt'
 
 
-<<<<<<< HEAD
-class AuthServiceProxyWrapper(object):
-=======
 class AuthServiceProxyWrapper():
->>>>>>> upstream/0.16
     """
     An object that wraps AuthServiceProxy to record specific RPC calls.
 
@@ -39,18 +31,11 @@ class AuthServiceProxyWrapper():
         self.auth_service_proxy_instance = auth_service_proxy_instance
         self.coverage_logfile = coverage_logfile
 
-<<<<<<< HEAD
-    def __getattr__(self, *args, **kwargs):
-        return_val = self.auth_service_proxy_instance.__getattr__(
-            *args, **kwargs)
-
-=======
     def __getattr__(self, name):
         return_val = getattr(self.auth_service_proxy_instance, name)
         if not isinstance(return_val, type(self.auth_service_proxy_instance)):
             # If proxy getattr returned an unwrapped value, do the same here.
             return return_val
->>>>>>> upstream/0.16
         return AuthServiceProxyWrapper(return_val, self.coverage_logfile)
 
     def __call__(self, *args, **kwargs):
@@ -60,29 +45,16 @@ class AuthServiceProxyWrapper():
 
         """
         return_val = self.auth_service_proxy_instance.__call__(*args, **kwargs)
-<<<<<<< HEAD
-=======
         self._log_call()
         return return_val
 
     def _log_call(self):
->>>>>>> upstream/0.16
         rpc_method = self.auth_service_proxy_instance._service_name
 
         if self.coverage_logfile:
             with open(self.coverage_logfile, 'a+', encoding='utf8') as f:
                 f.write("%s\n" % rpc_method)
 
-<<<<<<< HEAD
-        return return_val
-
-    @property
-    def url(self):
-        return self.auth_service_proxy_instance.url
-
-    def __truediv__(self, relative_uri):
-        return AuthServiceProxyWrapper(self.auth_service_proxy_instance / relative_uri)
-=======
     def __truediv__(self, relative_uri):
         return AuthServiceProxyWrapper(self.auth_service_proxy_instance / relative_uri,
                                        self.coverage_logfile)
@@ -90,7 +62,6 @@ class AuthServiceProxyWrapper():
     def get_request(self, *args, **kwargs):
         self._log_call()
         return self.auth_service_proxy_instance.get_request(*args, **kwargs)
->>>>>>> upstream/0.16
 
 def get_filename(dirname, n_node):
     """
@@ -105,11 +76,7 @@ def get_filename(dirname, n_node):
 
 def write_all_rpc_commands(dirname, node):
     """
-<<<<<<< HEAD
-    Write out a list of all RPC functions available in `bitcoin-cli` for
-=======
     Write out a list of all RPC functions available in `litecoin-cli` for
->>>>>>> upstream/0.16
     coverage comparison. This will only happen once per coverage
     directory.
 

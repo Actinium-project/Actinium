@@ -48,11 +48,7 @@ def main():
 
 def bctester(testDir, input_basename, buildenv):
     """ Loads and parses the input file, runs all tests and reports results"""
-<<<<<<< HEAD
-    input_filename = testDir + "/" + input_basename
-=======
     input_filename = os.path.join(testDir, input_basename)
->>>>>>> upstream/0.16
     raw_data = open(input_filename).read()
     input_data = json.loads(raw_data)
 
@@ -81,11 +77,7 @@ def bctest(testDir, testObj, buildenv):
     are not as expected. Error is caught by bctester() and reported.
     """
     # Get the exec names and arguments
-<<<<<<< HEAD
-    execprog = buildenv["BUILDDIR"] + "/src/" + testObj['exec'] + buildenv["EXEEXT"]
-=======
     execprog = os.path.join(buildenv["BUILDDIR"], "src", testObj["exec"] + buildenv["EXEEXT"])
->>>>>>> upstream/0.16
     execargs = testObj['args']
     execrun = [execprog] + execargs
 
@@ -93,42 +85,28 @@ def bctest(testDir, testObj, buildenv):
     stdinCfg = None
     inputData = None
     if "input" in testObj:
-<<<<<<< HEAD
-        filename = testDir + "/" + testObj['input']
-=======
         filename = os.path.join(testDir, testObj["input"])
->>>>>>> upstream/0.16
         inputData = open(filename).read()
         stdinCfg = subprocess.PIPE
 
     # Read the expected output data (if there is any)
     outputFn = None
     outputData = None
-<<<<<<< HEAD
-=======
     outputType = None
->>>>>>> upstream/0.16
     if "output_cmp" in testObj:
         outputFn = testObj['output_cmp']
         outputType = os.path.splitext(outputFn)[1][1:]  # output type from file extension (determines how to compare)
         try:
-<<<<<<< HEAD
-            outputData = open(testDir + "/" + outputFn).read()
-=======
             outputData = open(os.path.join(testDir, outputFn)).read()
->>>>>>> upstream/0.16
         except:
             logging.error("Output file " + outputFn + " can not be opened")
             raise
         if not outputData:
             logging.error("Output data missing for " + outputFn)
             raise Exception
-<<<<<<< HEAD
-=======
         if not outputType:
             logging.error("Output file %s does not have a file extension" % outputFn)
             raise Exception
->>>>>>> upstream/0.16
 
     # Run the test
     proc = subprocess.Popen(execrun, stdin=stdinCfg, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)

@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-# Copyright (c) 2014-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2014-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Run regression test suite.
@@ -19,10 +15,7 @@ For a description of arguments recognized by test scripts, see
 """
 
 import argparse
-<<<<<<< HEAD
-=======
 from collections import deque
->>>>>>> upstream/0.16
 import configparser
 import datetime
 import os
@@ -62,78 +55,6 @@ TEST_EXIT_SKIPPED = 77
 BASE_SCRIPTS= [
     # Scripts that are run by the travis build process.
     # Longest test should go first, to favor running tests in parallel
-<<<<<<< HEAD
-    'wallet-hd.py',
-    'walletbackup.py',
-    # vv Tests less than 5m vv
-    'p2p-fullblocktest.py',
-    'fundrawtransaction.py',
-    'p2p-compactblocks.py',
-    'segwit.py',
-    # vv Tests less than 2m vv
-    'wallet.py',
-    'wallet-accounts.py',
-    'p2p-segwit.py',
-    'wallet-dump.py',
-    'listtransactions.py',
-    # vv Tests less than 60s vv
-    'sendheaders.py',
-    'zapwallettxes.py',
-    'importmulti.py',
-    'mempool_limit.py',
-    'merkle_blocks.py',
-    'receivedby.py',
-    'abandonconflict.py',
-    'bip68-112-113-p2p.py',
-    'rawtransactions.py',
-    'reindex.py',
-    # vv Tests less than 30s vv
-    'keypool-topup.py',
-    'zmq_test.py',
-    'bitcoin_cli.py',
-    'mempool_resurrect_test.py',
-    'txn_doublespend.py --mineblock',
-    'txn_clone.py',
-    'getchaintips.py',
-    'rest.py',
-    'mempool_spendcoinbase.py',
-    'mempool_reorg.py',
-    'mempool_persist.py',
-    'multiwallet.py',
-    'httpbasics.py',
-    'multi_rpc.py',
-    'proxy_test.py',
-    'signrawtransactions.py',
-    'disconnect_ban.py',
-    'decodescript.py',
-    'blockchain.py',
-    'disablewallet.py',
-    'net.py',
-    'keypool.py',
-    'p2p-mempool.py',
-    'prioritise_transaction.py',
-    'invalidblockrequest.py',
-    'invalidtxrequest.py',
-    'p2p-versionbits-warning.py',
-    'preciousblock.py',
-    'test_script_address2.py',
-    'importprunedfunds.py',
-    'signmessages.py',
-    'nulldummy.py',
-    'import-rescan.py',
-    'mining.py',
-    'bumpfee.py',
-    'rpcnamedargs.py',
-    'listsinceblock.py',
-    'p2p-leaktests.py',
-    'wallet-encryption.py',
-    'bipdersig-p2p.py',
-    'bip65-cltv-p2p.py',
-    'uptime.py',
-    'resendwallettransactions.py',
-    'minchainwork.py',
-    'p2p-acceptblock.py',
-=======
     'wallet_hd.py',
     'wallet_backup.py',
     # vv Tests less than 5m vv
@@ -215,37 +136,11 @@ BASE_SCRIPTS= [
     'feature_config_args.py',
     # Don't append tests at the end to avoid merge conflicts
     # Put them in a random line within the section that fits their approximate run-time
->>>>>>> upstream/0.16
 ]
 
 EXTENDED_SCRIPTS = [
     # These tests are not run by the travis build process.
     # Longest test should go first, to favor running tests in parallel
-<<<<<<< HEAD
-    'pruning.py',
-    # vv Tests less than 20m vv
-    'smartfees.py',
-    # vv Tests less than 5m vv
-    'maxuploadtarget.py',
-    'mempool_packages.py',
-    'dbcrash.py',
-    # vv Tests less than 2m vv
-    'bip68-sequence.py',
-    'getblocktemplate_longpoll.py',
-    'p2p-timeouts.py',
-    # vv Tests less than 60s vv
-    'bip9-softforks.py',
-    'p2p-feefilter.py',
-    'rpcbind_test.py',
-    # vv Tests less than 30s vv
-    'assumevalid.py',
-    'example_test.py',
-    'txn_doublespend.py',
-    'txn_clone.py --mineblock',
-    'forknotify.py',
-    'invalidateblock.py',
-    'replace-by-fee.py',
-=======
     'feature_pruning.py',
     # vv Tests less than 20m vv
     'feature_fee_estimation.py',
@@ -269,7 +164,6 @@ EXTENDED_SCRIPTS = [
     'feature_notifications.py',
     'rpc_invalidateblock.py',
     'feature_rbf.py',
->>>>>>> upstream/0.16
 ]
 
 # Place EXTENDED_SCRIPTS first since it has the 3 longest running tests
@@ -290,14 +184,9 @@ def main():
                                      epilog='''
     Help text and arguments for individual test script:''',
                                      formatter_class=argparse.RawTextHelpFormatter)
-<<<<<<< HEAD
-    parser.add_argument('--coverage', action='store_true', help='generate a basic coverage report for the RPC interface')
-    parser.add_argument('--exclude', '-x', help='specify a comma-seperated-list of scripts to exclude.')
-=======
     parser.add_argument('--combinedlogslen', '-c', type=int, default=0, help='print a combined log (of length n lines) from all test nodes and test framework to the console on failure.')
     parser.add_argument('--coverage', action='store_true', help='generate a basic coverage report for the RPC interface')
     parser.add_argument('--exclude', '-x', help='specify a comma-separated-list of scripts to exclude.')
->>>>>>> upstream/0.16
     parser.add_argument('--extended', action='store_true', help='run the extended test suite in addition to the basic tests')
     parser.add_argument('--force', '-f', action='store_true', help='run tests even on platforms where they are disabled by default (e.g. windows).')
     parser.add_argument('--help', '-h', '-?', action='store_true', help='print help text and exit')
@@ -339,11 +228,7 @@ def main():
         sys.exit(0)
 
     if not (enable_wallet and enable_utils and enable_bitcoind):
-<<<<<<< HEAD
-        print("No functional tests to run. Wallet, utils, and Actiniumd must all be enabled")
-=======
         print("No functional tests to run. Wallet, utils, and litecoind must all be enabled")
->>>>>>> upstream/0.16
         print("Rerun `configure` with -enable-wallet, -with-utils and -with-daemon and rerun make")
         sys.exit(0)
 
@@ -388,23 +273,11 @@ def main():
         sys.exit(0)
 
     check_script_list(config["environment"]["SRCDIR"])
-<<<<<<< HEAD
-=======
     check_script_prefixes()
->>>>>>> upstream/0.16
 
     if not args.keepcache:
         shutil.rmtree("%s/test/cache" % config["environment"]["BUILDDIR"], ignore_errors=True)
 
-<<<<<<< HEAD
-    run_tests(test_list, config["environment"]["SRCDIR"], config["environment"]["BUILDDIR"], config["environment"]["EXEEXT"], tmpdir, args.jobs, args.coverage, passon_args)
-
-def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_coverage=False, args=[]):
-    # Warn if bitcoind is already running (unix only)
-    try:
-        if subprocess.check_output(["pidof", "Actiniumd"]) is not None:
-            print("%sWARNING!%s There is already a Actiniumd process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
-=======
     run_tests(test_list, config["environment"]["SRCDIR"], config["environment"]["BUILDDIR"], config["environment"]["EXEEXT"], tmpdir, args.jobs, args.coverage, passon_args, args.combinedlogslen)
 
 def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_coverage=False, args=[], combined_logs_len=0):
@@ -412,7 +285,6 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
     try:
         if subprocess.check_output(["pidof", "litecoind"]) is not None:
             print("%sWARNING!%s There is already a litecoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
->>>>>>> upstream/0.16
     except (OSError, subprocess.SubprocessError):
         pass
 
@@ -422,15 +294,9 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
         print("%sWARNING!%s There is a cache directory here: %s. If tests fail unexpectedly, try deleting the cache directory." % (BOLD[1], BOLD[0], cache_dir))
 
     #Set env vars
-<<<<<<< HEAD
-    if "ACTINIUMD" not in os.environ:
-        os.environ["ACTINIUMD"] = build_dir + '/src/Actiniumd' + exeext
-        os.environ["ACTINIUMCLI"] = build_dir + '/src/Actinium-cli' + exeext
-=======
     if "LITECOIND" not in os.environ:
         os.environ["LITECOIND"] = build_dir + '/src/litecoind' + exeext
         os.environ["LITECOINCLI"] = build_dir + '/src/litecoin-cli' + exeext
->>>>>>> upstream/0.16
 
     tests_dir = src_dir + '/test/functional/'
 
@@ -446,15 +312,11 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
 
     if len(test_list) > 1 and jobs > 1:
         # Populate cache
-<<<<<<< HEAD
-        subprocess.check_output([tests_dir + 'create_cache.py'] + flags + ["--tmpdir=%s/cache" % tmpdir])
-=======
         try:
             subprocess.check_output([tests_dir + 'create_cache.py'] + flags + ["--tmpdir=%s/cache" % tmpdir])
         except subprocess.CalledProcessError as e:
             sys.stdout.buffer.write(e.output)
             raise
->>>>>>> upstream/0.16
 
     #Run Tests
     job_queue = TestHandler(jobs, tests_dir, tmpdir, test_list, flags)
@@ -464,11 +326,7 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
     max_len_name = len(max(test_list, key=len))
 
     for _ in range(len(test_list)):
-<<<<<<< HEAD
-        test_result, stdout, stderr = job_queue.get_next()
-=======
         test_result, testdir, stdout, stderr = job_queue.get_next()
->>>>>>> upstream/0.16
         test_results.append(test_result)
 
         if test_result.status == "Passed":
@@ -479,8 +337,6 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
             print("\n%s%s%s failed, Duration: %s s\n" % (BOLD[1], test_result.name, BOLD[0], test_result.time))
             print(BOLD[1] + 'stdout:\n' + BOLD[0] + stdout + '\n')
             print(BOLD[1] + 'stderr:\n' + BOLD[0] + stderr + '\n')
-<<<<<<< HEAD
-=======
             if combined_logs_len and os.path.isdir(testdir):
                 # Print the final `combinedlogslen` lines of the combined logs
                 print('{}Combine the logs and print the last {} lines ...{}'.format(BOLD[1], combined_logs_len, BOLD[0]))
@@ -489,7 +345,6 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
                 print('============\n')
                 combined_logs, _ = subprocess.Popen([os.path.join(tests_dir, 'combine_logs.py'), '-c', testdir], universal_newlines=True, stdout=subprocess.PIPE).communicate()
                 print("\n".join(deque(combined_logs.splitlines(), combined_logs_len)))
->>>>>>> upstream/0.16
 
     print_results(test_results, max_len_name, (int(time.time() - time0)))
 
@@ -527,11 +382,7 @@ def print_results(test_results, max_len_name, runtime):
 
 class TestHandler:
     """
-<<<<<<< HEAD
-    Trigger the testscrips passed in via the list.
-=======
     Trigger the test scripts passed in via the list.
->>>>>>> upstream/0.16
     """
 
     def __init__(self, num_tests_parallel, tests_dir, tmpdir, test_list=None, flags=None):
@@ -558,15 +409,6 @@ class TestHandler:
             log_stdout = tempfile.SpooledTemporaryFile(max_size=2**16)
             log_stderr = tempfile.SpooledTemporaryFile(max_size=2**16)
             test_argv = t.split()
-<<<<<<< HEAD
-            tmpdir = ["--tmpdir=%s/%s_%s" % (self.tmpdir, re.sub(".py$", "", test_argv[0]), portseed)]
-            self.jobs.append((t,
-                              time.time(),
-                              subprocess.Popen([self.tests_dir + test_argv[0]] + test_argv[1:] + self.flags + portseed_arg + tmpdir,
-                                               universal_newlines=True,
-                                               stdout=log_stdout,
-                                               stderr=log_stderr),
-=======
             testdir = "{}/{}_{}".format(self.tmpdir, re.sub(".py$", "", test_argv[0]), portseed)
             tmpdir_arg = ["--tmpdir={}".format(testdir)]
             self.jobs.append((t,
@@ -576,7 +418,6 @@ class TestHandler:
                                                stdout=log_stdout,
                                                stderr=log_stderr),
                               testdir,
->>>>>>> upstream/0.16
                               log_stdout,
                               log_stderr))
         if not self.jobs:
@@ -585,11 +426,7 @@ class TestHandler:
             # Return first proc that finishes
             time.sleep(.5)
             for j in self.jobs:
-<<<<<<< HEAD
-                (name, time0, proc, log_out, log_err) = j
-=======
                 (name, time0, proc, testdir, log_out, log_err) = j
->>>>>>> upstream/0.16
                 if os.getenv('TRAVIS') == 'true' and int(time.time() - time0) > 20 * 60:
                     # In travis, timeout individual tests after 20 minutes (to stop tests hanging and not
                     # providing useful output.
@@ -607,11 +444,7 @@ class TestHandler:
                     self.num_running -= 1
                     self.jobs.remove(j)
 
-<<<<<<< HEAD
-                    return TestResult(name, status, int(time.time() - time0)), stdout, stderr
-=======
                     return TestResult(name, status, int(time.time() - time0)), testdir, stdout, stderr
->>>>>>> upstream/0.16
             print('.', end='', flush=True)
 
 class TestResult():
@@ -639,8 +472,6 @@ class TestResult():
         return self.status != "Failed"
 
 
-<<<<<<< HEAD
-=======
 def check_script_prefixes():
     """Check that at most a handful of the
        test scripts don't start with one of the allowed name prefixes."""
@@ -659,7 +490,6 @@ def check_script_prefixes():
     assert len(bad_script_names) <= LEEWAY, "Too many tests not following naming convention! (%d found, maximum: %d)" % (len(bad_script_names), LEEWAY)
 
 
->>>>>>> upstream/0.16
 def check_script_list(src_dir):
     """Check scripts directory.
 
@@ -674,22 +504,14 @@ def check_script_list(src_dir):
             # On travis this warning is an error to prevent merging incomplete commits into master
             sys.exit(1)
 
-<<<<<<< HEAD
-class RPCCoverage(object):
-=======
 class RPCCoverage():
->>>>>>> upstream/0.16
     """
     Coverage reporting utilities for test_runner.
 
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-<<<<<<< HEAD
-    commands per `actinium-cli help` (`rpc_interface.txt`).
-=======
     commands per `litecoin-cli help` (`rpc_interface.txt`).
->>>>>>> upstream/0.16
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.

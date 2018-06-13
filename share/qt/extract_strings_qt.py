@@ -1,9 +1,5 @@
 #!/usr/bin/env python
-<<<<<<< HEAD
-# Copyright (c) 2012-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2012-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
@@ -62,11 +58,7 @@ XGETTEXT=os.getenv('XGETTEXT', 'xgettext')
 if not XGETTEXT:
     print('Cannot extract strings: xgettext utility is not installed or not configured.',file=sys.stderr)
     print('Please install package "gettext" and re-run \'./configure\'.',file=sys.stderr)
-<<<<<<< HEAD
-    exit(1)
-=======
     sys.exit(1)
->>>>>>> upstream/0.16
 child = Popen([XGETTEXT,'--output=-','-n','--keyword=_'] + files, stdout=PIPE)
 (out, err) = child.communicate()
 

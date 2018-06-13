@@ -961,7 +961,3 @@ int64_t GetStartupTime()
 {
     return nStartupTime;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/0.16
