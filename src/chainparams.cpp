@@ -101,7 +101,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 999999999999ULL;
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000001503961d4f358de");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000015fec417e8e9367");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x3f6243a04732bd9bc8b2a5af87dfe528d3fcfa457d1078bb44a4b9320f98b363"); //1300
@@ -160,7 +160,8 @@ public:
                 {30000, uint256S("0xcc690003d9b0106669639e0599e2f36afd196081f341d5c9182f6d89ab6d33c8")},
                 {35060, uint256S("0xfaa21ea9167dd878dd3789a68455ef035877edcdb96ea15133693ef75de6f4a6")},
                 {42384, uint256S("0x26f08f68ff269ae5f98fdb5e484bd9cefabdfd8f01291858909c0f57b1b2ec27")},
-                {43545, uint256S("0xb4e80c89a411a67b3598891cbe132f6518c5c7a7a47971ba6e35939644a403f3")}
+                {43545, uint256S("0xb4e80c89a411a67b3598891cbe132f6518c5c7a7a47971ba6e35939644a403f3")},
+                {43700, uint256S("0x11cf0da27f67c1cb0d81b28d238dd28ee1c06d6e5e7c7a96cc1727b9d634d814")}
             }};
 
         // Data as of block 3f6243a04732bd9bc8b2a5af87dfe528d3fcfa457d1078bb44a4b9320f98b363 (height 1300).
