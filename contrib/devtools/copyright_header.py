@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-# Copyright (c) 2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2016-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -28,15 +24,10 @@ EXCLUDE = [
     'src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h',
     'src/secp256k1/src/java/org_bitcoin_Secp256k1Context.c',
     'src/secp256k1/src/java/org_bitcoin_Secp256k1Context.h',
-<<<<<<< HEAD
-    # auto generated:
-    'src/univalue/lib/univalue_escapes.h',
-=======
     # univalue:
     'src/univalue/test/object.cpp',
     'src/univalue/lib/univalue_escapes.h',
     # auto generated:
->>>>>>> upstream/0.16
     'src/qt/bitcoinstrings.cpp',
     'src/chainparamsseeds.h',
     # other external copyrights:

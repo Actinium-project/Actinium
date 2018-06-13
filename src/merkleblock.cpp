@@ -1,43 +1,4 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-<<<<<<< HEAD
-// Copyright (c) 2009-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "merkleblock.h"
-
-#include "hash.h"
-#include "consensus/consensus.h"
-#include "utilstrencodings.h"
-
-CMerkleBlock::CMerkleBlock(const CBlock& block, CBloomFilter& filter)
-{
-    header = block.GetBlockHeader();
-
-    std::vector<bool> vMatch;
-    std::vector<uint256> vHashes;
-
-    vMatch.reserve(block.vtx.size());
-    vHashes.reserve(block.vtx.size());
-
-    for (unsigned int i = 0; i < block.vtx.size(); i++)
-    {
-        const uint256& hash = block.vtx[i]->GetHash();
-        if (filter.IsRelevantAndUpdate(*block.vtx[i]))
-        {
-            vMatch.push_back(true);
-            vMatchedTxn.push_back(std::make_pair(i, hash));
-        }
-        else
-            vMatch.push_back(false);
-        vHashes.push_back(hash);
-    }
-
-    txn = CPartialMerkleTree(vHashes, vMatch);
-}
-
-CMerkleBlock::CMerkleBlock(const CBlock& block, const std::set<uint256>& txids)
-=======
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -50,7 +11,6 @@ CMerkleBlock::CMerkleBlock(const CBlock& block, const std::set<uint256>& txids)
 
 
 CMerkleBlock::CMerkleBlock(const CBlock& block, CBloomFilter* filter, const std::set<uint256>* txids)
->>>>>>> upstream/0.16
 {
     header = block.GetBlockHeader();
 
@@ -63,12 +23,6 @@ CMerkleBlock::CMerkleBlock(const CBlock& block, CBloomFilter* filter, const std:
     for (unsigned int i = 0; i < block.vtx.size(); i++)
     {
         const uint256& hash = block.vtx[i]->GetHash();
-<<<<<<< HEAD
-        if (txids.count(hash))
-            vMatch.push_back(true);
-        else
-            vMatch.push_back(false);
-=======
         if (txids && txids->count(hash)) {
             vMatch.push_back(true);
         } else if (filter && filter->IsRelevantAndUpdate(*block.vtx[i])) {
@@ -77,7 +31,6 @@ CMerkleBlock::CMerkleBlock(const CBlock& block, CBloomFilter* filter, const std:
         } else {
             vMatch.push_back(false);
         }
->>>>>>> upstream/0.16
         vHashes.push_back(hash);
     }
 

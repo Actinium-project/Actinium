@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-[Unit]
-Description=Bitcoin's distributed currency daemon
-After=network.target
-
-[Service]
-User=bitcoin
-Group=bitcoin
-
-Type=forking
-PIDFile=/var/lib/bitcoind/bitcoind.pid
-ExecStart=/usr/bin/bitcoind -daemon -pid=/var/lib/bitcoind/bitcoind.pid \
--conf=/etc/bitcoin/bitcoin.conf -datadir=/var/lib/bitcoind -disablewallet
-
-Restart=always
-PrivateTmp=true
-TimeoutStopSec=60s
-TimeoutStartSec=2s
-StartLimitInterval=120s
-StartLimitBurst=5
-=======
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
@@ -41,7 +20,6 @@ Type=forking
 PIDFile=/run/bitcoind/bitcoind.pid
 Restart=on-failure
 PrivateTmp=true
->>>>>>> upstream/0.16
 
 [Install]
 WantedBy=multi-user.target

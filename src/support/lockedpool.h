@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// Copyright (c) 2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2016-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -54,12 +50,9 @@ public:
     Arena(void *base, size_t size, size_t alignment);
     virtual ~Arena();
 
-<<<<<<< HEAD
-=======
     Arena(const Arena& other) = delete; // non construction-copyable
     Arena& operator=(const Arena&) = delete; // non copyable
 
->>>>>>> upstream/0.16
     /** Memory statistics. */
     struct Stats
     {
@@ -95,12 +88,6 @@ public:
      */
     bool addressInArena(void *ptr) const { return ptr >= base && ptr < end; }
 private:
-<<<<<<< HEAD
-    Arena(const Arena& other) = delete; // non construction-copyable
-    Arena& operator=(const Arena&) = delete; // non copyable
-
-=======
->>>>>>> upstream/0.16
     /** Map of chunk address to chunk information. This class makes use of the
      * sorted order to merge previous and next chunks during deallocation.
      */
@@ -163,18 +150,12 @@ public:
      * If this callback is provided and returns false, the allocation fails (hard fail), if
      * it returns true the allocation proceeds, but it could warn.
      */
-<<<<<<< HEAD
-    LockedPool(std::unique_ptr<LockedPageAllocator> allocator, LockingFailed_Callback lf_cb_in = 0);
-    ~LockedPool();
-
-=======
     explicit LockedPool(std::unique_ptr<LockedPageAllocator> allocator, LockingFailed_Callback lf_cb_in = nullptr);
     ~LockedPool();
 
     LockedPool(const LockedPool& other) = delete; // non construction-copyable
     LockedPool& operator=(const LockedPool&) = delete; // non copyable
 
->>>>>>> upstream/0.16
     /** Allocate size bytes from this arena.
      * Returns pointer on success, or 0 if memory is full or
      * the application tried to allocate 0 bytes.
@@ -190,12 +171,6 @@ public:
     /** Get pool usage statistics */
     Stats stats() const;
 private:
-<<<<<<< HEAD
-    LockedPool(const LockedPool& other) = delete; // non construction-copyable
-    LockedPool& operator=(const LockedPool&) = delete; // non copyable
-
-=======
->>>>>>> upstream/0.16
     std::unique_ptr<LockedPageAllocator> allocator;
 
     /** Create an arena from locked pages */
@@ -242,11 +217,7 @@ public:
     }
 
 private:
-<<<<<<< HEAD
-    LockedPoolManager(std::unique_ptr<LockedPageAllocator> allocator);
-=======
     explicit LockedPoolManager(std::unique_ptr<LockedPageAllocator> allocator);
->>>>>>> upstream/0.16
 
     /** Create a new LockedPoolManager specialized to the OS */
     static void CreateInstance();

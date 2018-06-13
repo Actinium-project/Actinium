@@ -43,19 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-<<<<<<< HEAD
-        <translation>Изберете адрес, на който да се изпращат монети</translation>
-    </message>
-    <message>
-        <source>Choose the address to receive coins with</source>
-        <translation>Изберете адрес, на който ще получавате монети</translation>
-=======
         <translation>Изберете адрес, на който ще изпращате монети</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
         <translation>Изберете адрес за получаване на монети</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -67,17 +59,6 @@
     </message>
     <message>
         <source>Receiving addresses</source>
-<<<<<<< HEAD
-        <translation>Адреси за получаване</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите Actinium адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
-=======
         <translation>Получаване на адреси</translation>
     </message>
     <message>
@@ -87,7 +68,6 @@
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Това са Вашите Litecoin адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -188,11 +168,7 @@
         <translation>Потвърдете на шифрирането на портфейла</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
->>>>>>> upstream/0.16
         <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ БИТКОИНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -347,22 +323,14 @@
     </message>
     <message>
         <source>Click to enable network activity again.</source>
-<<<<<<< HEAD
-        <translation>Натиснете за повторно активиране на мрежата</translation>
-=======
         <translation>Натиснете за повторно активиране на мрежата.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-=======
         <source>Send coins to a Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -386,11 +354,7 @@
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-=======
         <source>Litecoin</source>
->>>>>>> upstream/0.16
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -418,21 +382,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Actinium адрес за да докажете,че е ваш.</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Actinium адреси.</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Пишете съобщения със своя Litecoin адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Litecoin адреси.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -451,13 +406,8 @@
         <translation>Раздели</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и Actinium: URIs)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Изискване на плащания(генерира QR кодове и Litecoin: URIs)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -468,13 +418,8 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Отворете Actinium: URI  или заявка за плащане</translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>Отворете Litecoin: URI  или заявка за плащане</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -517,13 +462,8 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Actinium команди</translation>
-=======
         <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
         <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Litecoin команди</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 client</source>
@@ -583,15 +523,11 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;заключен&lt;/b&gt;</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
         <translation>Възникна фатална грешка. Litecoin не може да продължи безопасно и ще се изключи.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -774,11 +710,7 @@
         <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The entered address "%1" is not a valid Actinium address.</source>
-=======
         <source>The entered address "%1" is not a valid Litecoin address.</source>
->>>>>>> upstream/0.16
         <translation>"%1" не е валиден Биткоин адрес.</translation>
     </message>
     <message>
@@ -895,8 +827,6 @@
         <translation>Използване на директория ръчно</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Биткоин</translation>
     </message>
@@ -909,7 +839,6 @@
         <translation>Около %1 GB данни ще бъдат запаметени в тази директория.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Грешка</translation>
     </message>
@@ -971,28 +900,10 @@
         <translation>Брой на скриптове и &amp;нишки за потвърждение</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Приемай връзки отвън</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Позволи входящите връзки</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>IP адрес на прокси (напр. за IPv4: 127.0.0.1 / за IPv6: ::1)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Third party transaction URLs</source>
-        <translation>URL адреси на трети страни</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>Възстановете всички настройки по подразбиране.</translation>
     </message>
@@ -1021,26 +932,16 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Actinium порт. Работи само с рутери поддържащи UPnP.</translation>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Автоматично отваряне на входящия Litecoin порт. Работи само с рутери поддържащи UPnP.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Actinium мрежата чрез SOCKS5  прокси.</translation>
-=======
         <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
         <translation>Свързване с Litecoin мрежата чрез SOCKS5  прокси.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1119,13 +1020,10 @@
         <translation>Изисква се рестартиране на клиента за активиране на извършените промени.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error</source>
         <translation>Грешка</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Тази промяна изисква рестартиране на клиента Ви.</translation>
     </message>
@@ -1141,11 +1039,7 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
->>>>>>> upstream/0.16
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1200,13 +1094,8 @@
         <translation>Възникна грешка по време назаявката за плащане</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot start Actinium: click-to-pay handler</source>
-        <translation>Actinium не можe да се стартира: click-to-pay handler</translation>
-=======
         <source>Cannot start litecoin: click-to-pay handler</source>
         <translation>Litecoin не можe да се стартира: click-to-pay handler</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>URI handling</source>
@@ -1271,9 +1160,6 @@
         <source>User Agent</source>
         <translation>Клиент на потребителя</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Sent</source>
         <translation>Изпратени</translation>
@@ -1283,7 +1169,6 @@
         <translation>Получени</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -1291,13 +1176,8 @@
         <translation>Сума</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter a Actinium address (e.g. %1)</source>
-        <translation>Въведете Actinium адрес (например: %1)</translation>
-=======
         <source>Enter a Litecoin address (e.g. %1)</source>
         <translation>Въведете Litecoin адрес (например: %1)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 d</source>
@@ -1331,11 +1211,6 @@
         <source>%1 and %2</source>
         <translation>%1 и %2</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>QObject::QObject</name>
-=======
     <message>
         <source>%1 B</source>
         <translation>%1 Байт</translation>
@@ -1363,7 +1238,6 @@
         <source>Error: Specified data directory "%1" does not exist.</source>
         <translation>Грешка:Избраната "%1" директория не съществува.</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -1495,13 +1369,6 @@
         <translation>&amp;Мрежов Трафик</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>&amp;Изчисти</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Общо:</translation>
     </message>
@@ -1522,33 +1389,6 @@
         <translation>Изчисти конзолата</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Използвайте стрелки надолу и нагореза разглеждане на историятаот команди и &lt;b&gt;Ctrl-L&lt;/b&gt; за изчистване на конзолата.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Въведeте &lt;/b&gt;помощ&lt;/b&gt; за да видите наличните команди.</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 Байт</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 Килобайт</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 Мегабайт</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 Гигабайт</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>via %1</source>
         <translation>посредством %1</translation>
     </message>
@@ -1769,13 +1609,6 @@
         <translation>Скрий</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>total at least</source>
-        <translation>Крайна сума поне</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Recommended:</source>
         <translation>Препоръчителна:</translation>
     </message>
@@ -1784,17 +1617,6 @@
         <translation>По избор:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>нормален</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>бърз</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Изпращане към повече от един получател</translation>
     </message>
@@ -1891,13 +1713,8 @@
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: Invalid Actinium address</source>
-        <translation>Внимание: Невалиден Actinium адрес</translation>
-=======
         <source>Warning: Invalid Litecoin address</source>
         <translation>Внимание: Невалиден Litecoin адрес</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2016,11 +1833,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -2036,11 +1849,7 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verify the message to ensure it was signed with the specified Actinium address</source>
-=======
         <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>
@@ -2402,13 +2211,6 @@
         <translation>Други</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter address or label to search</source>
-        <translation>Търсене по адрес или име</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Min amount</source>
         <translation>Минимална сума</translation>
     </message>
@@ -2509,11 +2311,7 @@
         <source>Send Coins</source>
         <translation>Изпращане</translation>
     </message>
-<<<<<<< HEAD
-</context>
-=======
     </context>
->>>>>>> upstream/0.16
 <context>
     <name>WalletView</name>
     <message>
@@ -2568,26 +2366,18 @@
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium ядро</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin ядро</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; може да бъде:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Приемайте връзки отвън.(по подразбиране:1 в противен случай -proxy или -connect)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Connection options:</source>
         <translation>Настройки на връзката:</translation>
     </message>
@@ -2616,13 +2406,6 @@
         <translation>Проверка на блоковете...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>Проверка на портфейла...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Wallet options:</source>
         <translation>Настройки на портфейла:</translation>
     </message>
@@ -2663,17 +2446,6 @@
         <translation>Парола за  JSON-RPC връзките</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Зареждане на адреси...</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Невалиден -proxy address: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Specify configuration file (default: %s)</source>
         <translation>Назовете конфигурационен файл(по подразбиране %s)</translation>
     </message>
@@ -2686,8 +2458,6 @@
         <translation>Задайте pid  файл(по подразбиране: %s)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Starting network threads...</source>
         <translation>Стартиране на мрежовите нишки...</translation>
     </message>
@@ -2712,7 +2482,6 @@
         <translation>Транзакцията трябва да има поне един получател.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Insufficient funds</source>
         <translation>Недостатъчно средства</translation>
     </message>
@@ -2725,13 +2494,10 @@
         <translation>Зареждане на портфейла...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Cannot downgrade wallet</source>
         <translation>Портфейлът не може да се понижи.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Преразглеждане на последовтелността от блокове...</translation>
     </message>

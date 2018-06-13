@@ -4,13 +4,8 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
-<<<<<<< HEAD
-#ifndef _SECP256K1_TESTRAND_H_
-#define _SECP256K1_TESTRAND_H_
-=======
 #ifndef SECP256K1_TESTRAND_H
 #define SECP256K1_TESTRAND_H
->>>>>>> upstream/0.16
 
 #if defined HAVE_CONFIG_H
 #include "libsecp256k1-config.h"
@@ -40,8 +35,4 @@ static void secp256k1_rand256_test(unsigned char *b32);
 /** Generate pseudorandom bytes with long sequences of zero and one bits. */
 static void secp256k1_rand_bytes_test(unsigned char *bytes, size_t len);
 
-<<<<<<< HEAD
-#endif
-=======
 #endif /* SECP256K1_TESTRAND_H */
->>>>>>> upstream/0.16

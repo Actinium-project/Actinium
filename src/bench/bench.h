@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// Copyright (c) 2015-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2015-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,11 +9,8 @@
 #include <limits>
 #include <map>
 #include <string>
-<<<<<<< HEAD
-=======
 #include <vector>
 #include <chrono>
->>>>>>> upstream/0.16
 
 #include <boost/preprocessor/cat.hpp>
 #include <boost/preprocessor/stringize.hpp>
@@ -40,54 +33,6 @@ static void CODE_TO_TIME(benchmark::State& state)
     ... do any cleanup needed...
 }
 
-<<<<<<< HEAD
-BENCHMARK(CODE_TO_TIME);
-
- */
- 
-namespace benchmark {
-
-    class State {
-        std::string name;
-        double maxElapsed;
-        double beginTime;
-        double lastTime, minTime, maxTime, countMaskInv;
-        uint64_t count;
-        uint64_t countMask;
-        uint64_t beginCycles;
-        uint64_t lastCycles;
-        uint64_t minCycles;
-        uint64_t maxCycles;
-    public:
-        State(std::string _name, double _maxElapsed) : name(_name), maxElapsed(_maxElapsed), count(0) {
-            minTime = std::numeric_limits<double>::max();
-            maxTime = std::numeric_limits<double>::min();
-            minCycles = std::numeric_limits<uint64_t>::max();
-            maxCycles = std::numeric_limits<uint64_t>::min();
-            countMask = 1;
-            countMaskInv = 1./(countMask + 1);
-        }
-        bool KeepRunning();
-    };
-
-    typedef std::function<void(State&)> BenchFunction;
-
-    class BenchRunner
-    {
-        typedef std::map<std::string, BenchFunction> BenchmarkMap;
-        static BenchmarkMap &benchmarks();
-
-    public:
-        BenchRunner(std::string name, BenchFunction func);
-
-        static void RunAll(double elapsedTimeForOne=1.0);
-    };
-}
-
-// BENCHMARK(foo) expands to:  benchmark::BenchRunner bench_11foo("foo", foo);
-#define BENCHMARK(n) \
-    benchmark::BenchRunner BOOST_PP_CAT(bench_, BOOST_PP_CAT(__LINE__, n))(BOOST_PP_STRINGIZE(n), n);
-=======
 // default to running benchmark for 5000 iterations
 BENCHMARK(CODE_TO_TIME, 5000);
 
@@ -193,6 +138,5 @@ private:
 // the same time, and scaling factor can be used that the total time is appropriate for your system.
 #define BENCHMARK(n, num_iters_for_one_second) \
     benchmark::BenchRunner BOOST_PP_CAT(bench_, BOOST_PP_CAT(__LINE__, n))(BOOST_PP_STRINGIZE(n), n, (num_iters_for_one_second));
->>>>>>> upstream/0.16
 
 #endif // BITCOIN_BENCH_BENCH_H

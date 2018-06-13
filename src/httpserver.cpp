@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2015-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "httpserver.h"
-
-#include "chainparamsbase.h"
-#include "compat.h"
-#include "util.h"
-#include "utilstrencodings.h"
-#include "netbase.h"
-#include "rpc/protocol.h" // For HTTP status codes
-#include "sync.h"
-#include "ui_interface.h"
-=======
 // Copyright (c) 2015-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -28,7 +12,6 @@
 #include <rpc/protocol.h> // For HTTP status codes
 #include <sync.h>
 #include <ui_interface.h>
->>>>>>> upstream/0.16
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -45,11 +28,7 @@
 #include <event2/util.h>
 #include <event2/keyvalq_struct.h>
 
-<<<<<<< HEAD
-#include "support/events.h"
-=======
 #include <support/events.h>
->>>>>>> upstream/0.16
 
 #ifdef EVENT__HAVE_NETINET_IN_H
 #include <netinet/in.h>
@@ -62,11 +41,7 @@
 static const size_t MAX_HEADERS_SIZE = 8192;
 
 /** HTTP request work item */
-<<<<<<< HEAD
-class HTTPWorkItem : public HTTPClosure
-=======
 class HTTPWorkItem final : public HTTPClosure
->>>>>>> upstream/0.16
 {
 public:
     HTTPWorkItem(std::unique_ptr<HTTPRequest> _req, const std::string &_path, const HTTPRequestHandler& _func):
@@ -98,36 +73,6 @@ private:
     std::deque<std::unique_ptr<WorkItem>> queue;
     bool running;
     size_t maxDepth;
-<<<<<<< HEAD
-    int numThreads;
-
-    /** RAII object to keep track of number of running worker threads */
-    class ThreadCounter
-    {
-    public:
-        WorkQueue &wq;
-        ThreadCounter(WorkQueue &w): wq(w)
-        {
-            std::lock_guard<std::mutex> lock(wq.cs);
-            wq.numThreads += 1;
-        }
-        ~ThreadCounter()
-        {
-            std::lock_guard<std::mutex> lock(wq.cs);
-            wq.numThreads -= 1;
-            wq.cond.notify_all();
-        }
-    };
-
-public:
-    WorkQueue(size_t _maxDepth) : running(true),
-                                 maxDepth(_maxDepth),
-                                 numThreads(0)
-    {
-    }
-    /** Precondition: worker threads have all stopped
-     * (call WaitExit)
-=======
 
 public:
     explicit WorkQueue(size_t _maxDepth) : running(true),
@@ -135,7 +80,6 @@ public:
     {
     }
     /** Precondition: worker threads have all stopped (they have been joined).
->>>>>>> upstream/0.16
      */
     ~WorkQueue()
     {
@@ -154,10 +98,6 @@ public:
     /** Thread function */
     void Run()
     {
-<<<<<<< HEAD
-        ThreadCounter count(*this);
-=======
->>>>>>> upstream/0.16
         while (true) {
             std::unique_ptr<WorkItem> i;
             {
@@ -179,16 +119,6 @@ public:
         running = false;
         cond.notify_all();
     }
-<<<<<<< HEAD
-    /** Wait for worker threads to exit */
-    void WaitExit()
-    {
-        std::unique_lock<std::mutex> lock(cs);
-        while (numThreads > 0)
-            cond.wait(lock);
-    }
-=======
->>>>>>> upstream/0.16
 };
 
 struct HTTPPathHandler
@@ -206,15 +136,6 @@ struct HTTPPathHandler
 /** HTTP module state */
 
 //! libevent event loop
-<<<<<<< HEAD
-static struct event_base* eventBase = 0;
-//! HTTP server
-struct evhttp* eventHTTP = 0;
-//! List of subnets to allow RPC connections from
-static std::vector<CSubNet> rpc_allow_subnets;
-//! Work queue for handling longer requests off the event loop thread
-static WorkQueue<HTTPClosure>* workQueue = 0;
-=======
 static struct event_base* eventBase = nullptr;
 //! HTTP server
 struct evhttp* eventHTTP = nullptr;
@@ -222,7 +143,6 @@ struct evhttp* eventHTTP = nullptr;
 static std::vector<CSubNet> rpc_allow_subnets;
 //! Work queue for handling longer requests off the event loop thread
 static WorkQueue<HTTPClosure>* workQueue = nullptr;
->>>>>>> upstream/0.16
 //! Handlers for (sub)paths
 std::vector<HTTPPathHandler> pathHandlers;
 //! Bound listening sockets
@@ -360,11 +280,7 @@ static void http_reject_request_cb(struct evhttp_request* req, void*)
 /** Event dispatcher thread */
 static bool ThreadHTTP(struct event_base* base, struct evhttp* http)
 {
-<<<<<<< HEAD
     RenameThread("actinium-http");
-=======
-    RenameThread("bitcoin-http");
->>>>>>> upstream/0.16
     LogPrint(BCLog::HTTP, "Entering http event loop\n");
     event_base_dispatch(base);
     // Event loop will be interrupted by InterruptHTTPServer()
@@ -413,11 +329,7 @@ static bool HTTPBindAddresses(struct evhttp* http)
 /** Simple wrapper to set thread name and run work queue */
 static void HTTPWorkQueueRun(WorkQueue<HTTPClosure>* queue)
 {
-<<<<<<< HEAD
     RenameThread("actinium-httpworker");
-=======
-    RenameThread("bitcoin-httpworker");
->>>>>>> upstream/0.16
     queue->Run();
 }
 
@@ -486,11 +398,7 @@ bool InitHTTPServer()
     LogPrintf("HTTP: creating work queue of depth %d\n", workQueueDepth);
 
     workQueue = new WorkQueue<HTTPClosure>(workQueueDepth);
-<<<<<<< HEAD
     // tranfer ownership to eventBase/HTTP via .release()
-=======
-    // transfer ownership to eventBase/HTTP via .release()
->>>>>>> upstream/0.16
     eventBase = base_ctr.release();
     eventHTTP = http_ctr.release();
     return true;
@@ -512,10 +420,7 @@ bool UpdateHTTPServerLogging(bool enable) {
 
 std::thread threadHTTP;
 std::future<bool> threadResult;
-<<<<<<< HEAD
-=======
 static std::vector<std::thread> g_thread_http_workers;
->>>>>>> upstream/0.16
 
 bool StartHTTPServer()
 {
@@ -527,12 +432,7 @@ bool StartHTTPServer()
     threadHTTP = std::thread(std::move(task), eventBase, eventHTTP);
 
     for (int i = 0; i < rpcThreads; i++) {
-<<<<<<< HEAD
-        std::thread rpc_worker(HTTPWorkQueueRun, workQueue);
-        rpc_worker.detach();
-=======
         g_thread_http_workers.emplace_back(HTTPWorkQueueRun, workQueue);
->>>>>>> upstream/0.16
     }
     return true;
 }
@@ -557,24 +457,17 @@ void StopHTTPServer()
     LogPrint(BCLog::HTTP, "Stopping HTTP server\n");
     if (workQueue) {
         LogPrint(BCLog::HTTP, "Waiting for HTTP worker threads to exit\n");
-<<<<<<< HEAD
-        workQueue->WaitExit();
-=======
         for (auto& thread: g_thread_http_workers) {
             thread.join();
         }
         g_thread_http_workers.clear();
->>>>>>> upstream/0.16
         delete workQueue;
         workQueue = nullptr;
     }
     if (eventBase) {
         LogPrint(BCLog::HTTP, "Waiting for HTTP event thread to exit\n");
-<<<<<<< HEAD
-=======
         // Exit the event loop as soon as there are no active events.
         event_base_loopexit(eventBase, nullptr);
->>>>>>> upstream/0.16
         // Give event loop a few seconds to exit (to send back last RPC responses), then break it
         // Before this was solved with event_base_loopexit, but that didn't work as expected in
         // at least libevent 2.0.21 and always introduced a delay. In libevent
@@ -589,19 +482,11 @@ void StopHTTPServer()
     }
     if (eventHTTP) {
         evhttp_free(eventHTTP);
-<<<<<<< HEAD
-        eventHTTP = 0;
-    }
-    if (eventBase) {
-        event_base_free(eventBase);
-        eventBase = 0;
-=======
         eventHTTP = nullptr;
     }
     if (eventBase) {
         event_base_free(eventBase);
         eventBase = nullptr;
->>>>>>> upstream/0.16
     }
     LogPrint(BCLog::HTTP, "Stopped HTTP server\n");
 }

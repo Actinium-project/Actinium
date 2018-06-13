@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2012-2015 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "scriptnum10.h"
-#include "script/script.h"
-#include "test/test_bitcoin.h"
-=======
 // Copyright (c) 2012-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -14,7 +5,6 @@
 #include <test/scriptnum10.h>
 #include <script/script.h>
 #include <test/test_bitcoin.h>
->>>>>>> upstream/0.16
 
 #include <boost/test/unit_test.hpp>
 #include <limits.h>
@@ -39,14 +29,7 @@ static void CheckCreateVch(const int64_t& num)
     CScriptNum scriptnum(num);
     BOOST_CHECK(verify(bignum, scriptnum));
 
-<<<<<<< HEAD
-    std::vector<unsigned char> vch = bignum.getvch();
-
     CScriptNum10 bignum2(bignum.getvch(), false);
-    vch = scriptnum.getvch();
-=======
-    CScriptNum10 bignum2(bignum.getvch(), false);
->>>>>>> upstream/0.16
     CScriptNum scriptnum2(scriptnum.getvch(), false);
     BOOST_CHECK(verify(bignum2, scriptnum2));
 
@@ -104,18 +87,10 @@ static void CheckSubtract(const int64_t& num1, const int64_t& num2)
     const CScriptNum10 bignum2(num2);
     const CScriptNum scriptnum1(num1);
     const CScriptNum scriptnum2(num2);
-<<<<<<< HEAD
-    bool invalid = false;
-
-    // int64_t overflow is undefined.
-    invalid = ((num2 > 0 && num1 < std::numeric_limits<int64_t>::min() + num2) ||
-               (num2 < 0 && num1 > std::numeric_limits<int64_t>::max() + num2));
-=======
 
     // int64_t overflow is undefined.
     bool invalid = ((num2 > 0 && num1 < std::numeric_limits<int64_t>::min() + num2) ||
                     (num2 < 0 && num1 > std::numeric_limits<int64_t>::max() + num2));
->>>>>>> upstream/0.16
     if (!invalid)
     {
         BOOST_CHECK(verify(bignum1 - bignum2, scriptnum1 - scriptnum2));

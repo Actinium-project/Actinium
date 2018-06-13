@@ -18,12 +18,8 @@ else
 LIBUNIVALUE = $(UNIVALUE_LIBS)
 endif
 
-<<<<<<< HEAD
 BITCOIN_CONFIG_INCLUDES=-I$(builddir)/config
 BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
-=======
-BITCOIN_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
->>>>>>> upstream/0.16
 
 BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
 BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
@@ -70,19 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-<<<<<<< HEAD
   bin_PROGRAMS += Actiniumd
 endif
 
 if BUILD_BITCOIN_UTILS
   bin_PROGRAMS += Actinium-cli Actinium-tx
-=======
-  bin_PROGRAMS += litecoind
-endif
-
-if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += litecoin-cli litecoin-tx
->>>>>>> upstream/0.16
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -146,10 +134,7 @@ BITCOIN_CORE_H = \
   rpc/safemode.h \
   rpc/server.h \
   rpc/register.h \
-<<<<<<< HEAD
-=======
   rpc/util.h \
->>>>>>> upstream/0.16
   scheduler.h \
   script/sigcache.h \
   script/sign.h \
@@ -271,11 +256,7 @@ libbitcoin_wallet_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
-<<<<<<< HEAD
 crypto_libbitcoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_CONFIG_INCLUDES) $(SSL_CFLAGS)
-=======
-crypto_libbitcoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(SSL_CFLAGS)
->>>>>>> upstream/0.16
 crypto_libbitcoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/aes.cpp \
@@ -299,11 +280,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sha512.cpp \
   crypto/sha512.h
 
-<<<<<<< HEAD
-if EXPERIMENTAL_ASM
-=======
 if USE_ASM
->>>>>>> upstream/0.16
 crypto_libbitcoin_crypto_a_SOURCES += crypto/sha256_sse4.cpp
 endif
 
@@ -405,7 +382,6 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-<<<<<<< HEAD
 Actiniumd_SOURCES = bitcoind.cpp
 Actiniumd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 Actiniumd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -416,18 +392,6 @@ Actiniumd_SOURCES += bitcoind-res.rc
 endif
 
 Actiniumd_LDADD = \
-=======
-litecoind_SOURCES = bitcoind.cpp
-litecoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-litecoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-litecoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-
-if TARGET_WINDOWS
-litecoind_SOURCES += bitcoind-res.rc
-endif
-
-litecoind_LDADD = \
->>>>>>> upstream/0.16
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -441,7 +405,6 @@ litecoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-<<<<<<< HEAD
 Actiniumd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
@@ -455,27 +418,11 @@ Actinium_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
 Actinium_cli_LDADD = \
-=======
-litecoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
-
-# bitcoin-cli binary #
-litecoin_cli_SOURCES = bitcoin-cli.cpp
-litecoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-litecoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-litecoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-
-if TARGET_WINDOWS
-litecoin_cli_SOURCES += bitcoin-cli-res.rc
-endif
-
-litecoin_cli_LDADD = \
->>>>>>> upstream/0.16
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-<<<<<<< HEAD
 Actinium_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
@@ -490,22 +437,6 @@ Actinium_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
 Actinium_tx_LDADD = \
-=======
-litecoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
-#
-
-# bitcoin-tx binary #
-litecoin_tx_SOURCES = bitcoin-tx.cpp
-litecoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-litecoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-litecoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-
-if TARGET_WINDOWS
-litecoin_tx_SOURCES += bitcoin-tx-res.rc
-endif
-
-litecoin_tx_LDADD = \
->>>>>>> upstream/0.16
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -513,11 +444,7 @@ litecoin_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-<<<<<<< HEAD
 Actinium_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
-=======
-litecoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
->>>>>>> upstream/0.16
 #
 
 # bitcoinconsensus library #
@@ -557,12 +484,7 @@ CLEANFILES += univalue/*.gcda univalue/*.gcno
 CLEANFILES += wallet/*.gcda wallet/*.gcno
 CLEANFILES += wallet/test/*.gcda wallet/test/*.gcno
 CLEANFILES += zmq/*.gcda zmq/*.gcno
-<<<<<<< HEAD
-
-DISTCLEANFILES = obj/build.h
-=======
 CLEANFILES += obj/build.h
->>>>>>> upstream/0.16
 
 EXTRA_DIST = $(CTAES_DIST)
 
@@ -586,13 +508,10 @@ clean-local:
 	## FIXME: How to get the appropriate modulename_CPPFLAGS in here?
 	$(AM_V_GEN) $(WINDRES) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(CPPFLAGS) -DWINDRES_PREPROC -i $< -o $@
 
-<<<<<<< HEAD
 .mm.o:
 	$(AM_V_CXX) $(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	  $(CPPFLAGS) $(AM_CXXFLAGS) $(QT_INCLUDES) $(AM_CXXFLAGS) $(PIE_FLAGS) $(CXXFLAGS) -c -o $@ $<
 
-=======
->>>>>>> upstream/0.16
 check-symbols: $(bin_PROGRAMS)
 if GLIBC_BACK_COMPAT
 	@echo "Checking glibc back compat..."

@@ -62,21 +62,12 @@
         <translation>Mottager adresser</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dette er dine Actinium adresser for å sende  å sende betalinger. Husk å sjekke beløp og mottager adresser før du sender mynter.</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dette er dine Actinium adresse for å motta betalinger. Det er anbefalt å bruke en ny mottager adresse for hver transaksjon.</translation>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dette er dine Litecoin adresser for å sende  å sende betalinger. Husk å sjekke beløp og mottager adresser før du sender mynter.</translation>
     </message>
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine Litecoin adresse for å motta betalinger. Det er anbefalt å bruke en ny mottager adresse for hver transaksjon.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -177,11 +168,7 @@
         <translation>Bekreft kryptering av lommeboken</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
->>>>>>> upstream/0.16
         <translation>Advarsel: Dersom du krypterer lommeboken og mister passordsetningen vil du &lt;b&gt;MISTE ALLE DINE LITECOIN&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -193,13 +180,8 @@
         <translation>Lommeboken er kryptert</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
-        <translation>%1 vil nå lukkes for å fullføre krypteringsprosessen. Husk at å kryptere lommeboken ikke kan beskytte dine Actinium fullstendig fra å bli stjålet av skadelig programvare som har infisert datamaskinen din.</translation>
-=======
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
         <translation>%1 vil nå lukkes for å fullføre krypteringsprosessen. Husk at å kryptere lommeboken ikke kan beskytte dine litecoin fullstendig fra å bli stjålet av skadelig programvare som har infisert datamaskinen din.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -207,11 +189,7 @@
     </message>
     <message>
         <source>Wallet encryption failed</source>
-<<<<<<< HEAD
-        <translation>Lommebokkrypteringen feilet</translation>
-=======
         <translation>Kryptering av lommeboken feilet</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -309,11 +287,7 @@
     </message>
     <message>
         <source>&amp;Options...</source>
-<<<<<<< HEAD
-        <translation>&amp;Valg</translation>
-=======
         <translation>&amp;Alternativer</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Modify configuration options for %1</source>
@@ -364,13 +338,8 @@
         <translation>Reindekserer blokker på disken</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Send mynter til en Actinium adresse</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Send mynter til en Litecoin adresse</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -393,13 +362,8 @@
         <translation>&amp;Verifiser meldingen...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -426,21 +390,12 @@
         <translation>Krypter de private nøklene som tilhører lommeboken din</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Signer meldingene med Actinium adresse for å bevise at diu eier dem</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Verifiser meldinger for å sikre at de ble signert med en angitt Actinium adresse</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Signer meldingene med Litecoin adresse for å bevise at diu eier dem</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Verifiser meldinger for å sikre at de ble signert med en angitt Litecoin adresse</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -448,11 +403,7 @@
     </message>
     <message>
         <source>&amp;Settings</source>
-<<<<<<< HEAD
-        <translation>In&amp;stillinger</translation>
-=======
         <translation>Inn&amp;stillinger</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Help</source>
@@ -462,8 +413,6 @@
         <source>Tabs toolbar</source>
         <translation>Hjelpelinje for fliker</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Be om betalinger (genererer QR-koder og litecoin-URIer)</translation>
@@ -566,7 +515,6 @@
         <source>Incoming transaction</source>
         <translation>Innkommende transaksjon</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>CoinControlDialog</name>
@@ -586,8 +534,6 @@
     </context>
 <context>
     <name>Intro</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Litecoin</source>
         <translation>Litecoin</translation>
@@ -596,7 +542,6 @@
         <source>Error</source>
         <translation>Feilmelding</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>ModalOverlay</name>
@@ -606,13 +551,10 @@
     </context>
 <context>
     <name>OptionsDialog</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Error</source>
         <translation>Feilmelding</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -743,9 +685,6 @@
     </context>
 <context>
     <name>bitcoin-core</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Information</source>
         <translation>Informasjon</translation>
@@ -759,5 +698,4 @@
         <translation>Feilmelding</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 </TS>

@@ -1,24 +1,8 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-<<<<<<< HEAD
-#include "config/bitcoin-config.h"
-#endif
-
-#include "fs.h"
-#include "intro.h"
-#include "ui_intro.h"
-
-#include "guiutil.h"
-
-#include "util.h"
-=======
 #include <config/bitcoin-config.h>
 #endif
 
@@ -29,7 +13,6 @@
 #include <qt/guiutil.h>
 
 #include <util.h>
->>>>>>> upstream/0.16
 
 #include <QFileDialog>
 #include <QSettings>
@@ -60,11 +43,7 @@ class FreespaceChecker : public QObject
     Q_OBJECT
 
 public:
-<<<<<<< HEAD
-    FreespaceChecker(Intro *intro);
-=======
     explicit FreespaceChecker(Intro *intro);
->>>>>>> upstream/0.16
 
     enum Status {
         ST_OK,
@@ -81,11 +60,7 @@ private:
     Intro *intro;
 };
 
-<<<<<<< HEAD
-#include "intro.moc"
-=======
 #include <qt/intro.moc>
->>>>>>> upstream/0.16
 
 FreespaceChecker::FreespaceChecker(Intro *_intro)
 {
@@ -152,11 +127,7 @@ Intro::Intro(QWidget *parent) :
         .arg(tr(PACKAGE_NAME))
         .arg(BLOCK_CHAIN_SIZE)
         .arg(2009)
-<<<<<<< HEAD
         .arg(tr("Actinium"))
-=======
-        .arg(tr("Litecoin"))
->>>>>>> upstream/0.16
     );
     ui->lblExplanation2->setText(ui->lblExplanation2->text().arg(tr(PACKAGE_NAME)));
 
@@ -175,11 +146,7 @@ Intro::Intro(QWidget *parent) :
     }
     requiredSpace += CHAIN_STATE_SIZE;
     ui->sizeWarningLabel->setText(
-<<<<<<< HEAD
         tr("%1 will download and store a copy of the Actinium block chain.").arg(tr(PACKAGE_NAME)) + " " +
-=======
-        tr("%1 will download and store a copy of the Litecoin block chain.").arg(tr(PACKAGE_NAME)) + " " +
->>>>>>> upstream/0.16
         storageRequiresMsg.arg(requiredSpace) + " " +
         tr("The wallet will also be stored in this directory.")
     );
@@ -247,14 +214,10 @@ bool Intro::pickDataDirectory()
             }
             dataDir = intro.getDataDirectory();
             try {
-<<<<<<< HEAD
-                TryCreateDirectories(GUIUtil::qstringToBoostPath(dataDir));
-=======
                 if (TryCreateDirectories(GUIUtil::qstringToBoostPath(dataDir))) {
                     // If a new data directory has been created, make wallets subdirectory too
                     TryCreateDirectories(GUIUtil::qstringToBoostPath(dataDir) / "wallets");
                 }
->>>>>>> upstream/0.16
                 break;
             } catch (const fs::filesystem_error&) {
                 QMessageBox::critical(0, tr(PACKAGE_NAME),

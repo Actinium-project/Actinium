@@ -62,43 +62,17 @@
         <translation>Ontvangstadres</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Actinium adressen voor het versturen van betalingen. Controleer altijd het bedrag en het ontvangstadres voordat u munten verstuurd.</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Actinium adressen voor het ontvangen van betalingen. Het wordt aanbevolen om voor elke transactie een nieuw ontvangstadres te gebruiken.</translation>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dit zijn uw Litecoin adressen voor het versturen van betalingen. Controleer altijd het bedrag en het ontvangstadres voordat u munten verstuurd.</translation>
     </message>
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dit zijn uw Litecoin adressen voor het ontvangen van betalingen. Het wordt aanbevolen om voor elke transactie een nieuw ontvangstadres te gebruiken.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;Adres Kopiëren</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>AddressTableModel</name>
-    </context>
-<context>
-    <name>AskPassphraseDialog</name>
-    </context>
-<context>
-    <name>BanTableModel</name>
-    </context>
-<context>
-    <name>BitcoinGUI</name>
-    </context>
-<context>
-    <name>CoinControlDialog</name>
-=======
     <message>
         <source>Copy &amp;Label</source>
         <translation>&amp;Label Kopieren</translation>
@@ -704,7 +678,6 @@
         <source>(no label)</source>
         <translation>(geen label)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -717,8 +690,6 @@
     </context>
 <context>
     <name>Intro</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Litecoin</source>
         <translation>Litecoin</translation>
@@ -727,7 +698,6 @@
         <source>Error</source>
         <translation>Fout</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>ModalOverlay</name>
@@ -737,13 +707,10 @@
     </context>
 <context>
     <name>OptionsDialog</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -756,8 +723,6 @@
     </context>
 <context>
     <name>QObject</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Amount</source>
         <translation>Bedrag</translation>
@@ -766,7 +731,6 @@
         <source>%1 and %2</source>
         <translation>%1 en %2</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject::QObject</name>
@@ -779,18 +743,6 @@
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    </context>
-<context>
-    <name>RecentRequestsTableModel</name>
-    </context>
-<context>
-    <name>SendCoinsDialog</name>
-    </context>
-=======
     <message>
         <source>Copy label</source>
         <translation>Kopieer label</translation>
@@ -893,7 +845,6 @@
         <translation>(geen label)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     </context>
@@ -914,8 +865,6 @@
     </context>
 <context>
     <name>TransactionDesc</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Date</source>
         <translation>Datum</translation>
@@ -924,18 +873,12 @@
         <source>Amount</source>
         <translation>Bedrag</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionDescDialog</name>
     </context>
 <context>
     <name>TransactionTableModel</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>TransactionView</name>
-=======
     <message>
         <source>Date</source>
         <translation>Datum</translation>
@@ -991,7 +934,6 @@
         <source>Exporting Failed</source>
         <translation>Exporteren Mislukt</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -1015,9 +957,6 @@
     </context>
 <context>
     <name>bitcoin-core</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Information</source>
         <translation>Informatie</translation>
@@ -1031,5 +970,4 @@
         <translation>Fout</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 </TS>

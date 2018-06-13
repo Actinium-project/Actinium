@@ -1,25 +1,14 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_RPCCONSOLE_H
 #define BITCOIN_QT_RPCCONSOLE_H
 
-<<<<<<< HEAD
-#include "guiutil.h"
-#include "peertablemodel.h"
-
-#include "net.h"
-=======
 #include <qt/guiutil.h>
 #include <qt/peertablemodel.h>
 
 #include <net.h>
->>>>>>> upstream/0.16
 
 #include <QWidget>
 #include <QCompleter>
@@ -134,10 +123,6 @@ Q_SIGNALS:
     void cmdRequest(const QString &command);
 
 private:
-<<<<<<< HEAD
-    static QString FormatBytes(quint64 bytes);
-=======
->>>>>>> upstream/0.16
     void startExecutor();
     void setTrafficGraphRange(int mins);
     /** show detailed information on ui about selected node */

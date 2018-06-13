@@ -3,17 +3,6 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-<<<<<<< HEAD
-        <translation>Regs-kliek om die adres of etiket te verander</translation>
-    </message>
-    <message>
-        <source>Create a new address</source>
-        <translation>Skep 'n nuwe adres</translation>
-    </message>
-    <message>
-        <source>&amp;New</source>
-        <translation>&amp;Nuut</translation>
-=======
         <translation>Regsklik om adres of etiket te verander</translation>
     </message>
     <message>
@@ -23,7 +12,6 @@
     <message>
         <source>&amp;New</source>
         <translation>&amp;Nuwe</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -74,21 +62,12 @@
         <translation>Ontvanger adresse</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Hierdie is die adresse vanwaar u Actinium betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Hierdie is die adresse waar u Actiniums sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Hierdie is die adresse vanwaar u Litecoin betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
     </message>
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Hierdie is die adresse waar u Litecoins sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -153,13 +132,10 @@
         <translation>Herhaal nuwe wagwoord</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Show password</source>
         <translation>Wys wagwoord</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Tik die nuwe wagwoord vir u beursie.&lt;br/&gt;Gerbuik asseblief 'n wagwoord met &lt;b&gt;tien of meer lukrake karakters&lt;/b&gt;, of &lt;b&gt;agt of meer woorde&lt;/b&gt;.</translation>
     </message>
@@ -196,13 +172,8 @@
         <translation>Bevestig dat die beursie gekodifiseer is</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
-        <translation>Waarskuwing: Indien u die beursie kodifiseer en u vergeet u wagwoord &lt;b&gt;VERLOOR U AL U ACTINIUMS&lt;/b&gt;!</translation>
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
         <translation>Waarskuwing: Indien u die beursie kodifiseer en u vergeet u wagwoord &lt;b&gt;VERLOOR U AL U LITECOINS&lt;/b&gt;!</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -363,13 +334,8 @@
         <translation>Besig met herindeksering van blokke op hardeskyf...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Stuur munte na 'n Actinium adres</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Stuur munte na 'n Litecoin adres</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -388,17 +354,12 @@
         <translation>Maak ontfouting en diagnostiese konsole oop</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>&amp;Verify message...</source>
         <translation>&amp;Verifieer boodskap...</translation>
     </message>
     <message>
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -425,34 +386,22 @@
         <translation>Kodifiseer die private sleutes wat aan jou beursie gekoppel is.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Onderteken boodskappe met u Actinium adresse om u eienaarskap te bewys</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde Actinium adresse</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Onderteken boodskappe met u Litecoin adresse om u eienaarskap te bewys</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde Litecoin adresse</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
         <translation>&amp;Leër</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Settings</source>
         <translation>&amp;Verstellings</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Help</source>
         <translation>&amp;Help</translation>
     </message>
@@ -461,13 +410,8 @@
         <translation>Orebalk</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Versoek betalings (genereer QR-kodes en Actinium: URI's)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Versoek betalings (genereer QR-kodes en litecoin: URI's)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -478,17 +422,12 @@
         <translation>Vertoon die lys van gebruikte ontvangers-adresse en etikette</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Skep 'n Actinium: URI of betalingsversoek</translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>Skep 'n litecoin: URI of betalingsversoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Opdrag lyn opsies</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -527,8 +466,6 @@
         <translation>Op datum</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>%1 client</source>
         <translation>%1 kliënt</translation>
     </message>
@@ -537,7 +474,6 @@
         <translation>Koppel aan eweknieë...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Catching up...</source>
         <translation>Word op datum gebring...</translation>
     </message>
@@ -548,8 +484,6 @@
 </translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Amount: %1
 </source>
         <translation>Bedrag: %1
@@ -568,7 +502,6 @@
 </translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Address: %1
 </source>
         <translation>Adres: %1
@@ -582,12 +515,6 @@
         <source>Incoming transaction</source>
         <translation>Inkomende transaksie</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>CoinControlDialog</name>
-    <message>
-=======
     <message>
         <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
         <translation>'N fatale fout het voorgekom. Litecoin kan nie meer veilig voortgaan nie en sal nou toemaak.</translation>
@@ -604,18 +531,14 @@
         <translation>Hoeveelheid:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Bytes:</source>
         <translation>Grepe:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Amount:</source>
         <translation>Bedrag:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Fee:</source>
         <translation>Fooi:</translation>
     </message>
@@ -628,30 +551,22 @@
         <translation>Na Fooi:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Change:</source>
         <translation>Verander:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(un)select all</source>
         <translation>(de)selekteer alle</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Tree mode</source>
         <translation>Boom wyse</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>List mode</source>
         <translation>Lysmodus</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Amount</source>
         <translation>Bedrag</translation>
     </message>
@@ -664,7 +579,6 @@
         <translation>Ontvang met adres</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Date</source>
         <translation>Datum</translation>
     </message>
@@ -677,8 +591,6 @@
         <translation>Bevestig</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copy address</source>
         <translation>Kopieer adres</translation>
     </message>
@@ -731,7 +643,6 @@
         <translation>(%1 gesluit)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>yes</source>
         <translation>ja</translation>
     </message>
@@ -740,13 +651,10 @@
         <translation>nee</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
         <translation>Hierdie etiket raak rooi as enige ontvanger 'n bedrag kleiner as die huidige stof drempel ontvang.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Can vary +/- %1 satoshi(s) per input.</source>
         <translation>Kan verskil met +/- %1 satoshi(s) per invoer.</translation>
     </message>
@@ -774,8 +682,6 @@
         <translation>&amp;Etiket</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>The label associated with this address list entry</source>
         <translation>Die etiket wat verband hou met hierdie adres lys inskrywing</translation>
     </message>
@@ -784,24 +690,10 @@
         <translation>Die adres wat verband hou met hierdie adres lys inskrywing. Dit kan net verander word vir stuur adresse.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Address</source>
         <translation>&amp;Adres</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Could not unlock wallet.</source>
-        <translation>Kon beursie nie oopsluit nie.</translation>
-    </message>
-    </context>
-<context>
-    <name>FreespaceChecker</name>
-    <message>
-        <source>name</source>
-        <translation>naam</translation>
-    </message>
-    </context>
-=======
         <source>New receiving address</source>
         <translation>Nuwe ontvang adres</translation>
     </message>
@@ -857,7 +749,6 @@
         <translation>Kan hier nie data gids skep nie.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>HelpMessageDialog</name>
     <message>
@@ -865,19 +756,14 @@
         <translation>weergawe</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>(%1-bit)</source>
         <translation>(%1-stukkie)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>About %1</source>
         <translation>Ongeveer %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Command-line options</source>
         <translation>Opdrag lyn opsies</translation>
     </message>
@@ -890,13 +776,10 @@
         <translation>opdrag lyn opsies</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>UI Options:</source>
         <translation>Gebruikerkoppelvlakopsies:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Choose data directory on startup (default: %u)</source>
         <translation>Kies data gids by aanvang (standaard: %u)</translation>
     </message>
@@ -905,13 +788,10 @@
         <translation>Stel taal, byvoorbeeld "de_DE" (standaard: stelsel lokaal)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Start minimized</source>
         <translation>Begin geminimeer</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Stel SSL-wortelsertifikate vir betaling versoek (standaard: -stelsel-)</translation>
     </message>
@@ -920,7 +800,6 @@
         <translation>Wys spatskerm tydens opstart (standaard: %u)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Reset all settings changed in the GUI</source>
         <translation>Alle instellings wat in die grafiese gebruikerkoppelvlak gewysig is, terugstel</translation>
     </message>
@@ -936,8 +815,6 @@
         <translation>Welkom by %1.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Use the default data directory</source>
         <translation>Gebruik die standaard data gids</translation>
     </message>
@@ -954,7 +831,6 @@
         <translation>Die beursie sal ook in hierdie gids gestoor word.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Fout: Gespesifiseerde dataleêr "%1" kon nie geskep word nie.</translation>
     </message>
@@ -966,15 +842,6 @@
 <context>
     <name>ModalOverlay</name>
     <message>
-<<<<<<< HEAD
-        <source>Hide</source>
-        <translation>Versteek</translation>
-    </message>
-    </context>
-<context>
-    <name>OpenURIDialog</name>
-    </context>
-=======
         <source>Form</source>
         <translation>Vorm</translation>
     </message>
@@ -1038,7 +905,6 @@
         <translation>Kies betaling versoek lêer om oop te maak</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>OptionsDialog</name>
     <message>
@@ -1046,8 +912,6 @@
         <translation>Opsies</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Main</source>
         <translation>&amp;Hoof</translation>
     </message>
@@ -1064,19 +928,10 @@
         <translation>Grootte van &amp;databasis kas</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>MB</source>
         <translation>MG</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Verbindings van buite toelaat</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Inkomende verbindings toelaat</translation>
-=======
         <source>Number of script &amp;verification threads</source>
         <translation>Aantal skrip &amp;verifikasie drade</translation>
     </message>
@@ -1091,20 +946,16 @@
     <message>
         <source>Open Configuration File</source>
         <translation>Open Konfigurasie Lêer</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Reset all client options to default.</source>
         <translation>Alle kliëntopsies na verstek terugstel.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Reset Options</source>
         <translation>&amp;Herstel Opsies</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Network</source>
         <translation>&amp;Netwerk</translation>
     </message>
@@ -1121,24 +972,18 @@
         <translation>Bemagtig munt &amp;beheer funksies.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Spandeer onbevestigde kleingeld</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Port:</source>
         <translation>&amp;Poort:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Used for reaching peers via:</source>
         <translation>Word gebruik vir die bereik van eweknieë via:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1151,8 +996,6 @@
         <translation>Tor</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Window</source>
         <translation>&amp;Venster</translation>
     </message>
@@ -1177,7 +1020,6 @@
         <translation>Of om munt beheer funksies te wys of nie.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -1201,12 +1043,6 @@
         <source>Client restart required to activate changes.</source>
         <translation>Kliënt moet herbegin word om veranderinge te aktiveer.</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>OverviewPage</name>
-    <message>
-=======
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
         <translation>Kliënt sal toegemaak word. Wil u voortgaan?</translation>
@@ -1243,18 +1079,14 @@
         <translation>Kyk-net:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Available:</source>
         <translation>Beskikbaar:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Your current spendable balance</source>
         <translation>U huidige bruikbare balans</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Pending:</source>
         <translation>Hangend:</translation>
     </message>
@@ -1285,8 +1117,6 @@
     </context>
 <context>
     <name>PaymentServer</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Payment request error</source>
         <translation>Betalings versoek fout</translation>
@@ -1331,7 +1161,6 @@
         <source>Network request error</source>
         <translation>Netwerk versoek fout</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>PeerTableModel</name>
@@ -1339,12 +1168,6 @@
         <source>User Agent</source>
         <translation>Gebruikeragent</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>QObject</name>
-    <message>
-=======
     <message>
         <source>NodeId</source>
         <translation>NodusId</translation>
@@ -1369,7 +1192,6 @@
         <translation>Voer in 'n Litecoin adres (bv. %1)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1 d</source>
         <translation>%1 d</translation>
     </message>
@@ -1401,12 +1223,6 @@
         <source>%1 and %2</source>
         <translation>%1 en %2</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>QObject::QObject</name>
-    </context>
-=======
     <message>
         <source>%1 B</source>
         <translation>%1 B</translation>
@@ -1431,7 +1247,6 @@
         <translation>Fout: %1</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QRImageWidget</name>
     </context>
@@ -1446,13 +1261,10 @@
         <translation>Kliëntweergawe</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Information</source>
         <translation>&amp;Informasie</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>General</source>
         <translation>Algemeen</translation>
     </message>
@@ -1504,15 +1316,6 @@
         <source>User Agent</source>
         <translation>Gebruikeragent</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>ReceiveCoinsDialog</name>
-    </context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    <message>
-=======
     <message>
         <source>Last block time</source>
         <translation>Laaste blok tyd</translation>
@@ -1656,16 +1459,10 @@
         <translation>URI</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Address</source>
         <translation>Adres</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Label</source>
-        <translation>Merk</translation>
-    </message>
-=======
         <source>Amount</source>
         <translation>Bedrag</translation>
     </message>
@@ -1677,7 +1474,6 @@
         <source>Message</source>
         <translation>Boodskap</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -1690,15 +1486,6 @@
         <translation>Merk</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>(no label)</source>
-        <translation>(geen etiket)</translation>
-    </message>
-    </context>
-<context>
-    <name>SendCoinsDialog</name>
-    <message>
-=======
         <source>Message</source>
         <translation>Boodskap</translation>
     </message>
@@ -1746,18 +1533,14 @@
         <translation>Hoeveelheid:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Bytes:</source>
         <translation>Grepe:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Amount:</source>
         <translation>Bedrag:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Fee:</source>
         <translation>Fooi:</translation>
     </message>
@@ -1766,13 +1549,10 @@
         <translation>Na Fooi:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Change:</source>
         <translation>Verander:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Transaction Fee:</source>
         <translation>Transaksiefooi:</translation>
     </message>
@@ -1789,10 +1569,6 @@
         <translation>Versteek</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>total at least</source>
-        <translation>totaal ten minste</translation>
-=======
         <source>Recommended:</source>
         <translation>Aanbeveel:</translation>
     </message>
@@ -1803,26 +1579,20 @@
     <message>
         <source>Add &amp;Recipient</source>
         <translation>Voeg by &amp;Ontvanger</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Dust:</source>
         <translation>Stof:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Clear &amp;All</source>
         <translation>Maak skoon &amp;Alles</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Balance:</source>
         <translation>Balans:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>S&amp;end</source>
         <translation>S&amp;tuur</translation>
     </message>
@@ -1867,19 +1637,12 @@
         <translation>Betalings versoek verstryk.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(geen etiket)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>SendConfirmationDialog</name>
-    </context>
-=======
     <message>
         <source>A&amp;mount:</source>
         <translation>B&amp;edrag:</translation>
@@ -1908,15 +1671,11 @@
         <translation>Ja</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>ShutdownWindow</name>
     </context>
 <context>
     <name>SignVerifyMessageDialog</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Teken Boodskap</translation>
@@ -1950,29 +1709,22 @@
         <translation>Boodskap geverifieer.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SplashScreen</name>
     </context>
 <context>
     <name>TrafficGraphWidget</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>KB/s</source>
         <translation>KB/s</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>TransactionDesc</name>
     <message>
         <source>Date</source>
         <translation>Datum</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>own address</source>
         <translation>eie adres</translation>
@@ -2033,7 +1785,6 @@
         <source>Amount</source>
         <translation>Bedrag</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionDescDialog</name>
@@ -2045,19 +1796,14 @@
         <translation>Datum</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Type</source>
         <translation>Tipe</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Merk</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Mined</source>
         <translation>Gemyn</translation>
     </message>
@@ -2066,7 +1812,6 @@
         <translation>kyk-net</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(geen etiket)</translation>
     </message>
@@ -2074,8 +1819,6 @@
 <context>
     <name>TransactionView</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>All</source>
         <translation>Alles</translation>
     </message>
@@ -2104,7 +1847,6 @@
         <translation>Kopieer transaksie ID</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Comma separated file (*.csv)</source>
         <translation>Comma separated file (*.csv)</translation>
     </message>
@@ -2117,13 +1859,10 @@
         <translation>Datum</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Type</source>
         <translation>Tipe</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Merk</translation>
     </message>
@@ -2132,12 +1871,6 @@
         <translation>Adres</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Exporting Failed</source>
-        <translation>Uitvoer was onsuksesvol</translation>
-    </message>
-    </context>
-=======
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2150,7 +1883,6 @@
         <translation>na</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>UnitDisplayStatusBarControl</name>
     </context>
@@ -2159,8 +1891,6 @@
     </context>
 <context>
     <name>WalletModel</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Send Coins</source>
         <translation>Stuur Munte</translation>
@@ -2169,7 +1899,6 @@
         <source>New fee:</source>
         <translation>Nuwe fooi:</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>WalletView</name>
@@ -2185,10 +1914,6 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Kern</translation>
-=======
         <source>Options:</source>
         <translation>Opsies:</translation>
     </message>
@@ -2215,15 +1940,12 @@
     <message>
         <source>(default: %u)</source>
         <translation>(standaard: %u)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Information</source>
         <translation>Inligting</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Node relay options:</source>
         <translation>Node aflos opsies:</translation>
     </message>
@@ -2252,7 +1974,6 @@
         <translation>Besig met verifieer van beursie(s)...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>Waarskuwing</translation>
     </message>
@@ -2261,8 +1982,6 @@
         <translation>Moenie transaksies vir langer as &lt;n&gt; ure in die geheuepoel hou nie (verstek: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>%s is set very high!</source>
         <translation>%s is baie hoog gestel!</translation>
     </message>
@@ -2343,7 +2062,6 @@
         <translation>Onbekend netwerk gespesifiseer in -onlynet: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Insufficient funds</source>
         <translation>Onvoldoende fondse</translation>
     </message>
@@ -2356,23 +2074,16 @@
         <translation>Beursie word gelaai...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Cannot downgrade wallet</source>
         <translation>Kan nie beursie afgradeer nie</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Word herskandeer...</translation>
     </message>
     <message>
         <source>Done loading</source>
-<<<<<<< HEAD
-        <translation>Klaar met laai</translation>
-=======
         <translation>Klaar gelaai</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error</source>

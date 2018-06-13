@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2012-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "bloom.h"
-
-#include "primitives/transaction.h"
-#include "hash.h"
-#include "script/script.h"
-#include "script/standard.h"
-#include "random.h"
-#include "streams.h"
-=======
 // Copyright (c) 2012-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -24,7 +10,6 @@
 #include <script/standard.h>
 #include <random.h>
 #include <streams.h>
->>>>>>> upstream/0.16
 
 #include <math.h>
 #include <stdlib.h>

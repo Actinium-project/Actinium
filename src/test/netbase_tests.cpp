@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2012-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "netbase.h"
-#include "test/test_bitcoin.h"
-#include "utilstrencodings.h"
-=======
 // Copyright (c) 2012-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -14,7 +5,6 @@
 #include <netbase.h>
 #include <test/test_bitcoin.h>
 #include <utilstrencodings.h>
->>>>>>> upstream/0.16
 
 #include <string>
 
@@ -77,11 +67,7 @@ BOOST_AUTO_TEST_CASE(netbase_properties)
     BOOST_CHECK(ResolveIP("8.8.8.8").IsRoutable());
     BOOST_CHECK(ResolveIP("2001::1").IsRoutable());
     BOOST_CHECK(ResolveIP("127.0.0.1").IsValid());
-<<<<<<< HEAD
-    BOOST_CHECK(CreateInternal("FD6B:88C0:8724:edb1:8e4:3588:e546:35ca").IsInternal());
-=======
     BOOST_CHECK(CreateInternal("FD6C:E9FE:4549:edb1:8e4:3588:e546:35ca").IsInternal());
->>>>>>> upstream/0.16
     BOOST_CHECK(CreateInternal("bar.com").IsInternal());
 
 }
@@ -130,15 +116,9 @@ BOOST_AUTO_TEST_CASE(netbase_lookupnumeric)
     BOOST_CHECK(TestParse(":::", "[::]:0"));
 
     // verify that an internal address fails to resolve
-<<<<<<< HEAD
-    BOOST_CHECK(TestParse("[fd6b:88c0:8724:1:2:3:4:5]", "[::]:0"));
-    // and that a one-off resolves correctly
-    BOOST_CHECK(TestParse("[fd6c:88c0:8724:1:2:3:4:5]", "[fd6c:88c0:8724:1:2:3:4:5]:65535"));
-=======
     BOOST_CHECK(TestParse("[fd6c:e9fe:4549:1:2:3:4:5]", "[::]:0"));
     // and that a one-off resolves correctly
     BOOST_CHECK(TestParse("[fd6d:e9fe:4549:1:2:3:4:5]", "[fd6d:e9fe:4549:1:2:3:4:5]:65535"));
->>>>>>> upstream/0.16
 }
 
 BOOST_AUTO_TEST_CASE(onioncat_test)

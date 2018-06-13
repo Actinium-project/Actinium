@@ -62,21 +62,12 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones Actinium para enviar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar actiniums.</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones Actinium para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción</translation>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Estas son sus direcciones Litecoin para enviar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar litecoins.</translation>
     </message>
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Estas son sus direcciones Litecoin para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -141,13 +132,10 @@
         <translation>Repita la nueva contraseña</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Show password</source>
         <translation>Mostrar contraseña</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Introduzca la nueva contraseña del monedero. &lt;br/&gt;Por favor utilice una contraseña de &lt;b&gt;diez o más carácteres aleatorios&lt;/b&gt;, o &lt;b&gt;ocho o más palabras&lt;/b&gt;.</translation>
     </message>
@@ -184,13 +172,8 @@
         <translation>Confirmar cifrado del monedero</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
-        <translation>Advertencia: Si cifra su monedero y pierde su contraseña&lt;b&gt;¡PERDERÁ TODOS SUS ACTINIUMS!&lt;/b&gt;</translation>
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
         <translation>Advertencia: Si cifra su monedero y pierde su contraseña&lt;b&gt;¡PERDERÁ TODOS SUS LITECOINS!&lt;/b&gt;</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -201,11 +184,7 @@
         <translation>Monedero cifrado</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
-=======
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
->>>>>>> upstream/0.16
         <translation>%1 se cerrará ahora para terminar el proceso de cifrado. Recuerde que cifrar su monedero no puede proteger completamente su monedero de ser robado por malware que infecte su ordenador.</translation>
     </message>
     <message>
@@ -363,13 +342,8 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Enviar actiniums a una dirección Actinium</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Enviar litecoins a una dirección Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -392,13 +366,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -425,21 +394,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Actinium para demostrar la propiedad</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Actinium concretas</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Firmar mensajes con sus direcciones Litecoin para demostrar la propiedad</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Verificar mensajes comprobando que están firmados con direcciones Litecoin concretas</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -458,13 +418,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Solicitar pagos (generando códigos QR e identificadores URI "Actinium:")</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Solicitar pagos (generando códigos QR e identificadores URI "litecoin:")</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -475,26 +430,16 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Abrir un identificador URI "Actinium:" o una petición de pago</translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>Abrir un identificador URI "litecoin:" o una petición de pago</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Opciones de consola de comandos</translation>
     </message>
     <message numerus="yes">
-<<<<<<< HEAD
-        <source>%n active connection(s) to Actinium network</source>
-        <translation><numerusform>%n conexión activa hacia la red Actinium</numerusform><numerusform>%n conexiones activas hacia la red Actinium</numerusform></translation>
-=======
         <source>%n active connection(s) to Litecoin network</source>
         <translation><numerusform>%n conexión activa hacia la red Litecoin</numerusform><numerusform>%n conexiones activas hacia la red Litecoin</numerusform></translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -537,13 +482,8 @@
         <translation>Actualizado</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
-        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de linea de comandos de Actinium</translation>
-=======
         <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
         <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de linea de comandos de Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 client</source>
@@ -612,13 +552,8 @@
         <translation>El monedero está &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
-        <translation>Ha ocurrido un error fatal. Actinium no puede seguir seguro y se cerrará.</translation>
-=======
         <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
         <translation>Ha ocurrido un error fatal. Litecoin no puede seguir seguro y se cerrará.</translation>
->>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -811,13 +746,8 @@
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The entered address "%1" is not a valid Actinium address.</source>
-        <translation>La dirección introducida "%1" no es una dirección Actinium válida.</translation>
-=======
         <source>The entered address "%1" is not a valid Litecoin address.</source>
         <translation>La dirección introducida "%1" no es una dirección Litecoin válida.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -925,10 +855,6 @@
         <translation>Al ser la primera vez que se ejecuta el programa, puede elegir donde %1 almacenará sus datos.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will download and store a copy of the Actinium block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 va a descargar y almacenar una copia de la cadena de bloques de Actinium. Al menos %2GB de datos seran almacenados en este directorio, que ira creciendo con el tiempo. El monedero se guardara tambien en ese directorio. </translation>
-=======
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation>Cuando haga click en OK, %1 se empezará a descargar la %4 cadena de bloques completa (%2GB) empezando por la transacción más antigua en %3 cuando se publicó %4 originalmente.</translation>
     </message>
@@ -939,7 +865,6 @@
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
         <translation>Si ha elegido limitar el almacenamiento de la cadena de bloques ("prunning"), se descargarán y procesarán los datos históricos igualmente, sin embargo, estos se eliminarán después para mantener un bajo uso del disco.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -950,8 +875,6 @@
         <translation>Utilizar un directorio de datos personalizado:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
@@ -972,7 +895,6 @@
         <translation>El monedero se almacenará en este directorio.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Error: no ha podido crearse el directorio de datos especificado "%1".</translation>
     </message>
@@ -996,21 +918,12 @@
         <translation>Formulario</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Actinium network, as detailed below.</source>
-        <translation>Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de Actinium, como se detalla abajo.</translation>
-    </message>
-    <message>
-        <source>Attempting to spend actiniums that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>La red no aceptará el intentar gastar actiniums que están afectados por transacciones aún no mostradas.</translation>
-=======
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</source>
         <translation>Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de litecoin, como se detalla abajo.</translation>
     </message>
     <message>
         <source>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>La red no aceptará el intentar gastar litecoins que están afectados por transacciones aún no mostradas.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1103,18 +1016,6 @@
         <translation>Número de hilos de &amp;verificación de scripts</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Aceptar conexiones desde el exterior</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Aceptar conexiones entrantes</translation>
-    </message>
-    <message>
-        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>Dirección IP del proxy (p. ej. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
-=======
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Dirección IP del proxy (p. ej. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
@@ -1133,7 +1034,6 @@
     <message>
         <source>&amp;Hide tray icon</source>
         <translation>&amp;Ocultar ícono de la barra de tareas</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -1144,19 +1044,10 @@
         <translation>Identificadores URL de terceros (por ejemplo, un explorador de bloques) que aparecen en la pestaña de transacciones como elementos del menú contextual. El %s en la URL es reemplazado por el valor hash de la transacción. Se pueden separar URL múltiples por una barra vertical |.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Third party transaction URLs</source>
-        <translation>Identificadores URL de transacciones de terceros</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Active command-line options that override above options:</source>
         <translation>Opciones activas de consola de comandos que tienen preferencia sobre las opciones anteriores:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open the %1 configuration file from the working directory.</source>
         <translation>Abre el fichero de configuración %1 en el directorio de trabajo.</translation>
     </message>
@@ -1165,7 +1056,6 @@
         <translation>Abrir fichero de configuración</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>Restablecer todas las opciones predeterminadas del cliente.</translation>
     </message>
@@ -1202,23 +1092,14 @@
         <translation>&amp;Gastar cambio no confirmado</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Actinium en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Abrir automáticamente el puerto del cliente Litecoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear el puerto mediante &amp;UPnP</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
-        <translation>Conectarse a la red Actinium a través de un proxy SOCKS5.</translation>
-=======
         <source>Accept connections from outside.</source>
         <translation>Aceptar conexiones externas.</translation>
     </message>
@@ -1229,7 +1110,6 @@
     <message>
         <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
         <translation>Conectarse a la red Litecoin a través de un proxy SOCKS5.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1252,13 +1132,6 @@
         <translation>Usado para alcanzar compañeros via:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Muestra si el proxy SOCKS5 predeterminado es utilizado para llegar a los pares a traves de este tipo de red.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1271,34 +1144,14 @@
         <translation>Tor</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conectar a la red Actinium mediante un proxy SOCKS5 por separado para los servicios ocultos de Tor.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Usar distintos proxys SOCKS5 para comunicarse vía Tor de forma anónima:</translation>
-=======
         <source>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Conectar a la red Litecoin mediante un proxy SOCKS5 por separado para los servicios ocultos de Tor.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Window</source>
         <translation>&amp;Ventana</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Hide the icon from the system tray.</source>
-        <translation>&amp;Ocultar el icono de la barra de tareas</translation>
-    </message>
-    <message>
-        <source>Hide tray icon</source>
-        <translation>Ocultar barra de tareas</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>Minimizar la ventana a la bandeja de iconos del sistema.</translation>
     </message>
@@ -1328,24 +1181,17 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-<<<<<<< HEAD
-        <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían actiniums.</translation>
-=======
         <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían litecoins.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
         <translation>Mostrar o no funcionalidad de Coin Control</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Third party transaction URLs</source>
         <translation>URLs de transacciones de terceros</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;OK</source>
         <translation>&amp;Aceptar</translation>
     </message>
@@ -1374,8 +1220,6 @@
         <translation>El cliente se cerrará. ¿Desea continuar?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Configuration options</source>
         <translation>Opciones de configuración</translation>
     </message>
@@ -1392,7 +1236,6 @@
         <translation>No se pudo abrir el fichero de configuración.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Este cambio exige el reinicio del cliente.</translation>
     </message>
@@ -1408,13 +1251,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Actinium después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Litecoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1488,13 +1326,8 @@
         <translation>Fallo en la solicitud de pago</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot start Actinium: click-to-pay handler</source>
-        <translation>No se puede iniciar Actinium: encargado click-para-pagar</translation>
-=======
         <source>Cannot start litecoin: click-to-pay handler</source>
         <translation>No se puede iniciar litecoin: encargado click-para-pagar</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>URI handling</source>
@@ -1509,13 +1342,8 @@
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>URI cannot be parsed! This can be caused by an invalid Actinium address or malformed URI parameters.</source>
-        <translation>URI no puede ser analizado! Esto puede ser causado por una dirección Actinium inválida o parametros URI mal formados.</translation>
-=======
         <source>URI cannot be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
         <translation>URI no puede ser analizado! Esto puede ser causado por una dirección Litecoin inválida o parametros URI mal formados.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1600,8 +1428,6 @@
         <source>Ping</source>
         <translation>Sonido</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Sent</source>
         <translation>Enviado</translation>
@@ -1610,7 +1436,6 @@
         <source>Received</source>
         <translation>Recibido</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject</name>
@@ -1619,13 +1444,8 @@
         <translation>Cantidad</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter a Actinium address (e.g. %1)</source>
-        <translation>Introducir una dirección Actinium (p. ej. %1)</translation>
-=======
         <source>Enter a Litecoin address (e.g. %1)</source>
         <translation>Introducir una dirección Litecoin (p. ej. %1)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 d</source>
@@ -1684,11 +1504,6 @@
         <translation><numerusform>%n año</numerusform><numerusform>%n años</numerusform></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 didn't yet exit safely...</source>
-        <translation>%1 no se ha cerrado de forma segura todavía...</translation>
-    </message>
-=======
         <source>%1 B</source>
         <translation>%1 B</translation>
     </message>
@@ -1712,7 +1527,6 @@
         <source>unknown</source>
         <translation>desconocido</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject::QObject</name>
@@ -1815,13 +1629,10 @@
         <translation>Uso de memoria</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Reset</source>
         <translation>&amp;Reiniciar</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Received</source>
         <translation>Recibido</translation>
     </message>
@@ -1938,13 +1749,6 @@
         <translation>&amp;Tráfico de Red</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>&amp;Vaciar</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Total:</translation>
     </message>
@@ -1997,38 +1801,6 @@
         <translation>Bienvenido a la consola RPC %1.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Use las flechas arriba y abajo para navegar por el historial y &lt;b&gt;Control+L&lt;/b&gt; para vaciar la pantalla.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Escriba &lt;b&gt;help&lt;/b&gt; para ver un resumen de los comandos disponibles.</translation>
-    </message>
-    <message>
-        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
-        <translation>ADVERTENCIA: Hay estafadores activos diciendo a los usuarios que escriban comandos aquí y robando el contenido de sus monederos. No utilice esta consola sin entender completamente la repercusión de un comando.</translation>
-    </message>
-    <message>
-        <source>Network activity disabled</source>
-        <translation>Actividad de red deshabilitada</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
-=======
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
         <translation>Utilice las teclas de navegación para revisar el historial, y %1 para limpiar la pantalla.</translation>
     </message>
@@ -2047,7 +1819,6 @@
     <message>
         <source>Network activity disabled</source>
         <translation>Actividad de red deshabilitada</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -2097,21 +1868,8 @@
         <translation>Mensaje:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Reutilizar una de las direcciones previamente usadas para recibir. Reutilizar direcciones tiene problemas de seguridad y privacidad. No lo uses a menos que antes regeneres una solicitud de pago.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>R&amp;eutilizar una dirección existente para recibir (no recomendado)</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
-        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red Actinium.</translation>
-=======
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
         <translation>Un mensaje opcional para adjuntar a la solicitud de pago, que se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2142,8 +1900,6 @@
         <translation>&amp;Solicitar pago</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Bech32 addresses (BIP-173) are cheaper to spend from and offer better protection against typos. When unchecked a P2SH wrapped SegWit address will be created, compatible with older wallets.</source>
         <translation>Las direcciones Bech32 (BIP-173) son mas baratas al gastar y ofrecen mejor proteción contra errores de tipeo. Cuando no se marque una dirección SegWit envuelta en P2SH será creada, compatible con monederos antiguos. </translation>
     </message>
@@ -2152,7 +1908,6 @@
         <translation>Generar dirección Bech32</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Show the selected request (does the same as double clicking an entry)</source>
         <translation>Muestra la petición seleccionada (También doble clic)</translation>
     </message>
@@ -2275,11 +2030,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-<<<<<<< HEAD
-        <translation>Enviar actiniums</translation>
-=======
         <translation>Enviar litecoins</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2338,8 +2089,6 @@
         <translation>Elija...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
         <translation>Si utilizas la comisión por defecto, la transacción puede tardar varias horas o incluso días (o nunca) en confirmarse. Considera elegir la comisión de forma manual o espera hasta que se haya validado completamente la cadena.</translation>
     </message>
@@ -2348,7 +2097,6 @@
         <translation>Advertencia: En este momento no se puede estimar la cuota.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>collapse fee-settings</source>
         <translation>Colapsar ajustes de comisión.</translation>
     </message>
@@ -2365,17 +2113,8 @@
         <translation>Ocultar</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>total at least</source>
-        <translation>total por lo menos</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Actinium transactions than the network can process.</source>
-        <translation>Pagar solamente la comisión mínima es correcto, siempre y cuando haya menos volumen de transacciones que el espacio en los bloques. Pero tenga en cuenta que esto puede terminar en una transacción nunca confirmada, una vez que haya más demanda para transacciones Actinium que la red pueda procesar.</translation>
-=======
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
         <translation>Pagar solamente la comisión mínima es correcto, siempre y cuando haya menos volumen de transacciones que el espacio en los bloques. Pero tenga en cuenta que esto puede terminar en una transacción nunca confirmada, una vez que haya más demanda para transacciones Litecoin que la red pueda procesar.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2394,17 +2133,6 @@
         <translation>(Aún no se ha inicializado la Comisión Inteligente. Esto generalmente tarda pocos bloques...)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>rápido</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Enviar a múltiples destinatarios de una vez</translation>
     </message>
@@ -2425,8 +2153,6 @@
         <translation>Objetivo de tiempo de confirmación</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Enable Replace-By-Fee</source>
         <translation>Habilitar Replace-By-Fee</translation>
     </message>
@@ -2435,7 +2161,6 @@
         <translation>Con Replace-By-Fee (BIP-125) puede incrementar la comisión después de haber enviado la transacción. Si no utiliza esto, se recomienda que añada una comisión mayor para compensar el riesgo adicional de que la transacción se retrase.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Clear &amp;All</source>
         <translation>Vaciar &amp;todo</translation>
     </message>
@@ -2480,13 +2205,10 @@
         <translation>Copiar cambio</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>%1 (%2 blocks)</source>
         <translation>%1 (%2 bloques)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1 to %2</source>
         <translation>%1 a %2</translation>
     </message>
@@ -2507,8 +2229,6 @@
         <translation>o</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
         <translation>Puede incrementar la comisión más tarde (usa Replace-By-Fee, BIP-125).</translation>
     </message>
@@ -2517,7 +2237,6 @@
         <translation>No usa Replace-By-Fee, BIP-125.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Confirm send coins</source>
         <translation>Confirmar enviar monedas</translation>
     </message>
@@ -2557,13 +2276,6 @@
         <source>Payment request expired.</source>
         <translation>Solicitud de pago caducada.</translation>
     </message>
-<<<<<<< HEAD
-    <message numerus="yes">
-        <source>%n block(s)</source>
-        <translation><numerusform>%n bloque</numerusform><numerusform>%n bloques</numerusform></translation>
-    </message>
-=======
->>>>>>> upstream/0.16
     <message>
         <source>Pay only the required fee of %1</source>
         <translation>Pagar únicamente la comisión solicitada de %1</translation>
@@ -2573,13 +2285,8 @@
         <translation><numerusform>Estimado para empezar la confirmación dentro de %n bloque.</numerusform><numerusform>Estimado para empezar la confirmación dentro de %n bloques.</numerusform></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: Invalid Actinium address</source>
-        <translation>Alerta: dirección Actinium inválida</translation>
-=======
         <source>Warning: Invalid Litecoin address</source>
         <translation>Alerta: dirección Litecoin inválida</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2621,13 +2328,8 @@
         <translation>Esto es un pago ordinario.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address to send the payment to</source>
-        <translation>Dirección Actinium a la que enviar el pago</translation>
-=======
         <source>The Litecoin address to send the payment to</source>
         <translation>Dirección Litecoin a la que enviar el pago</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Alt+A</source>
@@ -2646,26 +2348,18 @@
         <translation>Eliminar esta transacción</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La comisión será deducida de la cantidad que sea mandada. El destinatario recibirá menos actiniums de la cantidad introducida en el campo Cantidad. Si hay varios destinatarios, la comisión será distribuida a partes iguales.</translation>
-=======
         <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>La comisión será deducida de la cantidad que sea mandada. El destinatario recibirá menos litecoins de la cantidad introducida en el campo Cantidad. Si hay varios destinatarios, la comisión será distribuida a partes iguales.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
         <translation>Restar comisiones de la cantidad.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Use available balance</source>
         <translation>Usar balance disponible</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Message:</source>
         <translation>Mensaje:</translation>
     </message>
@@ -2682,13 +2376,8 @@
         <translation>Introduce una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
-        <translation>Un mensaje que se adjuntó a la Actinium: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red Actinium.</translation>
-=======
         <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
         <translation>Un mensaje que se adjuntó a la litecoin: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Pay To:</source>
@@ -2732,21 +2421,12 @@
         <translation>&amp;Firmar mensaje</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>You can sign messages/agreements with your addresses to prove you can receive actiniums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Puede firmar los mensajes con sus direcciones para demostrar que las posee. Tenga cuidado de no firmar cualquier cosa de manera vaga o aleatoria, pues los ataques de phishing pueden tratar de engañarle firmando su identidad a través de ellos. Sólo firme declaraciones totalmente detalladas con las que usted esté de acuerdo.</translation>
-    </message>
-    <message>
-        <source>The Actinium address to sign the message with</source>
-        <translation>Dirección Actinium con la que firmar el mensaje</translation>
-=======
         <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Puede firmar los mensajes con sus direcciones para demostrar que las posee. Tenga cuidado de no firmar cualquier cosa de manera vaga o aleatoria, pues los ataques de phishing pueden tratar de engañarle firmando su identidad a través de ellos. Sólo firme declaraciones totalmente detalladas con las que usted esté de acuerdo.</translation>
     </message>
     <message>
         <source>The Litecoin address to sign the message with</source>
         <translation>Dirección Litecoin con la que firmar el mensaje</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2777,13 +2457,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Actinium</translation>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
         <translation>Firmar el mensaje para demostrar que se posee esta dirección Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2806,21 +2481,12 @@
         <translation>Introduzca la dirección para la firma, el mensaje (asegurándose de copiar tal cual los saltos de línea, espacios, tabulaciones, etc.) y la firma a continuación para verificar el mensaje. Tenga cuidado de no asumir más información de lo que dice el propio mensaje firmado para evitar fraudes basados en ataques de tipo man-in-the-middle. </translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address the message was signed with</source>
-        <translation>La dirección Actinium con la que se firmó el mensaje</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Actinium address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Actinium indicada</translation>
-=======
         <source>The Litecoin address the message was signed with</source>
         <translation>La dirección Litecoin con la que se firmó el mensaje</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
         <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Litecoin indicada</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3045,11 +2711,7 @@
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-<<<<<<< HEAD
-        <translation>Los actiniums generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a "no aceptado" y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
-=======
         <translation>Los litecoins generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a "no aceptado" y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Debug information</source>
@@ -3253,13 +2915,8 @@
         <translation>Otra</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter address or label to search</source>
-        <translation>Introduzca una dirección o etiqueta que buscar</translation>
-=======
         <source>Enter address, transaction id, or label to search</source>
         <translation>Introduzca dirección, id de transacción o etiqueta a buscar</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Min amount</source>
@@ -3270,13 +2927,10 @@
         <translation>Transacción abandonada</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Increase transaction fee</source>
         <translation>Incrementar cuota de transacción</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy address</source>
         <translation>Copiar ubicación</translation>
     </message>
@@ -3389,8 +3043,6 @@
         <source>Send Coins</source>
         <translation>Enviar</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Fee bump error</source>
         <translation>Error de incremento de cuota</translation>
@@ -3427,7 +3079,6 @@
         <source>Could not commit transaction</source>
         <translation>No se pudo confirmar la transacción</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>WalletView</name>
@@ -3489,17 +3140,6 @@
 </translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
-        <translation>Aceptar conexiones desde el exterior (predeterminado: 1 si no -proxy o -connect/-desconectar)</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
-        <translation>Conectar sólo al nodo(s) especificado; -no conectar or -conectar=solo 0 para deshabilitar conexiones automáticas</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Distribuido bajo la licencia de software MIT, vea el archivo adjunto %s o %s</translation>
     </message>
@@ -3541,13 +3181,8 @@
         <translation>No se ha podido comenzar el servidor HTTP. Ver debug log para detalles.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>The %s developers</source>
@@ -3562,13 +3197,10 @@
         <translation>Aceptar transacciones retransmitidas recibidas desde nodos en la lista blanca incluso cuando no estés retransmitiendo transacciones (predeterminado: %d)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Add a node to connect to and attempt to keep the connection open (see the `addnode` RPC command help for more info)</source>
         <translation>Agregue un nodo para conectars e intentar mantener una conexión abierta (véase el comando de ayuda RPC "addnode" para mas información)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Vincular a la dirección dada y escuchar siempre en ella. Utilice la notación [host]:port para IPv6</translation>
     </message>
@@ -3577,14 +3209,6 @@
         <translation>No se puede bloquear el directorio %s. %s ya se está ejecutando.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Borrar todas las transacciones del monedero y sólo recuperar aquellas partes de la cadena de bloques por medio de -rescan on startup.</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
-        <translation>Error cargando %s: No puede habilitar HD en un monedero existente que no es HD</translation>
-=======
         <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
         <translation>No es posible mostrar las conexiones indicadas y tener addrman buscando conexiones al mismo tiempo.</translation>
     </message>
@@ -3595,20 +3219,16 @@
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Borrar todas las transacciones del monedero y sólo recuperar aquellas partes de la cadena de bloques por medio de -rescan on startup.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Error leyendo %s!. Todas las claves se han leido correctamente, pero los datos de transacciones o la libreta de direcciones pueden faltar o ser incorrectos.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
         <translation>Descartar información de depuración para una categoría. Puede utilizarse simultáneamente con -debug=1 para escribir información de depuración de todas las categorías a excepción de una o más categorías.  </translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Ejecutar comando cuando una transacción del monedero cambia (%s en cmd se remplazará por TxID)</translation>
     </message>
@@ -3637,13 +3257,10 @@
         <translation>Contribuya si encuentra %s de utilidad. Visite %s para mas información acerca del programa.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect used)</source>
         <translation>Consultar las direcciones de pares mediante búsqueda DNS, si existen pocas direcciones (por defecto: 1 excepto si se está usando -connect)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, &gt;%u = automatically prune block files to stay under the specified target size in MiB)</source>
         <translation>Reducir los requerimientos de almacenamiento habilitando la poda (eliminación) de los bloques viejos. Esto permite que la cadena de bloqueo RPC sea llamada para eliminar bloques específicos, y habilita la poda automática de bloques viejos si se provee el tamaño de un objetivo en MiB. Este modo es incompatible con -txindex and -rescan. Precaución: Revertir este ajuste requiere volver a descargar la cadena de bloqueo completa. (predefinido: 0 = deshabilita bloques de poda, 1 = permite la poda manual mediante RPC, &gt;%u = elimina automáticamente los archivos de bloqueo para permanecer bajo el tamaño del objetivo especificado en MiB)</translation>
     </message>
@@ -3664,8 +3281,6 @@
         <translation>Esta es una versión de prueba prelanzada - utilícelo a su propio riesgo - no lo utilice para aplicaciones de minería o comerciales</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
         <translation>Esta es la comisión de transacción que puedes descartar si el cambio es menor que el polvo a este nivel</translation>
     </message>
@@ -3674,7 +3289,6 @@
         <translation>No se ha podido reproducir los bloques. Deberá reconstruir la base de datos utilizando -reindex-chainstate.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
         <translation>No es posible reconstruir la base de datos a un estado anterior. Debe descargar de nuevo la cadena de bloques.</translation>
     </message>
@@ -3699,17 +3313,12 @@
         <translation>Advertencia: ¡No parecemos estar del todo con nuestros pares! Puede que necesite actualizarse, o puede que otros nodos necesiten actualizarse.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
-        <translation>Necesita reconstruir la base de datos usando -reindex-chainstate para cambiar -txindex</translation>
-=======
         <source>Whether to save the mempool on shutdown and load on restart (default: %u)</source>
         <translation>Indica si guardar el mempool al cerrar y cargar al reiniciar (por defecto: %u)</translation>
     </message>
     <message>
         <source>%d of last 100 blocks have unexpected version</source>
         <translation>%d de los últimos 100 bloques tienen versión no esperada</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
@@ -3724,13 +3333,10 @@
         <translation>&lt;category&gt; puede ser:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Aceptar conexiones desde el exterior (predeterminado: 1 si no -proxy o -connect)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Append comment to the user agent string</source>
         <translation>Adjunta un comentario a la linea de agente de usuario</translation>
     </message>
@@ -3799,13 +3405,10 @@
         <translation>Habilita el reemplazamiento de transacciones en la piscina de memoria (predeterminado: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error creating %s: You can't create non-HD wallets with this version.</source>
         <translation>Error generando %s: Con esta versin no puede crear monederos no-HD.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error initializing block database</source>
         <translation>Error al inicializar la base de datos de bloques</translation>
     </message>
@@ -3826,13 +3429,6 @@
         <translation>Error cargando %s: Monedero requiere un versión mas reciente de %s</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Error loading %s: You can't disable HD on a already existing HD wallet</source>
-        <translation>Error cargando %s: No puede deshabilitar HD en un monedero existente que ya es HD</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Error loading block database</source>
         <translation>Error cargando base de datos de bloques</translation>
     </message>
@@ -3849,13 +3445,10 @@
         <translation>Ha fallado la escucha en todos los puertos. Use -listen=0 si desea esto.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Failed to rescan the wallet during initialization</source>
         <translation>Fallo al escanear el monedero durante la inicialización</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Importing...</source>
         <translation>Importando...</translation>
     </message>
@@ -3868,24 +3461,14 @@
         <translation>La inicialización de la verificación de validez falló. Se está apagando %s.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Dirección -onion inválida: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>Cantidad no valida para -%s=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
         <translation>Cantidad inválida para -discardfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation>Cantidad inválida para -fallbackfee=&lt;amount&gt;: '%s'</translation>
     </message>
@@ -3894,13 +3477,10 @@
         <translation>Mantener la memoria de transacciones por debajo de &lt;n&gt; megabytes (predeterminado: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Loading P2P addresses...</source>
         <translation>Cargando direcciones P2P ...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Loading banlist...</source>
         <translation>Cargando banlist...</translation>
     </message>
@@ -3941,13 +3521,10 @@
         <translation>Reconstruir el estado de la cadena a partir de los bloques indexados</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Replaying blocks...</source>
         <translation>Reproduciendo bloques ...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Rewinding blocks...</source>
         <translation>Verificando bloques...</translation>
     </message>
@@ -3956,13 +3533,6 @@
         <translation>Asignar tamaño del cache en megabytes (entre %d y %d; predeterminado: %d)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Establecer tamaño máximo de bloque en bytes (predeterminado: %d)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Specify wallet file (within data directory)</source>
         <translation>Especificar archivo de monedero (dentro del directorio de datos)</translation>
     </message>
@@ -3971,13 +3541,10 @@
         <translation>El código fuente esta disponible desde %s.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Transaction fee and change calculation failed</source>
         <translation>El cálculo de la comisión de transacción y del cambio han fallado</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Unable to bind to %s on this computer. %s is probably already running.</source>
         <translation>No se ha podido conectar con %s en este equipo. %s es posible que este todavia en ejecución.</translation>
     </message>
@@ -3994,8 +3561,6 @@
         <translation>Parámetros no compatibles -tor encontrados, use -onion .</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Unsupported logging category %s=%s.</source>
         <translation>Categoría de registro no soportada %s=%s.</translation>
     </message>
@@ -4004,7 +3569,6 @@
         <translation>Actualizando la base de datos UTXO</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Use UPnP to map the listening port (default: %u)</source>
         <translation>Usar UPnP para asignar el puerto de escucha (predeterminado:: %u)</translation>
     </message>
@@ -4021,17 +3585,6 @@
         <translation>Verificando bloques...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>Verificando monedero...</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>El monedero %s se encuentra fuera del directorio de datos %s</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Wallet debugging/testing options:</source>
         <translation>Opciones de depuración/pruebas de monedero:</translation>
     </message>
@@ -4052,13 +3605,6 @@
         <translation>Ligar a las direcciones especificadas y poner en lista blanca a los equipos conectados a ellas. Usar la notación para IPv6 [host]:puerto.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Ligar a las direcciones especificadas para escuchar por conexiones JSON-RPC. Usar la notación para IPv6 [host]:puerto. Esta opción se puede especificar múltiples veces (por defecto: ligar a todas las interfaces)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Crear nuevos archivos con permisos por defecto del sistema, en lugar de umask 077 (sólo efectivo con la funcionalidad de monedero desactivada)</translation>
     </message>
@@ -4095,24 +3641,10 @@
         <translation>Aleatorizar las credenciales para cada conexión proxy. Esto habilita la Tor stream isolation (por defecto: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Establecer tamaño máximo de las transacciones de alta prioridad/baja comisión en bytes (predeterminado: %d)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>Monto de transacción muy pequeña luego de la deducción por comisión</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Use hierarchical deterministic key generation (HD) after BIP32. Only has effect during wallet creation/first start</source>
-        <translation>Usar tras BIP32 la generación de llave determinística jerárquica (HD) . Solo tiene efecto durante el primer inicio/generación del monedero</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
         <translation>A los equipos en lista blanca no se les pueden prohibir los ataques DoS y sus transacciones siempre son retransmitidas, incluso si ya están en el mempool, es útil por ejemplo para un gateway.</translation>
     </message>
@@ -4137,24 +3669,18 @@
         <translation>Conectar usando SOCKS5 proxy</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
         <translation>Error cargando %s: No puedes deshabilitar HD en un monedero HD ya existente</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error reading from database, shutting down.</source>
         <translation>Error al leer la base de datos, cerrando.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error upgrading chainstate database</source>
         <translation>Error actualizando la base de datos chainstate</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Imports blocks from external blk000??.dat file on startup</source>
         <translation>Importa los bloques desde un archivo externo blk000?.dat</translation>
     </message>
@@ -4163,8 +3689,6 @@
         <translation>Información</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>Dirección -onion o nombre de host inválido: '%s'</translation>
     </message>
@@ -4173,7 +3697,6 @@
         <translation>Dirección -proxy o nombre de host inválido: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Cantidad inválida para -paytxfee=&lt;amount&gt;: '%s' (debe ser por lo menos %s)</translation>
     </message>
@@ -4210,13 +3733,6 @@
         <translation>Enviar información de trazas/depuración a la consola en lugar de al archivo debug.log</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Mandar transacciones como comisión-cero si es posible (por defecto: %u)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Muestra todas las opciones de depuración (uso: --help -help-debug)</translation>
     </message>
@@ -4229,8 +3745,6 @@
         <translation>Transacción falló</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Specified -walletdir "%s" does not exist</source>
         <translation>El -walletdir indicado "%s" no existe</translation>
     </message>
@@ -4243,7 +3757,6 @@
         <translation>El -walletdir "%s" indicado no es un directorio</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>The transaction amount is too small to pay the fee</source>
         <translation>Cantidad de la transacción demasiado pequeña para pagar la comisión</translation>
     </message>
@@ -4276,13 +3789,10 @@
         <translation>No es posible conectar con %s en este sistema (bind ha dado el error %s)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Unable to generate initial keys</source>
         <translation>No es posible generar llaves iniciales</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Upgrade wallet to latest format on startup</source>
         <translation>Actualizar el monedero al último formato al inicio</translation>
     </message>
@@ -4292,8 +3802,6 @@
 </translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Verifying wallet(s)...</source>
         <translation>Verificando monedero(s)...</translation>
     </message>
@@ -4302,7 +3810,6 @@
         <translation>Monedero %s situado fuera del directorio de monedero %s</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>Aviso</translation>
     </message>
@@ -4315,13 +3822,10 @@
         <translation>Si se debe o no operar en un modo de solo bloques (predeterminado: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Necesita reconstruir las bases de datos con la opción -reindex para modificar -txindex</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Zapping all transactions from wallet...</source>
         <translation>Eliminando todas las transacciones del monedero...</translation>
     </message>
@@ -4343,13 +3847,6 @@
         <translation>Permitir búsquedas DNS para -addnode, -seednode y -connect</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Cargando direcciones...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = mantener los meta datos de transacción, por ejemplo: propietario e información de pago, 2 = omitir los metadatos)</translation>
     </message>
@@ -4358,13 +3855,10 @@
         <translation>-maxtxfee tiene un ajuste muy elevado! Comisiones muy grandes podrían ser pagadas en una única transaccion.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</source>
         <translation>Vincular a la dirección dada para escuchar las conexiones JSON-RPC. Esta opción se ignora a menos que también se pase -rpcallowip. El puerto es opcional y reemplaza -rpcport. Utiliza la notación [host]:puerto para IPv6. Esta opción se puede especificar varias veces (por defecto: 127.0.0.1 y :: 1 es decir, localhost o si se ha especificado -rpcallowip, 0.0.0.0 y :: es decir, todas las direcciones)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
         <translation>No mantener transacciones en la memoria mas de &lt;n&gt; horas (predeterminado: %u)</translation>
     </message>
@@ -4373,8 +3867,6 @@
         <translation>Bytes equivalentes por sigop en transacciones para retrasmisión y minado (predeterminado: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
         <translation>Error cargando %s: No puedes habilitar HD en un monedero no HD ya existente</translation>
     </message>
@@ -4383,7 +3875,6 @@
         <translation>Error cargando monedero %s. El parámetro -wallet solo debe indicar un nombre de fichero (no una ruta).</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation>Las comisiones (en %s/kB) menores que esto son consideradas de cero comision para la creacion de transacciones (predeterminado: %s)</translation>
     </message>
@@ -4408,14 +3899,9 @@
         <translation>Mostrar depuración (por defecto: %u, proporcionar &lt;category&gt; es opcional)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
-        <translation>Preguntar por direcciones pares al buscar DNS, si baja en las direcciones (predeterminado: 1 a menos que -connect/-noconnect)</translation>
-=======
         <source>Set maximum BIP141 block weight to this * 4. Deprecated, use blockmaxweight</source>
         <translation>Configurar máximo peso de bloque BIP141 a este * 4.
 Descontinuado, use blockmaxweight</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Sets the serialization of raw transaction or block hex returned in non-verbose mode, non-segwit(0) or segwit(1) (default: %d)</source>
@@ -4423,8 +3909,6 @@ Descontinuado, use blockmaxweight</translation>
 Establecer la serialización de las transacciones sin procesar o el bloque hex devuelto en non-verbose mode, non-segwit(O) o segwit(1) (default: %d)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Specify directory to hold wallets (default: &lt;datadir&gt;/wallets if it exists, otherwise &lt;datadir&gt;)</source>
         <translation>Indique directorio para guardar monederos (por defecto: &lt;datadir&gt;/monederos si existe, sino &lt;datadir&gt;)</translation>
     </message>
@@ -4433,18 +3917,14 @@ Establecer la serialización de las transacciones sin procesar o el bloque hex d
         <translation>Indique ubicación del archivo de registro de depuración: este puede estar en un camino absoluto o un camino relativo del directorio de datos (por defecto: %s)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Admite filtrado de bloques, y transacciones con filtros Bloom. Reduce la carga de red. ( por defecto :%u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>The fee rate (in %s/kB) that indicates your tolerance for discarding change by adding it to the fee (default: %s). Note: An output is discarded if it is dust at this rate, but we will always discard up to the dust relay fee and a discard fee above that is limited by the fee estimate for the longest target</source>
         <translation>La comisión (en %s/kB) que indica tu tolerancia para descartar el cambio y añadirlo a la comisión (por defecto: %s). Nota: Una salida se descarta si es polvo a esa tasa, pero solo se desechará hasta la comisión de reenvío de polvo y una comisión de descarte por encima de eso está limitada por la estimación de la comisión para el objetivo más largo</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>Esta es la tarifa de cuota que debe pagar cuando las estimaciones de tarifas no estén disponibles.</translation>
     </message>
@@ -4497,8 +3977,6 @@ Establecer la serialización de las transacciones sin procesar o el bloque hex d
         <translation>Siempre consultar direcciones de otros equipos por medio de DNS lookup (por defecto: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading wallet %s. -wallet filename must be a regular file.</source>
         <translation>Error cargando el monedero %s. El nombre de fichero -wallet debe ser un fichero normal.</translation>
     </message>
@@ -4511,7 +3989,6 @@ Establecer la serialización de las transacciones sin procesar o el bloque hex d
         <translation>Error cargando el monedero %s. Caracteres inválidos en el nombre de fichero -wallet.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
         <translation>Cuántos bloques comprobar al iniciar (predeterminado: %u, 0 = todos)</translation>
     </message>
@@ -4520,13 +3997,6 @@ Establecer la serialización de las transacciones sin procesar o el bloque hex d
         <translation>Incluir direcciones IP en la salida de depuración (por defecto: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Dirección -proxy inválida: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Keypool ran out, please call keypoolrefill first</source>
         <translation>Keypool se ha agotado, llame a keypoolrefill primero</translation>
     </message>
@@ -4567,13 +4037,6 @@ Establecer la serialización de las transacciones sin procesar o el bloque hex d
         <translation>Relay non-P2SH multisig (default: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send transactions with full-RBF opt-in enabled (default: %u)</source>
-        <translation>Enviar transacciones con full-RBF opt-in habilitado (predeterminado: %u)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Set key pool size to &lt;n&gt; (default: %u)</source>
         <translation>Ajustar el número de claves en reserva &lt;n&gt; (predeterminado: %u)</translation>
     </message>
@@ -4646,13 +4109,6 @@ Establecer la serialización de las transacciones sin procesar o el bloque hex d
         <translation>Cargando el índice de bloques...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Añadir un nodo al que conectarse y tratar de mantener la conexión abierta</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Cargando monedero...</translation>
     </message>
@@ -4661,13 +4117,6 @@ Establecer la serialización de las transacciones sin procesar o el bloque hex d
         <translation>No se puede cambiar a una versión mas antigua el monedero</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>No se puede escribir la dirección predeterminada</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Reexplorando...</translation>
     </message>

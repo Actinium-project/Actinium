@@ -22,11 +22,7 @@
 			<integer>370</integer>
 			<integer>156</integer>
 		</array>
-<<<<<<< HEAD
 		<key>Actinium-Qt.app</key>
-=======
-		<key>Litecoin-Qt.app</key>
->>>>>>> upstream/0.16
 		<array>
 			<integer>128</integer>
 			<integer>156</integer>

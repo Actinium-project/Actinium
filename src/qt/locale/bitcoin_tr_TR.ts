@@ -46,13 +46,10 @@
         <translation>koinlerin gönderileceği adresi seçin</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Choose the address to receive coins with</source>
         <translation>Alıcı adresi seçiniz</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>C&amp;hoose</source>
         <translation>Seçim</translation>
     </message>
@@ -65,8 +62,6 @@
         <translation>Alınan Adresler</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Bunlar ödeme göndermek için gereken Litecoin adreslerinizdir. Para göndermeden önce her zaman miktarı ve alıcı adresi kontrol edin.</translation>
     </message>
@@ -83,7 +78,6 @@
         <translation>Kopyala ve Etiketle</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Edit</source>
         <translation>Düzenle</translation>
     </message>
@@ -92,12 +86,6 @@
         <translation>Adres Listesini Dışar Aktar</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Exporting Failed</source>
-        <translation>Dışa Aktarma Başarısız</translation>
-    </message>
-    </context>
-=======
         <source>Comma separated file (*.csv)</source>
         <translation>Virgül ile ayrılmış dosya (*.csv)</translation>
     </message>
@@ -110,7 +98,6 @@
         <translation>Adres listesini %1'e kaydederken bir hata oluştu. Lütfen tekrar deneyin.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -129,8 +116,6 @@
 <context>
     <name>AskPassphraseDialog</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Passphrase Dialog</source>
         <translation>Parola Diyaloğu</translation>
     </message>
@@ -151,7 +136,6 @@
         <translation>Yeni parolayı cüzdana girin.&lt;br/&gt;Lütfen &lt;b&gt;on yada daha fazla karakter&lt;/b&gt; veya &lt;b&gt;sekiz yada daha fazla kelime&lt;/b&gt;içeren bir parola kullanın. </translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Encrypt wallet</source>
         <translation>Cüzdanı Şifrele</translation>
     </message>
@@ -164,19 +148,14 @@
         <translation>Cüzdanı Kilitle</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Bu işlem, cüzdan kilidinizi açmak için parolanıza ihtiyaç duyuyor</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Decrypt wallet</source>
         <translation>Cüzdanın Şifresini Çöz</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Change passphrase</source>
         <translation>Parolayı değiştir</translation>
     </message>
@@ -185,18 +164,14 @@
         <translation>Eski ve yeni parolanızı cüzdana girin.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Confirm wallet encryption</source>
         <translation>Cüzdan Şifrelemesini Onaylayın</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
         <translation>Uyarı: Eğer cüzdanınızı şifreleyip parolanızı kaybederseniz (unutursanız) , &lt;b&gt;BÜTÜN LITECOIN'LERINIZI KAYBEDECEKSINIZ&lt;/b&gt;!</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
@@ -205,12 +180,6 @@
         <translation>Cüzdan Şifrelendi</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Wallet unlock failed</source>
-        <translation>Cüzdan Kilidi Açma Hatası</translation>
-    </message>
-    </context>
-=======
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
         <translation>%1 Şifreleme işlemini bitirmek için kapatılacak. Şunu unutmayın ki şampiyon galatasaray ve şifrelemek, litecoinlerinizin bilgisayarınıza bulaşan malware yazılımları tarafından çalınmasını tamamen engelleyemez.</translation>
     </message>
@@ -235,15 +204,12 @@
         <translation>Dikkat! Caps Lock tuşunuz açık!</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>BanTableModel</name>
     </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Sign &amp;message...</source>
         <translation>İmza &amp;mesaj</translation>
     </message>
@@ -260,24 +226,18 @@
         <translation>İşlem geçmişinize göz atın</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>E&amp;xit</source>
         <translation>Çıkış</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Quit application</source>
         <translation>Başvuruyu iptal edin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;About %1</source>
         <translation>Hakkında%1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Show information about %1</source>
         <translation>%1 hakkındaki bilgileri görüntüle</translation>
     </message>
@@ -306,24 +266,18 @@
         <translation>Gönderme adresleri</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Receiving addresses...</source>
         <translation>Alış adresleri</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open &amp;URI...</source>
         <translation>URI'yi aç</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Network activity disabled.</source>
         <translation>Ağ etkinliği devre dışı.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Click to enable network activity again.</source>
         <translation>Ağ aktivitesini tekrar başlatmak için tıklayın.</translation>
     </message>
@@ -388,7 +342,6 @@
         <translation>Bloklar disk üzerinde indeksleniyor...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Hata</translation>
     </message>
@@ -400,8 +353,6 @@
         <source>Information</source>
         <translation>Bilgi</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Date: %1
 </source>
@@ -415,13 +366,10 @@
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation>HD anahtar üretimi &lt;b&gt;pasif&lt;/b&gt;</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Bytes:</source>
         <translation>Bayt</translation>
     </message>
@@ -474,7 +422,6 @@
         <translation>Hayır</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(etiket yok)</translation>
     </message>
@@ -482,13 +429,10 @@
 <context>
     <name>EditAddressDialog</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Edit Address</source>
         <translation>Adresi Düzenle</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Label</source>
         <translation>Etiket</translation>
     </message>
@@ -496,14 +440,6 @@
         <source>&amp;Address</source>
         <translation>Adres</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>FreespaceChecker</name>
-    </context>
-<context>
-    <name>HelpMessageDialog</name>
-=======
     <message>
         <source>New receiving address</source>
         <translation>Yeni alış adresi</translation>
@@ -570,13 +506,10 @@
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>Bir dil seçin, örneğin "de_DE" (seçilen: Sistem dili)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>Intro</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Welcome</source>
         <translation>Hoş geldiniz</translation>
     </message>
@@ -586,15 +519,12 @@
 </translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     </context>
 <context>
     <name>ModalOverlay</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Number of blocks left</source>
         <translation>Kalan blokların sayısı</translation>
@@ -615,49 +545,12 @@
         <source>Hide</source>
         <translation>Gizle</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OpenURIDialog</name>
     </context>
 <context>
     <name>OptionsDialog</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>OverviewPage</name>
-    </context>
-<context>
-    <name>PaymentServer</name>
-    </context>
-<context>
-    <name>PeerTableModel</name>
-    </context>
-<context>
-    <name>QObject</name>
-    </context>
-<context>
-    <name>QObject::QObject</name>
-    </context>
-<context>
-    <name>QRImageWidget</name>
-    </context>
-<context>
-    <name>RPCConsole</name>
-    </context>
-<context>
-    <name>ReceiveCoinsDialog</name>
-    </context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    <message>
-        <source>Copy &amp;Address</source>
-        <translation>&amp;Adresi Kopyala</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>adres</translation>
-=======
     <message>
         <source>Options</source>
         <translation>Ayarlar</translation>
@@ -1040,39 +933,27 @@
     <message>
         <source>Address</source>
         <translation>adres</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Label</source>
         <translation>etiket</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Message</source>
         <translation>Mesaj</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Date</source>
         <translation>Tarih</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>etiket</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>(no label)</source>
-        <translation>(etiket yok)</translation>
-    </message>
-=======
         <source>Message</source>
         <translation>Mesaj</translation>
     </message>
@@ -1084,13 +965,10 @@
         <source>(no message)</source>
         <translation>(mesaj yok)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Send Coins</source>
         <translation>Coin gönder</translation>
     </message>
@@ -1167,19 +1045,12 @@
         <translation>Uyarı: Hatalı Litecoin adresi</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(etiket yok)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>SendConfirmationDialog</name>
-    </context>
-=======
     <message>
         <source>&amp;Label:</source>
         <translation>&amp;Etiket</translation>
@@ -1200,15 +1071,11 @@
         <translation>Evet</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>ShutdownWindow</name>
     </context>
 <context>
     <name>SignVerifyMessageDialog</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Paste address from clipboard</source>
         <translation>Panodaki adresi yapıştırın</translation>
@@ -1246,7 +1113,6 @@
         <translation>Mesaj onaylandı.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SplashScreen</name>
     </context>
@@ -1255,9 +1121,6 @@
     </context>
 <context>
     <name>TransactionDesc</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Status</source>
         <translation>Durum</translation>
@@ -1315,15 +1178,12 @@
         <translation>anlış</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>TransactionDescDialog</name>
     </context>
 <context>
     <name>TransactionTableModel</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Date</source>
         <translation>Tarih</translation>
     </message>
@@ -1332,13 +1192,10 @@
         <translation>Tip</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>etiket</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Confirmed (%1 confirmations)</source>
         <translation>Onaylandı (%1 onaylanan)</translation>
     </message>
@@ -1359,7 +1216,6 @@
         <translation>(yok)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(etiket yok)</translation>
     </message>
@@ -1367,8 +1223,6 @@
 <context>
     <name>TransactionView</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>All</source>
         <translation>Hepsi</translation>
     </message>
@@ -1429,7 +1283,6 @@
         <translation>Tip</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>etiket</translation>
     </message>
@@ -1450,11 +1303,6 @@
     </context>
 <context>
     <name>WalletModel</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>WalletView</name>
-=======
     <message>
         <source>Send Coins</source>
         <translation>Coin gönder</translation>
@@ -1482,13 +1330,10 @@
         <source>Backup Successful</source>
         <translation>Yedekleme tamamlandı</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Options:</source>
         <translation>Ayarlar:</translation>
     </message>
@@ -1533,7 +1378,6 @@
         <translation>Ban listesi yükleniyor...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Print this help message and exit</source>
         <translation>Bu yardım mesajını yazdır ve çıkış yap</translation>
     </message>
@@ -1546,21 +1390,14 @@
         <translation>Bloklar Onaylanıyor...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>Cüzdan Onaylanıyor...</translation>
-=======
         <source>Wallet needed to be rewritten: restart %s to complete</source>
         <translation>%s tamamlanması için cüzdanın yeniden başlatılması gerekiyor</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet options:</source>
         <translation>Cüzdan Ayarları</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>(default: %u)</source>
         <translation>(varsayılan: %u)</translation>
     </message>
@@ -1569,24 +1406,18 @@
         <translation>Veritabanı okuma hatası, kapatıldı.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Information</source>
         <translation>Bilgi</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>Hatalı -onion adresi ya da host adı: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>RPC server options:</source>
         <translation>RPC sunucu ayarları</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This is experimental software.</source>
         <translation>Bu deneysel bir yazılımdır.</translation>
     </message>
@@ -1595,13 +1426,10 @@
         <translation>Tor kontrolü portu şifresi (varsayılan: boş bırakınız)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Transaction too large</source>
         <translation>İşlem çok büyük</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Username for JSON-RPC connections</source>
         <translation>JSON-RPC bağlantıları için kullanıcı adı</translation>
     </message>
@@ -1610,15 +1438,10 @@
         <translation>Cüzdan(lar) onaylanıyor...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>Uyarı</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Adresler bekleniyor...</translation>
-=======
         <source>Password for JSON-RPC connections</source>
         <translation>JSON-RPC bağlantıları için şifre</translation>
     </message>
@@ -1677,44 +1500,32 @@
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Belirsiz ağ belirtildi -onlynet: '%s'</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Insufficient funds</source>
         <translation>Yetersiz Bakiye</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Loading block index...</source>
         <translation>Blok indeksi yükleniyor</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Cüzdan Bekleniyor...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>Varsayılan adres yazılamıyor</translation>
-=======
         <source>Cannot downgrade wallet</source>
         <translation>Cüzdan indirgenememektedir</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Rescanning...</source>
         <translation>Tekrar taranıyor...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Done loading</source>
         <translation>Yükleme tamamlandı</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Hata</translation>
     </message>

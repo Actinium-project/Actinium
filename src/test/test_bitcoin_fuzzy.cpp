@@ -1,30 +1,8 @@
-<<<<<<< HEAD
-// Copyright (c) 2009-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2009-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-<<<<<<< HEAD
-#include "config/bitcoin-config.h"
-#endif
-
-#include "consensus/merkle.h"
-#include "primitives/block.h"
-#include "script/script.h"
-#include "addrman.h"
-#include "chain.h"
-#include "coins.h"
-#include "compressor.h"
-#include "net.h"
-#include "protocol.h"
-#include "streams.h"
-#include "undo.h"
-#include "version.h"
-#include "pubkey.h"
-=======
 #include <config/bitcoin-config.h>
 #endif
 
@@ -42,7 +20,6 @@
 #include <version.h>
 #include <pubkey.h>
 #include <blockencodings.h>
->>>>>>> upstream/0.16
 
 #include <stdint.h>
 #include <unistd.h>
@@ -69,13 +46,6 @@ enum TEST_ID {
     CBLOOMFILTER_DESERIALIZE,
     CDISKBLOCKINDEX_DESERIALIZE,
     CTXOUTCOMPRESSOR_DESERIALIZE,
-<<<<<<< HEAD
-    TEST_ID_END
-};
-
-bool read_stdin(std::vector<char> &data) {
-    char buffer[1024];
-=======
     BLOCKTRANSACTIONS_DESERIALIZE,
     BLOCKTRANSACTIONSREQUEST_DESERIALIZE,
     TEST_ID_END
@@ -83,7 +53,6 @@ bool read_stdin(std::vector<char> &data) {
 
 bool read_stdin(std::vector<uint8_t> &data) {
     uint8_t buffer[1024];
->>>>>>> upstream/0.16
     ssize_t length=0;
     while((length = read(STDIN_FILENO, buffer, 1024)) > 0) {
         data.insert(data.end(), buffer, buffer+length);
@@ -93,23 +62,11 @@ bool read_stdin(std::vector<uint8_t> &data) {
     return length==0;
 }
 
-<<<<<<< HEAD
-int do_fuzz()
-{
-    std::vector<char> buffer;
-    if (!read_stdin(buffer)) return 0;
-
-    if (buffer.size() < sizeof(uint32_t)) return 0;
-
-    uint32_t test_id = 0xffffffff;
-    memcpy(&test_id, &buffer[0], sizeof(uint32_t));
-=======
 int test_one_input(std::vector<uint8_t> buffer) {
     if (buffer.size() < sizeof(uint32_t)) return 0;
 
     uint32_t test_id = 0xffffffff;
     memcpy(&test_id, buffer.data(), sizeof(uint32_t));
->>>>>>> upstream/0.16
     buffer.erase(buffer.begin(), buffer.begin() + sizeof(uint32_t));
 
     if (test_id >= TEST_ID_END) return 0;
@@ -291,8 +248,6 @@ int test_one_input(std::vector<uint8_t> buffer) {
 
             break;
         }
-<<<<<<< HEAD
-=======
         case BLOCKTRANSACTIONS_DESERIALIZE:
         {
             try
@@ -313,18 +268,12 @@ int test_one_input(std::vector<uint8_t> buffer) {
 
             break;
         }
->>>>>>> upstream/0.16
         default:
             return 0;
     }
     return 0;
 }
 
-<<<<<<< HEAD
-int main(int argc, char **argv)
-{
-    ECCVerifyHandle globalVerifyHandle;
-=======
 static std::unique_ptr<ECCVerifyHandle> globalVerifyHandle;
 void initialize() {
     globalVerifyHandle = std::unique_ptr<ECCVerifyHandle>(new ECCVerifyHandle());
@@ -351,7 +300,6 @@ __attribute__((weak))
 int main(int argc, char **argv)
 {
     initialize();
->>>>>>> upstream/0.16
 #ifdef __AFL_INIT
     // Enable AFL deferred forkserver mode. Requires compilation using
     // afl-clang-fast++. See fuzzing.md for details.
@@ -361,14 +309,6 @@ int main(int argc, char **argv)
 #ifdef __AFL_LOOP
     // Enable AFL persistent mode. Requires compilation using afl-clang-fast++.
     // See fuzzing.md for details.
-<<<<<<< HEAD
-    while (__AFL_LOOP(1000)) {
-        do_fuzz();
-    }
-    return 0;
-#else
-    return do_fuzz();
-=======
     int ret = 0;
     while (__AFL_LOOP(1000)) {
         std::vector<uint8_t> buffer;
@@ -384,6 +324,5 @@ int main(int argc, char **argv)
         return 0;
     }
     return test_one_input(buffer);
->>>>>>> upstream/0.16
 #endif
 }

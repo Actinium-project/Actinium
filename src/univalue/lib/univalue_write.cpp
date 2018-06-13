@@ -79,11 +79,6 @@ void UniValue::writeArray(unsigned int prettyIndent, unsigned int indentLevel, s
         s += values[i].write(prettyIndent, indentLevel + 1);
         if (i != (values.size() - 1)) {
             s += ",";
-<<<<<<< HEAD
-            if (prettyIndent)
-                s += " ";
-=======
->>>>>>> upstream/0.16
         }
         if (prettyIndent)
             s += "\n";

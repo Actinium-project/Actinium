@@ -1,19 +1,11 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2014 The Bitcoin Core developers
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_TRANSACTIONFILTERPROXY_H
 #define BITCOIN_QT_TRANSACTIONFILTERPROXY_H
 
-<<<<<<< HEAD
-#include "amount.h"
-=======
 #include <amount.h>
->>>>>>> upstream/0.16
 
 #include <QDateTime>
 #include <QSortFilterProxyModel>
@@ -43,11 +35,7 @@ public:
     };
 
     void setDateRange(const QDateTime &from, const QDateTime &to);
-<<<<<<< HEAD
-    void setAddressPrefix(const QString &addrPrefix);
-=======
     void setSearchString(const QString &);
->>>>>>> upstream/0.16
     /**
       @note Type filter takes a bit field created with TYPE() or ALL_TYPES
      */
@@ -69,11 +57,7 @@ protected:
 private:
     QDateTime dateFrom;
     QDateTime dateTo;
-<<<<<<< HEAD
-    QString addrPrefix;
-=======
     QString m_search_string;
->>>>>>> upstream/0.16
     quint32 typeFilter;
     WatchOnlyFilter watchOnlyFilter;
     CAmount minAmount;

@@ -137,13 +137,10 @@
         <source>Options</source>
         <translation>هەڵبژاردنەکان</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Error</source>
         <translation>هەڵە</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -157,13 +154,10 @@
     </context>
 <context>
     <name>PeerTableModel</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Sent</source>
         <translation>نێدرا</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject</name>
@@ -213,13 +207,6 @@
         <translation>&amp;کردنەوە</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>&amp;پاککردنەوە</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>گشتییەکان</translation>
     </message>
@@ -311,13 +298,6 @@
         <source>Fee:</source>
         <translation>تێچوون:</translation>
     </message>
-<<<<<<< HEAD
-    <message>
-        <source>fast</source>
-        <translation>خێرا</translation>
-    </message>
-=======
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>SendCoinsEntry</name>

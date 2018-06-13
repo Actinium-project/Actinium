@@ -3,32 +3,19 @@ Unauthenticated REST Interface
 
 The REST API can be enabled with the `-rest` option.
 
-<<<<<<< HEAD
 The interface runs on the same port as the JSON-RPC interface, by default port 8332 for mainnet and port 18332 for testnet.
-=======
-The interface runs on the same port as the JSON-RPC interface, by default port 9332 for mainnet, port 19332 for testnet,
-and port 19443 for regtest.
->>>>>>> upstream/0.16
 
 Supported API
 -------------
 
-<<<<<<< HEAD
 ####Transactions
-=======
-#### Transactions
->>>>>>> upstream/0.16
 `GET /rest/tx/<TX-HASH>.<bin|hex|json>`
 
 Given a transaction hash: returns a transaction in binary, hex-encoded binary, or JSON formats.
 
 For full TX query capability, one must enable the transaction index via "txindex=1" command line / configuration option.
 
-<<<<<<< HEAD
 ####Blocks
-=======
-#### Blocks
->>>>>>> upstream/0.16
 `GET /rest/block/<BLOCK-HASH>.<bin|hex|json>`
 `GET /rest/block/notxdetails/<BLOCK-HASH>.<bin|hex|json>`
 
@@ -38,20 +25,12 @@ The HTTP request and response are both handled entirely in-memory, thus making m
 
 With the /notxdetails/ option JSON response will only contain the transaction hash instead of the complete transaction details. The option only affects the JSON response.
 
-<<<<<<< HEAD
 ####Blockheaders
-=======
-#### Blockheaders
->>>>>>> upstream/0.16
 `GET /rest/headers/<COUNT>/<BLOCK-HASH>.<bin|hex|json>`
 
 Given a block hash: returns <COUNT> amount of blockheaders in upward direction.
 
-<<<<<<< HEAD
 ####Chaininfos
-=======
-#### Chaininfos
->>>>>>> upstream/0.16
 `GET /rest/chaininfo.json`
 
 Returns various state info regarding block chain processing.
@@ -69,11 +48,7 @@ Only supports JSON as output format.
 * softforks : (array) status of softforks in progress
 * bip9_softforks : (object) status of BIP9 softforks in progress
 
-<<<<<<< HEAD
 ####Query UTXO set
-=======
-#### Query UTXO set
->>>>>>> upstream/0.16
 `GET /rest/getutxos/<checkmempool>/<txid>-<n>/<txid>-<n>/.../<txid>-<n>.<bin|hex|json>`
 
 The getutxo command allows querying of the UTXO set given a set of outpoints.
@@ -106,11 +81,7 @@ $ curl localhost:19332/rest/getutxos/checkmempool/b2cdfd7b89def827ff8af7cd9bff76
 }
 ```
 
-<<<<<<< HEAD
 ####Memory pool
-=======
-#### Memory pool
->>>>>>> upstream/0.16
 `GET /rest/mempool/info.json`
 
 Returns various information about the TX mempool.
@@ -119,11 +90,7 @@ Only supports JSON as output format.
 * bytes : (numeric) size of the TX mempool in bytes
 * usage : (numeric) total TX mempool memory usage
 * maxmempool : (numeric) maximum memory usage for the mempool in bytes
-<<<<<<< HEAD
 * mempoolminfee : (numeric) minimum feerate (BTC per KB) for tx to be accepted
-=======
-* mempoolminfee : (numeric) minimum feerate (LTC per KB) for tx to be accepted
->>>>>>> upstream/0.16
 
 `GET /rest/mempool/contents.json`
 
@@ -132,8 +99,4 @@ Only supports JSON as output format.
 
 Risks
 -------------
-<<<<<<< HEAD
 Running a web browser on the same node with a REST enabled Actiniumd can be a risk. Accessing prepared XSS websites could read out tx/block data of your node by placing links like `<script src="http://127.0.0.1:9332/rest/tx/1234567890.json">` which might break the nodes privacy.
-=======
-Running a web browser on the same node with a REST enabled litecoind can be a risk. Accessing prepared XSS websites could read out tx/block data of your node by placing links like `<script src="http://127.0.0.1:9332/rest/tx/1234567890.json">` which might break the nodes privacy.
->>>>>>> upstream/0.16

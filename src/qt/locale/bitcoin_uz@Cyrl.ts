@@ -146,13 +146,8 @@
         <translation>Дискдаги блоклар қайта индексланмоқда...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Тангаларни Actinium манзилига жўнатиш</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Тангаларни Litecoin манзилига жўнатиш</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -175,13 +170,8 @@
         <translation>Хабарни &amp;тасдиқлаш...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -208,21 +198,12 @@
         <translation>Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Actinium манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Хабарларни махсус Actinium манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Litecoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Хабарларни махсус Litecoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -241,13 +222,8 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Тўловлар (QR кодлари ва Actinium ёрдамида яратишлар: URI’лар) сўраш</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Тўловлар (QR кодлари ва litecoin ёрдамида яратишлар: URI’лар) сўраш</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -258,26 +234,16 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Actinium’ни очиш: URI ёки тўлов сўрови</translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>Litecoin’ни очиш: URI ёки тўлов сўрови</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message numerus="yes">
-<<<<<<< HEAD
-        <source>%n active connection(s) to Actinium network</source>
-        <translation><numerusform>%n та Actinium тармоғига фаол уланиш мавжуд</numerusform></translation>
-=======
         <source>%n active connection(s) to Litecoin network</source>
         <translation><numerusform>%n та Litecoin тармоғига фаол уланиш мавжуд</numerusform></translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 behind</source>
@@ -471,13 +437,10 @@
         <translation>Бошқа маълумотлар директориясида фойдаланинг:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Хато: кўрсатилган "%1" маълумотлар директориясини яратиб бўлмайди.</translation>
     </message>
@@ -539,28 +502,10 @@
         <translation>Мавзуларни &amp;тўғрилаш скрипти миқдори</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Ташқаридан уланишларга рози бўлиш</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Кирувчи уланишларга рухсат бериш</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Прокси IP манзили (масалан: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Third party transaction URLs</source>
-        <translation>Бегона тараф ўтказмалари URL манзиллари</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>&amp;Network</source>
         <translation>Тармоқ</translation>
     </message>
@@ -633,13 +578,10 @@
         <translation>Ўзгаришлар амалга ошиши учун мижозни қайта ишга тушириш талаб қилинади.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error</source>
         <translation>Хатолик</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Ушбу ўзгариш мижозни қайтадан ишга туширишни талаб қилади.</translation>
     </message>
@@ -655,13 +597,8 @@
         <translation>Шакл</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Actinium тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Litecoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Watch-only:</source>
@@ -741,13 +678,8 @@
         <translation>Миқдори</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter a Actinium address (e.g. %1)</source>
-        <translation>Actinium манзилини киритинг (масалан.  %1)</translation>
-=======
         <source>Enter a Litecoin address (e.g. %1)</source>
         <translation>Litecoin манзилини киритинг (масалан.  %1)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 m</source>
@@ -773,9 +705,6 @@
         <source>%1 and %2</source>
         <translation>%1 ва %2</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>%1 B</source>
         <translation>%1 Б</translation>
@@ -797,7 +726,6 @@
         <translation>Номаълум</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -903,13 +831,6 @@
         <translation>&amp;Тармоқ трафиги</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>&amp;Тозалаш</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Жами</translation>
     </message>
@@ -930,33 +851,6 @@
         <translation>Терминални тозалаш</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Тарихни кўриш учун тепага ва пастга кўрсаткичларидан фойдаланинг, экранни тозалаш учун &lt;b&gt;Ctrl-L&lt;/b&gt; тугмалар бирикмасидан фойдаланинг.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Мавжуд буйруқларни кўриш учун &lt;b&gt;help&lt;/b&gt; деб ёзинг.</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 Б</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 КБ</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 МБ</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 ГБ</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>via %1</source>
         <translation>%1 орқали</translation>
     </message>
@@ -1000,13 +894,6 @@
         <translation>&amp;Хабар:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Олдинги фойдаланилган қабул қилинган манзиллардан биридан қайта фойдаланилсин. Хавсизлик ва махфийлик муаммолар мавжуд манзиллардан қайта фойдаланилмоқда. Бундан тўлов сўров қайта яратилмагунича фойдаланманг.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>An optional label to associate with the new receiving address.</source>
         <translation>Янги қабул қилинаётган манзил билан боғланган танланадиган ёрлиқ.</translation>
     </message>
@@ -1136,17 +1023,6 @@
         <translation>Тавсия этилган</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>Нормал</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>Тезкор</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Бирданига бир нечта қабул қилувчиларга жўнатиш</translation>
     </message>
@@ -1308,13 +1184,8 @@
         <translation>Демон сифатида орқа фонда ишга туширинг ва буйруқларга рози бўлинг</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Connection options:</source>
@@ -1337,13 +1208,6 @@
         <translation>JSON-RPC уланишлари учун парол</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Манзиллар юкланмоқда...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Insufficient funds</source>
         <translation>Кам миқдор</translation>
     </message>

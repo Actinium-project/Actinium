@@ -30,14 +30,11 @@
         <translation>Borrar la dirección actualmente seleccionada de la lista</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Export the data in the current tab to a file</source>
         <translation>
 Exportar los datos en la pestaña actual a un archivo</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Export</source>
         <translation>&amp;Exportar</translation>
     </message>
@@ -45,12 +42,6 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <source>&amp;Delete</source>
         <translation>&amp;Borrar</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>AddressTableModel</name>
-    </context>
-=======
     <message>
         <source>Choose the address to send coins to</source>
         <translation>Elija la dirección para enviar las monedas </translation>
@@ -119,7 +110,6 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>(no etiqueta)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -138,15 +128,6 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <source>Repeat new passphrase</source>
         <translation>Repetir nueva contraseña</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>BanTableModel</name>
-    </context>
-<context>
-    <name>BitcoinGUI</name>
-    <message>
-=======
     <message>
         <source>Show password</source>
         <translation>Mostrar contraseña</translation>
@@ -254,18 +235,14 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>Firma y mensaje ...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Synchronizing with network...</source>
         <translation>Sincronizando con la red...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Overview</source>
         <translation>&amp;Visión de conjunto</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Node</source>
         <translation>Nodo</translation>
     </message>
@@ -278,13 +255,10 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>&amp;Transacciones</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Browse transaction history</source>
         <translation>Examinar el historial de transacciones</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>E&amp;xit</source>
         <translation>S&amp;alir</translation>
     </message>
@@ -329,10 +303,6 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>Abrir &amp;URL...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Enviando monedas a una dirección de Actinium</translation>
-=======
         <source>Click to disable network activity.</source>
         <translation>Haga clic para deshabilitar la actividad de la red.</translation>
     </message>
@@ -355,7 +325,6 @@ Exportar los datos en la pestaña actual a un archivo</translation>
     <message>
         <source>Backup wallet to another location</source>
         <translation>Monedero de respaldo a otra ubicación</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -374,13 +343,8 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>&amp;Verificar Mensaje...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -403,8 +367,6 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>Mostrar u ocultar la Ventana Principal</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>Encripta las claves privadas que pertenecen a tu billetera</translation>
     </message>
@@ -417,7 +379,6 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>Verifique los mensajes para asegurarse de que fueron firmados con las direcciones de Litecoin especificadas</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;File</source>
         <translation>&amp;Archivo</translation>
     </message>
@@ -430,29 +391,6 @@ Exportar los datos en la pestaña actual a un archivo</translation>
         <translation>&amp;Ayuda</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
-    </context>
-<context>
-    <name>CoinControlDialog</name>
-    </context>
-<context>
-    <name>EditAddressDialog</name>
-    </context>
-<context>
-    <name>FreespaceChecker</name>
-    </context>
-<context>
-    <name>HelpMessageDialog</name>
-    </context>
-<context>
-    <name>Intro</name>
-    <message>
-        <source>Welcome</source>
-        <translation>bienvenido</translation>
-=======
         <source>Tabs toolbar</source>
         <translation>Barra de herramientas de pestañas</translation>
     </message>
@@ -487,116 +425,11 @@ Exportar los datos en la pestaña actual a un archivo</translation>
     <message>
         <source>Transactions after this will not yet be visible.</source>
         <translation>Las transacciones posteriores a esto aún no estarán visibles.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error</source>
         <translation>Error</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>ModalOverlay</name>
-    </context>
-<context>
-    <name>OpenURIDialog</name>
-    </context>
-<context>
-    <name>OptionsDialog</name>
-    </context>
-<context>
-    <name>OverviewPage</name>
-    </context>
-<context>
-    <name>PaymentServer</name>
-    </context>
-<context>
-    <name>PeerTableModel</name>
-    </context>
-<context>
-    <name>QObject</name>
-    </context>
-<context>
-    <name>QObject::QObject</name>
-    </context>
-<context>
-    <name>QRImageWidget</name>
-    </context>
-<context>
-    <name>RPCConsole</name>
-    </context>
-<context>
-    <name>ReceiveCoinsDialog</name>
-    </context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    </context>
-<context>
-    <name>RecentRequestsTableModel</name>
-    </context>
-<context>
-    <name>SendCoinsDialog</name>
-    </context>
-<context>
-    <name>SendCoinsEntry</name>
-    </context>
-<context>
-    <name>SendConfirmationDialog</name>
-    </context>
-<context>
-    <name>ShutdownWindow</name>
-    </context>
-<context>
-    <name>SignVerifyMessageDialog</name>
-    </context>
-<context>
-    <name>SplashScreen</name>
-    </context>
-<context>
-    <name>TrafficGraphWidget</name>
-    </context>
-<context>
-    <name>TransactionDesc</name>
-    </context>
-<context>
-    <name>TransactionDescDialog</name>
-    </context>
-<context>
-    <name>TransactionTableModel</name>
-    </context>
-<context>
-    <name>TransactionView</name>
-    </context>
-<context>
-    <name>UnitDisplayStatusBarControl</name>
-    </context>
-<context>
-    <name>WalletFrame</name>
-    </context>
-<context>
-    <name>WalletModel</name>
-    </context>
-<context>
-    <name>WalletView</name>
-    </context>
-<context>
-    <name>bitcoin-core</name>
-    <message>
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-    </message>
-    <message>
-        <source>Insufficient funds</source>
-        <translation>Fondos Insuficientes</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Cargando billetera...</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>No se puede escribir la dirección por defecto</translation>
-=======
     <message>
         <source>Warning</source>
         <translation>Advertencia</translation>
@@ -2092,7 +1925,6 @@ Exportar los datos en la pestaña actual a un archivo</translation>
     <message>
         <source>Loading wallet...</source>
         <translation>Cargando billetera...</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Rescanning...</source>

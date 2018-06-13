@@ -54,10 +54,6 @@
         <translation>&amp;Odaberi</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su vaše Actinium adrese za slanje novca. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
-=======
         <source>Sending addresses</source>
         <translation>Adresa pošiljatelja</translation>
     </message>
@@ -72,22 +68,12 @@
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Ovo su vaše Litecoin adrese za primanje novca. Preporučamo da koristite novu adresu za primanje za svaku transakciju.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;Kopiraj adresu</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Exporting Failed</source>
-        <translation>Izvoz neuspješan</translation>
-    </message>
-    </context>
-<context>
-    <name>AddressTableModel</name>
-    </context>
-=======
         <source>Copy &amp;Label</source>
         <translation>Kopiraj i označi</translation>
     </message>
@@ -127,7 +113,6 @@
         <translation>(nema oznake)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -146,9 +131,6 @@
         <source>Repeat new passphrase</source>
         <translation>Ponovite novu lozinku</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Unesite novu lozinku za novčanik. &lt;br/&gt;Molimo Vas da koristite zaporku od &lt;b&gt;deset ili više slučajnih znakova&lt;/b&gt;, ili &lt;b&gt;osam ili više riječi.&lt;/b&gt;</translation>
@@ -234,7 +216,6 @@
         <translation>Upozorenje: Caps Lock je uključen!</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>BanTableModel</name>
     </context>
@@ -321,13 +302,8 @@
         <translation>Re-indeksiranje blokova na disku...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Slanje novca na Actinium adresu</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Slanje novca na litecoin adresu</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -350,13 +326,8 @@
         <translation>&amp;Potvrdite poruku...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -383,21 +354,12 @@
         <translation>Šifriranje privatnih ključeva koji u novčaniku</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Poruku potpišemo s Actinium adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Provjeravanje poruke, kao dokaz, da je potpisana navedenom Actinium adresom</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Poruku potpišemo s litecoin adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Provjeravanje poruke, kao dokaz, da je potpisana navedenom litecoin adresom</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -416,13 +378,8 @@
         <translation>Traka kartica</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Zatraži uplatu (stvara QR kod i Actinium: URI adresu)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Zatraži uplatu (stvara QR kod i litecoin: URI adresu)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -433,23 +390,14 @@
         <translation>Prikaži popis korištenih adresa i oznaka za primanje novca</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Otvori Actinium: URI adresu ili zahtjev za uplatu</translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>Otvori litecoin: URI adresu ili zahtjev za uplatu</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opcije &amp;naredbene linije</translation>
     </message>
     <message numerus="yes">
-<<<<<<< HEAD
-        <source>%n active connection(s) to Actinium network</source>
-        <translation><numerusform>%n aktivna veza na Actinium mrežu</numerusform><numerusform>%n aktivnih veza na Actinium mrežu</numerusform><numerusform>%n aktivnih veza na Actinium mrežu</numerusform></translation>
-=======
         <source>%n active connection(s) to Litecoin network</source>
         <translation><numerusform>%n aktivna veza na Litecoin mrežu</numerusform><numerusform>%n aktivnih veza na Litecoin mrežu</numerusform><numerusform>%n aktivnih veza na Litecoin mrežu</numerusform></translation>
     </message>
@@ -460,7 +408,6 @@
     <message>
         <source>Processing blocks on disk...</source>
         <translation>Procesiram blokove na disku...</translation>
->>>>>>> upstream/0.16
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
@@ -491,13 +438,10 @@
         <translation>Ažurno</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>%1 client</source>
         <translation>%1 klijent</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Catching up...</source>
         <translation>Ažuriranje...</translation>
     </message>
@@ -606,8 +550,6 @@
         <source>Confirmed</source>
         <translation>Potvrđeno</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Copy address</source>
         <translation>Kopiraj adresu</translation>
@@ -636,7 +578,6 @@
         <source>(no label)</source>
         <translation>(nema oznake)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -650,27 +591,16 @@
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-<<<<<<< HEAD
-        <translation>Oznaka Actinium adrese</translation>
-    </message>
-    <message>
-        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Actinium adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
-=======
         <translation>Oznaka litecoin adrese</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
         <translation>Litecoin adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Address</source>
         <translation>&amp;Adresa</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>New receiving address</source>
         <translation>Nova adresa za primanje</translation>
@@ -704,7 +634,6 @@
         <translation>Stvaranje novog ključa nije uspjelo.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>FreespaceChecker</name>
     <message>
@@ -742,13 +671,10 @@
         <source>command-line options</source>
         <translation>opcije programa u naredbenoj liniji</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Start minimized</source>
         <translation>Pokreni minimiziran</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>Intro</name>
@@ -757,13 +683,10 @@
         <translation>Dobrodošli</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Greška</translation>
     </message>
@@ -797,15 +720,11 @@
         <source>Select payment request file</source>
         <translation>Izaberi datoteku zahtjeva za plaćanje</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Select payment request file to open</source>
         <translation>Izaberi datoteku zahtjeva za plaćanje</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>OptionsDialog</name>
     <message>
@@ -829,13 +748,6 @@
         <translation>Broj CPU niti za verifikaciju transakcija</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Allow incoming connections</source>
-        <translation>Dozvoli povezivanje izvana</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>IP adresa proxy servera (npr. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
@@ -864,13 +776,8 @@
         <translation>&amp;Trošenje nepotvrđenih vraćenih iznosa</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvori port Actinium klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automatski otvori port Litecoin klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -933,13 +840,10 @@
         <translation>standardne vrijednosti</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>The supplied proxy address is invalid.</source>
         <translation>Priložena proxy adresa je nevažeća.</translation>
     </message>
@@ -951,13 +855,8 @@
         <translation>Oblik</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s Actinium mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s Litecoin mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Total:</source>
@@ -966,12 +865,6 @@
     </context>
 <context>
     <name>PaymentServer</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>PeerTableModel</name>
-    </context>
-=======
     <message>
         <source>URI handling</source>
         <translation>URI upravljanje</translation>
@@ -988,7 +881,6 @@
         <translation>Primljeno</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -1003,22 +895,16 @@
         <source>%1 and %2</source>
         <translation>%1 i %2</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>unknown</source>
         <translation>nepoznato</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
 <context>
     <name>QRImageWidget</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>&amp;Save Image...</source>
         <translation>&amp;Spremi sliku...</translation>
@@ -1027,7 +913,6 @@
         <source>Save QR Code</source>
         <translation>Spremi QR kod</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>RPCConsole</name>
@@ -1112,13 +997,6 @@
         <translation>Očisti konzolu</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Koristite tipke gore i dolje za izbor već korištenih naredbi. &lt;b&gt;Ctrl-L&lt;/b&gt; kako bi očistili ekran i povijest naredbi.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Unknown</source>
         <translation>Nepoznato</translation>
     </message>
@@ -1149,9 +1027,6 @@
         <source>Show</source>
         <translation>Pokaži</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Copy label</source>
         <translation>Kopiraj oznaku</translation>
@@ -1161,7 +1036,6 @@
         <translation>Kopiraj iznos</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
@@ -1180,11 +1054,6 @@
         <source>&amp;Save Image...</source>
         <translation>&amp;Spremi sliku...</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>RecentRequestsTableModel</name>
-=======
     <message>
         <source>URI</source>
         <translation>URI</translation>
@@ -1236,7 +1105,6 @@
         <source>(no message)</source>
         <translation>(bez poruke)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>SendCoinsDialog</name>
@@ -1304,9 +1172,6 @@
         <source>S&amp;end</source>
         <translation>&amp;Pošalji</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Copy amount</source>
         <translation>Kopiraj iznos</translation>
@@ -1336,7 +1201,6 @@
         <translation>(nema oznake)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     <message>
@@ -1371,15 +1235,11 @@
         <source>Pay To:</source>
         <translation>Primatelj plaćanja:</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Unesite oznaku za ovu adresu kako bi ju dodali u vaš adresar</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendConfirmationDialog</name>
     </context>
@@ -1428,8 +1288,6 @@
         <source>Verify &amp;Message</source>
         <translation>&amp;Potvrdite poruku</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Otključavanje novčanika je otkazano.</translation>
@@ -1438,7 +1296,6 @@
         <source>Message signed.</source>
         <translation>Poruka je potpisana.</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>SplashScreen</name>
@@ -1452,8 +1309,6 @@
     </context>
 <context>
     <name>TransactionDesc</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Open until %1</source>
         <translation>Otvoren do %1</translation>
@@ -1554,7 +1409,6 @@
         <source>Amount</source>
         <translation>Iznos</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionDescDialog</name>
@@ -1565,16 +1419,6 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>TransactionView</name>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Izvoz neuspješan</translation>
-    </message>
-    </context>
-=======
     <message>
         <source>Date</source>
         <translation>Datum</translation>
@@ -1767,7 +1611,6 @@
         <translation>za</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>UnitDisplayStatusBarControl</name>
     </context>
@@ -1776,11 +1619,6 @@
     </context>
 <context>
     <name>WalletModel</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>WalletView</name>
-=======
     <message>
         <source>Send Coins</source>
         <translation>Slanje novca</translation>
@@ -1808,7 +1646,6 @@
         <source>Backup Failed</source>
         <translation>Arhiviranje nije uspjelo</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>
@@ -1833,13 +1670,8 @@
         <translation>Izvršavaj u pozadini kao uslužnik i prihvaćaj komande</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Block creation options:</source>
@@ -1878,17 +1710,6 @@
         <translation>Dozvoli DNS upite za -addnode, -seednode i -connect</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Učitavanje adresa...</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Nevaljala -proxy adresa: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Insufficient funds</source>
         <translation>Nedovoljna sredstva</translation>
     </message>
@@ -1897,13 +1718,6 @@
         <translation>Učitavanje indeksa blokova...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Doda čvor s kojim se želite povezati i nastoji održati vezu otvorenu</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Učitavanje novčanika...</translation>
     </message>
@@ -1912,13 +1726,6 @@
         <translation>Nije moguće novčanik vratiti na prijašnju verziju.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>Nije moguće upisati zadanu adresu.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Ponovno pretraživanje...</translation>
     </message>

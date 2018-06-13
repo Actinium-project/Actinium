@@ -1,19 +1,11 @@
-<<<<<<< HEAD
-// Copyright (c) 2012-2015 The Bitcoin Core developers
-=======
 // Copyright (c) 2012-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_CHECKQUEUE_H
 #define BITCOIN_CHECKQUEUE_H
 
-<<<<<<< HEAD
-#include "sync.h"
-=======
 #include <sync.h>
->>>>>>> upstream/0.16
 
 #include <algorithm>
 #include <vector>
@@ -67,12 +59,6 @@ private:
      */
     unsigned int nTodo;
 
-<<<<<<< HEAD
-    //! Whether we're shutting down.
-    bool fQuit;
-
-=======
->>>>>>> upstream/0.16
     //! The maximum number of elements to be processed in one batch
     unsigned int nBatchSize;
 
@@ -100,11 +86,7 @@ private:
                 }
                 // logically, the do loop starts here
                 while (queue.empty()) {
-<<<<<<< HEAD
-                    if ((fMaster || fQuit) && nTodo == 0) {
-=======
                     if (fMaster && nTodo == 0) {
->>>>>>> upstream/0.16
                         nTotal--;
                         bool fRet = fAllOk;
                         // reset the status for new work later
@@ -146,11 +128,7 @@ public:
     boost::mutex ControlMutex;
 
     //! Create a new check queue
-<<<<<<< HEAD
-    CCheckQueue(unsigned int nBatchSizeIn) : nIdle(0), nTotal(0), fAllOk(true), nTodo(0), fQuit(false), nBatchSize(nBatchSizeIn) {}
-=======
     explicit CCheckQueue(unsigned int nBatchSizeIn) : nIdle(0), nTotal(0), fAllOk(true), nTodo(0), nBatchSize(nBatchSizeIn) {}
->>>>>>> upstream/0.16
 
     //! Worker thread
     void Thread()

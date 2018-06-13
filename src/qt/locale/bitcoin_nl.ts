@@ -62,21 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Litecoinadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw actiniums verzendt.</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Actinium-adressen waarmee u betalingen kunt ontvangen. We raden u aan om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dit zijn uw Litecoinadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw litecoins verzendt.</translation>
     </message>
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dit zijn uw Litecoin-adressen waarmee u betalingen kunt ontvangen. We raden u aan om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -100,11 +91,7 @@
     </message>
     <message>
         <source>Exporting Failed</source>
-<<<<<<< HEAD
-        <translation>Export mislukt</translation>
-=======
         <translation>Exporteren mislukt</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
@@ -130,21 +117,6 @@
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-<<<<<<< HEAD
-        <translation>Wachtwoorddialoog</translation>
-    </message>
-    <message>
-        <source>Enter passphrase</source>
-        <translation>Voer wachtwoord in</translation>
-    </message>
-    <message>
-        <source>New passphrase</source>
-        <translation>Nieuw wachtwoord</translation>
-    </message>
-    <message>
-        <source>Repeat new passphrase</source>
-        <translation>Herhaal nieuw wachtwoord</translation>
-=======
         <translation>Wachtwoordzindialoog</translation>
     </message>
     <message>
@@ -162,7 +134,6 @@
     <message>
         <source>Show password</source>
         <translation>Laat wachtwoord zien</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -201,13 +172,8 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW ACTINIUMS VERLIEZEN&lt;/b&gt;!</translation>
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
         <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW LITECOINS VERLIEZEN&lt;/b&gt;!</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -218,13 +184,8 @@
         <translation>Portemonnee versleuteld</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
-        <translation>%1 zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw actiniums stelen.</translation>
-=======
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
         <translation>%1 zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw litecoins stelen.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -381,11 +342,7 @@
         <translation>Bezig met herindexeren van blokken op harde schijf...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-=======
         <source>Send coins to a Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Verstuur munten naar een Litecoinadres</translation>
     </message>
     <message>
@@ -409,13 +366,8 @@
         <translation>&amp;Verifiëer bericht...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -442,19 +394,11 @@
         <translation>Versleutel de geheime sleutels die bij uw portemonnee horen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Litecoinadressen om te bewijzen dat u deze adressen bezit</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Onderteken berichten met uw Litecoinadressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
->>>>>>> upstream/0.16
         <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Litecoinadressen</translation>
     </message>
     <message>
@@ -474,13 +418,8 @@
         <translation>Tab-werkbalk</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en Actinium: URI's)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Vraag betaling aan (genereert QR-codes en litecoin: URI's)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -491,24 +430,15 @@
         <translation>Toon de lijst met gebruikte ontvangstadressen en labels</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Open een Actinium: URI of betalingsverzoek</translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>Open een litecoin: URI of betalingsverzoek</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Opdrachtregelopties</translation>
     </message>
     <message numerus="yes">
-<<<<<<< HEAD
-        <source>%n active connection(s) to Actinium network</source>
-=======
         <source>%n active connection(s) to Litecoin network</source>
->>>>>>> upstream/0.16
         <translation><numerusform>%n actieve verbinding met Litecoinnetwerk</numerusform><numerusform>%n actieve verbindingen met Litecoinnetwerk</numerusform></translation>
     </message>
     <message>
@@ -552,13 +482,8 @@
         <translation>Bijgewerkt</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
-        <translation>Toon het %1 hulpbericht om een lijst te krijgen met mogelijke Actinium commandoregelopties</translation>
-=======
         <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
         <translation>Toon het %1 hulpbericht om een lijst te krijgen met mogelijke Litecoin commandoregelopties</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 client</source>
@@ -612,19 +537,11 @@
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-<<<<<<< HEAD
-        <translation>HD sleutel voortbrenging is &lt;b&gt;ingeschakeld&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>HD sleutel voortbrenging is &lt;b&gt;uitgeschakeld&lt;/b&gt;</translation>
-=======
         <translation>HD-sleutel voortbrenging is &lt;b&gt;ingeschakeld&lt;/b&gt;</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation>HD-sleutel voortbrenging is &lt;b&gt;uitgeschakeld&lt;/b&gt;</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -635,13 +552,8 @@
         <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;gesloten&lt;/b&gt;</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
-        <translation>Een fatale fout heeft zich voorgedaan. Actinium kan niet veilig worden verdergezet en wordt afgesloten.</translation>
-=======
         <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
         <translation>Een fatale fout heeft zich voorgedaan. Litecoin kan niet veilig worden verdergezet en wordt afgesloten.</translation>
->>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -664,11 +576,7 @@
     </message>
     <message>
         <source>Fee:</source>
-<<<<<<< HEAD
-        <translation>Transactiekosten:</translation>
-=======
         <translation>Vergoeding:</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Dust:</source>
@@ -838,11 +746,7 @@
         <translation>Bewerk verzendadres</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The entered address "%1" is not a valid Actinium address.</source>
-=======
         <source>The entered address "%1" is not a valid Litecoin address.</source>
->>>>>>> upstream/0.16
         <translation>Het opgegeven adres "%1" is een ongeldig Litecoinadres.</translation>
     </message>
     <message>
@@ -874,11 +778,7 @@
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-<<<<<<< HEAD
-        <translation>Communicatiepad bestaat al, en is geen map.</translation>
-=======
         <translation>Pad bestaat al en is geen map.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Cannot create data directory here.</source>
@@ -955,10 +855,6 @@
         <translation>Omdat dit de eerste keer is dat het programma gestart is, kunt u nu kiezen waar %1 de data moet opslaan.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will download and store a copy of the Actinium block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 zal een kopie van de Actinium blokketen downloaden en opslaan. Tenminste %2 GB aan data wordt opgeslagen in deze map en het zal groeien in de tijd. De portemonnee wordt ook in deze map opgeslagen.</translation>
-=======
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation>Als u op OK klikt, dan zal %1 beginnen met downloaden en verwerken van de volledige %4 blokketen (%2GB) startend met de eerste transacties in %3 toen %4 initeel werd gestart.</translation>
     </message>
@@ -969,7 +865,6 @@
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
         <translation>Als u gekozen heeft om de block chain opslag te beperken (pruning), dan moet de historische data nog steeds gedownload en verwerkt worden, maar zal verwijderd worden naderhand om schijf gebruik zo laag mogelijk te houden.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -977,13 +872,6 @@
     </message>
     <message>
         <source>Use a custom data directory:</source>
-<<<<<<< HEAD
-        <translation>Gebruik een persoonlijke gegevensmap:</translation>
-    </message>
-    <message>
-        <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>Fout: De gespecificeerde directory "%1" kan niet worden gecreëerd.</translation>
-=======
         <translation>Gebruik een aangepaste gegevensmap:</translation>
     </message>
     <message>
@@ -1009,7 +897,6 @@
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Fout: De gespecificeerde map "%1" kan niet worden gecreëerd.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error</source>
@@ -1031,21 +918,12 @@
         <translation>Vorm</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Actinium network, as detailed below.</source>
-        <translation>Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de geldbeugel is daarom mogelijk niet correct. Deze informatie is correct van zodra de synchronisatie met het Actinium-netwerk werd voltooid, zoals onderaan beschreven.</translation>
-    </message>
-    <message>
-        <source>Attempting to spend actiniums that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Poging om actiniums te besteden die door "nog niet weergegeven" transacties worden beïnvloed, worden niet door het netwerk geaccepteerd.</translation>
-=======
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</source>
         <translation>Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de portemonnee is daarom mogelijk niet correct. Deze informatie is correct van zodra de synchronisatie met het Litecoin-netwerk werd voltooid, zoals onderaan beschreven.</translation>
     </message>
     <message>
         <source>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Poging om litecoins te besteden die door "nog niet weergegeven" transacties worden beïnvloed, worden niet door het netwerk geaccepteerd.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1138,18 +1016,6 @@
         <translation>Aantal threads voor &amp;scriptverificatie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Accepteer binnenkomende verbindingen</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Sta inkomende verbindingen toe</translation>
-    </message>
-    <message>
-        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP-adres van de proxy (bijv. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
-=======
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>IP-adres van de proxy (bijv. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
@@ -1168,7 +1034,6 @@
     <message>
         <source>&amp;Hide tray icon</source>
         <translation>&amp;Verberg systeembalkicoon</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -1179,19 +1044,10 @@
         <translation>URL's van derden (bijvoorbeeld block explorer) die in de transacties tab verschijnen als contextmenuelementen. %s in de URL is vervangen door transactiehash. Verscheidene URL's zijn gescheiden door een verticale streep |.  </translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Third party transaction URLs</source>
-        <translation>Transactie-URLs van derde partijen</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Active command-line options that override above options:</source>
         <translation>Actieve opdrachtregelopties die bovenstaande opties overschrijven:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open the %1 configuration file from the working directory.</source>
         <translation>Open het %1 configuratiebestand van de werkmap.</translation>
     </message>
@@ -1200,7 +1056,6 @@
         <translation>Open configuratiebestand</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>Reset alle clientopties naar de standaardinstellingen.</translation>
     </message>
@@ -1237,11 +1092,7 @@
         <translation>&amp;Spendeer onbevestigd wisselgeld</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
->>>>>>> upstream/0.16
         <translation>Open de Litecoinpoort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
     </message>
     <message>
@@ -1249,9 +1100,6 @@
         <translation>Portmapping via &amp;UPnP</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
-=======
         <source>Accept connections from outside.</source>
         <translation>Accepteer verbindingen van buiten.</translation>
     </message>
@@ -1261,7 +1109,6 @@
     </message>
     <message>
         <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
->>>>>>> upstream/0.16
         <translation>Verbind met het Litecoinnetwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
@@ -1285,13 +1132,6 @@
         <translation>Gebruikt om peers te bereiken via:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Vertoningen, als de opgegeven standaard SOCKS5-proxy is gebruikt om peers te benaderen via dit type netwerk.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1304,36 +1144,14 @@
         <translation>Tor</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Maak verbinding met Litecoinnetwerk door een aparte SOCKS5-proxy voor verborgen diensten van Tor.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Gebruikt aparte SOCKS5-proxy om peers te bereiken via verborgen diensten van Tor:</translation>
-    </message>
-    <message>
-=======
         <source>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Maak verbinding met Litecoinnetwerk door een aparte SOCKS5-proxy voor verborgen diensten van Tor.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Window</source>
         <translation>&amp;Scherm</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Hide the icon from the system tray.</source>
-        <translation>&amp;Verberg het icoon van de systeembalk.</translation>
-    </message>
-    <message>
-        <source>Hide tray icon</source>
-        <translation>Verberg systeembalk icoon</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>Laat alleen een systeemvakicoon zien wanneer het venster geminimaliseerd is</translation>
     </message>
@@ -1370,13 +1188,10 @@
         <translation>Munt controle functies weergeven of niet.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Third party transaction URLs</source>
         <translation>Transactie-URL's van &amp;derden</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -1405,8 +1220,6 @@
         <translation>Applicatie zal worden afgesloten. Wilt u doorgaan?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Configuration options</source>
         <translation>Configuratieopties</translation>
     </message>
@@ -1423,7 +1236,6 @@
         <translation>Het configuratiebestand kon niet worden geopend.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Om dit aan te passen moet de client opnieuw gestart worden.</translation>
     </message>
@@ -1439,11 +1251,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
->>>>>>> upstream/0.16
         <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automatisch met het Litecoinnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
@@ -1518,13 +1326,8 @@
         <translation>Fout bij betalingsverzoek</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot start Actinium: click-to-pay handler</source>
-        <translation>Kan Actinium niet starten: click-to-pay handler</translation>
-=======
         <source>Cannot start litecoin: click-to-pay handler</source>
         <translation>Kan litecoin niet starten: click-to-pay handler</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>URI handling</source>
@@ -1539,13 +1342,8 @@
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>URI cannot be parsed! This can be caused by an invalid Actinium address or malformed URI parameters.</source>
-        <translation>URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig Actinium adres of misvormde URI parameters.</translation>
-=======
         <source>URI cannot be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
         <translation>URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig Litecoin adres of misvormde URI parameters.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1630,8 +1428,6 @@
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Sent</source>
         <translation>Verstuurd</translation>
@@ -1640,7 +1436,6 @@
         <source>Received</source>
         <translation>Ontvangen</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject</name>
@@ -1649,11 +1444,7 @@
         <translation>Bedrag</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter a Actinium address (e.g. %1)</source>
-=======
         <source>Enter a Litecoin address (e.g. %1)</source>
->>>>>>> upstream/0.16
         <translation>Voer een Litecoinadres in (bijv. %1)</translation>
     </message>
     <message>
@@ -1713,11 +1504,6 @@
         <translation><numerusform>%n jaar</numerusform><numerusform>%n jaren</numerusform></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 didn't yet exit safely...</source>
-        <translation>%1 sloot nog niet veilig af...</translation>
-    </message>
-=======
         <source>%1 B</source>
         <translation>%1 B</translation>
     </message>
@@ -1741,7 +1527,6 @@
         <source>unknown</source>
         <translation>onbekend</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject::QObject</name>
@@ -1805,11 +1590,7 @@
     </message>
     <message>
         <source>Datadir</source>
-<<<<<<< HEAD
-        <translation>Data map</translation>
-=======
         <translation>Gegevensmap</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Startup time</source>
@@ -1848,13 +1629,10 @@
         <translation>Geheugengebruik</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Reset</source>
         <translation>&amp;Reset</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Received</source>
         <translation>Ontvangen</translation>
     </message>
@@ -1904,11 +1682,7 @@
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
-<<<<<<< HEAD
-        <translation>Open het %1 debug-logbestand van de huidige datamap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
-=======
         <translation>Open het %1 debug-logbestand van de huidige gegevensmap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Decrease font size</source>
@@ -1975,13 +1749,6 @@
         <translation>&amp;Netwerkverkeer</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>&amp;Wissen</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Totalen</translation>
     </message>
@@ -2034,38 +1801,6 @@
         <translation>Welkom bij de %1 RPC-console.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Gebruik de pijltjestoetsen om door de geschiedenis te navigeren, en &lt;b&gt;Ctrl-L&lt;/b&gt; om het scherm leeg te maken.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Typ &lt;b&gt;help&lt;/b&gt; voor een overzicht van de beschikbare opdrachten.</translation>
-    </message>
-    <message>
-        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
-        <translation>WAARSCHUWING: Er zijn Scammers actief geweest, die gebruikers vragen om hier commando's te typen, waardoor de inhoud van hun portefeuille werd gestolen. Gebruik deze console niet zonder de toedracht van een opdracht volledig te begrijpen.</translation>
-    </message>
-    <message>
-        <source>Network activity disabled</source>
-        <translation>Netwerkactiviteit uitgeschakeld</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 Kb</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 Gb</translation>
-=======
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
         <translation>Gebruik pijltjes omhoog en omlaag om door de geschiedenis te navigeren en %1 om het scherm te wissen.</translation>
     </message>
@@ -2084,7 +1819,6 @@
     <message>
         <source>Network activity disabled</source>
         <translation>Netwerkactiviteit uitgeschakeld</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -2134,19 +1868,7 @@
         <translation>&amp;Bericht</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Gebruik een van de eerder gebruikte ontvangstadressen opnieuw. Het opnieuw gebruiken van adressen heeft beveiliging- en privacy problemen. Gebruik dit niet, behalve als er eerder een betalingsverzoek opnieuw gegenereerd is.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>H&amp;ergebruik en bestaand ontvangstadres (niet aanbevolen)</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
-=======
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
->>>>>>> upstream/0.16
         <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek, welke zal getoond worden wanneer het verzoek is geopend. Opmerking: Het bericht zal niet worden verzonden met de betaling over het Litecoinnetwerk.</translation>
     </message>
     <message>
@@ -2178,8 +1900,6 @@
         <translation>&amp;Betalingsverzoek</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Bech32 addresses (BIP-173) are cheaper to spend from and offer better protection against typos. When unchecked a P2SH wrapped SegWit address will be created, compatible with older wallets.</source>
         <translation>Bech32 adressen (BIP-173) zijn goedkoper om van te betalen en bieden betere bescherming tegen typefouten. Indien niet aangevinkt zal een P2SH omgeven SegWit adres aangemaakt worden, compatibel met oudere wallets.</translation>
     </message>
@@ -2188,7 +1908,6 @@
         <translation>Genereer Bech32-adres</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Show the selected request (does the same as double clicking an entry)</source>
         <translation>Toon het geselecteerde verzoek (doet hetzelfde als dubbelklikken)</translation>
     </message>
@@ -2343,11 +2062,7 @@
     </message>
     <message>
         <source>Fee:</source>
-<<<<<<< HEAD
-        <translation>Kosten:</translation>
-=======
         <translation>Vergoeding:</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>After Fee:</source>
@@ -2367,21 +2082,13 @@
     </message>
     <message>
         <source>Transaction Fee:</source>
-<<<<<<< HEAD
-        <translation>Transactiekosten:</translation>
-=======
         <translation>Transactie vergoeding:</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose...</source>
         <translation>Kies...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>collapse fee-settings</source>
-        <translation>verberg kosteninstellingen</translation>
-=======
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
         <translation>Gebruik van de terugvalkosten kan resulteren in het verzenden van een transactie die meerdere uren of dagen (of nooit) zal duren om bevestigd te worden. Overweeg om handmatig de vergoeding in te geven of wacht totdat je de volledige keten hebt gevalideerd.</translation>
     </message>
@@ -2392,7 +2099,6 @@
     <message>
         <source>collapse fee-settings</source>
         <translation>verberg vergoeding-instellingen</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2407,15 +2113,7 @@
         <translation>Verbergen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>total at least</source>
-        <translation>totaal ten minste</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Actinium transactions than the network can process.</source>
-=======
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
->>>>>>> upstream/0.16
         <translation>De minimale toeslag betalen is prima mits het transactievolume kleiner is dan de ruimte in de blokken. Let wel op dat dit tot gevolg kan hebben dat een transactie nooit wordt bevestigd als er meer vraag is naar litecointransacties dan het netwerk kan verwerken.</translation>
     </message>
     <message>
@@ -2428,28 +2126,13 @@
     </message>
     <message>
         <source>Custom:</source>
-<<<<<<< HEAD
-        <translation>Handmatig:</translation>
-=======
         <translation>Aangepast:</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Slimme transactiekosten is nog niet geïnitialiseerd. Dit duurt meestal een paar blokken...)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>normaal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>snel</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Verstuur in een keer aan verschillende ontvangers</translation>
     </message>
@@ -2470,8 +2153,6 @@
         <translation>Bevestigingstijddoel:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Enable Replace-By-Fee</source>
         <translation>Activeer Replace-By-Fee</translation>
     </message>
@@ -2480,7 +2161,6 @@
         <translation>Met Replace-By-Fee (BIP-125) kun je de vergoeding voor een transactie verhogen na dat deze verstuurd is. Zonder dit kan een hogere vergoeding aangeraden worden om te compenseren voor de hogere kans op transactie vertragingen.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Clear &amp;All</source>
         <translation>Verwijder &amp;Alles</translation>
     </message>
@@ -2525,13 +2205,10 @@
         <translation>Kopieer wijziging</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>%1 (%2 blocks)</source>
         <translation>%1 (%2 blokken)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1 to %2</source>
         <translation>%1 tot %2</translation>
     </message>
@@ -2541,11 +2218,7 @@
     </message>
     <message>
         <source>added as transaction fee</source>
-<<<<<<< HEAD
-        <translation>toegevoegd als transactiekosten</translation>
-=======
         <translation>toegevoegd als transactie vergoeding</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Total Amount %1</source>
@@ -2556,8 +2229,6 @@
         <translation>of</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
         <translation>Je kunt de vergoeding later verhogen (signaleert Replace-By-Fee, BIP-125).</translation>
     </message>
@@ -2566,7 +2237,6 @@
         <translation>Signaleert geen Replace-By-Fee, BIP-125.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Confirm send coins</source>
         <translation>Bevestig versturen munten</translation>
     </message>
@@ -2584,11 +2254,7 @@
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-<<<<<<< HEAD
-        <translation>Het totaal overschrijdt uw huidige saldo wanneer de %1 transactiekosten worden meegerekend.</translation>
-=======
         <translation>Het totaal overschrijdt uw huidige saldo wanneer de %1 transactie vergoeding wordt meegerekend.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Duplicate address found: addresses should only be used once each.</source>
@@ -2610,30 +2276,16 @@
         <source>Payment request expired.</source>
         <translation>Betalingsverzoek verlopen.</translation>
     </message>
-<<<<<<< HEAD
-    <message numerus="yes">
-        <source>%n block(s)</source>
-        <translation><numerusform>%n blok</numerusform><numerusform>%n blokken</numerusform></translation>
-    </message>
-    <message>
-        <source>Pay only the required fee of %1</source>
-        <translation>Betaal alleen de verplichte transactiekosten van %1</translation>
-=======
     <message>
         <source>Pay only the required fee of %1</source>
         <translation>Betaal alleen de verplichte transactie vergoeding van %1</translation>
->>>>>>> upstream/0.16
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation><numerusform>Schatting is dat bevestiging begint over %n blok.</numerusform><numerusform>Schatting is dat bevestiging begint over %n blokken.</numerusform></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: Invalid Actinium address</source>
-=======
         <source>Warning: Invalid Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Waarschuwing: Ongeldig Litecoinadres</translation>
     </message>
     <message>
@@ -2676,11 +2328,7 @@
         <translation>Dit is een normale betaling.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address to send the payment to</source>
-=======
         <source>The Litecoin address to send the payment to</source>
->>>>>>> upstream/0.16
         <translation>Het Litecoinadres om betaling aan te versturen</translation>
     </message>
     <message>
@@ -2700,26 +2348,18 @@
         <translation>Verwijder deze toevoeging</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>De transactiekosten zal worden afgetrokken van het bedrag dat verstuurd wordt. De ontvangers zullen minder actiniums ontvangen dan ingevoerd is in het hoeveelheidsveld. Als er meerdere ontvangers geselecteerd zijn, dan worden de transactiekosten gelijk verdeeld.</translation>
-=======
         <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>De transactiekosten zal worden afgetrokken van het bedrag dat verstuurd wordt. De ontvangers zullen minder litecoins ontvangen dan ingevoerd is in het hoeveelheidsveld. Als er meerdere ontvangers geselecteerd zijn, dan worden de transactiekosten gelijk verdeeld.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
         <translation>Trek de transactiekosten a&amp;f van het bedrag.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Use available balance</source>
         <translation>Gebruik beschikbaar saldo</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Message:</source>
         <translation>Bericht:</translation>
     </message>
@@ -2736,13 +2376,8 @@
         <translation>Vul een label voor dit adres in om het aan de lijst met gebruikte adressen toe te voegen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
-        <translation>Een bericht dat werd toegevoegd aan de Actinium: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Litecoinnetwerk.</translation>
-=======
         <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
         <translation>Een bericht dat werd toegevoegd aan de litecoin: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Litecoinnetwerk.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Pay To:</source>
@@ -2786,19 +2421,11 @@
         <translation>&amp;Onderteken Bericht</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>You can sign messages/agreements with your addresses to prove you can receive actiniums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>U kunt berichten/overeenkomsten ondertekenen met uw adres om te bewijzen dat u Actiniums kunt versturen. Wees voorzichtig met het ondertekenen van iets vaags of willekeurigs, omdat phishingaanvallen u kunnen proberen te misleiden tot het ondertekenen van overeenkomsten om uw identiteit aan hen toe te vertrouwen. Onderteken alleen volledig gedetailleerde verklaringen voordat u akkoord gaat.</translation>
-    </message>
-    <message>
-        <source>The Actinium address to sign the message with</source>
-=======
         <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>U kunt berichten/overeenkomsten ondertekenen met uw adres om te bewijzen dat u Litecoins kunt versturen. Wees voorzichtig met het ondertekenen van iets vaags of willekeurigs, omdat phishingaanvallen u kunnen proberen te misleiden tot het ondertekenen van overeenkomsten om uw identiteit aan hen toe te vertrouwen. Onderteken alleen volledig gedetailleerde verklaringen voordat u akkoord gaat.</translation>
     </message>
     <message>
         <source>The Litecoin address to sign the message with</source>
->>>>>>> upstream/0.16
         <translation>Het Litecoinadres om bericht mee te ondertekenen</translation>
     </message>
     <message>
@@ -2830,11 +2457,7 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Onderteken een bericht om te bewijzen dat u een bepaald Litecoinadres bezit</translation>
     </message>
     <message>
@@ -2858,19 +2481,11 @@
         <translation>Voer het adres van de ontvanger in, bericht (zorg ervoor dat de regeleinden, spaties, tabs etc. precies kloppen) en onderteken onderaan om het bericht te verifiëren. Wees voorzicht om niet meer in de ondertekening te lezen dan in het getekende bericht zelf, om te voorkomen dat je wordt aangevallen met een man-in-the-middle attack. Houd er mee rekening dat dit alleen de ondertekende partij bewijst met het ontvangen adres, er kan niet bewezen worden dat er een transactie heeft plaatsgevonden!</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address the message was signed with</source>
-        <translation>Het Litecoinadres waarmee het bericht ondertekend is</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Actinium address</source>
-=======
         <source>The Litecoin address the message was signed with</source>
         <translation>Het Litecoinadres waarmee het bericht ondertekend is</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Litecoinadres het bericht heeft ondertekend.</translation>
     </message>
     <message>
@@ -3296,13 +2911,8 @@
         <translation>Anders</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter address or label to search</source>
-        <translation>Vul adres of label in om te zoeken</translation>
-=======
         <source>Enter address, transaction id, or label to search</source>
         <translation>Voer adres, transactie-ID of etiket in om te zoeken</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Min amount</source>
@@ -3313,13 +2923,10 @@
         <translation>Doe afstand van transactie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Increase transaction fee</source>
         <translation>Toename transactiekosten</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy address</source>
         <translation>Kopieer adres</translation>
     </message>
@@ -3432,8 +3039,6 @@
         <source>Send Coins</source>
         <translation>Verstuur munten</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Fee bump error</source>
         <translation>Vergoedingsverhoging fout</translation>
@@ -3470,7 +3075,6 @@
         <source>Could not commit transaction</source>
         <translation>Kon de transactie niet voltooien</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>WalletView</name>
@@ -3515,11 +3119,7 @@
     </message>
     <message>
         <source>Specify data directory</source>
-<<<<<<< HEAD
-        <translation>Stel datamap in</translation>
-=======
         <translation>Stel gegevensmap in</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
@@ -3534,17 +3134,6 @@
         <translation>Aanvaard opdrachtregel- en JSON-RPC-opdrachten</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
-        <translation>Accepteer verbindingen van buitenaf (standaard: 1 indien geen -proxy of -connect/-noconnect werd opgegeven)</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
-        <translation>Verbind enkel met de opgegeven knooppunt(en); -noconnect of -connect = 0 alleen om automatische verbindingen uit te schakelen</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Uitgegeven onder de MIT software licentie, zie het bijgevoegde bestand %s of %s</translation>
     </message>
@@ -3554,17 +3143,6 @@
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
-<<<<<<< HEAD
-        <translation>Snoeien is geconfigureerd on het minimum van %d MiB. Gebruik a.u.b. een hoger aantal.</translation>
-    </message>
-    <message>
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>Snoei: laatste portemoneesynchronisatie gaat verder dan de gesnoeide data. U moet -reindex gebruiken (download opnieuw de gehele blokketen voor een weggesnoeide node)</translation>
-    </message>
-    <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>Herscannen is niet mogelijk in de snoeimodus. U moet -reindex gebruiken dat de hele blokketen opnieuw zal downloaden.</translation>
-=======
         <translation>Prune is ingesteld op minder dan het minimum van %d MiB. Gebruik a.u.b. een hoger aantal.</translation>
     </message>
     <message>
@@ -3574,7 +3152,6 @@
     <message>
         <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
         <translation>Herscannen is niet mogelijk i.c.m. -prune. U moet -reindex gebruiken dat de hele blockchain opnieuw zal downloaden.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
@@ -3582,19 +3159,11 @@
     </message>
     <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
-<<<<<<< HEAD
-        <translation>Transactiekosten (in %s/kB) toevoegen aan transacties die u doet (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Pruning blockstore...</source>
-        <translation>Snoei blokopslag...</translation>
-=======
         <translation>Transactievergoeding (in %s/kB) toevoegen aan transacties die u doet (standaard: %s)</translation>
     </message>
     <message>
         <source>Pruning blockstore...</source>
         <translation>Block opslag prunen...</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -3605,13 +3174,8 @@
         <translation>Niet mogelijk ok HTTP-server te starten. Zie debuglogboek voor details.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>The %s developers</source>
@@ -3626,13 +3190,10 @@
         <translation>Accepteer doorgestuurde transacties ontvangen van goedgekeurde peers, ook wanneer je zelf geen transacties doorstuurt (standaard: %d)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Add a node to connect to and attempt to keep the connection open (see the `addnode` RPC command help for more info)</source>
         <translation>Voeg een node toe om mee te verbinden en probeer de verbinding open te houden (zie bij help voor het `addnode` RPC commando voor meer info)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Bind aan opgegeven adres en luister er altijd op. Gebruik [host]:port notatie voor IPv6</translation>
     </message>
@@ -3641,14 +3202,6 @@
         <translation>Kan geen lock verkrijgen op gegevensmap %s. %s draait waarschijnlijk al.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Verwijder alle transacties van de portemonnee en herstel alleen de delen van de blokketen door -rescan tijdens het opstarten</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
-        <translation>Fout bij het laden van %s: Je kan HD niet activeren voor een reeds bestaande niet-HD portemonnee</translation>
-=======
         <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
         <translation>Kan niet specifieke verbindingen voorzien en tegelijk addrman uitgaande verbindingen laten vinden.</translation>
     </message>
@@ -3659,20 +3212,16 @@
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Verwijder alle transacties van de portemonnee en herstel alleen de delen van de blokketen door -rescan tijdens het opstarten</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Waarschuwing: Fout bij het lezen van %s! Alle sleutels zijn in goede orde uitgelezen, maar transactiedata of adresboeklemma's zouden kunnen ontbreken of fouten bevatten.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
         <translation>Sluit debugging informatie uit van een categorie. Dit kan samen gebruikt worden met -debug=1 om uitvoer debug logboeken te creëren voor alle categorieën, behalve één of meerdere categorieën.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Voer opdracht uit zodra een portemonneetransactie verandert (%s in cmd wordt vervangen door TxID)</translation>
     </message>
@@ -3690,11 +3239,7 @@
     </message>
     <message>
         <source>Maximum total fees (in %s) to use in a single wallet transaction or raw transaction; setting this too low may abort large transactions (default: %s)</source>
-<<<<<<< HEAD
-        <translation>Maximum totale transactiekosten (in %s) om te gebruiken in een enkele portemoneetransactie; als dit te laag is ingesteld kunnen grote transacties worden verhinderd (standaard: %s)</translation>
-=======
         <translation>Maximum totale transactiekosten (in %s) om te gebruiken in een enkele portemonneetransactie; als dit te laag is ingesteld kunnen grote transacties worden verhinderd (standaard: %s)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
@@ -3705,17 +3250,12 @@
         <translation>Gelieve bij te dragen als je %s nuttig vindt. Bezoek %s voor meer informatie over de software.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, &gt;%u = automatically prune block files to stay under the specified target size in MiB)</source>
-        <translation>Beperk benodigde opslag door trimmen (verwijderen) van oude blokken in te schakelen. Dit maakt het mogelijk om de pruneblockchain RPC aan te roepen om specifieke blokken te verwijderen, en maakt het automatische trimmen van oude blokken mogelijk wanneer een doelgrootte in MiB is voorzien. Deze modus is niet compatibele met -txindex en -rescan. Waarschuwing: Terugzetten van deze instellingen vereist het opnieuw downloaden van gehele de blokketen. (standaard:0 = uitzetten trimmodus, 1 = manueel trimmen via RPC toestaan, &gt;%u = automatisch blokbestanden trimmen om beneden de gespecificeerde doelgrootte in MiB te blijven)</translation>
-=======
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect used)</source>
         <translation>Query voor peer adressen via DNS-lookup, als er weinig adressen zijn (standaard: 1 tenzij -connect gebruikt word)</translation>
     </message>
     <message>
         <source>Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, &gt;%u = automatically prune block files to stay under the specified target size in MiB)</source>
         <translation>Beperk benodigde opslag door het prunen (verwijderen) van oude blocks in te schakelen. Dit maakt het mogelijk om het pruneblockchain RPC commando aan te roepen om specifieke blocks te verwijderen, en maakt het automatische prunen van oude blocks mogelijk wanneer een doelgrootte in MiB is ingesteld. Deze modus is niet compatible met -txindex en -rescan. Waarschuwing: ongedaan maken van deze instellingen vereist het opnieuw downloaden van gehele de blockchain. (standaard:0 = uitschakelen prunen, 1 = handmatig prunen via RPC toestaan, &gt;%u = automatisch blockchain bestanden prunen om beneden de gespecificeerde doelgrootte in MiB te blijven)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Set lowest fee rate (in %s/kB) for transactions to be included in block creation. (default: %s)</source>
@@ -3734,8 +3274,6 @@
         <translation>Dit is een pre-release testversie - gebruik op eigen risico! Gebruik deze niet voor het delven van munten of handelsdoeleinden</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
         <translation>Dit is de transactievergoeding die u mag afleggen als het wisselgeld kleiner is dan stof op dit niveau</translation>
     </message>
@@ -3744,7 +3282,6 @@
         <translation>Onmogelijk om blokken opnieuw af te spelen. U dient de database opnieuw op te bouwen met behulp van -reindex-chainstate.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
         <translation>Niet mogelijk om de databank terug te draaien naar een staat voor de vork. Je zal je blokketen opnieuw moeten downloaden</translation>
     </message>
@@ -3754,11 +3291,7 @@
     </message>
     <message>
         <source>Username and hashed password for JSON-RPC connections. The field &lt;userpw&gt; comes in the format: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. A canonical python script is included in share/rpcuser. The client then connects normally using the rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt; pair of arguments. This option can be specified multiple times</source>
-<<<<<<< HEAD
-        <translation>Gebruikersnaam en gehasht wachtwoord voor JSON-RPC-verbindingen. De velden &lt;userpw&gt; is in het formaat: &lt;GEBRUIKERSNAAM&gt;:&lt;SALT&gt;$&lt;HASH&gt;. Een kanoniek Pythonscript is inbegrepen in de share/rpcuser. De klant connecteert dan normaal via de rpcuser=&lt;GEBRUIKERSNAAM&gt;/rpcpassword=&lt;PASWOORD&gt; argumenten. Deze optie kan meerdere keren worden meegegeven</translation>
-=======
         <translation>Gebruikersnaam en gehasht wachtwoord voor JSON-RPC-verbindingen. Het veld &lt;userpw&gt; is in het formaat: &lt;GEBRUIKERSNAAM&gt;:&lt;SALT&gt;$&lt;HASH&gt;. Een kanoniek Pythonscript is inbegrepen in share/rpcuser. De client verbindt dan normaal via de rpcuser=&lt;GEBRUIKERSNAAM&gt;/rpcpassword=&lt;PASWOORD&gt; argumenten. Deze optie kan meerdere keren worden meegegeven</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet will not create transactions that violate mempool chain limits (default: %u)</source>
@@ -3773,17 +3306,12 @@
         <translation>Waarschuwing: Het lijkt erop dat we geen consensus kunnen vinden met onze peers! Mogelijk dient u te upgraden, of andere nodes moeten wellicht upgraden.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
-        <translation>Om -txindex te kunnen veranderen dient u de database opnieuw te bouwen met gebruik van -reindex-chainstate.</translation>
-=======
         <source>Whether to save the mempool on shutdown and load on restart (default: %u)</source>
         <translation>Of de mempool opgeslagen moet worden bij afsluiten en ingeladen moet worden tijdens herstarten (standaard: %u)</translation>
     </message>
     <message>
         <source>%d of last 100 blocks have unexpected version</source>
         <translation>%d van de laatste 100 blokken hebben een onverwachte versie</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
@@ -3791,24 +3319,17 @@
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
-<<<<<<< HEAD
-        <translation>-maxmempool moet tenminste %d MB zijn</translation>
-=======
         <translation>-maxmempool moet minstens %d MB zijn</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;categorie&gt; kan zijn:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Accepteer verbindingen van buitenaf (standaard: 1 als geen -proxy of -connect is opgegeven)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Append comment to the user agent string</source>
         <translation>Voeg commentaar toe aan de user agent string</translation>
     </message>
@@ -3862,11 +3383,7 @@
     </message>
     <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
-<<<<<<< HEAD
-        <translation>Stat toe om hashtransactie te publiceren in &lt;adres&gt;</translation>
-=======
         <translation>Sta toe om hashtransactie te publiceren in &lt;adres&gt;</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
@@ -3881,13 +3398,10 @@
         <translation>Transactie vervanging inschakelen in het geheugen (standaard: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error creating %s: You can't create non-HD wallets with this version.</source>
         <translation>Fout bij het maken van %s: Je kunt geen niet-HD portemonnees maken met deze versie.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error initializing block database</source>
         <translation>Fout bij intialisatie blokkendatabase</translation>
     </message>
@@ -3908,13 +3422,6 @@
         <translation>Fout bij laden %s: Portemonnee vereist een nieuwere versie van %s</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Error loading %s: You can't disable HD on a already existing HD wallet</source>
-        <translation>Fout bij het laden van %s: Je kan HD niet deactiveren voor een reeds bestaande HD portemonnee</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Error loading block database</source>
         <translation>Fout bij het laden van blokkendatabase</translation>
     </message>
@@ -3931,47 +3438,30 @@
         <translation>Mislukt om op welke poort dan ook te luisteren. Gebruik -listen=0 as u dit wilt.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Failed to rescan the wallet during initialization</source>
         <translation>Portemonnee herscannen tijdens initialisatie mislukt</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Importing...</source>
         <translation>Importeren...</translation>
     </message>
     <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-<<<<<<< HEAD
-        <translation>Incorrect of geen genesisblok gevonden. Verkeerde datamap voor het netwerk?</translation>
-=======
         <translation>Incorrect of geen genesisblok gevonden. Verkeerde gegevensmap voor het netwerk?</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
         <translation>Initialisatie sanity check mislukt. %s is aan het afsluiten.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Ongeldig -onion adres '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>Ongeldig bedrag voor -%s=&lt;bedrag&gt;: '%s'</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
         <translation>Ongeldig bedrag for -discardfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation>Ongeldig bedrag voor -fallbackfee=&lt;bedrag&gt;: '%s'</translation>
     </message>
@@ -3980,13 +3470,10 @@
         <translation>De transactiegeheugenpool moet onder de &lt;n&gt; megabytes blijven (standaard: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Loading P2P addresses...</source>
         <translation>P2P-adressen aan het laden...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Loading banlist...</source>
         <translation>Verbanningslijst aan het laden...</translation>
     </message>
@@ -4012,17 +3499,6 @@
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
-<<<<<<< HEAD
-        <translation>Snoeien kan niet worden geconfigureerd met een negatieve waarde.</translation>
-    </message>
-    <message>
-        <source>Prune mode is incompatible with -txindex.</source>
-        <translation>Snoeimodus is niet-compatibel met -txindex</translation>
-    </message>
-    <message>
-        <source>Rebuild chain state and block index from the blk*.dat files on disk</source>
-        <translation>Herbouw ketenstaat en block index met behulp van de blk*.dat bestanden op de hardeschijf</translation>
-=======
         <translation>Prune kan niet worden geconfigureerd met een negatieve waarde.</translation>
     </message>
     <message>
@@ -4032,39 +3508,26 @@
     <message>
         <source>Rebuild chain state and block index from the blk*.dat files on disk</source>
         <translation>Herbouw ketenstaat en block index met behulp van de blk*.dat bestanden op de harde schijf</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Rebuild chain state from the currently indexed blocks</source>
         <translation>Herbouw ketenstaat vanuit de huidige geindexeerde blokken</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Replaying blocks...</source>
         <translation>Blokken opnieuw aan het afspelen...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Rewinding blocks...</source>
         <translation>Blokken aan het terugdraaien...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Zet database cache grootte in megabytes (%d tot %d, standaard: %d)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Stel maximum blokgrootte in in bytes (standaard: %d)</translation>
-=======
         <source>Send transactions with full-RBF opt-in enabled (RPC only, default: %u)</source>
         <translation>Verstuur transacties met full-RBF opt-in ingeschakeld (enkel RPC, standaard: %u)</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>Zet database cache grootte in megabytes (%d tot %d, standaard: %d)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -4075,13 +3538,10 @@
         <translation>De broncode is beschikbaar van %s.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Transaction fee and change calculation failed</source>
         <translation>Transactievergoeding en wisselgeldberekening mislukt</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Unable to bind to %s on this computer. %s is probably already running.</source>
         <translation>Niet in staat om %s te verbinden op deze computer. %s draait waarschijnlijk al.</translation>
     </message>
@@ -4098,8 +3558,6 @@
         <translation>Niet-ondersteund argument -tor gevonden, gebruik -onion.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Unsupported logging category %s=%s.</source>
         <translation>Niet-ondersteunde logcategorie %s=%s.</translation>
     </message>
@@ -4108,7 +3566,6 @@
         <translation>Upgraden UTXO-database</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Use UPnP to map the listening port (default: %u)</source>
         <translation>Gebruik UPnP om de luisterende poort te mappen (standaard: %u)</translation>
     </message>
@@ -4125,21 +3582,8 @@
         <translation>Blokken aan het controleren...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>Portemonnee aan het controleren...</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>Portemonnee %s bevindt zich buiten de gegevensmap %s</translation>
-    </message>
-    <message>
-        <source>Wallet debugging/testing options:</source>
-        <translation>Portomonee debugging/testing opties:</translation>
-=======
         <source>Wallet debugging/testing options:</source>
         <translation>Portemonee debugging/testing opties:</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
@@ -4158,13 +3602,6 @@
         <translation>Bind aan opgegeven adres en keur peers die ermee verbinden goed. Gebruik [host]:poort notatie voor IPv6</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Bind aan gegeven adres om te luisteren voor JSON-RPC verbindingen. Gebruik [host]:poort notatie voor IPv6. Deze optie kan meerdere keren gespecificeerd worden (standaard: bind aan alle interfaces.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Creër nieuwe bestanden met standaard systeem bestandsrechten in plaats van umask 077 (alleen effectief met uitgeschakelde portemonnee functionaliteit)</translation>
     </message>
@@ -4182,37 +3619,6 @@
     </message>
     <message>
         <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
-<<<<<<< HEAD
-        <translation>Transactiekosten (in %s/kB) kleiner dan dit worden beschouw dat geen transactiekosten in rekening worden gebracht voor doorgeven, delven en transactiecreatie (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Als paytxfee niet is ingesteld, voeg voldoende transactiekosten toe zodat transacties starten met bevestigingen binnen in n blokken (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>ongeldig bedrag voor -maxtxfee=&lt;bedrag&gt;: '%s' (moet ten minste de minimale doorgeeftransactiekosten van %s het voorkomen geplakt transacties voorkomen)</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Maximale grootte va  n de gegevens in gegevensdragertransacties die we doorgeven en mijnen (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Gebruik willekeurige inloggegevens voor elke proxyverbinding. Dit maakt streamislatie voor Tor mogelijk (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Stel maximumgrootte in bytes in voor hoge-prioriteits-/lage-transactiekosten-transacties (standaard: %d)</translation>
-    </message>
-    <message>
-        <source>The transaction amount is too small to send after the fee has been deducted</source>
-        <translation>Het transactiebedrag is te klein om te versturen nadat de transactiekosten in mindering zijn gebracht</translation>
-    </message>
-    <message>
-        <source>Use hierarchical deterministic key generation (HD) after BIP32. Only has effect during wallet creation/first start</source>
-        <translation>Gebruik hiërarchische deterministische sleutelgeneratie (HD) na BIP32. Dit heeft enkel effect bij het aanmaken van portemonnees of het eerste gebruik</translation>
-=======
         <translation>Vergoedingen (in %s/kB) kleiner dan dit worden beschouwd als nul-vergoeding voor doorgeven, mijnen en transactiecreatie (standaard: %s)</translation>
     </message>
     <message>
@@ -4234,7 +3640,6 @@
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>Het transactiebedrag is te klein om te versturen nadat de transactievergoeding in mindering is gebracht</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -4242,11 +3647,7 @@
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
-<<<<<<< HEAD
-        <translation>U moet de database herbouwen met -reindex om terug te gaan naar de ongesnoeide modus. Dit zal de gehele blokketen opnieuw downloaden.</translation>
-=======
         <translation>U moet de database herbouwen met -reindex om terug te gaan naar de niet-prune modus. Dit zal de gehele blockchain opnieuw downloaden.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(default: %u)</source>
@@ -4265,24 +3666,18 @@
         <translation>Verbind door SOCKS5 proxy</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
         <translation>Fout bij het laden van %s: Je kan HD niet deactiveren voor een reeds bestaande niet-HD-portemonnee</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error reading from database, shutting down.</source>
         <translation>Fout bij het lezen van de database, afsluiten. </translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error upgrading chainstate database</source>
         <translation>Fout bij het upgraden van de ketenstaat database</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Imports blocks from external blk000??.dat file on startup</source>
         <translation>Importeer blokken van externe blk000??.dat-bestand bij opstarten</translation>
     </message>
@@ -4291,8 +3686,6 @@
         <translation>Informatie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>Ongeldig -onion adress of hostnaam: '%s'</translation>
     </message>
@@ -4301,7 +3694,6 @@
         <translation>Ongeldig -proxy adress of hostnaam: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Ongeldig bedrag voor -paytxfee=&lt;bedrag&gt;: '%s' (Minimum %s)</translation>
     </message>
@@ -4319,11 +3711,7 @@
     </message>
     <message>
         <source>Node relay options:</source>
-<<<<<<< HEAD
-        <translation>Nodedoorgeefopties:</translation>
-=======
         <translation>Node doorgeefopties:</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>RPC server options:</source>
@@ -4342,13 +3730,6 @@
         <translation>Verzend trace/debug-info naar de console in plaats van het debug.log-bestand</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Indien mogelijk, verstuur zonder transactiekosten (standaard: %u)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Toon alle foutopsporingsopties (gebruik: --help -help-debug)</translation>
     </message>
@@ -4361,8 +3742,6 @@
         <translation>Ondertekenen van transactie mislukt</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Specified -walletdir "%s" does not exist</source>
         <translation>Opgegeven -walletdir "%s" bestaat niet</translation>
     </message>
@@ -4375,7 +3754,6 @@
         <translation>Opgegeven -walletdir "%s" is geen map</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>The transaction amount is too small to pay the fee</source>
         <translation>Het transactiebedrag is te klein om transactiekosten in rekening te brengen</translation>
     </message>
@@ -4408,13 +3786,10 @@
         <translation>Niet in staat om aan %s te binden op deze computer (bind gaf error %s)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Unable to generate initial keys</source>
         <translation>Niet mogelijk initiële sleutels te genereren</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Upgrade wallet to latest format on startup</source>
         <translation>Upgrade portemonee naar laatste formaat bij opstarten</translation>
     </message>
@@ -4423,8 +3798,6 @@
         <translation>Gebruikersnaam voor JSON-RPC-verbindingen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Verifying wallet(s)...</source>
         <translation>Portomenee(n) aan het verifiëren...</translation>
     </message>
@@ -4433,7 +3806,6 @@
         <translation>Portemonnee %s begeeft zich buiten portemoneemap %s</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>Waarschuwing</translation>
     </message>
@@ -4446,13 +3818,10 @@
         <translation>Om in alleen een blokmodus te opereren (standaard: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>De database moet opnieuw opgebouwd worden met behulp van -reindex om -txindex te veranderen</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Zapping all transactions from wallet...</source>
         <translation>Bezig met het zappen van alle transacties van de portemonnee...</translation>
     </message>
@@ -4473,27 +3842,16 @@
         <translation>Sta DNS-naslag toe voor -addnode, -seednode en -connect</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Adressen aan het laden...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behoudt tx meta data bijv. account eigenaar en betalingsverzoek informatie, 2. sla tx meta data niet op)</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-<<<<<<< HEAD
-        <translation>-maxtxfee staat zeer hoog! Transactiekosten van de grootte kunnen worden gebruikt in een enkele transactie.</translation>
-=======
         <translation>-maxtxfee staat zeer hoog! Transactiekosten van deze grootte kunnen worden gebruikt in een enkele transactie.</translation>
     </message>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. This option is ignored unless -rpcallowip is also passed. Port is optional and overrides -rpcport. Use [host]:port notation for IPv6. This option can be specified multiple times (default: 127.0.0.1 and ::1 i.e., localhost, or if -rpcallowip has been specified, 0.0.0.0 and :: i.e., all addresses)</source>
         <translation>Bind aan gegeven adres om te luisteren voor JSON-RPC verbindingen. Deze optie zal genegeerd worden tenzij -rpcallowip ook aangegeven wordt. Port is optioneel en overschrijft -rpcport. Gebruik [host]:poort notatie voor IPv6. Deze optie kan meerdere keren gebruikt worden (standaard: 127.0.0.1 en ::1 i.e., localhost, of als -rpcallowip gespecificeerd is, 0.0.0.0 en :: i.e., alle adressen)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
@@ -4501,9 +3859,6 @@
     </message>
     <message>
         <source>Equivalent bytes per sigop in transactions for relay and mining (default: %u)</source>
-<<<<<<< HEAD
-        <translation>Equivalente bytes per sigop in transacties voor doorsturen en delven (standaard: %u)</translation>
-=======
         <translation>Equivalent bytes per sigop in transacties voor doorsturen en mijnen (standaard: %u)</translation>
     </message>
     <message>
@@ -4513,7 +3868,6 @@
     <message>
         <source>Error loading wallet %s. -wallet parameter must only specify a filename (not a path).</source>
         <translation>Fout laden portemonnee %s. -wallet parameter mag alleen een bestandsnaam zijn (geen pad).</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
@@ -4540,10 +3894,6 @@
         <translation>Output extra debugginginformatie (standaard: %u, het leveren van &lt;categorie&gt; is optioneel)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
-        <translation>Query voor peer-adressen via DNS-lookup , indien laag aan adressen  (default: 1 unless -connect/-noconnect)</translation>
-=======
         <source>Set maximum BIP141 block weight to this * 4. Deprecated, use blockmaxweight</source>
         <translation>Zet het BIP141 maximum gewicht van een blok op dit * 4. Verouderd, gebruik blockmaxweight</translation>
     </message>
@@ -4554,24 +3904,18 @@
     <message>
         <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
         <translation>Geef locatie op voor debug log bestand: dit kan een absoluut pad zijn of een relatief pad vanaf de gegevensmap (standaard: %s) </translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Ondersteun filtering van blokken en transacties met bloomfilters (standaard: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>This is the transaction fee you may pay when fee estimates are not available.</source>
-        <translation>Dit is de transactiekost die je mogelijk betaald indien geschatte tarief niet beschikbaar is</translation>
-=======
         <source>The fee rate (in %s/kB) that indicates your tolerance for discarding change by adding it to the fee (default: %s). Note: An output is discarded if it is dust at this rate, but we will always discard up to the dust relay fee and a discard fee above that is limited by the fee estimate for the longest target</source>
         <translation>Het vergoedingstarief (in %s/kB) dat de toelating van afdanken van wisselgeld aangeeft door het toe te voegen aan de vergoeding (standaard: %s). Notitie: Een output zal afgedankt worden als het stof is in dit tarief, maar we zullen altijd afdanken tot aan de stof doorstuur vergoeding en een afdank tarief boven wat is gelimiteerd door de vergoeding inschatting voor het langste doel</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>Dit is de transactievergoeding die je mogelijk betaalt indien geschatte tarief niet beschikbaar is</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -4603,11 +3947,7 @@
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-<<<<<<< HEAD
-        <translation>Waarschuwing: portomonee bestand is corrupt, data is veiliggesteld! Originele %s is opgeslagen als %s in %s; als uw balans of transacties incorrect zijn dient u een backup terug te zetten.</translation>
-=======
         <translation>Waarschuwing: portemonnee bestand is corrupt, data is veiliggesteld! Originele %s is opgeslagen als %s in %s; als uw balans of transacties incorrect zijn dient u een backup terug te zetten.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) or CIDR notated network (e.g. 1.2.3.0/24). Can be specified multiple times.</source>
@@ -4626,8 +3966,6 @@
         <translation>Vind anderen door middel van een DNS-naslag (standaard: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading wallet %s. -wallet filename must be a regular file.</source>
         <translation>Fout bij laden van portemonnee %s. -wallet bestandsnaam met een regulier bestand zijn.</translation>
     </message>
@@ -4640,7 +3978,6 @@
         <translation>Fout bij laden van portemonnee %s. Ongeldige tekens in -wallet bestandsnaam.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
         <translation>Aantal te checken blokken bij het opstarten (standaard: %u, 0 = allemaal)</translation>
     </message>
@@ -4649,13 +3986,6 @@
         <translation>IP-adressen toevoegen in de debuguitvoer (standaard: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Ongeldig -proxy adres: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Keypool ran out, please call keypoolrefill first</source>
         <translation>Keypool op geraakt, roep alsjeblieft eerst keypoolrefill functie aan</translation>
     </message>
@@ -4685,11 +4015,7 @@
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
-<<<<<<< HEAD
-        <translation>Prepend debug output met tijdstempel (standaard: %u)</translation>
-=======
         <translation>Begin debug output met tijdstempel (standaard: %u)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -4700,13 +4026,6 @@
         <translation>Geef non-P2SH multisig door (standaard: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send transactions with full-RBF opt-in enabled (default: %u)</source>
-        <translation>Verstuur transacties met full-RBF opt-in ingeschakeld (standaard: %u)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Set key pool size to &lt;n&gt; (default: %u)</source>
         <translation>Stel sleutelpoelgrootte in op &lt;n&gt; (standaard: %u)</translation>
     </message>
@@ -4740,17 +4059,6 @@
     </message>
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
-<<<<<<< HEAD
-        <translation>De portemonnee vermijdt minder te betalen dan het minimale relay vergoeding.</translation>
-    </message>
-    <message>
-        <source>This is the minimum transaction fee you pay on every transaction.</source>
-        <translation>Dit is het minimum transactietarief dat je betaald op elke transactie.</translation>
-    </message>
-    <message>
-        <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Dit is het transactietarief dat je betaald wanneer je een transactie verstuurt.</translation>
-=======
         <translation>De portemonnee vermijdt minder te betalen dan de minimale doorgeef vergoeding.</translation>
     </message>
     <message>
@@ -4760,7 +4068,6 @@
     <message>
         <source>This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Dit is de transactievergoeding dat je betaalt wanneer je een transactie verstuurt.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
@@ -4791,13 +4098,6 @@
         <translation>Blokindex aan het laden...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Voeg een node om naar te verbinden toe en probeer de verbinding open te houden</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Portemonnee aan het laden...</translation>
     </message>
@@ -4806,13 +4106,6 @@
         <translation>Kan portemonnee niet downgraden</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>Kan standaardadres niet schrijven</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Blokketen aan het herscannen...</translation>
     </message>

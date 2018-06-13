@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2013-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "consensus/tx_verify.h"
-#include "consensus/validation.h"
-#include "data/sighash.json.h"
-#include "hash.h"
-#include "script/interpreter.h"
-#include "script/script.h"
-#include "serialize.h"
-#include "streams.h"
-#include "test/test_bitcoin.h"
-#include "util.h"
-#include "utilstrencodings.h"
-#include "version.h"
-=======
 // Copyright (c) 2013-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -32,7 +14,6 @@
 #include <util.h>
 #include <utilstrencodings.h>
 #include <version.h>
->>>>>>> upstream/0.16
 
 #include <iostream>
 
@@ -143,17 +124,9 @@ BOOST_AUTO_TEST_CASE(sighash_test)
     #if defined(PRINT_SIGHASH_JSON)
     std::cout << "[\n";
     std::cout << "\t[\"raw_transaction, script, input_index, hashType, signature_hash (result)\"],\n";
-<<<<<<< HEAD
-    #endif
-    int nRandomTests = 50000;
-
-    #if defined(PRINT_SIGHASH_JSON)
-    nRandomTests = 500;
-=======
     int nRandomTests = 500;
     #else
     int nRandomTests = 50000;
->>>>>>> upstream/0.16
     #endif
     for (int i=0; i<nRandomTests; i++) {
         int nHashType = InsecureRand32();

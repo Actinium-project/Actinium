@@ -1,10 +1,6 @@
 ### TestGen ###
 
-<<<<<<< HEAD
-Utilities to generate test vectors for the data-driven Actinium tests.
-=======
 Utilities to generate test vectors for the data-driven Litecoin tests.
->>>>>>> upstream/0.16
 
 Usage: 
 

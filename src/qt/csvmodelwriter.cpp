@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "csvmodelwriter.h"
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <qt/csvmodelwriter.h>
->>>>>>> upstream/0.16
 
 #include <QAbstractItemModel>
 #include <QFile>

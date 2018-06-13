@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 Actinium Core version 0.10.4.0 is now available from:
 
   <https://download.Actinium.org/Actinium-0.10.4.0/>
-=======
-Litecoin Core version 0.10.4.0 is now available from:
-
-  <https://download.litecoin.org/litecoin-0.10.4.0/>
->>>>>>> upstream/0.16
 
 This is a new minor version release, bringing bug fixes, the BIP65
 (CLTV) consensus change, and relay policy preparation for BIP113. It is
@@ -14,11 +8,7 @@ recommended to upgrade to this version as soon as possible.
 
 Please report bugs using the issue tracker at github:
 
-<<<<<<< HEAD
   <https://github.com/Actinium-project/Actinium/issues>
-=======
-  <https://github.com/litecoin-project/litecoin/issues>
->>>>>>> upstream/0.16
 
 Upgrading and downgrading
 =========================
@@ -28,24 +18,15 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-<<<<<<< HEAD
 installer (on Windows) or just copy over /Applications/Actinium-Qt (on Mac) or
 Actiniumd/Actinium-qt (on Linux).
-=======
-installer (on Windows) or just copy over /Applications/Litecoin-Qt (on Mac) or
-litecoind/litecoin-qt (on Linux).
->>>>>>> upstream/0.16
 
 Downgrade warning
 ------------------
 
 Because release 0.10+ and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-<<<<<<< HEAD
 backwards-compatible with pre-0.10 versions of Actinium Core or other software:
-=======
-backwards-compatible with pre-0.10 versions of Litecoin Core or other software:
->>>>>>> upstream/0.16
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or
@@ -85,21 +66,13 @@ specified point in the future.
    longer accept new version 3 blocks and it will only accept version 4
    blocks if they comply with the BIP65 rules for CLTV.
 
-<<<<<<< HEAD
 **Notice to miners:** Actinium Core’s block templates are now for
-=======
-**Notice to miners:** Litecoin Core’s block templates are now for
->>>>>>> upstream/0.16
 version 4 blocks only, and any mining software relying on its
 getblocktemplate must be updated in parallel to use libblkmaker either
 version v0.4.3 or any version from v0.5.2 onward.
 
 - If you are solo mining, this will affect you the moment you upgrade
-<<<<<<< HEAD
   Actinium Core, which must be done prior to BIP65 achieving its 951/1001
-=======
-  Litecoin Core, which must be done prior to BIP65 achieving its 951/1001
->>>>>>> upstream/0.16
   status.
 
 - If you are mining with the stratum mining protocol: this does not
@@ -116,11 +89,7 @@ Windows bug fix for corrupted UTXO database on unclean shutdowns
 ----------------------------------------------------------------
 
 Several Windows users reported that they often need to reindex the
-<<<<<<< HEAD
 entire blockchain after an unclean shutdown of Actinium Core on Windows
-=======
-entire blockchain after an unclean shutdown of Litecoin Core on Windows
->>>>>>> upstream/0.16
 (or an unclean shutdown of Windows itself). Although unclean shutdowns
 remain unsafe, this release no longer relies on memory-mapped files for
 the UTXO database, which significantly reduced the frequency of unclean
@@ -136,11 +105,7 @@ next major release.
 
 This release is based upon Bitcoin Core v0.10.4.  Their upstream changelog applies to us and
 is included in as separate release-notes, see: [Release Notes](release-notes.md).  
-<<<<<<< HEAD
 This section describes the Actinium-specific differences.
-=======
-This section describes the Litecoin-specific differences.
->>>>>>> upstream/0.16
 
 - Added BIP65 CHECKLOCKTIMEVERIFY softfork.
 - Increased OP_RETURN relay size to 80 bytes.

@@ -30,21 +30,12 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     QWidget(0, f), curAlignment(0)
 {
     // set reference point, paddings
-<<<<<<< HEAD
     // int paddingRight            = 50;
     // int paddingTop              = 50;
     // int titleVersionVSpace      = 17;
     // int titleCopyrightVSpace    = 40;
 
     // float fontFactor            = 1.0;
-=======
-    int paddingRight            = 50;
-    int paddingTop              = 50;
-    int titleVersionVSpace      = 17;
-    int titleCopyrightVSpace    = 40;
-
-    float fontFactor            = 1.0;
->>>>>>> upstream/0.16
     float devicePixelRatio      = 1.0;
 #if QT_VERSION > 0x050100
     devicePixelRatio = ((QGuiApplication*)QCoreApplication::instance())->devicePixelRatio();
@@ -59,11 +50,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     QString font            = QApplication::font().toString();
 
     // create a bitmap according to device pixelratio
-<<<<<<< HEAD
     QSize splashSize(512*devicePixelRatio,512*devicePixelRatio);
-=======
-    QSize splashSize(480*devicePixelRatio,320*devicePixelRatio);
->>>>>>> upstream/0.16
     pixmap = QPixmap(splashSize);
 
 #if QT_VERSION > 0x050100
@@ -82,7 +69,6 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     pixPaint.fillRect(rGradient, gradient);
 
     // draw the bitcoin icon, expected size of PNG: 1024x1024
-<<<<<<< HEAD
     QRect rectIcon(QPoint(0,0), QSize(512,512));
 
     // const QSize requiredSize(1024,1024);
@@ -93,16 +79,6 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
 
     // check font size and drawing with
     /*
-=======
-    QRect rectIcon(QPoint(-150,-122), QSize(430,430));
-
-    const QSize requiredSize(1024,1024);
-    QPixmap icon(networkStyle->getAppIcon().pixmap(requiredSize));
-
-    pixPaint.drawPixmap(rectIcon, icon);
-
-    // check font size and drawing with
->>>>>>> upstream/0.16
     pixPaint.setFont(QFont(font, 33*fontFactor));
     QFontMetrics fm = pixPaint.fontMetrics();
     int titleTextWidth = fm.width(titleText);
@@ -144,11 +120,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
         int titleAddTextWidth  = fm.width(titleAddText);
         pixPaint.drawText(pixmap.width()/devicePixelRatio-titleAddTextWidth-10,15,titleAddText);
     }
-<<<<<<< HEAD
     */
-=======
-
->>>>>>> upstream/0.16
     pixPaint.end();
 
     // Set window title

@@ -1,7 +1,6 @@
 Gitian building
 ================
 
-<<<<<<< HEAD
 *Setup instructions for a Gitian build of Actinium Core using a Debian VM or physical system.*
 
 Gitian is the deterministic build process that is used to build the Actinium
@@ -483,6 +482,3 @@ Uploading signatures
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
 [Actinium-project/gitian.sigs.ltc](https://github.com/Actinium-project/gitian.sigs.ltc/) repository, or if that's not possible create a pull
 request. You can also mail the files to thrasher (thrasher@addictionsofware.com) and he will commit them.
-=======
-This file was moved to [the Bitcoin Core documentation repository](https://github.com/bitcoin-core/docs/blob/master/gitian-building.md) at [https://github.com/bitcoin-core/docs](https://github.com/bitcoin-core/docs).
->>>>>>> upstream/0.16

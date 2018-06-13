@@ -18,14 +18,8 @@
 class PlatformStyle;
 class WalletModel;
 
-<<<<<<< HEAD
-namespace Ui
-{
-class ReceiveCoinsDialog;
-=======
 namespace Ui {
     class ReceiveCoinsDialog;
->>>>>>> upstream/0.16
 }
 
 QT_BEGIN_NAMESPACE
@@ -45,17 +39,10 @@ public:
         MINIMUM_COLUMN_WIDTH = 130
     };
 
-<<<<<<< HEAD
-    explicit ReceiveCoinsDialog(const PlatformStyle* platformStyle, QWidget* parent = 0);
-    ~ReceiveCoinsDialog();
-
-    void setModel(WalletModel* model);
-=======
     explicit ReceiveCoinsDialog(const PlatformStyle *platformStyle, QWidget *parent = 0);
     ~ReceiveCoinsDialog();
 
     void setModel(WalletModel *model);
->>>>>>> upstream/0.16
 
 public Q_SLOTS:
     void clear();
@@ -63,20 +50,6 @@ public Q_SLOTS:
     void accept();
 
 protected:
-<<<<<<< HEAD
-    virtual void keyPressEvent(QKeyEvent* event);
-
-private:
-    Ui::ReceiveCoinsDialog* ui;
-    GUIUtil::TableViewLastColumnResizingFixer* columnResizingFixer;
-    WalletModel* model;
-    QMenu* contextMenu;
-    const PlatformStyle* platformStyle;
-
-    QModelIndex selectedRow();
-    void copyColumnToClipboard(int column);
-    virtual void resizeEvent(QResizeEvent* event);
-=======
     virtual void keyPressEvent(QKeyEvent *event);
 
 private:
@@ -89,23 +62,15 @@ private:
     QModelIndex selectedRow();
     void copyColumnToClipboard(int column);
     virtual void resizeEvent(QResizeEvent *event);
->>>>>>> upstream/0.16
 
 private Q_SLOTS:
     void on_receiveButton_clicked();
     void on_showRequestButton_clicked();
     void on_removeRequestButton_clicked();
-<<<<<<< HEAD
-    void on_recentRequestsView_doubleClicked(const QModelIndex& index);
-    void recentRequestsView_selectionChanged(const QItemSelection& selected, const QItemSelection& deselected);
-    void updateDisplayUnit();
-    void showMenu(const QPoint& point);
-=======
     void on_recentRequestsView_doubleClicked(const QModelIndex &index);
     void recentRequestsView_selectionChanged(const QItemSelection &selected, const QItemSelection &deselected);
     void updateDisplayUnit();
     void showMenu(const QPoint &point);
->>>>>>> upstream/0.16
     void copyURI();
     void copyLabel();
     void copyMessage();

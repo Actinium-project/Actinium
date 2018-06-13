@@ -3,11 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-<<<<<<< HEAD
-        <translation>Double cliquez afin de modifier l'adresse ou l'étiquette</translation>
-=======
         <translation>Faîtes un clique droit afin de modifier l'adresse ou l'étiquette</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Create a new address</source>
@@ -47,19 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-<<<<<<< HEAD
-        <translation>Choisissez une adresse où envoyer les actiniums</translation>
-    </message>
-    <message>
-        <source>Choose the address to receive coins with</source>
-        <translation>Choisissez une adresse où recevoir les actiniums</translation>
-=======
         <translation>Choisissez une adresse où envoyer les litecoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
         <translation>Choisissez une adresse où recevoir les litecoins</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -74,8 +62,6 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Ceci sont vos addresses Litecoin pour envoyer vos paiements. Il faut toujours verifier les montants et l'addresse de reception avant de valider la transaction.</translation>
     </message>
@@ -88,7 +74,6 @@
         <translation>&amp;Copie Adresse</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy &amp;Label</source>
         <translation>Copier &amp;Étiquette </translation>
     </message>
@@ -108,15 +93,11 @@
         <source>Exporting Failed</source>
         <translation>Échec de l'export</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
         <translation>Une erreur s'est produite en enregistrant la list d'adresses à %1. Merci de reéssayer.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -151,8 +132,6 @@
         <translation>Répétez la phrase de passe</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Show password</source>
         <translation>Montrer le mot de passe</translation>
     </message>
@@ -161,37 +140,26 @@
         <translation>Entrez une nouvelle phrase de passe pour le porte-monnaie.&lt;br/&gt;Veuillez utiliser une phrase de &lt;b&gt;10 caractères aléatoire ou plus&lt;/b&gt; ou bien de &lt;b&gt;huit mots ou plus&lt;/b&gt;.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Encrypt wallet</source>
         <translation>Chiffrer le porte-monnaie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Cette operation nécessite la phrase clé de votre porte-monnaie pour le déverouiller</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Unlock wallet</source>
         <translation>Déverrouiller le porte-monnaie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Cette opération nécessite la phrase clé de votre porte-monnaie pour le décrypter.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Decrypt wallet</source>
         <translation>Décrypter le porte-monnaie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
-        <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS ACTINIUMS&lt;/b&gt; !</translation>
-=======
         <source>Change passphrase</source>
         <translation>Changer la phrase de passe</translation>
     </message>
@@ -210,15 +178,11 @@
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de de vouloir crypter votre portefeuille ? </translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet encrypted</source>
         <translation>Portefeuille chiffré</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
         <translation>%1 va à présent se fermer pour terminer la procédure de cryptage. N'oubliez pas que le chiffrement de votre porte-monnaie ne peut pas fournir une protection totale contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
@@ -260,7 +224,6 @@
         <translation>Attention : La touche majuscule est enfoncé.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>BanTableModel</name>
     <message>
@@ -359,8 +322,6 @@
         <translation>Ouvrir &amp;URI</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Click to disable network activity.</source>
         <translation>Cliquez pour désactiver l'activité du réseau.</translation>
     </message>
@@ -377,18 +338,12 @@
         <translation>Synchronisation des entêtes (%1%)...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Reindexing blocks on disk...</source>
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Envoyer des pièces à une adresse Actinium</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Envoyer des pièces à une adresse Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -411,13 +366,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -444,17 +394,12 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Actinium pour prouver que vous les détenez</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Signer vos messages avec vos adresses Litecoin pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Vérifier les messages pour s'assurer qu'ils soient signés avec les adresses Litecoin spécifiées</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -473,56 +418,38 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et Actinium: URIs)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Demander des paiements (générer QR codes et litecoin: URIs)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Montrer la liste des adresses d'envois utilisées et les étiquettes</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Ouvrir un Actinium: URI ou demande de paiement</translation>
-=======
         <source>Show the list of used receiving addresses and labels</source>
         <translation>Afficher la liste des labels et adresses de réception utilisées</translation>
     </message>
     <message>
         <source>Open a litecoin: URI or payment request</source>
         <translation>Ouvrir un litecoin: URI ou demande de paiement</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-<<<<<<< HEAD
-        <source>%n active connection(s) to Actinium network</source>
-        <translation><numerusform>%n connexion active au réseau Actinium</numerusform><numerusform>%n connexions actives au réseau Actinium</numerusform></translation>
-=======
         <source>%n active connection(s) to Litecoin network</source>
         <translation><numerusform>%n connexion active avec le réseau Litecoin</numerusform><numerusform>%n connexions actives avec le réseau Litecoin</numerusform></translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
         <translation>Indexation des blocs sur le disque...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Processing blocks on disk...</source>
         <translation>Traitement des blocs sur le disque</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1 behind</source>
         <translation>en retard de %1</translation>
     </message>
@@ -551,24 +478,18 @@
         <translation>À jour</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
         <translation>Afficher le %1 message d'aide pour récupérer une liste des options de ligne de commande Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1 client</source>
         <translation>%1 client</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Connecting to peers...</source>
         <translation>Connexion au pairs...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Catching up...</source>
         <translation>Rattrapage...</translation>
     </message>
@@ -611,8 +532,6 @@
         <translation>Transaction entrante</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
         <translation>Génération de clé HD &lt;b&gt;activée&lt;/b&gt;</translation>
     </message>
@@ -621,7 +540,6 @@
         <translation>Génération de clé HD &lt;b&gt;désactivée&lt;/b&gt;</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et est actuellement &lt;b&gt;déverrouillé&lt;/b&gt;</translation>
     </message>
@@ -629,15 +547,11 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et est actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
         <translation>Une erreur fatale a eu lieu. Litecoin ne peut plus continuer en toute sécurité et va s'éteindre</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -658,11 +572,7 @@
     </message>
     <message>
         <source>Fee:</source>
-<<<<<<< HEAD
-        <translation>Frais :</translation>
-=======
         <translation>Frais:</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Dust:</source>
@@ -729,8 +639,6 @@
         <translation>Copier l'ID de transaction</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Lock unspent</source>
         <translation>Verrouiller les non dépensés</translation>
     </message>
@@ -739,7 +647,6 @@
         <translation>Déverrouiller les non dépensés</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy quantity</source>
         <translation>Copier la quantité</translation>
     </message>
@@ -756,8 +663,6 @@
         <translation>Copier les octets</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copy dust</source>
         <translation>Copier la poussière </translation>
     </message>
@@ -770,7 +675,6 @@
         <translation>(%1 verrouillé)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>yes</source>
         <translation>oui</translation>
     </message>
@@ -779,12 +683,6 @@
         <translation>non</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
-    </message>
-    </context>
-=======
         <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
         <translation>Cette étiquette devient rouge si un bénéficiaire reçoit une somme plus basse que la limite actuelle de poussière.</translation>
     </message>
@@ -805,7 +703,6 @@
         <translation>(changement)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -817,12 +714,6 @@
         <translation>&amp;Étiquette</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Address</source>
-        <translation>&amp;Adresse</translation>
-    </message>
-    </context>
-=======
         <source>The label associated with this address list entry</source>
         <translation>L'étiquette associée à cette entrée du carnet d'adresses</translation>
     </message>
@@ -867,7 +758,6 @@
         <translation>Échec de la génération de la nouvelle clef.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>FreespaceChecker</name>
     <message>
@@ -879,13 +769,10 @@
         <translation>nom</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
         <translation>Le répertoire existe déjà. Ajouter %1 si vous voulez créer un nouveau répertoire ici.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Path already exists, and is not a directory.</source>
         <translation>Le chemin existe déjà et ce n'est pas un répertoire. </translation>
     </message>
@@ -925,11 +812,6 @@
         <translation>Options interface graphique:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Start minimized</source>
-        <translation>Démarrer sous forme minimisée</translation>
-    </message>
-=======
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>Définir la langue, par exemple "de_DE" (défaut: locale système)</translation>
     </message>
@@ -941,7 +823,6 @@
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Définir les certificats SSL racines pour les requêtes de paiement (défaut:-système-)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>Intro</name>
@@ -962,13 +843,10 @@
         <translation>Utiliser votre propre répertoire</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Erreur: Le répertoire de données "%1" n'a pas pu être créé. </translation>
     </message>
@@ -976,19 +854,7 @@
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
-<<<<<<< HEAD
-    <message numerus="yes">
-        <source>%n GB of free space available</source>
-        <translation><numerusform>%n GO d'espace libre disponible</numerusform><numerusform>%n GO d'espace libre disponible</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>(of %n GB needed)</source>
-        <translation><numerusform>(%n GB nécessaire)</numerusform><numerusform>(%n GB nécessaire)</numerusform></translation>
-    </message>
-</context>
-=======
     </context>
->>>>>>> upstream/0.16
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -1018,15 +884,11 @@
         <source>Select payment request file</source>
         <translation>Sélectionner un fichier de demande de paiement</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Select payment request file to open</source>
         <translation>Sélectionnez le fichier de demande de paiement à ouvrir</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>OptionsDialog</name>
     <message>
@@ -1046,17 +908,6 @@
         <translation>MO</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Accepter les connexions venant de l'extérieur</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Autoriser les connexions entrantes</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Adresse IP du proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
@@ -1077,13 +928,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Actinium automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Ouvrir le port du client Litecoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1122,17 +968,6 @@
         <translation>&amp;Fenêtre</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Hide the icon from the system tray.</source>
-        <translation>&amp;Cacher l'icône dans la zone de notification.</translation>
-    </message>
-    <message>
-        <source>Hide tray icon</source>
-        <translation>Cacher l'icône de la zone de notification</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>&amp;Minimize to the tray instead of the taskbar</source>
         <translation>&amp;Minimiser dans la barre système au lieu de la barre des tâches</translation>
     </message>
@@ -1173,13 +1008,10 @@
         <translation>Redémarrage du client nécessaire pour activer les changements.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Ce changement nécessiterait un redémarrage du client.</translation>
     </message>
@@ -1233,8 +1065,6 @@
     </context>
 <context>
     <name>PaymentServer</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Payment request error</source>
         <translation>Erreur lors de la requête de paiement</translation>
@@ -1271,7 +1101,6 @@
         <source>Network request error</source>
         <translation>Erreur de demande de réseau</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>PeerTableModel</name>
@@ -1283,9 +1112,6 @@
         <source>Node/Service</source>
         <translation>Nœud/Service </translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Sent</source>
         <translation>Envoyé</translation>
@@ -1295,7 +1121,6 @@
         <translation>Reçu </translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -1303,13 +1128,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter a Actinium address (e.g. %1)</source>
-        <translation>Entrer une adresse Actinium (e.g. %1)</translation>
-=======
         <source>Enter a Litecoin address (e.g. %1)</source>
         <translation>Entrer une adresse Litecoin (e.g. %1)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 d</source>
@@ -1343,9 +1163,6 @@
         <source>%1 and %2</source>
         <translation>%1 et %2</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>%1 B</source>
         <translation>%1 O</translation>
@@ -1367,20 +1184,16 @@
         <translation>inconnu</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
 <context>
     <name>QRImageWidget</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Save Image...</source>
         <translation>&amp;Sauvegarder image</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Copy Image</source>
         <translation>&amp;Copier image</translation>
     </message>
@@ -1388,24 +1201,16 @@
         <source>Save QR Code</source>
         <translation>Sauvegarder QR code</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>PNG Image (*.png)</source>
         <translation>Image PNG (*.png)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>RPCConsole</name>
     <message>
         <source>N/A</source>
-<<<<<<< HEAD
-        <translation>N/A </translation>
-=======
         <translation>N/A</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Client version</source>
@@ -1544,13 +1349,6 @@
         <translation>&amp;Trafic réseau</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>&amp;Nettoyer</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Totaux</translation>
     </message>
@@ -1587,25 +1385,6 @@
         <translation>1 &amp;an</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 B</source>
-        <translation>%1 O</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KO</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MO</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GO</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>via %1</source>
         <translation>via %1</translation>
     </message>
@@ -1669,13 +1448,10 @@
         <translation>Copier l'étiquette</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copy message</source>
         <translation>Copier message</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy amount</source>
         <translation>Copier le montant</translation>
     </message>
@@ -1699,8 +1475,6 @@
         <translation>&amp;Sauvegarder image</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Request payment to %1</source>
         <translation>Demande de paiement à %1</translation>
     </message>
@@ -1709,7 +1483,6 @@
         <translation>Informations de paiement</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>URI</source>
         <translation>URI</translation>
     </message>
@@ -1748,9 +1521,6 @@
         <source>(no label)</source>
         <translation>(aucune étiquette)</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>(no message)</source>
         <translation>(pas de message)</translation>
@@ -1760,7 +1530,6 @@
         <translation>Demandé</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendCoinsDialog</name>
     <message>
@@ -1820,28 +1589,10 @@
         <translation>Cacher</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>total at least</source>
-        <translation>Au total au moins</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Recommended:</source>
         <translation>Recommandé: </translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>rapide</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Envoyer des pièces à plusieurs destinataires à la fois</translation>
     </message>
@@ -1890,8 +1641,6 @@
         <translation>Copier les octets</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copy dust</source>
         <translation>Copier la poussière </translation>
     </message>
@@ -1916,13 +1665,10 @@
         <translation>Montant Total %1</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>or</source>
         <translation>ou</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Confirm send coins</source>
         <translation>Confirmer l'envoi des pièces</translation>
     </message>
@@ -1951,7 +1697,6 @@
         <translation>Attention: Adresse Litecoin Invalide</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(aucune étiquette)</translation>
     </message>
@@ -2006,15 +1751,11 @@
         <source>Memo:</source>
         <translation>Memo:</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Entrez une étiquette pour cette adresse afin de l'ajouter à votre carnet d'adresses</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendConfirmationDialog</name>
     <message>
@@ -2075,9 +1816,6 @@
         <source>Verify &amp;Message</source>
         <translation>Vérifier &amp;Message</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>The entered address is invalid.</source>
         <translation>L'adresse entrée est invalide. </translation>
@@ -2103,7 +1841,6 @@
         <translation>Message vérifié. </translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SplashScreen</name>
     <message>
@@ -2121,8 +1858,6 @@
 <context>
     <name>TransactionDesc</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open until %1</source>
         <translation>Ouvert jusqu'à %1</translation>
     </message>
@@ -2139,18 +1874,14 @@
         <translation>%1 confirmations</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Status</source>
         <translation>État</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>, has not been successfully broadcast yet</source>
         <translation>, n'a pas encore été diffusée avec succès</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -2191,13 +1922,10 @@
         <translation>Crédit</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>not accepted</source>
         <translation>Pas accepté</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Debit</source>
         <translation>Débit</translation>
     </message>
@@ -2210,13 +1938,10 @@
         <translation>Crédit total </translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Transaction fee</source>
         <translation>Frais de transaction</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Net amount</source>
         <translation>Montant net</translation>
     </message>
@@ -2229,8 +1954,6 @@
         <translation>Commentaire </translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Transaction ID</source>
         <translation>ID de transaction</translation>
     </message>
@@ -2251,7 +1974,6 @@
         <translation>Entrées </translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Amount</source>
         <translation>Montant</translation>
     </message>
@@ -2286,8 +2008,6 @@
         <translation>Étiquette</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open until %1</source>
         <translation>Ouvert jusqu'à %1</translation>
     </message>
@@ -2336,17 +2056,10 @@
         <translation>Extraction</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>watch-only</source>
         <translation>Lecture uniquement</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>(no label)</source>
-        <translation>(aucune étiquette)</translation>
-    </message>
-    </context>
-=======
         <source>(n/a)</source>
         <translation>(indisponible)</translation>
     </message>
@@ -2371,7 +2084,6 @@
         <translation>Montant ajouté au ou enlevé du solde.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>TransactionView</name>
     <message>
@@ -2399,8 +2111,6 @@
         <translation>Cette année</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Range...</source>
         <translation>Intervalle...</translation>
     </message>
@@ -2421,18 +2131,14 @@
         <translation>Extraction</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Other</source>
         <translation>Autres</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Min amount</source>
         <translation>Montant min</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy address</source>
         <translation>Copier l'adresse</translation>
     </message>
@@ -2449,8 +2155,6 @@
         <translation>Copier l'ID de transaction</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Edit label</source>
         <translation>Éditer l'étiquette</translation>
     </message>
@@ -2463,18 +2167,14 @@
         <translation>Exporter l'historique des transactions</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Comma separated file (*.csv)</source>
         <translation>Valeurs séparées par des virgules (*.csv)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Confirmed</source>
         <translation>Confirmée</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -2499,8 +2199,6 @@
         <translation>Échec de l'export</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Exporting Successful</source>
         <translation>Export réalisé avec sucés </translation>
     </message>
@@ -2509,7 +2207,6 @@
         <translation>Intervalle :</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>to</source>
         <translation>à</translation>
     </message>
@@ -2519,14 +2216,6 @@
     </context>
 <context>
     <name>WalletFrame</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>WalletModel</name>
-    </context>
-<context>
-    <name>WalletView</name>
-=======
     <message>
         <source>No wallet has been loaded.</source>
         <translation>Aucun portefeuille a été chargé.</translation>
@@ -2565,7 +2254,6 @@
         <source>Backup Successful</source>
         <translation>Sauvegarde réussie</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>
@@ -2594,13 +2282,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -2628,13 +2311,6 @@ Importation ...</translation>
         <translation>Vérifications des blocs...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>Vérification du portefeuille...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Wallet options:</source>
         <translation>Options du portefeuille:</translation>
     </message>
@@ -2651,8 +2327,6 @@ Importation ...</translation>
         <translation>Information</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>Adresse ou nom d'hôte -onion invalide: '%s'</translation>
     </message>
@@ -2661,7 +2335,6 @@ Importation ...</translation>
         <translation>Adresse -proxy invalide: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Node relay options:</source>
         <translation>Options du relais de nœud: </translation>
     </message>
@@ -2706,24 +2379,10 @@ Importation ...</translation>
         <translation>Mot de passe pour les connexions JSON-RPC</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Chargement des adresses...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>(default: %s)</source>
         <translation>(défaut: %s)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Adresse -proxy invalide: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Specify pid file (default: %s)</source>
         <translation>Spécifier le pid du fichier (défaut: %s)</translation>
     </message>
@@ -2744,13 +2403,6 @@ Importation ...</translation>
         <translation>Vous ne pouvez pas rétrograder votre portefeuille</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>Impossible d'écrire l'adresse par défaut</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Nouvelle analyse...</translation>
     </message>

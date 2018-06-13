@@ -1,20 +1,12 @@
 UNIX BUILD NOTES
 ====================
-<<<<<<< HEAD
 Some notes on how to build Actinium Core in Unix.
-=======
-Some notes on how to build Litecoin Core in Unix.
->>>>>>> upstream/0.16
 
 (for OpenBSD specific instructions, see [build-openbsd.md](build-openbsd.md))
 
 Note
 ---------------------
-<<<<<<< HEAD
 Always use absolute paths to configure and compile Actinium and the dependencies,
-=======
-Always use absolute paths to configure and compile litecoin and the dependencies,
->>>>>>> upstream/0.16
 for example, when specifying the path of the dependency:
 
 	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
@@ -32,11 +24,7 @@ make
 make install # optional
 ```
 
-<<<<<<< HEAD
 This will build Actinium-qt as well if the dependencies are met.
-=======
-This will build litecoin-qt as well if the dependencies are met.
->>>>>>> upstream/0.16
 
 Dependencies
 ---------------------
@@ -61,21 +49,13 @@ Optional dependencies:
  univalue    | Utility          | JSON parsing and encoding (bundled version will be used unless --with-system-univalue passed to configure)
  libzmq3     | ZMQ notification | Optional, allows generating ZMQ notifications (requires ZMQ version >= 4.x)
 
-<<<<<<< HEAD
 For the versions used in the release, see [release-process.md](release-process.md) under *Fetch and build inputs*.
-=======
-For the versions used, see [dependencies.md](dependencies.md)
->>>>>>> upstream/0.16
 
 Memory Requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
-<<<<<<< HEAD
 memory available when compiling Actinium Core. On systems with less, gcc can be
-=======
-memory available when compiling Litecoin Core. On systems with less, gcc can be
->>>>>>> upstream/0.16
 tuned to conserve memory with additional CXXFLAGS:
 
 
@@ -85,11 +65,7 @@ Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
 Build requirements:
 
-<<<<<<< HEAD
     sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
-=======
-    sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3
->>>>>>> upstream/0.16
 
 Options when installing required Boost library files:
 
@@ -118,11 +94,7 @@ BerkeleyDB 5.1 or later, which break binary wallet compatibility with the distri
 are based on BerkeleyDB 4.8. If you do not care about wallet compatibility,
 pass `--with-incompatible-bdb` to configure.
 
-<<<<<<< HEAD
 See the section "Disable-wallet mode" to build Actinium Core without wallet.
-=======
-See the section "Disable-wallet mode" to build Litecoin Core without wallet.
->>>>>>> upstream/0.16
 
 Optional (see --with-miniupnpc and --enable-upnp-default):
 
@@ -135,11 +107,7 @@ ZMQ dependencies (provides ZMQ API 4.x):
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
 
-<<<<<<< HEAD
 If you want to build Actinium-Qt, make sure that the required packages for Qt development
-=======
-If you want to build Litecoin-Qt, make sure that the required packages for Qt development
->>>>>>> upstream/0.16
 are installed. Either Qt 5 or Qt 4 are necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 5 will be used. Pass `--with-gui=qt4` to configure to choose Qt4.
 To build without GUI pass `--without-gui`.
@@ -156,22 +124,14 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-<<<<<<< HEAD
 Once these are installed, they will be found by configure and a Actinium-qt executable will be
-=======
-Once these are installed, they will be found by configure and a litecoin-qt executable will be
->>>>>>> upstream/0.16
 built by default.
 
 Dependency Build Instructions: Fedora
 -------------------------------------
 Build requirements:
 
-<<<<<<< HEAD
     sudo dnf install gcc-c++ libtool make autoconf automake openssl-devel libevent-devel boost-devel libdb4-devel libdb4-cxx-devel
-=======
-    sudo dnf install gcc-c++ libtool make autoconf automake openssl-devel libevent-devel boost-devel libdb4-devel libdb4-cxx-devel python3
->>>>>>> upstream/0.16
 
 Optional:
 
@@ -187,11 +147,7 @@ libqrencode (optional) can be installed with:
 
 Notes
 -----
-<<<<<<< HEAD
 The release is built with GCC and then "strip Actiniumd" to strip the debug
-=======
-The release is built with GCC and then "strip litecoind" to strip the debug
->>>>>>> upstream/0.16
 symbols, which reduces the executable size by about 90%.
 
 
@@ -209,7 +165,6 @@ turned off by default.  See the configure options for upnp behavior desired:
 
 Berkeley DB
 -----------
-<<<<<<< HEAD
 It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 
 ```bash
@@ -237,18 +192,6 @@ cd $LITECOIN_ROOT
 ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" # (other args...)
 ```
 
-=======
-It is recommended to use Berkeley DB 4.8. If you have to build it yourself,
-you can use [the installation script included in contrib/](/contrib/install_db4.sh)
-like so
-
-```shell
-./contrib/install_db4.sh `pwd`
-```
-
-from the root of the repository.
-
->>>>>>> upstream/0.16
 **Note**: You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
 
 Boost
@@ -262,11 +205,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-<<<<<<< HEAD
 To help make your Actinium installation more secure by making certain attacks impossible to
-=======
-To help make your litecoin installation more secure by making certain attacks impossible to
->>>>>>> upstream/0.16
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 
@@ -290,11 +229,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-<<<<<<< HEAD
     	scanelf -e ./Actinium
-=======
-    	scanelf -e ./litecoin
->>>>>>> upstream/0.16
 
     The output should contain:
 
@@ -303,21 +238,13 @@ Hardening enables the following features:
 
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
-<<<<<<< HEAD
     vulnerable buffers are found. By default, Actinium should be built with a non-executable stack
-=======
-    vulnerable buffers are found. By default, litecoin should be built with a non-executable stack
->>>>>>> upstream/0.16
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-<<<<<<< HEAD
     `scanelf -e ./Actinium`
-=======
-    `scanelf -e ./litecoin`
->>>>>>> upstream/0.16
 
     the output should contain:
 	STK/REL/PTL
@@ -327,11 +254,7 @@ Hardening enables the following features:
 
 Disable-wallet mode
 --------------------
-<<<<<<< HEAD
 When the intention is to run only a P2P node without a wallet, Actinium may be compiled in
-=======
-When the intention is to run only a P2P node without a wallet, litecoin may be compiled in
->>>>>>> upstream/0.16
 disable-wallet mode with:
 
     ./configure --disable-wallet
@@ -353,13 +276,8 @@ Setup and Build Example: Arch Linux
 This example lists the steps necessary to setup and build a command line only, non-wallet distribution of the latest changes on Arch Linux:
 
     pacman -S git base-devel boost libevent python
-<<<<<<< HEAD
     git clone https://github.com/Actinium-project/Actinium.git
     cd Actinium/
-=======
-    git clone https://github.com/litecoin-project/litecoin.git
-    cd litecoin/
->>>>>>> upstream/0.16
     ./autogen.sh
     ./configure --disable-wallet --without-gui --without-miniupnpc
     make check
@@ -368,11 +286,7 @@ Note:
 Enabling wallet support requires either compiling against a Berkeley DB newer than 4.8 (package `db`) using `--with-incompatible-bdb`,
 or building and depending on a local version of Berkeley DB 4.8. The readily available Arch Linux packages are currently built using
 `--with-incompatible-bdb` according to the [PKGBUILD](https://projects.archlinux.org/svntogit/community.git/tree/bitcoin/trunk/PKGBUILD).
-<<<<<<< HEAD
 As mentioned above, when maintaining portability of the wallet between the standard Actinium Core distributions and independently built
-=======
-As mentioned above, when maintaining portability of the wallet between the standard Litecoin Core distributions and independently built
->>>>>>> upstream/0.16
 node software is desired, Berkeley DB 4.8 must be used.
 
 
@@ -415,26 +329,17 @@ You need to use GNU make (`gmake`) instead of `make`.
 
 For the wallet (optional):
 
-<<<<<<< HEAD
     pkg install db5
 
 This will give a warning "configure: WARNING: Found Berkeley DB other
 than 4.8; wallets opened by this build will not be portable!", but as FreeBSD never
 had a binary release, this may not matter. If backwards compatibility
 with 4.8-built Actinium Core is needed follow the steps under "Berkeley DB" above.
-=======
-    ./contrib/install_db4.sh `pwd`
-    setenv BDB_PREFIX $PWD/db4
->>>>>>> upstream/0.16
 
 Then build using:
 
     ./autogen.sh
-<<<<<<< HEAD
     ./configure --with-incompatible-bdb BDB_CFLAGS="-I/usr/local/include/db5" BDB_LIBS="-L/usr/local/lib -ldb_cxx-5"
-=======
-    ./configure BDB_CFLAGS="-I${BDB_PREFIX}/include" BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx"
->>>>>>> upstream/0.16
     gmake
 
 *Note on debugging*: The version of `gdb` installed by default is [ancient and considered harmful](https://wiki.freebsd.org/GdbRetirement).

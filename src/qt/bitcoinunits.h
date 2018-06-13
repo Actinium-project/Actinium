@@ -1,19 +1,11 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_BITCOINUNITS_H
 #define BITCOIN_QT_BITCOINUNITS_H
 
-<<<<<<< HEAD
-#include "amount.h"
-=======
 #include <amount.h>
->>>>>>> upstream/0.16
 
 #include <QAbstractListModel>
 #include <QString>
@@ -84,15 +76,10 @@ public:
     static QList<Unit> availableUnits();
     //! Is unit ID valid?
     static bool valid(int unit);
-<<<<<<< HEAD
-    //! Short name
-    static QString name(int unit);
-=======
     //! Long name
     static QString longName(int unit);
     //! Short name
     static QString shortName(int unit);
->>>>>>> upstream/0.16
     //! Longer description
     static QString description(int unit);
     //! Number of Satoshis (1e-8) per unit

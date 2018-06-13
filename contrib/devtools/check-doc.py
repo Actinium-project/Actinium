@@ -1,9 +1,5 @@
 #!/usr/bin/env python
-<<<<<<< HEAD
-# Copyright (c) 2015-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2015-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,10 +12,7 @@ Author: @MarcoFalke
 
 from subprocess import check_output
 import re
-<<<<<<< HEAD
-=======
 import sys
->>>>>>> upstream/0.16
 
 FOLDER_GREP = 'src'
 FOLDER_TEST = 'src/test/'
@@ -29,11 +22,7 @@ CMD_GREP_DOCS = r"egrep -r -I 'HelpMessageOpt\(\"\-[^\"=]+?(=|\")' %s" % (CMD_RO
 REGEX_ARG = re.compile(r'(?:map(?:Multi)?Args(?:\.count\(|\[)|Get(?:Bool)?Arg\()\"(\-[^\"]+?)\"')
 REGEX_DOC = re.compile(r'HelpMessageOpt\(\"(\-[^\"=]+?)(?:=|\")')
 # list unsupported, deprecated and duplicate args as they need no documentation
-<<<<<<< HEAD
-SET_DOC_OPTIONAL = set(['-rpcssl', '-benchmark', '-h', '-help', '-socks', '-tor', '-debugnet', '-whitelistalwaysrelay', '-prematurewitness', '-walletprematurewitness', '-promiscuousmempoolflags', '-blockminsize', '-dbcrashratio', '-forcecompactdb'])
-=======
 SET_DOC_OPTIONAL = set(['-rpcssl', '-benchmark', '-h', '-help', '-socks', '-tor', '-debugnet', '-whitelistalwaysrelay', '-prematurewitness', '-walletprematurewitness', '-promiscuousmempoolflags', '-blockminsize', '-dbcrashratio', '-forcecompactdb', '-usehd'])
->>>>>>> upstream/0.16
 
 def main():
   used = check_output(CMD_GREP_ARGS, shell=True)
@@ -51,11 +40,7 @@ def main():
   print "Args unknown     : %s" % len(args_unknown)
   print args_unknown
 
-<<<<<<< HEAD
-  exit(len(args_need_doc))
-=======
   sys.exit(len(args_need_doc))
->>>>>>> upstream/0.16
 
 if __name__ == "__main__":
     main()

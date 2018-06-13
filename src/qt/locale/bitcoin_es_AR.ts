@@ -3,11 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-<<<<<<< HEAD
-        <translation>Hacé click para editar la dirección o etiqueta</translation>
-=======
         <translation>Click derecho para editar la dirección o etiqueta</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Create a new address</source>
@@ -19,11 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-<<<<<<< HEAD
-        <translation>Copiá la dirección que seleccionaste al portapapeles</translation>
-=======
         <translation>Copiar la dirección seleccionada al portapapeles</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -31,11 +23,7 @@
     </message>
     <message>
         <source>C&amp;lose</source>
-<<<<<<< HEAD
-        <translation>C&amp;lose</translation>
-=======
         <translation>C&amp;errar</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -53,12 +41,6 @@
         <source>&amp;Delete</source>
         <translation>&amp;Borrar</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>AddressTableModel</name>
-    </context>
-=======
     <message>
         <source>Choose the address to send coins to</source>
         <translation>Seleccione la dirección donde enviará las monedas</translation>
@@ -121,7 +103,6 @@
         <translation>(No etiqueta)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -140,8 +121,6 @@
         <source>Repeat new passphrase</source>
         <translation>Repetí la nueva Frase de Contraseña</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Encrypt wallet</source>
         <translation>Encriptar billetera</translation>
@@ -154,7 +133,6 @@
         <source>Decrypt wallet</source>
         <translation>Desencriptar la billetera</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>BanTableModel</name>
@@ -164,13 +142,10 @@
     </context>
 <context>
     <name>CoinControlDialog</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>(no label)</source>
         <translation>(No etiqueta)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -219,15 +194,6 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>RecentRequestsTableModel</name>
-    </context>
-<context>
-    <name>SendCoinsDialog</name>
-    </context>
-=======
     <message>
         <source>Address</source>
         <translation>Dirección
@@ -256,7 +222,6 @@
         <translation>(No etiqueta)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     </context>
@@ -283,11 +248,6 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>TransactionView</name>
-=======
     <message>
         <source>Label</source>
         <translation>Etiqueta</translation>
@@ -312,7 +272,6 @@
         <source>Exporting Failed</source>
         <translation>Exportar archivo</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>

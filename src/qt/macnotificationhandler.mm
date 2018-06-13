@@ -13,11 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-<<<<<<< HEAD
         return @"org.Actinium.Actinium-Qt";
-=======
-        return @"org.litecoin.Litecoin-Qt";
->>>>>>> upstream/0.16
     } else {
         return [self __bundleIdentifier];
     }
@@ -51,23 +47,6 @@ void MacNotificationHandler::showNotification(const QString &title, const QStrin
     }
 }
 
-<<<<<<< HEAD
-// sendAppleScript just take a QString and executes it as apple script
-void MacNotificationHandler::sendAppleScript(const QString &script)
-{
-    QByteArray utf8 = script.toUtf8();
-    char* cString = (char *)utf8.constData();
-    NSString *scriptApple = [[NSString alloc] initWithUTF8String:cString];
-
-    NSAppleScript *as = [[NSAppleScript alloc] initWithSource:scriptApple];
-    NSDictionary *err = nil;
-    [as executeAndReturnError:&err];
-    [as release];
-    [scriptApple release];
-}
-
-=======
->>>>>>> upstream/0.16
 bool MacNotificationHandler::hasUserNotificationCenterSupport(void)
 {
     Class possibleClass = NSClassFromString(@"NSUserNotificationCenter");
@@ -82,11 +61,7 @@ bool MacNotificationHandler::hasUserNotificationCenterSupport(void)
 
 MacNotificationHandler *MacNotificationHandler::instance()
 {
-<<<<<<< HEAD
-    static MacNotificationHandler *s_instance = NULL;
-=======
     static MacNotificationHandler *s_instance = nullptr;
->>>>>>> upstream/0.16
     if (!s_instance) {
         s_instance = new MacNotificationHandler();
         

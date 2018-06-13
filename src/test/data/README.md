@@ -1,11 +1,7 @@
 Description
 ------------
 
-<<<<<<< HEAD
-This directory contains data-driven tests for various aspects of Bitcoin.
-=======
-This directory contains data-driven tests for various aspects of Litecoin.
->>>>>>> upstream/0.16
+This directory contains data-driven tests for various aspects of Actinium.
 
 License
 --------

@@ -9,10 +9,7 @@ SUBDIRS += doc/man
 endif
 .PHONY: deploy FORCE
 
-<<<<<<< HEAD
 GZIP_ENV="-9n"
-=======
->>>>>>> upstream/0.16
 export PYTHONPATH
 
 if BUILD_BITCOIN_LIBS
@@ -28,11 +25,7 @@ BITCOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EX
 empty :=
 space := $(empty) $(empty)
 
-<<<<<<< HEAD
 OSX_APP=Actinium-Qt.app
-=======
-OSX_APP=Litecoin-Qt.app
->>>>>>> upstream/0.16
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG=background.svg
@@ -50,18 +43,11 @@ DIST_CONTRIB = $(top_srcdir)/contrib/bitcoin-cli.bash-completion \
 	       $(top_srcdir)/contrib/bitcoin-tx.bash-completion \
 	       $(top_srcdir)/contrib/bitcoind.bash-completion \
 	       $(top_srcdir)/contrib/init \
-<<<<<<< HEAD
-	       $(top_srcdir)/contrib/rpm
-DIST_SHARE = \
-  $(top_srcdir)/share/genbuild.sh \
-  $(top_srcdir)/share/rpcuser
-=======
 	       $(top_srcdir)/contrib/install_db4.sh \
 	       $(top_srcdir)/contrib/rpm
 DIST_SHARE = \
   $(top_srcdir)/share/genbuild.sh \
   $(top_srcdir)/share/rpcauth
->>>>>>> upstream/0.16
 
 BIN_CHECKS=$(top_srcdir)/contrib/devtools/symbol-check.py \
            $(top_srcdir)/contrib/devtools/security-check.py
@@ -110,11 +96,7 @@ $(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-<<<<<<< HEAD
 $(OSX_APP)/Contents/MacOS/Actinium-Qt: $(BITCOIN_QT_BIN)
-=======
-$(OSX_APP)/Contents/MacOS/Litecoin-Qt: $(BITCOIN_QT_BIN)
->>>>>>> upstream/0.16
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
@@ -124,11 +106,7 @@ $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings:
 
 OSX_APP_BUILT=$(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-<<<<<<< HEAD
   $(OSX_APP)/Contents/MacOS/Actinium-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
-=======
-  $(OSX_APP)/Contents/MacOS/Litecoin-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
->>>>>>> upstream/0.16
 
 osx_volname:
 	echo $(OSX_VOLNAME) >$@
@@ -153,11 +131,7 @@ $(APP_DIST_DIR)/Applications:
 	@rm -f $@
 	@cd $(@D); $(LN_S) /Applications $(@F)
 
-<<<<<<< HEAD
 $(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Actinium-Qt
-=======
-$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Litecoin-Qt
->>>>>>> upstream/0.16
 
 $(OSX_DMG): $(APP_DIST_EXTRAS)
 	$(GENISOIMAGE) -no-cache-inodes -D -l -probe -V "$(OSX_VOLNAME)" -no-pad -r -dir-mode 0755 -apple -o $@ dist
@@ -172,11 +146,7 @@ $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE): $(OSX_BACKGROUND_IMAGE_DPIF
 $(APP_DIST_DIR)/.DS_Store: $(OSX_DSSTORE_GEN)
 	$(PYTHON) $< "$@" "$(OSX_VOLNAME)"
 
-<<<<<<< HEAD
 $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Actinium-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
-=======
-$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Litecoin-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
->>>>>>> upstream/0.16
 	INSTALLNAMETOOL=$(INSTALLNAMETOOL)  OTOOL=$(OTOOL) STRIP=$(STRIP) $(PYTHON) $(OSX_DEPLOY_SCRIPT) $(OSX_APP) -translations-dir=$(QT_TRANSLATION_DIR) -add-qt-tr $(OSX_QT_TRANSLATIONS) -verbose 2
 
 deploydir: $(APP_DIST_EXTRAS)
@@ -310,8 +280,4 @@ DISTCHECK_CONFIGURE_FLAGS = --enable-man
 
 clean-local:
 	rm -rf coverage_percent.txt test_bitcoin.coverage/ total.coverage/ test/tmp/ cache/ $(OSX_APP)
-<<<<<<< HEAD
-	rm -rf test/functional/__pycache__
-=======
 	rm -rf test/functional/__pycache__ test/functional/test_framework/__pycache__ test/cache
->>>>>>> upstream/0.16

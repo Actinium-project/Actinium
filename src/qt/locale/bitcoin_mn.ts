@@ -126,13 +126,8 @@
         <translation>Оношилгоо ба засварын консолыг онгойлго</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -238,13 +233,10 @@
 <context>
     <name>Intro</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Алдаа</translation>
     </message>
@@ -286,13 +278,10 @@
         <translation>Ѳѳрчлѳлтүүдийг идэвхижүүлхийн тулд клиентийг ахин эхлүүлэх шаардлагтай</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error</source>
         <translation>Алдаа</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Энэ ѳѳрчлѳлтийг оруулахын тулд кли1нт програмыг ахин эхлүүлэх шаардлагтай</translation>
     </message>
@@ -320,15 +309,11 @@
         <source>N/A</source>
         <translation>Алга Байна</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>unknown</source>
         <translation>үл мэдэгдэх</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -587,17 +572,6 @@
         <translation>Мэдээллэл</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Хаягуудыг ачааллаж байна...</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Эдгээр прокси хаягнууд буруу байна: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Insufficient funds</source>
         <translation>Таны дансны үлдэгдэл хүрэлцэхгүй байна</translation>
     </message>
@@ -606,13 +580,6 @@
         <translation>Блокийн индексүүдийг ачааллаж байна...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Холболт хийхийн тулд мѳн холболтой онгорхой хадгалхын тулд шинэ нод нэм</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Түрүйвчийг ачааллаж байна...</translation>
     </message>

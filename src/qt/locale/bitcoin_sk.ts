@@ -23,11 +23,7 @@
     </message>
     <message>
         <source>C&amp;lose</source>
-<<<<<<< HEAD
-        <translation>Zatvoriť</translation>
-=======
         <translation>Z&amp;atvoriť</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -55,11 +51,7 @@
     </message>
     <message>
         <source>C&amp;hoose</source>
-<<<<<<< HEAD
-        <translation>Vybrať</translation>
-=======
         <translation>Vy&amp;brať</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Sending addresses</source>
@@ -70,21 +62,12 @@
         <translation>Prijímajúce adresy</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú Vaše Actinium adresy pre posielanie platieb. Vždy skontrolujte sumu a prijímaciu adresu pred poslaním mincí.</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Actinium adresy pre prijímanie platieb. Odporúča sa použiť vždy novú prijímaciu adresu pre každú transakciu.</translation>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Toto sú Vaše Litecoin adresy pre posielanie platieb. Vždy skontrolujte sumu a prijímaciu adresu pred poslaním mincí.</translation>
     </message>
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Toto sú vaše Litecoin adresy pre prijímanie platieb. Odporúča sa použiť vždy novú prijímaciu adresu pre každú transakciu.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -149,13 +132,10 @@
         <translation>Zopakujte nové heslo</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Show password</source>
         <translation>Ukázať heslo</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Zadajte nové heslo k peňaženke.&lt;br/&gt;Prosím použite heslo s dĺžkou &lt;b&gt;desať alebo viac náhodných znakov&lt;/b&gt;, prípadne &lt;b&gt;osem alebo viac slov&lt;/b&gt;.</translation>
     </message>
@@ -192,11 +172,7 @@
         <translation>Potvrďte zašifrovanie peňaženky</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
->>>>>>> upstream/0.16
         <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE LITECOINY&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -208,11 +184,7 @@
         <translation>Peňaženka zašifrovaná</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
-=======
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
->>>>>>> upstream/0.16
         <translation>%1 sa teraz zavrie, aby sa ukončil proces šifrovania. Zašifrovanie peňaženky neochráni úplne pred krádežou litecoinov škodlivými programami, ktoré prenikli do vášho počítača.</translation>
     </message>
     <message>
@@ -370,13 +342,8 @@
         <translation>Preindexúvam bloky na disku...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Poslať actiniums na adresu</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Poslať litecoins na adresu</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -399,13 +366,8 @@
         <translation>O&amp;veriť správu...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -421,11 +383,7 @@
     </message>
     <message>
         <source>&amp;Show / Hide</source>
-<<<<<<< HEAD
-        <translation>Zobraziť / skryť</translation>
-=======
         <translation>&amp;Zobraziť / Skryť</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show or hide the main Window</source>
@@ -436,21 +394,12 @@
         <translation>Zašifruj súkromné kľúče ktoré patria do vašej peňaženky</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Podpísať správu s vašou adresou Actinium aby ste preukázali že ju vlastníte</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Overiť či správa bola podpísaná uvedenou Actinium adresou</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Podpísať správu s vašou adresou Litecoin aby ste preukázali že ju vlastníte</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Overiť či správa bola podpísaná uvedenou Litecoin adresou</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -469,13 +418,8 @@
         <translation>Lišta záložiek</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Vyžiadať platby (vygeneruje QR kódy a Actinium: URI)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Vyžiadať platby (vygeneruje QR kódy a litecoin: URI)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -486,18 +430,6 @@
         <translation>Zobraziť zoznam použitých prijímacích adries a ich popisov</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Otvoriť Actinium URI alebo výzvu k platbe</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>Možnosti príkazového riadku</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Actinium network</source>
-        <translation><numerusform>%n aktívne pripojenie do siete Actinium</numerusform><numerusform>%n aktívne pripojenia do siete Actinium</numerusform><numerusform>%n aktívnych pripojení do siete Actinium</numerusform></translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>Otvoriť litecoin URI alebo výzvu k platbe</translation>
     </message>
@@ -508,7 +440,6 @@
     <message numerus="yes">
         <source>%n active connection(s) to Litecoin network</source>
         <translation><numerusform>%n aktívne pripojenie do siete Litecoin</numerusform><numerusform>%n aktívne pripojenia do siete Litecoin</numerusform><numerusform>%n aktívnych pripojení do siete Litecoin</numerusform></translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -551,11 +482,7 @@
         <translation>Aktualizovaný</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
-=======
         <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
->>>>>>> upstream/0.16
         <translation>Ukáž %1 zoznam možných nastavení Litecoinu pomocou príkazového riadku</translation>
     </message>
     <message>
@@ -625,13 +552,8 @@
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;zamknutá&lt;/b&gt;</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
-        <translation>Vyskytla sa kritická chyba. Actinium nemôže ďalej bezpečne pokračovať a ukončí sa.</translation>
-=======
         <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
         <translation>Vyskytla sa kritická chyba. Litecoin nemôže ďalej bezpečne pokračovať a ukončí sa.</translation>
->>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -824,13 +746,8 @@
         <translation>Upraviť odosielaciu adresu</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The entered address "%1" is not a valid Actinium address.</source>
-        <translation>Vložená adresa "%1" nieje platnou adresou Actinium.</translation>
-=======
         <source>The entered address "%1" is not a valid Litecoin address.</source>
         <translation>Vložená adresa "%1" nieje platnou adresou Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -938,10 +855,6 @@
         <translation>Keďže toto je prvé spustenie programu, môžete si vybrať, kam %1 bude ukladať vaše údaje.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will download and store a copy of the Actinium block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 stiahne a uloží kópiu Actinium block chain. Minimálne %2GB dát bude uložených v tejto zložke, a bude sa zväčšovať postupom času. Peňaženka bude taktiež uložená v tejto zložke.</translation>
-=======
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation>Hneď po stlačení OK, začne %1 stťahovať a spracovávať celý %4 reťazec blokov (%2 GB), začínajúc nejstaršími transakcemi z roku %3, kdey bol %4 spustený.</translation>
     </message>
@@ -952,7 +865,6 @@
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
         <translation>Ak ste ombedzili úložný priestor pre reťazec blokov (tj. povolil prepezávanie), tak sa historické dáta sice stiahnu a zpracujú, ale následne sa zasa zzažú, aby nezaberala na disku miesto.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -963,8 +875,6 @@
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
@@ -985,7 +895,6 @@
         <translation>Tvoja peňaženka bude uložena tiež v tomto adresári.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Chyba: Zadaný priečinok pre dáta "%1" nemôže byť vytvorený.</translation>
     </message>
@@ -1009,19 +918,11 @@
         <translation>Forma</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Actinium network, as detailed below.</source>
-        <translation>Nedávne transakcie nemusia byť ešte viditeľné preto môže byť zostatok vo vašej peňaženke nesprávny. Táto informácia bude správna keď sa dokončí synchronizovanie peňaženky so sieťou Actinium, ako je rozpísané nižšie.</translation>
-    </message>
-    <message>
-        <source>Attempting to spend actiniums that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-=======
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</source>
         <translation>Nedávne transakcie nemusia byť ešte viditeľné preto môže byť zostatok vo vašej peňaženke nesprávny. Táto informácia bude správna keď sa dokončí synchronizovanie peňaženky so sieťou litecoin, ako je rozpísané nižšie.</translation>
     </message>
     <message>
         <source>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
->>>>>>> upstream/0.16
         <translation>Pokus o minutie litecoinov, ktoré sú ovplyvnené ešte nezobrazenými transakciami, nebude sieťou akceptovaný.</translation>
     </message>
     <message>
@@ -1115,18 +1016,6 @@
         <translation>Počet &amp;vlákien overujúcich skript</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Prijať spojenia zvonku</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Povoliť prichádzajúce spojenia</translation>
-    </message>
-    <message>
-        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP adresy proxy (napr. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
-=======
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>IP adresy proxy (napr. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
@@ -1145,7 +1034,6 @@
     <message>
         <source>&amp;Hide tray icon</source>
         <translation>&amp;Skryť ikonu v oblasti oznámení</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -1156,19 +1044,10 @@
         <translation>URL tretích strán (napr. prehliadač blockchain) ktoré sa zobrazujú v záložke transakcií ako položky kontextového menu. %s v URL je nahradené hash-om transakcie. Viaceré URL sú oddelené zvislou čiarou |.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Third party transaction URLs</source>
-        <translation>URL transakcií s tretími stranami</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Active command-line options that override above options:</source>
         <translation>Aktívne možnosti príkazového riadku ktoré prepíšu možnosti vyššie:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open the %1 configuration file from the working directory.</source>
         <translation>Otvorte konfiguračný súbor %1 s pracovného adresára.</translation>
     </message>
@@ -1177,17 +1056,12 @@
         <translation>Otvoriť konfiguračný súbor </translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>Vynulovať všetky voľby klienta na predvolené.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-<<<<<<< HEAD
-        <translation>Vynulovať voľby</translation>
-=======
         <translation>&amp;Vynulovať voľby</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Network</source>
@@ -1215,29 +1089,17 @@
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-<<<<<<< HEAD
-        <translation>Minúť nepotvrdený výdavok</translation>
-    </message>
-    <message>
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvorit port pre Actinium na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
-=======
         <translation>&amp;Minúť nepotvrdený výdavok</translation>
     </message>
     <message>
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automaticky otvorit port pre Litecoin na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapovať port pomocou &amp;UPnP</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
-        <translation>Pripojiť do siete Actinium cez proxy server SOCKS5.</translation>
-=======
         <source>Accept connections from outside.</source>
         <translation>Prijať spojenia zvonku.</translation>
     </message>
@@ -1248,7 +1110,6 @@
     <message>
         <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
         <translation>Pripojiť do siete Litecoin cez proxy server SOCKS5.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1271,13 +1132,6 @@
         <translation>Použité pre získavanie peerov cez:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Zobrazuje, či je poskytované predvolené SOCKS5 proxy používané pre získavanie peerov cez tento typ siete.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1290,46 +1144,20 @@
         <translation>Tor</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Pripojiť k Litecoinovej sieti cez separované SOCKS5 proxy pre skrytú službu Tor.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Použiť samostatný SOCKS5 proxy server na dosiahnutie počítačov cez skryté služby Tor:</translation>
-    </message>
-    <message>
-=======
         <source>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Pripojiť k Litecoinovej sieti cez separované SOCKS5 proxy pre skrytú službu Tor.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Window</source>
         <translation>&amp;Okno</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Hide the icon from the system tray.</source>
-        <translation>&amp;Skryť ikonu zo systémovej lišty.</translation>
-    </message>
-    <message>
-        <source>Hide tray icon</source>
-        <translation>Skryť ikonu v oblasti oznámení</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>Zobraziť len ikonu na lište po minimalizovaní okna.</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-<<<<<<< HEAD
-        <translation>Zobraziť len ikonu na lište po minimalizovaní okna.</translation>
-=======
         <translation>&amp;Zobraziť len ikonu na lište po minimalizovaní okna.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>M&amp;inimize on close</source>
@@ -1341,11 +1169,7 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-<<<<<<< HEAD
-        <translation>Jazyk užívateľského rozhrania:</translation>
-=======
         <translation>&amp;Jazyk užívateľského rozhrania:</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
@@ -1357,34 +1181,23 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-<<<<<<< HEAD
-        <translation>Zvoľte ako deliť Actinium pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
-=======
         <translation>Zvoľte ako deliť litecoin pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
         <translation>Či zobrazovať možnosti "Coin control" alebo nie.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Third party transaction URLs</source>
         <translation>URL transakcií tretích strán</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
-<<<<<<< HEAD
-        <translation>Zrušiť</translation>
-=======
         <translation>&amp;Zrušiť</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>default</source>
@@ -1407,8 +1220,6 @@
         <translation>Klient bude vypnutý, chcete pokračovať?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Configuration options</source>
         <translation>Možnosti nastavenia</translation>
     </message>
@@ -1425,7 +1236,6 @@
         <translation>Konfiguračný súbor nejde otvoriť.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Táto zmena by vyžadovala reštart klienta.</translation>
     </message>
@@ -1441,13 +1251,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou Actinium po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou Litecoin po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1521,13 +1326,10 @@
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Cannot start litecoin: click-to-pay handler</source>
         <translation>Nemôžeme spustiť Litecoin: obsluha click-to-pay</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>URI handling</source>
         <translation>URI manipulácia</translation>
     </message>
@@ -1540,13 +1342,8 @@
         <translation>Neplatná adresa platby %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>URI cannot be parsed! This can be caused by an invalid Actinium address or malformed URI parameters.</source>
-        <translation>URI sa nedá analyzovať! To môže byť spôsobené neplatnou Actinium adresou alebo zle nastavenými vlastnosťami URI.</translation>
-=======
         <source>URI cannot be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
         <translation>URI sa nedá analyzovať! To môže byť spôsobené neplatnou Litecoin adresou alebo zle nastavenými vlastnosťami URI.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1631,8 +1428,6 @@
         <source>Ping</source>
         <translation>Odozva</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Sent</source>
         <translation>Odoslané</translation>
@@ -1641,7 +1436,6 @@
         <source>Received</source>
         <translation>Prijaté</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject</name>
@@ -1650,13 +1444,8 @@
         <translation>Suma</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter a Actinium address (e.g. %1)</source>
-        <translation>Zadajte Actinium adresu (napr. %1)</translation>
-=======
         <source>Enter a Litecoin address (e.g. %1)</source>
         <translation>Zadajte litecoin adresu (napr. %1)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 d</source>
@@ -1715,11 +1504,6 @@
         <translation><numerusform>%n rok</numerusform><numerusform>%n roky</numerusform><numerusform>%n rokov</numerusform></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 didn't yet exit safely...</source>
-        <translation>%1 ešte nebol bezpečne ukončený...</translation>
-    </message>
-=======
         <source>%1 B</source>
         <translation>%1 B</translation>
     </message>
@@ -1743,13 +1527,10 @@
         <source>unknown</source>
         <translation>neznámy</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject::QObject</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error: Specified data directory "%1" does not exist.</source>
         <translation>Chyba: Zadaný adresár pre dáta „%1“ neexistuje.</translation>
     </message>
@@ -1758,7 +1539,6 @@
         <translation>Chyba: Nemôžem spracovať konfiguračný súbor: %1. Používajte iba syntax klúč=hodnota.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error: %1</source>
         <translation>Chyba: %1</translation>
     </message>
@@ -1767,19 +1547,11 @@
     <name>QRImageWidget</name>
     <message>
         <source>&amp;Save Image...</source>
-<<<<<<< HEAD
-        <translation>Uložiť obrázok...</translation>
-    </message>
-    <message>
-        <source>&amp;Copy Image</source>
-        <translation>Kopírovať obrázok</translation>
-=======
         <translation>&amp;Uložiť obrázok...</translation>
     </message>
     <message>
         <source>&amp;Copy Image</source>
         <translation>&amp;Kopírovať obrázok</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Save QR Code</source>
@@ -1857,13 +1629,10 @@
         <translation>Využitie pamäte</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Reset</source>
         <translation>&amp;Vynulovať</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Received</source>
         <translation>Prijaté</translation>
     </message>
@@ -1981,13 +1750,6 @@
         <translation>&amp;Sieťová prevádzka</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>&amp;Vyčistiť</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Celkovo:</translation>
     </message>
@@ -2040,38 +1802,6 @@
         <translation>Vitajte v %1 RPC konzole</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Použi šípky hore a dolu pre navigáciu históriou a &lt;b&gt;Ctrl-L&lt;/b&gt; pre vyčistenie obrazovky.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Napíš &lt;b&gt;help&lt;/b&gt; pre prehľad dostupných príkazov.</translation>
-    </message>
-    <message>
-        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
-        <translation>VAROVANIE: Podvodníci sú aktívni a môžu nabádať používateľov napísať sem príkazy, pomocou ktorých ukradnú ich obsah peňaženky. Nepoužívajte túto konzolu ak nerozumiete presne účinkom príkazov.</translation>
-    </message>
-    <message>
-        <source>Network activity disabled</source>
-        <translation>Sieťová aktivita zakázaná</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
-=======
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
         <translation>V histórii sa pohybujete šípkami hore a dole a pomocou %1 čistíte obrazovku.</translation>
     </message>
@@ -2090,7 +1820,6 @@
     <message>
         <source>Network activity disabled</source>
         <translation>Sieťová aktivita zakázaná</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -2140,21 +1869,8 @@
         <translation>&amp;Správa:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Znovu použiť jednu z už použitých adries pre prijímanie. Znovu používanie adries je sporná otázka bezpečnosti aj súkromia. Používajte to len v prípade ak znovu generujete výzvu na zaplatenie ktorú ste už vyrobili v minulosti.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>Znovu použiť jestvujúcu prijímaciu adresu (neodporúča sa)</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
-        <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť Actinium.</translation>
-=======
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
         <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2182,9 +1898,6 @@
     </message>
     <message>
         <source>&amp;Request payment</source>
-<<<<<<< HEAD
-        <translation>Vyžiadať platbu</translation>
-=======
         <translation>&amp;Vyžiadať platbu</translation>
     </message>
     <message>
@@ -2194,7 +1907,6 @@
     <message>
         <source>Generate Bech32 address</source>
         <translation>Generovať adresu Bech32</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
@@ -2241,19 +1953,11 @@
     </message>
     <message>
         <source>Copy &amp;Address</source>
-<<<<<<< HEAD
-        <translation>Kopírovať adresu</translation>
-    </message>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>Uložiť obrázok...</translation>
-=======
         <translation>Kopírovať &amp;adresu</translation>
     </message>
     <message>
         <source>&amp;Save Image...</source>
         <translation>&amp;Uložiť obrázok...</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Request payment to %1</source>
@@ -2327,11 +2031,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-<<<<<<< HEAD
-        <translation>Poslať Actiniums</translation>
-=======
         <translation>Poslať Litecoins</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2390,8 +2090,6 @@
         <translation>Zvoliť...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
         <translation>Použitie núdzového poplatku („fallbackfee“) môže vyústiť v transakciu, ktoré bude trvat hodiny nebo dny (prípadne večnosť), kým bude potvrdená. Zvážte preto ručné nastaveníe poplatku, prípadne počkajte, až sa Vám kompletne zvaliduje reťazec blokov.</translation>
     </message>
@@ -2400,7 +2098,6 @@
         <translation>Upozornenie: teraz nie je možné poplatok odhadnúť.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>collapse fee-settings</source>
         <translation>zbaliť nastavenia poplatkov</translation>
     </message>
@@ -2417,15 +2114,7 @@
         <translation>Skryť</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>total at least</source>
-        <translation>spolu aspoň</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Actinium transactions than the network can process.</source>
-=======
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
->>>>>>> upstream/0.16
         <translation>Zaplatenie len minimálneho poplatku je v poriadku, pokiaľ existuje menej transakcií ako miesta v blokoch. Uvedomte si však, že ak bude vyšší dopyt po transakciách ako dokáže sieť spracovať, môže byť vaša transakcia odsúvaná a nepotvrdená donekonečna.</translation>
     </message>
     <message>
@@ -2445,17 +2134,6 @@
         <translation>(Automatický poplatok ešte nebol vypočítaný. Toto zvyčajne trvá niekoľko blokov...)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>normálne</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>rýchle</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Poslať viacerým príjemcom naraz</translation>
     </message>
@@ -2476,8 +2154,6 @@
         <translation>Cieľový čas potvrdenia:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Enable Replace-By-Fee</source>
         <translation>Povoliť dodatočné navýšenie poplatku (tzv. „Replace-By-Fee“)</translation>
     </message>
@@ -2486,7 +2162,6 @@
         <translation>S dodatočným navýšením poplatku (BIP-125, tzv. „Replace-By-Fee“), môžete zvýšiť poplatok aj po odoslaní. Bez toho, by mohol byť navrhnutý väčší transakčný poplatok, aby kompenzoval zvýšené riziko omeškania transakcie.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Clear &amp;All</source>
         <translation>&amp;Zmazať všetko</translation>
     </message>
@@ -2531,13 +2206,10 @@
         <translation>Kopírovať zmenu</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>%1 (%2 blocks)</source>
         <translation>%1 (%2 blokov)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1 to %2</source>
         <translation>%1 do %2</translation>
     </message>
@@ -2558,8 +2230,6 @@
         <translation>alebo</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
         <translation>Poplatok môžete navýšiť neskôr (vysiela sa "Replace-By-Fee" - nahradenie poplatkom, BIP-125).</translation>
     </message>
@@ -2568,7 +2238,6 @@
         <translation>Nevysiela sa "Replace-By-Fee" - nahradenie poplatkom, BIP-125.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Confirm send coins</source>
         <translation>Potvrďte odoslanie mincí</translation>
     </message>
@@ -2608,13 +2277,6 @@
         <source>Payment request expired.</source>
         <translation>Vypršala platnosť požiadavky na platbu.</translation>
     </message>
-<<<<<<< HEAD
-    <message numerus="yes">
-        <source>%n block(s)</source>
-        <translation><numerusform>%n blok</numerusform><numerusform>%n bloky</numerusform><numerusform>%n blokov</numerusform></translation>
-    </message>
-=======
->>>>>>> upstream/0.16
     <message>
         <source>Pay only the required fee of %1</source>
         <translation>Zaplatiť iba požadovaný poplatok %1</translation>
@@ -2624,13 +2286,8 @@
         <translation><numerusform>Odhadovaný začiatok potvrdzovania po %n bloku.</numerusform><numerusform>Odhadovaný začiatok potvrdzovania po %n blokoch.</numerusform><numerusform>Odhadovaný začiatok potvrdzovania po %n blokoch.</numerusform></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: Invalid Actinium address</source>
-        <translation>Varovanie: Neplatná Actinium adresa</translation>
-=======
         <source>Warning: Invalid Litecoin address</source>
         <translation>Varovanie: Neplatná Litecoin adresa</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2672,11 +2329,7 @@
         <translation>Toto je normálna platba.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address to send the payment to</source>
-=======
         <source>The Litecoin address to send the payment to</source>
->>>>>>> upstream/0.16
         <translation>Zvoľte adresu kam poslať platbu</translation>
     </message>
     <message>
@@ -2696,11 +2349,7 @@
         <translation>Odstrániť túto položku</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-=======
         <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
->>>>>>> upstream/0.16
         <translation>Poplatok sa odpočíta od čiastky, ktorú odosielate. Príjemca dostane menej litecoinov ako zadáte. Ak je vybraných viacero príjemcov, poplatok je rozdelený rovným dielom.</translation>
     </message>
     <message>
@@ -2708,13 +2357,10 @@
         <translation>Odpočítať poplatok od s&amp;umy</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Use available balance</source>
         <translation>Použiť dostupné zdroje</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Message:</source>
         <translation>Správa:</translation>
     </message>
@@ -2731,13 +2377,8 @@
         <translation>Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
-        <translation>Správa ktorá bola pripojená k Actinium: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Actinium.</translation>
-=======
         <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
         <translation>Správa ktorá bola pripojená k litecoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Pay To:</source>
@@ -2781,21 +2422,12 @@
         <translation>&amp;Podpísať Správu</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>You can sign messages/agreements with your addresses to prove you can receive actiniums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Môžete podpísať správy svojou adresou a dokázať, že viete prijímať mince zaslané na túto adresu. Buďte však opatrní a podpíšte len podrobné prehlásenia, s ktorými plne súhlasíte, nakoľko útoky typu "phishing" Vás môžu lákať k podpísaniu nejasných alebo príliš všeobecných tvrdení čím prevezmú vašu identitu.</translation>
-    </message>
-    <message>
-        <source>The Actinium address to sign the message with</source>
-        <translation>Actinium adresa pre podpísanie správy s</translation>
-=======
         <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Môžete podpísať správy svojou adresou a dokázať, že viete prijímať mince zaslané na túto adresu. Buďte však opatrní a podpíšte len podrobné prehlásenia, s ktorými plne súhlasíte, nakoľko útoky typu "phishing" Vás môžu lákať k podpísaniu nejasných alebo príliš všeobecných tvrdení čím prevezmú vašu identitu.</translation>
     </message>
     <message>
         <source>The Litecoin address to sign the message with</source>
         <translation>Litecoin adresa pre podpísanie správy s</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2826,11 +2458,7 @@
         <translation>Kopírovať tento podpis do systémovej schránky</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Podpíšte správu aby ste dokázali že vlastníte túto adresu</translation>
     </message>
     <message>
@@ -2854,21 +2482,12 @@
         <translation>Vložte adresu príjemcu, správu (uistite sa, že presne kopírujete ukončenia riadkov, medzery, odrážky, atď.) a podpis pre potvrdenie správy. Buďte opatrní a nedomýšľajte si viac než je uvedené v samotnej podpísanej správe a môžete sa tak vyhnúť podvodu MITM útokom. Toto len potvrdzuje, že podpisujúca strana môže prijímať na tejto adrese, nepotvrdzuje to vlastníctvo žiadnej transakcie!</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address the message was signed with</source>
-        <translation>Adresa Actinium, ktorou bola podpísaná správa</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Actinium address</source>
-        <translation>Overím správy sa uistiť že bola podpísaná označenou Actinium adresou</translation>
-=======
         <source>The Litecoin address the message was signed with</source>
         <translation>Adresa Litecoin, ktorou bola podpísaná správa</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
         <translation>Overím správy sa uistiť že bola podpísaná označenou Litecoin adresou</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2947,13 +2566,10 @@
 </context>
 <context>
     <name>TransactionDesc</name>
-<<<<<<< HEAD
-=======
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
         <translation><numerusform>Otvoriť pre %n ďalší blok</numerusform><numerusform>Otvoriť pre %n ďalšie bloky</numerusform><numerusform>Otvoriť pre %n ďalších blokov</numerusform></translation>
     </message>
->>>>>>> upstream/0.16
     <message>
         <source>Open until %1</source>
         <translation>Otvorené do %1</translation>
@@ -2971,8 +2587,6 @@
         <translation>0/nepotvrdené, %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>in memory pool</source>
         <translation>v transakčnom zásobníku</translation>
     </message>
@@ -2985,7 +2599,6 @@
         <translation>zanechaná</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1/unconfirmed</source>
         <translation>%1/nepotvrdené</translation>
     </message>
@@ -3001,13 +2614,10 @@
         <source>, has not been successfully broadcast yet</source>
         <translation>, ešte nebola úspešne odoslaná</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
         <translation><numerusform>, vysielať cez %n uzol</numerusform><numerusform>, vysielať cez %n uzle </numerusform><numerusform>, vysielať cez %n uzolov</numerusform></translation>
     </message>
->>>>>>> upstream/0.16
     <message>
         <source>Date</source>
         <translation>Dátum</translation>
@@ -3048,13 +2658,10 @@
         <source>Credit</source>
         <translation>Kredit</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
         <translation><numerusform>dozreje za %n ďalší blok</numerusform><numerusform>dozreje za %n ďalšie bloky</numerusform><numerusform>dozreje za %n ďalších blokov</numerusform></translation>
     </message>
->>>>>>> upstream/0.16
     <message>
         <source>not accepted</source>
         <translation>neprijaté</translation>
@@ -3096,13 +2703,10 @@
         <translation>Celková veľkosť transakcie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Output index</source>
         <translation>Index výstupu</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Merchant</source>
         <translation>Kupec</translation>
     </message>
@@ -3160,13 +2764,10 @@
         <source>Label</source>
         <translation>Popis</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
         <translation><numerusform>Otvoriť pre %n ďalší blok</numerusform><numerusform>Otvoriť pre %n ďalšie bloky</numerusform><numerusform>Otvoriť pre %n ďalších blokov</numerusform></translation>
     </message>
->>>>>>> upstream/0.16
     <message>
         <source>Open until %1</source>
         <translation>Otvorené do %1</translation>
@@ -3180,13 +2781,10 @@
         <translation>Nepotvrdené</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Abandoned</source>
         <translation>Zanechaná</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Confirming (%1 of %2 recommended confirmations)</source>
         <translation>Potvrdzujem (%1 z %2 odporúčaných potvrdení)</translation>
     </message>
@@ -3259,13 +2857,10 @@
         <translation>Či je v tejto transakcii adresy iba na sledovanie.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>Užívateľsky určený účel transakcie.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Amount removed from or added to balance.</source>
         <translation>Suma pridaná alebo odobraná k zostatku.</translation>
     </message>
@@ -3321,21 +2916,14 @@
         <translation>Iné</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter address or label to search</source>
-        <translation>Zadajte adresu alebo popis pre hľadanie</translation>
-=======
         <source>Enter address, transaction id, or label to search</source>
         <translation>Pre vyhľadávanie vložte adresu, id transakcie, alebo popis.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Min amount</source>
         <translation>Minimálna suma</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Abandon transaction</source>
         <translation>Zabudnúť transakciu</translation>
     </message>
@@ -3344,7 +2932,6 @@
         <translation>Navíš transakčný poplatok</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy address</source>
         <translation>Kopírovať adresu</translation>
     </message>
@@ -3457,8 +3044,6 @@
         <source>Send Coins</source>
         <translation>Poslať mince</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Fee bump error</source>
         <translation>Chyba pri navyšovaní poplatku</translation>
@@ -3495,7 +3080,6 @@
         <source>Could not commit transaction</source>
         <translation>Nemôzeme uložiť transakciu do peňaženky</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>WalletView</name>
@@ -3567,8 +3151,6 @@
         <translation>Redukcia nastavená pod minimálnu hodnotu %d MiB. Prosím použite vyššiu hodnotu.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Prerezávanie: posledná synchronizácia peňaženky prebehla pred už prerezanými dátami. Je treba previesť -reindex (v prípade prerezávacieho režimu stiahne znovu celý reťazec blokov)</translation>
     </message>
@@ -3577,7 +3159,6 @@
         <translation>V prerezávaciom režime nie je možné reťazec blokov preskenovať. Musíte vykonať -reindex, čo znova stiahne celý reťaec blokov.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>Chyba: Vyskytla sa interná chyba, pre viac informácií zobrazte debug.log</translation>
     </message>
@@ -3598,37 +3179,26 @@
         <translation>Nepodarilo sa spustiť HTTP server. Pre viac detailov zobrazte debug log.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>The %s developers</source>
         <translation>Vývojári %s</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)</source>
         <translation>Sadzba poplatku (v %s/kB), ktorá sa použije, ak nebude k dispozícii dostatok dát pre automatický odhad poplatku (predvolené: %s)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Accept relayed transactions received from whitelisted peers even when not relaying transactions (default: %d)</source>
         <translation>Akceptovať postúpené transakcie od povolených partnerov aj keď normálne nepostupujete transakcie (predvolené: %d)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Add a node to connect to and attempt to keep the connection open (see the `addnode` RPC command help for more info)</source>
         <translation>Pridať uzol na pripojenie a pokus o udržanie otvoreného pripojenia (pre viac informácií si pozrite nápovedu pre RPC príkaz "addnode")</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
     </message>
@@ -3637,8 +3207,6 @@
         <translation>Nemožné uzamknúť zložku %s. %s pravdepodobne už beží.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
         <translation>Nemôžete zadať konkrétne spojenia a zároveň mať nastavený addrman pre hľadanie odchádzajúcich spojení.</translation>
     </message>
@@ -3647,30 +3215,22 @@
         <translation>Pripojiť sa iba k určenému uzlu(om); -connect=0 zakáže automatické pripojovanie (pravidlá pre tento uzol sú rovnaké ako pre -addnode)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Vymazať všetky transakcie z peňaženky a pri spustení znova získať z reťazca blokov iba tie získané pomocou -rescan</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
-        <translation>Chyba počas načítavania %s: Nemôžete povoliť HD na už existujúcej non-HD peaženke</translation>
-=======
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Nastala chyba pri čítaní súboru %s! Všetkz kľúče sa prečítali správne, ale dáta o transakcíách alebo záznamy v adresári môžu chýbať alebo byť nesprávne.</translation>
     </message>
     <message>
         <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
         <translation>Vylúčiť ladiacu informáciu danej kategórie. Dá se zkombinovať s -debug=1, aby sa zaznamenávali ladice informácie všetkých kategórií pkrem jednej alebo niekolkých zvolených.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Vykonaj príkaz keď sa zmení transakcia peňaženky (%s v príkaze je nahradená TxID)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
         <translation>Počet extra transakcíí, ktoré sa majú držať v pamäti pre účely rekonštrukcie kompaktných blokov (predvolené: %u)</translation>
     </message>
@@ -3687,7 +3247,6 @@
         <translation>Horná hranica pre celkový poplatok (v %s) za jednu transakciu z peňaženky alebo jednu nespracovanú transakciu. Príliš nízká hodnota môže zmariť velké transakcie (predvolené: %s)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
         <translation>Prosím skontrolujte systémový čas a dátum. Keď je váš čas nesprávny, %s nebude fungovať správne.</translation>
     </message>
@@ -3696,8 +3255,6 @@
         <translation>Keď si myslíte, že %s je užitočný, podporte nás. Pre viac informácií o software navštívte %s.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect used)</source>
         <translation>Pri nedostatku adries získať ďalších peerov z DNS (predvolené: 1, ak nie je použité -connect)</translation>
     </message>
@@ -3710,7 +3267,6 @@
         <translation>Nastaviť nejnižší akceptovateľný poplatok (v %s/kB) pre transakcie, ktoré majú byť zahrnutý do nových blokov. (predvolené: %s)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation>Nastaviť počeť vlákien overujúcich skripty (%u až %d, 0 = auto, &lt;0 = nechať toľkoto jadier voľných, prednastavené: %d)</translation>
     </message>
@@ -3723,8 +3279,6 @@
         <translation>Toto je predbežná testovacia zostava - používate na vlastné riziko - nepoužívajte na ťaženie alebo obchodné aplikácie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
         <translation>Toto je transakčný poplatok, ktorý môžete škrtnúť, ak je zmena na tejto úrovni menšia ako prach</translation>
     </message>
@@ -3737,13 +3291,10 @@
         <translation>Nedará sa vrátiť databázu do stavu pred rozdelením. Budete musieť znovu stiahnuť celý reťaztec blokov</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</source>
         <translation>Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (predvolené: 1 počas počúvania a bez -proxy)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Username and hashed password for JSON-RPC connections. The field &lt;userpw&gt; comes in the format: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. A canonical python script is included in share/rpcuser. The client then connects normally using the rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt; pair of arguments. This option can be specified multiple times</source>
         <translation>Užívateľské meno a zahašované heslo pre JSON-RPC spojenie. Pole &lt;userpw&gt;  má formát: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. Pomocný python skript je priložený v share/rpcuser. Klient sa potom už pripojuje normálne pomocou páru argumentov rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt;. Túto voľbu môžete použiť i viackrát</translation>
     </message>
@@ -3752,7 +3303,6 @@
         <translation>Peňaženka nebude vytvárať transakcie, ktoré by porušovali limity transakčného zásobníku reťazcov (predvolené: %u)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varovanie: Javí sa že sieť sieť úplne nesúhlasí! Niektorí mineri zjavne majú ťažkosti.</translation>
     </message>
@@ -3761,17 +3311,12 @@
         <translation>Varovanie: Zjavne sa úplne nezhodujeme s našimi peer-mi! Možno potrebujete prejsť na novšiu verziu alebo ostatné uzly potrebujú vyššiu verziu.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
-        <translation>Potrebujete prebudovať databázu použitím -reindex-chainstate pre zmenu -txindex</translation>
-=======
         <source>Whether to save the mempool on shutdown and load on restart (default: %u)</source>
         <translation>Či uchovať transakčný zásobník medzi vypnutím a zapnutím (predvolené: %u)</translation>
     </message>
     <message>
         <source>%d of last 100 blocks have unexpected version</source>
         <translation>%d z poslednźých 100 blokov má neočakávanú verziu</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
@@ -3786,8 +3331,6 @@
         <translation>&lt;category&gt; môže byť:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Prijať spojenia zvonku (predvolené: 1 ak žiadne -proxy alebo -connect)</translation>
     </message>
@@ -3796,7 +3339,6 @@
         <translation>Pripojiť komentár k typu klienta</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Attempt to recover private keys from a corrupt wallet on startup</source>
         <translation>Pokúsiť sa o obnovenie privátnych kľúčov z poškodenej peňaženky pri spustení</translation>
     </message>
@@ -3805,8 +3347,6 @@
         <translation>Voľby vytvorenia bloku:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Cannot resolve -%s address: '%s'</source>
         <translation>Nedá preložiť -%s adresu: '%s'</translation>
     </message>
@@ -3815,7 +3355,6 @@
         <translation>Možnosti výberu reťzca blokov:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Change index out of range</source>
         <translation>Menný index mimo rozsah</translation>
     </message>
@@ -3860,8 +3399,6 @@
         <translation>Povoliť publikovať hrubý prevod v &lt;address&gt;</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Enable transaction replacement in the memory pool (default: %u)</source>
         <translation>Povoliť výmenu transakcií v transakčnom zásobníku (predvolené: %u)</translation>
     </message>
@@ -3870,7 +3407,6 @@
         <translation>Chyba počas vytvárania %s: S touto verziou nemôžete vytvoriť ne-HD peňaženky.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error initializing block database</source>
         <translation>Chyba inicializácie databázy blokov</translation>
     </message>
@@ -3907,13 +3443,10 @@
         <translation>Chyba počúvania na ktoromkoľvek porte. Použi -listen=0 ak toto chcete.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Failed to rescan the wallet during initialization</source>
         <translation>Počas inicializácie sa nepodarila pre-skenovať peňaženka</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Importing...</source>
         <translation>Prebieha import ...</translation>
     </message>
@@ -3926,30 +3459,18 @@
         <translation>Kontrola čistoty pri inicializácií zlyhala. %s sa vypína.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Neplatná -onion adresa:  '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>Neplatná suma pre -%s=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
         <translation>Neplatná čiastka pre -discardfee=&lt;čiastka&gt;: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation>Neplatná suma pre -fallbackfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
         <translation>Udržovať zasobník transakcií menší než &lt;n&gt; megabajtov (predvolené: %u)</translation>
     </message>
@@ -3958,7 +3479,6 @@
         <translation>Načítavam P2P adresy…</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Loading banlist...</source>
         <translation>Načítavam banlist...</translation>
     </message>
@@ -3999,14 +3519,6 @@
         <translation>Obnoviť stav reťazca z aktuálne indexovaných blokov.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Nastaviť veľkosť pomocnej pamäti databázy v megabajtoch (%d do %d, prednastavené: %d)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Nastaviť najväčšiu veľkosť bloku v bytoch (predvolené: %d)</translation>
-=======
         <source>Replaying blocks...</source>
         <translation>Znovu sa aplikujú bloky…</translation>
     </message>
@@ -4021,7 +3533,6 @@
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>Nastaviť veľkosť pomocnej pamäti databázy v megabajtoch (%d do %d, prednastavené: %d)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -4032,13 +3543,10 @@
         <translation>Zdrojový kód je dostupný z %s</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Transaction fee and change calculation failed</source>
         <translation>Zlyhal výpočet transakčného poplatku a drobných</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Unable to bind to %s on this computer. %s is probably already running.</source>
         <translation>Nemožné pripojiť k %s na tomto počíťači. %s už pravdepodobne beží.</translation>
     </message>
@@ -4055,8 +3563,6 @@
         <translation>Nepodporovaný argument -tor, použite -onion.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Unsupported logging category %s=%s.</source>
         <translation>Nepodporovaná logovacia kategória %s=%s.</translation>
     </message>
@@ -4065,7 +3571,6 @@
         <translation>Vylepšuje sa databáza neminutých výstupov (UTXO)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Use UPnP to map the listening port (default: %u)</source>
         <translation>Použiť UPnP pre mapovanie počúvajúceho portu (predvolené: %u)</translation>
     </message>
@@ -4074,25 +3579,12 @@
         <translation>Použiť testovaciu sieť</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying blocks...</source>
-        <translation>Overujem bloky...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Overujem peňaženku...</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>Peňaženka %s sa nachádza mimo dátového priečinka %s </translation>
-=======
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation>Komentár u typu klienta (%s) obsahuje riskantné znaky.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
         <translation>Overujem bloky...</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet debugging/testing options:</source>
@@ -4115,13 +3607,6 @@
         <translation>Spojiť s danou adresou a povolenými partnerskými zariadeniami ktoré sa tam pripájajú. Použite zápis [host]:port pre IPv6</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Spojiť s danou adresou pre počúvanie JSON-RPC spojení. Použite zápis [host]:port pre IPv6. Táto možnosť môže byt zadaná niekoľko krát (predvolené: spojiť so všetkými rozhraniami)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Vytvoriť nové súbory z predvolenými systémovými právami, namiesto umask 077 (funguje iba z vypnutou funkcionalitou peňaženky)</translation>
     </message>
@@ -4154,13 +3639,6 @@
         <translation>Maximálna veľkosť dát v transakciách nosných dát, ktoré prenášame a ťažíme (predvolené: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Nastaviť najväčšiu veľkosť vysoká-dôležitosť/nízke-poplatky transakcií v bajtoch (prednastavené: %d)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>Suma je príliš malá pre odoslanie transakcie</translation>
     </message>
@@ -4169,13 +3647,10 @@
         <translation>Uzle na zoznam povolených nemôžu byť DoS zakázané a ich transakcie vždy postúpené ďalej, aj v prípade, ak sú už pamäťovej fronte. Užitočné napr. pre brány</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>K návratu k neprerezávaciemu režimu je treba prestavať databázu použitím -reindex. Tiež sa znova stiahne celý reťazec blokov</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(default: %u)</source>
         <translation>(predvolené: %u)</translation>
     </message>
@@ -4192,24 +3667,18 @@
         <translation>Pripojiť cez proxy server SOCKS5</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
         <translation>Chyba pri načítání %s: nemôžeš vypnúť HD u existujúcej HD peňaženky</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error reading from database, shutting down.</source>
         <translation>Chyba pri načítaní z databázy, ukončuje sa.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error upgrading chainstate database</source>
         <translation>Chyba pri vylepšení databáze reťzcov blokov</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Imports blocks from external blk000??.dat file on startup</source>
         <translation>Importovať bloky z externého súboru blk000??.dat pri štarte</translation>
     </message>
@@ -4218,8 +3687,6 @@
         <translation>Informácia</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>Neplatná -onion adresa alebo hostiteľ: '%s'</translation>
     </message>
@@ -4228,7 +3695,6 @@
         <translation>Neplatná -proxy adresa alebo hostiteľ: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Neplatná suma pre -paytxfee=&lt;amount&gt;: '%s' (musí byť aspoň %s)</translation>
     </message>
@@ -4253,13 +3719,10 @@
         <translation>Možnosti servra RPC:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation>Obmedzuje sa -maxconnections z %d na %d kvôli systémovým obmedzeniam.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Rescan the block chain for missing wallet transactions on startup</source>
         <translation>Pri spustení skontrolovať reťaz blokov pre chýbajúce transakcie peňaženky</translation>
     </message>
@@ -4268,13 +3731,6 @@
         <translation>Odoslať trace/debug informácie na konzolu namiesto debug.info žurnálu</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Poslať ako transakcie bez poplatku, ak je to možné (predvolené: %u)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Zobraziť všetky možnosti ladenia (použitie: --help --help-debug)</translation>
     </message>
@@ -4287,8 +3743,6 @@
         <translation>Podpísanie správy zlyhalo</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Specified -walletdir "%s" does not exist</source>
         <translation>Uvedená -walletdir "%s" neexistuje</translation>
     </message>
@@ -4301,7 +3755,6 @@
         <translation>Uvedený -walletdir "%s" nie je priečinok</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>The transaction amount is too small to pay the fee</source>
         <translation>Suma transakcie je príliš malá na zaplatenie poplatku</translation>
     </message>
@@ -4314,13 +3767,10 @@
         <translation>Heslo na kontrolu portu pre Tor (predvolené: žiadne)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Tor control port to use if onion listening enabled (default: %s)</source>
         <translation>Ovládací port Toru, ak je zapnuté onion počúvanie (predvolené: %s)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Transaction amount too small</source>
         <translation>Suma transakcie príliš malá</translation>
     </message>
@@ -4337,13 +3787,10 @@
         <translation>Na tomto počítači sa nedá vytvoriť väzba %s (vytvorenie väzby vrátilo chybu %s)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Unable to generate initial keys</source>
         <translation>Nepodarilo sa vygenerovať úvodné kľúče</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Upgrade wallet to latest format on startup</source>
         <translation>Aktualizovať peňaženku na posledný formát pri štarte</translation>
     </message>
@@ -4352,8 +3799,6 @@
         <translation>Užívateľské meno pre JSON-RPC spojenia</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Verifying wallet(s)...</source>
         <translation>Kontrolujem peňaženku(y)…</translation>
     </message>
@@ -4362,13 +3807,10 @@
         <translation>Peňaženka %s sa nachádza mimo priečinku pre peňaženky %s </translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>Upozornenie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Warning: unknown new rules activated (versionbit %i)</source>
         <translation>Upozornenie: aktivovaná neznáme nové pravidlá (verzový bit %i)</translation>
     </message>
@@ -4381,7 +3823,6 @@
         <translation>Je teeba prestavať databázu použitím -reindex, aby bolo možné zmeniť -txindex</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Zapping all transactions from wallet...</source>
         <translation>Zmazať všetky transakcie z peňaženky...</translation>
     </message>
@@ -4402,19 +3843,10 @@
         <translation>Povoliť vyhľadávanie DNS pre pridanie nódy a spojenie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Načítavanie adries...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = zachovať metaúdaje tx napr. vlastníka účtu a informácie o platobných príkazoch, 2 = zahodiť metaúdaje tx)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation>-maxtxfee je nastavené veľmi vysoko! Takto vysoký poplatok môže byť zaplatebý v jednej transakcii.</translation>
     </message>
@@ -4439,18 +3871,14 @@
         <translation>Chyba pri načítaní peňaženky %s. Parameter -wallet môže obsahovať iba názov súboru (nie cestu k nemu).</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation>Poplatky (v %s/kB) menšie ako toto, sú považované za nulový transakčný poplatok (predvolené: %s)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Force relay of transactions from whitelisted peers even if they violate local relay policy (default: %d)</source>
         <translation>Vynútiť preposíelanie transakcií od vždy vítaných peerov, aj keď porušujú míestne zásady pre preposielanie (predvolené: %d)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
         <translation>Ako dôkladné je -checkblocks overenie blokov (0-4, predvolené: %u)</translation>
     </message>
@@ -4467,8 +3895,6 @@
         <translation>Výstupné ladiace informácie (predvolené: %u, dodanie &lt;category&gt; je voliteľné)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Set maximum BIP141 block weight to this * 4. Deprecated, use blockmaxweight</source>
         <translation>Nastaviť maximálnu váhu bloku pre BIP141 na toto * 4. Zastaralé, použite blockmaxweight</translation>
     </message>
@@ -4493,18 +3919,14 @@
         <translation>Sadzba poplatku (v %s/kB), ktorá určuje Vašu ochotu v prípade potreby premeniť drobné v poplatok (predvolené: %s). Poznámka: výstup sa premení, ak sa pri tejto sadzbe zmení v prach. Každopádne meniť budeme do výške poplatku pre prenos prachu a premenený poplatok nad túto výšku bude obmedzený odhadom poplatku na nejdlhší čas</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>Toto je poplatok za transakciu keď odhad poplatkov ešte nie je k dispozícii.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>Tento produkt zahrňuje programy vyvinuté projektom OpenSSL pre použití v OpenSSL Toolkite %s a kryptografický program od Erika Younga a program UPnP od Thomasa Bernarda.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
         <translation>Celková dĺžka verzie sieťového reťazca (%i) prekračuje maximálnu dĺžku (%i). Znížte počet a veľkosť komentárov.</translation>
     </message>
@@ -4549,8 +3971,6 @@
         <translation>Vždy sa dotazovať adresy partnerských uzlov cez vyhľadávanie DNS (predvolené: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading wallet %s. -wallet filename must be a regular file.</source>
         <translation>Chyba pri načítaní peňaženky %s. -wallet musí byť obyčajný súbor.</translation>
     </message>
@@ -4563,7 +3983,6 @@
         <translation>Chyba pri načítaní peňaženky %s. Neplatné znaky v názvu souboru -wallet.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
         <translation>Koľko blokov overiť pri spustení (predvolené: %u, 0 = všetky)</translation>
     </message>
@@ -4572,13 +3991,8 @@
         <translation>Zahrnúť IP adresy v ladiacom výstupe (predvolené: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Neplatná adresa proxy: '%s'</translation>
-=======
         <source>Keypool ran out, please call keypoolrefill first</source>
         <translation>Vyčerpal sa zásobník kľúčov, zavolať najskôr keypoolrefill</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -4593,13 +4007,10 @@
         <translation>Udržiavať najviac &lt;n&gt; spojení s inými počítačmi (predvolené: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Make the wallet broadcast transactions</source>
         <translation>Vysielať transakcie z peňaženky</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>Maximálna prijímajúca medzipamäť pre pripojenie, &lt;n&gt;*1000 bajtov (predvolené: %u)</translation>
     </message>
@@ -4624,13 +4035,10 @@
         <translation>Nastaviť veľkosť kľúča fronty na &lt;n&gt; (predvolené: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Set maximum BIP141 block weight (default: %d)</source>
         <translation>Nastaviť maximálnu váhu bloku pre BIP141 (predvolené: %d)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>Nastaviť počet vlákien na obsluhu RPC volaní (predvolené: %d)</translation>
     </message>
@@ -4675,13 +4083,10 @@
         <translation>Sumy transakcií nesmú byť záporné</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Transaction has too long of a mempool chain</source>
         <translation>Transakcia má v transakčnom zásobníku príliš dlhý reťazec</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Transaction must have at least one recipient</source>
         <translation>Transakcia musí mať aspoň jedného príjemcu</translation>
     </message>
@@ -4698,13 +4103,6 @@
         <translation>Načítavanie zoznamu blokov...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Pridať nód na pripojenie a pokus o udržanie pripojenia otvoreného</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Načítavam peňaženku...</translation>
     </message>
@@ -4713,13 +4111,6 @@
         <translation>Nie je možné prejsť na nižšiu verziu peňaženky</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>Nie je možné zapísať predvolenú adresu.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Nové prehľadávanie...</translation>
     </message>

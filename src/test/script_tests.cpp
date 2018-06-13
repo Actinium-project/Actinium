@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "data/script_tests.json.h"
-
-#include "core_io.h"
-#include "key.h"
-#include "keystore.h"
-#include "script/script.h"
-#include "script/script_error.h"
-#include "script/sign.h"
-#include "util.h"
-#include "utilstrencodings.h"
-#include "test/test_bitcoin.h"
-#include "rpc/server.h"
-
-#if defined(HAVE_CONSENSUS_LIB)
-#include "script/bitcoinconsensus.h"
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -38,7 +17,6 @@
 
 #if defined(HAVE_CONSENSUS_LIB)
 #include <script/bitcoinconsensus.h>
->>>>>>> upstream/0.16
 #endif
 
 #include <fstream>
@@ -188,8 +166,6 @@ void DoTest(const CScript& scriptPubKey, const CScript& scriptSig, const CScript
     CMutableTransaction tx2 = tx;
     BOOST_CHECK_MESSAGE(VerifyScript(scriptSig, scriptPubKey, &scriptWitness, flags, MutableTransactionSignatureChecker(&tx, 0, txCredit.vout[0].nValue), &err) == expect, message);
     BOOST_CHECK_MESSAGE(err == scriptError, std::string(FormatScriptError(err)) + " where " + std::string(FormatScriptError((ScriptError_t)scriptError)) + " expected: " + message);
-<<<<<<< HEAD
-=======
 
     // Verify that removing flags from a passing test or adding flags to a failing test does not change the result.
     for (int i = 0; i < 16; ++i) {
@@ -201,7 +177,6 @@ void DoTest(const CScript& scriptPubKey, const CScript& scriptSig, const CScript
         BOOST_CHECK_MESSAGE(VerifyScript(scriptSig, scriptPubKey, &scriptWitness, combined_flags, MutableTransactionSignatureChecker(&tx, 0, txCredit.vout[0].nValue), &err) == expect, message + strprintf(" (with flags %x)", combined_flags));
     }
 
->>>>>>> upstream/0.16
 #if defined(HAVE_CONSENSUS_LIB)
     CDataStream stream(SER_NETWORK, PROTOCOL_VERSION);
     stream << tx2;
@@ -486,11 +461,7 @@ public:
         return array;
     }
 
-<<<<<<< HEAD
-    std::string GetComment()
-=======
     std::string GetComment() const
->>>>>>> upstream/0.16
     {
         return comment;
     }
@@ -1491,8 +1462,6 @@ BOOST_AUTO_TEST_CASE(script_HasValidOps)
     BOOST_CHECK(!script.HasValidOps());
 }
 
-<<<<<<< HEAD
-=======
 BOOST_AUTO_TEST_CASE(script_can_append_self)
 {
     CScript s, d;
@@ -1510,5 +1479,4 @@ BOOST_AUTO_TEST_CASE(script_can_append_self)
     BOOST_CHECK(s == d);
 }
 
->>>>>>> upstream/0.16
 BOOST_AUTO_TEST_SUITE_END()

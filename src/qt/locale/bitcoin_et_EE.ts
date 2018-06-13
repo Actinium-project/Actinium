@@ -130,13 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -278,13 +273,10 @@
         <translation>Tere tulemast</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Viga</translation>
     </message>
@@ -325,13 +317,10 @@
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Error</source>
         <translation>Viga</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -353,9 +342,6 @@
     </context>
 <context>
     <name>PeerTableModel</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Sent</source>
         <translation>Saadetud</translation>
@@ -365,7 +351,6 @@
         <translation>Vastu võetud</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -554,17 +539,6 @@
         <translation>Vali...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>normaalne</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>kiire</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Copy amount</source>
         <translation>Kopeeri kogus</translation>
     </message>
@@ -794,13 +768,8 @@
         <translation>Valikud:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Information</source>

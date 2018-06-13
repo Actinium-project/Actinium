@@ -114,13 +114,8 @@
         <translation>Recreans indicem frustorum in disco...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Mitte nummos ad inscriptionem Actinium</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Mitte nummos ad inscriptionem Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -143,13 +138,8 @@
         <translation>&amp;Verifica nuntium...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -176,21 +166,12 @@
         <translation>Cifra claves privatas quae cassidili tui sunt</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus Actinium ut demonstres te eas possidere</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Actinium</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Signa nuntios cum tuis inscriptionibus Litecoin ut demonstres te eas possidere</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -320,13 +301,10 @@
 <context>
     <name>Intro</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -372,13 +350,8 @@
         <translation>Cassidile</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aperi per se portam clientis Actinium in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Aperi per se portam clientis Litecoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -445,13 +418,10 @@
         <translation>Confirma optionum reconstituere</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>The supplied proxy address is invalid.</source>
         <translation>Inscriptio vicarii tradita non valida est.</translation>
     </message>
@@ -463,13 +433,8 @@
         <translation>Schema</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Actinium postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Litecoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Immature:</source>
@@ -496,15 +461,11 @@
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>unknown</source>
         <translation>ignotum</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -569,17 +530,6 @@
         <source>Clear console</source>
         <translation>Vacuefac terminale</translation>
     </message>
-<<<<<<< HEAD
-    <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Utere sagittis sursum deorsumque ut per historiam naviges, et &lt;b&gt;Ctrl+L&lt;/b&gt; ut scrinium vacuefacias.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Scribe &lt;b&gt;help&lt;/b&gt; pro summario possibilium mandatorum.</translation>
-    </message>
-=======
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -725,13 +675,8 @@
         <translation>Copia signationem in latibulum systematis</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem Actinium a te possessa esse</translation>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
         <translation>Signa nuntium ut demonstres hanc inscriptionem Litecoin a te possessa esse</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -750,13 +695,8 @@
         <translation>&amp;Verifica Nuntium</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verify the message to ensure it was signed with the specified Actinium address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Actinium</translation>
-=======
         <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
         <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -832,13 +772,8 @@
         <translation>Operare infere sicut daemon et mandata accipe</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Nucleus</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Nucleus</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -849,13 +784,10 @@
         <translation>Facere mandatum quotiescumque cassidilis transactio mutet (%s in mandato sbstituitur ab TxID)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Accipe conexiones externas (praedefinitum: 1 nisi -proxy neque -connect)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Block creation options:</source>
         <translation>Optiones creandi frustorum:</translation>
     </message>
@@ -900,13 +832,6 @@
         <translation>Verificante frusta...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>Verificante cassidilem...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Information</source>
         <translation>Informatio</translation>
     </message>
@@ -951,17 +876,6 @@
         <translation>Permitte quaerenda DNS pro -addnode, -seednode, et -connect</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Legens inscriptiones...</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Inscriptio -proxy non valida: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Ignotum rete specificatum in -onlynet: '%s'</translation>
     </message>
@@ -974,13 +888,6 @@
         <translation>Legens indicem frustorum...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Adice nodum cui conectere et conare sustinere conexionem apertam</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Legens cassidile...</translation>
     </message>
@@ -989,13 +896,6 @@
         <translation>Non posse cassidile regredi</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>Non posse scribere praedefinitam inscriptionem</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Iterum perlegens...</translation>
     </message>

@@ -62,18 +62,6 @@
         <translation>Адреса отримання</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Це ваші адреси Actinium для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Це ваші адреси Actinium для отримання платежів. Для кожної транзакції рекомендується використовувати нову адресу одержувача.</translation>
-    </message>
-    <message>
-        <source>&amp;Copy Address</source>
-        <translation>&amp;Скопіювати адресу</translation>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Це ваші адреси Litecoin для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
     </message>
@@ -84,7 +72,6 @@
     <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;Скопіювати адресу гаманця</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -96,11 +83,7 @@
     </message>
     <message>
         <source>Export Address List</source>
-<<<<<<< HEAD
-        <translation>Експотувати список адрес</translation>
-=======
         <translation>Експортувати список адрес</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
@@ -166,11 +149,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-<<<<<<< HEAD
-        <translation>Ця операція потребує пароль для розшифрування гаманця.</translation>
-=======
         <translation>Ця операція потребує пароль від гаманця для його розблокування.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -189,11 +168,7 @@
         <translation>Підтвердіть шифрування гаманця</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
->>>>>>> upstream/0.16
         <translation>УВАГА: Якщо ви зашифруєте гаманець і забудете пароль, ви &lt;b&gt;ВТРАТИТЕ ВСІ СВОЇ БІТКОІНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -205,11 +180,7 @@
         <translation>Гаманець зашифровано</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
-=======
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
->>>>>>> upstream/0.16
         <translation>%1 буде закрито зараз, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші litecoinи від крадіжки шкідливими програмами, у випадку якщо ваш комп'ютер буде інфіковано.</translation>
     </message>
     <message>
@@ -367,11 +338,7 @@
         <translation>Переіндексація блоків на диску ...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-=======
         <source>Send coins to a Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Відправити монети на вказану адресу</translation>
     </message>
     <message>
@@ -395,13 +362,8 @@
         <translation>П&amp;еревірити повідомлення...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -428,21 +390,12 @@
         <translation>Зашифрувати закриті ключі, що знаходяться у вашому гаманці</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Підтвердіть, що Ви є власником повідомлення підписавши його Вашою Actinium-адресою </translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Actinium-адресою</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Підтвердіть, що Ви є власником повідомлення підписавши його Вашою Litecoin-адресою </translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Litecoin-адресою</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -461,13 +414,8 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Створити запит платежу (генерує QR-код та Actinium: URI)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Створити запит платежу (генерує QR-код та litecoin: URI)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -478,26 +426,16 @@
         <translation>Показати список адрес і міток, що були використані для отримання</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Відкрити Actinium: URI чи запит платежу</translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>Відкрити litecoin: URI чи запит платежу</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>П&amp;араметри командного рядка</translation>
     </message>
     <message numerus="yes">
-<<<<<<< HEAD
-        <source>%n active connection(s) to Actinium network</source>
-        <translation><numerusform>%n активне з'єднання з мережею Actinium</numerusform><numerusform>%n активні з'єднання з мережею Actinium</numerusform><numerusform>%n активних з'єднань з мережею Actinium</numerusform></translation>
-=======
         <source>%n active connection(s) to Litecoin network</source>
         <translation><numerusform>%n активне з'єднання з мережею Litecoin</numerusform><numerusform>%n активні з'єднання з мережею Litecoin</numerusform><numerusform>%n активних з'єднань з мережею Litecoin</numerusform></translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -540,11 +478,7 @@
         <translation>Синхронізовано</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
-=======
         <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
->>>>>>> upstream/0.16
         <translation>Показати довідку %1 для отримання переліку можливих параметрів командного рядка.</translation>
     </message>
     <message>
@@ -614,13 +548,8 @@
         <translation>&lt;b&gt;Зашифрований&lt;/b&gt; гаманець &lt;b&gt;заблоковано&lt;/b&gt;</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
-        <translation>Сталася фатальна помилка. Помилки не сумісні з подальщою роботою. Гаманець буде закрито.</translation>
-=======
         <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
         <translation>Сталася фатальна помилка. Гаманець буде закрито.</translation>
->>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -695,21 +624,6 @@
     </message>
     <message>
         <source>Copy address</source>
-<<<<<<< HEAD
-        <translation>Скопіювати адресу</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Скопіювати мітку</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Скопіювати суму</translation>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation>Скопіювати ID транзакції </translation>
-=======
         <translation>Копіювати адресу</translation>
     </message>
     <message>
@@ -723,7 +637,6 @@
     <message>
         <source>Copy transaction ID</source>
         <translation>Копіювати ID транзакції </translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Lock unspent</source>
@@ -825,21 +738,12 @@
         <translation>Редагувати адресу для відправлення</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The entered address "%1" is not a valid Actinium address.</source>
-        <translation>Введена адреса "%1" не є адресою в мережі Actinium.</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>Введена адреса «%1» вже присутня в адресній книзі.</translation>
-=======
         <source>The entered address "%1" is not a valid Litecoin address.</source>
         <translation>Введена адреса "%1" не є адресою в мережі Litecoin.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
         <translation>Введена адреса "%1" вже присутня в адресній книзі.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -932,11 +836,7 @@
     <name>Intro</name>
     <message>
         <source>Welcome</source>
-<<<<<<< HEAD
-        <translation>Вітання</translation>
-=======
         <translation>Ласкаво просимо</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Welcome to %1.</source>
@@ -947,8 +847,6 @@
         <translation>Оскільки це перший запуск програми, ви можете обрати де %1 буде зберігати дані.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation>Після натискання кнопки «OK» %1 почне завантажувати та обробляти повний ланцюжок блоків %4 (%2 Гб), починаючи з найбільш ранніх транзакцій у %3, коли було запущено %4.</translation>
     </message>
@@ -957,7 +855,6 @@
         <translation>Якщо ви вирішили обмежити збереження ланцюжка блоків (відсікання), історичні дані повинні бути завантажені та оброблені, але потім можуть бути видалені, щоб зберегти потрібний простір диска.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Use the default data directory</source>
         <translation>Використовувати типовий каталог даних</translation>
     </message>
@@ -966,8 +863,6 @@
         <translation>Використовувати свій каталог даних:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
@@ -988,7 +883,6 @@
         <translation>Гаманець також зберігатиметься в цьому каталозі.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Помилка: неможливо створити обраний каталог даних «%1».</translation>
     </message>
@@ -1012,19 +906,11 @@
         <translation>Форма</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Actinium network, as detailed below.</source>
-        <translation>Нещодавні транзакції ще не відображаються, тому баланс вашого гаманця може бути неточним. Ця інформація буде вірною після того, як ваш гаманець завершить синхронізацію з мережею Actinium, врахровуйте показники нижче.</translation>
-    </message>
-    <message>
-        <source>Attempting to spend actiniums that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-=======
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</source>
         <translation>Нещодавні транзакції ще не відображаються, тому баланс вашого гаманця може бути неточним. Ця інформація буде вірною після того, як ваш гаманець завершить синхронізацію з мережею litecoin, врахровуйте показники нижче.</translation>
     </message>
     <message>
         <source>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
->>>>>>> upstream/0.16
         <translation>Спроба видправити litecoinи, які ще не відображаються, не буде прийнята мережею.</translation>
     </message>
     <message>
@@ -1098,13 +984,6 @@
         <translation>&amp;Головні</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Start %1 on system login</source>
-        <translation>&amp;Запускати %1 при вході в систему</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Size of &amp;database cache</source>
         <translation>Розмір &amp;кешу бази даних</translation>
     </message>
@@ -1117,28 +996,14 @@
         <translation>Кількість потоків &amp;сценарію перевірки</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Приймати підключення ззовні</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Дозволити вхідні з’єднання</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>IP-адреса проксі-сервера (наприклад IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
         <translation>Показує, чи типово використовується проксі SOCKS5 для досягнення рівної участі для цього типу мережі.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
         <translation>Згортати замість закриття. Якщо ця опція включена, програма закриється лише після вибору відповідного пункту в меню.</translation>
     </message>
@@ -1147,19 +1012,10 @@
         <translation>Сторонні URL (наприклад, block explorer), що з'являться на вкладці транзакцій у вигляді пункту контекстного меню. %s в URL буде замінено на хеш транзакції. Для відокремлення URLів використовуйте вертикальну риску |.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Third party transaction URLs</source>
-        <translation>Сторонні URL транзакцій</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Active command-line options that override above options:</source>
         <translation>Активовані параметри командного рядка, що перекривають вищевказані параметри:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open the %1 configuration file from the working directory.</source>
         <translation>Відкрийте %1 файл конфігурації з робочого каталогу.</translation>
     </message>
@@ -1168,7 +1024,6 @@
         <translation>Відкрити файл конфігурації</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>Скинути всі параметри клієнта на типові.</translation>
     </message>
@@ -1205,11 +1060,7 @@
         <translation>&amp;Витрачати непідтверджену решту</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
->>>>>>> upstream/0.16
         <translation>Автоматично відкривати порт для клієнту біткоін на роутері. Працює лише якщо ваш роутер підтримує UPnP і ця функція увімкнена.</translation>
     </message>
     <message>
@@ -1217,13 +1068,8 @@
         <translation>Відображення порту через &amp;UPnP</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
-        <translation>Підключення до мережі Actinium через SOCKS5 проксі.</translation>
-=======
         <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
         <translation>Підключення до мережі Litecoin через SOCKS5 проксі.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1246,13 +1092,6 @@
         <translation>Приєднуватися до учасників через:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Вказує на використання наявного типового проксі SOCKS5, що використувується задля встановлення зв'язку з пірами через мережу такого типу.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1265,30 +1104,14 @@
         <translation>Tor</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Підключатися до мережі Actinium через окремий SOCKS5 проксі для прихованих сервісів Tor.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Використовувати окремий SOCKS5-проксі для з'єднання з учасниками через приховані сервіси Tor:</translation>
-=======
         <source>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Підключатися до мережі Litecoin через окремий SOCKS5 проксі для прихованих сервісів Tor.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Window</source>
         <translation>&amp;Вікно</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Hide tray icon</source>
-        <translation>Сховати іконку в треї</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>Показувати лише іконку в треї після згортання вікна.</translation>
     </message>
@@ -1309,13 +1132,10 @@
         <translation>Мов&amp;а інтерфейсу користувача:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
         <translation>Встановлює мову інтерфейсу. Зміни набудуть чинності після перезапуску %1.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Unit to show amounts in:</source>
         <translation>В&amp;имірювати монети в:</translation>
     </message>
@@ -1356,8 +1176,6 @@
         <translation>Клієнт буде вимкнено. Продовжити?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Configuration options</source>
         <translation>Редагувати параметри</translation>
     </message>
@@ -1370,7 +1188,6 @@
         <translation>Файл конфігурції не можливо відкрити</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Ця зміна вступить в силу після перезапуску клієнта</translation>
     </message>
@@ -1386,13 +1203,8 @@
         <translation>Форма</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-        <translation>Показана інформація вже може бути застарілою. Ваш гаманець буде автоматично синхронізовано з мережею Actinium після встановлення підключення, але цей процес ще не завершено.</translation>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Показана інформація вже може бути застарілою. Ваш гаманець буде автоматично синхронізовано з мережею Litecoin після встановлення підключення, але цей процес ще не завершено.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1469,9 +1281,6 @@
         <source>URI handling</source>
         <translation>Обробка URI</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>URL запиту платежу є некоректним: %1</translation>
@@ -1541,7 +1350,6 @@
         <translation>Платіж підтверджено</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>PeerTableModel</name>
     <message>
@@ -1556,8 +1364,6 @@
         <source>Ping</source>
         <translation>Затримка</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Sent</source>
         <translation>Відправлено</translation>
@@ -1566,7 +1372,6 @@
         <source>Received</source>
         <translation>Отримано</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject</name>
@@ -1575,13 +1380,8 @@
         <translation>Кількість</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter a Actinium address (e.g. %1)</source>
-        <translation>Введіть адресу Actinium (наприклад %1)</translation>
-=======
         <source>Enter a Litecoin address (e.g. %1)</source>
         <translation>Введіть адресу Litecoin (наприклад %1)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 d</source>
@@ -1615,9 +1415,6 @@
         <source>%1 and %2</source>
         <translation>%1 та %2</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>%1 B</source>
         <translation>%1 Б</translation>
@@ -1639,7 +1436,6 @@
         <translation>невідомо</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     <message>
@@ -1837,13 +1633,6 @@
         <translation>&amp;Мережевий трафік</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>&amp;Очистити</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Всього</translation>
     </message>
@@ -1880,40 +1669,10 @@
         <translation>1 &amp;рік</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Використовуйте стрілки вгору вниз для навігації по історії, і &lt;b&gt;Ctrl-L&lt;/b&gt; для очищення екрана.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Наберіть &lt;b&gt;help&lt;/b&gt; для перегляду доступних команд.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Network activity disabled</source>
         <translation>Мережева активність вимкнена.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 B</source>
-        <translation>%1 Б</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 КБ</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 МБ</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 ГБ</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>(node id: %1)</source>
         <translation>(ІД вузла: %1)</translation>
     </message>
@@ -1961,21 +1720,8 @@
         <translation>&amp;Повідомлення:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Повторно використати одну з адрес. Повторне використання адрес створює ризики безпеки та конфіденційності. Не використовуйте її, окрім як для створення повторного запиту платежу.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>По&amp;вторно використати адресу для отримання (не рекомендується)</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
-        <translation>Необов'язкове повідомлення на додаток до запиту платежу, котре буде показане під час відкриття запиту. Примітка: Це повідомлення не буде відправлено з платежем через мережу Actinium.</translation>
-=======
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
         <translation>Необов'язкове повідомлення на додаток до запиту платежу, котре буде показане під час відкриття запиту. Примітка: Це повідомлення не буде відправлено з платежем через мережу Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2035,11 +1781,7 @@
     </message>
     <message>
         <source>Copy amount</source>
-<<<<<<< HEAD
-        <translation>Скопіювати суму</translation>
-=======
         <translation>Копіювати суму</translation>
->>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -2070,11 +1812,7 @@
     </message>
     <message>
         <source>Amount</source>
-<<<<<<< HEAD
-        <translation>Кількість</translation>
-=======
         <translation>Сума</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Label</source>
@@ -2195,17 +1933,8 @@
         <translation>Приховати</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>total at least</source>
-        <translation>всього щонайменше</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Actinium transactions than the network can process.</source>
-        <translation>Оплата тільки мінімальної комісії є прийнятною, допоки обсяг транзакцій є меншим простору в блоках. Але майте на увазі, що це може анулювати транзакцію, якщо попит на Actinium транзакції стане більшим, ніж мережа зможе обробити.</translation>
-=======
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
         <translation>Оплата тільки мінімальної комісії є прийнятною, допоки обсяг транзакцій є меншим простору в блоках. Але майте на увазі, що це може анулювати транзакцію, якщо попит на Litecoin транзакції стане більшим, ніж мережа зможе обробити.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2224,17 +1953,6 @@
         <translation>(Розумну оплату ще не ініціалізовано. Це, зазвичай, триває кілька блоків...)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>звичайний</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>швидкий</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Відправити на декілька адрес</translation>
     </message>
@@ -2272,17 +1990,6 @@
     </message>
     <message>
         <source>Copy quantity</source>
-<<<<<<< HEAD
-        <translation>Скопіювати кількість</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Скопіювати суму</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Скопіювати комісію</translation>
-=======
         <translation>Копіювати кількість</translation>
     </message>
     <message>
@@ -2292,7 +1999,6 @@
     <message>
         <source>Copy fee</source>
         <translation>Комісія</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Copy after fee</source>
@@ -2300,11 +2006,7 @@
     </message>
     <message>
         <source>Copy bytes</source>
-<<<<<<< HEAD
-        <translation>Скопіювати байти</translation>
-=======
         <translation>Копіювати байти</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Copy dust</source>
@@ -2315,13 +2017,10 @@
         <translation>Скопіювати решту</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Payment request expired.</source>
         <translation>Запит платежу прострочено.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>немає мітки</translation>
     </message>
@@ -2349,13 +2048,8 @@
         <translation>Це звичайний платіж.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address to send the payment to</source>
-        <translation>Адреса Actinium для відправлення платежу</translation>
-=======
         <source>The Litecoin address to send the payment to</source>
         <translation>Адреса Litecoin для відправлення платежу</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Alt+A</source>
@@ -2374,11 +2068,7 @@
         <translation>Видалити цей запис</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-=======
         <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
->>>>>>> upstream/0.16
         <translation>Комісію буде знято зі вказаної суми. До отримувача надійде менше біткоінів, ніж було вказано в полі кількості. Якщо ж отримувачів декілька - комісію буде розподілено між ними.</translation>
     </message>
     <message>
@@ -2402,13 +2092,8 @@
         <translation>Введіть мітку для цієї адреси для додавання її в список використаних адрес</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
-        <translation>Повідомлення, що було додане до Actinium:URI та буде збережено разом з транзакцією для довідки. Примітка: Це повідомлення не буде відправлено в мережу Actinium.</translation>
-=======
         <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
         <translation>Повідомлення, що було додане до litecoin:URI та буде збережено разом з транзакцією для довідки. Примітка: Це повідомлення не буде відправлено в мережу Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Pay To:</source>
@@ -2448,21 +2133,12 @@
         <translation>&amp;Підписати повідомлення</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>You can sign messages/agreements with your addresses to prove you can receive actiniums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Ви можете підписувати повідомлення/угоди своїми адресами, щоб довести можливість отримання біткоінів, що будуть надіслані на них. Остерігайтеся підписувати будь-що нечітке чи неочікуване, так як за допомогою фішинг-атаки вас можуть спробувати ввести в оману для отримання вашого підпису під чужими словами. Підписуйте лише чіткі твердження, з якими ви повністю згодні.</translation>
-    </message>
-    <message>
-        <source>The Actinium address to sign the message with</source>
-        <translation>Адреса Actinium для підпису цього повідомлення</translation>
-=======
         <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Ви можете підписувати повідомлення/угоди своїми адресами, щоб довести можливість отримання біткоінів, що будуть надіслані на них. Остерігайтеся підписувати будь-що нечітке чи неочікуване, так як за допомогою фішинг-атаки вас можуть спробувати ввести в оману для отримання вашого підпису під чужими словами. Підписуйте лише чіткі твердження, з якими ви повністю згодні.</translation>
     </message>
     <message>
         <source>The Litecoin address to sign the message with</source>
         <translation>Адреса Litecoin для підпису цього повідомлення</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2493,11 +2169,7 @@
         <translation>Копіювати поточну сигнатуру до системного буферу обміну</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Підпишіть повідомлення щоб довести, що ви є власником цієї адреси</translation>
     </message>
     <message>
@@ -2521,21 +2193,12 @@
         <translation>Введіть нижче адресу отримувача, повідомлення (впевніться, що ви точно скопіювали символи завершення рядка, табуляцію, пробіли тощо) та підпис для перевірки повідомлення. Впевніться, що в підпис не було додано зайвих символів: це допоможе уникнути атак типу «людина посередині». Зауважте, що це лише засвідчує можливість отримання транзакцій підписувачем, але не в стані підтвердити джерело жодної транзакції!</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address the message was signed with</source>
-        <translation>Адреса Actinium, якою було підписано це повідомлення</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Actinium address</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Actinium-адресою</translation>
-=======
         <source>The Litecoin address the message was signed with</source>
         <translation>Адреса Litecoin, якою було підписано це повідомлення</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
         <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Litecoin-адресою</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2806,11 +2469,7 @@
     </message>
     <message>
         <source>Mined</source>
-<<<<<<< HEAD
-        <translation>Добуті</translation>
-=======
         <translation>Добуто</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(no label)</source>
@@ -2888,13 +2547,6 @@
         <translation>Інше</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter address or label to search</source>
-        <translation>Введіть адресу чи мітку для пошуку</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Min amount</source>
         <translation>Мінімальна сума</translation>
     </message>
@@ -2903,13 +2555,10 @@
         <translation>Відмовитися від транзакції</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Increase transaction fee</source>
         <translation>Збільшить плату за транзакцію</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy address</source>
         <translation>Скопіювати адресу</translation>
     </message>
@@ -2994,8 +2643,6 @@
     </context>
 <context>
     <name>WalletModel</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Current fee:</source>
         <translation>Поточна комісія:</translation>
@@ -3004,7 +2651,6 @@
         <source>New fee:</source>
         <translation>Нова комісія:</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>WalletView</name>
@@ -3096,13 +2742,8 @@
         <translation>Неможливо запустити HTTP-сервер. Детальніший опис наведено в журналі зневадження.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -3137,13 +2778,10 @@
         <translation>&lt;category&gt; може бути:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Приймати підключення ззовні (типово: 1 за відсутності -proxy чи -connect)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Block creation options:</source>
         <translation>Опції створення блоку:</translation>
     </message>
@@ -3220,13 +2858,6 @@
         <translation>Початковий блок некоректний/відсутній. Чи правильно вказано каталог даних для обраної мережі?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Помилка в адресі -onion: «%s»</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
         <translation>Утримувати розмір пам'яті для пулу транзакцій меншим за &lt;n&gt; мегабайтів (типово: %u)</translation>
     </message>
@@ -3255,18 +2886,6 @@
         <translation>Використання скороченого ланцюжка блоків несумісне з параметром -txindex.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Rewinding blocks...</source>
-        <translation>Відтворення блоків...</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Встановити розмір кешу бази даних в мегабайтах (від %d до %d, типово: %d)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Встановити максимальний розмір блоку у байтах (типово: %d)</translation>
-=======
         <source>Replaying blocks...</source>
         <translation>Відтворення блоків...</translation>
     </message>
@@ -3277,7 +2896,6 @@
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>Встановити розмір кешу бази даних в мегабайтах (від %d до %d, типово: %d)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -3308,17 +2926,6 @@
         <translation>Перевірка блоків...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>Перевірка гаманця... </translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>Гаманець %s знаходиться поза каталогом даних %s</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Wallet options:</source>
         <translation>Параметри гаманця:</translation>
     </message>
@@ -3331,13 +2938,6 @@
         <translation>Прив'язатися до даної адреси та вносити до білого списку учасників, що під'єднуються до неї. Використовуйте запис виду [хост]:порт для IPv6</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Прив'язатися до даної адреси для прослуховування JSON-RPC підключень. Використовуйте запис виду [хост]:порт для IPv6. Цей параметр можна вказувати декілька разів (типово: прив'язуватися до всіх інтерфейсів)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Створювати нові файли з типовими для системи атрибутами доступу замість маски 077 (діє тільки при вимкненому гаманці)</translation>
     </message>
@@ -3374,13 +2974,6 @@
         <translation>Надавати випадкові дані доступу для кожного проксі-з'єднання. Це дозволяє ввімкнути ізоляцію потоків Tor'у (типово: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Встановити максимальний розмір транзакцій з високим пріоритетом та низькою комісією (в байтах) (типово: %d)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>Залишок від суми транзакції зі сплатою комісії занадто малий </translation>
     </message>
@@ -3457,13 +3050,6 @@
         <translation>Відсилати налагоджувальну інформацію на консоль, а не у файл debug.log</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Не сплачувати комісію за надсилання транзакцій, якщо це можливо (типово: %u)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Показати всі налагоджувальні параметри (використання: --help -help-debug)</translation>
     </message>
@@ -3516,13 +3102,10 @@
         <translation>Ім'я користувача для JSON-RPC-з'єднань</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Verifying wallet(s)...</source>
         <translation>Перевірка гаманця(ців)... </translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>Попередження</translation>
     </message>
@@ -3551,13 +3134,6 @@
         <translation>Дозволити пошук в DNS для команд -addnode, -seednode та -connect</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Завантаження адрес...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = утримувати метадані транзакцій (до яких відноситься інформація про власника рахунку та запити платежів), 2 - відкинути)</translation>
     </message>
@@ -3618,13 +3194,10 @@
         <translation>Завжди дізнаватися адреси учасників через DNS (типово: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading wallet %s. Invalid characters in -wallet filename.</source>
         <translation>Помилка завантаження гаманця %s. Недійсні символи в імені файлу -wallet.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
         <translation>Скільки блоків перевіряти під час запуску (типово: %u, 0 = всі)</translation>
     </message>
@@ -3633,13 +3206,6 @@
         <translation>Включити IP-адреси до налагоджувального виводу (типово: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Помилка в адресі проксі-сервера: «%s»</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
         <translation>Прослуховувати &lt;port&gt; для JSON-RPC з'єднань (типово: %u, для тестової мережі: %u)</translation>
     </message>
@@ -3676,13 +3242,6 @@
         <translation>Ретранслювати не-P2SH транзакції з мультипідписом (типово: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send transactions with full-RBF opt-in enabled (default: %u)</source>
-        <translation>Надіслати транзакції з увімкненням full-RBF opt-in (типово: %u)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Set key pool size to &lt;n&gt; (default: %u)</source>
         <translation>Встановити розмір пулу ключів &lt;n&gt; (типово: %u)</translation>
     </message>
@@ -3755,13 +3314,6 @@
         <translation>Завантаження індексу блоків...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Додати вузол до підключення і лишити його відкритим</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Завантаження гаманця...</translation>
     </message>
@@ -3770,13 +3322,6 @@
         <translation>Не вдається понизити версію гаманця</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>Неможливо записати типову адресу</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Сканування...</translation>
     </message>

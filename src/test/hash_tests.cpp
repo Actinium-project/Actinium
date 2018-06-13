@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2013-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "hash.h"
-#include "utilstrencodings.h"
-#include "test/test_bitcoin.h"
-=======
 // Copyright (c) 2013-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -14,7 +5,6 @@
 #include <hash.h>
 #include <utilstrencodings.h>
 #include <test/test_bitcoin.h>
->>>>>>> upstream/0.16
 
 #include <vector>
 

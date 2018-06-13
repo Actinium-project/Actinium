@@ -1,20 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-<<<<<<< HEAD
-// Copyright (c) 2009-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2009-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_SERIALIZE_H
 #define BITCOIN_SERIALIZE_H
 
-<<<<<<< HEAD
-#include "compat/endian.h"
-=======
 #include <compat/endian.h>
->>>>>>> upstream/0.16
 
 #include <algorithm>
 #include <assert.h>
@@ -29,11 +21,7 @@
 #include <utility>
 #include <vector>
 
-<<<<<<< HEAD
-#include "prevector.h"
-=======
 #include <prevector.h>
->>>>>>> upstream/0.16
 
 static const unsigned int MAX_SIZE = 0x02000000;
 
@@ -414,11 +402,7 @@ class CVarInt
 protected:
     I &n;
 public:
-<<<<<<< HEAD
-    CVarInt(I& nIn) : n(nIn) { }
-=======
     explicit CVarInt(I& nIn) : n(nIn) { }
->>>>>>> upstream/0.16
 
     template<typename Stream>
     void Serialize(Stream &s) const {
@@ -436,11 +420,7 @@ class CCompactSize
 protected:
     uint64_t &n;
 public:
-<<<<<<< HEAD
-    CCompactSize(uint64_t& nIn) : n(nIn) { }
-=======
     explicit CCompactSize(uint64_t& nIn) : n(nIn) { }
->>>>>>> upstream/0.16
 
     template<typename Stream>
     void Serialize(Stream &s) const {
@@ -459,11 +439,7 @@ class LimitedString
 protected:
     std::string& string;
 public:
-<<<<<<< HEAD
-    LimitedString(std::string& _string) : string(_string) {}
-=======
     explicit LimitedString(std::string& _string) : string(_string) {}
->>>>>>> upstream/0.16
 
     template<typename Stream>
     void Unserialize(Stream& s)
@@ -756,13 +732,8 @@ template<typename Stream, typename K, typename T, typename Pred, typename A>
 void Serialize(Stream& os, const std::map<K, T, Pred, A>& m)
 {
     WriteCompactSize(os, m.size());
-<<<<<<< HEAD
-    for (typename std::map<K, T, Pred, A>::const_iterator mi = m.begin(); mi != m.end(); ++mi)
-        Serialize(os, (*mi));
-=======
     for (const auto& entry : m)
         Serialize(os, entry);
->>>>>>> upstream/0.16
 }
 
 template<typename Stream, typename K, typename T, typename Pred, typename A>

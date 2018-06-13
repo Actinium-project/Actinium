@@ -4,11 +4,7 @@ Developer Notes
 Various coding styles have been used during the history of the codebase,
 and the result is not very consistent. However, we're now trying to converge to
 a single style, which is specified below. When writing patches, favor the new
-<<<<<<< HEAD
 style over attempting to mimick the surrounding style, except for move-only
-=======
-style over attempting to mimic the surrounding style, except for move-only
->>>>>>> upstream/0.16
 commits.
 
 Do not submit patches solely to modify the style of existing code.
@@ -41,11 +37,6 @@ code.
 
 - **Miscellaneous**
   - `++i` is preferred over `i++`.
-<<<<<<< HEAD
-=======
-  - `nullptr` is preferred over `NULL` or `(void*)0`.
-  - `static_assert` is preferred over `assert` where possible. Generally; compile-time checking is preferred over run-time checking.
->>>>>>> upstream/0.16
 
 Block style example:
 ```c++
@@ -160,11 +151,7 @@ to see it.
 
 **testnet and regtest modes**
 
-<<<<<<< HEAD
 Run with the -testnet option to run with "play actiniums" on the test network, if you
-=======
-Run with the -testnet option to run with "play litecoins" on the test network, if you
->>>>>>> upstream/0.16
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the -regtest option.
@@ -173,49 +160,11 @@ that run in -regtest mode.
 
 **DEBUG_LOCKORDER**
 
-<<<<<<< HEAD
 Actinium Core is a multithreaded application, and deadlocks or other multithreading bugs
-=======
-Litecoin Core is a multithreaded application, and deadlocks or other multithreading bugs
->>>>>>> upstream/0.16
 can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of which locks
 are held, and adds warnings to the debug.log file if inconsistencies are detected.
 
-<<<<<<< HEAD
-=======
-**Valgrind suppressions file**
-
-Valgrind is a programming tool for memory debugging, memory leak detection, and
-profiling. The repo contains a Valgrind suppressions file
-([`valgrind.supp`](https://github.com/bitcoin/bitcoin/blob/master/contrib/valgrind.supp))
-which includes known Valgrind warnings in our dependencies that cannot be fixed
-in-tree. Example use:
-
-```shell
-$ valgrind --suppressions=contrib/valgrind.supp src/test/test_litecoin
-$ valgrind --suppressions=contrib/valgrind.supp --leak-check=full \
-      --show-leak-kinds=all src/test/test_litecoin --log_level=test_suite
-$ valgrind -v --leak-check=full src/litecoind -printtoconsole
-```
-
-**compiling for test coverage**
-
-LCOV can be used to generate a test coverage report based upon `make check`
-execution. LCOV must be installed on your system (e.g. the `lcov` package
-on Debian/Ubuntu).
-
-To enable LCOV report generation during test runs:
-
-```shell
-./configure --enable-lcov
-make
-make cov
-
-# A coverage report will now be accessible at `./test_litecoin.coverage/index.html`.
-```
-
->>>>>>> upstream/0.16
 Locking/mutex usage notes
 -------------------------
 
@@ -260,11 +209,7 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 9332 for connections and services them.
 
-<<<<<<< HEAD
 - BitcoinMiner : Generates actiniums (if wallet is enabled).
-=======
-- BitcoinMiner : Generates litecoins (if wallet is enabled).
->>>>>>> upstream/0.16
 
 - Shutdown : Does an orderly shutdown of everything.
 
@@ -274,11 +219,7 @@ Ignoring IDE/editor files
 In closed-source environments in which everyone uses the same IDE it is common
 to add temporary files it produces to the project-wide `.gitignore` file.
 
-<<<<<<< HEAD
 However, in open source software such as Actinium Core, where everyone uses
-=======
-However, in open source software such as Litecoin Core, where everyone uses
->>>>>>> upstream/0.16
 their own editors/IDE/tools, it is less common. Only you know what files your
 editor produces and this may change from version to version. The canonical way
 to do this is thus to create your local gitignore. Add this to `~/.gitconfig`:
@@ -308,15 +249,9 @@ Development guidelines
 ============================
 
 A few non-style-related recommendations for developers, as well as points to
-<<<<<<< HEAD
 pay attention to for reviewers of Actinium Core code.
 
 General Actinium Core
-=======
-pay attention to for reviewers of Litecoin Core code.
-
-General Litecoin Core
->>>>>>> upstream/0.16
 ----------------------
 
 - New features should be exposed on RPC first, then can be made available in the GUI
@@ -340,11 +275,7 @@ Wallet
 
   - *Rationale*: In RPC code that conditionally uses the wallet (such as
     `validateaddress`) it is easy to forget that global pointer `pwalletMain`
-<<<<<<< HEAD
     can be NULL. See `test/functional/disablewallet.py` for functional tests
-=======
-    can be nullptr. See `test/functional/disablewallet.py` for functional tests
->>>>>>> upstream/0.16
     exercising the API with `-disablewallet`
 
 - Include `db_cxx.h` (BerkeleyDB header) only when `ENABLE_WALLET` is set
@@ -399,15 +330,6 @@ C++ data structures
   - *Rationale*: Ensure determinism by avoiding accidental use of uninitialized
     values. Also, static analyzers balk about this.
 
-<<<<<<< HEAD
-=======
-- By default, declare single-argument constructors `explicit`.
-
-  - *Rationale*: This is a precaution to avoid unintended conversions that might
-    arise when single-argument constructors are used as implicit conversion
-    functions.
-
->>>>>>> upstream/0.16
 - Use explicitly signed or unsigned `char`s, or even better `uint8_t` and
   `int8_t`. Do not use bare `char` unless it is to pass to a third-party API.
   This type can be signed or unsigned depending on the architecture, which can
@@ -439,11 +361,7 @@ Strings and formatting
 
 - For `strprintf`, `LogPrint`, `LogPrintf` formatting characters don't need size specifiers
 
-<<<<<<< HEAD
   - *Rationale*: Actinium Core uses tinyformat, which is type safe. Leave them out to avoid confusion
-=======
-  - *Rationale*: Litecoin Core uses tinyformat, which is type safe. Leave them out to avoid confusion
->>>>>>> upstream/0.16
 
 Variable names
 --------------
@@ -535,17 +453,6 @@ namespace {
 
   - *Rationale*: Avoids confusion about the namespace context
 
-<<<<<<< HEAD
-=======
-- Prefer `#include <primitives/transaction.h>` bracket syntax instead of
-  `#include "primitives/transactions.h"` quote syntax when possible.
-
-  - *Rationale*: Bracket syntax is less ambiguous because the preprocessor
-    searches a fixed list of include directories without taking location of the
-    source file into account. This allows quoted includes to stand out more when
-    the location of the source file actually is relevant.
-
->>>>>>> upstream/0.16
 GUI
 -----
 
@@ -560,20 +467,12 @@ Subtrees
 
 Several parts of the repository are subtrees of software maintained elsewhere.
 
-<<<<<<< HEAD
 Some of these are maintained by active developers of Actinium Core, in which case changes should probably go
-=======
-Some of these are maintained by active developers of Litecoin Core, in which case changes should probably go
->>>>>>> upstream/0.16
 directly upstream without being PRed directly against the project.  They will be merged back in the next
 subtree merge.
 
 Others are external projects without a tight relationship with our project.  Changes to these should also
-<<<<<<< HEAD
 be sent upstream but bugfixes may also be prudent to PR against Actinium Core so that they can be integrated
-=======
-be sent upstream but bugfixes may also be prudent to PR against Litecoin Core so that they can be integrated
->>>>>>> upstream/0.16
 quickly.  Cosmetic changes should be purely taken upstream.
 
 There is a tool in contrib/devtools/git-subtree-check.sh to check a subtree directory for consistency with
@@ -636,39 +535,12 @@ Git and GitHub tips
 
         [remote "upstream-pull"]
                 fetch = +refs/pull/*:refs/remotes/upstream-pull/*
-<<<<<<< HEAD
                 url = git@github.com:Actinium-project/Actinium.git
-=======
-                url = git@github.com:litecoin-project/litecoin.git
->>>>>>> upstream/0.16
 
   This will add an `upstream-pull` remote to your git repository, which can be fetched using `git fetch --all`
   or `git fetch upstream-pull`. Afterwards, you can use `upstream-pull/NUMBER/head` in arguments to `git show`,
   `git checkout` and anywhere a commit id would be acceptable to see the changes from pull request NUMBER.
 
-<<<<<<< HEAD
-=======
-Scripted diffs
---------------
-
-For reformatting and refactoring commits where the changes can be easily automated using a bash script, we use
-scripted-diff commits. The bash script is included in the commit message and our Travis CI job checks that
-the result of the script is identical to the commit. This aids reviewers since they can verify that the script
-does exactly what it's supposed to do. It is also helpful for rebasing (since the same script can just be re-run
-on the new master commit).
-
-To create a scripted-diff:
-
-- start the commit message with `scripted-diff:` (and then a description of the diff on the same line)
-- in the commit message include the bash script between lines containing just the following text:
-    - `-BEGIN VERIFY SCRIPT-`
-    - `-END VERIFY SCRIPT-`
-
-The scripted-diff is verified by the tool `contrib/devtools/commit-script-check.sh`
-
-Commit `bb81e173` is an example of a scripted-diff.
-
->>>>>>> upstream/0.16
 RPC interface guidelines
 --------------------------
 
@@ -698,19 +570,11 @@ A few guidelines for introducing and reviewing new RPC interfaces:
     is specified as-is in BIP22.
 
 - Missing arguments and 'null' should be treated the same: as default values. If there is no
-<<<<<<< HEAD
   default value, both cases should fail in the same way.
-=======
-  default value, both cases should fail in the same way. The easiest way to follow this
-  guideline is detect unspecified arguments with `params[x].isNull()` instead of
-  `params.size() <= x`. The former returns true if the argument is either null or missing,
-  while the latter returns true if is missing, and false if it is null.
->>>>>>> upstream/0.16
 
   - *Rationale*: Avoids surprises when switching to name-based arguments. Missing name-based arguments
   are passed as 'null'.
 
-<<<<<<< HEAD
   - *Exception*: Many legacy exceptions to this exist, one of the worst ones is
     `getbalance` which follows a completely different code path based on the
     number of arguments. We are still in the process of cleaning these up. Do not introduce
@@ -720,12 +584,6 @@ A few guidelines for introducing and reviewing new RPC interfaces:
   do different things.
 
   - *Rationale*: This is impossible to use with `Actinium-cli`, and can be surprising to users.
-=======
-- Try not to overload methods on argument type. E.g. don't make `getblock(true)` and `getblock("hash")`
-  do different things.
-
-  - *Rationale*: This is impossible to use with `litecoin-cli`, and can be surprising to users.
->>>>>>> upstream/0.16
 
   - *Exception*: Some RPC calls can take both an `int` and `bool`, most notably when a bool was switched
     to a multi-value, or due to other historical reasons. **Always** have false map to 0 and
@@ -744,44 +602,14 @@ A few guidelines for introducing and reviewing new RPC interfaces:
 
 - Add every non-string RPC argument `(method, idx, name)` to the table `vRPCConvertParams` in `rpc/client.cpp`.
 
-<<<<<<< HEAD
   - *Rationale*: `Actinium-cli` and the GUI debug console use this table to determine how to
-=======
-  - *Rationale*: `litecoin-cli` and the GUI debug console use this table to determine how to
->>>>>>> upstream/0.16
     convert a plaintext command line to JSON. If the types don't match, the method can be unusable
     from there.
 
 - A RPC method must either be a wallet method or a non-wallet method. Do not
-<<<<<<< HEAD
   introduce new methods such as `getinfo` and `signrawtransaction` that differ
   in behavior based on presence of a wallet.
-=======
-  introduce new methods such as `signrawtransaction` that differ in behavior
-  based on presence of a wallet.
->>>>>>> upstream/0.16
 
   - *Rationale*: as well as complicating the implementation and interfering
     with the introduction of multi-wallet, wallet and non-wallet code should be
     separated to avoid introducing circular dependencies between code units.
-<<<<<<< HEAD
-=======
-
-- Try to make the RPC response a JSON object.
-
-  - *Rationale*: If a RPC response is not a JSON object then it is harder to avoid API breakage if
-    new data in the response is needed.
-
-- Wallet RPCs call BlockUntilSyncedToCurrentChain to maintain consistency with
-  `getblockchaininfo`'s state immediately prior to the call's execution. Wallet
-  RPCs whose behavior does *not* depend on the current chainstate may omit this
-  call.
-
-  - *Rationale*: In previous versions of Litecoin Core, the wallet was always
-    in-sync with the chainstate (by virtue of them all being updated in the
-    same cs_main lock). In order to maintain the behavior that wallet RPCs
-    return results as of at least the highest best-known block an RPC
-    client may be aware of prior to entering a wallet RPC call, we must block
-    until the wallet is caught up to the chainstate as of the RPC call's entry.
-    This also makes the API much easier for RPC clients to reason about.
->>>>>>> upstream/0.16

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// Copyright (c) 2009-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2009-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,19 +6,11 @@
 #define BITCOIN_NETADDRESS_H
 
 #if defined(HAVE_CONFIG_H)
-<<<<<<< HEAD
-#include "config/bitcoin-config.h"
-#endif
-
-#include "compat.h"
-#include "serialize.h"
-=======
 #include <config/bitcoin-config.h>
 #endif
 
 #include <compat.h>
 #include <serialize.h>
->>>>>>> upstream/0.16
 
 #include <stdint.h>
 #include <string>
@@ -48,11 +36,7 @@ class CNetAddr
 
     public:
         CNetAddr();
-<<<<<<< HEAD
-        CNetAddr(const struct in_addr& ipv4Addr);
-=======
         explicit CNetAddr(const struct in_addr& ipv4Addr);
->>>>>>> upstream/0.16
         void Init();
         void SetIP(const CNetAddr& ip);
 
@@ -98,11 +82,7 @@ class CNetAddr
         std::vector<unsigned char> GetGroup() const;
         int GetReachabilityFrom(const CNetAddr *paddrPartner = nullptr) const;
 
-<<<<<<< HEAD
-        CNetAddr(const struct in6_addr& pipv6Addr, const uint32_t scope = 0);
-=======
         explicit CNetAddr(const struct in6_addr& pipv6Addr, const uint32_t scope = 0);
->>>>>>> upstream/0.16
         bool GetIn6Addr(struct in6_addr* pipv6Addr) const;
 
         friend bool operator==(const CNetAddr& a, const CNetAddr& b);
@@ -166,11 +146,7 @@ class CService : public CNetAddr
         CService();
         CService(const CNetAddr& ip, unsigned short port);
         CService(const struct in_addr& ipv4Addr, unsigned short port);
-<<<<<<< HEAD
-        CService(const struct sockaddr_in& addr);
-=======
         explicit CService(const struct sockaddr_in& addr);
->>>>>>> upstream/0.16
         void Init();
         unsigned short GetPort() const;
         bool GetSockAddr(struct sockaddr* paddr, socklen_t *addrlen) const;
@@ -184,11 +160,7 @@ class CService : public CNetAddr
         std::string ToStringIPPort() const;
 
         CService(const struct in6_addr& ipv6Addr, unsigned short port);
-<<<<<<< HEAD
-        CService(const struct sockaddr_in6& addr);
-=======
         explicit CService(const struct sockaddr_in6& addr);
->>>>>>> upstream/0.16
 
         ADD_SERIALIZE_METHODS;
 

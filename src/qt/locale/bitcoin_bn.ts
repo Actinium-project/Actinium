@@ -7,9 +7,6 @@
     </message>
     <message>
         <source>Create a new address</source>
-<<<<<<< HEAD
-        <translation>undefined</translation>
-=======
         <translation>নতুন একটি ঠিকানা তৈরি করুন</translation>
     </message>
     <message>
@@ -23,7 +20,6 @@
     <message>
         <source>C&amp;lose</source>
         <translation>কপি/প্রতিলিপি</translation>
->>>>>>> upstream/0.16
     </message>
     </context>
 <context>
@@ -195,12 +191,5 @@
         <source>Warning</source>
         <translation>সতর্কতা</translation>
     </message>
-<<<<<<< HEAD
-    <message>
-        <source>Loading addresses...</source>
-        <translation>ঠিকানাগুলো লোডিং হচ্ছে...</translation>
-    </message>
-=======
->>>>>>> upstream/0.16
     </context>
 </TS>

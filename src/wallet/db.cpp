@@ -104,11 +104,7 @@ bool CDBEnv::Open(const fs::path& pathIn, bool retry)
 
     strPath = pathIn.string();
     if (!LockDirectory(pathIn, ".walletlock")) {
-<<<<<<< HEAD
         LogPrintf("Cannot obtain a lock on wallet directory %s. Another instance of Actinium may be using it.\n", strPath);
-=======
-        LogPrintf("Cannot obtain a lock on wallet directory %s. Another instance of litecoin may be using it.\n", strPath);
->>>>>>> upstream/0.16
         return false;
     }
 

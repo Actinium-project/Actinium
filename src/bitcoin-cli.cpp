@@ -1,25 +1,9 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-<<<<<<< HEAD
-// Copyright (c) 2009-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2009-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-<<<<<<< HEAD
-#include "config/bitcoin-config.h"
-#endif
-
-#include "chainparamsbase.h"
-#include "clientversion.h"
-#include "fs.h"
-#include "rpc/client.h"
-#include "rpc/protocol.h"
-#include "util.h"
-#include "utilstrencodings.h"
-=======
 #include <config/bitcoin-config.h>
 #endif
 
@@ -30,17 +14,12 @@
 #include <rpc/protocol.h>
 #include <util.h>
 #include <utilstrencodings.h>
->>>>>>> upstream/0.16
 
 #include <stdio.h>
 
 #include <event2/buffer.h>
 #include <event2/keyvalq_struct.h>
-<<<<<<< HEAD
-#include "support/events.h"
-=======
 #include <support/events.h>
->>>>>>> upstream/0.16
 
 #include <univalue.h>
 
@@ -58,10 +37,7 @@ std::string HelpMessageCli()
     strUsage += HelpMessageOpt("-?", _("This help message"));
     strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), BITCOIN_CONF_FILENAME));
     strUsage += HelpMessageOpt("-datadir=<dir>", _("Specify data directory"));
-<<<<<<< HEAD
-=======
     strUsage += HelpMessageOpt("-getinfo", _("Get general information from the remote server. Note that unlike server-side RPC calls, the results of -getinfo is the result of multiple non-atomic requests. Some entries in the result may represent results from different states (e.g. wallet balance may be as of a different block from the chain state reported)"));
->>>>>>> upstream/0.16
     AppendParamsHelpMessages(strUsage);
     strUsage += HelpMessageOpt("-named", strprintf(_("Pass named instead of positional arguments (default: %s)"), DEFAULT_NAMED));
     strUsage += HelpMessageOpt("-rpcconnect=<ip>", strprintf(_("Send commands to node running on <ip> (default: %s)"), DEFAULT_RPCCONNECT));
@@ -70,14 +46,9 @@ std::string HelpMessageCli()
     strUsage += HelpMessageOpt("-rpcuser=<user>", _("Username for JSON-RPC connections"));
     strUsage += HelpMessageOpt("-rpcpassword=<pw>", _("Password for JSON-RPC connections"));
     strUsage += HelpMessageOpt("-rpcclienttimeout=<n>", strprintf(_("Timeout in seconds during HTTP requests, or 0 for no timeout. (default: %d)"), DEFAULT_HTTP_CLIENT_TIMEOUT));
-<<<<<<< HEAD
-    strUsage += HelpMessageOpt("-stdin", _("Read extra arguments from standard input, one per line until EOF/Ctrl-D (recommended for sensitive information such as passphrases)"));
-    strUsage += HelpMessageOpt("-rpcwallet=<walletname>", _("Send RPC for non-default wallet on RPC server (argument is wallet filename in Actiniumd directory, required if Actiniumd/-Qt runs with multiple wallets)"));
-=======
     strUsage += HelpMessageOpt("-stdinrpcpass", strprintf(_("Read RPC password from standard input as a single line.  When combined with -stdin, the first line from standard input is used for the RPC password.")));
     strUsage += HelpMessageOpt("-stdin", _("Read extra arguments from standard input, one per line until EOF/Ctrl-D (recommended for sensitive information such as passphrases).  When combined with -stdinrpcpass, the first line from standard input is used for the RPC password."));
-    strUsage += HelpMessageOpt("-rpcwallet=<walletname>", _("Send RPC for non-default wallet on RPC server (argument is wallet filename in litecoind directory, required if litecoind/-Qt runs with multiple wallets)"));
->>>>>>> upstream/0.16
+    strUsage += HelpMessageOpt("-rpcwallet=<walletname>", _("Send RPC for non-default wallet on RPC server (argument is wallet filename in Actiniumd directory, required if Actiniumd/-Qt runs with multiple wallets)"));
 
     return strUsage;
 }
@@ -115,17 +86,10 @@ static int AppInitRPC(int argc, char* argv[])
         std::string strUsage = strprintf(_("%s RPC client version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n";
         if (!gArgs.IsArgSet("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-<<<<<<< HEAD
                   "  Actinium-cli [options] <command> [params]  " + strprintf(_("Send command to %s"), _(PACKAGE_NAME)) + "\n" +
                   "  Actinium-cli [options] -named <command> [name=value] ... " + strprintf(_("Send command to %s (with named arguments)"), _(PACKAGE_NAME)) + "\n" +
                   "  Actinium-cli [options] help                " + _("List commands") + "\n" +
                   "  Actinium-cli [options] help <command>      " + _("Get help for a command") + "\n";
-=======
-                  "  litecoin-cli [options] <command> [params]  " + strprintf(_("Send command to %s"), _(PACKAGE_NAME)) + "\n" +
-                  "  litecoin-cli [options] -named <command> [name=value] ... " + strprintf(_("Send command to %s (with named arguments)"), _(PACKAGE_NAME)) + "\n" +
-                  "  litecoin-cli [options] help                " + _("List commands") + "\n" +
-                  "  litecoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
->>>>>>> upstream/0.16
 
             strUsage += "\n" + HelpMessageCli();
         }
@@ -228,9 +192,6 @@ static void http_error_cb(enum evhttp_request_error err, void *ctx)
 }
 #endif
 
-<<<<<<< HEAD
-UniValue CallRPC(const std::string& strMethod, const UniValue& params)
-=======
 /** Class that handles the conversion from a command-line to a JSON-RPC request,
  * as well as converting back to a JSON object that can be shown as result.
  */
@@ -324,7 +285,6 @@ public:
 };
 
 static UniValue CallRPC(BaseRequestHandler *rh, const std::string& strMethod, const std::vector<std::string>& args)
->>>>>>> upstream/0.16
 {
     std::string host;
     // In preference order, we choose the following for the port:
@@ -356,11 +316,7 @@ static UniValue CallRPC(BaseRequestHandler *rh, const std::string& strMethod, co
         // Try fall back to cookie-based authentication if no password is provided
         if (!GetAuthCookie(&strRPCUserColonPass)) {
             throw std::runtime_error(strprintf(
-<<<<<<< HEAD
-                _("Could not locate RPC credentials. No authentication cookie could be found, and no rpcpassword is set in the configuration file (%s)"),
-=======
                 _("Could not locate RPC credentials. No authentication cookie could be found, and RPC password is not set.  See -rpcpassword and -stdinrpcpass.  Configuration file: (%s)"),
->>>>>>> upstream/0.16
                     GetConfigFile(gArgs.GetArg("-conf", BITCOIN_CONF_FILENAME)).string().c_str()));
 
         }
@@ -375,11 +331,7 @@ static UniValue CallRPC(BaseRequestHandler *rh, const std::string& strMethod, co
     evhttp_add_header(output_headers, "Authorization", (std::string("Basic ") + EncodeBase64(strRPCUserColonPass)).c_str());
 
     // Attach request data
-<<<<<<< HEAD
-    std::string strRequest = JSONRPCRequestObj(strMethod, params, 1).write() + "\n";
-=======
     std::string strRequest = rh->PrepareRequest(strMethod, args).write() + "\n";
->>>>>>> upstream/0.16
     struct evbuffer* output_buffer = evhttp_request_get_output_buffer(req.get());
     assert(output_buffer);
     evbuffer_add(output_buffer, strRequest.data(), strRequest.size());
@@ -418,11 +370,7 @@ static UniValue CallRPC(BaseRequestHandler *rh, const std::string& strMethod, co
     UniValue valReply(UniValue::VSTR);
     if (!valReply.read(response.body))
         throw std::runtime_error("couldn't parse reply from server");
-<<<<<<< HEAD
-    const UniValue& reply = valReply.get_obj();
-=======
     const UniValue reply = rh->ProcessReply(valReply);
->>>>>>> upstream/0.16
     if (reply.empty())
         throw std::runtime_error("expected reply to have result, error and id properties");
 
@@ -439,8 +387,6 @@ int CommandLineRPC(int argc, char *argv[])
             argc--;
             argv++;
         }
-<<<<<<< HEAD
-=======
         std::string rpcPass;
         if (gArgs.GetBoolArg("-stdinrpcpass", false)) {
             if (!std::getline(std::cin, rpcPass)) {
@@ -448,26 +394,10 @@ int CommandLineRPC(int argc, char *argv[])
             }
             gArgs.ForceSetArg("-rpcpassword", rpcPass);
         }
->>>>>>> upstream/0.16
         std::vector<std::string> args = std::vector<std::string>(&argv[1], &argv[argc]);
         if (gArgs.GetBoolArg("-stdin", false)) {
             // Read one arg per line from stdin and append
             std::string line;
-<<<<<<< HEAD
-            while (std::getline(std::cin,line))
-                args.push_back(line);
-        }
-        if (args.size() < 1)
-            throw std::runtime_error("too few parameters (need at least command)");
-        std::string strMethod = args[0];
-        args.erase(args.begin()); // Remove trailing method name from arguments vector
-
-        UniValue params;
-        if(gArgs.GetBoolArg("-named", DEFAULT_NAMED)) {
-            params = RPCConvertNamedValues(strMethod, args);
-        } else {
-            params = RPCConvertValues(strMethod, args);
-=======
             while (std::getline(std::cin, line)) {
                 args.push_back(line);
             }
@@ -484,18 +414,13 @@ int CommandLineRPC(int argc, char *argv[])
             }
             method = args[0];
             args.erase(args.begin()); // Remove trailing method name from arguments vector
->>>>>>> upstream/0.16
         }
 
         // Execute and handle connection failures with -rpcwait
         const bool fWait = gArgs.GetBoolArg("-rpcwait", false);
         do {
             try {
-<<<<<<< HEAD
-                const UniValue reply = CallRPC(strMethod, params);
-=======
                 const UniValue reply = CallRPC(rh.get(), method, args);
->>>>>>> upstream/0.16
 
                 // Parse reply
                 const UniValue& result = find_value(reply, "result");
@@ -518,11 +443,7 @@ int CommandLineRPC(int argc, char *argv[])
                             strPrint += "error message:\n"+errMsg.get_str();
 
                         if (errCode.isNum() && errCode.get_int() == RPC_WALLET_NOT_SPECIFIED) {
-<<<<<<< HEAD
                             strPrint += "\nTry adding \"-rpcwallet=<filename>\" option to Actinium-cli command line.";
-=======
-                            strPrint += "\nTry adding \"-rpcwallet=<filename>\" option to litecoin-cli command line.";
->>>>>>> upstream/0.16
                         }
                     }
                 } else {

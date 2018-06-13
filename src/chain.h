@@ -1,28 +1,16 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-<<<<<<< HEAD
-// Copyright (c) 2009-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2009-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_CHAIN_H
 #define BITCOIN_CHAIN_H
 
-<<<<<<< HEAD
-#include "arith_uint256.h"
-#include "primitives/block.h"
-#include "pow.h"
-#include "tinyformat.h"
-#include "uint256.h"
-=======
 #include <arith_uint256.h>
 #include <primitives/block.h>
 #include <pow.h>
 #include <tinyformat.h>
 #include <uint256.h>
->>>>>>> upstream/0.16
 
 #include <vector>
 
@@ -216,16 +204,6 @@ public:
     unsigned int nChainTx;
 
     //! Verification status of this block. See enum BlockStatus
-<<<<<<< HEAD
-    unsigned int nStatus;
-
-    //! block header
-    int nVersion;
-    uint256 hashMerkleRoot;
-    unsigned int nTime;
-    unsigned int nBits;
-    unsigned int nNonce;
-=======
     uint32_t nStatus;
 
     //! block header
@@ -234,16 +212,11 @@ public:
     uint32_t nTime;
     uint32_t nBits;
     uint32_t nNonce;
->>>>>>> upstream/0.16
 
     //! (memory only) Sequential id assigned to distinguish order in which blocks are received.
     int32_t nSequenceId;
 
-<<<<<<< HEAD
-    //! (memory only) Maximum nTime in the chain upto and including this block.
-=======
     //! (memory only) Maximum nTime in the chain up to and including this block.
->>>>>>> upstream/0.16
     unsigned int nTimeMax;
 
     void SetNull()
@@ -274,11 +247,7 @@ public:
         SetNull();
     }
 
-<<<<<<< HEAD
-    CBlockIndex(const CBlockHeader& block)
-=======
     explicit CBlockIndex(const CBlockHeader& block)
->>>>>>> upstream/0.16
     {
         SetNull();
 
@@ -340,11 +309,7 @@ public:
         return (int64_t)nTimeMax;
     }
 
-<<<<<<< HEAD
-    enum { nMedianTimeSpan=11 };
-=======
     static constexpr int nMedianTimeSpan = 11;
->>>>>>> upstream/0.16
 
     int64_t GetMedianTimePast() const
     {

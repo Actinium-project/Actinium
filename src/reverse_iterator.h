@@ -17,11 +17,7 @@ class reverse_range
     T &m_x;
     
 public:
-<<<<<<< HEAD
-    reverse_range(T &x) : m_x(x) {}
-=======
     explicit reverse_range(T &x) : m_x(x) {}
->>>>>>> upstream/0.16
     
     auto begin() const -> decltype(this->m_x.rbegin())
     {

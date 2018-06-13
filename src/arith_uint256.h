@@ -1,9 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-<<<<<<< HEAD
-// Copyright (c) 2009-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2009-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -29,11 +25,7 @@ template<unsigned int BITS>
 class base_uint
 {
 protected:
-<<<<<<< HEAD
-    enum { WIDTH=BITS/32 };
-=======
     static constexpr int WIDTH = BITS / 32;
->>>>>>> upstream/0.16
     uint32_t pn[WIDTH];
 public:
 
@@ -258,11 +250,7 @@ public:
 
     uint64_t GetLow64() const
     {
-<<<<<<< HEAD
-        assert(WIDTH >= 2);
-=======
         static_assert(WIDTH >= 2, "Assertion WIDTH >= 2 failed (WIDTH = BITS / 32). BITS is a template parameter.");
->>>>>>> upstream/0.16
         return pn[0] | (uint64_t)pn[1] << 32;
     }
 };

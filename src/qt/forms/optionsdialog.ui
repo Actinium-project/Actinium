@@ -189,11 +189,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-<<<<<<< HEAD
           <string>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</string>
-=======
-          <string>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</string>
->>>>>>> upstream/0.16
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -203,28 +199,17 @@
        <item>
         <widget class="QCheckBox" name="allowIncoming">
          <property name="toolTip">
-<<<<<<< HEAD
-          <string>Accept connections from outside</string>
-         </property>
-         <property name="text">
-          <string>Allow incoming connections</string>
-=======
           <string>Accept connections from outside.</string>
          </property>
          <property name="text">
           <string>Allow incomin&amp;g connections</string>
->>>>>>> upstream/0.16
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-<<<<<<< HEAD
           <string>Connect to the Actinium network through a SOCKS5 proxy.</string>
-=======
-          <string>Connect to the Litecoin network through a SOCKS5 proxy.</string>
->>>>>>> upstream/0.16
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -411,17 +396,10 @@
        <item>
         <widget class="QCheckBox" name="connectSocksTor">
          <property name="toolTip">
-<<<<<<< HEAD
           <string>Connect to the Actinium network through a separate SOCKS5 proxy for Tor hidden services.</string>
          </property>
          <property name="text">
           <string>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</string>
-=======
-          <string>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</string>
-         </property>
-         <property name="text">
-          <string>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</string>
->>>>>>> upstream/0.16
          </property>
         </widget>
        </item>
@@ -529,17 +507,10 @@
        <item>
         <widget class="QCheckBox" name="hideTrayIcon">
          <property name="toolTip">
-<<<<<<< HEAD
-          <string>&amp;Hide the icon from the system tray.</string>
-         </property>
-         <property name="text">
-          <string>Hide tray icon</string>
-=======
           <string>Hide the icon from the system tray.</string>
          </property>
          <property name="text">
           <string>&amp;Hide tray icon</string>
->>>>>>> upstream/0.16
          </property>
         </widget>
        </item>
@@ -639,11 +610,7 @@
             <string>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</string>
            </property>
            <property name="text">
-<<<<<<< HEAD
-            <string>Third party transaction URLs</string>
-=======
             <string>&amp;Third party transaction URLs</string>
->>>>>>> upstream/0.16
            </property>
            <property name="buddy">
             <cstring>thirdPartyTxUrls</cstring>
@@ -857,20 +824,12 @@
   <customwidget>
    <class>QValidatedLineEdit</class>
    <extends>QLineEdit</extends>
-<<<<<<< HEAD
-   <header>qvalidatedlineedit.h</header>
-=======
    <header>qt/qvalidatedlineedit.h</header>
->>>>>>> upstream/0.16
   </customwidget>
   <customwidget>
    <class>QValueComboBox</class>
    <extends>QComboBox</extends>
-<<<<<<< HEAD
-   <header>qvaluecombobox.h</header>
-=======
    <header>qt/qvaluecombobox.h</header>
->>>>>>> upstream/0.16
   </customwidget>
  </customwidgets>
  <resources/>

@@ -33,7 +33,3 @@ void InterruptREST();
 void StopREST();
 
 #endif
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/0.16

@@ -137,11 +137,6 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>TransactionView</name>
-=======
     <message>
         <source>Label</source>
         <translation>Record</translation>
@@ -169,7 +164,6 @@
         <source>Address</source>
         <translation>Addresse</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>

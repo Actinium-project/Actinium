@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// Copyright (c) 2015-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2015-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
@@ -12,11 +8,7 @@
 #define BITCOIN_CRYPTO_AES_H
 
 extern "C" {
-<<<<<<< HEAD
-#include "crypto/ctaes/ctaes.h"
-=======
 #include <crypto/ctaes/ctaes.h>
->>>>>>> upstream/0.16
 }
 
 static const int AES_BLOCKSIZE = 16;
@@ -30,11 +22,7 @@ private:
     AES128_ctx ctx;
 
 public:
-<<<<<<< HEAD
-    AES128Encrypt(const unsigned char key[16]);
-=======
     explicit AES128Encrypt(const unsigned char key[16]);
->>>>>>> upstream/0.16
     ~AES128Encrypt();
     void Encrypt(unsigned char ciphertext[16], const unsigned char plaintext[16]) const;
 };
@@ -46,11 +34,7 @@ private:
     AES128_ctx ctx;
 
 public:
-<<<<<<< HEAD
-    AES128Decrypt(const unsigned char key[16]);
-=======
     explicit AES128Decrypt(const unsigned char key[16]);
->>>>>>> upstream/0.16
     ~AES128Decrypt();
     void Decrypt(unsigned char plaintext[16], const unsigned char ciphertext[16]) const;
 };
@@ -62,11 +46,7 @@ private:
     AES256_ctx ctx;
 
 public:
-<<<<<<< HEAD
-    AES256Encrypt(const unsigned char key[32]);
-=======
     explicit AES256Encrypt(const unsigned char key[32]);
->>>>>>> upstream/0.16
     ~AES256Encrypt();
     void Encrypt(unsigned char ciphertext[16], const unsigned char plaintext[16]) const;
 };
@@ -78,11 +58,7 @@ private:
     AES256_ctx ctx;
 
 public:
-<<<<<<< HEAD
-    AES256Decrypt(const unsigned char key[32]);
-=======
     explicit AES256Decrypt(const unsigned char key[32]);
->>>>>>> upstream/0.16
     ~AES256Decrypt();
     void Decrypt(unsigned char plaintext[16], const unsigned char ciphertext[16]) const;
 };

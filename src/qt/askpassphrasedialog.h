@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2015 The Bitcoin Core developers
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -47,10 +43,7 @@ private:
 private Q_SLOTS:
     void textChanged();
     void secureClearPassFields();
-<<<<<<< HEAD
-=======
     void toggleShowPassword(bool);
->>>>>>> upstream/0.16
 
 protected:
     bool event(QEvent *event);

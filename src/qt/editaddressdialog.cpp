@@ -110,11 +110,7 @@ void EditAddressDialog::accept()
             break;
         case AddressTableModel::INVALID_ADDRESS:
             QMessageBox::warning(this, windowTitle(),
-<<<<<<< HEAD
                 tr("The entered address \"%1\" is not a valid Actinium address.").arg(ui->addressEdit->text()),
-=======
-                tr("The entered address \"%1\" is not a valid Litecoin address.").arg(ui->addressEdit->text()),
->>>>>>> upstream/0.16
                 QMessageBox::Ok, QMessageBox::Ok);
             break;
         case AddressTableModel::DUPLICATE_ADDRESS:
@@ -149,7 +145,3 @@ void EditAddressDialog::setAddress(const QString &_address)
     this->address = _address;
     ui->addressEdit->setText(_address);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/0.16

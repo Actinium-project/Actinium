@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "transactionfilterproxy.h"
-
-#include "transactiontablemodel.h"
-#include "transactionrecord.h"
-
-#include <cstdlib>
-
-#include <QDateTime>
-
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -24,7 +9,6 @@
 
 #include <cstdlib>
 
->>>>>>> upstream/0.16
 // Earliest date that can be represented (far in the past)
 const QDateTime TransactionFilterProxy::MIN_DATE = QDateTime::fromTime_t(0);
 // Last date that can be represented (far in the future)
@@ -34,11 +18,7 @@ TransactionFilterProxy::TransactionFilterProxy(QObject *parent) :
     QSortFilterProxyModel(parent),
     dateFrom(MIN_DATE),
     dateTo(MAX_DATE),
-<<<<<<< HEAD
-    addrPrefix(),
-=======
     m_search_string(),
->>>>>>> upstream/0.16
     typeFilter(ALL_TYPES),
     watchOnlyFilter(WatchOnlyFilter_All),
     minAmount(0),
@@ -56,10 +36,7 @@ bool TransactionFilterProxy::filterAcceptsRow(int sourceRow, const QModelIndex &
     bool involvesWatchAddress = index.data(TransactionTableModel::WatchonlyRole).toBool();
     QString address = index.data(TransactionTableModel::AddressRole).toString();
     QString label = index.data(TransactionTableModel::LabelRole).toString();
-<<<<<<< HEAD
-=======
     QString txid = index.data(TransactionTableModel::TxIDRole).toString();
->>>>>>> upstream/0.16
     qint64 amount = llabs(index.data(TransactionTableModel::AmountRole).toLongLong());
     int status = index.data(TransactionTableModel::StatusRole).toInt();
 
@@ -73,16 +50,11 @@ bool TransactionFilterProxy::filterAcceptsRow(int sourceRow, const QModelIndex &
         return false;
     if(datetime < dateFrom || datetime > dateTo)
         return false;
-<<<<<<< HEAD
-    if (!address.contains(addrPrefix, Qt::CaseInsensitive) && !label.contains(addrPrefix, Qt::CaseInsensitive))
-        return false;
-=======
     if (!address.contains(m_search_string, Qt::CaseInsensitive) &&
         !  label.contains(m_search_string, Qt::CaseInsensitive) &&
         !   txid.contains(m_search_string, Qt::CaseInsensitive)) {
         return false;
     }
->>>>>>> upstream/0.16
     if(amount < minAmount)
         return false;
 
@@ -96,16 +68,10 @@ void TransactionFilterProxy::setDateRange(const QDateTime &from, const QDateTime
     invalidateFilter();
 }
 
-<<<<<<< HEAD
-void TransactionFilterProxy::setAddressPrefix(const QString &_addrPrefix)
-{
-    this->addrPrefix = _addrPrefix;
-=======
 void TransactionFilterProxy::setSearchString(const QString &search_string)
 {
     if (m_search_string == search_string) return;
     m_search_string = search_string;
->>>>>>> upstream/0.16
     invalidateFilter();
 }
 

@@ -4,13 +4,8 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
-<<<<<<< HEAD
-#ifndef _SECP256K1_GROUP_
-#define _SECP256K1_GROUP_
-=======
 #ifndef SECP256K1_GROUP_H
 #define SECP256K1_GROUP_H
->>>>>>> upstream/0.16
 
 #include "num.h"
 #include "field.h"
@@ -146,8 +141,4 @@ static void secp256k1_ge_storage_cmov(secp256k1_ge_storage *r, const secp256k1_g
 /** Rescale a jacobian point by b which must be non-zero. Constant-time. */
 static void secp256k1_gej_rescale(secp256k1_gej *r, const secp256k1_fe *b);
 
-<<<<<<< HEAD
-#endif
-=======
 #endif /* SECP256K1_GROUP_H */
->>>>>>> upstream/0.16

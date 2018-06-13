@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "blockencodings.h"
-#include "consensus/consensus.h"
-#include "consensus/validation.h"
-#include "chainparams.h"
-#include "hash.h"
-#include "random.h"
-#include "streams.h"
-#include "txmempool.h"
-#include "validation.h"
-#include "util.h"
-=======
 // Copyright (c) 2016-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -28,7 +12,6 @@
 #include <txmempool.h>
 #include <validation.h>
 #include <util.h>
->>>>>>> upstream/0.16
 
 #include <unordered_map>
 

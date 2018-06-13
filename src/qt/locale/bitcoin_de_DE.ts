@@ -15,11 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-<<<<<<< HEAD
-        <translation>Ausgewählte Adresse in die Zwischenablage kopieren</translation>
-=======
         <translation>Aktive Adresse in die Zwischenablage kopieren</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -55,18 +51,6 @@
     </message>
     <message>
         <source>C&amp;hoose</source>
-<<<<<<< HEAD
-        <translation>Dies sind deine Actinium Adressen zum Senden von Zahlungsmitteln.
-Überprüfe immer die Menge, sowie die Empfänger-Adresse vor dem Senden von Coins.</translation>
-    </message>
-    <message>
-        <source>Sending addresses</source>
-        <translation>Sendeadresse</translation>
-    </message>
-    <message>
-        <source>Receiving addresses</source>
-        <translation>Empfangsadresse</translation>
-=======
         <translation>Auswählen</translation>
     </message>
     <message>
@@ -84,7 +68,6 @@
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dies sind Ihre Litecoin-Adressen für den Empfang von Zahlungen. Es wird empfohlen, für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -145,13 +128,10 @@
         <translation>Neues Passwort wiederholen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Geben Sie das neue Passwort Ihrer digitalen Geldbörse ein.&lt;br/&gt;Verwenden Sie bitte ein Passwort bestehend aus &lt;b&gt;zehn oder mehr zufälligen Zeichen&lt;/b&gt;, oder aus &lt;b&gt;acht oder mehr Wörtern&lt;/b&gt;.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Encrypt wallet</source>
         <translation>Brieftasche verschlüsseln</translation>
     </message>
@@ -161,15 +141,11 @@
     </message>
     <message>
         <source>Unlock wallet</source>
-<<<<<<< HEAD
-        <translation>Brieftasche entriegeln</translation>
-=======
         <translation>Brieftasche entschlüsseln</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Diese Operation benötigt Ihr Wallet-Passwort zum entschlüsseln der Wallet.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -180,19 +156,14 @@
         <translation>Passwort ändern</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Enter the old passphrase and new passphrase to the wallet.</source>
         <translation>Geben Sie das alte und neue Passwort Ihrer Wallet ein.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Confirm wallet encryption</source>
         <translation>Brieftaschenverschlüsselung bestätigen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
         <translation>Achtung: Wenn Sie Ihre Wallet verschlüsseln und das Passwort verlieren, gehen &lt;b&gt;alle Ihre Litecoins verloren&lt;/b&gt;!</translation>
     </message>
@@ -201,24 +172,18 @@
         <translation>Möchten Sie Ihre Wallet wirklich verschlüsseln?</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Wallet encrypted</source>
         <translation>Brieftasche verschlüsselt</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>WICHTIG: Alle früheren Sicherungen, die Sie von Ihrer Wallet-Datei gemacht haben, sollten durch die neu erzeugte, verschlüsselte Wallet-Datei ersetzt werden. Sobald Sie die neue, verschlüsselte Wallet verwenden, werden frühere Sicherungen der unverschlüsselten Wallet-Datei aus Sicherheitsgründen nutzlos.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Wallet encryption failed</source>
         <translation>Brieftaschenverschlüsselung fehlgeschlagen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
         <translation>Die Wallet-Verschlüsselung ist aufgrund eines internen Fehlers fehlgeschlagen. Ihre Wallet wurde nicht verschlüsselt.</translation>
     </message>
@@ -227,7 +192,6 @@
         <translation>Die eingegebenen Passwörter stimmen nicht überein.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Wallet unlock failed</source>
         <translation>Brieftasche öffnen fehlgeschlagen</translation>
     </message>
@@ -263,11 +227,7 @@
     <name>BitcoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
-<<<<<<< HEAD
-        <translation>Über das Netzwerk abgleichen...</translation>
-=======
         <translation>Über das Netzwerk abgleichen</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Overview</source>
@@ -290,19 +250,14 @@
         <translation>Zeige Transaktionsverlauf</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>E&amp;xit</source>
         <translation>Beenden</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Quit application</source>
         <translation>Programm beenden</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;About %1</source>
         <translation>&amp;Über %1</translation>
     </message>
@@ -319,28 +274,20 @@
         <translation>Informationen über Qt anzeigen</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Options...</source>
         <translation>&amp;Einstellungen...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Modify configuration options for %1</source>
         <translation>Ändern Sie die Konfigurationsoptionen für %1</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;Brieftasche verschlüsseln...</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
-<<<<<<< HEAD
-        <translation>&amp;Sicherungskopie der Brieftasche...</translation>
-=======
         <translation>Sicherungskopie der Brieftasche...</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
@@ -355,8 +302,6 @@
         <translation>&amp;Adressen empfangen...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open &amp;URI...</source>
         <translation>Öffne &amp;URI...</translation>
     </message>
@@ -409,7 +354,6 @@
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Wallet</source>
         <translation>Brieftasche</translation>
     </message>
@@ -422,8 +366,6 @@
         <translation>&amp;Empfangen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Show / Hide</source>
         <translation>&amp;anzeigen / verstecken</translation>
     </message>
@@ -448,7 +390,6 @@
         <translation>&amp;Datei</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Settings</source>
         <translation>&amp;Einstellungen</translation>
     </message>
@@ -457,10 +398,6 @@
         <translation>&amp;Hilfe</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Zeige Liste der benutzten Sendeadressen und -etiketten</translation>
-=======
         <source>Tabs toolbar</source>
         <translation>Registerkarten-Symbolleiste</translation>
     </message>
@@ -487,7 +424,6 @@
     <message>
         <source>Transactions after this will not yet be visible.</source>
         <translation>Transaktionen danach sind noch nicht sichtbar.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error</source>
@@ -502,8 +438,6 @@
         <translation>Information</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Up to date</source>
         <translation>Auf dem neuesten Stand</translation>
     </message>
@@ -522,7 +456,6 @@
         <translation>Menge: %1</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Sent transaction</source>
         <translation>Überweisung gesendet</translation>
     </message>
@@ -530,12 +463,6 @@
         <source>Incoming transaction</source>
         <translation>Überweisung empfangen</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>CoinControlDialog</name>
-    <message>
-=======
     <message>
         <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
         <translation>Ein schwerwiegender Fehler ist aufgetreten. Litecoin kann nicht mehr sicher fortfahren und beendet sich.</translation>
@@ -572,7 +499,6 @@
         <translation>Betrag</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Date</source>
         <translation>Datum</translation>
     </message>
@@ -601,13 +527,10 @@
         <translation>Transaktions ID kopieren</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copy quantity</source>
         <translation>Menge kopieren</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>yes</source>
         <translation>Ja</translation>
     </message>
@@ -672,13 +595,10 @@
         <translation>Willkommen</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
@@ -699,13 +619,10 @@
     </context>
 <context>
     <name>OptionsDialog</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -719,11 +636,6 @@
     </context>
 <context>
     <name>PeerTableModel</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>QObject</name>
-=======
     <message>
         <source>Ping</source>
         <translation>Ping</translation>
@@ -743,7 +655,6 @@
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject::QObject</name>
@@ -753,13 +664,10 @@
     </context>
 <context>
     <name>RPCConsole</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -779,13 +687,10 @@
         <translation>Adresse</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Amount</source>
         <translation>Betrag</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Etikett</translation>
     </message>
@@ -808,8 +713,6 @@
 <context>
     <name>SendCoinsDialog</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Quantity:</source>
         <translation>Anzahl:</translation>
     </message>
@@ -838,7 +741,6 @@
         <translation>Menge kopieren</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy amount</source>
         <translation>Betrag kopieren</translation>
     </message>
@@ -871,13 +773,10 @@
         <source>Date</source>
         <translation>Datum</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Amount</source>
         <translation>Betrag</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionDescDialog</name>
@@ -959,8 +858,6 @@
         <source>Export the data in the current tab to a file</source>
         <translation>Daten des aktiven Fensters exportieren</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Backup Failed</source>
         <translation>Sicherung fehlgeschlagen</translation>
@@ -969,18 +866,14 @@
         <source>Backup Successful</source>
         <translation>Sicherung erfolgreich</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Options:</source>
         <translation>Optionen:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Information</source>
         <translation>Information</translation>
     </message>
@@ -989,17 +882,12 @@
         <translation>Achtung</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>This is the minimum transaction fee you pay on every transaction.</source>
-        <translation>Das ist die Mindestgebühr jeder Transaktion</translation>
-=======
         <source>Starting network threads...</source>
         <translation>Starte Netzwerk-Threads...</translation>
     </message>
     <message>
         <source>This is the minimum transaction fee you pay on every transaction.</source>
         <translation>Das ist die Mindestgebühr für jede Transaktion</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>This is the transaction fee you will pay if you send a transaction.</source>
@@ -1026,13 +914,10 @@
         <translation>Brieftasche laden...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Rescanning...</source>
         <translation>Neuscannen...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Done loading</source>
         <translation>Laden abgeschlossen</translation>
     </message>

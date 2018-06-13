@@ -133,13 +133,10 @@
     </context>
 <context>
     <name>OptionsDialog</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Error</source>
         <translation>نقص</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>

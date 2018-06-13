@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2012-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "dbwrapper.h"
-
-#include "fs.h"
-#include "util.h"
-#include "random.h"
-=======
 // Copyright (c) 2012-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -16,7 +5,6 @@
 #include <dbwrapper.h>
 
 #include <random.h>
->>>>>>> upstream/0.16
 
 #include <leveldb/cache.h>
 #include <leveldb/env.h>
@@ -29,11 +17,7 @@ class CBitcoinLevelDBLogger : public leveldb::Logger {
 public:
     // This code is adapted from posix_logger.h, which is why it is using vsprintf.
     // Please do not do this in normal code
-<<<<<<< HEAD
-    virtual void Logv(const char * format, va_list ap) override {
-=======
     void Logv(const char * format, va_list ap) override {
->>>>>>> upstream/0.16
             if (!LogAcceptCategory(BCLog::LEVELDB)) {
                 return;
             }
@@ -78,11 +62,7 @@ public:
 
                 assert(p <= limit);
                 base[std::min(bufsize - 1, (int)(p - base))] = '\0';
-<<<<<<< HEAD
-                LogPrintStr(base);
-=======
                 LogPrintf("leveldb: %s", base);
->>>>>>> upstream/0.16
                 if (base != buffer) {
                     delete[] base;
                 }
@@ -208,11 +188,7 @@ bool CDBWrapper::IsEmpty()
 }
 
 CDBIterator::~CDBIterator() { delete piter; }
-<<<<<<< HEAD
-bool CDBIterator::Valid() { return piter->Valid(); }
-=======
 bool CDBIterator::Valid() const { return piter->Valid(); }
->>>>>>> upstream/0.16
 void CDBIterator::SeekToFirst() { piter->SeekToFirst(); }
 void CDBIterator::Next() { piter->Next(); }
 

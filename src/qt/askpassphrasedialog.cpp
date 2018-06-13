@@ -1,24 +1,8 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-<<<<<<< HEAD
-#include "config/bitcoin-config.h"
-#endif
-
-#include "askpassphrasedialog.h"
-#include "ui_askpassphrasedialog.h"
-
-#include "guiconstants.h"
-#include "walletmodel.h"
-
-#include "support/allocators/secure.h"
-=======
 #include <config/bitcoin-config.h>
 #endif
 
@@ -29,7 +13,6 @@
 #include <qt/walletmodel.h>
 
 #include <support/allocators/secure.h>
->>>>>>> upstream/0.16
 
 #include <QKeyEvent>
 #include <QMessageBox>
@@ -87,10 +70,7 @@ AskPassphraseDialog::AskPassphraseDialog(Mode _mode, QWidget *parent) :
             break;
     }
     textChanged();
-<<<<<<< HEAD
-=======
     connect(ui->toggleShowPasswordButton, SIGNAL(toggled(bool)), this, SLOT(toggleShowPassword(bool)));
->>>>>>> upstream/0.16
     connect(ui->passEdit1, SIGNAL(textChanged(QString)), this, SLOT(textChanged()));
     connect(ui->passEdit2, SIGNAL(textChanged(QString)), this, SLOT(textChanged()));
     connect(ui->passEdit3, SIGNAL(textChanged(QString)), this, SLOT(textChanged()));
@@ -132,11 +112,7 @@ void AskPassphraseDialog::accept()
             break;
         }
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm wallet encryption"),
-<<<<<<< HEAD
                  tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR ACTINIUMS</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
-=======
-                 tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR LITECOINS</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
->>>>>>> upstream/0.16
                  QMessageBox::Yes|QMessageBox::Cancel,
                  QMessageBox::Cancel);
         if(retval == QMessageBox::Yes)
@@ -149,11 +125,7 @@ void AskPassphraseDialog::accept()
                                          "<qt>" +
                                          tr("%1 will close now to finish the encryption process. "
                                          "Remember that encrypting your wallet cannot fully protect "
-<<<<<<< HEAD
                                          "your actiniums from being stolen by malware infecting your computer.").arg(tr(PACKAGE_NAME)) +
-=======
-                                         "your litecoins from being stolen by malware infecting your computer.").arg(tr(PACKAGE_NAME)) +
->>>>>>> upstream/0.16
                                          "<br><br><b>" +
                                          tr("IMPORTANT: Any previous backups you have made of your wallet file "
                                          "should be replaced with the newly generated, encrypted wallet file. "
@@ -263,8 +235,6 @@ bool AskPassphraseDialog::event(QEvent *event)
     return QWidget::event(event);
 }
 
-<<<<<<< HEAD
-=======
 void AskPassphraseDialog::toggleShowPassword(bool show)
 {
     ui->toggleShowPasswordButton->setDown(show);
@@ -274,7 +244,6 @@ void AskPassphraseDialog::toggleShowPassword(bool show)
     ui->passEdit3->setEchoMode(mode);
 }
 
->>>>>>> upstream/0.16
 bool AskPassphraseDialog::eventFilter(QObject *object, QEvent *event)
 {
     /* Detect Caps Lock.

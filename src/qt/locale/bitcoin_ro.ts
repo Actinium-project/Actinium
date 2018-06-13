@@ -3,19 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-<<<<<<< HEAD
-        <translation>Click dreapta pentru a modifica adresa o eticheta</translation>
-    </message>
-    <message>
-        <source>Create a new address</source>
-        <translation>Crează o nouă adresă</translation>
-=======
         <translation>Click dreapta pentru a modifica adresa sau eticheta</translation>
     </message>
     <message>
         <source>Create a new address</source>
         <translation>Crează o adresă nouă</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;New</source>
@@ -49,12 +41,6 @@
         <source>&amp;Delete</source>
         <translation>Șterge</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>AddressTableModel</name>
-    </context>
-=======
     <message>
         <source>Choose the address to send coins to</source>
         <translation>Alege adresa căreia să îi trimiți monedele:</translation>
@@ -123,7 +109,6 @@
         <translation>(fără etichetă)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -142,9 +127,6 @@
         <source>Repeat new passphrase</source>
         <translation>Repetati noua parolă</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Introduceti o parola noua pentru portofel.&lt;br/&gt;Va rugam sa folositi o parola de  &lt;b&gt; zece sau mai multe caractere&lt;/b&gt;, sau &lt;b&gt;mai mult de opt cuvinte&lt;/b&gt;.</translation>
@@ -218,7 +200,6 @@
         <translation>Atenție: Caps Lock este activat!</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>BanTableModel</name>
     <message>
@@ -241,13 +222,10 @@
         <translation>Se sincronizează cu rețeaua</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Overview</source>
         <translation>Vizualizare de ansamblu</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Node</source>
         <translation>Nod</translation>
     </message>
@@ -304,17 +282,12 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Trimite monedele către o adresă Actinium</translation>
-=======
         <source>Click to enable network activity again.</source>
         <translation>Click pentru a permite, din nou, activitate rețelei.</translation>
     </message>
     <message>
         <source>Send coins to a Litecoin address</source>
         <translation>Trimite monedele către o adresă Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -337,13 +310,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -370,21 +338,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Actinium pentru a face dovada că îți aparțin.</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Actinium specificată.</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Semnează mesajele cu adresa ta de Litecoin pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Litecoin specificată.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -399,14 +358,6 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și Actinium: URIs)</translation>
-    </message>
-    <message>
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Deschide un Actinium: URI sau cerere de plată</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Cerere plată (generează coduri QR și litecoin: URIs)</translation>
     </message>
@@ -425,7 +376,6 @@
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Linie de comandă Setări</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 behind</source>
@@ -550,8 +500,6 @@
         <source>Confirmed</source>
         <translation>Confirmat</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Copy address</source>
         <translation>Copiază adresa</translation>
@@ -584,7 +532,6 @@
         <source>(no label)</source>
         <translation>(fără etichetă)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -596,8 +543,6 @@
         <source>&amp;Address</source>
         <translation>&amp;Adresa</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>New receiving address</source>
         <translation>Adresă de primire nouă</translation>
@@ -618,7 +563,6 @@
         <source>Could not unlock wallet.</source>
         <translation>Portofelul nu a putut fi deblocat.</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>FreespaceChecker</name>
@@ -642,12 +586,6 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Start minimized</source>
-        <translation>Pornește minimalizat</translation>
-    </message>
-    </context>
-=======
         <source>Usage:</source>
         <translation>Utilizare:</translation>
     </message>
@@ -660,7 +598,6 @@
         <translation>Resetează toate setările modificate în Interfața Grafică.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>Intro</name>
     <message>
@@ -672,8 +609,6 @@
         <translation>Folosește directoriul pentru date din modul implicit.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Use a custom data directory:</source>
         <translation>Alege un folder/director personalizat</translation>
     </message>
@@ -694,7 +629,6 @@
         <translation>Eroare: Folderul specificat "%1" nu poate fi creat.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Eroare</translation>
     </message>
@@ -705,8 +639,6 @@
     </context>
 <context>
     <name>ModalOverlay</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Form</source>
         <translation>formular</translation>
@@ -723,7 +655,6 @@
         <source>calculating...</source>
         <translation>Se calculează...</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -747,28 +678,14 @@
         <translation>MB</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Acceptă conexiuni externe</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Acceptă conexiunea care sosește</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Adresa IP a proxy-ului (ex. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open Configuration File</source>
         <translation>Deschide fișierul de Configurare</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Reset Options</source>
         <translation>&amp;Resetează opțiunile</translation>
     </message>
@@ -837,13 +754,10 @@
         <translation>Clientul va fi oprit. Dorești sa continui?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error</source>
         <translation>Eroare</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Această schimbare necesită repornirea clientului.</translation>
     </message>
@@ -851,13 +765,10 @@
 <context>
     <name>OverviewPage</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Form</source>
         <translation>formular</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Available:</source>
         <translation>Disponibil:</translation>
     </message>
@@ -872,12 +783,6 @@
     </context>
 <context>
     <name>PaymentServer</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>PeerTableModel</name>
-    </context>
-=======
     <message>
         <source>Payment request expired.</source>
         <translation>Cererea de plată a expirat.</translation>
@@ -902,7 +807,6 @@
         <translation>Primit</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -913,8 +817,6 @@
         <source>%1 and %2</source>
         <translation>%1 și %2</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>%1 B</source>
         <translation>%1 B</translation>
@@ -931,16 +833,12 @@
         <source>%1 GB</source>
         <translation>%1 GB</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject::QObject</name>
     </context>
 <context>
     <name>QRImageWidget</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Save QR Code</source>
         <translation>Salvează codul QR</translation>
@@ -950,7 +848,6 @@
         <translation>Imagine PNG (*.png)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>RPCConsole</name>
     <message>
@@ -1026,25 +923,6 @@
         <translation>1 &amp;an</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Yes</source>
         <translation>Da</translation>
     </message>
@@ -1071,18 +949,6 @@
         <source>Remove</source>
         <translation>Elimină</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Salvează imaginea...</translation>
-    </message>
-    </context>
-<context>
-    <name>RecentRequestsTableModel</name>
-=======
     <message>
         <source>Copy label</source>
         <translation>Copiază eticheta</translation>
@@ -1133,7 +999,6 @@
         <source>(no label)</source>
         <translation>(fără etichetă)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>SendCoinsDialog</name>
@@ -1161,9 +1026,6 @@
         <source>Change:</source>
         <translation>Schimbă:</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Copy amount</source>
         <translation>Copiază cantitatea</translation>
@@ -1181,7 +1043,6 @@
         <translation>(fără etichetă)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     </context>
@@ -1202,24 +1063,16 @@
     </context>
 <context>
     <name>TransactionDesc</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Amount</source>
         <translation>Cantitate</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionDescDialog</name>
     </context>
 <context>
     <name>TransactionTableModel</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>TransactionView</name>
-=======
     <message>
         <source>Label</source>
         <translation>Etichetă</translation>
@@ -1263,7 +1116,6 @@
         <source>Exporting Failed</source>
         <translation>Exportul a eșuat</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -1276,28 +1128,20 @@
     </context>
 <context>
     <name>WalletView</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>&amp;Export</source>
         <translation>&amp;Exportă</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
     </message>
     <message>
         <source>Upgrading UTXO database</source>
         <translation>Actualizarea bazei de date UTXO</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Information</source>
@@ -1308,8 +1152,6 @@
         <translation>Atenționare</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Loading wallet...</source>
         <translation>Portofelul se încarcă...</translation>
     </message>
@@ -1318,7 +1160,6 @@
         <translation>Rescanare...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Eroare</translation>
     </message>

@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2012-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#include "addrman.h"
-#include "test/test_bitcoin.h"
-#include <string>
-#include <boost/test/unit_test.hpp>
-
-#include "hash.h"
-#include "netbase.h"
-#include "random.h"
-=======
 // Copyright (c) 2012-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -22,18 +9,13 @@
 #include <hash.h>
 #include <netbase.h>
 #include <random.h>
->>>>>>> upstream/0.16
 
 class CAddrManTest : public CAddrMan
 {
     uint64_t state;
 
 public:
-<<<<<<< HEAD
-    CAddrManTest(bool makeDeterministic = true)
-=======
     explicit CAddrManTest(bool makeDeterministic = true)
->>>>>>> upstream/0.16
     {
         state = 1;
 

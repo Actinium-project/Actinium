@@ -205,11 +205,7 @@ UniValue getmininginfo(const JSONRPCRequest& request)
             "  \"pooledtx\": n              (numeric) The size of the mempool\n"
             "  \"chain\": \"xxxx\",           (string) current network name as defined in BIP70 (main, test, regtest)\n"
             "  \"warnings\": \"...\"          (string) any network and blockchain warnings\n"
-<<<<<<< HEAD
             "  \"errors\": \"...\"            (string) DEPRECATED. Same as warnings. Only shown when Actiniumd is started with -deprecatedrpc=getmininginfo\n"
-=======
-            "  \"errors\": \"...\"            (string) DEPRECATED. Same as warnings. Only shown when litecoind is started with -deprecatedrpc=getmininginfo\n"
->>>>>>> upstream/0.16
             "}\n"
             "\nExamples:\n"
             + HelpExampleCli("getmininginfo", "")
@@ -450,17 +446,10 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
         throw JSONRPCError(RPC_CLIENT_P2P_DISABLED, "Error: Peer-to-peer functionality missing or disabled");
 
     if (g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL) == 0)
-<<<<<<< HEAD
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Actinium is not connected!");
 
     if (IsInitialBlockDownload())
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Actinium is downloading blocks...");
-=======
-        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Litecoin is not connected!");
-
-    if (IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Litecoin is downloading blocks...");
->>>>>>> upstream/0.16
 
     static unsigned int nTransactionsUpdatedLast;
 
@@ -809,11 +798,7 @@ UniValue estimatefee(const JSONRPCRequest& request)
 
     if (!IsDeprecatedRPCEnabled("estimatefee")) {
         throw JSONRPCError(RPC_METHOD_DEPRECATED, "estimatefee is deprecated and will be fully removed in v0.17. "
-<<<<<<< HEAD
             "To use estimatefee in v0.16, restart Actiniumd with -deprecatedrpc=estimatefee.\n"
-=======
-            "To use estimatefee in v0.16, restart litecoind with -deprecatedrpc=estimatefee.\n"
->>>>>>> upstream/0.16
             "Projects should transition to using estimatesmartfee before upgrading to v0.17");
     }
 

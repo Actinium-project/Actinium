@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2014-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "winshutdownmonitor.h"
-
-#if defined(Q_OS_WIN) && QT_VERSION >= 0x050000
-#include "init.h"
-#include "util.h"
-=======
 // Copyright (c) 2014-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -18,7 +7,6 @@
 #if defined(Q_OS_WIN) && QT_VERSION >= 0x050000
 #include <init.h>
 #include <util.h>
->>>>>>> upstream/0.16
 
 #include <windows.h>
 

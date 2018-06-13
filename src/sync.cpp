@@ -190,7 +190,3 @@ void DeleteLock(void* cs)
 }
 
 #endif /* DEBUG_LOCKORDER */
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/0.16

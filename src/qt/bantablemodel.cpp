@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "bantablemodel.h"
-
-#include "clientmodel.h"
-#include "guiconstants.h"
-#include "guiutil.h"
-
-#include "sync.h"
-#include "utiltime.h"
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -24,7 +10,6 @@
 
 #include <sync.h>
 #include <utiltime.h>
->>>>>>> upstream/0.16
 
 #include <QDebug>
 #include <QList>
@@ -70,19 +55,11 @@ public:
 #if QT_VERSION >= 0x040700
         cachedBanlist.reserve(banMap.size());
 #endif
-<<<<<<< HEAD
-        for (banmap_t::iterator it = banMap.begin(); it != banMap.end(); it++)
-        {
-            CCombinedBan banEntry;
-            banEntry.subnet = (*it).first;
-            banEntry.banEntry = (*it).second;
-=======
         for (const auto& entry : banMap)
         {
             CCombinedBan banEntry;
             banEntry.subnet = entry.first;
             banEntry.banEntry = entry.second;
->>>>>>> upstream/0.16
             cachedBanlist.append(banEntry);
         }
 

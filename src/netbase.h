@@ -69,7 +69,3 @@ struct timeval MillisToTimeval(int64_t nTimeout);
 void InterruptSocks5(bool interrupt);
 
 #endif // BITCOIN_NETBASE_H
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/0.16

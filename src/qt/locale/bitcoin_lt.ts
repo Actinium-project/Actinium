@@ -3,11 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-<<<<<<< HEAD
-        <translation>Spustelėkite dešinįjį klaviša norint keisti adresą arba etiketę</translation>
-=======
         <translation>Spustelėkite dešinįjį klavišą norint keisti adresą arba etiketę</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Create a new address</source>
@@ -166,13 +162,8 @@
         <translation>Blokai iš naujo indeksuojami...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Siųsti monetas Actinium adresui</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Siųsti monetas Litecoin adresui</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -195,13 +186,8 @@
         <translation>&amp;Tikrinti žinutę...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -397,13 +383,10 @@
         <translation>Sveiki</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
@@ -453,13 +436,8 @@
         <translation>Piniginė</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Actinium kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automatiškai atidaryti Litecoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -546,13 +524,10 @@
         <translation>Kliento perkrovimas reikalingas nustatymų aktyvavimui</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Šis pakeitimas reikalautų kliento perkrovimo</translation>
     </message>
@@ -597,15 +572,11 @@
     </context>
 <context>
     <name>PeerTableModel</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Received</source>
         <translation>Gauta</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -624,9 +595,6 @@
         <source>N/A</source>
         <translation>nėra</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>%1 B</source>
         <translation>%1 B</translation>
@@ -648,7 +616,6 @@
         <translation>nežinomas</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -722,13 +689,6 @@
         <translation>&amp;Konsolė</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>Išvalyti</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Viso:</translation>
     </message>
@@ -741,25 +701,6 @@
         <translation>Išvalyti konsolę</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>never</source>
         <translation>Niekada</translation>
     </message>
@@ -936,11 +877,7 @@
         <translation>Įveskite pranešimą, kurį norite pasirašyti čia</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -956,13 +893,8 @@
         <translation>&amp;Patikrinti žinutę</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verify the message to ensure it was signed with the specified Actinium address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Actinium adresas</translation>
-=======
         <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
         <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Litecoin adresas</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1038,13 +970,8 @@
         <translation>Dirbti fone kaip šešėlyje ir priimti komandas</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium branduolys</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin branduolys</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error opening block database</source>
@@ -1055,13 +982,6 @@
         <translation>Tikrinami blokai...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>Tikrinama piniginė...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Information</source>
         <translation>Informacija</translation>
     </message>
@@ -1086,17 +1006,6 @@
         <translation>Leisti DNS paiešką sujungimui ir mazgo pridėjimui</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Užkraunami adresai...</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Neteisingas proxy adresas: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Insufficient funds</source>
         <translation>Nepakanka lėšų</translation>
     </message>
@@ -1105,24 +1014,10 @@
         <translation>Įkeliamas blokų indeksas...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Pridėti mazgą prie sujungti su and attempt to keep the connection open</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Užkraunama piniginė...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>Negalima parašyti įprasto adreso</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Peržiūra</translation>
     </message>

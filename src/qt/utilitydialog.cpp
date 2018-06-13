@@ -1,31 +1,8 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-<<<<<<< HEAD
-#include "config/bitcoin-config.h"
-#endif
-
-#include "utilitydialog.h"
-
-#include "ui_helpmessagedialog.h"
-
-#include "bitcoingui.h"
-#include "clientmodel.h"
-#include "guiconstants.h"
-#include "intro.h"
-#include "paymentrequestplus.h"
-#include "guiutil.h"
-
-#include "clientversion.h"
-#include "init.h"
-#include "util.h"
-=======
 #include <config/bitcoin-config.h>
 #endif
 
@@ -43,7 +20,6 @@
 #include <clientversion.h>
 #include <init.h>
 #include <util.h>
->>>>>>> upstream/0.16
 
 #include <stdio.h>
 
@@ -94,11 +70,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget *parent, bool about) :
     } else {
         setWindowTitle(tr("Command-line options"));
         QString header = tr("Usage:") + "\n" +
-<<<<<<< HEAD
             "  actinium-qt [" + tr("command-line options") + "]                     " + "\n";
-=======
-            "  litecoin-qt [" + tr("command-line options") + "]                     " + "\n";
->>>>>>> upstream/0.16
         QTextCursor cursor(ui->helpMessage->document());
         cursor.insertText(version);
         cursor.insertBlock();

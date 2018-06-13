@@ -4,17 +4,10 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 if [ -d "$1" ]; then
-<<<<<<< HEAD
-  cd "$1"
-else
-  echo "Usage: $0 <datadir>" >&2
-  echo "Removes obsolete Actinium database files" >&2
-=======
   cd "$1" || exit 1
 else
   echo "Usage: $0 <datadir>" >&2
   echo "Removes obsolete Litecoin database files" >&2
->>>>>>> upstream/0.16
   exit 1
 fi
 
@@ -26,32 +19,15 @@ if [ -f wallet.dat -a -f peers.dat -a -f chainstate/CURRENT -a -f blocks/index/C
 
 case $LEVEL in
   0)
-<<<<<<< HEAD
-    echo "Error: no Actinium datadir detected."
-    exit 1
-    ;;
-  1)
-    echo "Detected old Actinium datadir (before 0.7)."
-=======
     echo "Error: no Litecoin datadir detected."
     exit 1
     ;;
   1)
     echo "Detected old Litecoin datadir (before 0.7)."
->>>>>>> upstream/0.16
     echo "Nothing to do."
     exit 0
     ;;
   2)
-<<<<<<< HEAD
-    echo "Detected Actinium 0.7 datadir."
-    ;;
-  3)
-    echo "Detected Actinium pre-0.8 datadir."
-    ;;
-  4)
-    echo "Detected Actinium 0.8 datadir."
-=======
     echo "Detected Litecoin 0.7 datadir."
     ;;
   3)
@@ -59,7 +35,6 @@ case $LEVEL in
     ;;
   4)
     echo "Detected Litecoin 0.8 datadir."
->>>>>>> upstream/0.16
     ;;
 esac
 

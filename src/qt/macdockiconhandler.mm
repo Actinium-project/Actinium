@@ -18,11 +18,7 @@
 extern void qt_mac_set_dock_menu(QMenu *);
 #endif
 
-<<<<<<< HEAD
-static MacDockIconHandler *s_instance = NULL;
-=======
 static MacDockIconHandler *s_instance = nullptr;
->>>>>>> upstream/0.16
 
 bool dockClickHandler(id self,SEL _cmd,...) {
     Q_UNUSED(self)
@@ -38,11 +34,7 @@ void setupDockClickHandler() {
     Class cls = objc_getClass("NSApplication");
     id appInst = objc_msgSend((id)cls, sel_registerName("sharedApplication"));
     
-<<<<<<< HEAD
-    if (appInst != NULL) {
-=======
     if (appInst != nullptr) {
->>>>>>> upstream/0.16
         id delegate = objc_msgSend(appInst, sel_registerName("delegate"));
         Class delClass = (Class)objc_msgSend(delegate,  sel_registerName("class"));
         SEL shouldHandle = sel_registerName("applicationShouldHandleReopen:hasVisibleWindows:");
@@ -61,11 +53,7 @@ MacDockIconHandler::MacDockIconHandler() : QObject()
     setupDockClickHandler();
     this->m_dummyWidget = new QWidget();
     this->m_dockMenu = new QMenu(this->m_dummyWidget);
-<<<<<<< HEAD
-    this->setMainWindow(NULL);
-=======
     this->setMainWindow(nullptr);
->>>>>>> upstream/0.16
 #if QT_VERSION < 0x050000
     qt_mac_set_dock_menu(this->m_dockMenu);
 #elif QT_VERSION >= 0x050200
@@ -81,11 +69,7 @@ void MacDockIconHandler::setMainWindow(QMainWindow *window) {
 MacDockIconHandler::~MacDockIconHandler()
 {
     delete this->m_dummyWidget;
-<<<<<<< HEAD
-    this->setMainWindow(NULL);
-=======
     this->setMainWindow(nullptr);
->>>>>>> upstream/0.16
 }
 
 QMenu *MacDockIconHandler::dockMenu()

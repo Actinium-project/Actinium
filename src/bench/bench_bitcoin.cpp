@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2015-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "bench.h"
-
-#include "crypto/sha256.h"
-#include "key.h"
-#include "validation.h"
-#include "util.h"
-#include "random.h"
-=======
 // Copyright (c) 2015-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -34,13 +21,10 @@ static const char* DEFAULT_BENCH_PRINTER = "console";
 static const char* DEFAULT_PLOT_PLOTLYURL = "https://cdn.plot.ly/plotly-latest.min.js";
 static const int64_t DEFAULT_PLOT_WIDTH = 1024;
 static const int64_t DEFAULT_PLOT_HEIGHT = 768;
->>>>>>> upstream/0.16
 
 int
 main(int argc, char** argv)
 {
-<<<<<<< HEAD
-=======
     gArgs.ParseParameters(argc, argv);
 
     if (gArgs.IsArgSet("-?") || gArgs.IsArgSet("-h") || gArgs.IsArgSet("-help")) {
@@ -58,16 +42,12 @@ main(int argc, char** argv)
         return 0;
     }
 
->>>>>>> upstream/0.16
     SHA256AutoDetect();
     RandomInit();
     ECC_Start();
     SetupEnvironment();
     fPrintToDebugLog = false; // don't want to write to debug.log file
 
-<<<<<<< HEAD
-    benchmark::BenchRunner::RunAll();
-=======
     int64_t evaluations = gArgs.GetArg("-evals", DEFAULT_BENCH_EVALUATIONS);
     std::string regex_filter = gArgs.GetArg("-filter", DEFAULT_BENCH_FILTER);
     std::string scaling_str = gArgs.GetArg("-scaling", DEFAULT_BENCH_SCALING);
@@ -86,7 +66,6 @@ main(int argc, char** argv)
     }
 
     benchmark::BenchRunner::RunAll(*printer, evaluations, scaling_factor, regex_filter, is_list_only);
->>>>>>> upstream/0.16
 
     ECC_Stop();
 }

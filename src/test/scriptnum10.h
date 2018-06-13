@@ -1,9 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-<<<<<<< HEAD
-// Copyright (c) 2009-2015 The Bitcoin Core developers
-=======
 // Copyright (c) 2009-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,11 +12,7 @@
 #include <stdint.h>
 #include <string>
 #include <vector>
-<<<<<<< HEAD
-#include "assert.h"
-=======
 #include <assert.h>
->>>>>>> upstream/0.16
 
 class scriptnum10_error : public std::runtime_error
 {

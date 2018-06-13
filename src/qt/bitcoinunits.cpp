@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "bitcoinunits.h"
-
-#include "primitives/transaction.h"
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -14,7 +5,6 @@
 #include <qt/bitcoinunits.h>
 
 #include <primitives/transaction.h>
->>>>>>> upstream/0.16
 
 #include <QStringList>
 
@@ -46,7 +36,6 @@ bool BitcoinUnits::valid(int unit)
     }
 }
 
-<<<<<<< HEAD
 QString BitcoinUnits::name(int unit)
 {
     switch(unit)
@@ -54,21 +43,10 @@ QString BitcoinUnits::name(int unit)
     case BTC: return QString("ACM");
     case mBTC: return QString("atoms");
     case uBTC: return QString("protons");
-=======
-QString BitcoinUnits::longName(int unit)
-{
-    switch(unit)
-    {
-    case BTC: return QString("LTC");
-    case mBTC: return QString("lites");
-    case uBTC: return QString("photons");
->>>>>>> upstream/0.16
     default: return QString("???");
     }
 }
 
-<<<<<<< HEAD
-=======
 QString BitcoinUnits::shortName(int unit)
 {
     switch(unit)
@@ -78,20 +56,13 @@ QString BitcoinUnits::shortName(int unit)
     }
 }
 
->>>>>>> upstream/0.16
 QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-<<<<<<< HEAD
     case BTC: return QString("Actiniums");
     case mBTC: return QString("Atoms (1 / 1" THIN_SP_UTF8 "000)");
     case uBTC: return QString("Electrons (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-=======
-    case BTC: return QString("Litecoins");
-    case mBTC: return QString("Lites (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Photons (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
->>>>>>> upstream/0.16
     default: return QString("???");
     }
 }
@@ -159,11 +130,7 @@ QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, Separator
 
 QString BitcoinUnits::formatWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
 {
-<<<<<<< HEAD
-    return format(unit, amount, plussign, separators) + QString(" ") + name(unit);
-=======
     return format(unit, amount, plussign, separators) + QString(" ") + shortName(unit);
->>>>>>> upstream/0.16
 }
 
 QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
@@ -218,11 +185,7 @@ QString BitcoinUnits::getAmountColumnTitle(int unit)
     QString amountTitle = QObject::tr("Amount");
     if (BitcoinUnits::valid(unit))
     {
-<<<<<<< HEAD
-        amountTitle += " ("+BitcoinUnits::name(unit) + ")";
-=======
         amountTitle += " ("+BitcoinUnits::shortName(unit) + ")";
->>>>>>> upstream/0.16
     }
     return amountTitle;
 }
@@ -243,11 +206,7 @@ QVariant BitcoinUnits::data(const QModelIndex &index, int role) const
         {
         case Qt::EditRole:
         case Qt::DisplayRole:
-<<<<<<< HEAD
-            return QVariant(name(unit));
-=======
             return QVariant(longName(unit));
->>>>>>> upstream/0.16
         case Qt::ToolTipRole:
             return QVariant(description(unit));
         case UnitRole:

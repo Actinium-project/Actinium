@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "bench.h"
-#include "coins.h"
-#include "policy/policy.h"
-#include "wallet/crypter.h"
-=======
 // Copyright (c) 2016-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -16,7 +6,6 @@
 #include <coins.h>
 #include <policy/policy.h>
 #include <wallet/crypter.h>
->>>>>>> upstream/0.16
 
 #include <vector>
 
@@ -95,8 +84,4 @@ static void CCoinsCaching(benchmark::State& state)
     }
 }
 
-<<<<<<< HEAD
-BENCHMARK(CCoinsCaching);
-=======
 BENCHMARK(CCoinsCaching, 170 * 1000);
->>>>>>> upstream/0.16

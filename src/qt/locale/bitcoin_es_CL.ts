@@ -142,13 +142,8 @@
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Enviar monedas a una dirección Actinium</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Enviar monedas a una dirección litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -171,13 +166,8 @@
         <translation>Verificar mensaje....</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -196,11 +186,7 @@
         <translation>&amp;Mostrar/Ocultar</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
->>>>>>> upstream/0.16
         <translation>Firmar un mensaje para provar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -220,13 +206,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Pide pagos (genera codigos QR and Actinium: URls)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Pide pagos (genera codigos QR and litecoin: URls)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error</source>
@@ -337,13 +318,10 @@
         <translation>bienvenido</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -389,13 +367,8 @@
         <translation>experto</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automáticamente el puerto del cliente Actinium en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Abre automáticamente el puerto del cliente Litecoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -458,13 +431,10 @@
         <source>Confirm options reset</source>
         <translation>Confirmar reestablecimiento de las opciones</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Error</source>
         <translation>Error</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -497,15 +467,11 @@
         <source>%1 and %2</source>
         <translation>%1 y %2</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>unknown</source>
         <translation>desconocido</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -633,17 +599,6 @@
         <translation>Comisión transacción:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>rapido</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Enviar a múltiples destinatarios</translation>
     </message>
@@ -736,11 +691,7 @@
         <translation>Firma</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -825,13 +776,8 @@
 </translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>litecoin core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error loading block database</source>
@@ -869,17 +815,6 @@
 </translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Cargando direcciónes...</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Dirección -proxy invalida: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Insufficient funds</source>
         <translation>Fondos insuficientes</translation>
     </message>
@@ -888,13 +823,6 @@
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Agrega un nodo para conectarse and attempt to keep the connection open</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Cargando cartera...</translation>
     </message>
@@ -903,13 +831,6 @@
         <translation>No es posible desactualizar la billetera</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>No se pudo escribir la dirección por defecto</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Rescaneando...</translation>
     </message>

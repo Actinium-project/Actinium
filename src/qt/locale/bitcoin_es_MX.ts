@@ -3,11 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-<<<<<<< HEAD
-        <translation>Click derecho para editar dirección o etiqueta</translation>
-=======
         <translation>Click derecho para editar tu dirección o etiqueta</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Create a new address</source>
@@ -35,11 +31,7 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-<<<<<<< HEAD
-        <translation>Exportar la información en la pestaña actual a un archivo</translation>
-=======
         <translation>Exportar la información en la tabla actual a un archivo</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Export</source>
@@ -49,8 +41,6 @@
         <source>&amp;Delete</source>
         <translation>&amp;Borrar</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Choose the address to send coins to</source>
         <translation>Elija la direccion a donde se enviaran las monedas</translation>
@@ -79,7 +69,6 @@
         <source>&amp;Copy Address</source>
         <translation>&amp;Copiar dirección</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>AddressTableModel</name>
@@ -189,13 +178,8 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Enviar monedas a una dirección Actinium</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Enviar monedas a una dirección Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -218,13 +202,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -386,13 +365,10 @@
 <context>
     <name>Intro</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -425,13 +401,10 @@
         <source>none</source>
         <translation>Ninguno </translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Error</source>
         <translation>Error</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -452,15 +425,11 @@
         <source>Amount</source>
         <translation>Monto</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>unknown</source>
         <translation>desconocido</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -489,13 +458,8 @@
         <translation>Mensaje:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
-        <translation>Mensaje opcional para agregar a la solicitud de pago, el cual será mostrado cuando la solicitud este abierta. Nota: El mensaje no se manda con el pago a travéz de la red de Actinium.</translation>
-=======
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
         <translation>Mensaje opcional para agregar a la solicitud de pago, el cual será mostrado cuando la solicitud este abierta. Nota: El mensaje no se manda con el pago a travéz de la red de Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -547,13 +511,6 @@
         <translation>Cambio</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>fast</source>
-        <translation>rápido</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Enviar a múltiples receptores a la vez</translation>
     </message>
@@ -672,11 +629,7 @@
         <source>Send Coins</source>
         <translation>Enviar monedas</translation>
     </message>
-<<<<<<< HEAD
-</context>
-=======
     </context>
->>>>>>> upstream/0.16
 <context>
     <name>WalletView</name>
     <message>
@@ -691,13 +644,8 @@
         <translation>Opciones:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>nucleo Actinium</translation>
-=======
         <source>Litecoin Core</source>
         <translation>nucleo Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -708,13 +656,6 @@
         <translation>Verificando bloques...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>Verificando cartera...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Wallet options:</source>
         <translation>Opciones de cartera:</translation>
     </message>
@@ -727,13 +668,6 @@
         <translation>Aviso</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>Cargando direcciones...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading block index...</source>
         <translation>Cargando indice de bloques... </translation>
     </message>

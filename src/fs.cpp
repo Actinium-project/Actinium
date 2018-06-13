@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#include "fs.h"
-=======
 #include <fs.h>
->>>>>>> upstream/0.16
 
 namespace fsbridge {
 

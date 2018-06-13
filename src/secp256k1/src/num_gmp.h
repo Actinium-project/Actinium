@@ -4,13 +4,8 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
-<<<<<<< HEAD
-#ifndef _SECP256K1_NUM_REPR_
-#define _SECP256K1_NUM_REPR_
-=======
 #ifndef SECP256K1_NUM_REPR_H
 #define SECP256K1_NUM_REPR_H
->>>>>>> upstream/0.16
 
 #include <gmp.h>
 
@@ -22,8 +17,4 @@ typedef struct {
     int limbs;
 } secp256k1_num;
 
-<<<<<<< HEAD
-#endif
-=======
 #endif /* SECP256K1_NUM_REPR_H */
->>>>>>> upstream/0.16

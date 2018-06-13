@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2012-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "dbwrapper.h"
-#include "uint256.h"
-#include "random.h"
-#include "test/test_bitcoin.h"
-=======
 // Copyright (c) 2012-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -16,7 +6,6 @@
 #include <uint256.h>
 #include <random.h>
 #include <test/test_bitcoin.h>
->>>>>>> upstream/0.16
 
 #include <boost/test/unit_test.hpp>
 
@@ -136,11 +125,7 @@ BOOST_AUTO_TEST_CASE(existing_data_no_obfuscate)
     create_directories(ph);
 
     // Set up a non-obfuscated wrapper to write some initial data.
-<<<<<<< HEAD
-    CDBWrapper* dbw = new CDBWrapper(ph, (1 << 10), false, false, false);
-=======
     std::unique_ptr<CDBWrapper> dbw = MakeUnique<CDBWrapper>(ph, (1 << 10), false, false, false);
->>>>>>> upstream/0.16
     char key = 'k';
     uint256 in = InsecureRand256();
     uint256 res;
@@ -150,12 +135,7 @@ BOOST_AUTO_TEST_CASE(existing_data_no_obfuscate)
     BOOST_CHECK_EQUAL(res.ToString(), in.ToString());
 
     // Call the destructor to free leveldb LOCK
-<<<<<<< HEAD
-    delete dbw;
-    dbw = nullptr;
-=======
     dbw.reset();
->>>>>>> upstream/0.16
 
     // Now, set up another wrapper that wants to obfuscate the same directory
     CDBWrapper odbw(ph, (1 << 10), false, false, true);
@@ -186,11 +166,7 @@ BOOST_AUTO_TEST_CASE(existing_data_reindex)
     create_directories(ph);
 
     // Set up a non-obfuscated wrapper to write some initial data.
-<<<<<<< HEAD
-    CDBWrapper* dbw = new CDBWrapper(ph, (1 << 10), false, false, false);
-=======
     std::unique_ptr<CDBWrapper> dbw = MakeUnique<CDBWrapper>(ph, (1 << 10), false, false, false);
->>>>>>> upstream/0.16
     char key = 'k';
     uint256 in = InsecureRand256();
     uint256 res;
@@ -200,12 +176,7 @@ BOOST_AUTO_TEST_CASE(existing_data_reindex)
     BOOST_CHECK_EQUAL(res.ToString(), in.ToString());
 
     // Call the destructor to free leveldb LOCK
-<<<<<<< HEAD
-    delete dbw;
-    dbw = nullptr;
-=======
     dbw.reset();
->>>>>>> upstream/0.16
 
     // Simulate a -reindex by wiping the existing data store
     CDBWrapper odbw(ph, (1 << 10), false, true, true);
@@ -270,11 +241,7 @@ struct StringContentsSerializer {
     // This is a terrible idea
     std::string str;
     StringContentsSerializer() {}
-<<<<<<< HEAD
-    StringContentsSerializer(const std::string& inp) : str(inp) {}
-=======
     explicit StringContentsSerializer(const std::string& inp) : str(inp) {}
->>>>>>> upstream/0.16
 
     StringContentsSerializer& operator+=(const std::string& s) {
         str += s;

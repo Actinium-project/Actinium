@@ -42,8 +42,6 @@
         <translation>&amp;წაშლა</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Choose the address to send coins to</source>
         <translation>აირჩიეთ კოინების გამგზავნი მისამართი</translation>
     </message>
@@ -52,7 +50,6 @@
         <translation>აირჩიეთ კოინების მიმღები მისამართი</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>C&amp;hoose</source>
         <translation>&amp;არჩევა</translation>
     </message>
@@ -65,19 +62,6 @@
         <translation>მიმღები მისამართი</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Edit</source>
-        <translation>&amp;რედაქტირება</translation>
-    </message>
-    </context>
-<context>
-    <name>AddressTableModel</name>
-    <message>
-        <source>Address</source>
-        <translation>მისამართი</translation>
-    </message>
-    </context>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>ეს არის თქვენი ბიტკოინ-მისამართები, რომელთაგანაც შეგიძლიათ გადახდა. აუცილებლად შეამოწმეთ თანხა და მიმღები მისამართი გაგზავნამდე.</translation>
     </message>
@@ -129,7 +113,6 @@
         <translation>(ნიშნული არ არის)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -149,35 +132,26 @@
         <translation>გაიმეორეთ ახალი ფრაზა-პაროლი</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>აკრიფეთ ახალი პასფრაზა საფულისათვის.&lt;br/&gt; გამოიყენეთ &lt;b&gt;ათი ან მეტი შემთხვევითი სიმბოლოსაგან &lt;/b&gt;, ან &lt;b&gt;რვა ან მეტი სიტყვისაგან&lt;/b&gt; შემდგარი პასფრაზა.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Encrypt wallet</source>
         <translation>საფულის დაშიფრვა</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>ამ ოპერაციის შესასრულებლად საჭიროა თქვენი საფულის განბლოკვა პასფრაზით.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Unlock wallet</source>
         <translation>საფულის განბლოკვა</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>ამ ოპერაციის შესასრულებლად საჭიროა თქვენი საფულის განშიფრვა პასფრაზით.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Decrypt wallet</source>
         <translation>საფულის განბლოკვა</translation>
     </message>
@@ -185,8 +159,6 @@
         <source>Change passphrase</source>
         <translation>პაროლის შეცვლა</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Enter the old passphrase and new passphrase to the wallet.</source>
         <translation>აკრიფეთ ძველი და ახალი პასფრაზები საფულისათვის.</translation>
@@ -219,7 +191,6 @@
         <source>Wallet decryption failed</source>
         <translation>საფულის გაშიფვრა ვერ შესრულდა</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>BanTableModel</name>
@@ -283,13 +254,10 @@
         <translation>&amp;ოპციები</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Modify configuration options for %1</source>
         <translation>%1-ის კონფიგურირების პარამეტრების რედაქტირება</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Encrypt Wallet...</source>
         <translation>საფულის &amp;დაშიფრვა</translation>
     </message>
@@ -318,13 +286,8 @@
         <translation>დისკზე ბლოკების რეინდექსაცია...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>მონეტების გაგზავნა Actinium-მისამართზე</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>მონეტების გაგზავნა Litecoin-მისამართზე</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -347,13 +310,8 @@
         <translation>&amp;ვერიფიკაცია</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -380,21 +338,12 @@
         <translation>თქვენი საფულის პირადი გასაღებების დაშიფრვა</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>მესიჯებზე ხელმოწერა თქვენი Actinium-მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული Actinium-მისამართით</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>მესიჯებზე ხელმოწერა თქვენი Litecoin-მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული Litecoin-მისამართით</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -413,13 +362,8 @@
         <translation>ბარათების პანელი</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>გადახდის მოთხოვნა (შეიქმნება QR-კოდები და Actinium: ბმულები)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>გადახდის მოთხოვნა (შეიქმნება QR-კოდები და litecoin: ბმულები)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -430,13 +374,8 @@
         <translation>გამოყენებული მიღების მისამართებისა და ნიშნულების სიის ჩვენება</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Actinium: URI-ის ან გადახდის მოთხოვნის გახსნა</translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>litecoin: URI-ის ან გადახდის მოთხოვნის გახსნა</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -475,17 +414,12 @@
         <translation>%1 კლიენტი</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Catching up...</source>
-        <translation>მიმდინარეობს განახლება...</translation>
-=======
         <source>Connecting to peers...</source>
         <translation>შეერთება ქსელთან...</translation>
     </message>
     <message>
         <source>Catching up...</source>
         <translation>ჩართვა...</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Date: %1
@@ -496,11 +430,7 @@
     <message>
         <source>Amount: %1
 </source>
-<<<<<<< HEAD
-        <translation>რაოდენობა: %1
-=======
         <translation>რაოდენობა^ %1
->>>>>>> upstream/0.16
 </translation>
     </message>
     <message>
@@ -510,15 +440,12 @@
 </translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Label: %1
 </source>
         <translation>ლეიბლი: %1
 </translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Address: %1
 </source>
         <translation>მისამართი: %1
@@ -600,8 +527,6 @@
         <translation>დადასტურებულია</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copy address</source>
         <translation>მისამართის კოპირება</translation>
     </message>
@@ -618,7 +543,6 @@
         <translation>დაუხარჯავის ჩაკეტვა</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>yes</source>
         <translation>დიახ</translation>
     </message>
@@ -627,13 +551,10 @@
         <translation>არა</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>(no label)</source>
         <translation>(ნიშნული არ არის)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(change)</source>
         <translation>(ხურდა)</translation>
     </message>
@@ -734,20 +655,6 @@
         <translation>მითითებული კატალოგის გამოყენება:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Error</source>
-        <translation>შეცდომა</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n GB of free space available</source>
-        <translation><numerusform>ხელმისაწვდომია თავისუფალი სივრცის %n გბ</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>(of %n GB needed)</source>
-        <translation><numerusform>(საჭირო %n გბ-დან)</numerusform></translation>
-    </message>
-</context>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
@@ -756,7 +663,6 @@
         <translation>შეცდომა</translation>
     </message>
     </context>
->>>>>>> upstream/0.16
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -858,13 +764,8 @@
         <translation>დაუდასტურებელი ხურდის გამოყენების აკრძალვის შემდეგ მათი გამოყენება შეუძლებელი იქნება, სანამ ტრანსაქციას არ ექნება ერთი დასტური მაინც. ეს აისახება თქვენი ნაშთის დათვლაზეც.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>როუტერში Actinium-კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>როუტერში Litecoin-კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -955,13 +856,10 @@
         <translation>ცვლილებები ძალაში შევა კლიენტის ხელახალი გაშვების შემდეგ.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error</source>
         <translation>შეცდომა</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>ამ ცვლილებების ძალაში შესასვლელად საჭიროა კლიენტის დახურვა და ხელახალი გაშვება.</translation>
     </message>
@@ -977,13 +875,8 @@
         <translation>ფორმა</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-        <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება Actinium-ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება Litecoin-ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Available:</source>
@@ -1046,9 +939,6 @@
         <source>%1 and %2</source>
         <translation>%1 და %2</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>%1 B</source>
         <translation>%1 B</translation>
@@ -1070,7 +960,6 @@
         <translation>უცნობია</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -1140,13 +1029,6 @@
         <translation>&amp;ქსელის ტრაფიკი</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>&amp;წაშლა</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>სულ:</translation>
     </message>
@@ -1166,33 +1048,6 @@
         <source>Clear console</source>
         <translation>კონსოლის გასუფთავება</translation>
     </message>
-<<<<<<< HEAD
-    <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>კლავიშები "ზევით" და "ქვევით" - ისტორიაში მოძრაობა, &lt;b&gt;Ctrl-L&lt;/b&gt; - ეკრანის გასუფთავება.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>აკრიფეთ &lt;b&gt;help&lt;/b&gt; ფაშვებული ბრძანებების სანახავად.</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
-    </message>
-=======
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -1209,19 +1064,7 @@
         <translation>&amp;მესიჯი:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>რომელიმე ადრე გამოყენებული მიღების მისამართის გამოყენება. ეს ამცირებს უსაფრთხოებასა და პრივატულობას. ნუ გამოიყენებთ ამ ოპციას, თუ არ ახდენთ ადრე მოთხოვნილი გადახდის ხელახლა გენერირებას.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>ად&amp;რე გამოყენებული მიღების მისამართის გამოყენება (არ არის რეკომენდებული)</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
-=======
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
->>>>>>> upstream/0.16
         <translation>არააუცილებელი მესიჯი, რომელიც ერთვის გადახდის მოთხოვნას და ნაჩვენები იქნება მოთხოვნის გახსნისას. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
     </message>
     <message>
@@ -1268,9 +1111,6 @@
         <source>Remove</source>
         <translation>წაშლა</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Copy label</source>
         <translation>ლეიბლის კოპირება</translation>
@@ -1280,7 +1120,6 @@
         <translation>რაოდენობის კოპირება</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
@@ -1303,11 +1142,6 @@
         <source>Address</source>
         <translation>მისამართი</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>RecentRequestsTableModel</name>
-=======
     <message>
         <source>Label</source>
         <translation>ნიშნული</translation>
@@ -1323,7 +1157,6 @@
         <source>(no label)</source>
         <translation>(ნიშნული არ არის)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>SendCoinsDialog</name>
@@ -1419,9 +1252,6 @@
         <source>S&amp;end</source>
         <translation>გაგ&amp;ზავნა</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Copy amount</source>
         <translation>რაოდენობის კოპირება</translation>
@@ -1431,7 +1261,6 @@
         <translation>(ნიშნული არ არის)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     <message>
@@ -1479,11 +1308,7 @@
         <translation>შეიყვანეთ ამ მისამართის ნიშნული გამოყენებული მისამართების სიაში დასამატებლად</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
-=======
         <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
->>>>>>> upstream/0.16
         <translation>მესიჯი, რომელიც თან ერთვის მონეტებს:  URI, რომელიც შეინახება ტრანსაქციასთან ერთად თქვენთვის. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
     </message>
     <message>
@@ -1544,11 +1369,7 @@
         <translation>მიმდინარე ხელმოწერის კოპირება კლიპბორდში</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
->>>>>>> upstream/0.16
         <translation>მოაწერეთ ხელი იმის დასადასტურებლად, რომ ეს მისამართი თქვენია</translation>
     </message>
     <message>
@@ -1568,13 +1389,8 @@
         <translation>მესიჯის &amp;ვერიფიკაცია</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verify the message to ensure it was signed with the specified Actinium address</source>
-        <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული Actinium-მისამართით</translation>
-=======
         <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
         <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული Litecoin-მისამართით</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1611,8 +1427,6 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Label</source>
         <translation>ნიშნული</translation>
@@ -1621,16 +1435,10 @@
         <source>(no label)</source>
         <translation>(ნიშნული არ არის)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionView</name>
     <message>
-<<<<<<< HEAD
-        <source>Address</source>
-        <translation>მისამართი</translation>
-    </message>
-=======
         <source>Copy address</source>
         <translation>მისამართის კოპირება</translation>
     </message>
@@ -1658,7 +1466,6 @@
         <source>Exporting Failed</source>
         <translation>ექპორტი ვერ განხორციელდა</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -1699,13 +1506,8 @@
         <translation>რეზიდენტულად გაშვება და კომანდების მიღება</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -1720,13 +1522,10 @@
         <translation>&lt;category&gt; შეიძლება იყოს:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>გარედან შეერთებების დაშვება (ნაგულისხმევი: 1 თუ არ გამოიყენება -proxy ან -connect)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Block creation options:</source>
         <translation>ბლოკის შექმნის ოპციები:</translation>
     </message>
@@ -1771,24 +1570,10 @@
         <translation>საწყისი ბლოკი არ არსებობს ან არასწორია. ქსელის მონაცემთა კატალოგი datadir ხომ არის არასწორი?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -onion address: '%s'</source>
-        <translation>არასწორია მისამართი -onion: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Not enough file descriptors available.</source>
         <translation>არ არის საკმარისი ფაილ-დესკრიპტორები.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>ბლოკის მაქსიმალური ზომის განსაზღვრა ბაიტებში (ნადულისხმევი: %d)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Specify wallet file (within data directory)</source>
         <translation>მიუთითეთ საფულის ფაილი (კატალოგში)</translation>
     </message>
@@ -1797,17 +1582,6 @@
         <translation>ბლოკების ვერიფიკაცია...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying wallet...</source>
-        <translation>საფულის ვერიფიკაცია...</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>საფულე %s მდებარეობს მონაცემთა კატალოგის %s გარეთ</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Wallet options:</source>
         <translation>სფულის ოპციები:</translation>
     </message>
@@ -1816,13 +1590,6 @@
         <translation>ბრძანების შესრულება შესაბამისი უწყების მიღებისას ან როცა შეინიშნება საგრძნობი გახლეჩა (cmd-ში %s შეიცვლება მესიჯით)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>მაღალპრიორიტეტული/დაბალსაკომისიოიანი ტრანსაქციების მაქსიმალური ზომა ბაიტებში (ნაგულისხმევი: %d)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Information</source>
         <translation>ინფორმაცია</translation>
     </message>
@@ -1855,13 +1622,10 @@
         <translation>გაფრთხილება</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>საჭიროა ბაზის ხელახალი აგება, გამოიყენეთ -reindex რათა შეცვალოთ -txindex</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Zapping all transactions from wallet...</source>
         <translation>ტრანსაქციების ჩახსნა საფულიდან...</translation>
     </message>
@@ -1878,17 +1642,6 @@
         <translation>DNS-ძებნის დაშვება -addnode, -seednode და -connect-სათვის</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>მისამართების ჩატვირთვა...</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>არასწორია მისამართი -proxy: '%s'</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>-onlynet-ში მითითებულია უცნობი ქსელი: '%s'</translation>
     </message>
@@ -1901,13 +1654,6 @@
         <translation>ბლოკების ინდექსის ჩატვირთვა...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>მისაერთებელი კვანძის დამატება და მიერთების შეძლებისდაგვარად შენარჩუნება</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>საფულის ჩატვირთვა...</translation>
     </message>
@@ -1916,13 +1662,6 @@
         <translation>საფულის ძველ ვერსიაზე გადაყვანა შეუძლებელია</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>ვერ ხერხდება ნაგულისხმევი მისამართის ჩაწერა</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>სკანირება...</translation>
     </message>

@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 name: "Actinium-linux-0.15"
-=======
-name: "litecoin-linux-0.16"
->>>>>>> upstream/0.16
 enable_cache: true
 suites:
 - "trusty"
@@ -32,13 +28,8 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-<<<<<<< HEAD
 - "url": "https://github.com/Actinium-project/Actinium.git"
   "dir": "Actinium"
-=======
-- "url": "https://github.com/litecoin-project/litecoin.git"
-  "dir": "litecoin"
->>>>>>> upstream/0.16
 files: []
 script: |
 
@@ -122,11 +113,7 @@ script: |
   chmod +x ${WRAP_DIR}/${prog}
   done
 
-<<<<<<< HEAD
   cd Actinium
-=======
-  cd litecoin
->>>>>>> upstream/0.16
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -148,21 +135,13 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
-<<<<<<< HEAD
   SOURCEDIST=`echo Actinium-*.tar.gz`
-=======
-  SOURCEDIST=`echo litecoin-*.tar.gz`
->>>>>>> upstream/0.16
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-<<<<<<< HEAD
   find Actinium-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
-=======
-  find litecoin-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
->>>>>>> upstream/0.16
   popd
 
   # Workaround for tarball not building with the bare tag version (prep)
@@ -203,7 +182,6 @@ script: |
     find . -name "lib*.a" -delete
     rm -rf ${DISTNAME}/lib/pkgconfig
  
-<<<<<<< HEAD
     # Actinium: Delete libbitcoin from binary distribution for now, see #192
     rm -rf ${DISTNAME}/lib/
     rm -rf ${DISTNAME}/include/
@@ -211,15 +189,6 @@ script: |
  
     find ${DISTNAME}/bin -type f -executable -exec ../contrib/devtools/split-debug.sh {} {} {}.dbg \;
     #find ${DISTNAME}/lib -type f -exec ../contrib/devtools/split-debug.sh {} {} {}.dbg \; # Actinium: see issue 192
-=======
-    # Litecoin: Delete libbitcoin from binary distribution for now, see #192
-    rm -rf ${DISTNAME}/lib/
-    rm -rf ${DISTNAME}/include/
-    # Litecoin: ends
- 
-    find ${DISTNAME}/bin -type f -executable -exec ../contrib/devtools/split-debug.sh {} {} {}.dbg \;
-    #find ${DISTNAME}/lib -type f -exec ../contrib/devtools/split-debug.sh {} {} {}.dbg \; # Litecoin: see issue 192
->>>>>>> upstream/0.16
     find ${DISTNAME} -not -name "*.dbg" | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-${i}.tar.gz
     find ${DISTNAME} -name "*.dbg" | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-${i}-debug.tar.gz
     cd ../../

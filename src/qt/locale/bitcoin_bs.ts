@@ -14,13 +14,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     </context>
 <context>
@@ -37,13 +32,10 @@
     </context>
 <context>
     <name>Intro</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>ModalOverlay</name>
@@ -168,13 +160,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Jezrga</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Jezrga</translation>
->>>>>>> upstream/0.16
     </message>
     </context>
 </TS>

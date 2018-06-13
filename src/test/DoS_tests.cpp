@@ -1,26 +1,9 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 // Unit tests for denial-of-service detection/prevention code
 
-<<<<<<< HEAD
-#include "chainparams.h"
-#include "keystore.h"
-#include "net.h"
-#include "net_processing.h"
-#include "pow.h"
-#include "script/sign.h"
-#include "serialize.h"
-#include "util.h"
-#include "validation.h"
-
-#include "test/test_bitcoin.h"
-=======
 #include <chainparams.h>
 #include <keystore.h>
 #include <net.h>
@@ -32,7 +15,6 @@
 #include <validation.h>
 
 #include <test/test_bitcoin.h>
->>>>>>> upstream/0.16
 
 #include <stdint.h>
 
@@ -84,21 +66,14 @@ BOOST_AUTO_TEST_CASE(outbound_slow_chain_eviction)
     dummyNode1.fSuccessfullyConnected = true;
 
     // This test requires that we have a chain with non-zero work.
-<<<<<<< HEAD
-=======
     LOCK(cs_main);
->>>>>>> upstream/0.16
     BOOST_CHECK(chainActive.Tip() != nullptr);
     BOOST_CHECK(chainActive.Tip()->nChainWork > 0);
 
     // Test starts here
-<<<<<<< HEAD
-    peerLogic->SendMessages(&dummyNode1, interruptDummy); // should result in getheaders
-=======
     LOCK(dummyNode1.cs_sendProcessing);
     peerLogic->SendMessages(&dummyNode1, interruptDummy); // should result in getheaders
     LOCK(dummyNode1.cs_vSend);
->>>>>>> upstream/0.16
     BOOST_CHECK(dummyNode1.vSendMsg.size() > 0);
     dummyNode1.vSendMsg.clear();
 
@@ -211,15 +186,11 @@ BOOST_AUTO_TEST_CASE(DoS_banning)
     peerLogic->InitializeNode(&dummyNode1);
     dummyNode1.nVersion = 1;
     dummyNode1.fSuccessfullyConnected = true;
-<<<<<<< HEAD
-    Misbehaving(dummyNode1.GetId(), 100); // Should get banned
-=======
     {
         LOCK(cs_main);
         Misbehaving(dummyNode1.GetId(), 100); // Should get banned
     }
     LOCK(dummyNode1.cs_sendProcessing);
->>>>>>> upstream/0.16
     peerLogic->SendMessages(&dummyNode1, interruptDummy);
     BOOST_CHECK(connman->IsBanned(addr1));
     BOOST_CHECK(!connman->IsBanned(ip(0xa0b0c001|0x0000ff00))); // Different IP, not banned
@@ -230,13 +201,6 @@ BOOST_AUTO_TEST_CASE(DoS_banning)
     peerLogic->InitializeNode(&dummyNode2);
     dummyNode2.nVersion = 1;
     dummyNode2.fSuccessfullyConnected = true;
-<<<<<<< HEAD
-    Misbehaving(dummyNode2.GetId(), 50);
-    peerLogic->SendMessages(&dummyNode2, interruptDummy);
-    BOOST_CHECK(!connman->IsBanned(addr2)); // 2 not banned yet...
-    BOOST_CHECK(connman->IsBanned(addr1));  // ... but 1 still should be
-    Misbehaving(dummyNode2.GetId(), 50);
-=======
     {
         LOCK(cs_main);
         Misbehaving(dummyNode2.GetId(), 50);
@@ -249,7 +213,6 @@ BOOST_AUTO_TEST_CASE(DoS_banning)
         LOCK(cs_main);
         Misbehaving(dummyNode2.GetId(), 50);
     }
->>>>>>> upstream/0.16
     peerLogic->SendMessages(&dummyNode2, interruptDummy);
     BOOST_CHECK(connman->IsBanned(addr2));
 
@@ -270,15 +233,6 @@ BOOST_AUTO_TEST_CASE(DoS_banscore)
     peerLogic->InitializeNode(&dummyNode1);
     dummyNode1.nVersion = 1;
     dummyNode1.fSuccessfullyConnected = true;
-<<<<<<< HEAD
-    Misbehaving(dummyNode1.GetId(), 100);
-    peerLogic->SendMessages(&dummyNode1, interruptDummy);
-    BOOST_CHECK(!connman->IsBanned(addr1));
-    Misbehaving(dummyNode1.GetId(), 10);
-    peerLogic->SendMessages(&dummyNode1, interruptDummy);
-    BOOST_CHECK(!connman->IsBanned(addr1));
-    Misbehaving(dummyNode1.GetId(), 1);
-=======
     {
         LOCK(cs_main);
         Misbehaving(dummyNode1.GetId(), 100);
@@ -296,7 +250,6 @@ BOOST_AUTO_TEST_CASE(DoS_banscore)
         LOCK(cs_main);
         Misbehaving(dummyNode1.GetId(), 1);
     }
->>>>>>> upstream/0.16
     peerLogic->SendMessages(&dummyNode1, interruptDummy);
     BOOST_CHECK(connman->IsBanned(addr1));
     gArgs.ForceSetArg("-banscore", std::to_string(DEFAULT_BANSCORE_THRESHOLD));
@@ -320,15 +273,11 @@ BOOST_AUTO_TEST_CASE(DoS_bantime)
     dummyNode.nVersion = 1;
     dummyNode.fSuccessfullyConnected = true;
 
-<<<<<<< HEAD
-    Misbehaving(dummyNode.GetId(), 100);
-=======
     {
         LOCK(cs_main);
         Misbehaving(dummyNode.GetId(), 100);
     }
     LOCK(dummyNode.cs_sendProcessing);
->>>>>>> upstream/0.16
     peerLogic->SendMessages(&dummyNode, interruptDummy);
     BOOST_CHECK(connman->IsBanned(addr));
 
@@ -345,10 +294,7 @@ BOOST_AUTO_TEST_CASE(DoS_bantime)
 CTransactionRef RandomOrphan()
 {
     std::map<uint256, COrphanTx>::iterator it;
-<<<<<<< HEAD
-=======
     LOCK(cs_main);
->>>>>>> upstream/0.16
     it = mapOrphanTransactions.lower_bound(InsecureRand256());
     if (it == mapOrphanTransactions.end())
         it = mapOrphanTransactions.begin();
@@ -418,10 +364,7 @@ BOOST_AUTO_TEST_CASE(DoS_mapOrphans)
         BOOST_CHECK(!AddOrphanTx(MakeTransactionRef(tx), i));
     }
 
-<<<<<<< HEAD
-=======
     LOCK(cs_main);
->>>>>>> upstream/0.16
     // Test EraseOrphansFor:
     for (NodeId i = 0; i < 3; i++)
     {

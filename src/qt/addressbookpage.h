@@ -84,7 +84,3 @@ Q_SIGNALS:
 };
 
 #endif // BITCOIN_QT_ADDRESSBOOKPAGE_H
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/0.16

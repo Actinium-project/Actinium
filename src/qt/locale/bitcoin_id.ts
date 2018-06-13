@@ -30,13 +30,10 @@
         <translation>Hapus alamat yang dipilih dari daftar</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Export</source>
         <translation>&amp;Export</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Delete</source>
         <translation>&amp;Hapus</translation>
     </message>
@@ -45,13 +42,10 @@
         <translation>Pilih alamat untuk mengirim koin kepada</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Choose the address to receive coins with</source>
         <translation>Pilih alamat untuk menerima koin</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>C&amp;hoose</source>
         <translation>P&amp;ilih</translation>
     </message>
@@ -64,26 +58,6 @@
         <translation>Alamat menerima</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Copy Address</source>
-        <translation>&amp;Salin Alamat</translation>
-    </message>
-    </context>
-<context>
-    <name>AddressTableModel</name>
-    </context>
-<context>
-    <name>AskPassphraseDialog</name>
-    </context>
-<context>
-    <name>BanTableModel</name>
-    </context>
-<context>
-    <name>BitcoinGUI</name>
-    </context>
-<context>
-    <name>CoinControlDialog</name>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Ini adalah alamat Litecoin anda untuk mengirim pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirim koin</translation>
     </message>
@@ -402,7 +376,6 @@
         <source>(no label)</source>
         <translation>(tanpa label)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -415,13 +388,10 @@
     </context>
 <context>
     <name>Intro</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>ModalOverlay</name>
@@ -458,15 +428,6 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>RecentRequestsTableModel</name>
-    </context>
-<context>
-    <name>SendCoinsDialog</name>
-    </context>
-=======
     <message>
         <source>Address</source>
         <translation>Alamat</translation>
@@ -494,7 +455,6 @@
         <translation>(tanpa label)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     </context>
@@ -521,11 +481,6 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>TransactionView</name>
-=======
     <message>
         <source>Label</source>
         <translation>Label</translation>
@@ -553,7 +508,6 @@
         <source>Exporting Failed</source>
         <translation>Exporting gagal</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -566,13 +520,10 @@
     </context>
 <context>
     <name>WalletView</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>&amp;Export</source>
         <translation>&amp;Export</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>

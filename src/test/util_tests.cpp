@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-// Copyright (c) 2011-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "util.h"
-
-#include "clientversion.h"
-#include "primitives/transaction.h"
-#include "sync.h"
-#include "utilstrencodings.h"
-#include "utilmoneystr.h"
-#include "test/test_bitcoin.h"
-
-#include <stdint.h>
-#include <vector>
-=======
 // Copyright (c) 2011-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -34,7 +17,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #endif
->>>>>>> upstream/0.16
 
 #include <boost/test/unit_test.hpp>
 
@@ -143,11 +125,7 @@ BOOST_AUTO_TEST_CASE(util_ParseParameters)
     testArgs.ParseParameters(1, (char**)argv_test);
     BOOST_CHECK(testArgs.GetMapArgs().empty() && testArgs.GetMapMultiArgs().empty());
 
-<<<<<<< HEAD
-    testArgs.ParseParameters(5, (char**)argv_test);
-=======
     testArgs.ParseParameters(7, (char**)argv_test);
->>>>>>> upstream/0.16
     // expectation: -ignored is ignored (program name argument),
     // -a, -b and -ccc end up in map, -d ignored because it is after
     // a non-option argument (non-GNU option parsing)
@@ -629,8 +607,6 @@ BOOST_AUTO_TEST_CASE(test_ParseFixedPoint)
     BOOST_CHECK(!ParseFixedPoint("1.", 8, &amount));
 }
 
-<<<<<<< HEAD
-=======
 static void TestOtherThread(fs::path dirname, std::string lockname, bool *result)
 {
     *result = LockDirectory(dirname, lockname);
@@ -757,5 +733,4 @@ BOOST_AUTO_TEST_CASE(test_LockDirectory)
     fs::remove_all(dirname);
 }
 
->>>>>>> upstream/0.16
 BOOST_AUTO_TEST_SUITE_END()

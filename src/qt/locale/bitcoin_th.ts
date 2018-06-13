@@ -62,8 +62,6 @@
         <translation>ที่อยู่ในการรับ</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>ที่อยู่ Litecoin ของคุณสำหรับการส่งการชำระเงิน โปรดตรวจสอบจำนวนเงินและที่อยู่รับก่อนที่จะส่งเหรียญ</translation>
     </message>
@@ -72,7 +70,6 @@
         <translation>ที่อยู่ Litecoin ของคุณสำหรับการรับเงิน แนะนำให้ใช้ที่อยู่รับใหม่สำหรับแต่ละธุรกรรม</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&amp;Copy Address</source>
         <translation>คัดลอกที่อยู่</translation>
     </message>
@@ -85,8 +82,6 @@
         <translation>แก้ไข</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Export Address List</source>
         <translation>ส่งออกรายการที่อยู่</translation>
     </message>
@@ -95,7 +90,6 @@
         <translation>ไฟล์ที่คั่นด้วยจุลภาค (* .csv)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Exporting Failed</source>
         <translation>การส่งออกล้มเหลว</translation>
     </message>
@@ -103,14 +97,6 @@
 <context>
     <name>AddressTableModel</name>
     <message>
-<<<<<<< HEAD
-        <source>Address</source>
-        <translation>ที่อยู่</translation>
-    </message>
-    </context>
-<context>
-    <name>AskPassphraseDialog</name>
-=======
         <source>Label</source>
         <translation>ฉลาก, ป้าย,</translation>
     </message>
@@ -165,7 +151,6 @@
         <source>Change passphrase</source>
         <translation>เปลี่ยน ข้อความรหัสผ่าน</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>BanTableModel</name>
@@ -175,13 +160,10 @@
     </context>
 <context>
     <name>CoinControlDialog</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>(no label)</source>
         <translation>(ไม่มีฉลาก)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -234,15 +216,6 @@
         <source>Address</source>
         <translation>ที่อยู่</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>RecentRequestsTableModel</name>
-    </context>
-<context>
-    <name>SendCoinsDialog</name>
-    </context>
-=======
     <message>
         <source>Label</source>
         <translation>ฉลาก, ป้าย,</translation>
@@ -266,7 +239,6 @@
         <translation>(ไม่มีฉลาก)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     </context>
@@ -293,8 +265,6 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Label</source>
         <translation>ฉลาก, ป้าย,</translation>
@@ -303,13 +273,10 @@
         <source>(no label)</source>
         <translation>(ไม่มีฉลาก)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionView</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Comma separated file (*.csv)</source>
         <translation>ไฟล์ที่คั่นด้วยจุลภาค (* .csv)</translation>
     </message>
@@ -318,7 +285,6 @@
         <translation>ฉลาก, ป้าย,</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Address</source>
         <translation>ที่อยู่</translation>
     </message>

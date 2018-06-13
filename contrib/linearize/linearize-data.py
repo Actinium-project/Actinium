@@ -2,11 +2,7 @@
 #
 # linearize-data.py: Construct a linear, no-fork version of the chain.
 #
-<<<<<<< HEAD
-# Copyright (c) 2013-2016 The Bitcoin Core developers
-=======
 # Copyright (c) 2013-2017 The Bitcoin Core developers
->>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #

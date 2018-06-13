@@ -132,11 +132,7 @@
           <enum>Qt::ActionsContextMenu</enum>
          </property>
          <property name="text">
-<<<<<<< HEAD
           <string notr="true">0.00 ACM</string>
-=======
-          <string notr="true">0.00 LTC</string>
->>>>>>> upstream/0.16
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -216,11 +212,7 @@
           <enum>Qt::ActionsContextMenu</enum>
          </property>
          <property name="text">
-<<<<<<< HEAD
           <string notr="true">0.00 ACM</string>
-=======
-          <string notr="true">0.00 LTC</string>
->>>>>>> upstream/0.16
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -265,11 +257,7 @@
           <enum>Qt::ActionsContextMenu</enum>
          </property>
          <property name="text">
-<<<<<<< HEAD
           <string notr="true">0.00 ACM</string>
-=======
-          <string notr="true">0.00 LTC</string>
->>>>>>> upstream/0.16
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -304,11 +292,7 @@
           <enum>Qt::ActionsContextMenu</enum>
          </property>
          <property name="text">
-<<<<<<< HEAD
           <string notr="true">0.00 ACM</string>
-=======
-          <string notr="true">0.00 LTC</string>
->>>>>>> upstream/0.16
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -509,7 +493,3 @@
  <resources/>
  <connections/>
 </ui>
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/0.16

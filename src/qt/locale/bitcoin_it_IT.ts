@@ -7,19 +7,11 @@
     </message>
     <message>
         <source>Create a new address</source>
-<<<<<<< HEAD
-        <translation>Crea un nuovo indirizzo</translation>
-    </message>
-    <message>
-        <source>&amp;New</source>
-        <translation>nuovo</translation>
-=======
         <translation>Crea un nuovo indirizzo </translation>
     </message>
     <message>
         <source>&amp;New</source>
         <translation>Nuovo</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -27,19 +19,11 @@
     </message>
     <message>
         <source>&amp;Copy</source>
-<<<<<<< HEAD
-        <translation>copia</translation>
-    </message>
-    <message>
-        <source>C&amp;lose</source>
-        <translation>chiudi </translation>
-=======
         <translation>Copia</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
         <translation>Chiudi </translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -62,11 +46,6 @@
         <translation>Scegli l'indirizzo a cui inviare denaro</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>C&amp;hoose</source>
-        <translation>Scegli</translation>
-    </message>
-=======
         <source>Choose the address to receive coins with</source>
         <translation>Scegli l'indirizzo dove accreditare i coins</translation>
     </message>
@@ -114,30 +93,10 @@
         <source>Exporting Failed</source>
         <translation>Esportazione Fallita</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>AddressTableModel</name>
     <message>
-<<<<<<< HEAD
-        <source>Address</source>
-        <translation>Indirizzo</translation>
-    </message>
-    </context>
-<context>
-    <name>AskPassphraseDialog</name>
-    <message>
-        <source>Enter passphrase</source>
-        <translation>Invia passphrase</translation>
-    </message>
-    <message>
-        <source>New passphrase</source>
-        <translation>Nuova passphrase</translation>
-    </message>
-    <message>
-        <source>Repeat new passphrase</source>
-        <translation>Ripeti nuova passphrase</translation>
-=======
         <source>Label</source>
         <translation>Etichetta</translation>
     </message>
@@ -255,7 +214,6 @@
     <message>
         <source>Wallet passphrase was successfully changed.</source>
         <translation>La password del portafoglio è stata cambiata correttamente.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -276,29 +234,6 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Transactions</source>
-        <translation>Transazioni</translation>
-    </message>
-    </context>
-<context>
-    <name>CoinControlDialog</name>
-    </context>
-<context>
-    <name>EditAddressDialog</name>
-    </context>
-<context>
-    <name>FreespaceChecker</name>
-    </context>
-<context>
-    <name>HelpMessageDialog</name>
-    </context>
-<context>
-    <name>Intro</name>
-    </context>
-<context>
-    <name>ModalOverlay</name>
-=======
         <source>Sign &amp;message...</source>
         <translation>Firma &amp;messaggio...</translation>
     </message>
@@ -846,27 +781,12 @@
         <source>Number of blocks left</source>
         <translation>Numero di blocchi rimanente</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OpenURIDialog</name>
     </context>
 <context>
     <name>OptionsDialog</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>OverviewPage</name>
-    </context>
-<context>
-    <name>PaymentServer</name>
-    </context>
-<context>
-    <name>PeerTableModel</name>
-    </context>
-<context>
-    <name>QObject</name>
-=======
     <message>
         <source>Options</source>
         <translation>Opzioni</translation>
@@ -923,7 +843,6 @@
         <source>Amount</source>
         <translation>Importo</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject::QObject</name>
@@ -933,12 +852,6 @@
     </context>
 <context>
     <name>RPCConsole</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>ReceiveCoinsDialog</name>
-    </context>
-=======
     <message>
         <source>Sent</source>
         <translation>Inviato</translation>
@@ -955,22 +868,12 @@
         <translation>Copia importo</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
         <source>Address</source>
         <translation>Indirizzo</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>RecentRequestsTableModel</name>
-    </context>
-<context>
-    <name>SendCoinsDialog</name>
-    </context>
-=======
     <message>
         <source>Amount</source>
         <translation>Importo</translation>
@@ -1050,7 +953,6 @@
         <translation>(nessuna etichetta)</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     </context>
@@ -1071,8 +973,6 @@
     </context>
 <context>
     <name>TransactionDesc</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Date</source>
         <translation>Data</translation>
@@ -1081,15 +981,12 @@
         <source>Amount</source>
         <translation>Importo</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionDescDialog</name>
     </context>
 <context>
     <name>TransactionTableModel</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Date</source>
         <translation>Data</translation>
@@ -1102,16 +999,10 @@
         <source>(no label)</source>
         <translation>(nessuna etichetta)</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionView</name>
     <message>
-<<<<<<< HEAD
-        <source>Address</source>
-        <translation>Indirizzo</translation>
-    </message>
-=======
         <source>Copy address</source>
         <translation>Copia indirizzo</translation>
     </message>
@@ -1151,7 +1042,6 @@
         <source>Exporting Failed</source>
         <translation>Esportazione Fallita</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -1167,9 +1057,6 @@
     </context>
 <context>
     <name>bitcoin-core</name>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Information</source>
         <translation>Informazione</translation>
@@ -1183,5 +1070,4 @@
         <translation>Errore</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 </TS>

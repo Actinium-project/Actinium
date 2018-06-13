@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 name: "Actinium-dmg-signer"
-=======
-name: "litecoin-dmg-signer"
->>>>>>> upstream/0.16
 suites:
 - "trusty"
 architectures:
@@ -11,17 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-<<<<<<< HEAD
 - "url": "https://github.com/Actinium-project/Actinium-detached-sigs.git"
   "dir": "signature"
 files:
 - "Actinium-osx-unsigned.tar.gz"
-=======
-- "url": "https://github.com/litecoin-project/litecoin-detached-sigs.git"
-  "dir": "signature"
-files:
-- "litecoin-osx-unsigned.tar.gz"
->>>>>>> upstream/0.16
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -38,13 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-<<<<<<< HEAD
   UNSIGNED=Actinium-osx-unsigned.tar.gz
   SIGNED=Actinium-osx-signed.dmg
-=======
-  UNSIGNED=litecoin-osx-unsigned.tar.gz
-  SIGNED=litecoin-osx-signed.dmg
->>>>>>> upstream/0.16
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

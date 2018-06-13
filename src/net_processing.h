@@ -82,7 +82,3 @@ bool GetNodeStateStats(NodeId nodeid, CNodeStateStats &stats);
 void Misbehaving(NodeId nodeid, int howmuch);
 
 #endif // BITCOIN_NET_PROCESSING_H
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/0.16

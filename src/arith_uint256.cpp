@@ -1,15 +1,4 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-<<<<<<< HEAD
-// Copyright (c) 2009-2016 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-#include "arith_uint256.h"
-
-#include "uint256.h"
-#include "utilstrencodings.h"
-#include "crypto/common.h"
-=======
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -19,7 +8,6 @@
 #include <uint256.h>
 #include <utilstrencodings.h>
 #include <crypto/common.h>
->>>>>>> upstream/0.16
 
 #include <stdio.h>
 #include <string.h>

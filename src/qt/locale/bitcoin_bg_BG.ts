@@ -19,11 +19,7 @@
     </message>
     <message>
         <source>&amp;Copy</source>
-<<<<<<< HEAD
-        <translation>Копирай</translation>
-=======
         <translation>&amp;Copy</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>C&amp;lose</source>
@@ -43,11 +39,7 @@
     </message>
     <message>
         <source>&amp;Delete</source>
-<<<<<<< HEAD
-        <translation>Изтрий</translation>
-=======
         <translation>&amp;Изтрий</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -70,21 +62,12 @@
         <translation>Адрес за получаване</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Тези са вашите Actinium адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите Actinium адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Тези са вашите Litecoin адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
     </message>
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Това са вашите Litecoin адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,9 +159,6 @@
         <source>Confirm wallet encryption</source>
         <translation>Потвърди криптирането на порфейла</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Wallet encrypted</source>
         <translation>портфейлa е шифрован</translation>
@@ -196,7 +176,6 @@
         <translation>Внимание:Бутонът Caps Lock е включен.</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>BanTableModel</name>
     <message>
@@ -298,8 +277,6 @@
         <source>Reindexing blocks on disk...</source>
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Wallet</source>
         <translation>портфейл</translation>
@@ -354,13 +331,10 @@
         <source>Incoming transaction</source>
         <translation>Входяща транзакция</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Coin Selection</source>
         <translation>Избор на монети</translation>
     </message>
@@ -457,27 +431,12 @@
         <translation>не</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(без етикет)</translation>
     </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>FreespaceChecker</name>
-    </context>
-<context>
-    <name>HelpMessageDialog</name>
-    </context>
-<context>
-    <name>Intro</name>
-    </context>
-<context>
-    <name>ModalOverlay</name>
-=======
     <message>
         <source>Edit Address</source>
         <translation>Редактирайте адреса</translation>
@@ -542,28 +501,12 @@
         <source>calculating...</source>
         <translation>изчисляване</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>OpenURIDialog</name>
     </context>
 <context>
     <name>OptionsDialog</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>OverviewPage</name>
-    </context>
-<context>
-    <name>PaymentServer</name>
-    </context>
-<context>
-    <name>PeerTableModel</name>
-    </context>
-<context>
-    <name>QObject</name>
-    </context>
-=======
     <message>
         <source>Options</source>
         <translation>Настроики</translation>
@@ -673,7 +616,6 @@
         <translation>неизвестен</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -682,12 +624,6 @@
     </context>
 <context>
     <name>RPCConsole</name>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>ReceiveCoinsDialog</name>
-    </context>
-=======
     <message>
         <source>Client version</source>
         <translation>Клиентска версия</translation>
@@ -728,7 +664,6 @@
         <translation>Копиране на сумата</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
@@ -736,13 +671,10 @@
         <translation>Адрес</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Amount</source>
         <translation>Количество</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Етикет</translation>
     </message>
@@ -750,13 +682,10 @@
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Date</source>
         <translation>Дата</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Етикет</translation>
     </message>
@@ -768,8 +697,6 @@
 <context>
     <name>SendCoinsDialog</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Quantity:</source>
         <translation>Количество:</translation>
     </message>
@@ -818,7 +745,6 @@
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(без етикет)</translation>
     </message>
@@ -843,8 +769,6 @@
     </context>
 <context>
     <name>TransactionDesc</name>
-<<<<<<< HEAD
-=======
     <message>
         <source>Status</source>
         <translation>Статус</translation>
@@ -885,7 +809,6 @@
         <source>Amount</source>
         <translation>Количество</translation>
     </message>
->>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionDescDialog</name>
@@ -893,13 +816,10 @@
 <context>
     <name>TransactionTableModel</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Date</source>
         <translation>Дата</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Етикет</translation>
     </message>
@@ -911,8 +831,6 @@
 <context>
     <name>TransactionView</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copy address</source>
         <translation>Копирайте адреса</translation>
     </message>
@@ -929,13 +847,10 @@
         <translation>Копиране на ID на транзакцията</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Comma separated file (*.csv)</source>
         <translation>Comma separated file (*.csv)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Confirmed</source>
         <translation>Потвърдено</translation>
     </message>
@@ -944,7 +859,6 @@
         <translation>Дата</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Етикет</translation>
     </message>
@@ -980,12 +894,6 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium ядро</translation>
-    </message>
-    </context>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin ядро</translation>
     </message>
@@ -1002,5 +910,4 @@
         <translation>грешка</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 </TS>

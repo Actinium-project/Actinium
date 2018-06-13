@@ -4,13 +4,8 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
-<<<<<<< HEAD
-#ifndef _SECP256K1_GROUP_IMPL_H_
-#define _SECP256K1_GROUP_IMPL_H_
-=======
 #ifndef SECP256K1_GROUP_IMPL_H
 #define SECP256K1_GROUP_IMPL_H
->>>>>>> upstream/0.16
 
 #include "num.h"
 #include "field.h"
@@ -702,8 +697,4 @@ static int secp256k1_gej_has_quad_y_var(const secp256k1_gej *a) {
     return secp256k1_fe_is_quad_var(&yz);
 }
 
-<<<<<<< HEAD
-#endif
-=======
 #endif /* SECP256K1_GROUP_IMPL_H */
->>>>>>> upstream/0.16

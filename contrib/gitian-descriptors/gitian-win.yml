@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-name: "Actinium-win-0.15"
-=======
-name: "litecoin-win-0.16"
->>>>>>> upstream/0.16
+name: "Actinium-win-0.16"
 enable_cache: true
 suites:
 - "trusty"
@@ -26,13 +22,8 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-<<<<<<< HEAD
 - "url": "https://github.com/Actinium-project/Actinium.git"
   "dir": "Actinium"
-=======
-- "url": "https://github.com/litecoin-project/litecoin.git"
-  "dir": "litecoin"
->>>>>>> upstream/0.16
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped
@@ -110,11 +101,7 @@ script: |
   create_per-host_linker_wrapper "2000-01-01 12:00:00"
   export PATH=${WRAP_DIR}:${PATH}
 
-<<<<<<< HEAD
   cd Actinium
-=======
-  cd litecoin
->>>>>>> upstream/0.16
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -132,22 +119,14 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
-<<<<<<< HEAD
   SOURCEDIST=`echo Actinium-*.tar.gz`
-=======
-  SOURCEDIST=`echo litecoin-*.tar.gz`
->>>>>>> upstream/0.16
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
 
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-<<<<<<< HEAD
   find Actinium-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
-=======
-  find litecoin-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
->>>>>>> upstream/0.16
   mkdir -p $OUTDIR/src
   cp ../$SOURCEDIST $OUTDIR/src
   popd
@@ -176,11 +155,7 @@ script: |
     make deploy
     make install DESTDIR=${INSTALLPATH}
     rename 's/-setup\.exe$/-setup-unsigned.exe/' *-setup.exe
-<<<<<<< HEAD
     cp -f Actinium-*setup*.exe $OUTDIR/
-=======
-    cp -f litecoin-*setup*.exe $OUTDIR/
->>>>>>> upstream/0.16
     cd installed
     mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/
     find . -name "lib*.la" -delete
@@ -196,11 +171,7 @@ script: |
   cp -rf contrib/windeploy $BUILD_DIR
   cd $BUILD_DIR/windeploy
   mkdir unsigned
-<<<<<<< HEAD
   cp $OUTDIR/Actinium-*setup-unsigned.exe unsigned/
-=======
-  cp $OUTDIR/litecoin-*setup-unsigned.exe unsigned/
->>>>>>> upstream/0.16
   find . | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-win-unsigned.tar.gz
   mv ${OUTDIR}/${DISTNAME}-x86_64-*-debug.zip ${OUTDIR}/${DISTNAME}-win64-debug.zip
   mv ${OUTDIR}/${DISTNAME}-i686-*-debug.zip ${OUTDIR}/${DISTNAME}-win32-debug.zip

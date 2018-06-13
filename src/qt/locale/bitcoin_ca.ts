@@ -62,21 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les vostres adreces de Actinium per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
-    </message>
-    <message>
-        <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les vostres adreces Actinium per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
-=======
         <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Aquestes són les vostres adreces de Litecoin per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
     </message>
     <message>
         <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Aquestes són les vostres adreces Litecoin per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -177,13 +168,8 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
-        <translation>Avís: si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES ACTINIUMS&lt;/b&gt;!</translation>
-=======
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
         <translation>Avís: si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES LITECOINS&lt;/b&gt;!</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -194,13 +180,8 @@
         <translation>Moneder encriptat</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
-        <translation>Ara es tancarà el %1 per finalitzar el procés d'encriptació. Recordeu que encriptar el vostre moneder no garanteix que les vostres actiniums no puguin ser robades per programari maliciós que infecti l'ordinador.</translation>
-=======
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
         <translation>Ara es tancarà el %1 per finalitzar el procés d'encriptació. Recordeu que encriptar el vostre moneder no garanteix que les vostres litecoins no puguin ser robades per programari maliciós que infecti l'ordinador.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -349,24 +330,16 @@
         <translation>Feu clic per tornar a habilitar l'activitat de la xarxa.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Syncing Headers (%1%)...</source>
         <translation>Sincronitzant Capçaleres (%1%)...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Reindexing blocks on disk...</source>
         <translation>S'estan reindexant els blocs al disc...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send coins to a Actinium address</source>
-        <translation>Envia monedes a una adreça Actinium</translation>
-=======
         <source>Send coins to a Litecoin address</source>
         <translation>Envia monedes a una adreça Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -389,13 +362,8 @@
         <translation>&amp;Verifica el missatge...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium</source>
-        <translation>Actinium</translation>
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -422,21 +390,12 @@
         <translation>Encripta les claus privades pertanyents al moneder</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign messages with your Actinium addresses to prove you own them</source>
-        <translation>Signa el missatges amb la seva adreça de Actinium per provar que les poseeixes</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
-        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Actinium específica.</translation>
-=======
         <source>Sign messages with your Litecoin addresses to prove you own them</source>
         <translation>Signa el missatges amb la seva adreça de Litecoin per provar que les poseeixes</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
         <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Litecoin específica.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -455,13 +414,8 @@
         <translation>Barra d'eines de les pestanyes</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Sol·licita pagaments (genera codis QR i Actinium: URI)</translation>
-=======
         <source>Request payments (generates QR codes and litecoin: URIs)</source>
         <translation>Sol·licita pagaments (genera codis QR i litecoin: URI)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -472,25 +426,13 @@
         <translation>Mostra la llista d'adreces de recepció i etiquetes utilitzades</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Open a Actinium: URI or payment request</source>
-        <translation>Obre una Actinium: sol·licitud d'URI o pagament</translation>
-=======
         <source>Open a litecoin: URI or payment request</source>
         <translation>Obre una litecoin: sol·licitud d'URI o pagament</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opcions de la &amp;línia d'ordres</translation>
     </message>
-<<<<<<< HEAD
-    <message numerus="yes">
-        <source>%n active connection(s) to Actinium network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Actinium</numerusform><numerusform>%n connexions actives a la xarxa Actinium</numerusform></translation>
-    </message>
-=======
->>>>>>> upstream/0.16
     <message>
         <source>Indexing blocks on disk...</source>
         <translation>S'estan indexant els blocs al disc...</translation>
@@ -499,13 +441,6 @@
         <source>Processing blocks on disk...</source>
         <translation>S'estan processant els blocs al disc...</translation>
     </message>
-<<<<<<< HEAD
-    <message numerus="yes">
-        <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>S'ha processat %n bloc de l'historial de transacció.</numerusform><numerusform>S'han processat %n blocs de l'historial de transacció.</numerusform></translation>
-    </message>
-=======
->>>>>>> upstream/0.16
     <message>
         <source>%1 behind</source>
         <translation>%1 darrere</translation>
@@ -535,26 +470,18 @@
         <translation>Al dia</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
-        <translation>Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de Actinium</translation>
-=======
         <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
         <translation>Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 client</source>
         <translation>Client de %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Connecting to peers...</source>
         <translation>Connectant a altres nodes...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Catching up...</source>
         <translation>S'està posant al dia ...</translation>
     </message>
@@ -613,13 +540,8 @@
         <translation>El moneder està &lt;b&gt;encriptat&lt;/b&gt; i actualment &lt;b&gt;bloquejat&lt;/b&gt;</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
-        <translation>S'ha produït un error fatal. Actinium no pot continuar amb seguretat i finalitzarà.</translation>
-=======
         <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
         <translation>S'ha produït un error fatal. Litecoin no pot continuar amb seguretat i finalitzarà.</translation>
->>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -812,13 +734,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The entered address "%1" is not a valid Actinium address.</source>
-        <translation>L'adreça introduïda «%1» no és una adreça de Actinium vàlida.</translation>
-=======
         <source>The entered address "%1" is not a valid Litecoin address.</source>
         <translation>L'adreça introduïda «%1» no és una adreça de Litecoin vàlida.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -926,10 +843,6 @@
         <translation>Com és la primera vegada que s'executa el programa, podeu triar on %1 emmagatzemarà les dades.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>%1 will download and store a copy of the Actinium block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 baixarà i emmagatzemarà una còpia de la cadena de blocs de Actinium. Com a mínim %2GB de dades s'emmagatzemaran en aquest directori, i augmentarà al llarg del temps. El moneder també s'emmagatzemarà en aquest directori.</translation>
-=======
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation>Quan feu clic a D'acord, %1 començarà a descarregar i processar la cadena de blocs %4 completa (%2 GB) començant per les primeres transaccions de %3, any de llençament inicial de %4.</translation>
     </message>
@@ -940,7 +853,6 @@
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
         <translation>Si heu decidit limitar l'emmagatzematge de la cadena de blocs (podar), les dades històriques encara s'hauran de baixar i processar, però se suprimiran més endavant per mantenir baix l'ús del disc.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -951,8 +863,6 @@
         <translation>Utilitza un directori de dades personalitzat:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Litecoin</source>
         <translation>Litecoin</translation>
     </message>
@@ -973,7 +883,6 @@
         <translation>El moneder també serà emmagatzemat en aquest directori.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Error: el directori de dades «%1» especificat no pot ser creat.</translation>
     </message>
@@ -981,19 +890,7 @@
         <source>Error</source>
         <translation>Error</translation>
     </message>
-<<<<<<< HEAD
-    <message numerus="yes">
-        <source>%n GB of free space available</source>
-        <translation><numerusform>%n GB d'espai lliure disponible</numerusform><numerusform>%n GB d'espai lliure disponible</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>(of %n GB needed)</source>
-        <translation><numerusform>(de %n GB necessari)</numerusform><numerusform>(de %n GB necessaris)</numerusform></translation>
-    </message>
-</context>
-=======
     </context>
->>>>>>> upstream/0.16
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -1001,8 +898,6 @@
         <translation>Formulari</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</source>
         <translation>És possible que les transaccions recents encara no siguin visibles i, per tant, el saldo del vostre moneder podria ser incorrecte. Aquesta informació serà correcta una vegada que el vostre moneder hagi finalitzat la sincronització amb la xarxa litecoin, tal com es detalla més avall.</translation>
     </message>
@@ -1019,7 +914,6 @@
         <translation>Desconegut...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Last block time</source>
         <translation>Últim temps de bloc</translation>
     </message>
@@ -1028,13 +922,10 @@
         <translation>Progrés</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Progress increase per hour</source>
         <translation>Augment de progrés per hora</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>calculating...</source>
         <translation>s'està calculant...</translation>
     </message>
@@ -1105,28 +996,14 @@
         <translation>Nombre de fils de &amp;verificació d'scripts</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Accept connections from outside</source>
-        <translation>Accepta connexions de fora</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Permet connexions entrants</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Adreça IP del proxy (p. ex. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
         <translation>Mostra si el proxy SOCKS5 predeterminat subministrat s'utilitza per arribar a altres nodes a través d'aquest tipus de xarxa.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
         <translation>Minimitza en comptes de sortir de l'aplicació quan la finestra es tanca. Quan s'habilita aquesta opció l'aplicació es tancara només quan se selecciona Surt del menú. </translation>
     </message>
@@ -1135,19 +1012,10 @@
         <translation>URL de terceres parts (p. ex. explorador de blocs) que apareix en la pestanya de transaccions com elements del menú contextual. %s en l'URL es reemplaçat pel resum de la transacció. Diferents URL estan separades per una barra vertical |.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Third party transaction URLs</source>
-        <translation>URL de transaccions de terceres parts</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Active command-line options that override above options:</source>
         <translation>Opcions de línies d'ordre active que sobreescriuen les opcions de dalt:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open the %1 configuration file from the working directory.</source>
         <translation>Obriu el fitxer de configuració %1 des del directori de treball.</translation>
     </message>
@@ -1156,7 +1024,6 @@
         <translation>Obrir el fitxer de configuració</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>Reestableix totes les opcions del client.</translation>
     </message>
@@ -1193,26 +1060,16 @@
         <translation>&amp;Gasta el canvi sense confirmar</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obre el port del client de Actinium al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
-=======
         <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Obre el port del client de Litecoin al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port obert amb &amp;UPnP</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
-        <translation>Connecta a la xarxa Actinium a través d'un proxy SOCKS5.</translation>
-=======
         <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
         <translation>Connecta a la xarxa Litecoin a través d'un proxy SOCKS5.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1235,13 +1092,6 @@
         <translation>Utilitzat per arribar als iguals mitjançant:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Mostra si el proxy SOCKS5 per defecte proporcionat s'utilitza per arribar als iguals mitjançant aquest tipus de xarxa.</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1254,34 +1104,14 @@
         <translation>Tor</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Connect to the Actinium network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conectar a la red de Actinium a través de un proxy SOCKS5 per als serveis ocults de Tor</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Utilitza un proxy SOCKS4 apart per a arribar als iguals a través de serveis ocults de Tor:</translation>
-=======
         <source>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Conectar a la red de Litecoin a través de un proxy SOCKS5 per als serveis ocults de Tor</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Window</source>
         <translation>&amp;Finestra</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Hide the icon from the system tray.</source>
-        <translation>Ama&amp;ga la icona de la safata del sistema.</translation>
-    </message>
-    <message>
-        <source>Hide tray icon</source>
-        <translation>Amaga la icona de la safata</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>Mostra només la icona de la barra en minimitzar la finestra.</translation>
     </message>
@@ -1346,8 +1176,6 @@
         <translation>S'aturarà el client. Voleu procedir?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Configuration options</source>
         <translation>Opcions de configuració</translation>
     </message>
@@ -1364,7 +1192,6 @@
         <translation>No s'ha pogut obrir el fitxer de configuració.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Amb aquest canvi cal un reinici del client.</translation>
     </message>
@@ -1380,13 +1207,8 @@
         <translation>Formulari</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Actinium un cop s'ha establert connexió, però aquest proces no s'ha completat encara.</translation>
-=======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Litecoin un cop s'ha establert connexió, però aquest proces no s'ha completat encara.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1460,13 +1282,8 @@
         <translation>Error de la sol·licitud de pagament</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot start Actinium: click-to-pay handler</source>
-        <translation>No es pot iniciar Actinium: controlador click-to-pay</translation>
-=======
         <source>Cannot start litecoin: click-to-pay handler</source>
         <translation>No es pot iniciar litecoin: controlador click-to-pay</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>URI handling</source>
@@ -1481,13 +1298,8 @@
         <translation>Adreça de pagament no vàlida %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>URI cannot be parsed! This can be caused by an invalid Actinium address or malformed URI parameters.</source>
-        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Actinium no vàlida o per paràmetres URI amb mal format.</translation>
-=======
         <source>URI cannot be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
         <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Litecoin no vàlida o per paràmetres URI amb mal format.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1564,9 +1376,6 @@
         <source>Node/Service</source>
         <translation>Node/Servei</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>NodeId</source>
         <translation>NodeId</translation>
@@ -1584,7 +1393,6 @@
         <translation>Rebut</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -1592,13 +1400,8 @@
         <translation>Import</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter a Actinium address (e.g. %1)</source>
-        <translation>Introduïu una adreça de Actinium (p. ex. %1)</translation>
-=======
         <source>Enter a Litecoin address (e.g. %1)</source>
         <translation>Introduïu una adreça de Litecoin (p. ex. %1)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 d</source>
@@ -1632,12 +1435,6 @@
         <source>%1 and %2</source>
         <translation>%1 i %2</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-<context>
-    <name>QObject::QObject</name>
-    </context>
-=======
     <message>
         <source>%1 B</source>
         <translation>%1 B</translation>
@@ -1678,7 +1475,6 @@
         <translation>Error: %1</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -1765,13 +1561,10 @@
         <translation>Us de memoria</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>&amp;Reset</source>
         <translation>&amp;Reset</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Received</source>
         <translation>Rebut</translation>
     </message>
@@ -1820,8 +1613,6 @@
         <translation>Agent d'usuari</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Obre el fitxer de registre de depuració %1 del directori de dades actual. Això pot trigar uns segons en fitxers de registre grans.</translation>
     </message>
@@ -1834,7 +1625,6 @@
         <translation>Augmenta la mida de la font</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Services</source>
         <translation>Serveis</translation>
     </message>
@@ -1867,13 +1657,10 @@
         <translation>Espera de ping</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Min Ping</source>
         <translation>Min Ping</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Time Offset</source>
         <translation>Diferència horària</translation>
     </message>
@@ -1894,13 +1681,6 @@
         <translation>Trà&amp;nsit de la xarxa</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>&amp;Clear</source>
-        <translation>Nete&amp;ja</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Totals</translation>
     </message>
@@ -1937,30 +1717,6 @@
         <translation>1 &amp;any</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Utilitza les fletxes d'amunt i avall per navegar per l'historial, i &lt;b&gt;Ctrl-L&lt;\b&gt; per netejar la pantalla.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Escriviu &lt;b&gt;help&lt;\b&gt; per a obtenir un llistat de les ordres disponibles.</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
-=======
         <source>&amp;Disconnect</source>
         <translation>&amp;Desconnecta</translation>
     </message>
@@ -1987,7 +1743,6 @@
     <message>
         <source>Network activity disabled</source>
         <translation>Activitat de xarxa inhabilitada</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -2037,21 +1792,8 @@
         <translation>&amp;Missatge:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Reutilitza una de les adreces de recepció utilitzades anteriorment. La reutilització d'adreces pot comportar problemes de seguretat i privadesa. No ho utilitzeu llevat que torneu a generar una sol·licitud de pagament feta abans.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>R&amp;eutilitza una adreça de recepció anterior (no recomanat)</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
-        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Actinium.</translation>
-=======
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
         <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2098,13 +1840,10 @@
         <translation>Esborra</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copy URI</source>
         <translation>Copia URI</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy label</source>
         <translation>Copia l'etiqueta</translation>
     </message>
@@ -2266,8 +2005,6 @@
         <translation>Tria...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
         <translation>L'ús de la tarifa de pagament pot provocar l'enviament d'una transacció que trigarà diverses hores o dies (o mai) a confirmar. Penseu a triar la possibilitat d'escollir la tarifa manualment o espereu fins que hagueu validat la cadena completa.</translation>
     </message>
@@ -2276,7 +2013,6 @@
         <translation>Advertència: l'estimació de tarifes no és possible actualment.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>collapse fee-settings</source>
         <translation>redueix els paràmetres de comissió</translation>
     </message>
@@ -2293,17 +2029,8 @@
         <translation>Amaga</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>total at least</source>
-        <translation>total com a mínim</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Actinium transactions than the network can process.</source>
-        <translation>No hi ha cap problema en pagar només la comissió mínima sempre que hi hagi menys volum de transacció que espai en els blocs. Però tingueu present que això pot acabar en una transacció que mai es confirmi una vegada hi hagi més demanda de transaccions de actiniums que la xarxa pugui processar.</translation>
-=======
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
         <translation>No hi ha cap problema en pagar només la comissió mínima sempre que hi hagi menys volum de transacció que espai en els blocs. Però tingueu present que això pot acabar en una transacció que mai es confirmi una vegada hi hagi més demanda de transaccions de litecoins que la xarxa pugui processar.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2322,17 +2049,6 @@
         <translation>(No s'ha inicialitzat encara la comissió intel·ligent. Normalment pren uns pocs blocs...)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>ràpid</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Envia a múltiples destinataris al mateix temps</translation>
     </message>
@@ -2349,13 +2065,10 @@
         <translation>Polsim:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Confirmation time target:</source>
         <translation>Temps de confirmació objectiu:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Clear &amp;All</source>
         <translation>Neteja-ho &amp;tot</translation>
     </message>
@@ -2400,13 +2113,10 @@
         <translation>Copia el canvi</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>%1 (%2 blocks)</source>
         <translation>%1 (%2 blocs)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1 to %2</source>
         <translation>%1 a %2</translation>
     </message>
@@ -2455,13 +2165,10 @@
         <translation>La creació de la transacció ha fallat!</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>The transaction was rejected with the following reason: %1</source>
         <translation>La transacció s'ha rebutjat amb el motiu següent: %1</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
         <translation>Una comissió superior a %1 es considera una comissió absurdament alta.</translation>
     </message>
@@ -2474,21 +2181,14 @@
         <translation>Paga només la comissió necessària de %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Warning: Invalid Actinium address</source>
-        <translation>Avís: adreça Actinium no vàlida</translation>
-=======
         <source>Warning: Invalid Litecoin address</source>
         <translation>Avís: adreça Litecoin no vàlida</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Warning: Unknown change address</source>
         <translation>Avís: adreça de canvi desconeguda</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Confirm custom change address</source>
         <translation>Confirma l'adreça de canvi personalitzada</translation>
     </message>
@@ -2497,7 +2197,6 @@
         <translation>L'adreça que heu seleccionat per al canvi no és part d'aquest moneder. Tots els fons del vostre moneder es poden enviar a aquesta adreça. Estàs segur?</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(sense etiqueta)</translation>
     </message>
@@ -2525,13 +2224,8 @@
         <translation>Això és un pagament normal.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address to send the payment to</source>
-        <translation>L'adreça Actinium on enviar el pagament</translation>
-=======
         <source>The Litecoin address to send the payment to</source>
         <translation>L'adreça Litecoin on enviar el pagament</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Alt+A</source>
@@ -2550,13 +2244,8 @@
         <translation>Elimina aquesta entrada</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>La comissió es deduirà de l'import que s'enviarà. El destinatari rebrà menys actiniums que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la comissió es dividirà per igual.</translation>
-=======
         <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>La comissió es deduirà de l'import que s'enviarà. El destinatari rebrà menys litecoins que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la comissió es dividirà per igual.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2579,13 +2268,8 @@
         <translation>Introduïu una etiqueta per a aquesta adreça per afegir-la a la llista d'adreces utilitzades</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
-        <translation>Un missatge que s'ha adjuntat al Actinium: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Actinium.</translation>
-=======
         <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
         <translation>Un missatge que s'ha adjuntat al litecoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Litecoin.</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Pay To:</source>
@@ -2610,13 +2294,10 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-<<<<<<< HEAD
-=======
         <source>%1 is shutting down...</source>
         <translation>%1 s'està tancant ...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Do not shut down the computer until this window disappears.</source>
         <translation>No apagueu l'ordinador fins que no desaparegui aquesta finestra.</translation>
     </message>
@@ -2632,21 +2313,12 @@
         <translation>&amp;Signa el missatge</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>You can sign messages/agreements with your addresses to prove you can receive actiniums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les actiniums que s'hi envien. Aneu amb compte no signar res que sigui vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
-    </message>
-    <message>
-        <source>The Actinium address to sign the message with</source>
-        <translation>L'adreça Actinium amb què signar el missatge</translation>
-=======
         <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les litecoins que s'hi envien. Aneu amb compte no signar res que sigui vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
         <source>The Litecoin address to sign the message with</source>
         <translation>L'adreça Litecoin amb què signar el missatge</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2677,13 +2349,8 @@
         <translation>Copia la signatura actual al porta-retalls del sistema</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Sign the message to prove you own this Actinium address</source>
-        <translation>Signa el missatge per provar que ets propietari d'aquesta adreça Actinium</translation>
-=======
         <source>Sign the message to prove you own this Litecoin address</source>
         <translation>Signa el missatge per provar que ets propietari d'aquesta adreça Litecoin</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2706,21 +2373,12 @@
         <translation>Introduïu l'adreça del receptor, el missatge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per verificar el missatge. Tingueu cura de no llegir més en la signatura del que està al missatge signat, per evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>The Actinium address the message was signed with</source>
-        <translation>L'adreça Actinium amb què va ser signat el missatge</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Actinium address</source>
-        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Actinium específica</translation>
-=======
         <source>The Litecoin address the message was signed with</source>
         <translation>L'adreça Litecoin amb què va ser signat el missatge</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
         <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Litecoin específica</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2804,19 +2462,14 @@
         <translation>Obert fins %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>conflicted with a transaction with %1 confirmations</source>
         <translation>produït un conflicte amb una transacció amb %1 confirmacions</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1/offline</source>
         <translation>%1/fora de línia</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>0/unconfirmed, %1</source>
         <translation>0/no confirmades, %1</translation>
     </message>
@@ -2833,7 +2486,6 @@
         <translation>abandonat</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>%1/unconfirmed</source>
         <translation>%1/sense confirmar</translation>
     </message>
@@ -2926,8 +2578,6 @@
         <translation>ID de la transacció</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Transaction total size</source>
         <translation>Mida total de la transacció</translation>
     </message>
@@ -2936,7 +2586,6 @@
         <translation>Índex de resultats</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Merchant</source>
         <translation>Mercader</translation>
     </message>
@@ -2975,15 +2624,11 @@
         <source>This pane shows a detailed description of the transaction</source>
         <translation>Aquest panell mostra una descripció detallada de la transacció</translation>
     </message>
-<<<<<<< HEAD
-    </context>
-=======
     <message>
         <source>Details for %1</source>
         <translation>Detalls per %1</translation>
     </message>
 </context>
->>>>>>> upstream/0.16
 <context>
     <name>TransactionTableModel</name>
     <message>
@@ -3146,19 +2791,10 @@
         <translation>Altres</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Enter address or label to search</source>
-        <translation>Introduïu una adreça o una etiqueta per cercar</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Min amount</source>
         <translation>Import mínim</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Abandon transaction</source>
         <translation>Abandonar transacció</translation>
     </message>
@@ -3167,7 +2803,6 @@
         <translation>Augmenta la comissió de transacció</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Copy address</source>
         <translation>Copia l'adreça</translation>
     </message>
@@ -3188,13 +2823,10 @@
         <translation>Copia la transacció crua</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copy full transaction details</source>
         <translation>Copieu els detalls complets de la transacció</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Edit label</source>
         <translation>Editar etiqueta</translation>
     </message>
@@ -3283,8 +2915,6 @@
         <source>Send Coins</source>
         <translation>Envia monedes</translation>
     </message>
-<<<<<<< HEAD
-=======
     <message>
         <source>Fee bump error</source>
         <translation>Error de recàrrec de tarifes</translation>
@@ -3321,7 +2951,6 @@
         <source>Could not commit transaction</source>
         <translation>No s'ha pogut confirmar la transacció</translation>
     </message>
->>>>>>> upstream/0.16
 </context>
 <context>
     <name>WalletView</name>
@@ -3381,13 +3010,10 @@
         <translation>Accepta la línia d'ordres i ordres JSON-RPC </translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Distribuït sota la llicència del programari MIT, consulteu el fitxer d'acompanyament %s o %s</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
         <translation>Si no es proporciona &lt;category&gt; o si &lt;category&gt; = 1, treu a la sortida tota la informació de depuració.</translation>
     </message>
@@ -3424,10 +3050,6 @@
         <translation>No s'ha pogut iniciar el servidor HTTP. Vegeu debug.log per a més detalls.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Actinium Core</source>
-        <translation>Actinium Core</translation>
-=======
         <source>Litecoin Core</source>
         <translation>Litecoin Core</translation>
     </message>
@@ -3442,26 +3064,20 @@
     <message>
         <source>Accept relayed transactions received from whitelisted peers even when not relaying transactions (default: %d)</source>
         <translation>Acceptar les transaccions retransmeses rebudes de nodes de llista blanca, fins i tot quan no es retransmetin transaccions (per defecte: %d)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Vincula a una adreça específica i sempre escolta-hi. Utilitza la notació [host]:port per IPv6</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
         <translation>No es pot obtenir un bloqueig al directori de dades %s. %s probablement ja s'estigui executant.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Elimina totes les transaccions del moneder i només recupera aquelles de la cadena de blocs a través de -rescan a l'inici</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>S'ha produït un error en llegir %s. Totes les claus es llegeixen correctament, però les dades de la transacció o les entrades de la llibreta d'adreces podrien faltar o ser incorrectes.</translation>
     </message>
@@ -3470,13 +3086,10 @@
         <translation>Excloeu la informació de depuració d'una categoria. Pot ser usat juntament amb -debug = 1 per generar registres de depuració per a totes les categories, excepte una o més categories especificades.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Executa una ordre quan una transacció del moneder canviï (%s en cmd es canvia per TxID)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
         <translation>Transaccions addicionals a conservar en memòria per a les reconstruccions de blocs compactes (per defecte: %u)</translation>
     </message>
@@ -3509,13 +3122,10 @@
         <translation>Redueix els requisits d'emmagatzematge permetent la poda (supressió) dels blocs antics. Això permet executar la crida RPC prunblockclass per eliminar blocs específics i permet la poda automàtica de blocs antics si es proporciona una mida de destinació en MiB. Aquest mode és incompatible amb -txindex i -rescan. Advertència: si torna a iniciar aquesta configuració, cal que torneu a baixar la cadena de blocs completa. (per defecte: 0 = desactivar poda de blocs, 1 = permetre la poda manual a través de RPC,&gt;%u = poda automàticament els fitxers de bloc per quedar sota la mida de destinació especificada en MiB)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation>Defineix el nombre de fils de verificació d'scripts (%u a %d, 0 = auto, &lt;0 = deixa tants nuclis lliures, per defecte: %d)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
         <translation>La base de dades de blocs conté un bloc que sembla ser del futur. Això pot ser degut a que la data i l'hora del vostre ordinador s'estableix incorrectament. Només reconstruïu la base de dades de blocs si esteu segur que la data i l'hora del vostre ordinador són correctes</translation>
     </message>
@@ -3572,13 +3182,10 @@
         <translation>-maxmempool ha de tenir almenys %d MB</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; pot ser:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Accepta connexions de fora (per defecte: 1 si no -proxy o -connect)</translation>
     </message>
@@ -3591,13 +3198,10 @@
         <translation>Intent de recuperació de claus privades d'una cartera malmesa a l'inici</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Block creation options:</source>
         <translation>Opcions de la creació de blocs:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Cannot resolve -%s address: '%s'</source>
         <translation>No es pot resoldre -%s adreça: '%s'</translation>
     </message>
@@ -3610,18 +3214,14 @@
         <translation>Canvieu l'índex fora de l'abast</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Connection options:</source>
         <translation>Opcions de connexió:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Copyright (C) %i-%i</source>
         <translation>Copyright (C) %i-%i</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Corrupted block database detected</source>
         <translation>S'ha detectat una base de dades de blocs corrupta</translation>
     </message>
@@ -3638,8 +3238,6 @@
         <translation>Voleu reconstruir la base de dades de blocs ara?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Enable publish hash block in &lt;address&gt;</source>
         <translation>Habiliteu publicar el bloc de hash a &lt;address&gt;</translation>
     </message>
@@ -3660,7 +3258,6 @@
         <translation>Activa el reemplaçament de transaccions al grup de memòria (per defecte: %u)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error initializing block database</source>
         <translation>Error carregant la base de dades de blocs</translation>
     </message>
@@ -3669,8 +3266,6 @@
         <translation>Error inicialitzant l'entorn de la base de dades del moneder %s!</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading %s</source>
         <translation>Error carregant %s</translation>
     </message>
@@ -3683,7 +3278,6 @@
         <translation>S'ha produït un error en carregar %s: el moneder requereix una versió més nova de %s</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error loading block database</source>
         <translation>Error carregant la base de dades del bloc</translation>
     </message>
@@ -3708,10 +3302,6 @@
         <translation>No s'ha trobat el bloc de gènesi o és incorrecte. El directori de dades de la xarxa és incorrecte?</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Adreça -onion no vàlida: '%s'</translation>
-=======
         <source>Initialization sanity check failed. %s is shutting down.</source>
         <translation>S'ha produït un error en la verificació de sanejament d'inicialització. S'està tancant %s.</translation>
     </message>
@@ -3742,7 +3332,6 @@
     <message>
         <source>Location of the auth cookie (default: data dir)</source>
         <translation>Ubicació de la cookie auth (per defecte: directori de dades)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -3753,8 +3342,6 @@
         <translation>Només connecta als nodes de la xarxa &lt;net&gt; (ipv4, ipv6 o onion)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Print this help message and exit</source>
         <translation>Imprimiu aquest missatge d'ajuda i sortiu</translation>
     </message>
@@ -3763,7 +3350,6 @@
         <translation>Imprimir versió i sortir</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Prune cannot be configured with a negative value.</source>
         <translation>La poda no es pot configurar amb un valor negatiu.</translation>
     </message>
@@ -3772,14 +3358,6 @@
         <translation>El mode de poda és incompatible amb -txindex.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Defineix la mida de la memòria cau de la base de dades en megabytes (%d a %d, per defecte: %d)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Defineix la mida màxim del bloc en bytes (per defecte: %d)</translation>
-=======
         <source>Rebuild chain state and block index from the blk*.dat files on disk</source>
         <translation>Reconstrueix l'estat de la cadena i l'índex de blocs des dels fitxers blk*.dat del disc</translation>
     </message>
@@ -3798,15 +3376,12 @@
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>Defineix la mida de la memòria cau de la base de dades en megabytes (%d a %d, per defecte: %d)</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Especifica un fitxer de moneder (dins del directori de dades)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>The source code is available from %s.</source>
         <translation>El codi font està disponible a %s.</translation>
     </message>
@@ -3839,7 +3414,6 @@
         <translation>Actualització de la base de dades UTXO</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Use UPnP to map the listening port (default: %u)</source>
         <translation>Utilitza UPnP per a mapejar el port d'escolta (per defecte: %u)</translation>
     </message>
@@ -3848,25 +3422,12 @@
         <translation>Utilitza la cadena de proves</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Verifying blocks...</source>
-        <translation>S'estan verificant els blocs...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>S'està verificant el moneder...</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>El moneder %s resideix fora del directori de dades %s</translation>
-=======
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation>El comentari de l'agent d'usuari (%s) conté caràcters insegurs.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
         <translation>S'estan verificant els blocs...</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet debugging/testing options:</source>
@@ -3889,13 +3450,6 @@
         <translation>Vincula l'adreça donada i posa a la llista blanca els iguals que s'hi connectin. Feu servir la notació [host]:port per a IPv6</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Vincula a l'adreça donada per a escoltar les connexions JSON-RPC. Feu servir la notació [host]:port per a IPv6. Aquesta opció pot ser especificada moltes vegades (per defecte: vincula a totes les interfícies)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Crea fitxers nous amb els permisos per defecte del sistema, en comptes de l'umask 077 (només efectiu amb la funcionalitat de moneder inhabilitada)</translation>
     </message>
@@ -3912,13 +3466,10 @@
         <translation>Executa l'ordre quan es rebi un avís rellevant o veiem una forquilla molt llarga (%s en cmd és reemplaçat per un missatge)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
         <translation>Les comissions (en %s/kB) més petites que això es consideren tarifes zero per a la retransmissió, la mineria i la creació de transaccions (per defecte: %s)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>Si no s'especifica una paytxfee (comissió de transacció de pagament), inclogueu suficient comissió per tal que les transaccions comencin a confirmar-se en una mitja de n blocs (per defecte: %u)</translation>
     </message>
@@ -3935,13 +3486,6 @@
         <translation>Genera a l'atzar credencials per a cada connexió proxy. Això habilita l'aïllament del flux de Tor (per defecte: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Defineix la mida màxima de transaccions d'alta prioritat / baixa comissió en bytes (per defecte: %d)</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>L'import de la transacció és massa petit per enviar-la després que se'n dedueixi la comissió</translation>
     </message>
@@ -3962,30 +3506,22 @@
         <translation>Accepta sol·licituds REST públiques (per defecte: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Automatically create Tor hidden service (default: %d)</source>
         <translation>Crea automàticament el servei ocult de Tor (per defecte: %d)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Connect through SOCKS5 proxy</source>
         <translation>Connecta a través del proxy SOCKS5</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
         <translation>S'ha produït un error en carregar %s: no es pot desactivar HD en un moneder HD ja existent</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Error reading from database, shutting down.</source>
         <translation>Error en llegir la base de dades, tancant.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error upgrading chainstate database</source>
         <translation>S'ha produït un error en actualitzar la base de dades de chainstate</translation>
     </message>
@@ -3994,13 +3530,10 @@
         <translation>Importa blocs de fitxers externs blk000?.dat a l'inici de l'apliació</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Information</source>
         <translation>Informació</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>Adreça o nom de l'ordinador -onion no vàlida: '%s'</translation>
     </message>
@@ -4009,7 +3542,6 @@
         <translation>Adreça o nom de l'ordinador -proxy no vàlida: '%s'</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Import no vàlid per a -paytxfee=&lt;amount&gt;: «%s» (ha de ser com a mínim %s)</translation>
     </message>
@@ -4034,14 +3566,6 @@
         <translation>Opcions del servidor RPC:</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Envia informació de traça/depuració a la consola en comptes del fitxer debug.log</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Envia les transaccions com a transaccions de comissió zero sempre que sigui possible (per defecte: %u) </translation>
-=======
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation>Reducció de -maxconnections de %d a %d, a causa de les limitacions del sistema.</translation>
     </message>
@@ -4052,7 +3576,6 @@
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Envia informació de traça/depuració a la consola en comptes del fitxer debug.log</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
@@ -4075,8 +3598,6 @@
         <translation>Això és programari experimental.</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Tor control port password (default: empty)</source>
         <translation>Contrasenya del port de control Tor (per defecte: buida)</translation>
     </message>
@@ -4085,7 +3606,6 @@
         <translation>Port de control de tor si l'escolta onion està  habilitada (per defecte: %s)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Transaction amount too small</source>
         <translation>Import de la transacció massa petit</translation>
     </message>
@@ -4102,30 +3622,22 @@
         <translation>No s'ha pogut vincular a %s en aquest ordinador (la vinculació ha retornat l'error %s)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Upgrade wallet to latest format on startup</source>
         <translation>Actualitza el moneder al format més recent a l'inici de l'aplicació</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Username for JSON-RPC connections</source>
         <translation>Nom d'usuari per a connexions JSON-RPC</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Verifying wallet(s)...</source>
         <translation>S'està verificant el moneder(s) ...</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>Avís</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Warning: unknown new rules activated (versionbit %i)</source>
         <translation>Advertència: regles noves desconegudes activades (versionbit %i)</translation>
     </message>
@@ -4138,18 +3650,14 @@
         <translation>Heu de reconstruir la base de dades mitjançant -reindex per canviar -txindex</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Zapping all transactions from wallet...</source>
         <translation>Se suprimeixen totes les transaccions del moneder...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>ZeroMQ notification options:</source>
         <translation>Opcions de notificació ZeroMQ:</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Password for JSON-RPC connections</source>
         <translation>Contrasenya per a connexions JSON-RPC</translation>
     </message>
@@ -4162,19 +3670,10 @@
         <translation>Permet consultes DNS per a -addnode, -seednode i -connect</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Loading addresses...</source>
-        <translation>S'estan carregant les adreces...</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = manté les metadades de les tx, p. ex., propietari del compte i informació de sol·licitud del pagament, 2 = prescindeix de les metadades de les tx)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation>-maxtxfee especificat molt alt! Comissions tan grans podrien pagar-se en una única transacció.</translation>
     </message>
@@ -4207,7 +3706,6 @@
         <translation>Forçar la retranmissió de les transaccions de nodes de llista blanca encara que infringeixin la política de retransmissió local (per defecte: %d)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
         <translation>Com d'exhaustiva és la verificació de blocs del -checkblocks (0-4, per defecte: %u)</translation>
     </message>
@@ -4224,8 +3722,6 @@
         <translation>Informació de sortida de la depuració (per defecte: %u, proporcionar &lt;category&gt; és opcional)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Sets the serialization of raw transaction or block hex returned in non-verbose mode, non-segwit(0) or segwit(1) (default: %d)</source>
         <translation>Estableix la serialització de transaccions crues o bloc hexadecimal retornat en mode no verbose, no-segwit (0) o segwit(1) (per defecte: %d)</translation>
     </message>
@@ -4262,13 +3758,10 @@
         <translation>S'ha ignorat l'argument no acceptat -whitelistalways, utilitza -whitelistrelay i/o -whitelistforcerelay.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>Utilitza un proxy SOCKS4 apart per a arribar als iguals a través de serveis ocults de Tor (per defecte: %s)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
         <translation>Advertència: s'està minant versions de blocs desconegudes. És possible que s'estiguin aplicant regles desconegudes</translation>
     </message>
@@ -4285,7 +3778,6 @@
         <translation>%s està especificat molt alt!</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>(default: %s)</source>
         <translation>(per defecte: %s)</translation>
     </message>
@@ -4294,8 +3786,6 @@
         <translation>Demana sempre les adreces dels iguals a través de consultes DNS (per defecte: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Error loading wallet %s. -wallet filename must be a regular file.</source>
         <translation>S'ha produït un error en carregar el moneder %s. El nom del fitxer -wallet ha de ser un fitxer normal.</translation>
     </message>
@@ -4308,7 +3798,6 @@
         <translation>S'ha produït un error en carregar el moneder %s. Caràcters no vàlids al nom del fitxer -wallet.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
         <translation>Quants blocs per comprovar a l'inici (per defecte: %u, 0 = tots)</translation>
     </message>
@@ -4317,13 +3806,8 @@
         <translation>Inclou l'adreça IP a la sortida de depuració (per defecte: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Adreça -proxy invalida: '%s'</translation>
-=======
         <source>Keypool ran out, please call keypoolrefill first</source>
         <translation>S'ha acabat el Keypool, si us plau, crideu a keypoolrefill primer</translation>
->>>>>>> upstream/0.16
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -4366,13 +3850,10 @@
         <translation>Defineix la mida clau disponible a &lt;n&gt; (per defecte: %u)</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Set maximum BIP141 block weight (default: %d)</source>
         <translation>Estableix el pes màxim del bloc BIP141 (per defecte: %d)</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Set the number of threads to service RPC calls (default: %d)</source>
         <translation>Defineix el nombre de fils a crides de servei RPC (per defecte: %d)</translation>
     </message>
@@ -4397,8 +3878,6 @@
         <translation>S'estan iniciant els fils de la xarxa...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>El moneder evitarà pagar menys de la comissió de tramesa mínima</translation>
     </message>
@@ -4411,7 +3890,6 @@
         <translation>Aquesta és la comissió de transacció que pagareu si envieu una transacció.</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation>Llindar per a desconnectar els iguals de comportament qüestionable (per defecte: %u)</translation>
     </message>
@@ -4420,13 +3898,10 @@
         <translation>Els imports de la transacció no han de ser negatius</translation>
     </message>
     <message>
-<<<<<<< HEAD
-=======
         <source>Transaction has too long of a mempool chain</source>
         <translation>La transacció té massa temps d'una cadena de mempool</translation>
     </message>
     <message>
->>>>>>> upstream/0.16
         <source>Transaction must have at least one recipient</source>
         <translation>La transacció ha de tenir com a mínim un destinatari</translation>
     </message>
@@ -4443,13 +3918,6 @@
         <translation>S'està carregant l'índex de blocs...</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Afegeix un node per a connectar-s'hi i intenta mantenir-hi la connexió oberta</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>S'està carregant el moneder...</translation>
     </message>
@@ -4458,13 +3926,6 @@
         <translation>No es pot reduir la versió del moneder</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Cannot write default address</source>
-        <translation>No es pot escriure l'adreça per defecte</translation>
-    </message>
-    <message>
-=======
->>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>S'està reescanejant...</translation>
     </message>
