@@ -1,4 +1,4 @@
-TOR SUPPORT IN LITECOIN
+TOR SUPPORT IN ACTINIUM
 ======================
 
 It is possible to run Actinium as a Tor hidden service, and connect to such services.

@@ -79,7 +79,7 @@ implements the test logic.
 
 - `P2PConnection` is the class used to connect to a litecoind.  `P2PInterface`
 contains the higher level logic for processing P2P payloads and connecting to
-the Litecoin Core node application logic. For custom behaviour, subclass the
+the Actinium Core node application logic. For custom behaviour, subclass the
 P2PInterface object and override the callback methods.
 
 - Call `network_thread_start()` after all `P2PInterface` objects are created to

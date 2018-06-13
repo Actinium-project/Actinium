@@ -25,12 +25,12 @@ python27
 
 Download the source code:
 ```
-git clone https://github.com/litecoin-project/litecoin
+git clone https://github.com/Actinium-project/Actinium
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.
 
-### Building Litecoin Core
+### Building Actinium Core
 
 **Important**: Use `gmake` (the non-GNU `make` will exit with an error).
 

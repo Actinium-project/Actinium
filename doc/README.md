@@ -31,7 +31,7 @@ Drag Actinium-Core to your applications folder, and then run Actinium-Core.
 * See the documentation at the [Actinium Wiki](https://Actinium.info/)
 for help and more information.
 * Ask for help on [#Actinium](http://webchat.freenode.net?channels=Actinium) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=Actinium).
-* Ask for help on the [LitecoinTalk](https://litecointalk.io/) forums.
+* Ask for help on the [ActiniumTalk](https://litecointalk.io/) forums.
 
 Building
 ---------------------
@@ -61,7 +61,7 @@ The Actinium repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [LitecoinTalk](https://litecointalk.io/) forums.
+* Discuss on the [ActiniumTalk](https://litecointalk.io/) forums.
 * Discuss general Actinium development on #Actinium-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=Actinium-dev).
 
 ### Miscellaneous

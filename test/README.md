@@ -6,10 +6,10 @@ etc.
 There are currently two sets of tests in this directory:
 
 - [functional](/test/functional) which test the functionality of 
-litecoind and litecoin-qt by interacting with them through the RPC and P2P
+litecoind and Actinium-qt by interacting with them through the RPC and P2P
 interfaces.
-- [util](/test/util) which tests the litecoin utilities, currently only
-litecoin-tx.
+- [util](/test/util) which tests the Actinium utilities, currently only
+Actinium-tx.
 
 The util tests are run as part of `make check` target. The functional
 tests are run by the travis continuous build process whenever a pull

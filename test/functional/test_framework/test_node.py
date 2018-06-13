@@ -52,7 +52,7 @@ class TestNode():
             # Wait for up to 60 seconds for the RPC server to respond
             self.rpc_timeout = 60
         if binary is None:
-            self.binary = os.getenv("LITECOIND", "litecoind")
+            self.binary = os.getenv("ACTINIUMD", "litecoind")
         else:
             self.binary = binary
         self.stderr = stderr
@@ -61,7 +61,7 @@ class TestNode():
         self.extra_args = extra_args
         self.args = [self.binary, "-datadir=" + self.datadir, "-server", "-keypool=1", "-discover=0", "-rest", "-logtimemicros", "-debug", "-debugexclude=libevent", "-debugexclude=leveldb", "-mocktime=" + str(mocktime), "-uacomment=testnode%d" % i]
 
-        self.cli = TestNodeCLI(os.getenv("LITECOINCLI", "litecoin-cli"), self.datadir)
+        self.cli = TestNodeCLI(os.getenv("ACTINIUMCLI", "Actinium-cli"), self.datadir)
         self.use_cli = use_cli
 
         self.running = False
@@ -250,7 +250,7 @@ class TestNodeCLI():
         if command is not None:
             p_args += [command]
         p_args += pos_args + named_args
-        self.log.debug("Running litecoin-cli command: %s" % command)
+        self.log.debug("Running Actinium-cli command: %s" % command)
         process = subprocess.Popen(p_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
         cli_stdout, cli_stderr = process.communicate(input=self.input)
         returncode = process.poll()
