@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 // Copyright (c) 2009-2015 The Bitcoin Core developers
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_TEST_PAYMENTSERVERTESTS_H
 #define BITCOIN_QT_TEST_PAYMENTSERVERTESTS_H
 
+<<<<<<< HEAD
 #include "../paymentserver.h"
+=======
+#include <qt/paymentserver.h>
+>>>>>>> upstream/0.16
 
 #include <QObject>
 #include <QTest>
@@ -26,7 +34,11 @@ class RecipientCatcher : public QObject
     Q_OBJECT
 
 public Q_SLOTS:
+<<<<<<< HEAD
     void getRecipient(SendCoinsRecipient r);
+=======
+    void getRecipient(const SendCoinsRecipient& r);
+>>>>>>> upstream/0.16
 
 public:
     SendCoinsRecipient recipient;

@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -13,6 +14,22 @@
 #endif
 #include "util.h"             // for LogPrint()
 #include "utilstrencodings.h" // for GetTime()
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <random.h>
+
+#include <crypto/sha512.h>
+#include <support/cleanse.h>
+#ifdef WIN32
+#include <compat.h> // for Windows API
+#include <wincrypt.h>
+#endif
+#include <util.h>             // for LogPrint()
+#include <utilstrencodings.h> // for GetTime()
+>>>>>>> upstream/0.16
 
 #include <stdlib.h>
 #include <limits>
@@ -46,10 +63,17 @@
 #include <openssl/err.h>
 #include <openssl/rand.h>
 
+<<<<<<< HEAD
 static void RandFailure()
 {
     LogPrintf("Failed to read randomness, aborting\n");
     abort();
+=======
+[[noreturn]] static void RandFailure()
+{
+    LogPrintf("Failed to read randomness, aborting\n");
+    std::abort();
+>>>>>>> upstream/0.16
 }
 
 static inline int64_t GetPerformanceCounter()
@@ -242,7 +266,11 @@ void GetOSRand(unsigned char *ent32)
     }
 #elif defined(HAVE_GETENTROPY_RAND) && defined(MAC_OSX)
     // We need a fallback for OSX < 10.12
+<<<<<<< HEAD
     if (&getentropy != NULL) {
+=======
+    if (&getentropy != nullptr) {
+>>>>>>> upstream/0.16
         if (getentropy(ent32, NUM_OS_RANDOM_BYTES) != 0) {
             RandFailure();
         }

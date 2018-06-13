@@ -39,8 +39,13 @@ BOOST_AUTO_TEST_CASE(base58_EncodeBase58)
         std::vector<unsigned char> sourcedata = ParseHex(test[0].get_str());
         std::string base58string = test[1].get_str();
         BOOST_CHECK_MESSAGE(
+<<<<<<< HEAD
             EncodeBase58(sourcedata.data(), sourcedata.data() + sourcedata.size()) == base58string,
             strTest);
+=======
+                    EncodeBase58(sourcedata.data(), sourcedata.data() + sourcedata.size()) == base58string,
+                    strTest);
+>>>>>>> upstream/0.16
     }
 }
 
@@ -68,7 +73,11 @@ BOOST_AUTO_TEST_CASE(base58_DecodeBase58)
 
     // check that DecodeBase58 skips whitespace, but still fails with unexpected non-whitespace at the end.
     BOOST_CHECK(!DecodeBase58(" \t\n\v\f\r skip \r\f\v\n\t a", result));
+<<<<<<< HEAD
     BOOST_CHECK(DecodeBase58(" \t\n\v\f\r skip \r\f\v\n\t ", result));
+=======
+    BOOST_CHECK( DecodeBase58(" \t\n\v\f\r skip \r\f\v\n\t ", result));
+>>>>>>> upstream/0.16
     std::vector<unsigned char> expected = ParseHex("971a55");
     BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
 }
@@ -90,14 +99,22 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
         }
         std::string exp_base58string = test[0].get_str();
         std::vector<unsigned char> exp_payload = ParseHex(test[1].get_str());
+<<<<<<< HEAD
         const UniValue& metadata = test[2].get_obj();
+=======
+        const UniValue &metadata = test[2].get_obj();
+>>>>>>> upstream/0.16
         bool isPrivkey = find_value(metadata, "isPrivkey").get_bool();
         SelectParams(find_value(metadata, "chain").get_str());
         bool try_case_flip = find_value(metadata, "tryCaseFlip").isNull() ? false : find_value(metadata, "tryCaseFlip").get_bool();
         if (isPrivkey) {
             bool isCompressed = find_value(metadata, "isCompressed").get_bool();
             // Must be valid private key
+<<<<<<< HEAD
             BOOST_CHECK_MESSAGE(secret.SetString(exp_base58string), "!SetString:" + strTest);
+=======
+            BOOST_CHECK_MESSAGE(secret.SetString(exp_base58string), "!SetString:"+ strTest);
+>>>>>>> upstream/0.16
             BOOST_CHECK_MESSAGE(secret.IsValid(), "!IsValid:" + strTest);
             CKey privkey = secret.GetKey();
             BOOST_CHECK_MESSAGE(privkey.IsCompressed() == isCompressed, "compressed mismatch:" + strTest);
@@ -150,7 +167,11 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
         }
         std::string exp_base58string = test[0].get_str();
         std::vector<unsigned char> exp_payload = ParseHex(test[1].get_str());
+<<<<<<< HEAD
         const UniValue& metadata = test[2].get_obj();
+=======
+        const UniValue &metadata = test[2].get_obj();
+>>>>>>> upstream/0.16
         bool isPrivkey = find_value(metadata, "isPrivkey").get_bool();
         SelectParams(find_value(metadata, "chain").get_str());
         if (isPrivkey) {
@@ -193,7 +214,11 @@ BOOST_AUTO_TEST_CASE(base58_keys_invalid)
         std::string exp_base58string = test[0].get_str();
 
         // must be invalid as public and as private key
+<<<<<<< HEAD
         for (auto chain : {CBaseChainParams::MAIN, CBaseChainParams::TESTNET, CBaseChainParams::REGTEST}) {
+=======
+        for (auto chain : { CBaseChainParams::MAIN, CBaseChainParams::TESTNET, CBaseChainParams::REGTEST }) {
+>>>>>>> upstream/0.16
             SelectParams(chain);
             destination = DecodeDestination(exp_base58string);
             BOOST_CHECK_MESSAGE(!IsValidDestination(destination), "IsValid pubkey in mainnet:" + strTest);

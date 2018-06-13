@@ -6,7 +6,11 @@
 set -e
 
 ROOTDIR=dist
+<<<<<<< HEAD
 BUNDLE="${ROOTDIR}/Actinium-Qt.app"
+=======
+BUNDLE="${ROOTDIR}/Litecoin-Qt.app"
+>>>>>>> upstream/0.16
 CODESIGN=codesign
 TEMPDIR=sign.temp
 TEMPLIST=${TEMPDIR}/signatures.txt
@@ -40,7 +44,11 @@ grep CodeResources < "${TEMPLIST}" | while read i; do
   RESOURCE="${TEMPDIR}/${OUTROOT}/${TARGETFILE}"
   DIRNAME="`dirname "${RESOURCE}"`"
   mkdir -p "${DIRNAME}"
+<<<<<<< HEAD
   echo "Adding resource for: "${TARGETFILE}""
+=======
+  echo "Adding resource for: \"${TARGETFILE}\""
+>>>>>>> upstream/0.16
   cp "${i}" "${RESOURCE}"
 done
 

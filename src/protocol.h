@@ -407,4 +407,7 @@ public:
 };
 
 #endif // BITCOIN_PROTOCOL_H
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

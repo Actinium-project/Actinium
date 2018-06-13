@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2015 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -15,10 +16,27 @@
 // This Benchmark tests the CheckQueue with the lightest
 // weight Checks, so it should make any lock contention
 // particularly visible
+=======
+// Copyright (c) 2015-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <bench/bench.h>
+#include <util.h>
+#include <validation.h>
+#include <checkqueue.h>
+#include <prevector.h>
+#include <vector>
+#include <boost/thread/thread.hpp>
+#include <random.h>
+
+
+>>>>>>> upstream/0.16
 static const int MIN_CORES = 2;
 static const size_t BATCHES = 101;
 static const size_t BATCH_SIZE = 30;
 static const int PREVECTOR_SIZE = 28;
+<<<<<<< HEAD
 static const int QUEUE_BATCH_SIZE = 128;
 static void CCheckQueueSpeed(benchmark::State& state)
 {
@@ -57,6 +75,9 @@ static void CCheckQueueSpeed(benchmark::State& state)
     tg.interrupt_all();
     tg.join_all();
 }
+=======
+static const unsigned int QUEUE_BATCH_SIZE = 128;
+>>>>>>> upstream/0.16
 
 // This Benchmark tests the CheckQueue with a slightly realistic workload,
 // where checks all contain a prevector that is indirect 50% of the time
@@ -67,7 +88,11 @@ static void CCheckQueueSpeedPrevectorJob(benchmark::State& state)
         prevector<PREVECTOR_SIZE, uint8_t> p;
         PrevectorJob(){
         }
+<<<<<<< HEAD
         PrevectorJob(FastRandomContext& insecure_rand){
+=======
+        explicit PrevectorJob(FastRandomContext& insecure_rand){
+>>>>>>> upstream/0.16
             p.resize(insecure_rand.randrange(PREVECTOR_SIZE*2));
         }
         bool operator()()
@@ -99,5 +124,9 @@ static void CCheckQueueSpeedPrevectorJob(benchmark::State& state)
     tg.interrupt_all();
     tg.join_all();
 }
+<<<<<<< HEAD
 BENCHMARK(CCheckQueueSpeed);
 BENCHMARK(CCheckQueueSpeedPrevectorJob);
+=======
+BENCHMARK(CCheckQueueSpeedPrevectorJob, 1400);
+>>>>>>> upstream/0.16

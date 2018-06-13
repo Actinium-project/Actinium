@@ -62,11 +62,19 @@
         <translation>Ricevaj adresoj</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Jen viaj Actinium-adresoj por sendi pagojn. Zorge kontrolu la sumon kaj la alsendan adreson antaŭ ol sendi.</translation>
     </message>
     <message>
         <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Jen viaj Litecoin-adresoj por sendi pagojn. Zorge kontrolu la sumon kaj la alsendan adreson antaŭ ol sendi.</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+>>>>>>> upstream/0.16
         <translation>Jen viaj litecoinj adresoj por ricevi pagojn. Estas konsilinde uzi apartan ricevan adreson por ĉiu transakcio.</translation>
     </message>
     <message>
@@ -131,6 +139,65 @@
         <source>Repeat new passphrase</source>
         <translation>Ripetu la novan pasfrazon</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Enigu novan pasfrazon por la monujo.&lt;br/&gt;Bonvolu uzi pasfrazon kun &lt;b&gt;almenaŭ 10 hazardaj signoj&lt;/b&gt;, aŭ &lt;b&gt;almenaŭ ok aŭ pli vortoj&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source>Encrypt wallet</source>
+        <translation>Ĉifri la monujon</translation>
+    </message>
+    <message>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <translation>Ĉi tiu operacio bezonas vian monujan pasfrazon, por malŝlosi la monujon.</translation>
+    </message>
+    <message>
+        <source>Unlock wallet</source>
+        <translation>Malŝlosi la monujon</translation>
+    </message>
+    <message>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <translation>Ĉi tiu operacio bezonas vian monujan pasfrazon, por malĉifri la monujon.</translation>
+    </message>
+    <message>
+        <source>Decrypt wallet</source>
+        <translation>Malĉifri la monujon</translation>
+    </message>
+    <message>
+        <source>Change passphrase</source>
+        <translation>Ŝanĝi la pasfrazon</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Tajpu la malnovan pasvorton kaj la novan pasvorton por la monujo.</translation>
+    </message>
+    <message>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <translation>Atentu! Se vi ĉifras vian monujon kaj perdas la pasfrazon, vi &lt;b&gt;PERDOS LA TUTON DE VIA BITMONO&lt;b&gt;!</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to encrypt your wallet?</source>
+        <translation>Ĉu vi certas, ke vi volas ĉifri la monujon?</translation>
+    </message>
+    <message>
+        <source>Wallet encrypted</source>
+        <translation>La monujo estas ĉifrita</translation>
+    </message>
+    <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 nun fermiĝos por fini la ĉifradon. Memoru, ke eĉ ĉifrado ne protektas kontraŭ ĉiu atako, ekz. se viruso infektus vian komputilon.</translation>
+    </message>
+    <message>
+        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+        <translation>GRAVE: antaŭaj sekur-kopioj de via monujo-dosiero estas forigindaj kiam vi havas nove kreitan ĉifritan monujo-dosieron. Pro sekureco, antaŭaj kopioj de la neĉifrita dosiero ne plu funkcios tuj kiam vi ekuzos la novan ĉifritan dosieron.</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed</source>
+        <translation>Ĉifrado de la monujo fiaskis</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>BanTableModel</name>
@@ -214,8 +281,13 @@
         <translation>Reindeksado de blokoj sur disko...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>Sendi monon al Actinium-adreso</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>Sendi monon al Litecoin-adreso</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -238,8 +310,13 @@
         <translation>&amp;Kontroli mesaĝon...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -266,12 +343,21 @@
         <translation>Ĉifri la privatajn ŝlosilojn de via monujo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Actinium addresses to prove you own them</source>
         <translation>Subskribi mesaĝojn per via Actinium-adresoj por pravigi, ke vi estas la posedanto</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
         <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Actinium-adresoj</translation>
+=======
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>Subskribi mesaĝojn per via Litecoin-adresoj por pravigi, ke vi estas la posedanto</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Litecoin-adresoj</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -290,8 +376,13 @@
         <translation>Langeto-breto</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
         <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso Actinium:)</translation>
+=======
+        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso litecoin:)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -302,8 +393,13 @@
         <translation>Vidigi la liston de uzitaj ricevaj adresoj kaj etikedoj</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Open a Actinium: URI or payment request</source>
         <translation>Malfermi Actinium:-URI-on aŭ pagpeton</translation>
+=======
+        <source>Open a litecoin: URI or payment request</source>
+        <translation>Malfermi litecoin:-URI-on aŭ pagpeton</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -543,6 +639,13 @@
         <translation>Uzi alian dosierujon por datumoj:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Eraro</translation>
     </message>
@@ -600,6 +703,7 @@
         <translation>MB</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Accept connections from outside</source>
         <translation>Akcepti konektojn el ekstere</translation>
     </message>
@@ -608,6 +712,8 @@
         <translation>Permesi envenantajn konektojn</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>Reagordi ĉion al defaŭlataj valoroj.</translation>
     </message>
@@ -628,8 +734,13 @@
         <translation>Fakulo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Aŭtomate malfermi la kursilan pordon por Litecoino. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
+=======
+        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aŭtomate malfermi la kursilan pordon por Litecoin. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -712,6 +823,13 @@
         <translation>Konfirmi reŝargo de agordoj</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error</source>
+        <translation>Eraro</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>The supplied proxy address is invalid.</source>
         <translation>La prokurila adreso estas malvalida.</translation>
     </message>
@@ -723,8 +841,13 @@
         <translation>Formularo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
         <translation>Eblas, ke la informoj videblaj ĉi tie estas eksdataj. Via monujo aŭtomate sinkoniĝas kun la Actinium reto kiam ili konektiĝas, sed tiu procezo ankoraŭ ne finfariĝis.</translation>
+=======
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Eblas, ke la informoj videblaj ĉi tie estas eksdataj. Via monujo aŭtomate sinkoniĝas kun la litecoin reto kiam ili konektiĝas, sed tiu procezo ankoraŭ ne finfariĝis.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -772,7 +895,19 @@
         <source>User Agent</source>
         <translation>Uzanto Agento</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Sent</source>
+        <translation>Sendita</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Ricevita</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -799,12 +934,43 @@
         <source>%1 and %2</source>
         <translation>%1 kaj %2</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>nekonata</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
 <context>
     <name>QRImageWidget</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>&amp;Save Image...</source>
+        <translation>&amp;Konservi Bildon...</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>RPCConsole</name>
@@ -897,10 +1063,13 @@
         <translation>&amp;Reta Trafiko</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Clear</source>
         <translation>&amp;Forigi ĉion</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Totaloj</translation>
     </message>
@@ -920,6 +1089,7 @@
         <source>Clear console</source>
         <translation>Malplenigi konzolon</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>Uzu la sagojn supran kaj malsupran por esplori la historion, kaj &lt;b&gt;stir-L&lt;/b&gt; por malplenigi la ekranon.</translation>
@@ -944,6 +1114,8 @@
         <source>%1 GB</source>
         <translation>%1 GB</translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -960,6 +1132,7 @@
         <translation>&amp;Mesaĝo:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
         <translation>Reuzi unu el la jam uzitaj ricevaj adresoj. Reuzo de adresoj povas krei problemojn pri sekureco kaj privateco. Ne uzu tiun ĉi funkcion krom por rekrei antaŭe faritan pagopeton.</translation>
     </message>
@@ -968,6 +1141,8 @@
         <translation>R&amp;euzi ekzistantan ricevan adreson (malrekomendinda)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Clear all fields of the form.</source>
         <translation>Malplenigi ĉiujn kampojn de la formularo.</translation>
     </message>
@@ -987,7 +1162,23 @@
         <source>Remove</source>
         <translation>Forigi</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Copy label</source>
+        <translation>Kopii etikedon</translation>
+    </message>
+    <message>
+        <source>Copy message</source>
+        <translation>Kopiu mesaĝon</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopii sumon</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
@@ -1007,10 +1198,26 @@
         <translation>&amp;Konservi Bildon...</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Request payment to %1</source>
+        <translation>Peti pagon al %1</translation>
+    </message>
+    <message>
+        <source>Payment information</source>
+        <translation>Paginformoj</translation>
+    </message>
+    <message>
+        <source>URI</source>
+        <translation>URI</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Address</source>
         <translation>Adreso</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Label</source>
         <translation>Etikedo</translation>
     </message>
@@ -1018,13 +1225,56 @@
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
+=======
+        <source>Amount</source>
+        <translation>Sumo</translation>
+    </message>
+    <message>
         <source>Label</source>
         <translation>Etikedo</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Mesaĝo</translation>
+    </message>
+    <message>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>La rezultanta URI estas tro longa. Provu malplilongigi la tekston de la etikedo / mesaĝo.</translation>
+    </message>
+    <message>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Eraro de kodigo de URI en la QR-kodon.</translation>
+    </message>
+</context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Date</source>
+        <translation>Dato</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
+        <source>Label</source>
+        <translation>Etikedo</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
+        <source>(no label)</source>
+        <translation>(neniu etikedo)</translation>
+    </message>
+=======
+        <source>Message</source>
+        <translation>Mesaĝo</translation>
     </message>
     <message>
         <source>(no label)</source>
         <translation>(neniu etikedo)</translation>
     </message>
+    <message>
+        <source>(no message)</source>
+        <translation>(neniu mesaĝo)</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>SendCoinsDialog</name>
@@ -1105,6 +1355,81 @@
         <translation>Ŝendi</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Copy quantity</source>
+        <translation>Kopii kvanton</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopii sumon</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Kopii krompagon</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Kopii post krompago</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Kopii bajtojn</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>Kopii polvon</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Kopii restmonon</translation>
+    </message>
+    <message>
+        <source>%1 to %2</source>
+        <translation>%1 al %2</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to send?</source>
+        <translation>Ĉu vi certas, ke vi volas sendi?</translation>
+    </message>
+    <message>
+        <source>added as transaction fee</source>
+        <translation>aldonita kiel krompago</translation>
+    </message>
+    <message>
+        <source>Total Amount %1</source>
+        <translation>Totala sumo %1</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>aŭ</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Konfirmi sendon de bitmono</translation>
+    </message>
+    <message>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>La pagenda sumo devas esti pli ol 0.</translation>
+    </message>
+    <message>
+        <source>The amount exceeds your balance.</source>
+        <translation>La sumo estas pli granda ol via saldo.</translation>
+    </message>
+    <message>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>La sumo kun la %1 krompago estas pli granda ol via saldo.</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!</source>
+        <translation>Kreo de transakcio fiaskis!</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid Litecoin address</source>
+        <translation>Averto: Nevalida Litecoin-adreso</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(neniu etikedo)</translation>
     </message>
@@ -1163,7 +1488,15 @@
         <source>Memo:</source>
         <translation>Memorando:</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Tajpu etikedon por tiu ĉi adreso kaj aldonu ĝin al via adresaro</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>SendConfirmationDialog</name>
     </context>
@@ -1213,8 +1546,13 @@
         <translation>Kopii la aktualan subskribon al la tondejo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign the message to prove you own this Actinium address</source>
         <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Actinium-adreso</translation>
+=======
+        <source>Sign the message to prove you own this Litecoin address</source>
+        <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Litecoin-adreso</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1233,8 +1571,13 @@
         <translation>&amp;Kontroli Mesaĝon</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verify the message to ensure it was signed with the specified Actinium address</source>
         <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Actinium-adreso</translation>
+=======
+        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
+        <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Litecoin-adreso</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1244,7 +1587,63 @@
         <source>Reset all verify message fields</source>
         <translation>Reagordigi ĉiujn prikontrolajn kampojn</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Klaku "Subskribi Mesaĝon" por krei subskribon</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>La adreso, kiun vi enmetis, estas nevalida.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Bonvolu kontroli la adreson kaj reprovi.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>La adreso, kiun vi enmetis, referencas neniun ŝlosilon.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Malŝloso de monujo estas nuligita.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>La privata ŝlosilo por la enigita adreso ne disponeblas.</translation>
+    </message>
+    <message>
+        <source>Message signing failed.</source>
+        <translation>Subskribo de mesaĝo fiaskis.</translation>
+    </message>
+    <message>
+        <source>Message signed.</source>
+        <translation>Mesaĝo estas subskribita.</translation>
+    </message>
+    <message>
+        <source>The signature could not be decoded.</source>
+        <translation>Ne eblis malĉifri la subskribon.</translation>
+    </message>
+    <message>
+        <source>Please check the signature and try again.</source>
+        <translation>Bonvolu kontroli la subskribon kaj reprovu.</translation>
+    </message>
+    <message>
+        <source>The signature did not match the message digest.</source>
+        <translation>La subskribo ne kongruis kun la mesaĝ-kompilaĵo.</translation>
+    </message>
+    <message>
+        <source>Message verification failed.</source>
+        <translation>Kontrolo de mesaĝo malsukcesis.</translation>
+    </message>
+    <message>
+        <source>Message verified.</source>
+        <translation>Mesaĝo sukcese kontrolita.</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>SplashScreen</name>
     <message>
@@ -1261,7 +1660,131 @@
 </context>
 <context>
     <name>TransactionDesc</name>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Open until %1</source>
+        <translation>Malferma ĝis %1</translation>
+    </message>
+    <message>
+        <source>%1/offline</source>
+        <translation>%1/senkonekte</translation>
+    </message>
+    <message>
+        <source>%1/unconfirmed</source>
+        <translation>%1/nekonfirmite</translation>
+    </message>
+    <message>
+        <source>%1 confirmations</source>
+        <translation>%1 konfirmoj</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stato</translation>
+    </message>
+    <message>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, ankoraŭ ne elsendita sukcese</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Dato</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>Fonto</translation>
+    </message>
+    <message>
+        <source>Generated</source>
+        <translation>Kreita</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>De</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>nekonata</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>Al</translation>
+    </message>
+    <message>
+        <source>own address</source>
+        <translation>propra adreso</translation>
+    </message>
+    <message>
+        <source>label</source>
+        <translation>etikedo</translation>
+    </message>
+    <message>
+        <source>Credit</source>
+        <translation>Kredito</translation>
+    </message>
+    <message>
+        <source>not accepted</source>
+        <translation>ne akceptita</translation>
+    </message>
+    <message>
+        <source>Debit</source>
+        <translation>Debeto</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Krompago</translation>
+    </message>
+    <message>
+        <source>Net amount</source>
+        <translation>Neta sumo</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Mesaĝo</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>Komento</translation>
+    </message>
+    <message>
+        <source>Transaction ID</source>
+        <translation>Transakcia ID</translation>
+    </message>
+    <message>
+        <source>Merchant</source>
+        <translation>Vendisto</translation>
+    </message>
+    <message>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Kreitaj moneroj devas esti maturaj je %1 blokoj antaŭ ol eblas elspezi ilin. Kiam vi generis tiun ĉi blokon, ĝi estis elsendita al la reto por aldono al la blokĉeno. Se tiu aldono malsukcesas, ĝia stato ŝanĝiĝos al "neakceptita" kaj ne eblos elspezi ĝin. Tio estas malofta, sed povas okazi se alia bloko estas kreita je preskaŭ la sama momento kiel la via.</translation>
+    </message>
+    <message>
+        <source>Debug information</source>
+        <translation>Sencimigaj informoj</translation>
+    </message>
+    <message>
+        <source>Transaction</source>
+        <translation>Transakcio</translation>
+    </message>
+    <message>
+        <source>Inputs</source>
+        <translation>Enigoj</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Sumo</translation>
+    </message>
+    <message>
+        <source>true</source>
+        <translation>vera</translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation>malvera</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>TransactionDescDialog</name>
     <message>
@@ -1272,10 +1795,22 @@
 <context>
     <name>TransactionTableModel</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Date</source>
+        <translation>Dato</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Etikedo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>(no label)</source>
         <translation>(neniu etikedo)</translation>
     </message>
@@ -1283,10 +1818,174 @@
 <context>
     <name>TransactionView</name>
     <message>
+=======
+        <source>Open until %1</source>
+        <translation>Malferma ĝis %1</translation>
+    </message>
+    <message>
+        <source>Offline</source>
+        <translation>Senkonekte</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>Nekonfirmita</translation>
+    </message>
+    <message>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Konfirmita (%1 konfirmoj)</translation>
+    </message>
+    <message>
+        <source>This block was not received by any other nodes and will probably not be accepted!</source>
+        <translation>Tiun ĉi blokon ne ricevis ajna alia nodo, kaj ĝi verŝajne ne akceptiĝos!</translation>
+    </message>
+    <message>
+        <source>Generated but not accepted</source>
+        <translation>Kreita sed ne akceptita</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Ricevita kun</translation>
+    </message>
+    <message>
+        <source>Received from</source>
+        <translation>Ricevita de</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Sendita al</translation>
+    </message>
+    <message>
+        <source>Payment to yourself</source>
+        <translation>Pago al vi mem</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Minita</translation>
+    </message>
+    <message>
+        <source>(n/a)</source>
+        <translation>neaplikebla</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(neniu etikedo)</translation>
+    </message>
+    <message>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>Transakcia stato. Ŝvebi super tiu ĉi kampo por montri la nombron de konfirmoj.</translation>
+    </message>
+    <message>
+        <source>Date and time that the transaction was received.</source>
+        <translation>Dato kaj horo kiam la transakcio alvenis.</translation>
+    </message>
+    <message>
+        <source>Type of transaction.</source>
+        <translation>Tipo de transakcio.</translation>
+    </message>
+    <message>
+        <source>Amount removed from or added to balance.</source>
+        <translation>Sumo elprenita de aŭ aldonita al la saldo.</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>All</source>
+        <translation>Ĉiuj</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hodiaŭ</translation>
+    </message>
+    <message>
+        <source>This week</source>
+        <translation>Ĉi-semajne</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Ĉi-monate</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Pasintmonate</translation>
+    </message>
+    <message>
+        <source>This year</source>
+        <translation>Ĉi-jare</translation>
+    </message>
+    <message>
+        <source>Range...</source>
+        <translation>Intervalo...</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Ricevita kun</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Sendita al</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>Al vi mem</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Minita</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Aliaj</translation>
+    </message>
+    <message>
+        <source>Min amount</source>
+        <translation>Minimuma sumo</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopii adreson</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Kopii etikedon</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopii sumon</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Kopii transakcian ID-on</translation>
+    </message>
+    <message>
+        <source>Edit label</source>
+        <translation>Redakti etikedon</translation>
+    </message>
+    <message>
+        <source>Show transaction details</source>
+        <translation>Montri detalojn de transakcio</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Comma separated file (*.csv)</source>
         <translation>Perkome disigita dosiero (*.csv)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Confirmed</source>
+        <translation>Konfirmita</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Dato</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Etikedo</translation>
     </message>
@@ -1295,10 +1994,29 @@
         <translation>Adreso</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Exporting Failed</source>
         <translation>ekspotado malsukcesinta</translation>
     </message>
     </context>
+=======
+        <source>ID</source>
+        <translation>ID</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>ekspotado malsukcesinta</translation>
+    </message>
+    <message>
+        <source>Range:</source>
+        <translation>Intervalo:</translation>
+    </message>
+    <message>
+        <source>to</source>
+        <translation>al</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>UnitDisplayStatusBarControl</name>
     </context>
@@ -1307,9 +2025,43 @@
     </context>
 <context>
     <name>WalletModel</name>
+<<<<<<< HEAD
     </context>
 <context>
     <name>WalletView</name>
+=======
+    <message>
+        <source>Send Coins</source>
+        <translation>Sendi Litecoinn</translation>
+    </message>
+    </context>
+<context>
+    <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;Eksporti</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Eksporti la datumojn el la aktuala langeto al dosiero</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Krei sekurkopion de monujo</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Monuj-datumoj (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup Failed</source>
+        <translation>Malsukcesis sekurkopio</translation>
+    </message>
+    <message>
+        <source>Backup Successful</source>
+        <translation>Sukcesis krei sekurkopion</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>
@@ -1338,8 +2090,13 @@
         <translation>Ruli fone kiel demono kaj akcepti komandojn</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Kerno de Litecoino</translation>
+=======
+        <source>Litecoin Core</source>
+        <translation>Kerno de Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -1350,10 +2107,32 @@
         <translation>Plenumi komandon kiam monuja transakcio ŝanĝiĝas (%s en cmd anstataŭiĝas per TxID)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation>Tiu ĉi estas antaŭeldona testa versio - uzu laŭ via propra risko - ne uzu por minado aŭ por aplikaĵoj por vendistoj</translation>
+    </message>
+    <message>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>Averto: La reto ne tute konsentas! Kelkaj minantoj ŝajne spertas problemojn aktuale.</translation>
+    </message>
+    <message>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>Averto: ŝajne ni ne tute konsentas kun niaj samtavolanoj! Eble vi devas ĝisdatigi vian klienton, aŭ eble aliaj nodoj faru same.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; povas esti:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>Akcepti konektojn el ekstere (defaŭlte: 1 se ne estas -proxy nek -connect)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Block creation options:</source>
         <translation>Blok-kreaj agordaĵoj:</translation>
     </message>
@@ -1394,10 +2173,13 @@
         <translation>Geneza bloko aŭ netrovita aŭ neĝusta. Ĉu eble la datadir de la reto malĝustas?</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -onion address: '%s'</source>
         <translation>Nevalida -onion-adreso: '%s'</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Not enough file descriptors available.</source>
         <translation>Nesufiĉa nombro de dosierpriskribiloj disponeblas.</translation>
     </message>
@@ -1410,6 +2192,7 @@
         <translation>Kontrolado de blokoj...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verifying wallet...</source>
         <translation>Kontrolado de monujo...</translation>
     </message>
@@ -1418,6 +2201,8 @@
         <translation>Monujo %s troviĝas ekster la dosierujo por datumoj %s</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Wallet options:</source>
         <translation>Monujaj opcioj:</translation>
     </message>
@@ -1462,6 +2247,13 @@
         <translation>Averto</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Vi devas rekontrui la datumbazon kun -reindex por ŝanĝi -txindex</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Password for JSON-RPC connections</source>
         <translation>Pasvorto por konektoj JSON-RPC</translation>
     </message>
@@ -1474,6 +2266,7 @@
         <translation>Permesi DNS-elserĉojn por -addnote, -seednote kaj -connect</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>Ŝarĝante adresojn...</translation>
     </message>
@@ -1482,6 +2275,8 @@
         <translation>Nevalid adreso -proxy: '%s'</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Nekonata reto specifita en -onlynet: '%s'</translation>
     </message>
@@ -1494,10 +2289,13 @@
         <translation>Ŝarĝante blok-indekson...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Aldoni nodon por alkonekti kaj provi daŭrigi la malferman konekton</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Ŝargado de monujo...</translation>
     </message>
@@ -1506,10 +2304,13 @@
         <translation>Ne eblas malpromocii monujon</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot write default address</source>
         <translation>Ne eblas skribi defaŭltan adreson</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Reskanado...</translation>
     </message>

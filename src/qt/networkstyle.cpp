@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2014-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -5,6 +6,15 @@
 #include "networkstyle.h"
 
 #include "guiconstants.h"
+=======
+// Copyright (c) 2014-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <qt/networkstyle.h>
+
+#include <qt/guiconstants.h>
+>>>>>>> upstream/0.16
 
 #include <QApplication>
 
@@ -49,7 +59,11 @@ NetworkStyle::NetworkStyle(const QString &_appName, const int iconColorHueShift,
             // loop through pixels
             for(int x=0;x<img.width();x++)
             {
+<<<<<<< HEAD
                 // preserve alpha because QColor::getHsl doesen't return the alpha value
+=======
+                // preserve alpha because QColor::getHsl doesn't return the alpha value
+>>>>>>> upstream/0.16
                 a = qAlpha(scL[x]);
                 QColor col(scL[x]);
 

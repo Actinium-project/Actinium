@@ -62,10 +62,21 @@
         <translation>آدرس های گیرنده</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>اینها آدرس های شما برای فرستادن پرداخت هاست. همیشه قبل از فرستادن سکه ها مقدار و آدرس دریافت کننده را چک کنید.</translation>
     </message>
     <message>
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>اینها آدرس های شما برای فرستادن پرداخت هاست. همیشه قبل از فرستادن سکه ها مقدار و آدرس دریافت کننده را چک کنید.</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>این ها آدرس های litecoin شما برای دریافت پرداخت ها می باشد. توصیه میشود برای هر تراکنش از یک آدرس دریافت جدید استفاده کنید.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;Copy Address</source>
         <translation>کپی کردن آدرس</translation>
     </message>
@@ -82,6 +93,13 @@
         <translation>صدور لیست آدرس ها</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Comma separated file (*.csv)</source>
+        <translation>فایل جدا شده با ویرگول(*.csv)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Exporting Failed</source>
         <translation>صدور موفق نبود</translation>
     </message>
@@ -298,8 +316,13 @@
         <translation>بازنشانی بلوک‌ها روی دیسک...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>ارسال وجه به نشانی Actinium</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>ارسال وجه به نشانی Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -322,8 +345,13 @@
         <translation>با&amp;زبینی پیام...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -350,12 +378,21 @@
         <translation>رمزنگاری کلیدهای خصوصی متعلق به کیف پول شما</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Actinium addresses to prove you own them</source>
         <translation>برای اثبات اینکه پیام‌ها به شما تعلق دارند، آن‌ها را با نشانی Actinium خود امضا کنید</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
         <translation>برای حصول اطمینان از اینکه پیام با نشانی Actinium مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+=======
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>برای اثبات اینکه پیام‌ها به شما تعلق دارند، آن‌ها را با نشانی Litecoin خود امضا کنید</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <translation>برای حصول اطمینان از اینکه پیام با نشانی Litecoin مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -374,8 +411,13 @@
         <translation>نوارابزار برگه‌ها</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
         <translation>درخواست پرداخت ( تولید کد کیوار و ادرس Actinium)</translation>
+=======
+        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <translation>درخواست پرداخت ( تولید کد کیوار و ادرس litecoin)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -386,16 +428,26 @@
         <translation>نمایش لیست آدرس های دریافت و لیبل ها</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Open a Actinium: URI or payment request</source>
         <translation>بازکردن یک Actinium: آدرس یا درخواست پرداخت</translation>
+=======
+        <source>Open a litecoin: URI or payment request</source>
+        <translation>بازکردن یک litecoin: آدرس یا درخواست پرداخت</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>گزینه‌های خط‌فرمان</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <source>%n active connection(s) to Actinium network</source>
         <translation><numerusform>%n ارتباط فعال با شبکهٔ Actinium</numerusform></translation>
+=======
+        <source>%n active connection(s) to Litecoin network</source>
+        <translation><numerusform>%n ارتباط فعال با شبکهٔ Litecoin</numerusform></translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Processing blocks on disk...</source>
@@ -642,8 +694,13 @@
         <translation>ویرایش آدرس قرستنده</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The entered address "%1" is not a valid Actinium address.</source>
         <translation>نشانی وارد شده "%1" یک نشانی معتبر Actinium نیست.</translation>
+=======
+        <source>The entered address "%1" is not a valid Litecoin address.</source>
+        <translation>نشانی وارد شده "%1" یک نشانی معتبر Litecoin نیست.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -743,6 +800,13 @@
         <translation>استفاده از یک مسیر سفارشی:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>خطا</translation>
     </message>
@@ -824,6 +888,7 @@
         <translation>مگابایت</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Accept connections from outside</source>
         <translation>پذیرش اتصالات از بیرون</translation>
     </message>
@@ -832,6 +897,8 @@
         <translation>اجازه دادن به اتصالات دریافتی</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>بازنشانی تمام تنظیمات به پیش‌فرض.</translation>
     </message>
@@ -852,8 +919,13 @@
         <translation>استخراج</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>باز کردن خودکار درگاه شبکهٔ Actinium روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
+=======
+        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>باز کردن خودکار درگاه شبکهٔ Litecoin روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -936,6 +1008,13 @@
         <translation>تأییدِ بازنشانی گزینه‌ها</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error</source>
+        <translation>خطا</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>برای این تغییرات بازنشانی مشتری ضروری است</translation>
     </message>
@@ -951,8 +1030,13 @@
         <translation>فرم</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
         <translation>اطلاعات نمایش‌داده شده ممکن است قدیمی باشند. بعد از این که یک اتصال با شبکه برقرار شد، کیف پول شما به‌صورت خودکار با شبکهٔ Actinium همگام‌سازی می‌شود. اما این روند هنوز کامل نشده است.</translation>
+=======
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>اطلاعات نمایش‌داده شده ممکن است قدیمی باشند. بعد از این که یک اتصال با شبکه برقرار شد، کیف پول شما به‌صورت خودکار با شبکهٔ Litecoin همگام‌سازی می‌شود. اما این روند هنوز کامل نشده است.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Available:</source>
@@ -1008,7 +1092,19 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Sent</source>
+        <translation>ارسال شده</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>دریافتی</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -1016,8 +1112,13 @@
         <translation>مبلغ</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter a Actinium address (e.g. %1)</source>
         <translation>یک آدرس Actinium وارد کنید (مثلاً %1)</translation>
+=======
+        <source>Enter a Litecoin address (e.g. %1)</source>
+        <translation>یک آدرس Litecoin وارد کنید (مثلاً %1)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 d</source>
@@ -1051,7 +1152,31 @@
         <source>%1 and %2</source>
         <translation>%1 و %2</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>%1 B</source>
+        <translation>%1 بایت</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 کیلوبایت</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 مگابایت</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 گیگابایت</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>ناشناس</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -1201,6 +1326,7 @@
         <translation>محدود شده برای</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>دکمه‌های بالا و پایین برای پیمایش تاریخچه و &lt;b&gt;Ctrl-L&lt;/b&gt; برای پاک کردن صفحه.</translation>
     </message>
@@ -1225,6 +1351,8 @@
         <translation>%1 گیگابایت</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>never</source>
         <translation>هرگز</translation>
     </message>
@@ -1381,10 +1509,13 @@
         <translation>پنهان کردن</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>total at least</source>
         <translation>در مجموع حداقل</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Recommended:</source>
         <translation>توصیه شده:</translation>
     </message>
@@ -1393,6 +1524,7 @@
         <translation>سفارشی:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>normal</source>
         <translation>نرمال</translation>
     </message>
@@ -1401,6 +1533,8 @@
         <translation>سریع</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>ارسال به چند دریافت‌کنندهٔ به‌طور همزمان</translation>
     </message>
@@ -1476,8 +1610,13 @@
         <translation>این یک پرداخت عادی است</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address to send the payment to</source>
         <translation>نشانی Actinium برای ارسال پرداخت به آن</translation>
+=======
+        <source>The Litecoin address to send the payment to</source>
+        <translation>نشانی Litecoin برای ارسال پرداخت به آن</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Alt+A</source>
@@ -1529,8 +1668,13 @@
         <translation>ا&amp;مضای پیام</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address to sign the message with</source>
         <translation>نشانی Actinium برای امضاء پیغام با آن</translation>
+=======
+        <source>The Litecoin address to sign the message with</source>
+        <translation>نشانی Litecoin برای امضاء پیغام با آن</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1561,7 +1705,11 @@
         <translation>امضای فعلی را به حافظهٔ سیستم کپی کن</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign the message to prove you own this Actinium address</source>
+=======
+        <source>Sign the message to prove you own this Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>برای اثبات تعلق این نشانی به شما، پیام را امضا کنید</translation>
     </message>
     <message>
@@ -1581,12 +1729,21 @@
         <translation>&amp;شناسایی پیام</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address the message was signed with</source>
         <translation>نشانی Actinium که پیغام با آن امضاء شده</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Actinium address</source>
         <translation>برای حصول اطمینان از اینکه پیام با نشانی Actinium مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+=======
+        <source>The Litecoin address the message was signed with</source>
+        <translation>نشانی Litecoin که پیغام با آن امضاء شده</translation>
+    </message>
+    <message>
+        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
+        <translation>برای حصول اطمینان از اینکه پیام با نشانی Litecoin مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1651,6 +1808,13 @@
         <translation>کپی شناسهٔ تراکنش</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Comma separated file (*.csv)</source>
+        <translation>فایل جدا شده با ویرگول(*.csv)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Label</source>
         <translation>برچسب</translation>
     </message>
@@ -1702,8 +1866,13 @@
         <translation>اجرا در پشت زمینه به‌صورت یک سرویس و پذیرش دستورات</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation> هسته Actinium </translation>
+=======
+        <source>Litecoin Core</source>
+        <translation> هسته Litecoin </translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -1714,6 +1883,13 @@
         <translation>هنگامی که یک تراکنش در کیف پولی رخ می دهد، دستور را اجرا کن(%s در دستورات بوسیله ی TxID جایگزین می شود)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>پذیرش اتصالات از بیرون (پیش فرض:1 بدون پراکسی یا اتصال)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Block creation options:</source>
         <translation>بستن گزینه ایجاد</translation>
     </message>
@@ -1778,10 +1954,13 @@
         <translation>در حال بازبینی بلوک‌ها...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verifying wallet...</source>
         <translation>در حال بازبینی کیف پول...</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Wallet options:</source>
         <translation>گزینه‌های کیف پول:</translation>
     </message>
@@ -1834,18 +2013,24 @@
         <translation>به DNS اجازه بده تا برای addnode ، seednode و اتصال جستجو کند</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>بار گیری آدرس ها</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>(default: %s)</source>
         <translation>(پیش‌فرض %s)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -proxy address: '%s'</source>
         <translation>آدرس پراکسی اشتباه %s</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>شبکه مشخص شده غیرقابل شناسایی در onlynet: '%s'</translation>
     </message>
@@ -1858,10 +2043,13 @@
         <translation>بار گیری شاخص بلوک</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>به اتصال یک گره اضافه کنید و اتصال را باز نگاه دارید</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>بار گیری والت</translation>
     </message>
@@ -1870,10 +2058,13 @@
         <translation>امکان تنزل نسخه در wallet وجود ندارد</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot write default address</source>
         <translation>آدرس پیش فرض قابل ذخیره نیست</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>اسکان مجدد</translation>
     </message>

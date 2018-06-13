@@ -3,7 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
+<<<<<<< HEAD
         <translation>קליק ימני כדי לערוך כתובת או תווית</translation>
+=======
+        <translation>קליל ימני כדי לערוך כתובת או תווית</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Create a new address</source>
@@ -11,7 +15,11 @@
     </message>
     <message>
         <source>&amp;New</source>
+<<<<<<< HEAD
         <translation>חדש</translation>
+=======
+        <translation>וחדש</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -19,11 +27,19 @@
     </message>
     <message>
         <source>&amp;Copy</source>
+<<<<<<< HEAD
         <translation>העתק</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
         <translation>סגור</translation>
+=======
+        <translation>והעתק</translation>
+    </message>
+    <message>
+        <source>C&amp;lose</source>
+        <translation>וסגור</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -62,12 +78,21 @@
         <translation>מקבל כתובות</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>אלו הן כתובות לייטקוין שלך לשליחת תשלומים. תמיד בדוק את כתובת הארנק המקבל לפני שליחת מטבעות</translation>
     </message>
     <message>
         <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>אלו הן כתובות לייטקוין שלך לקבלת תשלומים. מומלץ להשתמש בכתובת חדשה בכל העברת מטבעות</translation>
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>אלו הן כתובות הלייטקוין שלך לשליחת תשלומים. תמיד בדוק את כתובת הארנק המקבל לפני שליחת מטבעות</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>אלו הן כתובות הלייטקוין שלך לקבלת תשלומים. מומלץ להשתמש בכתובת חדשה בכל העברת מטבעות</translation>
+>>>>>>> upstream/0.16
     </message>
     </context>
 <context>
@@ -82,7 +107,11 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
+=======
+        <source>Litecoin</source>
+>>>>>>> upstream/0.16
         <translation>לייטקוין</translation>
     </message>
     <message>
@@ -92,6 +121,17 @@
     </context>
 <context>
     <name>CoinControlDialog</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Copy amount</source>
+        <translation>העתק סכום</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>העתק כמות</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -104,6 +144,13 @@
     </context>
 <context>
     <name>Intro</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Litecoin</source>
+        <translation>לייטקוין</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>ModalOverlay</name>
@@ -137,7 +184,15 @@
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Copy amount</source>
+        <translation>העתק סכום</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>ReceiveRequestDialog</name>
     </context>
@@ -146,6 +201,17 @@
     </context>
 <context>
     <name>SendCoinsDialog</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Copy quantity</source>
+        <translation>העתק כמות</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>העתק סכום</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>SendCoinsEntry</name>
@@ -176,6 +242,13 @@
     </context>
 <context>
     <name>TransactionView</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Copy amount</source>
+        <translation>העתק סכום</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>

@@ -2,12 +2,21 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+<<<<<<< HEAD
 #include "util.h"
 #include "utiltime.h"
 #include "validation.h"
 
 #include "test/test_bitcoin.h"
 #include "checkqueue.h"
+=======
+#include <util.h>
+#include <utiltime.h>
+#include <validation.h>
+
+#include <test/test_bitcoin.h>
+#include <checkqueue.h>
+>>>>>>> upstream/0.16
 #include <boost/test/unit_test.hpp>
 #include <boost/thread.hpp>
 #include <atomic>
@@ -18,13 +27,21 @@
 
 #include <unordered_set>
 #include <memory>
+<<<<<<< HEAD
 #include "random.h"
+=======
+#include <random.h>
+>>>>>>> upstream/0.16
 
 // BasicTestingSetup not sufficient because nScriptCheckThreads is not set
 // otherwise.
 BOOST_FIXTURE_TEST_SUITE(checkqueue_tests, TestingSetup)
 
+<<<<<<< HEAD
 static const int QUEUE_BATCH_SIZE = 128;
+=======
+static const unsigned int QUEUE_BATCH_SIZE = 128;
+>>>>>>> upstream/0.16
 
 struct FakeCheck {
     bool operator()()
@@ -38,7 +55,11 @@ struct FakeCheckCheckCompletion {
     static std::atomic<size_t> n_calls;
     bool operator()()
     {
+<<<<<<< HEAD
         ++n_calls;
+=======
+        n_calls.fetch_add(1, std::memory_order_relaxed);
+>>>>>>> upstream/0.16
         return true;
     }
     void swap(FakeCheckCheckCompletion& x){};
@@ -88,6 +109,7 @@ struct MemoryCheck {
         //
         // Really, copy constructor should be deletable, but CCheckQueue breaks
         // if it is deleted because of internal push_back.
+<<<<<<< HEAD
         fake_allocated_memory += b;
     };
     MemoryCheck(bool b_) : b(b_)
@@ -97,6 +119,17 @@ struct MemoryCheck {
     ~MemoryCheck(){
         fake_allocated_memory -= b;
     
+=======
+        fake_allocated_memory.fetch_add(b, std::memory_order_relaxed);
+    };
+    MemoryCheck(bool b_) : b(b_)
+    {
+        fake_allocated_memory.fetch_add(b, std::memory_order_relaxed);
+    };
+    ~MemoryCheck()
+    {
+        fake_allocated_memory.fetch_sub(b, std::memory_order_relaxed);
+>>>>>>> upstream/0.16
     };
     void swap(MemoryCheck& x) { std::swap(b, x.b); };
 };
@@ -117,9 +150,15 @@ struct FrozenCleanupCheck {
     {
         if (should_freeze) {
             std::unique_lock<std::mutex> l(m);
+<<<<<<< HEAD
             nFrozen = 1;
             cv.notify_one();
             cv.wait(l, []{ return nFrozen == 0;});
+=======
+            nFrozen.store(1, std::memory_order_relaxed);
+            cv.notify_one();
+            cv.wait(l, []{ return nFrozen.load(std::memory_order_relaxed) == 0;});
+>>>>>>> upstream/0.16
         }
     }
     void swap(FrozenCleanupCheck& x){std::swap(should_freeze, x.should_freeze);};
@@ -262,7 +301,11 @@ BOOST_AUTO_TEST_CASE(test_CheckQueue_Recovers_From_Failure)
                 control.Add(vChecks);
             }
             bool r =control.Wait();
+<<<<<<< HEAD
             BOOST_REQUIRE(r || end_fails);
+=======
+            BOOST_REQUIRE(r != end_fails);
+>>>>>>> upstream/0.16
         }
     }
     tg.interrupt_all();
@@ -337,7 +380,11 @@ BOOST_AUTO_TEST_CASE(test_CheckQueue_Memory)
     tg.join_all();
 }
 
+<<<<<<< HEAD
 // Test that a new verification cannot occur until all checks 
+=======
+// Test that a new verification cannot occur until all checks
+>>>>>>> upstream/0.16
 // have been destructed
 BOOST_AUTO_TEST_CASE(test_CheckQueue_FrozenCleanup)
 {
@@ -361,11 +408,22 @@ BOOST_AUTO_TEST_CASE(test_CheckQueue_FrozenCleanup)
         std::unique_lock<std::mutex> l(FrozenCleanupCheck::m);
         // Wait until the queue has finished all jobs and frozen
         FrozenCleanupCheck::cv.wait(l, [](){return FrozenCleanupCheck::nFrozen == 1;});
+<<<<<<< HEAD
         // Try to get control of the queue a bunch of times
         for (auto x = 0; x < 100 && !fails; ++x) {
             fails = queue->ControlMutex.try_lock();
         }
         // Unfreeze
+=======
+    }
+    // Try to get control of the queue a bunch of times
+    for (auto x = 0; x < 100 && !fails; ++x) {
+        fails = queue->ControlMutex.try_lock();
+    }
+    {
+        // Unfreeze (we need lock n case of spurious wakeup)
+        std::unique_lock<std::mutex> l(FrozenCleanupCheck::m);
+>>>>>>> upstream/0.16
         FrozenCleanupCheck::nFrozen = 0;
     }
     // Awaken frozen destructor

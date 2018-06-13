@@ -84,7 +84,11 @@ def _check_result(val, func, args):
 ssl.EC_KEY_new_by_curve_name.restype = ctypes.c_void_p
 ssl.EC_KEY_new_by_curve_name.errcheck = _check_result
 
+<<<<<<< HEAD
 class CECKey(object):
+=======
+class CECKey():
+>>>>>>> upstream/0.16
     """Wrapper around OpenSSL's EC_KEY"""
 
     POINT_CONVERSION_COMPRESSED = 2

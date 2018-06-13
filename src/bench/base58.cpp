@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -6,6 +7,16 @@
 
 #include "validation.h"
 #include "base58.h"
+=======
+// Copyright (c) 2016-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <bench/bench.h>
+
+#include <validation.h>
+#include <base58.h>
+>>>>>>> upstream/0.16
 
 #include <array>
 #include <vector>
@@ -22,7 +33,11 @@ static void Base58Encode(benchmark::State& state)
         }
     };
     while (state.KeepRunning()) {
+<<<<<<< HEAD
         EncodeBase58(buff.begin(), buff.end());
+=======
+        EncodeBase58(buff.data(), buff.data() + buff.size());
+>>>>>>> upstream/0.16
     }
 }
 
@@ -54,6 +69,12 @@ static void Base58Decode(benchmark::State& state)
 }
 
 
+<<<<<<< HEAD
 BENCHMARK(Base58Encode);
 BENCHMARK(Base58CheckEncode);
 BENCHMARK(Base58Decode);
+=======
+BENCHMARK(Base58Encode, 470 * 1000);
+BENCHMARK(Base58CheckEncode, 320 * 1000);
+BENCHMARK(Base58Decode, 800 * 1000);
+>>>>>>> upstream/0.16

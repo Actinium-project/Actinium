@@ -70,7 +70,11 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
+=======
+        <source>Litecoin</source>
+>>>>>>> upstream/0.16
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -169,6 +173,13 @@
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Биткоин</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>қате</translation>
     </message>
@@ -185,6 +196,13 @@
         <source>W&amp;allet</source>
         <translation>Әмиян</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>қате</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>

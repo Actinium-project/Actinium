@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2015-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -9,6 +10,19 @@
 #include "validation.h"
 #include "streams.h"
 #include "util.h"
+=======
+// Copyright (c) 2015-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <zmq/zmqnotificationinterface.h>
+#include <zmq/zmqpublishnotifier.h>
+
+#include <version.h>
+#include <validation.h>
+#include <streams.h>
+#include <util.h>
+>>>>>>> upstream/0.16
 
 void zmqError(const char *str)
 {
@@ -40,6 +54,7 @@ CZMQNotificationInterface* CZMQNotificationInterface::Create()
     factories["pubrawblock"] = CZMQAbstractNotifier::Create<CZMQPublishRawBlockNotifier>;
     factories["pubrawtx"] = CZMQAbstractNotifier::Create<CZMQPublishRawTransactionNotifier>;
 
+<<<<<<< HEAD
     for (std::map<std::string, CZMQNotifierFactory>::const_iterator i=factories.begin(); i!=factories.end(); ++i)
     {
         std::string arg("-zmq" + i->first);
@@ -49,6 +64,17 @@ CZMQNotificationInterface* CZMQNotificationInterface::Create()
             std::string address = gArgs.GetArg(arg, "");
             CZMQAbstractNotifier *notifier = factory();
             notifier->SetType(i->first);
+=======
+    for (const auto& entry : factories)
+    {
+        std::string arg("-zmq" + entry.first);
+        if (gArgs.IsArgSet(arg))
+        {
+            CZMQNotifierFactory factory = entry.second;
+            std::string address = gArgs.GetArg(arg, "");
+            CZMQAbstractNotifier *notifier = factory();
+            notifier->SetType(entry.first);
+>>>>>>> upstream/0.16
             notifier->SetAddress(address);
             notifiers.push_back(notifier);
         }
@@ -120,7 +146,11 @@ void CZMQNotificationInterface::Shutdown()
         }
         zmq_ctx_destroy(pcontext);
 
+<<<<<<< HEAD
         pcontext = 0;
+=======
+        pcontext = nullptr;
+>>>>>>> upstream/0.16
     }
 }
 

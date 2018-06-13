@@ -4,8 +4,13 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
+<<<<<<< HEAD
 #ifndef _SECP256K1_FIELD_
 #define _SECP256K1_FIELD_
+=======
+#ifndef SECP256K1_FIELD_H
+#define SECP256K1_FIELD_H
+>>>>>>> upstream/0.16
 
 /** Field element module.
  *
@@ -129,4 +134,8 @@ static void secp256k1_fe_storage_cmov(secp256k1_fe_storage *r, const secp256k1_f
 /** If flag is true, set *r equal to *a; otherwise leave it. Constant-time. */
 static void secp256k1_fe_cmov(secp256k1_fe *r, const secp256k1_fe *a, int flag);
 
+<<<<<<< HEAD
 #endif
+=======
+#endif /* SECP256K1_FIELD_H */
+>>>>>>> upstream/0.16

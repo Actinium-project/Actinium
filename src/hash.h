@@ -1,17 +1,30 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_HASH_H
 #define BITCOIN_HASH_H
 
+<<<<<<< HEAD
 #include "crypto/ripemd160.h"
 #include "crypto/sha256.h"
 #include "prevector.h"
 #include "serialize.h"
 #include "uint256.h"
 #include "version.h"
+=======
+#include <crypto/ripemd160.h>
+#include <crypto/sha256.h>
+#include <prevector.h>
+#include <serialize.h>
+#include <uint256.h>
+#include <version.h>
+>>>>>>> upstream/0.16
 
 #include <vector>
 
@@ -88,6 +101,7 @@ inline uint256 Hash(const T1 p1begin, const T1 p1end,
     return result;
 }
 
+<<<<<<< HEAD
 /** Compute the 256-bit hash of the concatenation of three objects. */
 template<typename T1, typename T2, typename T3>
 inline uint256 Hash(const T1 p1begin, const T1 p1end,
@@ -102,6 +116,8 @@ inline uint256 Hash(const T1 p1begin, const T1 p1end,
     return result;
 }
 
+=======
+>>>>>>> upstream/0.16
 /** Compute the 160-bit hash an object. */
 template<typename T1>
 inline uint160 Hash160(const T1 pbegin, const T1 pend)
@@ -168,7 +184,11 @@ private:
     Source* source;
 
 public:
+<<<<<<< HEAD
     CHashVerifier(Source* source_) : CHashWriter(source_->GetType(), source_->GetVersion()), source(source_) {}
+=======
+    explicit CHashVerifier(Source* source_) : CHashWriter(source_->GetType(), source_->GetVersion()), source(source_) {}
+>>>>>>> upstream/0.16
 
     void read(char* pch, size_t nSize)
     {

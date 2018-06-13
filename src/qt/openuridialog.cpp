@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,6 +8,17 @@
 
 #include "guiutil.h"
 #include "walletmodel.h"
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <qt/openuridialog.h>
+#include <qt/forms/ui_openuridialog.h>
+
+#include <qt/guiutil.h>
+#include <qt/walletmodel.h>
+>>>>>>> upstream/0.16
 
 #include <QUrl>
 
@@ -16,7 +28,11 @@ OpenURIDialog::OpenURIDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 #if QT_VERSION >= 0x040700
+<<<<<<< HEAD
     ui->uriEdit->setPlaceholderText("actinium:");
+=======
+    ui->uriEdit->setPlaceholderText("litecoin:");
+>>>>>>> upstream/0.16
 #endif
 }
 
@@ -48,5 +64,9 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if(filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
+<<<<<<< HEAD
     ui->uriEdit->setText("actinium:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+=======
+    ui->uriEdit->setText("litecoin:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+>>>>>>> upstream/0.16
 }

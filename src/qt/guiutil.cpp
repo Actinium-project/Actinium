@@ -127,7 +127,11 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
+<<<<<<< HEAD
     widget->setPlaceholderText(QObject::tr("Enter a Actinium address (e.g. %1)").arg(
+=======
+    widget->setPlaceholderText(QObject::tr("Enter a Litecoin address (e.g. %1)").arg(
+>>>>>>> upstream/0.16
         QString::fromStdString(DummyAddress(Params()))));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
@@ -146,7 +150,11 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no bitcoin: URI
+<<<<<<< HEAD
     if(!uri.isValid() || uri.scheme() != QString("Actinium"))
+=======
+    if(!uri.isValid() || uri.scheme() != QString("litecoin"))
+>>>>>>> upstream/0.16
         return false;
 
     SendCoinsRecipient rv;
@@ -210,9 +218,15 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     //
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
+<<<<<<< HEAD
     if(uri.startsWith("Actinium://", Qt::CaseInsensitive))
     {
         uri.replace(0, 11, "actinium:");
+=======
+    if(uri.startsWith("litecoin://", Qt::CaseInsensitive))
+    {
+        uri.replace(0, 11, "litecoin:");
+>>>>>>> upstream/0.16
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -220,7 +234,11 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
+<<<<<<< HEAD
     QString ret = QString("actinium:%1").arg(info.address);
+=======
+    QString ret = QString("litecoin:%1").arg(info.address);
+>>>>>>> upstream/0.16
     int paramCount = 0;
 
     if (info.amount)
@@ -615,10 +633,17 @@ fs::path static StartupShortcutPath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
+<<<<<<< HEAD
         return GetSpecialFolderPath(CSIDL_STARTUP) / "Actinium.lnk";
     if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet"
         return GetSpecialFolderPath(CSIDL_STARTUP) / "Actinium (testnet).lnk";
     return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Actinium (%s).lnk", chain);
+=======
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Litecoin.lnk";
+    if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet4"
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Litecoin (testnet).lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Litecoin (%s).lnk", chain);
+>>>>>>> upstream/0.16
 }
 
 bool GetStartOnSystemStartup()
@@ -713,8 +738,13 @@ fs::path static GetAutostartFilePath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
+<<<<<<< HEAD
         return GetAutostartDir() / "Actinium.desktop";
     return GetAutostartDir() / strprintf("actinium-%s.lnk", chain);
+=======
+        return GetAutostartDir() / "litecoin.desktop";
+    return GetAutostartDir() / strprintf("litecoin-%s.lnk", chain);
+>>>>>>> upstream/0.16
 }
 
 bool GetStartOnSystemStartup()
@@ -758,9 +788,15 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
+<<<<<<< HEAD
             optionFile << "Name=Actinium\n";
         else
             optionFile << strprintf("Name=Actinium (%s)\n", chain);
+=======
+            optionFile << "Name=Litecoin\n";
+        else
+            optionFile << strprintf("Name=Litecoin (%s)\n", chain);
+>>>>>>> upstream/0.16
         optionFile << "Exec=" << pszExePath << strprintf(" -min -testnet=%d -regtest=%d\n", gArgs.GetBoolArg("-testnet", false), gArgs.GetBoolArg("-regtest", false));
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

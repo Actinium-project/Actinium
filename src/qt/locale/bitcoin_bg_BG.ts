@@ -19,7 +19,11 @@
     </message>
     <message>
         <source>&amp;Copy</source>
+<<<<<<< HEAD
         <translation>Копирай</translation>
+=======
+        <translation>&amp;Copy</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>C&amp;lose</source>
@@ -39,7 +43,11 @@
     </message>
     <message>
         <source>&amp;Delete</source>
+<<<<<<< HEAD
         <translation>Изтрий</translation>
+=======
+        <translation>&amp;Изтрий</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -62,12 +70,21 @@
         <translation>Адрес за получаване</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Тези са вашите Actinium адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
     </message>
     <message>
         <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Това са вашите Actinium адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Тези са вашите Litecoin адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите Litecoin адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -159,7 +176,27 @@
         <source>Confirm wallet encryption</source>
         <translation>Потвърди криптирането на порфейла</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Wallet encrypted</source>
+        <translation>портфейлa е шифрован</translation>
+    </message>
+    <message>
+        <source>Wallet unlock failed</source>
+        <translation>Отключването не бе успешно</translation>
+    </message>
+    <message>
+        <source>Wallet decryption failed</source>
+        <translation>Отключването не бе успешно</translation>
+    </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Внимание:Бутонът Caps Lock е включен.</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>BanTableModel</name>
     <message>
@@ -261,16 +298,173 @@
         <source>Reindexing blocks on disk...</source>
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Wallet</source>
+        <translation>портфейл</translation>
+    </message>
+    <message>
+        <source>&amp;Send</source>
+        <translation>&amp;изпращам</translation>
+    </message>
+    <message>
+        <source>&amp;Receive</source>
+        <translation>&amp;получавам</translation>
+    </message>
+    <message>
+        <source>Tabs toolbar</source>
+        <translation>Лентата с инструменти</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>грешка</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Внимание</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Информация</translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation>Актуално</translation>
+    </message>
+    <message>
+        <source>%1 client</source>
+        <translation>%1 клиент</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation>Наваксвам</translation>
+    </message>
+    <message>
+        <source>Date: %1
+</source>
+        <translation>Дата: %1
+</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation>Изпратена транзакция</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation>Входяща транзакция</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Coin Selection</source>
+        <translation>Избор на монети</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Количество:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Количество:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Такса:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>прах:</translation>
+    </message>
+    <message>
+        <source>After Fee:</source>
+        <translation>След такса:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Промяна:</translation>
+    </message>
+    <message>
+        <source>List mode</source>
+        <translation>списък Режим</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Количество</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Дата</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>потвърждения</translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>Потвърдено</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Копирайте адреса</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Копиране на етикета</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Копиране на сумата</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Копиране на ID на транзакцията</translation>
+    </message>
+    <message>
+        <source>Lock unspent</source>
+        <translation>Заключи неусвоени</translation>
+    </message>
+    <message>
+        <source>Unlock unspent</source>
+        <translation>Отключете неизползваните</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Копиране на количеството</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Копирай такса</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Копирайте след такса</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Промяна на копирането</translation>
+    </message>
+    <message>
+        <source>yes</source>
+        <translation>да</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>не</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(без етикет)</translation>
     </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
+<<<<<<< HEAD
     </context>
 <context>
     <name>FreespaceChecker</name>
@@ -283,12 +477,79 @@
     </context>
 <context>
     <name>ModalOverlay</name>
+=======
+    <message>
+        <source>Edit Address</source>
+        <translation>Редактирайте адреса</translation>
+    </message>
+    <message>
+        <source>New receiving address</source>
+        <translation>Нов адрес за получаване</translation>
+    </message>
+    <message>
+        <source>New sending address</source>
+        <translation>Нов адрес за изпращане</translation>
+    </message>
+    <message>
+        <source>Edit receiving address</source>
+        <translation>Редактиране на получаващия адрес</translation>
+    </message>
+    <message>
+        <source>Edit sending address</source>
+        <translation>Редактиране на адрес за изпращане</translation>
+    </message>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Не може да отключите портфейла.</translation>
+    </message>
+    </context>
+<context>
+    <name>FreespaceChecker</name>
+    <message>
+        <source>name</source>
+        <translation>име</translation>
+    </message>
+    </context>
+<context>
+    <name>HelpMessageDialog</name>
+    <message>
+        <source>version</source>
+        <translation>версия</translation>
+    </message>
+    </context>
+<context>
+    <name>Intro</name>
+    <message>
+        <source>Welcome</source>
+        <translation>Добре дошли</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>грешка</translation>
+    </message>
+    </context>
+<context>
+    <name>ModalOverlay</name>
+    <message>
+        <source>Form</source>
+        <translation>форма</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>прогрес</translation>
+    </message>
+    <message>
+        <source>calculating...</source>
+        <translation>изчисляване</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OpenURIDialog</name>
     </context>
 <context>
     <name>OptionsDialog</name>
+<<<<<<< HEAD
     </context>
 <context>
     <name>OverviewPage</name>
@@ -302,6 +563,117 @@
 <context>
     <name>QObject</name>
     </context>
+=======
+    <message>
+        <source>Options</source>
+        <translation>Настроики</translation>
+    </message>
+    <message>
+        <source>Open Configuration File</source>
+        <translation>Отворете конфигурационния файл</translation>
+    </message>
+    <message>
+        <source>Expert</source>
+        <translation>Експерт</translation>
+    </message>
+    <message>
+        <source>none</source>
+        <translation>нищо</translation>
+    </message>
+    <message>
+        <source>Confirm options reset</source>
+        <translation>Потвърдете опциите за нулиране</translation>
+    </message>
+    <message>
+        <source>Configuration options</source>
+        <translation>Опции за конфигуриране</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>грешка</translation>
+    </message>
+    </context>
+<context>
+    <name>OverviewPage</name>
+    <message>
+        <source>Form</source>
+        <translation>форма</translation>
+    </message>
+    <message>
+        <source>Watch-only:</source>
+        <translation>Гледайте само:</translation>
+    </message>
+    <message>
+        <source>Available:</source>
+        <translation>На разположение:</translation>
+    </message>
+    <message>
+        <source>Your current spendable balance</source>
+        <translation>Текущото Ви разходоносно салдо</translation>
+    </message>
+    <message>
+        <source>Pending:</source>
+        <translation>В очакване на:</translation>
+    </message>
+    <message>
+        <source>Immature:</source>
+        <translation>Незрялото:</translation>
+    </message>
+    <message>
+        <source>Balances</source>
+        <translation>баланс</translation>
+    </message>
+    <message>
+        <source>Total:</source>
+        <translation>Обща сума:</translation>
+    </message>
+    <message>
+        <source>Your current total balance</source>
+        <translation>Текущото Ви общо салдо</translation>
+    </message>
+    <message>
+        <source>Recent transactions</source>
+        <translation>Последни транзакции</translation>
+    </message>
+    </context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>Заявката за плащане е изтекла.</translation>
+    </message>
+    <message>
+        <source>Invalid payment request.</source>
+        <translation>Невалидна заявка за плащане.</translation>
+    </message>
+    </context>
+<context>
+    <name>PeerTableModel</name>
+    <message>
+        <source>User Agent</source>
+        <translation>Потребителски агент</translation>
+    </message>
+    <message>
+        <source>Ping</source>
+        <translation>пинг</translation>
+    </message>
+    </context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Amount</source>
+        <translation>Количество</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>нито един</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>неизвестен</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -310,10 +682,53 @@
     </context>
 <context>
     <name>RPCConsole</name>
+<<<<<<< HEAD
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     </context>
+=======
+    <message>
+        <source>Client version</source>
+        <translation>Клиентска версия</translation>
+    </message>
+    <message>
+        <source>Debug window</source>
+        <translation>Прозорец за отстраняване на грешки</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Общ</translation>
+    </message>
+    <message>
+        <source>Startup time</source>
+        <translation>Време за стартиране</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>мрежа</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>име</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation>Потребителски агент</translation>
+    </message>
+    </context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    <message>
+        <source>Copy label</source>
+        <translation>Копиране на етикета</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Копиране на сумата</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
@@ -321,6 +736,13 @@
         <translation>Адрес</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Amount</source>
+        <translation>Количество</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Етикет</translation>
     </message>
@@ -328,6 +750,13 @@
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Date</source>
+        <translation>Дата</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Етикет</translation>
     </message>
@@ -339,6 +768,57 @@
 <context>
     <name>SendCoinsDialog</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Quantity:</source>
+        <translation>Количество:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Количество:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Такса:</translation>
+    </message>
+    <message>
+        <source>After Fee:</source>
+        <translation>След такса:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Промяна:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>прах:</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Копиране на количеството</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Копиране на сумата</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Копирай такса</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Копирайте след такса</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Промяна на копирането</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>Заявката за плащане е изтекла.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>(no label)</source>
         <translation>(без етикет)</translation>
     </message>
@@ -363,6 +843,49 @@
     </context>
 <context>
     <name>TransactionDesc</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Status</source>
+        <translation>Статус</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Дата</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>източник</translation>
+    </message>
+    <message>
+        <source>Generated</source>
+        <translation>Генериран</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>от</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>неизвестен</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>към</translation>
+    </message>
+    <message>
+        <source>own address</source>
+        <translation>собствен адрес</translation>
+    </message>
+    <message>
+        <source>Credit</source>
+        <translation>кредит</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Количество</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionDescDialog</name>
@@ -370,6 +893,13 @@
 <context>
     <name>TransactionTableModel</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Date</source>
+        <translation>Дата</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Етикет</translation>
     </message>
@@ -381,10 +911,40 @@
 <context>
     <name>TransactionView</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Copy address</source>
+        <translation>Копирайте адреса</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Копиране на етикета</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Копиране на сумата</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Копиране на ID на транзакцията</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Comma separated file (*.csv)</source>
         <translation>Comma separated file (*.csv)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Confirmed</source>
+        <translation>Потвърдено</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Дата</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Label</source>
         <translation>Етикет</translation>
     </message>
@@ -420,8 +980,27 @@
 <context>
     <name>bitcoin-core</name>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Actinium ядро</translation>
     </message>
     </context>
+=======
+        <source>Litecoin Core</source>
+        <translation>Litecoin ядро</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Информация</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Внимание</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>грешка</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 </TS>

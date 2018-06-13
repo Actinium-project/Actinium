@@ -1,18 +1,30 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2017 The Zcash developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_PUBKEY_H
 #define BITCOIN_PUBKEY_H
 
+<<<<<<< HEAD
 #include "hash.h"
 #include "serialize.h"
 #include "uint256.h"
+=======
+#include <hash.h>
+#include <serialize.h>
+#include <uint256.h>
+>>>>>>> upstream/0.16
 
 #include <stdexcept>
 #include <vector>
 
+<<<<<<< HEAD
 /**
  * secp256k1:
  * const unsigned int PRIVATE_KEY_SIZE = 279;
@@ -23,6 +35,8 @@
  * script supports up to 75 for single byte push
  */
 
+=======
+>>>>>>> upstream/0.16
 const unsigned int BIP32_EXTKEY_SIZE = 74;
 
 /** A reference to a CKey: the Hash160 of its serialized public key */
@@ -30,7 +44,11 @@ class CKeyID : public uint160
 {
 public:
     CKeyID() : uint160() {}
+<<<<<<< HEAD
     CKeyID(const uint160& in) : uint160(in) {}
+=======
+    explicit CKeyID(const uint160& in) : uint160(in) {}
+>>>>>>> upstream/0.16
 };
 
 typedef uint256 ChainCode;
@@ -38,21 +56,50 @@ typedef uint256 ChainCode;
 /** An encapsulated public key. */
 class CPubKey
 {
+<<<<<<< HEAD
+=======
+public:
+    /**
+     * secp256k1:
+     */
+    static const unsigned int PUBLIC_KEY_SIZE             = 65;
+    static const unsigned int COMPRESSED_PUBLIC_KEY_SIZE  = 33;
+    static const unsigned int SIGNATURE_SIZE              = 72;
+    static const unsigned int COMPACT_SIGNATURE_SIZE      = 65;
+    /**
+     * see www.keylength.com
+     * script supports up to 75 for single byte push
+     */
+    static_assert(
+        PUBLIC_KEY_SIZE >= COMPRESSED_PUBLIC_KEY_SIZE,
+        "COMPRESSED_PUBLIC_KEY_SIZE is larger than PUBLIC_KEY_SIZE");
+
+>>>>>>> upstream/0.16
 private:
 
     /**
      * Just store the serialized data.
      * Its length can very cheaply be computed from the first byte.
      */
+<<<<<<< HEAD
     unsigned char vch[65];
+=======
+    unsigned char vch[PUBLIC_KEY_SIZE];
+>>>>>>> upstream/0.16
 
     //! Compute the length of a pubkey with a given first byte.
     unsigned int static GetLen(unsigned char chHeader)
     {
         if (chHeader == 2 || chHeader == 3)
+<<<<<<< HEAD
             return 33;
         if (chHeader == 4 || chHeader == 6 || chHeader == 7)
             return 65;
+=======
+            return COMPRESSED_PUBLIC_KEY_SIZE;
+        if (chHeader == 4 || chHeader == 6 || chHeader == 7)
+            return PUBLIC_KEY_SIZE;
+>>>>>>> upstream/0.16
         return 0;
     }
 
@@ -88,7 +135,11 @@ public:
     }
 
     //! Construct a public key from a byte vector.
+<<<<<<< HEAD
     CPubKey(const std::vector<unsigned char>& _vch)
+=======
+    explicit CPubKey(const std::vector<unsigned char>& _vch)
+>>>>>>> upstream/0.16
     {
         Set(_vch.begin(), _vch.end());
     }
@@ -127,7 +178,11 @@ public:
     void Unserialize(Stream& s)
     {
         unsigned int len = ::ReadCompactSize(s);
+<<<<<<< HEAD
         if (len <= 65) {
+=======
+        if (len <= PUBLIC_KEY_SIZE) {
+>>>>>>> upstream/0.16
             s.read((char*)vch, len);
         } else {
             // invalid pubkey, skip available data
@@ -166,7 +221,11 @@ public:
     //! Check whether this is a compressed public key.
     bool IsCompressed() const
     {
+<<<<<<< HEAD
         return size() == 33;
+=======
+        return size() == COMPRESSED_PUBLIC_KEY_SIZE;
+>>>>>>> upstream/0.16
     }
 
     /**

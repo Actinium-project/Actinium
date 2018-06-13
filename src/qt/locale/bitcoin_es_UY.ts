@@ -26,6 +26,17 @@
         <translation>Cerrar</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Delete the currently selected address from the list</source>
+        <translation>Eliminar la dirección seleccionada de la lista</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Exportar los datos en la pestaña actual a un archivo</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;Export</source>
         <translation>Exportar</translation>
     </message>
@@ -110,16 +121,26 @@
         <translation>Recibiendo direcciones</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>Enviar monedas a una dirección Actinium</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>Enviar monedas a una dirección Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Cambie la clave utilizada para el cifrado del monedero</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -244,6 +265,13 @@
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -265,9 +293,23 @@
         <translation>Opciones</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>W&amp;allet</source>
         <translation>Billetera</translation>
     </message>
+=======
+        <source>Size of &amp;database cache</source>
+        <translation>Tamaño del cache de la &amp;base de datos</translation>
+    </message>
+    <message>
+        <source>W&amp;allet</source>
+        <translation>Billetera</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -284,7 +326,15 @@
     </context>
 <context>
     <name>QObject</name>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>unknown</source>
+        <translation>desconocido</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -435,6 +485,13 @@
     </context>
 <context>
     <name>WalletView</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Exportar los datos en la pestaña actual a un archivo</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>

@@ -25,6 +25,7 @@
  * library are sufficient.
  */
 
+<<<<<<< HEAD
 #ifndef _SECP256K1_CONTRIB_BER_PRIVATEKEY_H_
 #define _SECP256K1_CONTRIB_BER_PRIVATEKEY_H_
 
@@ -33,6 +34,16 @@
 # ifdef __cplusplus
 extern "C" {
 # endif
+=======
+#ifndef SECP256K1_CONTRIB_BER_PRIVATEKEY_H
+#define SECP256K1_CONTRIB_BER_PRIVATEKEY_H
+
+#include <secp256k1.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+>>>>>>> upstream/0.16
 
 /** Export a private key in DER format.
  *
@@ -87,4 +98,8 @@ SECP256K1_WARN_UNUSED_RESULT int ec_privkey_import_der(
 }
 #endif
 
+<<<<<<< HEAD
 #endif
+=======
+#endif /* SECP256K1_CONTRIB_BER_PRIVATEKEY_H */
+>>>>>>> upstream/0.16

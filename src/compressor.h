@@ -1,14 +1,24 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_COMPRESSOR_H
 #define BITCOIN_COMPRESSOR_H
 
+<<<<<<< HEAD
 #include "primitives/transaction.h"
 #include "script/script.h"
 #include "serialize.h"
+=======
+#include <primitives/transaction.h>
+#include <script/script.h>
+#include <serialize.h>
+>>>>>>> upstream/0.16
 
 class CKeyID;
 class CPubKey;
@@ -53,7 +63,11 @@ protected:
     unsigned int GetSpecialSize(unsigned int nSize) const;
     bool Decompress(unsigned int nSize, const std::vector<unsigned char> &out);
 public:
+<<<<<<< HEAD
     CScriptCompressor(CScript &scriptIn) : script(scriptIn) { }
+=======
+    explicit CScriptCompressor(CScript &scriptIn) : script(scriptIn) { }
+>>>>>>> upstream/0.16
 
     template<typename Stream>
     void Serialize(Stream &s) const {
@@ -99,7 +113,11 @@ public:
     static uint64_t CompressAmount(uint64_t nAmount);
     static uint64_t DecompressAmount(uint64_t nAmount);
 
+<<<<<<< HEAD
     CTxOutCompressor(CTxOut &txoutIn) : txout(txoutIn) { }
+=======
+    explicit CTxOutCompressor(CTxOut &txoutIn) : txout(txoutIn) { }
+>>>>>>> upstream/0.16
 
     ADD_SERIALIZE_METHODS;
 

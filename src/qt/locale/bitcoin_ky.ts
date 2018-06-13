@@ -38,8 +38,13 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -101,6 +106,13 @@
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Ката</translation>
     </message>
@@ -149,6 +161,13 @@
         <source>none</source>
         <translation>жок</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>Ката</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>

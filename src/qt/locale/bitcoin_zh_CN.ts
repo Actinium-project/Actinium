@@ -31,7 +31,11 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
+<<<<<<< HEAD
         <translation>导出当前分页里的数据到文件</translation>
+=======
+        <translation>将当前标签页数据导出到文件</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Export</source>
@@ -62,11 +66,19 @@
         <translation>收款地址</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>这些是你要付款过去的莱特币地址。在付钱之前，务必要检查金额和收款地址是否正确。</translation>
     </message>
     <message>
         <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>这些是你要付款过去的莱特币地址。在付钱之前，务必要检查金额和收款地址是否正确。</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+>>>>>>> upstream/0.16
         <translation>这些是你用来收款的莱特币地址。建议在每次交易时，都使用一个新的收款地址。</translation>
     </message>
     <message>
@@ -168,7 +180,11 @@
         <translation>确认钱包加密</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
+=======
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+>>>>>>> upstream/0.16
         <translation>警告: 如果把钱包加密后又忘记密码，你就会从此&lt;b&gt;失去其中所有的莱特币了&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -180,7 +196,11 @@
         <translation>钱包已加密</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
+=======
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+>>>>>>> upstream/0.16
         <translation>%1 现在要关闭，以完成加密过程。请注意，加密钱包不能完全防止入侵你的电脑的恶意程序偷取钱币。</translation>
     </message>
     <message>
@@ -338,7 +358,11 @@
         <translation>正在为数据块重建索引...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
+=======
+        <source>Send coins to a Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>向一个莱特币地址发送莱特币</translation>
     </message>
     <message>
@@ -362,7 +386,11 @@
         <translation>验证消息(&amp;V)...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
+=======
+        <source>Litecoin</source>
+>>>>>>> upstream/0.16
         <translation>莱特币</translation>
     </message>
     <message>
@@ -390,11 +418,19 @@
         <translation>对钱包中的私钥加密</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Actinium addresses to prove you own them</source>
         <translation>用莱特币地址关联的私钥为消息签名，以证明您拥有这个莱特币地址</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
+=======
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>用莱特币地址关联的私钥为消息签名，以证明您拥有这个莱特币地址</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+>>>>>>> upstream/0.16
         <translation>校验消息，确保该消息是由指定的莱特币地址所有者签名的</translation>
     </message>
     <message>
@@ -414,8 +450,13 @@
         <translation>分页工具栏</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
         <translation>请求支付 (生成二维码和 Actinium: URI)</translation>
+=======
+        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <translation>请求支付 (生成二维码和 litecoin: URI)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,17 +467,25 @@
         <translation>显示用过的接收地址和标签的列表</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Open a Actinium: URI or payment request</source>
         <translation>打开一个 Actinium: URI 或支付请求</translation>
+=======
+        <source>Open a litecoin: URI or payment request</source>
+        <translation>打开一个 litecoin: URI 或支付请求</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>命令行选项(&amp;C)</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>%n active connection(s) to Actinium network</source>
         <translation><numerusform>%n 个到莱特币网络的活动连接</numerusform></translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     <message>
         <source>Indexing blocks on disk...</source>
         <translation>正在为数据块建立索引...</translation>
@@ -445,10 +494,13 @@
         <source>Processing blocks on disk...</source>
         <translation>正在处理数据块...</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation><numerusform>已处理 %n 个交易历史数据块。</numerusform></translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     <message>
         <source>%1 behind</source>
         <translation>落后 %1 </translation>
@@ -478,7 +530,11 @@
         <translation>已是最新</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
+=======
+        <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
+>>>>>>> upstream/0.16
         <translation>显示 %1 帮助信息，获取可用命令行选项列表</translation>
     </message>
     <message>
@@ -548,7 +604,11 @@
         <translation>钱包已被&lt;b&gt;加密&lt;/b&gt;，当前为&lt;b&gt;锁定&lt;/b&gt;状态</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
+=======
+        <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
+>>>>>>> upstream/0.16
         <translation>发生严重错误。客户端无法安全地继续运行，即将退出。</translation>
     </message>
 </context>
@@ -742,7 +802,11 @@
         <translation>编辑付款地址</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The entered address "%1" is not a valid Actinium address.</source>
+=======
+        <source>The entered address "%1" is not a valid Litecoin address.</source>
+>>>>>>> upstream/0.16
         <translation>输入的地址 %1 并不是有效的莱特币地址。</translation>
     </message>
     <message>
@@ -844,16 +908,29 @@
     </message>
     <message>
         <source>Welcome to %1.</source>
+<<<<<<< HEAD
         <translation>
 歡迎來到 %1</translation>
+=======
+        <translation>欢迎使用 %1</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
         <translation>由于这是第一次启动此程序，您可以选择%1的数据所存储的位置</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 will download and store a copy of the Actinium block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>%1 会下载并存储一份莱特币区块链的副本。至少有 %2GB 的数据会存储到这个目录中，并且还会持续增长。另外钱包资料也会储存在这个目录。</translation>
+=======
+        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
+        <translation>当你点击确认后，%1 将会在 %4 启动时从  %3 中最早的交易开始，下载并处理完整的 %4 区块链 (%2GB)。</translation>
+    </message>
+    <message>
+        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
+        <translation>如果你选择限制区块链存储大小（区块链裁剪模式），程序依然会下载并处理全部历史数据，此后才会删除不必须的部分，占用最少的存储空间。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -864,6 +941,29 @@
         <translation>使用自定义的数据目录：</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>莱特币</translation>
+    </message>
+    <message>
+        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
+        <translation>此目录中至少会保存 %1 GB 的数据，并且尺寸还会随着时间增长。</translation>
+    </message>
+    <message>
+        <source>Approximately %1 GB of data will be stored in this directory.</source>
+        <translation>会在此目录中存储约 %1 GB 的数据。</translation>
+    </message>
+    <message>
+        <source>%1 will download and store a copy of the Litecoin block chain.</source>
+        <translation>%1 将会下载并存储莱特币区块链。</translation>
+    </message>
+    <message>
+        <source>The wallet will also be stored in this directory.</source>
+        <translation>钱包也会被保存在这个目录中。</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>错误：无法创建 指定的数据目录 "%1" </translation>
     </message>
@@ -871,6 +971,7 @@
         <source>Error</source>
         <translation>错误</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>%n GB of free space available</source>
         <translation><numerusform>有 %n GB 空闲空间</numerusform></translation>
@@ -880,6 +981,9 @@
         <translation><numerusform>(需要%n GB空间)</numerusform></translation>
     </message>
 </context>
+=======
+    </context>
+>>>>>>> upstream/0.16
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -887,11 +991,19 @@
         <translation>表单</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Actinium network, as detailed below.</source>
         <translation>近期交易可能尚未显示，因此当前余额可能不准确。以上信息将在与莱特币网络完全同步后更正。详情如下</translation>
     </message>
     <message>
         <source>Attempting to spend actiniums that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+=======
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</source>
+        <translation>近期交易可能尚未显示，因此当前余额可能不准确。以上信息将在与莱特币网络完全同步后更正。详情如下</translation>
+    </message>
+    <message>
+        <source>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+>>>>>>> upstream/0.16
         <translation>尝试使用受未可见交易影响的余额将不被网络接受。</translation>
     </message>
     <message>
@@ -928,7 +1040,11 @@
     </message>
     <message>
         <source>Unknown. Syncing Headers (%1)...</source>
+<<<<<<< HEAD
         <translation>未知状态。同步区块头（%1）</translation>
+=======
+        <translation>未知状态。同步区块头(%1)...</translation>
+>>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -985,6 +1101,7 @@
         <translation>脚本验证线程数(&amp;V)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Accept connections from outside</source>
         <translation>接收外部连接</translation>
     </message>
@@ -993,10 +1110,19 @@
         <translation>允许流入连接</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>代理的 IP 地址 (例如 IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
+        <translation>显示默认的SOCKS5代理是否被用于在该类型的网络下连接同伴</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
         <translation>窗口被关闭时最小化而不是退出应用程序。当此选项启用时，应用程序只会在菜单中选择退出时退出。</translation>
     </message>
@@ -1005,14 +1131,28 @@
         <translation>出现在交易的选项卡的上下文菜单项的第三方网址 (例如：区块链接查询) 。 %s的URL被替换为交易哈希。多个的URL需要竖线 | 分隔。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Third party transaction URLs</source>
         <translation>第三方交易网址</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Active command-line options that override above options:</source>
         <translation>有效的命令行参数覆盖上述选项:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Open the %1 configuration file from the working directory.</source>
+        <translation>从工作目录下打开配置文件 %1。</translation>
+    </message>
+    <message>
+        <source>Open Configuration File</source>
+        <translation>打开配置文件</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>恢复客户端的缺省设置</translation>
     </message>
@@ -1026,7 +1166,11 @@
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
+<<<<<<< HEAD
         <translation>(0 = 自动, &lt;0 = 离开很多免费的核心)</translation>
+=======
+        <translation>(0 = 自动, &lt;0 = 保持指定数量的CPU核心空闲)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1049,7 +1193,11 @@
         <translation>使用未经确认的零钱(&amp;S)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+=======
+        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+>>>>>>> upstream/0.16
         <translation>自动在路由器中打开莱特币端口。只有当您的路由器开启了 UPnP 选项时此功能才有效。</translation>
     </message>
     <message>
@@ -1057,7 +1205,11 @@
         <translation>使用 &amp;UPnP 映射端口</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
+=======
+        <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
+>>>>>>> upstream/0.16
         <translation>通过 SOCKS5 代理连接莱特币网络。</translation>
     </message>
     <message>
@@ -1081,10 +1233,13 @@
         <translation>连接到同伴的方式：</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
         <translation>如果默认的SOCKS5代理被用于在该网络下连接同伴，则显示</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1097,6 +1252,7 @@
         <translation>Tor</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Actinium network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>在 Tor 匿名网络下通过不同的 SOCKS5 代理连接莱特币网络</translation>
     </message>
@@ -1105,10 +1261,17 @@
         <translation>通过Tor隐藏服务连接节点时 使用不同的SOCKS5代理</translation>
     </message>
     <message>
+=======
+        <source>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>在 Tor 匿名网络下通过不同的 SOCKS5 代理连接莱特币网络</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;Window</source>
         <translation>窗口(&amp;W)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Hide the icon from the system tray.</source>
         <translation>不在通知区显示图标</translation>
     </message>
@@ -1117,6 +1280,8 @@
         <translation>不显示通知区图标</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>最小化窗口后仅显示托盘图标</translation>
     </message>
@@ -1181,6 +1346,25 @@
         <translation>客户端即将关闭，您想继续吗？</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Configuration options</source>
+        <translation>配置选项</translation>
+    </message>
+    <message>
+        <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
+        <translation>配置文件可以用来设置高级选项。配置文件会覆盖设置界面窗口中的选项。此外，命令行会覆盖配置文件指定的选项。</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>错误</translation>
+    </message>
+    <message>
+        <source>The configuration file could not be opened.</source>
+        <translation>配置文件无法打开。</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>此更改需要重启客户端。</translation>
     </message>
@@ -1196,12 +1380,20 @@
         <translation>表单</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
+=======
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+>>>>>>> upstream/0.16
         <translation>现在显示的消息可能是过期的。在连接上莱特币网络节点后，您的钱包将自动与网络同步，但是这个过程还没有完成。</translation>
     </message>
     <message>
         <source>Watch-only:</source>
+<<<<<<< HEAD
         <translation>查看-只有:</translation>
+=======
+        <translation>仅观察:</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Available:</source>
@@ -1271,8 +1463,13 @@
         <translation>要求付款时发生错误</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot start Actinium: click-to-pay handler</source>
         <translation>无法启动 Actinium 协议的“
+=======
+        <source>Cannot start litecoin: click-to-pay handler</source>
+        <translation>无法启动 litecoin 协议的“
+>>>>>>> upstream/0.16
 一键支付”处理器</translation>
     </message>
     <message>
@@ -1288,7 +1485,11 @@
         <translation>无效的付款地址 %1</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>URI cannot be parsed! This can be caused by an invalid Actinium address or malformed URI parameters.</source>
+=======
+        <source>URI cannot be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
+>>>>>>> upstream/0.16
         <translation>无法解析 URI 地址！可能是因为莱特币地址无效，或是 URI 参数格式错误。</translation>
     </message>
     <message>
@@ -1312,10 +1513,13 @@
         <translation>付款请求已过期。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Payment request is not initialized.</source>
         <translation>支付请求未成形。</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
         <translation>不支持到自定义付款脚本的未验证付款请求。</translation>
     </message>
@@ -1325,11 +1529,19 @@
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
+<<<<<<< HEAD
         <translation>请求支付的金额 %1 太小（就像尘埃）。</translation>
     </message>
     <message>
         <source>Refund from %1</source>
         <translation>退款来自 %1</translation>
+=======
+        <translation>请求支付的金额 %1 太小 (可被忽略)。</translation>
+    </message>
+    <message>
+        <source>Refund from %1</source>
+        <translation>来自 %1 的退款</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
@@ -1337,6 +1549,7 @@
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
+<<<<<<< HEAD
         <translation>%1: %2 通讯出错</translation>
     </message>
     <message>
@@ -1346,6 +1559,17 @@
     <message>
         <source>Bad response from server %1</source>
         <translation>来自 %1 服务器的错误响应</translation>
+=======
+        <translation>与 %1 通信出错: %2</translation>
+    </message>
+    <message>
+        <source>Payment request cannot be parsed!</source>
+        <translation>无法解析付款请求！</translation>
+    </message>
+    <message>
+        <source>Bad response from server %1</source>
+        <translation>来自服务器 %1 的响应无效</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Network request error</source>
@@ -1374,6 +1598,17 @@
         <source>Ping</source>
         <translation> </translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Sent</source>
+        <translation>发送</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>收到</translation>
+    </message>
+>>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject</name>
@@ -1382,7 +1617,11 @@
         <translation>金额</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter a Actinium address (e.g. %1)</source>
+=======
+        <source>Enter a Litecoin address (e.g. %1)</source>
+>>>>>>> upstream/0.16
         <translation>请输入一个莱特币地址 (例如 %1)</translation>
     </message>
     <message>
@@ -1413,6 +1652,7 @@
         <source>%1 ms</source>
         <translation>%1 毫秒</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>%n second(s)</source>
         <translation><numerusform>%n 秒</numerusform></translation>
@@ -1440,11 +1680,39 @@
     <message numerus="yes">
         <source>%n year(s)</source>
         <translation><numerusform>%n 年</numerusform></translation>
+=======
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 和 %2</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 字节</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 尚未安全退出</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>unknown</source>
+        <translation>未知</translation>
+    </message>
+>>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject::QObject</name>
@@ -1547,6 +1815,13 @@
         <translation>内存使用</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>&amp;Reset</source>
+        <translation>&amp;重启</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Received</source>
         <translation>收到</translation>
     </message>
@@ -1659,10 +1934,13 @@
         <translation>网络流量(&amp;N)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Clear</source>
         <translation>清除(&amp;C)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>总数</translation>
     </message>
@@ -1715,6 +1993,7 @@
         <translation>欢迎使用 %1 的 RPC 控制台。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>使用上下方向键浏览历史,  &lt;b&gt;Ctrl-L&lt;/b&gt;清除屏幕。</translation>
     </message>
@@ -1724,6 +2003,13 @@
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
+=======
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>使用上下方向键浏览历史,  以及 %1 清除屏幕。</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+>>>>>>> upstream/0.16
         <translation>警告： 已有骗子通过要求用户在此输入指令以盗取钱包。不要在没有完全理解命令规范时使用控制台。</translation>
     </message>
     <message>
@@ -1731,6 +2017,7 @@
         <translation>网络活动已禁用</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 B</source>
         <translation>%1 字节</translation>
     </message>
@@ -1747,6 +2034,8 @@
         <translation>%1 GB</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>(node id: %1)</source>
         <translation>(节点ID: %1)</translation>
     </message>
@@ -1794,6 +2083,7 @@
         <translation>消息(&amp;M)：</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
         <translation>重复使用以前用过的接收地址。重用地址有安全和隐私方面的隐患。除非是为重复生成同一项支付请求，否则请不要这样做。</translation>
     </message>
@@ -1803,6 +2093,9 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
+=======
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
+>>>>>>> upstream/0.16
         <translation>可在付款请求上备注一条信息，在打开付款请求时可以看到。注意：该消息不是通过莱特币网络传送。</translation>
     </message>
     <message>
@@ -1956,7 +2249,11 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
+<<<<<<< HEAD
         <translation>发送莱特币</translation>
+=======
+        <translation>发送</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2015,6 +2312,17 @@
         <translation>选择... </translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
+        <translation>如果使用备用交易费设置，有可能会导致交易经过几个小时、几天（甚至永远）无法被确认。请考虑手动选择交易费，或等待整个链完成验证。</translation>
+    </message>
+    <message>
+        <source>Warning: Fee estimation is currently not possible.</source>
+        <translation>警告: 目前无法进行交易费估计。</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>collapse fee-settings</source>
         <translation>收起  费用设置 </translation>
     </message>
@@ -2031,12 +2339,17 @@
         <translation>隐藏</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>total at least</source>
         <translation>最小额 </translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Actinium transactions than the network can process.</source>
         <translation>交易量小时只支付最小交易费是可以的。但是请注意，当交易量大到超出网络可处理时您的交易可能永远无法确认。</translation>
+=======
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
+        <translation>交易量小时允许只支付最小交易费。但是请注意，当交易量大到超出网络可处理时您的交易可能永远无法确认。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2055,6 +2368,7 @@
         <translation>(智能交易费用 尚未初始化。 需要再下载一些数据块...)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>normal</source>
         <translation>一般</translation>
     </message>
@@ -2063,6 +2377,8 @@
         <translation>快速</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>一次发送给多个接收者</translation>
     </message>
@@ -2127,6 +2443,13 @@
         <translation>复制找零金额</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>%1 (%2 blocks)</source>
+        <translation>%1 (%2个块)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>%1 to %2</source>
         <translation>%1 到 %2</translation>
     </message>
@@ -2148,7 +2471,11 @@
     </message>
     <message>
         <source>Confirm send coins</source>
+<<<<<<< HEAD
         <translation>确认发送货币</translation>
+=======
+        <translation>确认发送</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
@@ -2160,11 +2487,19 @@
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
+<<<<<<< HEAD
         <translation>金额超出您的账上余额。</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>计入 %1 交易费后的金额超出您的账上余额。</translation>
+=======
+        <translation>金额超出您的余额。</translation>
+    </message>
+    <message>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>计入 %1 交易费后的金额超出您的余额。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Duplicate address found: addresses should only be used once each.</source>
@@ -2180,26 +2515,38 @@
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
+<<<<<<< HEAD
         <translation>超过 %1 的交易费被认为是荒谬的高费率。</translation>
+=======
+        <translation>交易费一般不应超过 %1。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Payment request expired.</source>
         <translation>付款请求已过期。</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>%n block(s)</source>
         <translation><numerusform>%n 个区块</numerusform></translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     <message>
         <source>Pay only the required fee of %1</source>
         <translation>只支付必要费用 %1</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation><numerusform>预计 %n 个数据块后被确认。</numerusform></translation>
     </message>
     <message>
         <source>Warning: Invalid Actinium address</source>
+=======
+    <message>
+        <source>Warning: Invalid Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>警告: 莱特币地址无效</translation>
     </message>
     <message>
@@ -2207,6 +2554,13 @@
         <translation>警告：未知的更改地址</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Confirm custom change address</source>
+        <translation>确认用户找零地址</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
         <translation>你选择的找零地址未被包含在本钱包中，你钱包中的部分或全部金额将被发送至该地址。你确定要这样做吗？</translation>
     </message>
@@ -2238,7 +2592,11 @@
         <translation>这是笔正常的支付。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address to send the payment to</source>
+=======
+        <source>The Litecoin address to send the payment to</source>
+>>>>>>> upstream/0.16
         <translation>付款目的地址</translation>
     </message>
     <message>
@@ -2258,7 +2616,11 @@
         <translation>移除此项</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+=======
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+>>>>>>> upstream/0.16
         <translation>交易费将从发送总额中扣除。接收人将收到比您在金额框中输入的更少的莱特币。如果选中了多个收件人，交易费平分。</translation>
     </message>
     <message>
@@ -2282,8 +2644,13 @@
         <translation>请为此地址输入一个标签以将它加入用过的地址列表</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
         <translation>Actinium:URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过莱特币网络传输。</translation>
+=======
+        <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
+        <translation>litecoin:URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过莱特币网络传输。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Pay To:</source>
@@ -2327,11 +2694,19 @@
         <translation>签名消息(&amp;S)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>You can sign messages/agreements with your addresses to prove you can receive actiniums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>您可以用你的地址对消息/协议进行签名，以证明您可以接收发送到该地址的莱特币。注意不要对任何模棱两可或者随机的消息进行签名，以免遭受钓鱼式攻击。请确保消息内容准确的表达了您的真实意愿。</translation>
     </message>
     <message>
         <source>The Actinium address to sign the message with</source>
+=======
+        <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>您可以用你的地址对消息/协议进行签名，以证明您可以接收发送到该地址的莱特币。注意不要对任何模棱两可或者随机的消息进行签名，以免遭受钓鱼式攻击。请确保消息内容准确的表达了您的真实意愿。</translation>
+    </message>
+    <message>
+        <source>The Litecoin address to sign the message with</source>
+>>>>>>> upstream/0.16
         <translation>用来对消息签名的地址 </translation>
     </message>
     <message>
@@ -2363,7 +2738,11 @@
         <translation>复制当前签名至剪切板</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign the message to prove you own this Actinium address</source>
+=======
+        <source>Sign the message to prove you own this Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>签名消息，证明这个地址属于您。</translation>
     </message>
     <message>
@@ -2387,11 +2766,19 @@
         <translation>请在下面输入接收者地址、消息（确保换行符、空格符、制表符等完全相同）和签名以验证消息。请仔细核对签名信息，以提防中间人攻击。请注意，这只是证明接收方签名的地址，它不能证明任何交易！</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address the message was signed with</source>
         <translation>消息使用的签名地址</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Actinium address</source>
+=======
+        <source>The Litecoin address the message was signed with</source>
+        <translation>消息使用的签名地址</translation>
+    </message>
+    <message>
+        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>验证消息，确保消息是由指定的莱特币地址签名过的。</translation>
     </message>
     <message>
@@ -2408,7 +2795,11 @@
     </message>
     <message>
         <source>The entered address is invalid.</source>
+<<<<<<< HEAD
         <translation>输入的地址非法。</translation>
+=======
+        <translation>输入的地址无效。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Please check the address and try again.</source>
@@ -2471,10 +2862,13 @@
 </context>
 <context>
     <name>TransactionDesc</name>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
         <translation><numerusform>再打开 %n 个数据块</numerusform></translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     <message>
         <source>Open until %1</source>
         <translation>至 %1 个数据块时开启</translation>
@@ -2509,7 +2903,11 @@
     </message>
     <message>
         <source>%1 confirmations</source>
+<<<<<<< HEAD
         <translation>%1 已确认</translation>
+=======
+        <translation>%1 个确认</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Status</source>
@@ -2519,10 +2917,13 @@
         <source>, has not been successfully broadcast yet</source>
         <translation>，未被成功广播</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
         <translation><numerusform>, 通过 %n 个节点广播 </numerusform></translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     <message>
         <source>Date</source>
         <translation>日期</translation>
@@ -2563,10 +2964,13 @@
         <source>Credit</source>
         <translation>收入</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
         <translation><numerusform>%n 个数据块后成熟(mature) </numerusform></translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     <message>
         <source>not accepted</source>
         <translation>未被接受</translation>
@@ -2585,7 +2989,11 @@
     </message>
     <message>
         <source>Transaction fee</source>
+<<<<<<< HEAD
         <translation>交易费</translation>
+=======
+        <translation>交易费用</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Net amount</source>
@@ -2601,7 +3009,11 @@
     </message>
     <message>
         <source>Transaction ID</source>
+<<<<<<< HEAD
         <translation>ID</translation>
+=======
+        <translation>交易 ID</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Transaction total size</source>
@@ -2675,11 +3087,19 @@
     </message>
     <message>
         <source>Offline</source>
+<<<<<<< HEAD
         <translation>掉线</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
         <translation>未确认的 </translation>
+=======
+        <translation>离线</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>未确认</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Abandoned</source>
@@ -2747,11 +3167,19 @@
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
+<<<<<<< HEAD
         <translation>接收到交易的时间</translation>
     </message>
     <message>
         <source>Type of transaction.</source>
         <translation>交易类别。</translation>
+=======
+        <translation>交易被接收的时间和日期。</translation>
+    </message>
+    <message>
+        <source>Type of transaction.</source>
+        <translation>交易类型。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
@@ -2817,10 +3245,13 @@
         <translation>其它</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter address or label to search</source>
         <translation>输入地址或标签进行搜索</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Min amount</source>
         <translation>最小金额</translation>
     </message>
@@ -2829,6 +3260,13 @@
         <translation>放弃交易</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Increase transaction fee</source>
+        <translation>增加交易费</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Copy address</source>
         <translation>复制地址</translation>
     </message>
@@ -2846,7 +3284,11 @@
     </message>
     <message>
         <source>Copy raw transaction</source>
+<<<<<<< HEAD
         <translation>复制原始交易</translation>
+=======
+        <translation>拷贝原始交易</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Copy full transaction details</source>
@@ -2902,7 +3344,11 @@
     </message>
     <message>
         <source>There was an error trying to save the transaction history to %1.</source>
+<<<<<<< HEAD
         <translation>导出交易历史到 %1 时发生错误。</translation>
+=======
+        <translation>尝试保存交易历史 %1 时发生了错误。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Exporting Successful</source>
@@ -2939,7 +3385,39 @@
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
+<<<<<<< HEAD
         <translation>发送莱特币</translation>
+=======
+        <translation>发送</translation>
+    </message>
+    <message>
+        <source>Increasing transaction fee failed</source>
+        <translation>增加交易费失败</translation>
+    </message>
+    <message>
+        <source>Do you want to increase the fee?</source>
+        <translation>你是否愿意增加交易费?</translation>
+    </message>
+    <message>
+        <source>Current fee:</source>
+        <translation>当前交易费:</translation>
+    </message>
+    <message>
+        <source>Increase:</source>
+        <translation>增加量:</translation>
+    </message>
+    <message>
+        <source>New fee:</source>
+        <translation>新交易费:</translation>
+    </message>
+    <message>
+        <source>Can't sign transaction.</source>
+        <translation>无法签署交易。</translation>
+    </message>
+    <message>
+        <source>Could not commit transaction</source>
+        <translation>无法提交交易</translation>
+>>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -2950,7 +3428,11 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
+<<<<<<< HEAD
         <translation>导出当前分页里的数据到文件</translation>
+=======
+        <translation>将当前标签页数据导出到文件</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup Wallet</source>
@@ -2966,7 +3448,11 @@
     </message>
     <message>
         <source>There was an error trying to save the wallet data to %1.</source>
+<<<<<<< HEAD
         <translation>尝试保存钱包数据至 %1 时发生错误。</translation>
+=======
+        <translation>尝试保存钱包数据至 %1 时发生了错误。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup Successful</source>
@@ -2974,7 +3460,11 @@
     </message>
     <message>
         <source>The wallet data was successfully saved to %1.</source>
+<<<<<<< HEAD
         <translation>钱包数据成功保存至 %1 。</translation>
+=======
+        <translation>钱包数据成功保存至 %1。</translation>
+>>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -3045,8 +3535,13 @@
         <translation>无法启动HTTP服务，查看日志获取更多信息</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Actinium Core</translation>
+=======
+        <source>Litecoin Core</source>
+        <translation>Litecoin Core</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>The %s developers</source>
@@ -3066,7 +3561,11 @@
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
+<<<<<<< HEAD
         <translation>无法给数据目录 %s 上锁。%s 可能已经在运行。</translation>
+=======
+        <translation>无法锁定数据目录 %s。%s 可能已经在运行。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
@@ -3077,12 +3576,23 @@
         <translation>读取 %s 时发生错误！所有的密钥都可以正确读取，但是交易记录或地址簿数据可能已经丢失或出错。</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
+        <translation>排除某一类Debug信息。可以与 -debug=1 一起使用，以输出除了指定类别以外的Debug日志。</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>当最佳区块变化时执行命令 (命令行中的 %s 会被替换成区块哈希值)</translation>
     </message>
     <message>
         <source>Maximum total fees (in %s) to use in a single wallet transaction or raw transaction; setting this too low may abort large transactions (default: %s)</source>
+<<<<<<< HEAD
         <translation>最大的单次钱包或原始转账费用（%s），设置太低可能导致大尺寸交易失败（默认：%s）</translation>
+=======
+        <translation>最大的单次钱包或原始转账费用(%s)，设置太低可能导致大尺寸交易失败(默认：%s)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
@@ -3101,10 +3611,40 @@
         <translation>区块数据库包含未来的交易，这可能是由本机错误的日期时间引起。若确认本机日期时间正确，请重新建立区块数据库。</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation>这是测试用的预发布版本 - 请谨慎使用 - 不要用来挖矿，或者在正式商用环境下使用</translation>
+    </message>
+    <message>
+        <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
+        <translation>如果对你的交易量来说，消耗的手续费微乎其微，那么这笔手续费你或许可以忽略它。</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</source>
         <translation>使用UPnP暴露本机监听端口（默认：1 当正在监听且不使用代理）</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>警告：网络似乎并不完全同意！有些矿工似乎遇到了问题。</translation>
+    </message>
+    <message>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>警告：我们的同行似乎不完全同意！您可能需要升级，或者其他节点可能需要升级。</translation>
+    </message>
+    <message>
+        <source>Whether to save the mempool on shutdown and load on restart (default: %u)</source>
+        <translation>是否在退出时保存内存池，并在启动时重新载入(默认值: %u)</translation>
+    </message>
+    <message>
+        <source>%d of last 100 blocks have unexpected version</source>
+        <translation>最后100个区块中的%d个包含未知的版本号</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>%s corrupt, salvage failed</source>
         <translation>%s 已损坏，抢救备份失败</translation>
     </message>
@@ -3117,6 +3657,13 @@
         <translation>&lt;category&gt; 可能是：</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>接受来自外部的连接 (缺省: 如果不带 -proxy or -connect 参数设置为1)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Append comment to the user agent string</source>
         <translation>为用户代理字符串附加说明</translation>
     </message>
@@ -3137,6 +3684,13 @@
         <translation>区块链选择选项:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Change index out of range</source>
+        <translation>修改索引超过范围</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Connection options:</source>
         <translation>连接选项：</translation>
     </message>
@@ -3186,7 +3740,11 @@
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
+<<<<<<< HEAD
         <translation>Error initializing wallet database environment %s!</translation>
+=======
+        <translation>初始化钱包数据库环境错误 %s!</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Error loading %s</source>
@@ -3225,12 +3783,21 @@
         <translation>不正确或没有找到起源区块。网络错误？</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -onion address: '%s'</source>
         <translation>无效的 -onion 地址：“%s”</translation>
     </message>
     <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>非法金额 -%s=&lt;amount&gt;: '%s'</translation>
+=======
+        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
+        <translation>无效的金额 -%s=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
+        <translation>无效的金额 -discardfee=&lt;amount&gt;: '%s'</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
@@ -3241,8 +3808,17 @@
         <translation>保持交易内存池大小低于&lt;n&gt;MB（默认：%u）</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading banlist...</source>
         <translation>加载黑名单</translation>
+=======
+        <source>Loading P2P addresses...</source>
+        <translation>正在加载P2P地址...</translation>
+    </message>
+    <message>
+        <source>Loading banlist...</source>
+        <translation>正在加载黑名单...</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Location of the auth cookie (default: data dir)</source>
@@ -3277,12 +3853,21 @@
         <translation>从当前索引的区块中重建链状态</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>设置以MB为单位的数据库缓存大小(%d 到 %d, 默认值: %d)</translation>
     </message>
     <message>
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>设置最大区块大小 (默认: %d，单位字节)</translation>
+=======
+        <source>Rewinding blocks...</source>
+        <translation>回退区块</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
+        <translation>设置以MB为单位的数据库缓存大小(%d 到 %d, 默认值: %d)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -3309,6 +3894,17 @@
         <translation>忽略不支持的选项 -tor，使用 -oinon</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Unsupported logging category %s=%s.</source>
+        <translation>不支持的日志分类 %s=%s.</translation>
+    </message>
+    <message>
+        <source>Upgrading UTXO database</source>
+        <translation>升级UTXO数据库</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Use UPnP to map the listening port (default: %u)</source>
         <translation>使用UPnp映射监听端口 (默认: %u) </translation>
     </message>
@@ -3325,6 +3921,7 @@
         <translation>正在验证区块...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verifying wallet...</source>
         <translation>正在验证钱包...</translation>
     </message>
@@ -3333,6 +3930,8 @@
         <translation>钱包 %s 在外部的数据目录 %s</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Wallet debugging/testing options:</source>
         <translation>钱包调试/测试选项：</translation>
     </message>
@@ -3349,10 +3948,13 @@
         <translation>绑定到指定地址和连接的白名单节点。 IPv6使用  [主机]:端口 格式 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
         <translation>绑定到指定地址监听 JSON-RPC连接。 IPv6使用[主机]:端口 格式。该选项可多次指定 (默认: 绑定到所有接口) </translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>创建系统默认权限的文件，而不是 umask 077 (只在关闭钱包功能时有效) </translation>
     </message>
@@ -3389,10 +3991,13 @@
         <translation>为每个代理连接随机化凭据。这将启用 Tor 流隔离 (默认: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>设置 高优先级/低交易费 交易的最大字节  (缺省: %d)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>在交易费被扣除后发送的交易金额太小</translation>
     </message>
@@ -3425,6 +4030,13 @@
         <translation>读取数据库出错，关闭中。</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error upgrading chainstate database</source>
+        <translation>升级链状态数据库出错</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Imports blocks from external blk000??.dat file on startup</source>
         <translation>启动时从其他来源的  blk000??.dat 文件导入区块</translation>
     </message>
@@ -3433,6 +4045,17 @@
         <translation>信息</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Invalid -onion address or hostname: '%s'</source>
+        <translation>无效的 -onion 地址: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address or hostname: '%s'</source>
+        <translation>无效的 -proxy 地址: '%s'</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>无效的金额 -paytxfee=&lt;amount&gt;: '%s' (必须至少为 %s)</translation>
     </message>
@@ -3469,10 +4092,13 @@
         <translation>跟踪/调试信息输出到控制台，不输出到 debug.log 文件</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>发送时尽可能 不支付交易费用 (默认: %u) </translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>显示所有调试选项 (用法: --帮助 -帮助调试)</translation>
     </message>
@@ -3525,6 +4151,13 @@
         <translation>JSON-RPC 连接用户名</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Verifying wallet(s)...</source>
+        <translation>正在检测钱包的完整性...</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>警告</translation>
     </message>
@@ -3537,6 +4170,13 @@
         <translation>是否用块方进行 (%u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>您需要用 -reindex 重建数据库，从而令 -txindex 的变动生效</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Zapping all transactions from wallet...</source>
         <translation>正在消除錢包中的所有交易...</translation>
     </message>
@@ -3558,10 +4198,13 @@
         <translation>使用 -addnode, -seednode 和 -connect 选项时允许查询DNS</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>正在加载地址簿...</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = 保留 tx meta data , 如 account owner 和 payment request information, 2 = 不保留 tx meta data) </translation>
     </message>
@@ -3574,6 +4217,13 @@
         <translation>不要让交易留在内存池中超过 &lt;n&gt; 个小时 (默认值: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error loading wallet %s. -wallet parameter must only specify a filename (not a path).</source>
+        <translation>加载钱包出错 %s. -wallet参数必需指定为文件名(而不是目录路径)。</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation>当产生交易时，如果每千字节 (kB) 的手续费比这个值 (单位是 %s) 低，就视为没支付手续费 (默认值: %s)</translation>
     </message>
@@ -3619,7 +4269,11 @@
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+<<<<<<< HEAD
         <translation>通过Tor隐藏服务连接节点时 使用不同的SOCKS5代理 (默认: %s)</translation>
+=======
+        <translation>通过 Tor 隐藏服务连接节点时使用不同的 SOCKS5 代理 (默认: %s)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
@@ -3638,6 +4292,21 @@
         <translation>始终通过 DNS 查询节点地址 (默认: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error loading wallet %s. -wallet filename must be a regular file.</source>
+        <translation>加载钱包 %s 出错。 -wallet 必须是正规文件名。</translation>
+    </message>
+    <message>
+        <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
+        <translation>加载钱包 %s 出错。 重复的 -wallet 文件名。</translation>
+    </message>
+    <message>
+        <source>Error loading wallet %s. Invalid characters in -wallet filename.</source>
+        <translation>加载钱包 %s 出错。 -wallet 文件名中包含无效字符。</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
         <translation>启动时检测多少个数据块(默认: %u, 0=所有)</translation>
     </message>
@@ -3646,10 +4315,13 @@
         <translation>在调试输出中包含IP地址 (默认: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -proxy address: '%s'</source>
         <translation>无效的代理地址：%s</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
         <translation>使用 &lt;port&gt;端口监听 JSON-RPC 连接 (默认: %u ; testnet: %u) </translation>
     </message>
@@ -3718,8 +4390,17 @@
         <translation>正在启动网络线程...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>This is the transaction fee you will pay if you send a transaction.</source>
         <translation>如果发送交易，这是你交易付款时所要付的手续费。</translation>
+=======
+        <source>The wallet will avoid paying less than the minimum relay fee.</source>
+        <translation>钱包避免低于最小交易费的支付</translation>
+    </message>
+    <message>
+        <source>This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>如果发送交易，这将是你要支付的交易费。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
@@ -3746,10 +4427,13 @@
         <translation>正在加载区块索引...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>添加节点并与其保持连接</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>正在加载钱包...</translation>
     </message>
@@ -3758,10 +4442,13 @@
         <translation>无法降级钱包</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot write default address</source>
         <translation>无法写入默认地址</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>正在重新扫描...</translation>
     </message>

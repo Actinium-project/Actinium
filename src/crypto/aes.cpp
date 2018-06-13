@@ -1,15 +1,28 @@
+<<<<<<< HEAD
 // Copyright (c) 2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "aes.h"
 #include "crypto/common.h"
+=======
+// Copyright (c) 2016-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <crypto/aes.h>
+#include <crypto/common.h>
+>>>>>>> upstream/0.16
 
 #include <assert.h>
 #include <string.h>
 
 extern "C" {
+<<<<<<< HEAD
 #include "crypto/ctaes/ctaes.c"
+=======
+#include <crypto/ctaes/ctaes.c>
+>>>>>>> upstream/0.16
 }
 
 AES128Encrypt::AES128Encrypt(const unsigned char key[16])

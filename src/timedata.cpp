@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 // Copyright (c) 2014-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2014-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
+<<<<<<< HEAD
 #include "config/bitcoin-config.h"
 #endif
 
@@ -14,6 +19,19 @@
 #include "util.h"
 #include "utilstrencodings.h"
 #include "warnings.h"
+=======
+#include <config/bitcoin-config.h>
+#endif
+
+#include <timedata.h>
+
+#include <netaddress.h>
+#include <sync.h>
+#include <ui_interface.h>
+#include <util.h>
+#include <utilstrencodings.h>
+#include <warnings.h>
+>>>>>>> upstream/0.16
 
 
 static CCriticalSection cs_nTimeOffset;

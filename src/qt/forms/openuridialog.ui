@@ -77,7 +77,11 @@
   <customwidget>
    <class>QValidatedLineEdit</class>
    <extends>QLineEdit</extends>
+<<<<<<< HEAD
    <header>qvalidatedlineedit.h</header>
+=======
+   <header>qt/qvalidatedlineedit.h</header>
+>>>>>>> upstream/0.16
   </customwidget>
  </customwidgets>
  <resources/>

@@ -7,7 +7,11 @@
     </message>
     <message>
         <source>&amp;New</source>
+<<<<<<< HEAD
         <translation>Nuevo</translation>
+=======
+        <translation>&amp;Nuevo</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -142,8 +146,13 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>Enviar monedas a una dirección Actinium</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>Enviar monedas a una dirección Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +175,13 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +208,21 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Actinium addresses to prove you own them</source>
         <translation>Firmar mensajes con sus direcciones Actinium para demostrar la propiedad</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
         <translation>Verificar mensajes comprobando que están firmados con direcciones Actinium concretas</translation>
+=======
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones Litecoin para demostrar la propiedad</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones Litecoin concretas</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,8 +241,13 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
         <translation>Solicitar pagos (genera codigo QR y URL's de Actinium)</translation>
+=======
+        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <translation>Solicitar pagos (genera codigo QR y URL's de Litecoin)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -230,8 +258,13 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Open a Actinium: URI or payment request</source>
         <translation>Abrir un Actinium: URI o petición de pago</translation>
+=======
+        <source>Open a litecoin: URI or payment request</source>
+        <translation>Abrir un litecoin: URI o petición de pago</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -421,6 +454,13 @@
         <translation>Utilice un directorio de datos personalizado:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -494,8 +534,13 @@
         <translation>Experto</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Abrir automáticamente el puerto del cliente Actinium en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+=======
+        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente Litecoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -574,6 +619,13 @@
         <translation>Reinicio del cliente para activar cambios.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Este cambio requiere reinicio por parte del cliente.</translation>
     </message>
@@ -589,8 +641,13 @@
         <translation>Desde</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
         <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Actinium después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+=======
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Litecoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -641,7 +698,31 @@
         <source>N/A</source>
         <translation>N/D</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>desconocido</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -711,10 +792,13 @@
         <translation>&amp;Tráfico de Red</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Clear</source>
         <translation>&amp;Limpiar</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Total:</translation>
     </message>
@@ -734,6 +818,7 @@
         <source>Clear console</source>
         <translation>Borrar consola</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>Use las flechas arriba y abajo para navegar por el historial y &lt;b&gt;Control+L&lt;/b&gt; para limpiar la pantalla.</translation>
@@ -758,6 +843,8 @@
         <source>%1 GB</source>
         <translation>%1 GB</translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -774,6 +861,7 @@
         <translation>Mensaje:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
         <translation>Reutilizar una de las direcciones previamente usadas para recibir. Reutilizar direcciones tiene problemas de seguridad y privacidad. No lo uses a menos que antes regeneres una solicitud de pago.</translation>
     </message>
@@ -782,6 +870,8 @@
         <translation>R&amp;eutilizar una dirección existente para recibir (no recomendado)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Clear all fields of the form.</source>
         <translation>Limpiar todos los campos del formulario</translation>
     </message>
@@ -1019,8 +1109,13 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign the message to prove you own this Actinium address</source>
         <translation>Firmar el mensaje para demostrar que se posee esta dirección Actinium</translation>
+=======
+        <source>Sign the message to prove you own this Litecoin address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1039,8 +1134,13 @@
         <translation>&amp;Verificar mensaje</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verify the message to ensure it was signed with the specified Actinium address</source>
         <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Actinium indicada</translation>
+=======
+        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Litecoin indicada</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1123,8 +1223,13 @@
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Núcleo de Actinium</translation>
+=======
+        <source>Litecoin Core</source>
+        <translation>Núcleo de Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -1139,6 +1244,13 @@
         <translation>&lt;category&gt; puede ser:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>Aceptar conexiones desde el exterior (predeterminado: 1 si no -proxy o -connect)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Block creation options:</source>
         <translation>Opciones de creación de bloques:</translation>
     </message>
@@ -1179,18 +1291,24 @@
         <translation>Incorrecto o bloque de génesis no encontrado. Datadir equivocada para la red?</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -onion address: '%s'</source>
         <translation>Dirección -onion inválida: '%s'</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Not enough file descriptors available.</source>
         <translation>No hay suficientes descriptores de archivo disponibles. </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>Establecer tamaño máximo de bloque en bytes (por defecto: %d)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Specify wallet file (within data directory)</source>
         <translation>Especificar archivo de monedero (dentro del directorio de datos)</translation>
     </message>
@@ -1199,6 +1317,7 @@
         <translation>Verificando bloques...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verifying wallet...</source>
         <translation>Verificando monedero...</translation>
     </message>
@@ -1207,14 +1326,19 @@
         <translation>El monedero %s se encuentra fuera del directorio de datos %s</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>Ejecutar un comando cuando se reciba una alerta importante o cuando veamos un fork demasiado largo (%s en cmd se reemplazará por el mensaje)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Establecer tamaño máximo de las transacciones de alta prioridad/comisión baja en bytes (por defecto: %d)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Information</source>
         <translation>Información</translation>
     </message>
@@ -1269,6 +1393,7 @@
         <translation>Permitir búsquedas DNS para -addnode, -seednode y -connect</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>Cargando direcciones...</translation>
     </message>
@@ -1277,6 +1402,8 @@
         <translation>Dirección -proxy inválida: '%s'</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>La red especificada en -onlynet '%s' es desconocida</translation>
     </message>
@@ -1289,10 +1416,13 @@
         <translation>Cargando el índice de bloques...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Añadir un nodo al que conectarse y tratar de mantener la conexión abierta</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Cargando monedero...</translation>
     </message>
@@ -1301,10 +1431,13 @@
         <translation>No se puede rebajar el monedero</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot write default address</source>
         <translation>No se puede escribir la dirección predeterminada</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Reexplorando...</translation>
     </message>

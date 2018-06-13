@@ -95,4 +95,7 @@ public Q_SLOTS:
 };
 
 #endif // BITCOIN_QT_ADDRESSTABLEMODEL_H
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

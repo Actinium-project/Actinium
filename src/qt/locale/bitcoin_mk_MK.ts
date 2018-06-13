@@ -138,7 +138,11 @@
         <translation>Повторно индексирање на блокови од дискот...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
+=======
+        <source>Send coins to a Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>Испрати биткоини на Биткоин адреса</translation>
     </message>
     <message>
@@ -146,7 +150,11 @@
         <translation>&amp;Потврди порака...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
+=======
+        <source>Litecoin</source>
+>>>>>>> upstream/0.16
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -299,6 +307,13 @@
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Биткоин</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Грешка</translation>
     </message>
@@ -351,6 +366,13 @@
         <source>none</source>
         <translation>нема</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>Грешка</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -364,6 +386,13 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Sent</source>
+        <translation>Испратени</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject</name>
@@ -395,6 +424,25 @@
         <source>%1 and %2</source>
         <translation>%1 и %2</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>%1 B</source>
+        <translation>%1 Б</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 КБ</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 МБ</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 ГБ</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject::QObject</name>
@@ -432,6 +480,7 @@
         <source>&amp;Console</source>
         <translation>&amp;Конзола</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>%1 B</source>
         <translation>%1 Б</translation>
@@ -448,6 +497,8 @@
         <source>%1 GB</source>
         <translation>%1 ГБ</translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -578,7 +629,11 @@
         <translation>Опции:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
+=======
+        <source>Litecoin Core</source>
+>>>>>>> upstream/0.16
         <translation>Биткоин Core</translation>
     </message>
     <message>

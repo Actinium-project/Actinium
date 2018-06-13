@@ -7,7 +7,10 @@
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/local/bin/bitcoind</string>
+<<<<<<< HEAD
 		<string>-daemon</string>
+=======
+>>>>>>> upstream/0.16
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

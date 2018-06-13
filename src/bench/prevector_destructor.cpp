@@ -2,8 +2,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+<<<<<<< HEAD
 #include "bench.h"
 #include "prevector.h"
+=======
+#include <bench/bench.h>
+#include <prevector.h>
+>>>>>>> upstream/0.16
 
 static void PrevectorDestructor(benchmark::State& state)
 {
@@ -32,5 +37,10 @@ static void PrevectorClear(benchmark::State& state)
     }
 }
 
+<<<<<<< HEAD
 BENCHMARK(PrevectorDestructor);
 BENCHMARK(PrevectorClear);
+=======
+BENCHMARK(PrevectorDestructor, 5700);
+BENCHMARK(PrevectorClear, 5600);
+>>>>>>> upstream/0.16

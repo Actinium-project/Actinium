@@ -4,8 +4,13 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
+<<<<<<< HEAD
 #ifndef _SECP256K1_MODULE_ECDH_TESTS_
 #define _SECP256K1_MODULE_ECDH_TESTS_
+=======
+#ifndef SECP256K1_MODULE_ECDH_TESTS_H
+#define SECP256K1_MODULE_ECDH_TESTS_H
+>>>>>>> upstream/0.16
 
 void test_ecdh_api(void) {
     /* Setup context that just counts errors */
@@ -102,4 +107,8 @@ void run_ecdh_tests(void) {
     test_bad_scalar();
 }
 
+<<<<<<< HEAD
 #endif
+=======
+#endif /* SECP256K1_MODULE_ECDH_TESTS_H */
+>>>>>>> upstream/0.16

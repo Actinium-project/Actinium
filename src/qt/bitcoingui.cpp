@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -35,6 +36,41 @@
 #include "init.h"
 #include "ui_interface.h"
 #include "util.h"
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <qt/bitcoingui.h>
+
+#include <qt/bitcoinunits.h>
+#include <qt/clientmodel.h>
+#include <qt/guiconstants.h>
+#include <qt/guiutil.h>
+#include <qt/modaloverlay.h>
+#include <qt/networkstyle.h>
+#include <qt/notificator.h>
+#include <qt/openuridialog.h>
+#include <qt/optionsdialog.h>
+#include <qt/optionsmodel.h>
+#include <qt/platformstyle.h>
+#include <qt/rpcconsole.h>
+#include <qt/utilitydialog.h>
+
+#ifdef ENABLE_WALLET
+#include <qt/walletframe.h>
+#include <qt/walletmodel.h>
+#endif // ENABLE_WALLET
+
+#ifdef Q_OS_MAC
+#include <qt/macdockiconhandler.h>
+#endif
+
+#include <chainparams.h>
+#include <init.h>
+#include <ui_interface.h>
+#include <util.h>
+>>>>>>> upstream/0.16
 
 #include <iostream>
 
@@ -289,7 +325,11 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(platformStyle->SingleColorIcon(":/icons/send"), tr("&Send"), this);
+<<<<<<< HEAD
     sendCoinsAction->setStatusTip(tr("Send coins to a Actinium address"));
+=======
+    sendCoinsAction->setStatusTip(tr("Send coins to a Litecoin address"));
+>>>>>>> upstream/0.16
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
@@ -300,7 +340,11 @@ void BitcoinGUI::createActions()
     sendCoinsMenuAction->setToolTip(sendCoinsMenuAction->statusTip());
 
     receiveCoinsAction = new QAction(platformStyle->SingleColorIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
+<<<<<<< HEAD
     receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and Actinium: URIs)"));
+=======
+    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and litecoin: URIs)"));
+>>>>>>> upstream/0.16
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
@@ -360,9 +404,15 @@ void BitcoinGUI::createActions()
     changePassphraseAction = new QAction(platformStyle->TextColorIcon(":/icons/key"), tr("&Change Passphrase..."), this);
     changePassphraseAction->setStatusTip(tr("Change the passphrase used for wallet encryption"));
     signMessageAction = new QAction(platformStyle->TextColorIcon(":/icons/edit"), tr("Sign &message..."), this);
+<<<<<<< HEAD
     signMessageAction->setStatusTip(tr("Sign messages with your Actinium addresses to prove you own them"));
     verifyMessageAction = new QAction(platformStyle->TextColorIcon(":/icons/verify"), tr("&Verify message..."), this);
     verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified Actinium addresses"));
+=======
+    signMessageAction->setStatusTip(tr("Sign messages with your Litecoin addresses to prove you own them"));
+    verifyMessageAction = new QAction(platformStyle->TextColorIcon(":/icons/verify"), tr("&Verify message..."), this);
+    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified Litecoin addresses"));
+>>>>>>> upstream/0.16
 
     openRPCConsoleAction = new QAction(platformStyle->TextColorIcon(":/icons/debugwindow"), tr("&Debug window"), this);
     openRPCConsoleAction->setStatusTip(tr("Open debugging and diagnostic console"));
@@ -375,11 +425,19 @@ void BitcoinGUI::createActions()
     usedReceivingAddressesAction->setStatusTip(tr("Show the list of used receiving addresses and labels"));
 
     openAction = new QAction(platformStyle->TextColorIcon(":/icons/open"), tr("Open &URI..."), this);
+<<<<<<< HEAD
     openAction->setStatusTip(tr("Open a Actinium: URI or payment request"));
 
     showHelpMessageAction = new QAction(platformStyle->TextColorIcon(":/icons/info"), tr("&Command-line options"), this);
     showHelpMessageAction->setMenuRole(QAction::NoRole);
     showHelpMessageAction->setStatusTip(tr("Show the %1 help message to get a list with possible Actinium command-line options").arg(tr(PACKAGE_NAME)));
+=======
+    openAction->setStatusTip(tr("Open a litecoin: URI or payment request"));
+
+    showHelpMessageAction = new QAction(platformStyle->TextColorIcon(":/icons/info"), tr("&Command-line options"), this);
+    showHelpMessageAction->setMenuRole(QAction::NoRole);
+    showHelpMessageAction->setStatusTip(tr("Show the %1 help message to get a list with possible Litecoin command-line options").arg(tr(PACKAGE_NAME)));
+>>>>>>> upstream/0.16
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
@@ -459,6 +517,10 @@ void BitcoinGUI::createToolBars()
     if(walletFrame)
     {
         QToolBar *toolbar = addToolBar(tr("Tabs toolbar"));
+<<<<<<< HEAD
+=======
+        toolbar->setContextMenuPolicy(Qt::PreventContextMenu);
+>>>>>>> upstream/0.16
         toolbar->setMovable(false);
         toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
         toolbar->addAction(overviewAction);
@@ -501,13 +563,21 @@ void BitcoinGUI::setClientModel(ClientModel *_clientModel)
         }
 #endif // ENABLE_WALLET
         unitDisplayControl->setOptionsModel(_clientModel->getOptionsModel());
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> upstream/0.16
         OptionsModel* optionsModel = _clientModel->getOptionsModel();
         if(optionsModel)
         {
             // be aware of the tray icon disable state change reported by the OptionsModel object.
             connect(optionsModel,SIGNAL(hideTrayIconChanged(bool)),this,SLOT(setTrayIconVisible(bool)));
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> upstream/0.16
             // initialize the disable state of the tray icon with the current value in the model.
             setTrayIconVisible(optionsModel->getHideTrayIcon());
         }
@@ -733,7 +803,11 @@ void BitcoinGUI::updateNetworkState()
     QString tooltip;
 
     if (clientModel->getNetworkActive()) {
+<<<<<<< HEAD
         tooltip = tr("%n active connection(s) to Actinium network", "", count) + QString(".<br>") + tr("Click to disable network activity.");
+=======
+        tooltip = tr("%n active connection(s) to Litecoin network", "", count) + QString(".<br>") + tr("Click to disable network activity.");
+>>>>>>> upstream/0.16
     } else {
         tooltip = tr("Network activity disabled.") + QString("<br>") + tr("Click to enable network activity again.");
         icon = ":/icons/network_disabled";
@@ -877,7 +951,11 @@ void BitcoinGUI::setNumBlocks(int count, const QDateTime& blockDate, double nVer
 
 void BitcoinGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
 {
+<<<<<<< HEAD
     QString strTitle = tr("Actinium"); // default title
+=======
+    QString strTitle = tr("Litecoin"); // default title
+>>>>>>> upstream/0.16
     // Default to information icon
     int nMBoxIcon = QMessageBox::Information;
     int nNotifyIcon = Notificator::Information;
@@ -1049,7 +1127,11 @@ void BitcoinGUI::setHDStatus(int hdEnabled)
     labelWalletHDStatusIcon->setPixmap(platformStyle->SingleColorIcon(hdEnabled ? ":/icons/hd_enabled" : ":/icons/hd_disabled").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
     labelWalletHDStatusIcon->setToolTip(hdEnabled ? tr("HD key generation is <b>enabled</b>") : tr("HD key generation is <b>disabled</b>"));
 
+<<<<<<< HEAD
     // eventually disable the QLabel to set its opacity to 50%
+=======
+    // eventually disable the QLabel to set its opacity to 50% 
+>>>>>>> upstream/0.16
     labelWalletHDStatusIcon->setEnabled(hdEnabled);
 }
 
@@ -1209,7 +1291,11 @@ UnitDisplayStatusBarControl::UnitDisplayStatusBarControl(const PlatformStyle *pl
     const QFontMetrics fm(font());
     for (const BitcoinUnits::Unit unit : units)
     {
+<<<<<<< HEAD
         max_width = qMax(max_width, fm.width(BitcoinUnits::name(unit)));
+=======
+        max_width = qMax(max_width, fm.width(BitcoinUnits::longName(unit)));
+>>>>>>> upstream/0.16
     }
     setMinimumSize(max_width, 0);
     setAlignment(Qt::AlignRight | Qt::AlignVCenter);
@@ -1228,7 +1314,11 @@ void UnitDisplayStatusBarControl::createContextMenu()
     menu = new QMenu(this);
     for (BitcoinUnits::Unit u : BitcoinUnits::availableUnits())
     {
+<<<<<<< HEAD
         QAction *menuAction = new QAction(QString(BitcoinUnits::name(u)), this);
+=======
+        QAction *menuAction = new QAction(QString(BitcoinUnits::longName(u)), this);
+>>>>>>> upstream/0.16
         menuAction->setData(QVariant(u));
         menu->addAction(menuAction);
     }
@@ -1253,7 +1343,11 @@ void UnitDisplayStatusBarControl::setOptionsModel(OptionsModel *_optionsModel)
 /** When Display Units are changed on OptionsModel it will refresh the display text of the control on the status bar */
 void UnitDisplayStatusBarControl::updateDisplayUnit(int newUnits)
 {
+<<<<<<< HEAD
     setText(BitcoinUnits::name(newUnits));
+=======
+    setText(BitcoinUnits::longName(newUnits));
+>>>>>>> upstream/0.16
 }
 
 /** Shows context menu with Display Unit options by the mouse coordinates */

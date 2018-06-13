@@ -4,8 +4,13 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
+<<<<<<< HEAD
 #ifndef _SECP256K1_ECMULT_GEN_IMPL_H_
 #define _SECP256K1_ECMULT_GEN_IMPL_H_
+=======
+#ifndef SECP256K1_ECMULT_GEN_IMPL_H
+#define SECP256K1_ECMULT_GEN_IMPL_H
+>>>>>>> upstream/0.16
 
 #include "scalar.h"
 #include "group.h"
@@ -207,4 +212,8 @@ static void secp256k1_ecmult_gen_blind(secp256k1_ecmult_gen_context *ctx, const 
     secp256k1_gej_clear(&gb);
 }
 
+<<<<<<< HEAD
 #endif
+=======
+#endif /* SECP256K1_ECMULT_GEN_IMPL_H */
+>>>>>>> upstream/0.16

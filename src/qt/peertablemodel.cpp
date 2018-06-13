@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -10,6 +11,20 @@
 
 #include "validation.h" // for cs_main
 #include "sync.h"
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <qt/peertablemodel.h>
+
+#include <qt/clientmodel.h>
+#include <qt/guiconstants.h>
+#include <qt/guiutil.h>
+
+#include <validation.h> // for cs_main
+#include <sync.h>
+>>>>>>> upstream/0.16
 
 #include <QDebug>
 #include <QList>
@@ -33,6 +48,13 @@ bool NodeLessThan::operator()(const CNodeCombinedStats &left, const CNodeCombine
         return pLeft->cleanSubVer.compare(pRight->cleanSubVer) < 0;
     case PeerTableModel::Ping:
         return pLeft->dMinPing < pRight->dMinPing;
+<<<<<<< HEAD
+=======
+    case PeerTableModel::Sent:
+        return pLeft->nSendBytes < pRight->nSendBytes;
+    case PeerTableModel::Received:
+        return pLeft->nRecvBytes < pRight->nRecvBytes;
+>>>>>>> upstream/0.16
     }
 
     return false;
@@ -114,7 +136,11 @@ PeerTableModel::PeerTableModel(ClientModel *parent) :
     clientModel(parent),
     timer(0)
 {
+<<<<<<< HEAD
     columns << tr("NodeId") << tr("Node/Service") << tr("User Agent") << tr("Ping");
+=======
+    columns << tr("NodeId") << tr("Node/Service") << tr("Ping") << tr("Sent") << tr("Received") << tr("User Agent");
+>>>>>>> upstream/0.16
     priv.reset(new PeerTablePriv());
     // default to unsorted
     priv->sortColumn = -1;
@@ -173,10 +199,27 @@ QVariant PeerTableModel::data(const QModelIndex &index, int role) const
             return QString::fromStdString(rec->nodeStats.cleanSubVer);
         case Ping:
             return GUIUtil::formatPingTime(rec->nodeStats.dMinPing);
+<<<<<<< HEAD
         }
     } else if (role == Qt::TextAlignmentRole) {
         if (index.column() == Ping)
             return (QVariant)(Qt::AlignRight | Qt::AlignVCenter);
+=======
+        case Sent:
+            return GUIUtil::formatBytes(rec->nodeStats.nSendBytes);
+        case Received:
+            return GUIUtil::formatBytes(rec->nodeStats.nRecvBytes);
+        }
+    } else if (role == Qt::TextAlignmentRole) {
+        switch (index.column()) {
+            case Ping:
+            case Sent:
+            case Received:
+                return QVariant(Qt::AlignRight | Qt::AlignVCenter);
+            default:
+                return QVariant();
+        }
+>>>>>>> upstream/0.16
     }
 
     return QVariant();

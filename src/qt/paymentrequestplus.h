@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,10 +11,17 @@
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+<<<<<<< HEAD
 #include "paymentrequest.pb.h"
 #pragma GCC diagnostic pop
 
 #include "base58.h"
+=======
+#include <qt/paymentrequest.pb.h>
+#pragma GCC diagnostic pop
+
+#include <base58.h>
+>>>>>>> upstream/0.16
 
 #include <openssl/x509.h>
 

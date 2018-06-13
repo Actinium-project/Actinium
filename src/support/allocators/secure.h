@@ -1,13 +1,22 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_SUPPORT_ALLOCATORS_SECURE_H
 #define BITCOIN_SUPPORT_ALLOCATORS_SECURE_H
 
+<<<<<<< HEAD
 #include "support/lockedpool.h"
 #include "support/cleanse.h"
+=======
+#include <support/lockedpool.h>
+#include <support/cleanse.h>
+>>>>>>> upstream/0.16
 
 #include <string>
 
@@ -26,6 +35,7 @@ struct secure_allocator : public std::allocator<T> {
     typedef typename base::reference reference;
     typedef typename base::const_reference const_reference;
     typedef typename base::value_type value_type;
+<<<<<<< HEAD
     secure_allocator() throw() {}
     secure_allocator(const secure_allocator& a) throw() : base(a) {}
     template <typename U>
@@ -33,6 +43,15 @@ struct secure_allocator : public std::allocator<T> {
     {
     }
     ~secure_allocator() throw() {}
+=======
+    secure_allocator() noexcept {}
+    secure_allocator(const secure_allocator& a) noexcept : base(a) {}
+    template <typename U>
+    secure_allocator(const secure_allocator<U>& a) noexcept : base(a)
+    {
+    }
+    ~secure_allocator() noexcept {}
+>>>>>>> upstream/0.16
     template <typename _Other>
     struct rebind {
         typedef secure_allocator<_Other> other;

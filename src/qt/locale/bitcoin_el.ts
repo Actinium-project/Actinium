@@ -93,6 +93,13 @@
         <source>W&amp;allet</source>
         <translation>Πορτοφόλι</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>Σφάλμα</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>

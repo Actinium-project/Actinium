@@ -14,7 +14,11 @@
                 "hex": ""
             },
             "sequence": 4294967293
+<<<<<<< HEAD
         }, 
+=======
+        },
+>>>>>>> upstream/0.16
         {
             "txid": "69e9c12d30a6cd598a31ddfcaabeb9d9f0baf8938bf0ba6610beb04f589cc5ef",
             "vout": 0,

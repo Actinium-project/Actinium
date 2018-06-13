@@ -727,4 +727,7 @@ void InterruptSocks5(bool interrupt)
 {
     interruptSocks5Recv = interrupt;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

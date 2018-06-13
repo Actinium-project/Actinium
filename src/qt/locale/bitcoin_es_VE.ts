@@ -41,10 +41,45 @@
         <source>&amp;Delete</source>
         <translation>&amp;Borrar</translation>
     </message>
+<<<<<<< HEAD
     </context>
 <context>
     <name>AddressTableModel</name>
     </context>
+=======
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>Elige la dirección para recibir monedas</translation>
+    </message>
+    <message>
+        <source>Sending addresses</source>
+        <translation>Envío de direcciones</translation>
+    </message>
+    <message>
+        <source>Receiving addresses</source>
+        <translation>Direcciones de recepción</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Label</source>
+        <translation>Copiar &amp;Etiqueta</translation>
+    </message>
+    <message>
+        <source>&amp;Edit</source>
+        <translation>&amp;Editar</translation>
+    </message>
+    <message>
+        <source>Export Address List</source>
+        <translation>Exportar lista de direcciones</translation>
+    </message>
+    </context>
+<context>
+    <name>AddressTableModel</name>
+    <message>
+        <source>(no label)</source>
+        <translation>(sin etiqueta)</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -114,8 +149,13 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>Enviar monedas a una dirección Actinium</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>Enviar monedas a una dirección Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -130,8 +170,13 @@
         <translation>Abre la consola de depuración y diágnostico</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -158,12 +203,21 @@
         <translation>Encriptar las llaves privadas que pertenecen a tu billetera</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Actinium addresses to prove you own them</source>
         <translation>Firma mensajes con tus direcciones Actinium para probar que eres dueño de ellas</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
         <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Actinium especificas</translation>
+=======
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>Firma mensajes con tus direcciones Litecoin para probar que eres dueño de ellas</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Litecoin especificas</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -292,6 +346,37 @@
         <source>Confirmed</source>
         <translation>Confirmado</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copiar cantidad</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Copiar comisión</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Copiar bytes</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Copiar cambio</translation>
+    </message>
+    <message>
+        <source>yes</source>
+        <translation>si</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>no</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(sin etiqueta)</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -365,6 +450,17 @@
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Welcome</source>
+        <translation>Bienvenido</translation>
+    </message>
+    <message>
+        <source>Welcome to %1.</source>
+        <translation>Bienvenido a %1.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Use the default data directory</source>
         <translation>Usar el directorio de datos por defecto</translation>
     </message>
@@ -373,6 +469,13 @@
         <translation>Usa un directorio de datos personalizado:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Error: Directorio de datos especificado "%1" no puede ser creado.</translation>
     </message>
@@ -429,6 +532,13 @@
         <source>none</source>
         <translation>ninguno</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -503,6 +613,13 @@
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>(no label)</source>
+        <translation>(sin etiqueta)</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>SendCoinsDialog</name>
@@ -530,7 +647,31 @@
         <source>Dust:</source>
         <translation>Polvo:</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copiar cantidad</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Copiar comisión</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Copiar bytes</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Copiar cambio</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(sin etiqueta)</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     <message>
@@ -565,6 +706,13 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>(no label)</source>
+        <translation>(sin etiqueta)</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>TransactionView</name>
@@ -608,8 +756,13 @@
         <translation>Correr en segundo plano como daemon y aceptar comandos</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Actinium Core</translation>
+=======
+        <source>Litecoin Core</source>
+        <translation>Litecoin Core</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -632,6 +785,17 @@
         <translation>Información</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Transaction amount too small</source>
+        <translation>Transacción muy pequeña</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>Transacción muy grande</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>Advertencia</translation>
     </message>

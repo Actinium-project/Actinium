@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,6 +8,16 @@
 #include <QApplication>
 #include <QByteArray>
 #include <QIcon>
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <qt/notificator.h>
+
+#include <QApplication>
+#include <QByteArray>
+>>>>>>> upstream/0.16
 #include <QImageWriter>
 #include <QMessageBox>
 #include <QMetaType>
@@ -24,7 +35,11 @@
 // #define __ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES 0
 #ifdef Q_OS_MAC
 #include <ApplicationServices/ApplicationServices.h>
+<<<<<<< HEAD
 #include "macnotificationhandler.h"
+=======
+#include <qt/macnotificationhandler.h>
+>>>>>>> upstream/0.16
 #endif
 
 
@@ -60,6 +75,7 @@ Notificator::Notificator(const QString &_programName, QSystemTrayIcon *_trayIcon
     if( MacNotificationHandler::instance()->hasUserNotificationCenterSupport()) {
         mode = UserNotificationCenter;
     }
+<<<<<<< HEAD
     else {
         // Check if Growl is installed (based on Qt's tray icon implementation)
         CFURLRef cfurl;
@@ -76,6 +92,8 @@ Notificator::Notificator(const QString &_programName, QSystemTrayIcon *_trayIcon
             CFRelease(bundle);
         }
     }
+=======
+>>>>>>> upstream/0.16
 #endif
 }
 
@@ -93,7 +111,11 @@ class FreedesktopImage
 {
 public:
     FreedesktopImage() {}
+<<<<<<< HEAD
     FreedesktopImage(const QImage &img);
+=======
+    explicit FreedesktopImage(const QImage &img);
+>>>>>>> upstream/0.16
 
     static int metaType();
 
@@ -241,6 +263,7 @@ void Notificator::notifySystray(Class cls, const QString &title, const QString &
 
 // Based on Qt's tray icon implementation
 #ifdef Q_OS_MAC
+<<<<<<< HEAD
 void Notificator::notifyGrowl(Class cls, const QString &title, const QString &text, const QIcon &icon)
 {
     const QString script(
@@ -287,6 +310,8 @@ void Notificator::notifyGrowl(Class cls, const QString &title, const QString &te
     MacNotificationHandler::instance()->sendAppleScript(script.arg(notificationApp, quotedTitle, quotedText, notificationIcon, growlApp));
 }
 
+=======
+>>>>>>> upstream/0.16
 void Notificator::notifyMacUserNotificationCenter(Class cls, const QString &title, const QString &text, const QIcon &icon) {
     // icon is not supported by the user notification center yet. OSX will use the app icon.
     MacNotificationHandler::instance()->showNotification(title, text);
@@ -310,10 +335,13 @@ void Notificator::notify(Class cls, const QString &title, const QString &text, c
     case UserNotificationCenter:
         notifyMacUserNotificationCenter(cls, title, text, icon);
         break;
+<<<<<<< HEAD
     case Growl12:
     case Growl13:
         notifyGrowl(cls, title, text, icon);
         break;
+=======
+>>>>>>> upstream/0.16
 #endif
     default:
         if(cls == Critical)

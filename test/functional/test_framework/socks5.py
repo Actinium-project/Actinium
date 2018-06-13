@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
+<<<<<<< HEAD
 # Copyright (c) 2015-2016 The Bitcoin Core developers
+=======
+# Copyright (c) 2015-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Dummy Socks5 server for testing."""
@@ -31,7 +35,11 @@ def recvall(s, n):
     return rv
 
 ### Implementation classes
+<<<<<<< HEAD
 class Socks5Configuration(object):
+=======
+class Socks5Configuration():
+>>>>>>> upstream/0.16
     """Proxy configuration."""
     def __init__(self):
         self.addr = None # Bind address (must be set)
@@ -39,7 +47,11 @@ class Socks5Configuration(object):
         self.unauth = False  # Support unauthenticated
         self.auth = False  # Support authentication
 
+<<<<<<< HEAD
 class Socks5Command(object):
+=======
+class Socks5Command():
+>>>>>>> upstream/0.16
     """Information about an incoming socks5 command."""
     def __init__(self, cmd, atyp, addr, port, username, password):
         self.cmd = cmd # Command (one of Command.*)
@@ -51,7 +63,11 @@ class Socks5Command(object):
     def __repr__(self):
         return 'Socks5Command(%s,%s,%s,%s,%s,%s)' % (self.cmd, self.atyp, self.addr, self.port, self.username, self.password)
 
+<<<<<<< HEAD
 class Socks5Connection(object):
+=======
+class Socks5Connection():
+>>>>>>> upstream/0.16
     def __init__(self, serv, conn, peer):
         self.serv = serv
         self.conn = conn
@@ -91,7 +107,11 @@ class Socks5Connection(object):
                 self.conn.sendall(bytearray([0x01, 0x00]))
 
             # Read connect request
+<<<<<<< HEAD
             (ver,cmd,rsv,atyp) = recvall(self.conn, 4)
+=======
+            ver, cmd, _, atyp = recvall(self.conn, 4)
+>>>>>>> upstream/0.16
             if ver != 0x05:
                 raise IOError('Invalid socks version %i in connect request' % ver)
             if cmd != Command.CONNECT:
@@ -122,7 +142,11 @@ class Socks5Connection(object):
         finally:
             self.conn.close()
 
+<<<<<<< HEAD
 class Socks5Server(object):
+=======
+class Socks5Server():
+>>>>>>> upstream/0.16
     def __init__(self, conf):
         self.conf = conf
         self.s = socket.socket(conf.af)

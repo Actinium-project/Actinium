@@ -4,8 +4,13 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
+<<<<<<< HEAD
 #ifndef _SECP256K1_NUM_
 #define _SECP256K1_NUM_
+=======
+#ifndef SECP256K1_NUM_H
+#define SECP256K1_NUM_H
+>>>>>>> upstream/0.16
 
 #ifndef USE_NUM_NONE
 
@@ -71,4 +76,8 @@ static void secp256k1_num_negate(secp256k1_num *r);
 
 #endif
 
+<<<<<<< HEAD
 #endif
+=======
+#endif /* SECP256K1_NUM_H */
+>>>>>>> upstream/0.16

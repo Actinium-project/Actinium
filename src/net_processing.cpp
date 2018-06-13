@@ -3696,4 +3696,7 @@ public:
         mapOrphanTransactionsByPrev.clear();
     }
 } instance_of_cnetprocessingcleanup;
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

@@ -17,8 +17,13 @@
                 "reqSigs": 2,
                 "type": "multisig",
                 "addresses": [
+<<<<<<< HEAD
                     "La2DHFRvKvGwR78JkkMCzEw6BJUrSQa72A", 
                     "LZkrFMdJCxcpf2fSorE4MJHUNZGfAnD7gf", 
+=======
+                    "La2DHFRvKvGwR78JkkMCzEw6BJUrSQa72A",
+                    "LZkrFMdJCxcpf2fSorE4MJHUNZGfAnD7gf",
+>>>>>>> upstream/0.16
                     "LNZrr8v1gBobYuA3ABbTkRnuf7n5RRo5Cz"
                 ]
             }

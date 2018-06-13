@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Copyright (c) 2014-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2014-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,12 +10,21 @@
 #define BITCOIN_COMPAT_ENDIAN_H
 
 #if defined(HAVE_CONFIG_H)
+<<<<<<< HEAD
 #include "config/bitcoin-config.h"
 #endif
 
 #include <stdint.h>
 
 #include "compat/byteswap.h"
+=======
+#include <config/bitcoin-config.h>
+#endif
+
+#include <compat/byteswap.h>
+
+#include <stdint.h>
+>>>>>>> upstream/0.16
 
 #if defined(HAVE_ENDIAN_H)
 #include <endian.h>

@@ -62,6 +62,17 @@
         <translation>收款地址</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>這些是你要付款過去的 Litecoin 位址。在付款之前，務必要檢查金額和收款位址是否正確。</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>這些是你用來收款的 Litecoin 位址。建議在每次交易時，都使用一個新的收款位址。</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;Copy Address</source>
         <translation>複製地址 &amp;C</translation>
     </message>
@@ -124,6 +135,13 @@
         <translation>重複新密碼</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>輸入錢包的新密碼。&lt;br/&gt;密碼請用&lt;b&gt;10 個或以上的隨機字元&lt;/b&gt;，或是&lt;b&gt;8 個或以上的字詞&lt;/b&gt;。</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Encrypt wallet</source>
         <translation>加密錢包</translation>
     </message>
@@ -156,8 +174,13 @@
         <translation>確認錢包加密</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
         <translation>警告: 如果你將錢包加密後又忘記密碼，你就會&lt;b&gt;失去所有 Actinium 了&lt;/b&gt;！</translation>
+=======
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <translation>警告: 如果你將錢包加密後又忘記密碼，你就會&lt;b&gt;失去所有 Litecoin 了&lt;/b&gt;！</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -168,8 +191,13 @@
         <translation>錢包已加密</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
         <translation>%1 現在要關閉來完成加密程序。請記得將錢包加密不能完全防止你的 Actiniums 經被入侵電腦的惡意程式偷取。</translation>
+=======
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 現在要關閉來完成加密程序。請記得將錢包加密不能完全防止你的 Litecoins 經被入侵電腦的惡意程式偷取。</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -310,8 +338,13 @@
         <translation>正在為磁碟區塊重建索引...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>付款至一個 Actinium 位址</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>付款至一個 Litecoin 位址</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -334,8 +367,13 @@
         <translation>驗證訊息... &amp;V</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -370,8 +408,13 @@
         <translation>說明 &amp;H</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
         <translation>要求付款 (產生QR碼 Actinium: URIs)</translation>
+=======
+        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <translation>要求付款 (產生QR碼 litecoin: URIs)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -415,6 +458,13 @@
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
@@ -427,6 +477,13 @@
     </context>
 <context>
     <name>OptionsDialog</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>錯誤</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -436,12 +493,29 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+<<<<<<< HEAD
     </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Enter a Actinium address (e.g. %1)</source>
         <translation>輸入一個 Actinium 位址 (例如 %1)</translation>
+=======
+    <message>
+        <source>Sent</source>
+        <translation>已送出</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>已接收</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Enter a Litecoin address (e.g. %1)</source>
+        <translation>輸入一個 Litecoin 位址 (例如 %1)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 d</source>

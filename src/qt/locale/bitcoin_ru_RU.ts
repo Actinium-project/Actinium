@@ -62,6 +62,17 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши Litecoin адреса для отправки платежа. Всегда проверяйте сумму и адрес получателя перед отправкой платежа.</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши Litecoin адреса для получения платежей. Настоятельно рекомендуем использовать новые адреса для получения каждой транзакции.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;Copy Address</source>
         <translation>&amp;Копировать адрес</translation>
     </message>
@@ -81,7 +92,15 @@
         <source>Exporting Failed</source>
         <translation>Экспорт не удался</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Произошла ошибка при попытке сохранения списка адресов в %1. Пожалуйста попробуйте позже.</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -116,6 +135,13 @@
         <translation>Повторите новый пароль</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Введите новый пароль для кошелька.&lt;br/&gt; Пожалуйста используйте пароль из &lt;b&gt; десяти или более произвольных символов&lt;/b&gt;, или &lt;b&gt;восемь или боле слов&lt;/b&gt;</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Encrypt wallet</source>
         <translation>Зашифровать бумажник</translation>
     </message>
@@ -128,6 +154,13 @@
         <translation>Разблокировать бумажник</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <translation>Эта операция требует пароль от вашего кошелька для его расшифровки.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Decrypt wallet</source>
         <translation>Расшифровать бумажник</translation>
     </message>
@@ -136,18 +169,71 @@
         <translation>Изменить пароль</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Введите старый и новый пароль для кошелька.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Confirm wallet encryption</source>
         <translation>Подтвердите шифрование бумажника</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете ваш кошелек и потеряете ваш пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ БИТКОЙНЫ&lt;/b&gt;!</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to encrypt your wallet?</source>
+        <translation>Вы уверены, что вы хотите зашифровать ваш кошелек?</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Wallet encrypted</source>
         <translation>Бумажник зашифрован</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
+        <source>Wallet unlock failed</source>
+        <translation>Ошибка разблокировки кошелька</translation>
+    </message>
+    </context>
+=======
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 закроется сейчас для завершения процесса шифрования. Запомните что шифрование вашего кошелька не сможет полностью защитить ваши Litecoinы от кражи при помощи вредоносного ПО, заразившего ваш компьютер.</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed</source>
+        <translation>Шифрование кошелька завершилось неудачно.</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <translation>Шифрование кошелька завершилось неудачно из-за внутренней ошибки. Ваш кошелек не был зашифрован.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
         <translation>Ошибка разблокировки кошелька</translation>
     </message>
-    </context>
+    <message>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <translation>Пароль, введенный при шифровании кошелька, некорректен.</translation>
+    </message>
+    <message>
+        <source>Wallet decryption failed</source>
+        <translation>Расшифровка кошелька завершилась неудачно.</translation>
+    </message>
+    <message>
+        <source>Wallet passphrase was successfully changed.</source>
+        <translation>Пароль для кошелька был успешно изменен.</translation>
+    </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Внимание: клавиша CapsLock включена!</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>BanTableModel</name>
     </context>
@@ -158,6 +244,17 @@
         <translation>Подписать &amp;сообщение...</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Synchronizing with network...</source>
+        <translation>Синхронизация с сетью...</translation>
+    </message>
+    <message>
+        <source>Node</source>
+        <translation>Узел</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакции</translation>
     </message>
@@ -218,10 +315,40 @@
         <translation>Открыть &amp;URI...</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Click to disable network activity.</source>
+        <translation>Нажмите для отключения взаимодействия с сетью.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>Взаимодействие с сетью отключено.</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>Нажмите для включения взаимодействия с сетью.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Syncing Headers (%1%)...</source>
         <translation>Синхронизация заголовков (%1%)...</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Reindexing blocks on disk...</source>
+        <translation>Реиндексация блоков на диске...</translation>
+    </message>
+    <message>
+        <source>Send coins to a Litecoin address</source>
+        <translation>Послать средства на Litecoin адрес</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>Изменить пароль, используемый для шифрования кошелька</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;Debug window</source>
         <translation>&amp;Окно отладки</translation>
     </message>
@@ -230,8 +357,13 @@
         <translation>&amp;Проверить сообщение...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium Core</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin Core</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -250,6 +382,17 @@
         <translation>&amp;Показать / Спрятать</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Show or hide the main Window</source>
+        <translation>Показать или скрыть главное окно</translation>
+    </message>
+    <message>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation>Зашифровать приватные ключи, принадлежащие вашему кошельку</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
@@ -381,6 +524,13 @@
         <translation>Добро пожаловать в %1.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin Core</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
@@ -418,10 +568,13 @@
         <translation>МБ</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Allow incoming connections</source>
         <translation>Разрешить входящие соеденения</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>&amp;Reset Options</source>
         <translation>&amp;Сбросить опции</translation>
     </message>
@@ -442,8 +595,13 @@
         <translation>Пробросить порт через &amp;UPnP</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
         <translation>Подключится к сети Actinium через SOCKS5 прокси.</translation>
+=======
+        <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
+        <translation>Подключится к сети Litecoin через SOCKS5 прокси.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -474,10 +632,13 @@
         <translation>&amp;Окно</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Hide tray icon</source>
         <translation>Спрятать иконку в трее</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>&amp;OK</source>
         <translation>&amp;ОК</translation>
     </message>
@@ -485,6 +646,13 @@
         <source>&amp;Cancel</source>
         <translation>&amp;Отмена</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>Ошибка</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -506,7 +674,11 @@
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
+<<<<<<< HEAD
         <translation>Ваш текущий баланс на адресах только для чтения:</translation>
+=======
+        <translation>Ваш текущий баланс (только чтение):</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Recent transactions</source>
@@ -518,6 +690,7 @@
     </context>
 <context>
     <name>PeerTableModel</name>
+<<<<<<< HEAD
     </context>
 <context>
     <name>QObject</name>
@@ -544,6 +717,42 @@
     <message numerus="yes">
         <source>%n year(s)</source>
         <translation><numerusform>%n год</numerusform><numerusform>%n лет</numerusform><numerusform>%n лет</numerusform><numerusform>%n лет</numerusform></translation>
+=======
+    <message>
+        <source>Sent</source>
+        <translation>Отправлено</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Получено</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Enter a Litecoin address (e.g. %1)</source>
+        <translation>Введите биткоин-адрес (напр. %1)</translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 и %2</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1  Б</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1  КБ</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1  МБ</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 ГБ</translation>
+>>>>>>> upstream/0.16
     </message>
     </context>
 <context>
@@ -619,6 +828,7 @@
         <translation>1 &amp;год</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 B</source>
         <translation>%1  Б</translation>
     </message>
@@ -635,6 +845,8 @@
         <translation>%1 ГБ</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>never</source>
         <translation>никогда</translation>
     </message>
@@ -832,8 +1044,13 @@
 <context>
     <name>bitcoin-core</name>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Actinium Core</translation>
+=======
+        <source>Litecoin Core</source>
+        <translation>Litecoin Core</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>

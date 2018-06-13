@@ -163,11 +163,19 @@
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
+<<<<<<< HEAD
         <translation>&amp;ที่เก็บเงิน ที่จะส่ง Actinium</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
         <translation>&amp;ที่เก็บเงิน ที่จะรับ Actinium</translation>
+=======
+        <translation>&amp;ที่เก็บเงิน ที่จะส่ง litecoin</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;ที่เก็บเงิน ที่จะรับ litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -178,8 +186,13 @@
         <translation>กำลังทำดัชนี ที่เก็บบล็อก ใหม่ ในดิสก์...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>ส่ง coins ไปยัง ที่เก็บ Actinium</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>ส่ง coins ไปยัง ที่เก็บ Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -202,8 +215,13 @@
         <translation>&amp;ยืนยันข้อความ...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -230,12 +248,21 @@
         <translation>เข้ารหัส private keys/ รหัสส่วนตัว สำหรับกระเป๋าเงินของท่าน</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Actinium addresses to prove you own them</source>
         <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Actinium เพื่อแสดงว่าท่านเป็นเจ้าของ Actinium นี้จริง</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
         <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ Actinium แล้ว</translation>
+=======
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Litecoin เพื่อแสดงว่าท่านเป็นเจ้าของ litecoin นี้จริง</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ Litecoin แล้ว</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -254,6 +281,7 @@
         <translation>แถบเครื่องมือ</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
         <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ Actinium: URIs)</translation>
     </message>
@@ -268,14 +296,35 @@
     <message>
         <source>Open a Actinium: URI or payment request</source>
         <translation>เปิด Actinium: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
+=======
+        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ litecoin: URIs)</translation>
+    </message>
+    <message>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง litecoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+    </message>
+    <message>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ litecoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+    </message>
+    <message>
+        <source>Open a litecoin: URI or payment request</source>
+        <translation>เปิด litecoin: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;ตัวเลือก Command-line</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <source>%n active connection(s) to Actinium network</source>
         <translation><numerusform>%n ช่องการเชื่อมต่อที่ใช้งานได้ เพื่อเชื่อมกับเครือข่าย Actinium</numerusform></translation>
+=======
+        <source>%n active connection(s) to Litecoin network</source>
+        <translation><numerusform>%n ช่องการเชื่อมต่อที่ใช้งานได้ เพื่อเชื่อมกับเครือข่าย Litecoin</numerusform></translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -318,8 +367,13 @@
         <translation>ทันสมัย</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
         <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Actinium command-line</translation>
+=======
+        <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
+        <translation>แสดง %1 ข้อความช่วยเหลือ เพื่อแสดงรายการ ตัวเลือกที่เป็นไปได้สำหรับ Litecoin command-line</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 client</source>
@@ -563,10 +617,13 @@
         <translation>นี่เป็นการรันโปรแกรมครั้งแรก ท่านสามารถเลือก ว่าจะเก็บข้อมูลไว้ที่ %1</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 will download and store a copy of the Actinium block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>%1 จะดาวน์โหลดและเก็บกอปปี้ชุดหนึ่งของ บล็อกเชน Actinium ไว้ ข้อมูลขนานอย่างน้อย %2GB จะเก็บไว้ในไดเร็กทอรี่นี้ และข้อมูลจะมีขนาดใหญ่ขึ้นเรื่อยๆ กระเป๋าเงิน จะเก็บไว้ในไดเร็กทอรี่นี้ด้วย</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Use the default data directory</source>
         <translation>ใช้ไดเร็กทอรี่ข้อมูล ที่เป็นค่าเริ่มต้น</translation>
     </message>
@@ -575,6 +632,13 @@
         <translation>ใช้ไดเร็กทอรี่ข้อมูลที่ตั้งค่าเอง:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>ข้อผิดพลาด: ไดเร็กทอรี่ข้อมูลที่ต้องการ "%1" ไม่สามารถสร้างได้</translation>
     </message>
@@ -648,6 +712,7 @@
         <translation>จำนวนของสคริปท์ &amp;verification threads</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Accept connections from outside</source>
         <translation>ยอมรับ การเชื่อมต่อจากภายนอก</translation>
     </message>
@@ -656,6 +721,8 @@
         <translation>ยอมให้เชื่อมต่อจากภายนอกได้</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>IP แอดเดส ของ proxy (เช่น IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
@@ -668,10 +735,13 @@
         <translation>URL แบบอื่น (ยกตัวอย่าง เอ็กพลอเลอร์บล็อก) ที่อยู่ใน เมนูรายการ ลำดับ %s ใน URL จะถูกเปลี่ยนด้วย รายการแฮช URL ที่เป็นแบบหลายๆอัน จะถูกแยก โดย เครื่องหมายเส้นบาร์ตั้ง |</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Third party transaction URLs</source>
         <translation>URI รายการ แบบของเจ้าอื่นๆ</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Active command-line options that override above options:</source>
         <translation>ตัวเลือก command-line แอกทีฟอยู่นี้ จะแทนที่ ตัวเลือกด้านบนนี้:</translation>
     </message>
@@ -712,16 +782,26 @@
         <translation>&amp;ใช้เงินทอนที่ยังไม่ยืนยัน</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>เปิด Actinium ไคล์เอ็นท์พอร์ต/client port บน router โดยอัตโนมัติ วิธีนี้ใช้ได้เมื่อ router สนับสนุน UPnP และสถานะเปิดใช้งาน</translation>
+=======
+        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>เปิด Litecoin ไคล์เอ็นท์พอร์ต/client port บน router โดยอัตโนมัติ วิธีนี้ใช้ได้เมื่อ router สนับสนุน UPnP และสถานะเปิดใช้งาน</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>จองพอร์ต โดยใช้ &amp;UPnP</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
         <translation>เชื่อมต่อกับ Actinium เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
+=======
+        <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
+        <translation>เชื่อมต่อกับ Litecoin เน็ตเวิร์ก ผ่านพร็อกซี่แบบ SOCKS5</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -744,10 +824,13 @@
         <translation>ใช้ในการเข้าถึงอีกฝ่ายหนึ่ง peer โดย:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
         <translation>แสดง หากใช้พร็อกซี่ SOCKS5 ที่เป็นค่าเริ่มต้น เพื่อเข้าถึง peer อีกฝ่าย ผ่านทางเน็ตเวิร์กชนิดนี้</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -760,18 +843,24 @@
         <translation>Tor</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Actinium network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>เชื่อมต่อกับ เครือข่าย Actinium ผ่านทาง พร้อกซี่ SOCKS5 แยกต่างหาก สำหรับ Tor เซอร์วิส</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
         <translation>ใช้ พร็อกซี่ SOCKS5 แยก เพื่อเข้าถึง peers ผ่าน Tor เซอร์วิสซ่อน:</translation>
+=======
+        <source>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>เชื่อมต่อกับ เครือข่าย Litecoin ผ่านทาง พร้อกซี่ SOCKS5 แยกต่างหาก สำหรับ Tor เซอร์วิส</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Window</source>
         <translation>&amp;วันโดว์</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Hide the icon from the system tray.</source>
         <translation>&amp;ซ่อนไอคอน จากเทรย์ระบบ</translation>
     </message>
@@ -783,6 +872,15 @@
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>แสดงเทรย์ไอคอน หลังมืนิไมส์วินโดว์ เท่านั้น</translation>
     </message>
+=======
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>แสดงเทรย์ไอคอน หลังมืนิไมส์วินโดว์ เท่านั้น</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>ข้อผิดพลาด</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>

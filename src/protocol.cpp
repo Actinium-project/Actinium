@@ -188,4 +188,7 @@ const std::vector<std::string> &getAllNetMessageTypes()
 {
     return allNetMessageTypesVec;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

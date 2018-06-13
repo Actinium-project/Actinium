@@ -62,12 +62,21 @@
         <translation>Alım adresleri</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Bunlar ödemeleri göndermek için kullanacağınız Actinium adreslerinizdir. Actinium yollamadan önce tutarı ve alıcının alım adresini her zaman kontrol ediniz.</translation>
     </message>
     <message>
         <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Bunlar ödemeleri almak için kullanacağınız Actinium adreslerinizdir. Her işlem için yeni bir alım adresi kullanmanız tavsiye edilir.</translation>
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için kullanacağınız Litecoin adreslerinizdir. Litecoin yollamadan önce tutarı ve alıcının alım adresini her zaman kontrol ediniz.</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için kullanacağınız Litecoin adreslerinizdir. Her işlem için yeni bir alım adresi kullanmanız tavsiye edilir.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -132,6 +141,13 @@
         <translation>Yeni parolayı tekrarlayınız</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Show password</source>
+        <translation>Parolayı göster</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Cüzdan için yeni parolayı giriniz.&lt;br/&gt;Lütfen &lt;b&gt;on ya da daha fazla rastgele karakter&lt;/b&gt; veya &lt;b&gt;sekiz ya da daha fazla kelime&lt;/b&gt; içeren bir parola kullanınız.</translation>
     </message>
@@ -168,7 +184,11 @@
         <translation>Cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
+=======
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+>>>>>>> upstream/0.16
         <translation>Uyarı: Eğer cüzdanınızı şifreler ve parolanızı kaybederseniz &lt;b&gt;TÜM BİTCOİNLERİNİZİ KAYBEDECEKSİNİZ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -180,7 +200,11 @@
         <translation>Cüzdan şifrelendi</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
+=======
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+>>>>>>> upstream/0.16
         <translation>Şifreleme işleminin bitirilmesi için %1 kapatılacak. Her ne kadar cüzdanınızı şifreleseniz de şifrelemenin litecoinlerinizi bilgisayarınıza bulaşan zararlılardan tam olarak koruyamayacağını unutmayın.</translation>
     </message>
     <message>
@@ -338,8 +362,13 @@
         <translation>Diskteki bloklar yeniden indeksleniyor...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>Bir Actinium adresine Actinium gönder</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>Bir litecoin adresine litecoin gönder</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -362,8 +391,13 @@
         <translation>İletiyi &amp;kontrol et...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -390,12 +424,21 @@
         <translation>Cüzdanınıza ait özel anahtarları şifreleyin</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Actinium addresses to prove you own them</source>
         <translation>İletileri adreslerin size ait olduğunu ispatlamak için Actinium adresleri ile imzala</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
         <translation>Belirtilen Actinium adresleri ile imzalandıklarından emin olmak için iletileri kontrol et</translation>
+=======
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>İletileri adreslerin size ait olduğunu ispatlamak için Litecoin adresleri ile imzala</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <translation>Belirtilen Litecoin adresleri ile imzalandıklarından emin olmak için iletileri kontrol et</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -414,8 +457,13 @@
         <translation>Sekme araç çubuğu</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
         <translation>Ödeme talep et (QR kodu ve Actinium URI'si oluşturur)</translation>
+=======
+        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <translation>Ödeme talep et (QR kodu ve litecoin URI'si oluşturur)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,16 +474,26 @@
         <translation>Kullanılmış alım adresleri ve etiketlerin listesini göster</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Open a Actinium: URI or payment request</source>
         <translation>Bir Actinium: bağlantısı ya da ödeme talebi aç</translation>
+=======
+        <source>Open a litecoin: URI or payment request</source>
+        <translation>Bir litecoin: bağlantısı ya da ödeme talebi aç</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komut satırı seçenekleri</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <source>%n active connection(s) to Actinium network</source>
         <translation><numerusform>Actinium şebekesine %n faal bağlantı</numerusform><numerusform>Actinium ağına %n etkin bağlantı var</numerusform></translation>
+=======
+        <source>%n active connection(s) to Litecoin network</source>
+        <translation><numerusform>Litecoin şebekesine %n faal bağlantı</numerusform><numerusform>Litecoin ağına %n etkin bağlantı var</numerusform></translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -478,8 +536,13 @@
         <translation>Güncel</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
         <translation>Olası Actinium komut satırı seçeneklerinin listesini görmek için %1 yardım mesajını göster</translation>
+=======
+        <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
+        <translation>Olası Litecoin komut satırı seçeneklerinin listesini görmek için %1 yardım mesajını göster</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 client</source>
@@ -548,15 +611,24 @@
         <translation>Cüzdan &lt;b&gt;şifrelenmiştir&lt;/b&gt; ve şu anda &lt;b&gt;kilitlidir&lt;/b&gt;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
         <translation>Ölümcül bir hata oluştu. Actinium yazılımı artık güvenli bir şekilde çalışmaya devam edemediği için kapatılacaktır.</translation>
+=======
+        <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
+        <translation>Ölümcül bir hata oluştu. Litecoin yazılımı artık güvenli bir şekilde çalışmaya devam edemediği için kapatılacaktır.</translation>
+>>>>>>> upstream/0.16
     </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
         <source>Coin Selection</source>
+<<<<<<< HEAD
         <translation>Actinium Seçimi</translation>
+=======
+        <translation>Litecoin Seçimi</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Quantity:</source>
@@ -742,8 +814,13 @@
         <translation>Gönderi adresini düzenle</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The entered address "%1" is not a valid Actinium address.</source>
         <translation>Girilen "%1" adresi geçerli bir Actinium adresi değildir.</translation>
+=======
+        <source>The entered address "%1" is not a valid Litecoin address.</source>
+        <translation>Girilen "%1" adresi geçerli bir Litecoin adresi değildir.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -851,8 +928,13 @@
         <translation>Bu programın ilk kez başlatılmasından dolayı %1 yazılımının verilerini nerede saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 will download and store a copy of the Actinium block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>%1, Actinium blok zincirinin bir kopyasını indirecek ve saklayacaktır. Bu klasörde en az %2 GB veri saklanacak ve bu zamanla artacaktır. Cüzdan da bu klasörde saklanacaktır.</translation>
+=======
+        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
+        <translation>Blok zinciri saklamayı sınırlamayı seçtiyseniz (budama), geçmiş veriler yine de indirilmeli ve işlenmelidir, ancak disk kullanımınızı düşük tutmak için daha sonra silinmelidir.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -863,6 +945,21 @@
         <translation>Özel bir veri klasörü kullan:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+        <source>Approximately %1 GB of data will be stored in this directory.</source>
+        <translation>Yaklaşık %1 GB veri bu dizinde depolanacak.</translation>
+    </message>
+    <message>
+        <source>The wallet will also be stored in this directory.</source>
+        <translation>Cüzdan da bu dizinde depolanacaktır.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Hata: belirtilen "%1" veri klasörü oluşturulamaz.</translation>
     </message>
@@ -886,11 +983,19 @@
         <translation>Form</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Actinium network, as detailed below.</source>
         <translation>Son işlemler henüz görünmeyebilir ve bu nedenle cüzdanınızın bakiyesi yanlış olabilir. Bu bilgiler, aşağıda detaylandırıldığı gibi, cüzdanınız Actinium ağı ile senkronizasyonunu tamamladığında doğru olacaktır. </translation>
     </message>
     <message>
         <source>Attempting to spend actiniums that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+=======
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</source>
+        <translation>Son işlemler henüz görünmeyebilir ve bu nedenle cüzdanınızın bakiyesi yanlış olabilir. Bu bilgiler, aşağıda detaylandırıldığı gibi, cüzdanınız litecoin ağı ile senkronizasyonunu tamamladığında doğru olacaktır. </translation>
+    </message>
+    <message>
+        <source>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+>>>>>>> upstream/0.16
         <translation>Henüz görüntülenmeyen işlemlerden etkilenen litecoinleri harcama girişiminde bulunmak ağ tarafından kabul edilmeyecektir.</translation>
     </message>
     <message>
@@ -984,6 +1089,7 @@
         <translation>İş parçacıklarını &amp;denetleme betiği sayısı</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Accept connections from outside</source>
         <translation>Dışarıdan gelen bağlantıları kabul et</translation>
     </message>
@@ -994,6 +1100,26 @@
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Vekil sunucusunun IP adresi (mesela IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+=======
+        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
+        <translation>Vekil sunucusunun IP adresi (mesela IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+    </message>
+    <message>
+        <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
+        <translation>Bu şebeke türü yoluyla eşlere bağlanmak için belirtilen varsayılan SOCKS5 vekil sunucusunun kullanılıp kullanılmadığını gösterir.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
+        <translation>Tor gizli servisleri aracılığıyla eşlere ulaşmak için ayrı SOCKS&amp;5 proksi kullanın:</translation>
+    </message>
+    <message>
+        <source>Hide the icon from the system tray.</source>
+        <translation>Simgeyi sistem tepsisinden gizleyin.</translation>
+    </message>
+    <message>
+        <source>&amp;Hide tray icon</source>
+        <translation>&amp;Simgeyi gizle</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -1004,14 +1130,28 @@
         <translation>İşlemler sekmesinde bağlam menüsü unsurları olarak görünen üçüncü taraf bağlantıları (mesela bir blok tarayıcısı). URL'deki %s, işlem hash değeri ile değiştirilecektir. Birden çok bağlantılar düşey çubuklar | ile ayrılacaktır.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Third party transaction URLs</source>
         <translation>Üçüncü parti işlem URL'leri</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Active command-line options that override above options:</source>
         <translation>Yukarıdaki seçeneklerin yerine geçen etkin komut satırı seçenekleri:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Open the %1 configuration file from the working directory.</source>
+        <translation>Çalışma dizininden %1  yapılandırma dosyasını aç.</translation>
+    </message>
+    <message>
+        <source>Open Configuration File</source>
+        <translation>Yapılandırma Dosyasını Aç</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>İstemcinin tüm seçeneklerini varsayılan değerlere geri al.</translation>
     </message>
@@ -1048,16 +1188,34 @@
         <translation>Doğrulanmamış para üstünü &amp;harca</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Yönlendiricide Actinium istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
+=======
+        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönlendiricide Litecoin istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Portları &amp;UPnP kullanarak haritala</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
         <translation>Actinium ağına bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
+=======
+        <source>Accept connections from outside.</source>
+        <translation>Dışarıdan bağlantıları kabul et.</translation>
+    </message>
+    <message>
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Gelen bağlantılara izin ver</translation>
+    </message>
+    <message>
+        <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
+        <translation>Litecoin ağına bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1080,10 +1238,13 @@
         <translation>Eşlere ulaşmak için kullanılır, şu üzerinden:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
         <translation>Bu ağ türü yoluyla eşlere bağlanmak için belirtilen varsayılan SOCKS5 vekil sunucusunun kullanılıp kullanılmadığını gösterir.</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1096,18 +1257,24 @@
         <translation>Tor</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Actinium network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Actinium ağına gizli Tor servisleri için ayrı bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
         <translation>Eşlere gizli Tor servisleri ile ulaşmak için ayrı SOCKS5 vekil sunucusu kullan:</translation>
+=======
+        <source>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Litecoin ağına gizli Tor servisleri için ayrı bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Window</source>
         <translation>&amp;Pencere</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Hide the icon from the system tray.</source>
         <translation>Simgeyi görev çubuğundan &amp;gizle</translation>
     </message>
@@ -1116,6 +1283,8 @@
         <translation>Görev çubuğu simgesini gizle</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>Küçültüldükten sonra sadece tepsi simgesi göster.</translation>
     </message>
@@ -1145,13 +1314,24 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+<<<<<<< HEAD
         <translation>Actinium gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
+=======
+        <translation>Litecoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
         <translation>Para kontrol özelliklerinin gösterilip gösterilmeyeceğini ayarlar.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>&amp;Third party transaction URLs</source>
+        <translation>&amp;Üçüncü parti işlem URL'leri</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;OK</source>
         <translation>&amp;Tamam</translation>
     </message>
@@ -1180,6 +1360,25 @@
         <translation>İstemci kapanacaktır. Devam etmek istiyor musunuz?</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Configuration options</source>
+        <translation>Yapılandırma seçenekleri</translation>
+    </message>
+    <message>
+        <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
+        <translation>Yapılandırma dosyası, grafik arayüzü ayarlarını geçersiz kılacak gelişmiş kullanıcı seçeneklerini belirtmek için kullanılır. Ayrıca, herhangi bir komut satırı seçeneği bu yapılandırma dosyasını geçersiz kılacaktır.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Hata</translation>
+    </message>
+    <message>
+        <source>The configuration file could not be opened.</source>
+        <translation>Yapılandırma dosyası açılamadı.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>Bu değişiklik istemcinin tekrar başlatılmasını gerektirir.</translation>
     </message>
@@ -1195,8 +1394,13 @@
         <translation>Form</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
         <translation>Görüntülenen bilgiler güncel olmayabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak Actinium ağı ile senkronize olur ancak bu işlem henüz tamamlanmamıştır.</translation>
+=======
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilgiler güncel olmayabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak Litecoin ağı ile senkronize olur ancak bu işlem henüz tamamlanmamıştır.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1270,8 +1474,13 @@
         <translation>Ödeme talebi hatası</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot start Actinium: click-to-pay handler</source>
         <translation>Actinium başlatılamadı: tıkla-ve-öde yöneticisi</translation>
+=======
+        <source>Cannot start litecoin: click-to-pay handler</source>
+        <translation>Litecoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>URI handling</source>
@@ -1286,8 +1495,13 @@
         <translation>%1 ödeme adresi geçersizdir</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>URI cannot be parsed! This can be caused by an invalid Actinium address or malformed URI parameters.</source>
         <translation>URI ayrıştırılamıyor! Bunun nedeni geçersiz bir Actinium adresi veya hatalı biçimlendirilmiş URI değişkenleri olabilir.</translation>
+=======
+        <source>URI cannot be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamıyor! Bunun nedeni geçersiz bir Litecoin adresi veya hatalı biçimlendirilmiş URI değişkenleri olabilir.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1372,6 +1586,17 @@
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Sent</source>
+        <translation>Yollanan</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Alınan</translation>
+    </message>
+>>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject</name>
@@ -1380,8 +1605,13 @@
         <translation>Tutar</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter a Actinium address (e.g. %1)</source>
         <translation>Bir Actinium adresi giriniz (mesela %1)</translation>
+=======
+        <source>Enter a Litecoin address (e.g. %1)</source>
+        <translation>Bir Litecoin adresi giriniz (mesela %1)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>%1 d</source>
@@ -1440,9 +1670,35 @@
         <translation><numerusform>%n yıl</numerusform><numerusform>%n yıl</numerusform></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 didn't yet exit safely...</source>
         <translation>%1  henüz güvenli bir şekilde çıkış yapmamıştır...</translation>
     </message>
+=======
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>%1 didn't yet exit safely...</source>
+        <translation>%1  henüz güvenli bir şekilde çıkış yapmamıştır...</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>bilinmiyor</translation>
+    </message>
+>>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject::QObject</name>
@@ -1545,6 +1801,13 @@
         <translation>Bellek kullanımı</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>&amp;Reset</source>
+        <translation>&amp;Sıfırla</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Received</source>
         <translation>Alınan</translation>
     </message>
@@ -1661,10 +1924,13 @@
         <translation>&amp;Ağ trafiği</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Clear</source>
         <translation>&amp;Temizle</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>Toplamlar</translation>
     </message>
@@ -1717,6 +1983,7 @@
         <translation>%1 RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>Tarihçede gezinmek için aşağı ve yukarı ok tuşlarını kullanınız, &lt;b&gt;Ctrl-L&lt;/b&gt; ile de ekranı temizleyebilirsiniz.</translation>
     </message>
@@ -1747,6 +2014,26 @@
     <message>
         <source>%1 GB</source>
         <translation>%1 GB</translation>
+=======
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Geçmişte gezinmek için yukarı ve aşağı oklarını kullanın ve ekranı temizlemek için %1 kullanın.</translation>
+    </message>
+    <message>
+        <source>Type %1 for an overview of available commands.</source>
+        <translation>Mevcut komutlara göz atmak için %1 yazın.</translation>
+    </message>
+    <message>
+        <source>For more information on using this console type %1.</source>
+        <translation>Bu konsolun kullanımı hakkında daha fazla bilgi için %1 yazın.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>UYARI: Litecoin dolandırıcılarının çok fazla etkin olduğu zamanlarda, dolandırıcılar bazı kullanıcılara buraya komutlar yazmalarını söylerek onların cüzdanlarındaki litecoinleri çalmışlardır. Bir komutun sonuçlarını tam olarak anlamadan bu konsolu kullanmayın.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled</source>
+        <translation>Ağ etkinliği devre dışı bırakıldı</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -1796,6 +2083,7 @@
         <translation>&amp;İleti:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
         <translation>Daha önce kullanılmış bir alım adresini kullan. Adresleri tekrar kullanmak güvenlik ve gizlilik sorunları doğurur. Bunu, daha önce yaptığınız bir talebi tekrar oluşturmak durumu dışında kullanmayınız.</translation>
     </message>
@@ -1806,6 +2094,10 @@
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
         <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir ileti. Not: Bu ileti ödeme ile birlikte Actinium ağı üzerinden gönderilmeyecektir.</translation>
+=======
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
+        <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir ileti. Not: Bu ileti ödeme ile birlikte Litecoin ağı üzerinden gönderilmeyecektir.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1836,6 +2128,13 @@
         <translation>Ödeme &amp;talep et</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Generate Bech32 address</source>
+        <translation>Bech32 adresi oluştur</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Show the selected request (does the same as double clicking an entry)</source>
         <translation>Seçilen talebi göster (bir unsura çift tıklamakla aynı anlama gelir)</translation>
     </message>
@@ -1958,7 +2257,11 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
+<<<<<<< HEAD
         <translation>Actinium yolla</translation>
+=======
+        <translation>Litecoin yolla</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2017,6 +2320,13 @@
         <translation>Seç...</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Warning: Fee estimation is currently not possible.</source>
+        <translation>Uyarı: Ücret tahmini şu anda mümkün değildir.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>collapse fee-settings</source>
         <translation>ücret-ayarlarını-küçült</translation>
     </message>
@@ -2033,12 +2343,17 @@
         <translation>Gizle</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>total at least</source>
         <translation>toplam asgari</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Actinium transactions than the network can process.</source>
         <translation>Gerekli olan en az ücreti ödemek, bloklarda boşluktan daha az işlem hacmi olduğu sürece bir sorun çıkarmaz. Fakat ağın işleyecebileceğinden daha çok Actinium işlemi talebi olduğunda bunun asla doğrulanmayan bir işlem olabileceğinin farkında olmalısınız.</translation>
+=======
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
+        <translation>Gerekli olan en az ücreti ödemek, bloklarda boşluktan daha az işlem hacmi olduğu sürece bir sorun çıkarmaz. Fakat ağın işleyecebileceğinden daha çok litecoin işlemi talebi olduğunda bunun asla doğrulanmayan bir işlem olabileceğinin farkında olmalısınız.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2057,6 +2372,7 @@
         <translation>(Zeki ücret henüz başlatılmadı. Bu genelde birkaç blok alır...)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>normal</source>
         <translation>normal</translation>
     </message>
@@ -2065,6 +2381,8 @@
         <translation>çabuk</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Birçok alıcıya aynı anda gönder</translation>
     </message>
@@ -2129,6 +2447,13 @@
         <translation>Para üstünü kopyala</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>%1 (%2 blocks)</source>
+        <translation>%1(%2 blok)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>%1 to %2</source>
         <translation>%1 ögesinden %2 unsuruna</translation>
     </message>
@@ -2150,7 +2475,11 @@
     </message>
     <message>
         <source>Confirm send coins</source>
+<<<<<<< HEAD
         <translation>Actinium gönderimini onaylayın</translation>
+=======
+        <translation>Litecoin gönderimini onaylayın</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
@@ -2188,17 +2517,25 @@
         <source>Payment request expired.</source>
         <translation>Ödeme talebinin geçerlilik süresi bitti.</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>%n block(s)</source>
         <translation><numerusform>%n blok</numerusform><numerusform>%n blok</numerusform></translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     <message>
         <source>Pay only the required fee of %1</source>
         <translation>Sadece asgari ücret olan %1 tutarını öde</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: Invalid Actinium address</source>
         <translation>Uyarı: geçersiz Actinium adresi</translation>
+=======
+        <source>Warning: Invalid Litecoin address</source>
+        <translation>Uyarı: geçersiz Litecoin adresi</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2240,8 +2577,13 @@
         <translation>Bu, normal bir ödemedir.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address to send the payment to</source>
         <translation>Ödemenin yollanacağı Actinium adresi</translation>
+=======
+        <source>The Litecoin address to send the payment to</source>
+        <translation>Ödemenin yollanacağı Litecoin adresi</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Alt+A</source>
@@ -2260,14 +2602,26 @@
         <translation>Bu ögeyi kaldır</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Ücret yollanan tutardan alınacaktır. Alıcı tutar alanına girdiğinizden daha az Actinium alacaktır. Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
+=======
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Ücret yollanan tutardan alınacaktır. Alıcı tutar alanına girdiğinizden daha az litecoin alacaktır. Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
         <translation>Ücreti tutardan düş</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Use available balance</source>
+        <translation>Mevcut bakiyeyi kullan</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Message:</source>
         <translation>İleti:</translation>
     </message>
@@ -2284,8 +2638,13 @@
         <translation>Kullanılmış adres listesine eklemek için bu adrese bir etiket girin</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
         <translation>Referans için Actinium: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Actinium ağı üzerinden gönderilmeyecektir.</translation>
+=======
+        <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
+        <translation>Referans için litecoin: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Litecoin ağı üzerinden gönderilmeyecektir.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Pay To:</source>
@@ -2329,12 +2688,21 @@
         <translation>İleti &amp;imzala</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>You can sign messages/agreements with your addresses to prove you can receive actiniums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Adreslerinize yollanan litecoinleri alabileceğiniz ispatlamak için adreslerinizle iletiler/anlaşmalar imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz ya da rastgele hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
     </message>
     <message>
         <source>The Actinium address to sign the message with</source>
         <translation>İletinin imzalanmasında kullanılacak Actinium adresi</translation>
+=======
+        <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Adreslerinize yollanan litecoinleri alabileceğiniz ispatlamak için adreslerinizle iletiler/anlaşmalar imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz ya da rastgele hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
+    </message>
+    <message>
+        <source>The Litecoin address to sign the message with</source>
+        <translation>İletinin imzalanmasında kullanılacak Litecoin adresi</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2365,8 +2733,13 @@
         <translation>Güncel imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign the message to prove you own this Actinium address</source>
         <translation>Bu Actinium adresinin sizin olduğunu ispatlamak için iletiyi imzalayın</translation>
+=======
+        <source>Sign the message to prove you own this Litecoin address</source>
+        <translation>Bu Litecoin adresinin sizin olduğunu ispatlamak için iletiyi imzalayın</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2389,12 +2762,21 @@
         <translation>Alıcının adresini, iletiyi (satır sonları, boşluklar, sekmeler vs. karakterleri tam olarak kopyaladığınızdan emin olunuz) ve imzayı aşağıya giriniz. Bir ortadaki adam saldırısı tarafından kandırılmaya engel olmak için imzadan, imzalı iletinin içeriğini aşan bir anlam çıkarmamaya dikkat ediniz. Bunun sadece imzalayan tarafın adres ile alım yapabildiğini ispatladığını ve herhangi bir işlemin gönderi tarafını kanıtlayamayacağını unutmayınız!</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address the message was signed with</source>
         <translation>İletinin imzalanmasında kullanılan Actinium adresi</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Actinium address</source>
         <translation>Belirtilen Actinium adresi ile imzalandığını doğrulamak için iletiyi kontrol et</translation>
+=======
+        <source>The Litecoin address the message was signed with</source>
+        <translation>İletinin imzalanmasında kullanılan Litecoin adresi</translation>
+    </message>
+    <message>
+        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
+        <translation>Belirtilen Litecoin adresi ile imzalandığını doğrulamak için iletiyi kontrol et</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2619,7 +3001,11 @@
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+<<<<<<< HEAD
         <translation>Oluşturulan Actinium'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+=======
+        <translation>Oluşturulan litecoin'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Debug information</source>
@@ -2823,8 +3209,13 @@
         <translation>Diğer</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter address or label to search</source>
         <translation>Aranacak adres ya da etiket giriniz</translation>
+=======
+        <source>Enter address, transaction id, or label to search</source>
+        <translation>Aramak için adres, gönderim numarası ya da etiket yazınız</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Min amount</source>
@@ -2835,6 +3226,13 @@
         <translation>İşlemden vazgeç</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Increase transaction fee</source>
+        <translation>İşlem ücretini artır</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Copy address</source>
         <translation>Adres kopyala</translation>
     </message>
@@ -2947,6 +3345,37 @@
         <source>Send Coins</source>
         <translation>Litecoini Gönder</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Increasing transaction fee failed</source>
+        <translation>İşlem ücreti artırma başarısız oldu</translation>
+    </message>
+    <message>
+        <source>Do you want to increase the fee?</source>
+        <translation>Ücreti artırmak istiyor musunuz?</translation>
+    </message>
+    <message>
+        <source>Current fee:</source>
+        <translation>Şimdiki ücret:</translation>
+    </message>
+    <message>
+        <source>Increase:</source>
+        <translation>Artış:</translation>
+    </message>
+    <message>
+        <source>New fee:</source>
+        <translation>Yeni ücret:</translation>
+    </message>
+    <message>
+        <source>Can't sign transaction.</source>
+        <translation>İşlem imzalanamıyor.</translation>
+    </message>
+    <message>
+        <source>Could not commit transaction</source>
+        <translation>Alışveriş taahüt edilemedi.</translation>
+    </message>
+>>>>>>> upstream/0.16
 </context>
 <context>
     <name>WalletView</name>
@@ -3006,6 +3435,7 @@
         <translation>Komut satırı ve JSON-RPC komutlarını kabul et</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
         <translation>Dışarıdan gelen bağlantıları kabul et (varsayılan: 1 eğer -proxy veya -connect/-noconnect yoksa)</translation>
     </message>
@@ -3014,12 +3444,18 @@
         <translation>-noconnect ile yalnızca belirtilen düğümleri bağlayın veya yalnız otomatik bağlantıları devre dışı bırakmak için -connect=0 kullanın.</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>MIT yazılım lisansı altında dağıtılmıştır, beraberindeki %s ya da %s dosyasına bakınız.</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
+<<<<<<< HEAD
         <translation>Eğer &lt;kategori&gt; belirtilmemişse ya da &lt;kategori&gt; = 1 ise, tüm hata ayıklama verilerini çıktı al.</translation>
+=======
+        <translation>Eğer &lt;category&gt; belirtilmemişse ya da &lt;category&gt; = 1 ise, tüm hata ayıklama verilerini çıktı al.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
@@ -3054,8 +3490,13 @@
         <translation>HTTP sunucusu başlatılamadı. Ayrıntılar için debug.log dosyasına bakınız.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Actinium Çekirdeği</translation>
+=======
+        <source>Litecoin Core</source>
+        <translation>Litecoin Çekirdeği</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>The %s developers</source>
@@ -3082,10 +3523,13 @@
         <translation>Tüm cüzdan işlemlerini sil ve başlangıçta -rescan ile sadece blok zincirinin parçası olanları geri getir</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
         <translation>%s yüklenmesinde hata: zaten var olan ve HD olmayan bir cüzdanda HD etkinleştirilemez.</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>%s dosyasının okunması sırasında bir hata meydana geldi! Tüm anahtarlar doğru bir şekilde okundu, ancak işlem verileri ya da adres defteri ögeleri hatalı veya eksik olabilir.</translation>
     </message>
@@ -3135,7 +3579,11 @@
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+<<<<<<< HEAD
         <translation>Bu kararlı sürümden önceki bir deneme sürümüdür. - risklerini bilerek kullanma sorumluluğu sizdedir - Actinium oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
+=======
+        <translation>Bu kararlı sürümden önceki bir deneme sürümüdür. - risklerini bilerek kullanma sorumluluğu sizdedir - litecoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
@@ -3162,8 +3610,13 @@
         <translation>Uyarı: Ağ eşlerimizle tamamen anlaşamamışız gibi görünüyor! Güncelleme yapmanız gerekebilir ya da diğer düğümlerin güncelleme yapmaları gerekebilir.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
         <translation>-txindex'i değiştirmek için veritabanını -reindex-chainstate kullanarak tekrar inşa etmeniz gerekmektedir</translation>
+=======
+        <source>%d of last 100 blocks have unexpected version</source>
+        <translation>son 100 bloğun %d kadarı beklenmeyen versiyona sahip</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
@@ -3178,6 +3631,13 @@
         <translation>&lt;kategori&gt; şunlar olabilir:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>Dışarıdan gelen bağlantıları kabul et (varsayılan: -proxy veya -connect yoksa 1)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Append comment to the user agent string</source>
         <translation>Kullanıcı aracı zincirine yorumu ekle</translation>
     </message>
@@ -3266,10 +3726,13 @@
         <translation>%s unsurunun yüklenmesinde hata oluştu: cüzdan %s programının yeni bir sürümüne ihtiyaç duyuyor</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Error loading %s: You can't disable HD on a already existing HD wallet</source>
         <translation>%s yüklenmesinde hata: zaten var olan HD bir cüzdanda HD devre dışı bırakılamaz.</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Error loading block database</source>
         <translation>Blok veritabanının yüklenmesinde hata</translation>
     </message>
@@ -3286,6 +3749,13 @@
         <translation>Herhangi bir portun dinlenmesi başarısız oldu. Bunu istiyorsanız -listen=0 seçeneğini kullanınız.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Failed to rescan the wallet during initialization</source>
+        <translation>Başlatma sırasında cüzdanı yeniden tarama işlemi başarısız oldu</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Importing...</source>
         <translation>İçe aktarılıyor...</translation>
     </message>
@@ -3298,14 +3768,24 @@
         <translation>Başlatma sınaması başarısız oldu. %s kapatılıyor.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -onion address: '%s'</source>
         <translation>Geçersiz -onion adresi: '%s'</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>-%s=&lt;tutar&gt; için geçersiz tutar: '%s'</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
+        <translation>Geçersiz miktarda -discardfee=&lt;amount&gt;:'%s'</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation> -fallbackfee=&lt;tutar&gt; için geçersiz tutar: '%s'</translation>
     </message>
@@ -3314,6 +3794,13 @@
         <translation>İşlem bellek alanını &lt;n&gt; megabayttan düşük tut (varsayılan: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Loading P2P addresses...</source>
+        <translation>P2P adresleri yükleniyor...</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Loading banlist...</source>
         <translation>Yasaklama listesi yükleniyor...</translation>
     </message>
@@ -3354,6 +3841,13 @@
         <translation>Zincir durumunu güncel olarak indekslenen bloklardan yeniden derle</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Replaying blocks...</source>
+        <translation>Bloklar tekrar işleniyor...</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Rewinding blocks...</source>
         <translation>Bloklar geri sarılıyor...</translation>
     </message>
@@ -3362,10 +3856,13 @@
         <translation>Veritabanı önbellek boyutunu megabayt olarak belirt (%d ilâ %d, varsayılan: %d)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>En yüksek blok boyutunu bayt olarak ayarla (varsayılan: %d)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Specify wallet file (within data directory)</source>
         <translation>Cüzdan dosyası belirtiniz (veri klasörünün içinde)</translation>
     </message>
@@ -3374,6 +3871,13 @@
         <translation>Kaynak kod şuradan elde edilebilir: %s.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Transaction fee and change calculation failed</source>
+        <translation>İşlem ücreti ve para üstü hesaplamasında hata meydana geldi.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Unable to bind to %s on this computer. %s is probably already running.</source>
         <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. %s muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
@@ -3390,6 +3894,17 @@
         <translation>Deskteklenmeyen -tor argümanı bulundu, -onion kullanınız.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Unsupported logging category %s=%s.</source>
+        <translation>Desteklenmeyen günlük kategorisi %s=%s.</translation>
+    </message>
+    <message>
+        <source>Upgrading UTXO database</source>
+        <translation>UTXO veritabanı yükseltiliyor</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Use UPnP to map the listening port (default: %u)</source>
         <translation>Dinleme portunu haritalamak için UPnP kullan (varsayılan: %u)</translation>
     </message>
@@ -3406,6 +3921,7 @@
         <translation>Bloklar kontrol ediliyor...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verifying wallet...</source>
         <translation>Cüzdan kontrol ediliyor...</translation>
     </message>
@@ -3414,6 +3930,8 @@
         <translation>%s cüzdan %s veri klasörünün dışında bulunuyor</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Wallet debugging/testing options:</source>
         <translation>Cüzdan hata ayıklama/test etme seçenekleri:</translation>
     </message>
@@ -3434,10 +3952,13 @@
         <translation>Belirtilen adrese bağlan ve ona bağlanan eşleri beyaz listeye al. IPv6 için [makine]:port imlasını kullanınız</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
         <translation>Belirtilen adrese bağlan ve JSON RPC bağlantıları için dinlemeye geç. IPv6 için [makine]:port imlasını kullanınız. Bu seçenek birden çok kez belirtilebilir (varsayılan: tüm arayüzlere bağlan)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
         <translation>Yeni dosyaları umask 077 yerine varsayılan izinlerle oluştur (sadece devre dışı cüzdan işlevselliği ile etkilidir)</translation>
     </message>
@@ -3474,18 +3995,24 @@
         <translation>Her vekil bağlantısı için kimlik verilerini rastgele yap. Bu, Tor akış izolasyonunu etkinleştirir (varsayılan: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Yüksek öncelikli/düşük ücretli işlemlerin en yüksek boyutunu bayt olarak ayarla (varsayılan: %d)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>Bu işlem, tutar düşüldükten sonra göndermek için çok düşük</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Use hierarchical deterministic key generation (HD) after BIP32. Only has effect during wallet creation/first start</source>
         <translation>BIP32'den sonra hiyerarşik determinist (HD) anahtar üretimini kullan. Sadece cüzdan oluşturulmasında/ilk başlamada etkiye sahiptir.</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
         <translation>Beyaz listeye alınan eşler DoS yasaklamasına uğramazlar ve işlemleri zaten mempool'da olsalar da daima aktarılır, bu mesela bir geçit için kullanışlıdır</translation>
     </message>
@@ -3510,10 +4037,24 @@
         <translation>SOCKS5 vekil sunucusu vasıtasıyla bağlan</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
+        <translation>%s yüklemesinde hata: Zaten HD olan bir cüzdanda HD devre dışı bırakılamaz </translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error reading from database, shutting down.</source>
         <translation>Veritabanından okumada hata, kapatılıyor.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error upgrading chainstate database</source>
+        <translation>Zincirdurumu veritabanı yükseltme hatası</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Imports blocks from external blk000??.dat file on startup</source>
         <translation>Başlangıçta harici blk000??.dat dosyasından blokları içe aktarır</translation>
     </message>
@@ -3522,6 +4063,17 @@
         <translation>Bilgi</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Invalid -onion address or hostname: '%s'</source>
+        <translation>Geçersiz -onion adresi veya ana makine adı: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address or hostname: '%s'</source>
+        <translation>Geçersiz -proxy adresi veya ana makine adı: '%s'</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>-paytxfee=&lt;tutar&gt;:'%s' unsurunda geçersiz tutar (asgari %s olması lazımdır)</translation>
     </message>
@@ -3558,10 +4110,13 @@
         <translation>İzleme/hata ayıklama verilerini debug.log dosyası yerine konsola gönder</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>İşlemleri mümkünse ücretsiz olarak gönder (varsayılan: %u)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Tüm hata ayıklama seçeneklerini göster (kullanımı: --help -help-debug)</translation>
     </message>
@@ -3575,7 +4130,11 @@
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
+<<<<<<< HEAD
         <translation>İşlemdeki Actinium tutarı ücreti ödemek için çok düşük</translation>
+=======
+        <translation>İşlemdeki litecoin tutarı ücreti ödemek için çok düşük</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>This is experimental software.</source>
@@ -3614,6 +4173,13 @@
         <translation>JSON-RPC bağlantıları için kullanıcı ismi</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Verifying wallet(s)...</source>
+        <translation>Cüzdan(lar) kontrol ediliyor...</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Warning</source>
         <translation>Uyarı</translation>
     </message>
@@ -3626,6 +4192,13 @@
         <translation>Sadece blok kipinde çalışılıp çalışılmayacağı (varsayılan: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Veritabanını -txindex değerini değiştirmek için -reindex kullanarak tekrar oluşturmanız gerekiyor</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Zapping all transactions from wallet...</source>
         <translation>Cüzdandaki tüm işlemler kaldırılıyor...</translation>
     </message>
@@ -3646,10 +4219,13 @@
         <translation>-addnode, -seednode ve -connect için DNS aramalarına izin ver</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>Adresler yükleniyor...</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx meta verilerini tut mesela hesap sahibi ve ödeme talebi bilgileri, 2 = tx meta verilerini at)</translation>
     </message>
@@ -3666,6 +4242,17 @@
         <translation>Oluşturma ve aktarma işlemlerinde sigop başına eşdeğer bayt (varsayılan: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
+        <translation>%s yüklenmesinde hata: zaten var olan ve HD olmayan bir cüzdanda HD etkinleştirilemez.</translation>
+    </message>
+    <message>
+        <source>Error loading wallet %s. -wallet parameter must only specify a filename (not a path).</source>
+        <translation>%s cüzdanı yüklenirken hata oluştu. -wallet değişkeni sadece belirli bir dosya adını belirtmelidir (bir dizini değil).</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation>Bundan düşük ücretler (%s/kB olarak) işlem oluşturulması için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
@@ -3687,17 +4274,28 @@
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+<<<<<<< HEAD
         <translation>Hata ayıklama bilgisini dök (varsayılan: %u, &lt;kategori&gt; sağlanması seçime dayalıdır)</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
         <translation>Adres sayısı azaldıysa DNS sorgulamasıyla eş adresleri ara (varsayılan: 1  -connect/-noconnect kullanılmadıysa)</translation>
+=======
+        <translation>Hata ayıklama bilgisini dök (varsayılan: %u, &lt;category&gt; sağlanması seçime dayalıdır)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Sets the serialization of raw transaction or block hex returned in non-verbose mode, non-segwit(0) or segwit(1) (default: %d)</source>
         <translation>Ham işlemin serileştirilmesini ayarlar veya blok non-verbose, non-segwit(0) veya segwit(1) kipinde onaltılık değeri döndürür (default: %d)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Specify directory to hold wallets (default: &lt;datadir&gt;/wallets if it exists, otherwise &lt;datadir&gt;)</source>
+        <translation>Cüzdanları tutmak için bir dizin belirtin (eğer varsa varsayılan: &lt;datadir&gt;/wallets, yoksa &lt;datadir&gt;)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Blokların ve işlemlerin bloom filtreleri ile süzülmesini destekle (varsayılan: %u)</translation>
     </message>
@@ -3754,6 +4352,21 @@
         <translation>Eş adresleri sorgulaması için daima DNS aramasını kullan (varsayılan: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Error loading wallet %s. -wallet filename must be a regular file.</source>
+        <translation>%s cüzdanı yüklenirken hata oluştu. -wallet dosya adı normal bir dosya adı olmalıdır.</translation>
+    </message>
+    <message>
+        <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
+        <translation>%s cüzdanı yüklenirken hata oluştu. Belirtilen -wallet dosya adında başka bir kopya daha var.</translation>
+    </message>
+    <message>
+        <source>Error loading wallet %s. Invalid characters in -wallet filename.</source>
+        <translation>%s cüzdanı yüklenirken hata oluştu. -wallet dosya adında geçersiz karakterler var.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
         <translation>Başlangıçta kontrol edilecek blok sayısı (varsayılan: %u, 0 = hepsi)</translation>
     </message>
@@ -3762,10 +4375,13 @@
         <translation>Hata ayıklama çıktısına IP adreslerini dahil et (varsayılan: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -proxy address: '%s'</source>
         <translation>Geçersiz -proxy adresi: '%s'</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Keypool ran out, please call keypoolrefill first</source>
         <translation>Keypool tükendi, lütfen önce keypoolrefill'i çağırın</translation>
     </message>
@@ -3806,10 +4422,13 @@
         <translation>P2SH olmayan çoklu imzaları aktar (varsayılan: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send transactions with full-RBF opt-in enabled (default: %u)</source>
         <translation>İşlemleri full-RBF opt-in ile gönder etkinleştirildi (default: %u)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Set key pool size to &lt;n&gt; (default: %u)</source>
         <translation>Anahtar alan boyutunu &lt;n&gt; değerine ayarla (varsayılan: %u)</translation>
     </message>
@@ -3882,10 +4501,13 @@
         <translation>Blok indeksi yükleniyor...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Bağlanılacak düğüm ekle ve bağlantıyı sürekli açık tutmaya çalış</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>Cüzdan yükleniyor...</translation>
     </message>
@@ -3894,10 +4516,13 @@
         <translation>Cüzdan eski biçime geri alınamaz</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot write default address</source>
         <translation>Varsayılan adres yazılamadı</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Yeniden taranıyor...</translation>
     </message>

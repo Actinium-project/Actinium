@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 // Copyright (c) 2012-2015 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "util.h"
 #include "test/test_bitcoin.h"
+=======
+// Copyright (c) 2012-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <util.h>
+#include <test/test_bitcoin.h>
+>>>>>>> upstream/0.16
 
 #include <string>
 #include <vector>
@@ -20,14 +29,22 @@ static void ResetArgs(const std::string& strArg)
       boost::split(vecArg, strArg, boost::is_space(), boost::token_compress_on);
 
     // Insert dummy executable name:
+<<<<<<< HEAD
     vecArg.insert(vecArg.begin(), "testbitcoin");
+=======
+    vecArg.insert(vecArg.begin(), "testlitecoin");
+>>>>>>> upstream/0.16
 
     // Convert to char*:
     std::vector<const char*> vecChar;
     for (std::string& s : vecArg)
         vecChar.push_back(s.c_str());
 
+<<<<<<< HEAD
     gArgs.ParseParameters(vecChar.size(), &vecChar[0]);
+=======
+    gArgs.ParseParameters(vecChar.size(), vecChar.data());
+>>>>>>> upstream/0.16
 }
 
 BOOST_AUTO_TEST_CASE(boolarg)

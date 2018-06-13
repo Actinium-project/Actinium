@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Fuzz-testing Actinium Core
+=======
+Fuzz-testing Litecoin Core
+>>>>>>> upstream/0.16
 ==========================
 
 A special test harness `test_litecoin_fuzzy` is provided to provide an easy
@@ -20,7 +24,11 @@ export AFLPATH=$PWD
 Instrumentation
 ----------------
 
+<<<<<<< HEAD
 To build Actinium Core using AFL instrumentation (this assumes that the
+=======
+To build Litecoin Core using AFL instrumentation (this assumes that the
+>>>>>>> upstream/0.16
 `AFLPATH` was set as above):
 ```
 ./configure --disable-ccache --disable-shared --enable-tests CC=${AFLPATH}/afl-gcc CXX=${AFLPATH}/afl-g++
@@ -35,7 +43,11 @@ in.
 The fuzzing can be sped up significantly (~200x) by using `afl-clang-fast` and
 `afl-clang-fast++` in place of `afl-gcc` and `afl-g++` when compiling. When
 compiling using `afl-clang-fast`/`afl-clang-fast++` the resulting
+<<<<<<< HEAD
 `test_bitcoin_fuzzy` binary will be instrumented in such a way that the AFL
+=======
+`test_litecoin_fuzzy` binary will be instrumented in such a way that the AFL
+>>>>>>> upstream/0.16
 features "persistent mode" and "deferred forkserver" can be used. See
 https://github.com/mcarpenter/afl/tree/master/llvm_mode for details.
 

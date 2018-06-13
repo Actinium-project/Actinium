@@ -90,8 +90,13 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -225,6 +230,13 @@
         <translation>நல்வரவு</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>தவறு</translation>
     </message>
@@ -313,6 +325,13 @@
         <source>none</source>
         <translation>none</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>தவறு</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -350,6 +369,13 @@
         <source>User Agent</source>
         <translation>பயனர் முகவர்</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Sent</source>
+        <translation>அனுப்பிய</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject</name>
@@ -381,6 +407,25 @@
         <source>%1 and %2</source>
         <translation>%1 மற்றும் %2</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject::QObject</name>
@@ -447,10 +492,13 @@
         <translation>&amp;பணியகம்</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Clear</source>
         <translation>&amp;வழுநீக்கு</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>மொத்தம்</translation>
     </message>
@@ -479,6 +527,7 @@
         <translation>1 &amp;ஆண்டு</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 B</source>
         <translation>%1 B</translation>
     </message>
@@ -495,6 +544,8 @@
         <translation>%1 GB</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>via %1</source>
         <translation>via %1</translation>
     </message>
@@ -607,6 +658,7 @@
         <translation>மறை</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>normal</source>
         <translation>இயல்பான</translation>
     </message>
@@ -615,6 +667,8 @@
         <translation>வேகமாக</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Balance:</source>
         <translation>மீதி:</translation>
     </message>
@@ -708,8 +762,13 @@
 <context>
     <name>bitcoin-core</name>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Actinium மையம்</translation>
+=======
+        <source>Litecoin Core</source>
+        <translation>Litecoin மையம்</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>(default: %u)</source>

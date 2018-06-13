@@ -26,12 +26,15 @@ def bn2bin(v):
         i -= 1
     return s
 
+<<<<<<< HEAD
 def bin2bn(s):
     l = 0
     for ch in s:
         l = (l << 8) | ch
     return l
 
+=======
+>>>>>>> upstream/0.16
 def bn2mpi(v):
     have_ext = False
     if v.bit_length() > 0:
@@ -54,6 +57,7 @@ def bn2mpi(v):
             v_bin[0] |= 0x80
     return s + ext + v_bin
 
+<<<<<<< HEAD
 def mpi2bn(s):
     if len(s) < 4:
         return None
@@ -78,6 +82,8 @@ def mpi2bn(s):
         return -v
     return v
 
+=======
+>>>>>>> upstream/0.16
 # bitcoin-specific little endian format, with implicit size
 def mpi2vch(s):
     r = s[4:]           # strip size
@@ -86,6 +92,7 @@ def mpi2vch(s):
 
 def bn2vch(v):
     return bytes(mpi2vch(bn2mpi(v)))
+<<<<<<< HEAD
 
 def vch2mpi(s):
     r = struct.pack(b">I", len(s))   # size
@@ -95,3 +102,5 @@ def vch2mpi(s):
 def vch2bn(s):
     return mpi2bn(vch2mpi(s))
 
+=======
+>>>>>>> upstream/0.16

@@ -54,10 +54,17 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || gArgs.IsArgSet("-?") || gArgs.IsArgSet("-h") || gArgs.IsArgSet("-help"))
     {
         // First part of help message is specific to this utility
+<<<<<<< HEAD
         std::string strUsage = strprintf(_("%s Actinium-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
               "  Actinium-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded Actinium transaction") + "\n" +
               "  Actinium-tx [options] -create [commands]   " + _("Create hex-encoded Actinium transaction") + "\n" +
+=======
+        std::string strUsage = strprintf(_("%s litecoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+            _("Usage:") + "\n" +
+              "  litecoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded litecoin transaction") + "\n" +
+              "  litecoin-tx [options] -create [commands]   " + _("Create hex-encoded litecoin transaction") + "\n" +
+>>>>>>> upstream/0.16
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

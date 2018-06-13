@@ -13,6 +13,7 @@
 #include <string>
 #include <vector>
 
+<<<<<<< HEAD
 #define BEGIN(a) ((char*)&(a))
 #define END(a) ((char*)&((&(a))[1]))
 #define UBEGIN(a) ((unsigned char*)&(a))
@@ -24,6 +25,20 @@ enum SafeChars {
     SAFE_CHARS_DEFAULT,    //!< The full set of allowed chars
     SAFE_CHARS_UA_COMMENT, //!< BIP-0014 subset
     SAFE_CHARS_FILENAME,   //!< Chars allowed in filenames
+=======
+#define BEGIN(a)            ((char*)&(a))
+#define END(a)              ((char*)&((&(a))[1]))
+#define UBEGIN(a)           ((unsigned char*)&(a))
+#define UEND(a)             ((unsigned char*)&((&(a))[1]))
+#define ARRAYLEN(array)     (sizeof(array)/sizeof((array)[0]))
+
+/** Used by SanitizeString() */
+enum SafeChars
+{
+    SAFE_CHARS_DEFAULT, //!< The full set of allowed chars
+    SAFE_CHARS_UA_COMMENT, //!< BIP-0014 subset
+    SAFE_CHARS_FILENAME, //!< Chars allowed in filenames
+>>>>>>> upstream/0.16
 };
 
 /**
@@ -53,7 +68,11 @@ std::string DecodeBase32(const std::string& str);
 std::string EncodeBase32(const unsigned char* pch, size_t len);
 std::string EncodeBase32(const std::string& str);
 
+<<<<<<< HEAD
 void SplitHostPort(std::string in, int& portOut, std::string& hostOut);
+=======
+void SplitHostPort(std::string in, int &portOut, std::string &hostOut);
+>>>>>>> upstream/0.16
 std::string i64tostr(int64_t n);
 std::string itostr(int n);
 int64_t atoi64(const char* psz);
@@ -65,34 +84,51 @@ int atoi(const std::string& str);
  * @returns true if the entire string could be parsed as valid integer,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
+<<<<<<< HEAD
 bool ParseInt32(const std::string& str, int32_t* out);
+=======
+bool ParseInt32(const std::string& str, int32_t *out);
+>>>>>>> upstream/0.16
 
 /**
  * Convert string to signed 64-bit integer with strict parse error feedback.
  * @returns true if the entire string could be parsed as valid integer,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
+<<<<<<< HEAD
 bool ParseInt64(const std::string& str, int64_t* out);
+=======
+bool ParseInt64(const std::string& str, int64_t *out);
+>>>>>>> upstream/0.16
 
 /**
  * Convert decimal string to unsigned 32-bit integer with strict parse error feedback.
  * @returns true if the entire string could be parsed as valid integer,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
+<<<<<<< HEAD
 bool ParseUInt32(const std::string& str, uint32_t* out);
+=======
+bool ParseUInt32(const std::string& str, uint32_t *out);
+>>>>>>> upstream/0.16
 
 /**
  * Convert decimal string to unsigned 64-bit integer with strict parse error feedback.
  * @returns true if the entire string could be parsed as valid integer,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
+<<<<<<< HEAD
 bool ParseUInt64(const std::string& str, uint64_t* out);
+=======
+bool ParseUInt64(const std::string& str, uint64_t *out);
+>>>>>>> upstream/0.16
 
 /**
  * Convert string to double with strict parse error feedback.
  * @returns true if the entire string could be parsed as valid double,
  *   false if not the entire string could be parsed or when overflow or underflow occurred.
  */
+<<<<<<< HEAD
 bool ParseDouble(const std::string& str, double* out);
 
 template <typename T>
@@ -108,13 +144,36 @@ std::string HexStr(const T itbegin, const T itend, bool fSpaces = false)
             rv.push_back(' ');
         rv.push_back(hexmap[val >> 4]);
         rv.push_back(hexmap[val & 15]);
+=======
+bool ParseDouble(const std::string& str, double *out);
+
+template<typename T>
+std::string HexStr(const T itbegin, const T itend, bool fSpaces=false)
+{
+    std::string rv;
+    static const char hexmap[16] = { '0', '1', '2', '3', '4', '5', '6', '7',
+                                     '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
+    rv.reserve((itend-itbegin)*3);
+    for(T it = itbegin; it < itend; ++it)
+    {
+        unsigned char val = (unsigned char)(*it);
+        if(fSpaces && it != itbegin)
+            rv.push_back(' ');
+        rv.push_back(hexmap[val>>4]);
+        rv.push_back(hexmap[val&15]);
+>>>>>>> upstream/0.16
     }
 
     return rv;
 }
 
+<<<<<<< HEAD
 template <typename T>
 inline std::string HexStr(const T& vch, bool fSpaces = false)
+=======
+template<typename T>
+inline std::string HexStr(const T& vch, bool fSpaces=false)
+>>>>>>> upstream/0.16
 {
     return HexStr(vch.begin(), vch.end(), fSpaces);
 }
@@ -136,7 +195,11 @@ bool TimingResistantEqual(const T& a, const T& b)
     if (b.size() == 0) return a.size() == 0;
     size_t accumulator = a.size() ^ b.size();
     for (size_t i = 0; i < a.size(); i++)
+<<<<<<< HEAD
         accumulator |= a[i] ^ b[i % b.size()];
+=======
+        accumulator |= a[i] ^ b[i%b.size()];
+>>>>>>> upstream/0.16
     return accumulator == 0;
 }
 
@@ -145,12 +208,20 @@ bool TimingResistantEqual(const T& a, const T& b)
  * @returns true on success, false on error.
  * @note The result must be in the range (-10^18,10^18), otherwise an overflow error will trigger.
  */
+<<<<<<< HEAD
 bool ParseFixedPoint(const std::string& val, int decimals, int64_t* amount_out);
 
 /** Convert from one power-of-2 number base to another. */
 template <int frombits, int tobits, bool pad, typename O, typename I>
 bool ConvertBits(O& out, I it, I end)
 {
+=======
+bool ParseFixedPoint(const std::string &val, int decimals, int64_t *amount_out);
+
+/** Convert from one power-of-2 number base to another. */
+template<int frombits, int tobits, bool pad, typename O, typename I>
+bool ConvertBits(O& out, I it, I end) {
+>>>>>>> upstream/0.16
     size_t acc = 0;
     size_t bits = 0;
     constexpr size_t maxv = (1 << tobits) - 1;

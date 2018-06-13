@@ -48,7 +48,11 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
+<<<<<<< HEAD
 # error "Actinium cannot be compiled without assertions."
+=======
+# error "Litecoin cannot be compiled without assertions."
+>>>>>>> upstream/0.16
 #endif
 
 #define MICRO 0.000001
@@ -231,7 +235,11 @@ CTxMemPool mempool(&feeEstimator);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
+<<<<<<< HEAD
 const std::string strMessageMagic = "Actinium Signed Message:\n";
+=======
+const std::string strMessageMagic = "Litecoin Signed Message:\n";
+>>>>>>> upstream/0.16
 
 // Internal stuff
 namespace {
@@ -937,7 +945,11 @@ static bool AcceptToMemoryPoolWorker(const CChainParams& chainparams, CTxMemPool
         // Remove conflicting transactions from the mempool
         for (const CTxMemPool::txiter it : allConflicting)
         {
+<<<<<<< HEAD
             LogPrint(BCLog::MEMPOOL, "replacing tx %s with %s for %s ACM additional fees, %d delta bytes\n",
+=======
+            LogPrint(BCLog::MEMPOOL, "replacing tx %s with %s for %s LTC additional fees, %d delta bytes\n",
+>>>>>>> upstream/0.16
                     it->GetTx().GetHash().ToString(),
                     hash.ToString(),
                     FormatMoney(nModifiedFees - nConflictingFees),
@@ -1670,7 +1682,11 @@ static bool WriteTxIndexDataForBlock(const CBlock& block, CValidationState& stat
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
+<<<<<<< HEAD
     RenameThread("actinium-scriptch");
+=======
+    RenameThread("litecoin-scriptch");
+>>>>>>> upstream/0.16
     scriptcheckqueue.Thread();
 }
 

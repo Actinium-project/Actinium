@@ -35,11 +35,19 @@
     </message>
     <message>
         <source>&amp;Export</source>
+<<<<<<< HEAD
         <translation>X&amp;uất</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
         <translation>&amp;Xó&amp;a</translation>
+=======
+        <translation>&amp;Xuất</translation>
+    </message>
+    <message>
+        <source>&amp;Delete</source>
+        <translation>&amp;Xóa</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -61,10 +69,53 @@
         <source>Receiving addresses</source>
         <translation>Địa chỉ nhận</translation>
     </message>
+<<<<<<< HEAD
     </context>
 <context>
     <name>AddressTableModel</name>
     </context>
+=======
+    <message>
+        <source>&amp;Copy Address</source>
+        <translation>&amp;Chép Địa chỉ</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Label</source>
+        <translation>Chép &amp;Nhãn</translation>
+    </message>
+    <message>
+        <source>&amp;Edit</source>
+        <translation>&amp;Sửa</translation>
+    </message>
+    <message>
+        <source>Export Address List</source>
+        <translation>Xuất Danh Sách Địa Chỉ</translation>
+    </message>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Các tệp tác nhau bằng đấu phẩy (* .csv)</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Xuất không thành công</translation>
+    </message>
+    </context>
+<context>
+    <name>AddressTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>Nhãn</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Địa chỉ</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(không nhãn)</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -83,7 +134,88 @@
         <source>Repeat new passphrase</source>
         <translation>Điền lại passphrase</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Encrypt wallet</source>
+        <translation>Mã hóa ví</translation>
+    </message>
+    <message>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <translation>Thao tác này cần cụm từ mật khẩu để mở khóa ví.</translation>
+    </message>
+    <message>
+        <source>Unlock wallet</source>
+        <translation>Mở khóa ví</translation>
+    </message>
+    <message>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <translation>Thao tác này cần cụm mật khẩu ví của bạn để giải mã ví.</translation>
+    </message>
+    <message>
+        <source>Decrypt wallet</source>
+        <translation>Giải mã ví</translation>
+    </message>
+    <message>
+        <source>Change passphrase</source>
+        <translation>Đổi cụm mật khẩu</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Nhập cụm từ mật khẩu cũ và cụm mật khẩu mới vào ví.</translation>
+    </message>
+    <message>
+        <source>Confirm wallet encryption</source>
+        <translation>Xác nhận mã hóa ví</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to encrypt your wallet?</source>
+        <translation>Bạn có chắc chắn muốn mã hóa ví của bạn?</translation>
+    </message>
+    <message>
+        <source>Wallet encrypted</source>
+        <translation>Ví đã được mã hóa</translation>
+    </message>
+    <message>
+        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+        <translation>QUAN TRỌNG: Bất kỳ bản sao lưu trước nào bạn đã làm từ tệp ví tiền của bạn phải được thay thế bằng tệp ví tiền mới được tạo và mã hóa. Vì lý do bảo mật, các bản sao lưu trước đó của tệp ví tiền không được mã hóa sẽ trở nên vô dụng ngay khi bạn bắt đầu sử dụng ví đã được mã hóa.</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed</source>
+        <translation>Mã hóa ví không thành công</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <translation>Mã hóa ví không thành công do có lỗi bên trong.
+Ví của bạn chưa được mã hóa.</translation>
+    </message>
+    <message>
+        <source>The supplied passphrases do not match.</source>
+        <translation>Cụm mật khẩu được cung cấp không khớp.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock failed</source>
+        <translation>Mở khóa ví không thành công</translation>
+    </message>
+    <message>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <translation>Cụm từ mật mã nhập vào không đúng</translation>
+    </message>
+    <message>
+        <source>Wallet decryption failed</source>
+        <translation>Giải mã ví không thành công</translation>
+    </message>
+    <message>
+        <source>Wallet passphrase was successfully changed.</source>
+        <translation>Cụm từ mật khẩu mã hóa của ví đã được thay đổi.</translation>
+    </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Chú ý: Caps Lock đang được bật!</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>BanTableModel</name>
     <message>
@@ -182,12 +314,36 @@
         <translation>Mở &amp;URI...</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Click to disable network activity.</source>
+        <translation>Nhấp để vô hiệu hóa kết nối mạng.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>Kết nối mạng đã bị ngắt</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>Nhấp để kết nối lại mạng.</translation>
+    </message>
+    <message>
+        <source>Syncing Headers (%1%)...</source>
+        <translation>Đồng bộ hóa các Headers (%1%)...</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Reindexing blocks on disk...</source>
         <translation>Đánh chỉ số (indexing) lại các khối (blocks) trên ổ đĩa ...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>Gửi coins đến tài khoản Actinium</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>Gửi coins đến tài khoản Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -202,12 +358,24 @@
         <translation>&amp;Cửa sổ xử lý lỗi (debug)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Open debugging and diagnostic console</source>
+        <translation>Mở trình gỡ lỗi và bảng lệnh chuẩn đoán</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>&amp;Verify message...</source>
         <translation>&amp;Tin nhắn xác thực</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -234,12 +402,21 @@
         <translation>Mã hoá các khoá bí mật trong Ví của bạn.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Actinium addresses to prove you own them</source>
         <translation>Dùng địa chỉ Actinium của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
         <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Actinium xác định.</translation>
+=======
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>Dùng địa chỉ Litecoin của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Litecoin xác định.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;File</source>
@@ -258,8 +435,13 @@
         <translation>Thanh công cụ (toolbar)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
         <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Actinium: URLs)</translation>
+=======
+        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Litecoin: URLs)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -270,13 +452,37 @@
         <translation>Hiện thỉ danh sách các địa chỉ và nhãn đã dùng để nhận.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Open a Actinium: URI or payment request</source>
         <translation>Mở Actinium:URL hoặc yêu cầu thanh toán</translation>
+=======
+        <source>Open a litecoin: URI or payment request</source>
+        <translation>Mở litecoin:URL hoặc yêu cầu thanh toán</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>7Tùy chọn dòng lệnh</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message numerus="yes">
+        <source>%n active connection(s) to Litecoin network</source>
+        <translation><numerusform>%n liên kết hoạt động với mạng lưới Litecoin</numerusform></translation>
+    </message>
+    <message>
+        <source>Indexing blocks on disk...</source>
+        <translation>Đang lập chỉ mục các khối trên ổ đĩa</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk...</source>
+        <translation>Đang xử lý các khối trên ổ đĩa...</translation>
+    </message>
+    <message numerus="yes">
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation><numerusform>Đã xử lý %n khối của lịch sử giao dịch.</numerusform></translation>
+    </message>
+>>>>>>> upstream/0.16
     <message>
         <source>%1 behind</source>
         <translation>%1 chậm trễ</translation>
@@ -306,6 +512,17 @@
         <translation>Đã cập nhật</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
+        <translation>Hiển thị tin nhắn trợ giúp %1 để có được danh sách với các tùy chọn dòng lệnh Litecoin.</translation>
+    </message>
+    <message>
+        <source>Connecting to peers...</source>
+        <translation>Kết nối với các máy ngang hàng...</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Catching up...</source>
         <translation>Bắt kịp...</translation>
     </message>
@@ -410,6 +627,13 @@
         <source>Confirmed</source>
         <translation>Đã xác nhận</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>(no label)</source>
+        <translation>(không nhãn)</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -475,6 +699,13 @@
         <translation>Sử dụng vị trí dữ liệu mặc định</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Lỗi</translation>
     </message>
@@ -516,6 +747,7 @@
         <translation>MB</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Accept connections from outside</source>
         <translation>Chấp nhận các kết nối từ bên ngoài</translation>
     </message>
@@ -524,20 +756,30 @@
         <translation>Cho phép nhận kết nối</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Địa chỉ IP của proxy (ví dụ IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Third party transaction URLs</source>
         <translation>Phần mềm giao dịch bên thứ ba URLs</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>W&amp;allet</source>
         <translation>Ví</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
         <translation>Kết nối đến máy chủ Actinium thông qua SOCKS5 proxy.</translation>
+=======
+        <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
+        <translation>Kết nối đến máy chủ Litecoin thông qua SOCKS5 proxy.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -583,6 +825,13 @@
         <source>none</source>
         <translation>Trống</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>Lỗi</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -612,6 +861,13 @@
         <source>User Agent</source>
         <translation>User Agent</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Sent</source>
+        <translation>Đã gửi</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject</name>
@@ -623,6 +879,25 @@
         <source>%1 and %2</source>
         <translation>%1 và %2</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>QObject::QObject</name>
@@ -677,6 +952,7 @@
         <translation>1&amp;năm</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>Sử dụng phím lên và xuống để di chuyển lịch sử, và &lt;b&gt;Ctrl-L&lt;/b&gt; để xóa màn hình</translation>
     </message>
@@ -701,6 +977,8 @@
         <translation>%1 GB</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>never</source>
         <translation>không bao giờ</translation>
     </message>
@@ -795,10 +1073,24 @@
         <translation>URI</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Address</source>
+        <translation>Địa chỉ</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Amount</source>
         <translation>Lượng</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Label</source>
+        <translation>Nhãn</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Message</source>
         <translation>Tin nhắn</translation>
     </message>
@@ -810,10 +1102,24 @@
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Label</source>
+        <translation>Nhãn</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Message</source>
         <translation>Tin nhắn</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>(no label)</source>
+        <translation>(không nhãn)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>(no message)</source>
         <translation>(không tin nhắn)</translation>
     </message>
@@ -885,14 +1191,18 @@
         <translation>Ẩn</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>total at least</source>
         <translation>Tổng cộng ít nhất</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>(read the tooltip)</source>
         <translation>(Đọc hướng dẫn)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>normal</source>
         <translation>Bình thường</translation>
     </message>
@@ -901,6 +1211,8 @@
         <translation>Nhanh</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>Gửi đến nhiều người nhận trong một lần</translation>
     </message>
@@ -940,7 +1252,15 @@
         <source>Confirm send coins</source>
         <translation>Xác nhận gửi coins</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>(no label)</source>
+        <translation>(không nhãn)</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>SendCoinsEntry</name>
     <message>
@@ -991,9 +1311,39 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
+<<<<<<< HEAD
     </context>
 <context>
     <name>TransactionView</name>
+=======
+    <message>
+        <source>Label</source>
+        <translation>Nhãn</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(không nhãn)</translation>
+    </message>
+    </context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Các tệp tác nhau bằng đấu phẩy (* .csv)</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Nhãn</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Địa chỉ</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Xuất không thành công</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -1007,9 +1357,19 @@
         <source>Send Coins</source>
         <translation>Gửi Coins</translation>
     </message>
+<<<<<<< HEAD
 </context>
 <context>
     <name>WalletView</name>
+=======
+    </context>
+<context>
+    <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;Xuất</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>
@@ -1018,8 +1378,13 @@
         <translation>Lựa chọn:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Actinium Core</translation>
+=======
+        <source>Litecoin Core</source>
+        <translation>Litecoin Core</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>(default: %u)</source>
@@ -1038,10 +1403,13 @@
         <translation>Chú ý</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>Đang đọc các địa chỉ...</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>(default: %s)</source>
         <translation>(mặc định: %s)</translation>
     </message>
@@ -1062,10 +1430,13 @@
         <translation>Không downgrade được ví</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot write default address</source>
         <translation>Không ghi được địa chỉ mặc định</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>Đang quét lại...</translation>
     </message>

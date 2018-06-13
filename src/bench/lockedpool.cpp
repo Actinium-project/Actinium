@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -5,6 +6,15 @@
 #include "bench.h"
 
 #include "support/lockedpool.h"
+=======
+// Copyright (c) 2016-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <bench/bench.h>
+
+#include <support/lockedpool.h>
+>>>>>>> upstream/0.16
 
 #include <iostream>
 #include <vector>
@@ -21,14 +31,22 @@ static void BenchLockedPool(benchmark::State& state)
 
     std::vector<void*> addr;
     for (int x=0; x<ASIZE; ++x)
+<<<<<<< HEAD
         addr.push_back(0);
+=======
+        addr.push_back(nullptr);
+>>>>>>> upstream/0.16
     uint32_t s = 0x12345678;
     while (state.KeepRunning()) {
         for (int x=0; x<BITER; ++x) {
             int idx = s & (addr.size()-1);
             if (s & 0x80000000) {
                 b.free(addr[idx]);
+<<<<<<< HEAD
                 addr[idx] = 0;
+=======
+                addr[idx] = nullptr;
+>>>>>>> upstream/0.16
             } else if(!addr[idx]) {
                 addr[idx] = b.alloc((s >> 16) & (MSIZE-1));
             }
@@ -43,5 +61,9 @@ static void BenchLockedPool(benchmark::State& state)
     addr.clear();
 }
 
+<<<<<<< HEAD
 BENCHMARK(BenchLockedPool);
 
+=======
+BENCHMARK(BenchLockedPool, 530);
+>>>>>>> upstream/0.16

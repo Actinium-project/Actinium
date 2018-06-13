@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
+<<<<<<< HEAD
 # Copyright (c) 2014-2016 The Bitcoin Core developers
+=======
+# Copyright (c) 2014-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,8 +12,13 @@
 
     Bitcoin should be started with the command line arguments:
         bitcoind -testnet -daemon \
+<<<<<<< HEAD
                 -zmqpubhashblock=tcp://127.0.0.1:28332 \
                 -zmqpubrawtx=tcp://127.0.0.1:28332 \
+=======
+                -zmqpubrawtx=tcp://127.0.0.1:28332 \
+                -zmqpubrawblock=tcp://127.0.0.1:28332 \
+>>>>>>> upstream/0.16
                 -zmqpubhashtx=tcp://127.0.0.1:28332 \
                 -zmqpubhashblock=tcp://127.0.0.1:28332
 
@@ -36,7 +45,11 @@ import sys
 
 if not (sys.version_info.major >= 3 and sys.version_info.minor >= 4):
     print("This example only works with Python 3.4 and greater")
+<<<<<<< HEAD
     exit(1)
+=======
+    sys.exit(1)
+>>>>>>> upstream/0.16
 
 port = 28332
 

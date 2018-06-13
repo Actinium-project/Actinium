@@ -16,6 +16,7 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
+<<<<<<< HEAD
             VALUE "CompanyName",        "Actinium"
             VALUE "FileDescription",    "Actinium-tx (CLI Actinium transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
@@ -24,6 +25,16 @@ BEGIN
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "Actinium-tx.exe"
             VALUE "ProductName",        "Actinium-tx"
+=======
+            VALUE "CompanyName",        "Litecoin"
+            VALUE "FileDescription",    "litecoin-tx (CLI Litecoin transaction editor utility)"
+            VALUE "FileVersion",        VER_FILEVERSION_STR
+            VALUE "InternalName",       "litecoin-tx"
+            VALUE "LegalCopyright",     COPYRIGHT_STR
+            VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
+            VALUE "OriginalFilename",   "litecoin-tx.exe"
+            VALUE "ProductName",        "litecoin-tx"
+>>>>>>> upstream/0.16
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

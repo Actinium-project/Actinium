@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 // Copyright (c) 2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2016-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_BLOCK_ENCODINGS_H
 #define BITCOIN_BLOCK_ENCODINGS_H
 
+<<<<<<< HEAD
 #include "primitives/block.h"
+=======
+#include <primitives/block.h>
+>>>>>>> upstream/0.16
 
 #include <memory>
 
@@ -16,7 +24,11 @@ struct TransactionCompressor {
 private:
     CTransactionRef& tx;
 public:
+<<<<<<< HEAD
     TransactionCompressor(CTransactionRef& txIn) : tx(txIn) {}
+=======
+    explicit TransactionCompressor(CTransactionRef& txIn) : tx(txIn) {}
+>>>>>>> upstream/0.16
 
     ADD_SERIALIZE_METHODS;
 
@@ -75,7 +87,11 @@ public:
     std::vector<CTransactionRef> txn;
 
     BlockTransactions() {}
+<<<<<<< HEAD
     BlockTransactions(const BlockTransactionsRequest& req) :
+=======
+    explicit BlockTransactions(const BlockTransactionsRequest& req) :
+>>>>>>> upstream/0.16
         blockhash(req.blockhash), txn(req.indexes.size()) {}
 
     ADD_SERIALIZE_METHODS;
@@ -198,7 +214,11 @@ protected:
     CTxMemPool* pool;
 public:
     CBlockHeader header;
+<<<<<<< HEAD
     PartiallyDownloadedBlock(CTxMemPool* poolIn) : pool(poolIn) {}
+=======
+    explicit PartiallyDownloadedBlock(CTxMemPool* poolIn) : pool(poolIn) {}
+>>>>>>> upstream/0.16
 
     // extra_txn is a list of extra transactions to look at, in <witness hash, reference> form
     ReadStatus InitData(const CBlockHeaderAndShortTxIDs& cmpctblock, const std::vector<std::pair<uint256, CTransactionRef>>& extra_txn);

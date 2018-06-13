@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -8,6 +9,18 @@
 #include "random.h"
 
 #include "test/test_bitcoin.h"
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <blockencodings.h>
+#include <consensus/merkle.h>
+#include <chainparams.h>
+#include <random.h>
+
+#include <test/test_bitcoin.h>
+>>>>>>> upstream/0.16
 
 #include <boost/test/unit_test.hpp>
 
@@ -51,7 +64,11 @@ static CBlock BuildBlockTestCase() {
     return block;
 }
 
+<<<<<<< HEAD
 // Number of shared use_counts we expect for a tx we havent touched
+=======
+// Number of shared use_counts we expect for a tx we haven't touched
+>>>>>>> upstream/0.16
 // == 2 (mempool + our copy from the GetSharedTx call)
 #define SHARED_TX_OFFSET 2
 
@@ -62,6 +79,10 @@ BOOST_AUTO_TEST_CASE(SimpleRoundTripTest)
     CBlock block(BuildBlockTestCase());
 
     pool.addUnchecked(block.vtx[2]->GetHash(), entry.FromTx(*block.vtx[2]));
+<<<<<<< HEAD
+=======
+    LOCK(pool.cs);
+>>>>>>> upstream/0.16
     BOOST_CHECK_EQUAL(pool.mapTx.find(block.vtx[2]->GetHash())->GetSharedTx().use_count(), SHARED_TX_OFFSET + 0);
 
     // Do a simple ShortTxIDs RT
@@ -118,12 +139,20 @@ public:
     std::vector<uint64_t> shorttxids;
     std::vector<PrefilledTransaction> prefilledtxn;
 
+<<<<<<< HEAD
     TestHeaderAndShortIDs(const CBlockHeaderAndShortTxIDs& orig) {
+=======
+    explicit TestHeaderAndShortIDs(const CBlockHeaderAndShortTxIDs& orig) {
+>>>>>>> upstream/0.16
         CDataStream stream(SER_NETWORK, PROTOCOL_VERSION);
         stream << orig;
         stream >> *this;
     }
+<<<<<<< HEAD
     TestHeaderAndShortIDs(const CBlock& block) :
+=======
+    explicit TestHeaderAndShortIDs(const CBlock& block) :
+>>>>>>> upstream/0.16
         TestHeaderAndShortIDs(CBlockHeaderAndShortTxIDs(block, true)) {}
 
     uint64_t GetShortID(const uint256& txhash) const {
@@ -161,6 +190,10 @@ BOOST_AUTO_TEST_CASE(NonCoinbasePreforwardRTTest)
     CBlock block(BuildBlockTestCase());
 
     pool.addUnchecked(block.vtx[2]->GetHash(), entry.FromTx(*block.vtx[2]));
+<<<<<<< HEAD
+=======
+    LOCK(pool.cs);
+>>>>>>> upstream/0.16
     BOOST_CHECK_EQUAL(pool.mapTx.find(block.vtx[2]->GetHash())->GetSharedTx().use_count(), SHARED_TX_OFFSET + 0);
 
     uint256 txhash;
@@ -227,6 +260,10 @@ BOOST_AUTO_TEST_CASE(SufficientPreforwardRTTest)
     CBlock block(BuildBlockTestCase());
 
     pool.addUnchecked(block.vtx[1]->GetHash(), entry.FromTx(*block.vtx[1]));
+<<<<<<< HEAD
+=======
+    LOCK(pool.cs);
+>>>>>>> upstream/0.16
     BOOST_CHECK_EQUAL(pool.mapTx.find(block.vtx[1]->GetHash())->GetSharedTx().use_count(), SHARED_TX_OFFSET + 0);
 
     uint256 txhash;
@@ -257,7 +294,11 @@ BOOST_AUTO_TEST_CASE(SufficientPreforwardRTTest)
         CBlock block2;
         PartiallyDownloadedBlock partialBlockCopy = partialBlock;
         BOOST_CHECK(partialBlock.FillBlock(block2, {}) == READ_STATUS_OK);
+<<<<<<< HEAD
         BOOST_CHECK_EQUAL(block.GePoWtHash().ToString(), block2.GetPoWHash().ToString());
+=======
+        BOOST_CHECK_EQUAL(block.GetPoWHash().ToString(), block2.GetPoWHash().ToString());
+>>>>>>> upstream/0.16
         bool mutated;
         BOOST_CHECK_EQUAL(block.hashMerkleRoot.ToString(), BlockMerkleRoot(block2, &mutated).ToString());
         BOOST_CHECK(!mutated);

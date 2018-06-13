@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
+<<<<<<< HEAD
 # Copyright (c) 2016 The Bitcoin Core developers
+=======
+# Copyright (c) 2016-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Encode and decode BASE58, P2PKH and P2SH addresses."""
@@ -7,6 +11,11 @@
 from .script import hash256, hash160, sha256, CScript, OP_0
 from .util import bytes_to_hex_str, hex_str_to_bytes
 
+<<<<<<< HEAD
+=======
+from . import segwit_addr
+
+>>>>>>> upstream/0.16
 chars = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 
 def byte_to_base58(b, version):
@@ -33,7 +42,11 @@ def keyhash_to_p2pkh(hash, main = False):
 
 def scripthash_to_p2sh(hash, main = False):
     assert (len(hash) == 20)
+<<<<<<< HEAD
     version = 5 if main else 196
+=======
+    version = 5 if main else 58
+>>>>>>> upstream/0.16
     return byte_to_base58(hash, version)
 
 def key_to_p2pkh(key, main = False):
@@ -49,6 +62,25 @@ def key_to_p2sh_p2wpkh(key, main = False):
     p2shscript = CScript([OP_0, hash160(key)])
     return script_to_p2sh(p2shscript, main)
 
+<<<<<<< HEAD
+=======
+def program_to_witness(version, program, main = False):
+    if (type(program) is str):
+        program = hex_str_to_bytes(program)
+    assert 0 <= version <= 16
+    assert 2 <= len(program) <= 40
+    assert version > 0 or len(program) in [20, 32]
+    return segwit_addr.encode("ltc" if main else "rltc", version, program)
+
+def script_to_p2wsh(script, main = False):
+    script = check_script(script)
+    return program_to_witness(0, sha256(script), main)
+
+def key_to_p2wpkh(key, main = False):
+    key = check_key(key)
+    return program_to_witness(0, hash160(key), main)
+
+>>>>>>> upstream/0.16
 def script_to_p2sh_p2wsh(script, main = False):
     script = check_script(script)
     p2shscript = CScript([OP_0, sha256(script)])

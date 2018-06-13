@@ -1,5 +1,9 @@
 [Desktop Entry]
+<<<<<<< HEAD
 Encoding=UTF-8
+=======
+Version=1.0
+>>>>>>> upstream/0.16
 Name=Bitcoin Core
 Comment=Connect to the Bitcoin P2P Network
 Comment[de]=Verbinde mit dem Bitcoin peer-to-peer Netzwerk
@@ -11,3 +15,7 @@ Type=Application
 Icon=bitcoin128
 MimeType=x-scheme-handler/bitcoin;
 Categories=Office;Finance;
+<<<<<<< HEAD
+=======
+StartupWMClass=Bitcoin-qt
+>>>>>>> upstream/0.16

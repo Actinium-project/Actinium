@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 name: "Actinium-osx-0.15"
+=======
+name: "litecoin-osx-0.16"
+>>>>>>> upstream/0.16
 enable_cache: true
 suites:
 - "trusty"
@@ -28,8 +32,13 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
+<<<<<<< HEAD
 - "url": "https://github.com/Actinium-project/Actinium.git"
   "dir": "Actinium"
+=======
+- "url": "https://github.com/litecoin-project/litecoin.git"
+  "dir": "litecoin"
+>>>>>>> upstream/0.16
 files:
 - "MacOSX10.11.sdk.tar.gz"
 script: |
@@ -83,7 +92,11 @@ script: |
   create_per-host_faketime_wrappers "2000-01-01 12:00:00"
   export PATH=${WRAP_DIR}:${PATH}
 
+<<<<<<< HEAD
   cd Actinium
+=======
+  cd litecoin
+>>>>>>> upstream/0.16
   BASEPREFIX=`pwd`/depends
 
   mkdir -p ${BASEPREFIX}/SDKs
@@ -104,14 +117,22 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
+<<<<<<< HEAD
   SOURCEDIST=`echo Actinium-*.tar.gz`
+=======
+  SOURCEDIST=`echo litecoin-*.tar.gz`
+>>>>>>> upstream/0.16
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
 
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
+<<<<<<< HEAD
   find Actinium-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
+=======
+  find litecoin-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
+>>>>>>> upstream/0.16
   popd
 
   # Workaround for tarball not building with the bare tag version (prep)

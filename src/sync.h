@@ -288,4 +288,7 @@ public:
 };
 
 #endif // BITCOIN_SYNC_H
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

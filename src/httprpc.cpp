@@ -257,4 +257,7 @@ void StopHTTPRPC()
         httpRPCTimerInterface.reset();
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

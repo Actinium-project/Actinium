@@ -130,7 +130,11 @@ QLabel { color: rgb(40,40,40);  }</string>
              <item>
               <widget class="QLabel" name="infoText">
                <property name="text">
+<<<<<<< HEAD
                 <string>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the actinium network, as detailed below.</string>
+=======
+                <string>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</string>
+>>>>>>> upstream/0.16
                </property>
                <property name="textFormat">
                 <enum>Qt::RichText</enum>
@@ -149,7 +153,11 @@ QLabel { color: rgb(40,40,40);  }</string>
                 </font>
                </property>
                <property name="text">
+<<<<<<< HEAD
                 <string>Attempting to spend actiniums that are affected by not-yet-displayed transactions will not be accepted by the network.</string>
+=======
+                <string>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</string>
+>>>>>>> upstream/0.16
                </property>
                <property name="textFormat">
                 <enum>Qt::RichText</enum>
@@ -367,7 +375,11 @@ QLabel { color: rgb(40,40,40);  }</string>
   <customwidget>
    <class>ModalOverlay</class>
    <extends>QWidget</extends>
+<<<<<<< HEAD
    <header>modaloverlay.h</header>
+=======
+   <header>qt/modaloverlay.h</header>
+>>>>>>> upstream/0.16
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -185,7 +185,11 @@ void Shutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
+<<<<<<< HEAD
     RenameThread("Actinium-shutoff");
+=======
+    RenameThread("litecoin-shutoff");
+>>>>>>> upstream/0.16
     mempool.AddTransactionsUpdated(1);
 
     StopHTTPRPC();
@@ -521,6 +525,7 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
+<<<<<<< HEAD
     const std::string URL_SOURCE_CODE = "<https://github.com/actinium-project/actinium>";
     const std::string URL_WEBSITE = "<https://actinium.org>";
     const std::string URL_DISCORD = "<https://discord.gg/5xRppjz>";
@@ -533,6 +538,26 @@ std::string LicenseInfo()
       strprintf(_("Join us on Discord:  %s \n\n"), URL_DISCORD) +
       strprintf(_("Distributed under the MIT software license, see the accompanying file %s or %s \n\n"), "COPYING", "<https://opensource.org/licenses/MIT>") +
       strprintf(_("This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.\n"), "<https://www.openssl.org>");
+=======
+    const std::string URL_SOURCE_CODE = "<https://github.com/litecoin-project/litecoin>";
+    const std::string URL_WEBSITE = "<https://litecoin.org>";
+
+    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
+           "\n" +
+           strprintf(_("Please contribute if you find %s useful. "
+                       "Visit %s for further information about the software."),
+               PACKAGE_NAME, URL_WEBSITE) +
+           "\n" +
+           strprintf(_("The source code is available from %s."),
+               URL_SOURCE_CODE) +
+           "\n" +
+           "\n" +
+           _("This is experimental software.") + "\n" +
+           strprintf(_("Distributed under the MIT software license, see the accompanying file %s or %s"), "COPYING", "<https://opensource.org/licenses/MIT>") + "\n" +
+           "\n" +
+           strprintf(_("This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard."), "<https://www.openssl.org>") +
+           "\n";
+>>>>>>> upstream/0.16
 }
 
 static void BlockNotifyCallback(bool initialSync, const CBlockIndex *pBlockIndex)
@@ -620,7 +645,11 @@ void CleanupBlockRevFiles()
 void ThreadImport(std::vector<fs::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
+<<<<<<< HEAD
     RenameThread("actinium-loadblk");
+=======
+    RenameThread("litecoin-loadblk");
+>>>>>>> upstream/0.16
 
     {
     CImportingNow imp;
@@ -1227,9 +1256,15 @@ bool AppInitMain()
     // Warn about relative -datadir path.
     if (gArgs.IsArgSet("-datadir") && !fs::path(gArgs.GetArg("-datadir", "")).is_absolute()) {
         LogPrintf("Warning: relative datadir option '%s' specified, which will be interpreted relative to the "
+<<<<<<< HEAD
                   "current working directory '%s'. This is fragile, because if Actinium is started in the future "
                   "from a different location, it will be unable to locate the current data files. There could "
                   "also be data loss if Actinium is started while in a temporary directory.\n",
+=======
+                  "current working directory '%s'. This is fragile, because if litecoin is started in the future "
+                  "from a different location, it will be unable to locate the current data files. There could "
+                  "also be data loss if litecoin is started while in a temporary directory.\n",
+>>>>>>> upstream/0.16
             gArgs.GetArg("-datadir", ""), fs::current_path().string());
     }
 

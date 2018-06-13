@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 // Copyright (c) 2012-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "bench.h"
 #include "wallet/wallet.h"
+=======
+// Copyright (c) 2012-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <bench/bench.h>
+#include <wallet/wallet.h>
+>>>>>>> upstream/0.16
 
 #include <set>
 
@@ -56,4 +65,8 @@ static void CoinSelection(benchmark::State& state)
     }
 }
 
+<<<<<<< HEAD
 BENCHMARK(CoinSelection);
+=======
+BENCHMARK(CoinSelection, 650);
+>>>>>>> upstream/0.16

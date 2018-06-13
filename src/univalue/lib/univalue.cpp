@@ -4,6 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <stdint.h>
+<<<<<<< HEAD
 #include <errno.h>
 #include <iomanip>
 #include <limits>
@@ -73,6 +74,14 @@ bool ParseDouble(const std::string& str, double *out)
 }
 }
 
+=======
+#include <iomanip>
+#include <sstream>
+#include <stdlib.h>
+
+#include "univalue.h"
+
+>>>>>>> upstream/0.16
 using namespace std;
 
 const UniValue NullUniValue;
@@ -104,7 +113,11 @@ static bool validNumStr(const string& s)
 {
     string tokenVal;
     unsigned int consumed;
+<<<<<<< HEAD
     enum jtokentype tt = getJsonToken(tokenVal, consumed, s.c_str());
+=======
+    enum jtokentype tt = getJsonToken(tokenVal, consumed, s.data(), s.data() + s.size());
+>>>>>>> upstream/0.16
     return (tt == JTOK_NUMBER);
 }
 
@@ -189,13 +202,30 @@ bool UniValue::push_backV(const std::vector<UniValue>& vec)
     return true;
 }
 
+<<<<<<< HEAD
+=======
+void UniValue::__pushKV(const std::string& key, const UniValue& val_)
+{
+    keys.push_back(key);
+    values.push_back(val_);
+}
+
+>>>>>>> upstream/0.16
 bool UniValue::pushKV(const std::string& key, const UniValue& val_)
 {
     if (typ != VOBJ)
         return false;
 
+<<<<<<< HEAD
     keys.push_back(key);
     values.push_back(val_);
+=======
+    size_t idx;
+    if (findKey(key, idx))
+        values[idx] = val_;
+    else
+        __pushKV(key, val_);
+>>>>>>> upstream/0.16
     return true;
 }
 
@@ -204,14 +234,20 @@ bool UniValue::pushKVs(const UniValue& obj)
     if (typ != VOBJ || obj.typ != VOBJ)
         return false;
 
+<<<<<<< HEAD
     for (unsigned int i = 0; i < obj.keys.size(); i++) {
         keys.push_back(obj.keys[i]);
         values.push_back(obj.values.at(i));
     }
+=======
+    for (size_t i = 0; i < obj.keys.size(); i++)
+        __pushKV(obj.keys[i], obj.values.at(i));
+>>>>>>> upstream/0.16
 
     return true;
 }
 
+<<<<<<< HEAD
 int UniValue::findKey(const std::string& key) const
 {
     for (unsigned int i = 0; i < keys.size(); i++) {
@@ -228,6 +264,39 @@ bool UniValue::checkObject(const std::map<std::string,UniValue::VType>& t)
          it != t.end(); ++it) {
         int idx = findKey(it->first);
         if (idx < 0)
+=======
+void UniValue::getObjMap(std::map<std::string,UniValue>& kv) const
+{
+    if (typ != VOBJ)
+        return;
+
+    kv.clear();
+    for (size_t i = 0; i < keys.size(); i++)
+        kv[keys[i]] = values[i];
+}
+
+bool UniValue::findKey(const std::string& key, size_t& retIdx) const
+{
+    for (size_t i = 0; i < keys.size(); i++) {
+        if (keys[i] == key) {
+            retIdx = i;
+            return true;
+        }
+    }
+
+    return false;
+}
+
+bool UniValue::checkObject(const std::map<std::string,UniValue::VType>& t) const
+{
+    if (typ != VOBJ)
+        return false;
+
+    for (std::map<std::string,UniValue::VType>::const_iterator it = t.begin();
+         it != t.end(); ++it) {
+        size_t idx = 0;
+        if (!findKey(it->first, idx))
+>>>>>>> upstream/0.16
             return false;
 
         if (values.at(idx).getType() != it->second)
@@ -242,14 +311,23 @@ const UniValue& UniValue::operator[](const std::string& key) const
     if (typ != VOBJ)
         return NullUniValue;
 
+<<<<<<< HEAD
     int index = findKey(key);
     if (index < 0)
+=======
+    size_t index = 0;
+    if (!findKey(key, index))
+>>>>>>> upstream/0.16
         return NullUniValue;
 
     return values.at(index);
 }
 
+<<<<<<< HEAD
 const UniValue& UniValue::operator[](unsigned int index) const
+=======
+const UniValue& UniValue::operator[](size_t index) const
+>>>>>>> upstream/0.16
 {
     if (typ != VOBJ && typ != VARR)
         return NullUniValue;
@@ -283,6 +361,7 @@ const UniValue& find_value(const UniValue& obj, const std::string& name)
     return NullUniValue;
 }
 
+<<<<<<< HEAD
 const std::vector<std::string>& UniValue::getKeys() const
 {
     if (typ != VOBJ)
@@ -355,3 +434,5 @@ const UniValue& UniValue::get_array() const
     return *this;
 }
 
+=======
+>>>>>>> upstream/0.16

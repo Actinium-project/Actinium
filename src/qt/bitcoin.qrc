@@ -54,8 +54,11 @@
         <file alias="hd_enabled">res/icons/hd_enabled.png</file>
         <file alias="hd_disabled">res/icons/hd_disabled.png</file>
         <file alias="network_disabled">res/icons/network_disabled.png</file>
+<<<<<<< HEAD
         <file alias="splashscreen">res/icons/splashscreen.png</file>
         <file alias="aboutDialog">res/icons/aboutDialog.png</file>
+=======
+>>>>>>> upstream/0.16
     </qresource>
     <qresource prefix="/movies">
         <file alias="spinner-000">res/movies/spinner-000.png</file>

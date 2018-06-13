@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2015 The Bitcoin Core developers
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +10,11 @@
 #define BITCOIN_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
+<<<<<<< HEAD
 #include "config/bitcoin-config.h"
+=======
+#include <config/bitcoin-config.h>
+>>>>>>> upstream/0.16
 #endif
 
 #include <QIcon>
@@ -58,8 +66,11 @@ private:
         None,                       /**< Ignore informational notifications, and show a modal pop-up dialog for Critical notifications. */
         Freedesktop,                /**< Use DBus org.freedesktop.Notifications */
         QSystemTray,                /**< Use QSystemTray::showMessage */
+<<<<<<< HEAD
         Growl12,                    /**< Use the Growl 1.2 notification system (Mac only) */
         Growl13,                    /**< Use the Growl 1.3 notification system (Mac only) */
+=======
+>>>>>>> upstream/0.16
         UserNotificationCenter      /**< Use the 10.8+ User Notification Center (Mac only) */
     };
     QString programName;
@@ -72,7 +83,10 @@ private:
 #endif
     void notifySystray(Class cls, const QString &title, const QString &text, const QIcon &icon, int millisTimeout);
 #ifdef Q_OS_MAC
+<<<<<<< HEAD
     void notifyGrowl(Class cls, const QString &title, const QString &text, const QIcon &icon);
+=======
+>>>>>>> upstream/0.16
     void notifyMacUserNotificationCenter(Class cls, const QString &title, const QString &text, const QIcon &icon);
 #endif
 };

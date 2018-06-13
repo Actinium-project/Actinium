@@ -4,8 +4,13 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
+<<<<<<< HEAD
 #ifndef _SECP256K1_ECKEY_
 #define _SECP256K1_ECKEY_
+=======
+#ifndef SECP256K1_ECKEY_H
+#define SECP256K1_ECKEY_H
+>>>>>>> upstream/0.16
 
 #include <stddef.h>
 
@@ -22,4 +27,8 @@ static int secp256k1_eckey_pubkey_tweak_add(const secp256k1_ecmult_context *ctx,
 static int secp256k1_eckey_privkey_tweak_mul(secp256k1_scalar *key, const secp256k1_scalar *tweak);
 static int secp256k1_eckey_pubkey_tweak_mul(const secp256k1_ecmult_context *ctx, secp256k1_ge *key, const secp256k1_scalar *tweak);
 
+<<<<<<< HEAD
 #endif
+=======
+#endif /* SECP256K1_ECKEY_H */
+>>>>>>> upstream/0.16

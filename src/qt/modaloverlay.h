@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Copyright (c) 2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2016-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -32,7 +36,11 @@ public Q_SLOTS:
     // will show or hide the modal layer
     void showHide(bool hide = false, bool userRequested = false);
     void closeClicked();
+<<<<<<< HEAD
     bool isLayerVisible() { return layerIsVisible; }
+=======
+    bool isLayerVisible() const { return layerIsVisible; }
+>>>>>>> upstream/0.16
 
 protected:
     bool eventFilter(QObject * obj, QEvent * ev);

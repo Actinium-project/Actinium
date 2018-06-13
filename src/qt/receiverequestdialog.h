@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_RECEIVEREQUESTDIALOG_H
 #define BITCOIN_QT_RECEIVEREQUESTDIALOG_H
 
+<<<<<<< HEAD
 #include "walletmodel.h"
+=======
+#include <qt/walletmodel.h>
+>>>>>>> upstream/0.16
 
 #include <QDialog>
 #include <QImage>

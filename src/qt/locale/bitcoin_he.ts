@@ -3,7 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
+<<<<<<< HEAD
         <translation>יש ללחוץ עם הכפתור הימני כדי לערוך כתובת או תווית</translation>
+=======
+        <translation>לחץ מקש ימני כדי לערוך כתובת או תווית</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Create a new address</source>
@@ -62,11 +66,19 @@
         <translation>כתובות לקבלה</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>אלו הן כתובות לייטקוין שלך לשליחת תשלומים. חשוב לבדוק את כמות הכתובות המקבלות לפני שליחת מטבעות.</translation>
     </message>
     <message>
         <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>אלו הן כתובות לייטקוין שלך לשליחת תשלומים. חשוב לבדוק את הסכום ואת הכתובת המקבלת לפני שליחת מטבעות.</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+>>>>>>> upstream/0.16
         <translation>אלו הן כתובות לייטקוין שלך לקבלת תשלומים. מומלץ להשתמש בכתובת חדשה לכל העברה.</translation>
     </message>
     <message>
@@ -168,7 +180,11 @@
         <translation>אימות הצפנת הארנק</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
+=======
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+>>>>>>> upstream/0.16
         <translation>אזהרה: איבוד מילת הצופן לאחר הצפנת הארנק עשויה לגרום לכך &lt;b&gt;שכל הביטקוינים שלך יאבדו&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -180,7 +196,11 @@
         <translation>הארנק מוצפן</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your actiniums from being stolen by malware infecting your computer.</source>
+=======
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+>>>>>>> upstream/0.16
         <translation>%1 ייסגר כעת כדי לסיים את תהליך ההצפנה. נא לשים לב כי הצפנת הארנק שלך לא יכול להגן על הביטקוינים שלך מפני גניבה או נוזקה שתוקפת את מחשבך.</translation>
     </message>
     <message>
@@ -271,11 +291,19 @@
     </message>
     <message>
         <source>&amp;About %1</source>
+<<<<<<< HEAD
         <translation>&amp;אודות %1</translation>
     </message>
     <message>
         <source>Show information about %1</source>
         <translation>הצג מידע על %1</translation>
+=======
+        <translation>על &amp;אודות %1</translation>
+    </message>
+    <message>
+        <source>Show information about %1</source>
+        <translation>הצגת מידע על %1</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -338,7 +366,11 @@
         <translation>המקטעים נוספים למפתח בכונן…</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
+=======
+        <source>Send coins to a Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>שליחת מטבעות לכתובת לייטקוין</translation>
     </message>
     <message>
@@ -362,7 +394,11 @@
         <translation>&amp;אימות הודעה…</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
+=======
+        <source>Litecoin</source>
+>>>>>>> upstream/0.16
         <translation>לייטקוין</translation>
     </message>
     <message>
@@ -390,11 +426,19 @@
         <translation>הצפנת המפתחות הפרטיים ששייכים לארנק שלך</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Actinium addresses to prove you own them</source>
         <translation>חתום על הודעות עם כתובות לייטקוין שלך כדי להוכיח שהן בבעלותך</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
+=======
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>חתום על הודעות עם כתובות לייטקוין שלך כדי להוכיח שהן בבעלותך</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+>>>>>>> upstream/0.16
         <translation>אמת הודעות כדי להבטיח שהן נחתמו עם כתובת לייטקוין מסוימות</translation>
     </message>
     <message>
@@ -414,8 +458,13 @@
         <translation>סרגל כלים לשוניות</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
         <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :Actinium)</translation>
+=======
+        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :litecoin)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,7 +475,11 @@
         <translation>הצגת רשימת הכתובות והתוויות הנמצאות בשימוש</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Open a Actinium: URI or payment request</source>
+=======
+        <source>Open a litecoin: URI or payment request</source>
+>>>>>>> upstream/0.16
         <translation>פתיחת לייטקוין: כתובת משאב או בקשת תשלום</translation>
     </message>
     <message>
@@ -434,10 +487,21 @@
         <translation>אפשרויות &amp;שורת הפקודה</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <source>%n active connection(s) to Actinium network</source>
         <translation><numerusform>חיבור אחד פעיל לרשת לייטקוין</numerusform><numerusform>%n חיבורים פעילים לרשת לייטקוין</numerusform></translation>
     </message>
     <message>
+=======
+        <source>%n active connection(s) to Litecoin network</source>
+        <translation><numerusform>חיבור אחד פעיל לרשת לייטקוין</numerusform><numerusform>%n חיבורים פעילים לרשת לייטקוין</numerusform></translation>
+    </message>
+    <message>
+        <source>Indexing blocks on disk...</source>
+        <translation>מאנדקס את הבלוקים על הכונן...</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Processing blocks on disk...</source>
         <translation>מעבד בלוקים על הדיסק...</translation>
     </message>
@@ -470,7 +534,11 @@
         <translation>עדכני</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show the %1 help message to get a list with possible Actinium command-line options</source>
+=======
+        <source>Show the %1 help message to get a list with possible Litecoin command-line options</source>
+>>>>>>> upstream/0.16
         <translation>יש להציג את הודעת העזרה של %1 כדי להציג רשימה עם אפשרויות שורת פקודה לייטקוין</translation>
     </message>
     <message>
@@ -524,6 +592,17 @@
         <translation>העברת קבלה</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
+        <translation>ייצור מפתחות HD &lt;b&gt;מופעל&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>ייצור מפתחות HD &lt;b&gt;כבוי&lt;/b&gt;</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>הארנק &lt;b&gt;מוצפן&lt;/b&gt; ו&lt;b&gt;פתוח&lt;/b&gt; כרגע</translation>
     </message>
@@ -532,7 +611,11 @@
         <translation>הארנק &lt;b&gt;מוצפן&lt;/b&gt; ו&lt;b&gt;נעול&lt;/b&gt; כרגע</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
+=======
+        <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
+>>>>>>> upstream/0.16
         <translation>אירעה שגיאה חמורה. אין אפשרות להשתמש עוד בלייטקוין באופן מאובטח והיישום ייסגר.</translation>
     </message>
 </context>
@@ -655,6 +738,13 @@
         <translation>העתקת השינוי</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>(%1 locked)</source>
+        <translation>(%1 נעולים)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>yes</source>
         <translation>כן</translation>
     </message>
@@ -672,9 +762,23 @@
     </message>
     <message>
         <source>(no label)</source>
+<<<<<<< HEAD
         <translation>(ללא תוית)</translation>
     </message>
     </context>
+=======
+        <translation>(ללא תווית)</translation>
+    </message>
+    <message>
+        <source>change from %1 (%2)</source>
+        <translation>עודף מ־%1 (%2)</translation>
+    </message>
+    <message>
+        <source>(change)</source>
+        <translation>(עודף)</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -714,7 +818,11 @@
         <translation>עריכת כתובת השליחה</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The entered address "%1" is not a valid Actinium address.</source>
+=======
+        <source>The entered address "%1" is not a valid Litecoin address.</source>
+>>>>>>> upstream/0.16
         <translation>הכתובת שהוקלדה „%1” היא אינה כתובת לייטקוין תקנית.</translation>
     </message>
     <message>
@@ -793,7 +901,11 @@
     </message>
     <message>
         <source>Start minimized</source>
+<<<<<<< HEAD
         <translation>התחל ממוזער</translation>
+=======
+        <translation>התחלה במצב ממוזער</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
@@ -801,7 +913,11 @@
     </message>
     <message>
         <source>Show splash screen on startup (default: %u)</source>
+<<<<<<< HEAD
         <translation>הצג מסך פתיחה בעת הפעלה (ברירת מחדל: %u)</translation>
+=======
+        <translation>הצגת מסך פתיחה בעת הפעלה (בררת מחדל: %u)</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Reset all settings changed in the GUI</source>
@@ -816,13 +932,32 @@
     </message>
     <message>
         <source>Welcome to %1.</source>
+<<<<<<< HEAD
         <translation>ברוך הבא ל %1.</translation>
+=======
+        <translation>ברוך בואך אל %1.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
         <translation>כיוון שזו ההפעלה הראשונה של התכנית, ניתן לבחור היכן יאוחסן המידע של %1.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
+        <translation>בעת לחיצה על אישור, %1 יחל בהורדה ועיבוד מלאים של שרשרת המקטעים %4 (%2 ג״ב) החל מההעברות הראשונות ב־%3 עם ההשקה הראשונית של %4.</translation>
+    </message>
+    <message>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation>הסינכרון הראשוני הוא תובעני ועלול לחשוף בעיות חומרה במחשב שהיו חבויות עד כה. כל פעם שתריץ %1 התהליך ימשיך בהורדה מהנקודה שבה הוא עצר לאחרונה.</translation>
+    </message>
+    <message>
+        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
+        <translation>אם בחרת להגביל את שטח האחרון לשרשרת, עדיין נדרש מידע היסטורי להורדה ועיבוד אך המידע ההיסטורי יימחק לאחר מכן כדי לשמור על צריכת שטח האחסון בדיסק נמוכה.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Use the default data directory</source>
         <translation>שימוש בבררת המחדל של תיקיית הנתונים.</translation>
     </message>
@@ -831,6 +966,29 @@
         <translation>שימוש בתיקיית נתונים מותאמת אישית:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>לייטקוין</translation>
+    </message>
+    <message>
+        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
+        <translation>מידע בנפח של לפחות %1 ג׳יגה-בייט יאוחסן בתיקייה זו, והוא יגדל עם הזמן.</translation>
+    </message>
+    <message>
+        <source>Approximately %1 GB of data will be stored in this directory.</source>
+        <translation>מידע בנפח של כ-%1 ג׳יגה-בייט יאוחסן בתיקייה זו.</translation>
+    </message>
+    <message>
+        <source>%1 will download and store a copy of the Litecoin block chain.</source>
+        <translation>%1 תוריד ותאחסן עותק של שרשרת הבלוקים של לייטקוין.</translation>
+    </message>
+    <message>
+        <source>The wallet will also be stored in this directory.</source>
+        <translation>הארנק גם מאוחסן בתיקייה הזו.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>שגיאה: לא ניתן ליצור את תיקיית הנתונים שצוינה „%1“.</translation>
     </message>
@@ -838,7 +996,19 @@
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>ג״ב של מקום פנוי זמין</numerusform><numerusform>%n ג״ב של מקום פנוי זמינים</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation><numerusform>(מתוך %n ג״ב נדרשים)</numerusform><numerusform>(מתוך %n ג״ב נדרשים)</numerusform></translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -846,6 +1016,17 @@
         <translation>טופס</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the litecoin network, as detailed below.</source>
+        <translation>ייתכן שהעברות שבוצעו לאחרונה לא יופיעו עדיין, ולכן המאזן בארנק שלך יהיה שגוי. המידע הנכון יוצג במלואו כאשר הארנק שלך יסיים להסתנכרן עם רשת לייטקוין, כמפורט למטה.</translation>
+    </message>
+    <message>
+        <source>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>הרשת תסרב לקבל הוצאת ביטקוינים במידה והם כבר נמצאים בהעברות אשר לא מוצגות עדיין.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Number of blocks left</source>
         <translation>מספר מקטעים שנותרו</translation>
     </message>
@@ -936,6 +1117,7 @@
         <translation>מספר תהליכי ה&amp;אימות של הסקריפט</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Accept connections from outside</source>
         <translation>קבלת חיבורים מבחוץ</translation>
     </message>
@@ -944,22 +1126,44 @@
         <translation>לאפשר חיבורים נכנסים</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>כתובת ה־IP של המתווך (לדוגמה IPv4: 127.0.0.1‏ / IPv6: ::1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>כתובות צד־שלישי (כגון: סייר מקטעים) שמופיעים בלשונית ההעברות בתור פריטים בתפריט ההקשר. %s בכתובת מוחלף בגיבוב ההעברה. מספר כתובות יופרדו בפס אנכי |.</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
         <translation>כתובות העברה צד־שלישי</translation>
+=======
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
+        <translation>מזער ואל תצא מהאפליקציה עם סגירת החלון. כאשר אפשרות זו דלוקה, האפליקציה תיסגר רק בבחירת ״יציאה״ בתפריט.</translation>
+    </message>
+    <message>
+        <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
+        <translation>כתובות צד־שלישי (כגון: סייר מקטעים) שמופיעים בלשונית ההעברות בתור פריטים בתפריט ההקשר. %s בכתובת מוחלף בגיבוב ההעברה. מספר כתובות יופרדו בפס אנכי |.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
         <translation>אפשרויות פעילות בשורת הפקודה שדורסות את האפשרויות שלהלן:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Open the %1 configuration file from the working directory.</source>
+        <translation>פתיחת קובץ התצורה של %1 מתיקיית העבודה.</translation>
+    </message>
+    <message>
+        <source>Open Configuration File</source>
+        <translation>פתיחת קובץ ההגדרות</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Reset all client options to default.</source>
         <translation>איפוס כל אפשרויות התכנית לבררת המחדל.</translation>
     </message>
@@ -996,7 +1200,11 @@
         <translation>עודף &amp;בלתי מאושר מההשקעה</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Automatically open the Actinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+=======
+        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+>>>>>>> upstream/0.16
         <translation>פתיחת הפתחה של לייטקוין בנתב באופן אוטומטי. עובד רק אם UPnP מופעל ונתמך בנתב.</translation>
     </message>
     <message>
@@ -1004,7 +1212,11 @@
         <translation>מיפוי פתחה באמצעות UPnP</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Actinium network through a SOCKS5 proxy.</source>
+=======
+        <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
+>>>>>>> upstream/0.16
         <translation>התחבר לרשת לייטקוין דרך פרוקסי SOCKS5.</translation>
     </message>
     <message>
@@ -1020,6 +1232,13 @@
         <translation>הפתחה של המתווך (למשל 9050)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Used for reaching peers via:</source>
+        <translation>עבור הגעה לעמיתים דרך:</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1036,6 +1255,7 @@
         <translation>&amp;חלון</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Hide the icon from the system tray.</source>
         <translation>ה&amp;סתרת הסמל ממגש המערכת.</translation>
     </message>
@@ -1044,6 +1264,8 @@
         <translation>הסתרת הסמל במגש המערכת</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Show only a tray icon after minimizing the window.</source>
         <translation>הצג סמל מגש בלבד לאחר מזעור החלון.</translation>
     </message>
@@ -1108,6 +1330,25 @@
         <translation>הלקוח יכבה. להמשיך?</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Configuration options</source>
+        <translation>אפשרויות להגדרה</translation>
+    </message>
+    <message>
+        <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
+        <translation>בקובץ ההגדרות ניתן לציין אפשרויות מתקדמות אשר יקבלו עדיפות על ההגדרות בממשק הגרפי. כמו כן, אפשרויות בשורת הפקודה יקבלו עדיפות על קובץ ההגדרות.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>שגיאה</translation>
+    </message>
+    <message>
+        <source>The configuration file could not be opened.</source>
+        <translation>לא ניתן לפתוח את קובץ ההגדרות</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>This change would require a client restart.</source>
         <translation>שינוי זה ידרוש הפעלה מחדש של תכנית הלקוח.</translation>
     </message>
@@ -1123,7 +1364,11 @@
         <translation>טופס</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
+=======
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+>>>>>>> upstream/0.16
         <translation>המידע המוצג עשוי להיות מיושן. הארנק שלך מסתנכרן באופן אוטומטי עם רשת לייטקוין לאחר יצירת החיבור, אך התהליך טרם הסתיים.</translation>
     </message>
     <message>
@@ -1198,8 +1443,13 @@
         <translation>שגיאת בקשת תשלום</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot start Actinium: click-to-pay handler</source>
         <translation>לא ניתן להפעיל את המקשר Actinium: click-to-pay</translation>
+=======
+        <source>Cannot start litecoin: click-to-pay handler</source>
+        <translation>לא ניתן להפעיל את המקשר litecoin: click-to-pay</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>URI handling</source>
@@ -1210,6 +1460,21 @@
         <translation>כתובת תשלום שגויה %1</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>URI cannot be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
+        <translation>לא ניתן לנתח את כתובת המשאב! מצב זה יכול לקרות עקב כתובת לייטקוין שגויה או פרמטרים שגויים בכתובת המשאב.</translation>
+    </message>
+    <message>
+        <source>Payment request file handling</source>
+        <translation>טיפול בקבצי בקשות תשלום</translation>
+    </message>
+    <message>
+        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
+        <translation>לא ניתן לקרוא את קובץ בקשת התשלום! מצב כזה יכול לקרות בעקבות קובץ בקשת תשלום פגום.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Payment request rejected</source>
         <translation>בקשת התשלום נדחתה</translation>
     </message>
@@ -1234,6 +1499,13 @@
         <translation>בקשת תשלום שגויה.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Requested payment amount of %1 is too small (considered dust).</source>
+        <translation>הסכום על סך %1 הנדרש לתשלום קטן מדי (נחשב לאבק)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Refund from %1</source>
         <translation>זיכוי מאת %1</translation>
     </message>
@@ -1264,7 +1536,31 @@
         <source>User Agent</source>
         <translation>סוכן משתמש</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Node/Service</source>
+        <translation>צומת/שירות</translation>
+    </message>
+    <message>
+        <source>NodeId</source>
+        <translation>מזהה צומת</translation>
+    </message>
+    <message>
+        <source>Ping</source>
+        <translation>פינג</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>נשלחו</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>התקבלו</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject</name>
     <message>
@@ -1272,7 +1568,11 @@
         <translation>כמות</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter a Actinium address (e.g. %1)</source>
+=======
+        <source>Enter a Litecoin address (e.g. %1)</source>
+>>>>>>> upstream/0.16
         <translation>נא להזין כתובת לייטקוין (למשל: %1)</translation>
     </message>
     <message>
@@ -1332,9 +1632,35 @@
         <translation><numerusform>שנה אחת</numerusform><numerusform>%n שנים</numerusform></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 didn't yet exit safely...</source>
         <translation>הסגירה של %1 לא הושלמה בהצלחה עדיין…</translation>
     </message>
+=======
+        <source>%1 B</source>
+        <translation>%1 ב׳</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 ק״ב</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 מ״ב</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 ג״ב</translation>
+    </message>
+    <message>
+        <source>%1 didn't yet exit safely...</source>
+        <translation>הסגירה של %1 לא הושלמה בהצלחה עדיין…</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>לא ידוע</translation>
+    </message>
+>>>>>>> upstream/0.16
 </context>
 <context>
     <name>QObject::QObject</name>
@@ -1437,6 +1763,13 @@
         <translation>שימוש בזכרון</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>&amp;Reset</source>
+        <translation>&amp;איפוס</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Received</source>
         <translation>התקבלו</translation>
     </message>
@@ -1517,6 +1850,13 @@
         <translation>זמן המענה</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Ping Wait</source>
+        <translation>פינג</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Time Offset</source>
         <translation>הפרש זמן</translation>
     </message>
@@ -1537,10 +1877,13 @@
         <translation>&amp;תעבורת רשת</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Clear</source>
         <translation>&amp;ניקוי</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Totals</source>
         <translation>סכומים</translation>
     </message>
@@ -1562,6 +1905,7 @@
     </message>
     <message>
         <source>1 &amp;hour</source>
+<<<<<<< HEAD
         <translation>1 שעה</translation>
     </message>
     <message>
@@ -1575,6 +1919,21 @@
     <message>
         <source>1 &amp;year</source>
         <translation>1 &amp; שנה</translation>
+=======
+        <translation>&amp;שעה אחת</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>&amp;יום אחד</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>ש&amp;בוע אחד</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>ש&amp;נה אחת</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Disconnect</source>
@@ -1593,18 +1952,28 @@
         <translation>ברוך בואך למסוף ה־RPC של %1.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>יש להשתמש בחצים למעלה ולמטה כדי לנווט בהיסטוריה, וב־&lt;b&gt;Ctrl-L&lt;/b&gt; כדי לנקות את המסך.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>ניתן להקליד &lt;b&gt;help&lt;/b&gt; לקבלת סקירה של הפקודות הזמינות.</translation>
+=======
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>יש להשתמש בחצים למעלה ומלטה כדי לנווט בהסיטוריה וב־%1 כדי לנקות את המסך.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>אזהרה! ישנם רמאים הנוהגים לשכנע משתמשים להקליד פקודות כאן ועל ידי כך לגנוב את תכולת הארנק שלהם. אל תשתמש במסוף הבקרה מבלי שאתה מבין באופן מלא את המשמעות של הפקודה!</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Network activity disabled</source>
         <translation>פעילות הרשת נוטרלה</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 B</source>
         <translation>%1 ב׳</translation>
     </message>
@@ -1621,6 +1990,8 @@
         <translation>%1 ג״ב</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>via %1</source>
         <translation>דרך %1</translation>
     </message>
@@ -1664,6 +2035,7 @@
         <translation>הו&amp;דעה:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
         <translation>ניתן להשתמש שוב באחת מכתובות הקבלה שכבר נעשה בהן שימוש. לשימוש חוזר בכתובות ישנן השלכות אבטחה ופרטיות. מומלץ שלא להשתמש באפשרות זו למעט יצירה מחדש של בקשת תשלום שנוצרה בעבר.</translation>
     </message>
@@ -1673,6 +2045,9 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Actinium network.</source>
+=======
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
+>>>>>>> upstream/0.16
         <translation>הודעת רשות לצירוף לבקשת התשלום שתוצג בעת פתיחת הבקשה. לתשומת לבך: ההודעה לא תישלח עם התשלום ברשת לייטקוין.</translation>
     </message>
     <message>
@@ -1813,7 +2188,15 @@
         <source>(no amount requested)</source>
         <translation>(לא התבקש סכום)</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>Requested</source>
+        <translation>בקשה</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>SendCoinsDialog</name>
     <message>
@@ -1877,6 +2260,13 @@
         <translation>בחר...</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Warning: Fee estimation is currently not possible.</source>
+        <translation>אזהרה</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>collapse fee-settings</source>
         <translation>צמצום הגדרות עמלה</translation>
     </message>
@@ -1889,10 +2279,13 @@
         <translation>הסתר</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>total at least</source>
         <translation>סה''כ לפחות</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Recommended:</source>
         <translation>מומלץ:</translation>
     </message>
@@ -1901,6 +2294,7 @@
         <translation>מותאם אישית:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>normal</source>
         <translation>רגיל</translation>
     </message>
@@ -1909,6 +2303,8 @@
         <translation>מהיר</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Send to multiple recipients at once</source>
         <translation>שליחה למספר מוטבים בו־זמנית</translation>
     </message>
@@ -2020,16 +2416,23 @@
         <source>Payment request expired.</source>
         <translation>בקשת התשלום פגה.</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <source>%n block(s)</source>
         <translation><numerusform>מקטע אחד</numerusform><numerusform>%n מקטעים</numerusform></translation>
     </message>
+=======
+>>>>>>> upstream/0.16
     <message>
         <source>Pay only the required fee of %1</source>
         <translation>תשלום של העמלה הנדרשת בלבד על סך %1</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: Invalid Actinium address</source>
+=======
+        <source>Warning: Invalid Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>אזהרה: כתובת ביטקיון שגויה</translation>
     </message>
     <message>
@@ -2046,7 +2449,11 @@
     </message>
     <message>
         <source>(no label)</source>
+<<<<<<< HEAD
         <translation>(ללא תוית)</translation>
+=======
+        <translation>(ללא תווית)</translation>
+>>>>>>> upstream/0.16
     </message>
 </context>
 <context>
@@ -2072,7 +2479,11 @@
         <translation>זהו תשלום רגיל.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address to send the payment to</source>
+=======
+        <source>The Litecoin address to send the payment to</source>
+>>>>>>> upstream/0.16
         <translation>כתובת לייטקוין של המוטב</translation>
     </message>
     <message>
@@ -2092,7 +2503,11 @@
         <translation>הסרת רשומה זו</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+=======
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+>>>>>>> upstream/0.16
         <translation>העמלה תנוכה מהסכום שנשלח. הנמען יקבל פחות ביטקוינים ממה שהזנת בשדה הסכום. אם נבחרו מספר נמענים, העמלה תחולק באופן שווה.</translation>
     </message>
     <message>
@@ -2104,6 +2519,13 @@
         <translation>הודעה:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>This is an unauthenticated payment request.</source>
+        <translation>זוהי בקשת תשלום לא מאומתת.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>This is an authenticated payment request.</source>
         <translation>זוהי בקשה מאומתת לתשלום.</translation>
     </message>
@@ -2112,8 +2534,13 @@
         <translation>יש להזין תווית עבור כתובת זו כדי להוסיף אותה לרשימת הכתובות בשימוש</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
         <translation>הודעה שצורפה לייטקוין: כתובת שתאוחסן בהעברה לצורך מעקב מצדך. לתשומת לבך: הודעה זו לא תישלח ברשת לייטקוין.</translation>
+=======
+        <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
+        <translation>הודעה שצורפה לייטקוין: כתובת שתאוחסן בהעברה לצורך מעקב מצדך. לתשומת לבך: הודעה זו לא תישלח ברשת הלייטקוין.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Pay To:</source>
@@ -2138,6 +2565,13 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>%1 is shutting down...</source>
+        <translation>%1 בתהליך כיבוי...</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Do not shut down the computer until this window disappears.</source>
         <translation>אין לכבות את המחשב עד שחלון זה נעלם.</translation>
     </message>
@@ -2153,7 +2587,15 @@
         <translation>חתימה על הו&amp;דעה</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address to sign the message with</source>
+=======
+        <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>באפשרותך לחתום על הודעות/הסכמים באמצעות הכתובות שלך, כדי להוכיח שאתה יכול לקבל את הביטקוינים הנשלחים אליהן. היזהר לא לחתום על תוכן עמום או אקראי, מכיוון שתקיפות פישינג עשויות לנסות לגנוב את הזהות שלך. חתום רק על הצהרות מפורטות שאתה מסכים להן.</translation>
+    </message>
+    <message>
+        <source>The Litecoin address to sign the message with</source>
+>>>>>>> upstream/0.16
         <translation>כתובת לייטקוין אתה לחתום אתה את ההודעה</translation>
     </message>
     <message>
@@ -2185,7 +2627,11 @@
         <translation>העתקת החתימה הנוכחית ללוח הגזירים</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign the message to prove you own this Actinium address</source>
+=======
+        <source>Sign the message to prove you own this Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>ניתן לחתום על ההודעה כדי להוכיח שכתובת לייטקוין הזו בבעלותך.</translation>
     </message>
     <message>
@@ -2205,11 +2651,19 @@
         <translation>&amp;אימות הודעה</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Actinium address the message was signed with</source>
         <translation>כתובת לייטקוין שאתה נחתמה ההודעה</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Actinium address</source>
+=======
+        <source>The Litecoin address the message was signed with</source>
+        <translation>כתובת לייטקוין שאתה נחתמה ההודעה</translation>
+    </message>
+    <message>
+        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>ניתן לאמת את ההודעה כדי להבטיח שהיא נחתמה עם כתובת לייטקוין הנתונה</translation>
     </message>
     <message>
@@ -2290,6 +2744,13 @@
 <context>
     <name>TransactionDesc</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Open until %1</source>
+        <translation>פתוחה עד %1</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>in memory pool</source>
         <translation>במאגר הזיכרון</translation>
     </message>
@@ -2314,6 +2775,13 @@
         <translation>מקור</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Generated</source>
+        <translation>נוצר</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>From</source>
         <translation>מאת</translation>
     </message>
@@ -2342,6 +2810,13 @@
         <translation>אשראי</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>not accepted</source>
+        <translation>לא התקבל</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Debit</source>
         <translation>חיוב</translation>
     </message>
@@ -2382,6 +2857,13 @@
         <translation>מפתח פלט</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Merchant</source>
+        <translation>סוחר</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Debug information</source>
         <translation>פרטי ניפוי שגיאות</translation>
     </message>
@@ -2431,11 +2913,57 @@
         <source>Label</source>
         <translation>תוית</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>פתוחה למשך בלוק אחד נוסף</numerusform><numerusform>פתוחה למשך %n בלוקים נוספים</numerusform></translation>
+    </message>
+    <message>
+        <source>Open until %1</source>
+        <translation>פתוחה עד %1</translation>
+    </message>
+    <message>
+        <source>Offline</source>
+        <translation>לא מקוונת</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>לא מאושרת</translation>
+    </message>
+>>>>>>> upstream/0.16
     <message>
         <source>Abandoned</source>
         <translation>ננטש</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Confirming (%1 of %2 recommended confirmations)</source>
+        <translation>באישור (%1 מתוך %2 אישורים מומלצים)</translation>
+    </message>
+    <message>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>מאושרת (%1 אישורים)</translation>
+    </message>
+    <message>
+        <source>Conflicted</source>
+        <translation>מתנגשת</translation>
+    </message>
+    <message>
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation>צעירה (%1 אישורים, תהיה זמינה לאחר %2)</translation>
+    </message>
+    <message>
+        <source>This block was not received by any other nodes and will probably not be accepted!</source>
+        <translation>בלוק זה לא התקבל על ידי אף צומת אחר וככל הנראה לא יאושר!</translation>
+    </message>
+    <message>
+        <source>Generated but not accepted</source>
+        <translation>הבלוק יוצר אך לא אושר</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Received with</source>
         <translation>התקבל עם</translation>
     </message>
@@ -2468,6 +2996,17 @@
         <translation>(ללא תוית)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>מצב ההעברה. יש להמתין עם הסמן מעל שדה זה כדי לראות את מספר האישורים.</translation>
+    </message>
+    <message>
+        <source>Date and time that the transaction was received.</source>
+        <translation>התאריך והשעה בהם העברה זו התקבלה.</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Type of transaction.</source>
         <translation>סוג ההעברה.</translation>
     </message>
@@ -2523,10 +3062,13 @@
         <translation>אחר</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter address or label to search</source>
         <translation>נא להזין כתובת או תווית לחיפוש</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Min amount</source>
         <translation>סכום מזערי</translation>
     </message>
@@ -2575,6 +3117,13 @@
         <translation>קובץ מופרד בפסיקים (‎*.csv)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Confirmed</source>
+        <translation>מאושרת</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Watch-only</source>
         <translation>צפייה בלבד</translation>
     </message>
@@ -2643,7 +3192,35 @@
         <source>Send Coins</source>
         <translation>שליחת מטבעות</translation>
     </message>
+<<<<<<< HEAD
 </context>
+=======
+    <message>
+        <source>Do you want to increase the fee?</source>
+        <translation>להגדיל את העמלה?</translation>
+    </message>
+    <message>
+        <source>Current fee:</source>
+        <translation>העמלה הנוכחית:</translation>
+    </message>
+    <message>
+        <source>Increase:</source>
+        <translation>הגדלה:</translation>
+    </message>
+    <message>
+        <source>New fee:</source>
+        <translation>עמלה חדשה:</translation>
+    </message>
+    <message>
+        <source>Confirm fee bump</source>
+        <translation>אישור הקפצת עמלה</translation>
+    </message>
+    <message>
+        <source>Can't sign transaction.</source>
+        <translation>אי אפשר לחתום על ההעברה.</translation>
+    </message>
+    </context>
+>>>>>>> upstream/0.16
 <context>
     <name>WalletView</name>
     <message>
@@ -2702,10 +3279,13 @@
         <translation>קבלת פקודות משורת הפקודה ומ־JSON-RPC</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
         <translation>קבלת חיבורים מבחוץ (בררת מחדל: 1 אם לא במצב ‎-proxy או ‎-connect/-noconnet)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>שגיאה: סניה קלמה קריטית פנימית קרטה, פנה ל debug.log לפרטים</translation>
     </message>
@@ -2714,7 +3294,11 @@
         <translation>ריצה כסוכן ברקע וקבלת פקודות</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
+=======
+        <source>Litecoin Core</source>
+>>>>>>> upstream/0.16
         <translation>ליבת לייטקוין</translation>
     </message>
     <message>
@@ -2742,10 +3326,13 @@
         <translation>אזהרה: נראה כי הרשת אינה מסכימה באופן מלא! חלק מהכורים חווים תקלות.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
         <translation>עליך לבנות מחדש את מסד הנתונים בעזרת ‎-reindex-chainstate כדי לשנות את ‎-txindex</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>-maxmempool must be at least %d MB</source>
         <translation>‎-maxmempool חייב להיות לפחות %d מ״ב</translation>
     </message>
@@ -2754,6 +3341,13 @@
         <translation>&lt;קטגוריה&gt; יכולה להיות:</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>קבלת חיבורים מבחוץ (בררת מחדל: 1 ללא ‎-proxy או ‎-connect)</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Append comment to the user agent string</source>
         <translation>הוספת הערה למחרוזת סוכן המשתמש</translation>
     </message>
@@ -2830,10 +3424,13 @@
         <translation>מקטע הפתיח הוא שגוי או לא נמצא. תיקיית נתונים שגויה עבור הרשת?</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -onion address: '%s'</source>
         <translation>כתובת onion- שגויה: '%s'</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>סכום שגוי עבור ‎-%s=&lt;amount&gt;:‏ '%s'</translation>
     </message>
@@ -2866,10 +3463,13 @@
         <translation>הגדרת גודל מטמון מסדי הנתונים במגה בתים (%d עד %d, בררת מחדל: %d)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>הגדרת קובץ מקטע מרבי בבתים (בררת מחדל: %d)</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Specify wallet file (within data directory)</source>
         <translation>ציון קובץ ארנק (בתוך תיקיית הנתונים)</translation>
     </message>
@@ -2878,6 +3478,7 @@
         <translation>המקטעים מאומתים…</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verifying wallet...</source>
         <translation>הארנק מאומת…</translation>
     </message>
@@ -2886,6 +3487,8 @@
         <translation>הארנק %s יושב מחוץ לתיקיית הנתונים %s</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Wallet debugging/testing options:</source>
         <translation>אפשרות דיבוג/בדיקת ארנק:</translation>
     </message>
@@ -3002,10 +3605,13 @@
         <translation>הפעלת בדיקת DNS עבור ‎-addnode,‏ ‎-seednode ו־‎-connect</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>הכתובות בטעינה…</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>המשתנה ‎-socks נמצא אך אין בו תמיכה עוד. הגדרת גרסת SOCKS אינה אפשרית עוד, קיימת תמיכה רק ב־SOCKS5.</translation>
     </message>
@@ -3026,10 +3632,13 @@
         <translation>לכלול את כתובת ה־IP בפלט ניפוי השגיאות (בררת מחדל: %u)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -proxy address: '%s'</source>
         <translation>כתובת ‎-proxy לא תקינה: '%s'</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
         <translation>האזנה לחיבורי JSON-RPC דרך &lt;port&gt; (בררת מחדל: %u או ברשת הבדיקה: %u)</translation>
     </message>
@@ -3102,10 +3711,13 @@
         <translation>מפתח המקטעים נטען…</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>הוספת מפרק להתחברות ולנסות לשמור על החיבור פתוח</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Loading wallet...</source>
         <translation>הארנק בטעינה…</translation>
     </message>
@@ -3114,10 +3726,13 @@
         <translation>לא ניתן להחזיר את גרסת הארנק</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot write default address</source>
         <translation>לא ניתן לכתוב את כתובת בררת המחדל</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Rescanning...</source>
         <translation>סריקה מחדש…</translation>
     </message>

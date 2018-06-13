@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -17,6 +18,27 @@
 
 #if defined(HAVE_CONSENSUS_LIB)
 #include "script/bitcoinconsensus.h"
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <test/data/script_tests.json.h>
+
+#include <core_io.h>
+#include <key.h>
+#include <keystore.h>
+#include <script/script.h>
+#include <script/script_error.h>
+#include <script/sign.h>
+#include <util.h>
+#include <utilstrencodings.h>
+#include <test/test_bitcoin.h>
+#include <rpc/server.h>
+
+#if defined(HAVE_CONSENSUS_LIB)
+#include <script/bitcoinconsensus.h>
+>>>>>>> upstream/0.16
 #endif
 
 #include <fstream>
@@ -166,6 +188,20 @@ void DoTest(const CScript& scriptPubKey, const CScript& scriptSig, const CScript
     CMutableTransaction tx2 = tx;
     BOOST_CHECK_MESSAGE(VerifyScript(scriptSig, scriptPubKey, &scriptWitness, flags, MutableTransactionSignatureChecker(&tx, 0, txCredit.vout[0].nValue), &err) == expect, message);
     BOOST_CHECK_MESSAGE(err == scriptError, std::string(FormatScriptError(err)) + " where " + std::string(FormatScriptError((ScriptError_t)scriptError)) + " expected: " + message);
+<<<<<<< HEAD
+=======
+
+    // Verify that removing flags from a passing test or adding flags to a failing test does not change the result.
+    for (int i = 0; i < 16; ++i) {
+        int extra_flags = InsecureRandBits(16);
+        int combined_flags = expect ? (flags & ~extra_flags) : (flags | extra_flags);
+        // Weed out some invalid flag combinations.
+        if (combined_flags & SCRIPT_VERIFY_CLEANSTACK && ~combined_flags & (SCRIPT_VERIFY_P2SH | SCRIPT_VERIFY_WITNESS)) continue;
+        if (combined_flags & SCRIPT_VERIFY_WITNESS && ~combined_flags & SCRIPT_VERIFY_P2SH) continue;
+        BOOST_CHECK_MESSAGE(VerifyScript(scriptSig, scriptPubKey, &scriptWitness, combined_flags, MutableTransactionSignatureChecker(&tx, 0, txCredit.vout[0].nValue), &err) == expect, message + strprintf(" (with flags %x)", combined_flags));
+    }
+
+>>>>>>> upstream/0.16
 #if defined(HAVE_CONSENSUS_LIB)
     CDataStream stream(SER_NETWORK, PROTOCOL_VERSION);
     stream << tx2;
@@ -450,7 +486,11 @@ public:
         return array;
     }
 
+<<<<<<< HEAD
     std::string GetComment()
+=======
+    std::string GetComment() const
+>>>>>>> upstream/0.16
     {
         return comment;
     }
@@ -1451,4 +1491,24 @@ BOOST_AUTO_TEST_CASE(script_HasValidOps)
     BOOST_CHECK(!script.HasValidOps());
 }
 
+<<<<<<< HEAD
+=======
+BOOST_AUTO_TEST_CASE(script_can_append_self)
+{
+    CScript s, d;
+
+    s = ScriptFromHex("00");
+    s += s;
+    d = ScriptFromHex("0000");
+    BOOST_CHECK(s == d);
+
+    // check doubling a script that's large enough to require reallocation
+    static const char hex[] = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
+    s = CScript() << ParseHex(hex) << OP_CHECKSIG;
+    d = CScript() << ParseHex(hex) << OP_CHECKSIG << ParseHex(hex) << OP_CHECKSIG;
+    s += s;
+    BOOST_CHECK(s == d);
+}
+
+>>>>>>> upstream/0.16
 BOOST_AUTO_TEST_SUITE_END()

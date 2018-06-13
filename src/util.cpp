@@ -82,8 +82,13 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
+<<<<<<< HEAD
 const char * const BITCOIN_CONF_FILENAME = "Actinium.conf";
 const char * const BITCOIN_PID_FILENAME = "Actinium.pid";
+=======
+const char * const BITCOIN_CONF_FILENAME = "litecoin.conf";
+const char * const BITCOIN_PID_FILENAME = "litecoind.pid";
+>>>>>>> upstream/0.16
 const char * const DEFAULT_DEBUGLOGFILE = "debug.log";
 
 ArgsManager gArgs;
@@ -558,7 +563,11 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
+<<<<<<< HEAD
     const char* pszModule = "actinium";
+=======
+    const char* pszModule = "litecoin";
+>>>>>>> upstream/0.16
 #endif
     if (pex)
         return strprintf(
@@ -583,7 +592,11 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
+<<<<<<< HEAD
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Actinium";
+=======
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Litecoin";
+>>>>>>> upstream/0.16
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -593,10 +606,17 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
+<<<<<<< HEAD
     return pathRet / "Library/Application Support/Actinium";
 #else
     // Unix
     return pathRet / ".actinium";
+=======
+    return pathRet / "Library/Application Support/Litecoin";
+#else
+    // Unix
+    return pathRet / ".litecoin";
+>>>>>>> upstream/0.16
 #endif
 #endif
 }
@@ -961,4 +981,7 @@ int64_t GetStartupTime()
 {
     return nStartupTime;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

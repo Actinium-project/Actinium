@@ -55,4 +55,7 @@ private:
 };
 
 #endif // BITCOIN_QT_EDITADDRESSDIALOG_H
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

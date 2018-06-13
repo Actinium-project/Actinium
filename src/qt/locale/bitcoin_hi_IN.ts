@@ -3,7 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
+<<<<<<< HEAD
         <translation>पते या लेबल को संपादित करने के लिए राइट-क्लिक करें</translation>
+=======
+        <translation>पते या लेबल को संपादित करने के लिए दाहिना-क्लिक करें</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Create a new address</source>
@@ -11,7 +15,11 @@
     </message>
     <message>
         <source>&amp;New</source>
+<<<<<<< HEAD
         <translation>&amp;NEW</translation>
+=======
+        <translation>नया</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -22,9 +30,39 @@
         <translation>सूची से वर्तमान में चयनित पता हटाएं</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Delete</source>
         <translation>&amp;मिटाए !!</translation>
     </message>
+=======
+        <source>&amp;Export</source>
+        <translation>&amp;निर्यात</translation>
+    </message>
+    <message>
+        <source>&amp;Delete</source>
+        <translation>&amp;मिटाए !!</translation>
+    </message>
+    <message>
+        <source>Choose the address to send coins to</source>
+        <translation>सिक्कों को भेजने के लिए पता चुनें</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>सिक्कों को प्राप्त करने के लिए पता चुनें</translation>
+    </message>
+    <message>
+        <source>Sending addresses</source>
+        <translation>सभी पते भेज रहा है</translation>
+    </message>
+    <message>
+        <source>Receiving addresses</source>
+        <translation>पतों को प्राप्त कर रहा है</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>ये भुगतान भेजने के लिए ये आपके बिटकॉइन पते हैं। हमेशा सिक्के भेजने से पहले राशि और प्राप्तकर्ता पते की जांच करें।</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>AddressTableModel</name>
@@ -91,7 +129,11 @@
         <translation>पहचान शब्द/अक्षर जो वॉलेट एनक्रिपशन के लिए इस्तेमाल किया है उसे बदलिए!</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
+=======
+        <source>Litecoin</source>
+>>>>>>> upstream/0.16
         <translation>बीटकोइन</translation>
     </message>
     <message>
@@ -202,6 +244,13 @@
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>बीटकोइन</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>भूल</translation>
     </message>
@@ -234,6 +283,13 @@
         <source>&amp;Cancel</source>
         <translation>&amp;कैन्सल</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>भूल</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -259,7 +315,15 @@
         <translation>लागू नही
 </translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>unknown</source>
+        <translation>अज्ञात</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -415,6 +479,13 @@
     </context>
 <context>
     <name>WalletView</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;निर्यात</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>
@@ -435,10 +506,13 @@
         <translation>ब्लॉक्स जाँचे जा रहा है...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verifying wallet...</source>
         <translation>वॉलेट जाँचा जा रहा है...</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Information</source>
         <translation>जानकारी</translation>
     </message>
@@ -447,10 +521,13 @@
         <translation>चेतावनी</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>पता पुस्तक आ रही है...</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Loading block index...</source>
         <translation>ब्लॉक इंडेक्स आ रहा है...</translation>
     </message>

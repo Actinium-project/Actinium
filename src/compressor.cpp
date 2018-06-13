@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -8,6 +9,17 @@
 #include "hash.h"
 #include "pubkey.h"
 #include "script/standard.h"
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <compressor.h>
+
+#include <hash.h>
+#include <pubkey.h>
+#include <script/standard.h>
+>>>>>>> upstream/0.16
 
 bool CScriptCompressor::IsToKeyID(CKeyID &hash) const
 {

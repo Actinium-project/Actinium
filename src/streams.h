@@ -1,13 +1,22 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_STREAMS_H
 #define BITCOIN_STREAMS_H
 
+<<<<<<< HEAD
 #include "support/allocators/zeroafterfree.h"
 #include "serialize.h"
+=======
+#include <support/allocators/zeroafterfree.h>
+#include <serialize.h>
+>>>>>>> upstream/0.16
 
 #include <algorithm>
 #include <assert.h>
@@ -82,7 +91,11 @@ class CVectorWriter
  * @param[in]  nVersionIn Serialization Version (including any flags)
  * @param[in]  vchDataIn  Referenced byte vector to overwrite/append
  * @param[in]  nPosIn Starting position. Vector index where writes should start. The vector will initially
+<<<<<<< HEAD
  *                    grow as necessary to  max(index, vec.size()). So to append, use vec.size().
+=======
+ *                    grow as necessary to  max(nPosIn, vec.size()). So to append, use vec.size().
+>>>>>>> upstream/0.16
 */
     CVectorWriter(int nTypeIn, int nVersionIn, std::vector<unsigned char>& vchDataIn, size_t nPosIn) : nType(nTypeIn), nVersion(nVersionIn), vchData(vchDataIn), nPos(nPosIn)
     {
@@ -91,7 +104,11 @@ class CVectorWriter
     }
 /*
  * (other params same as above)
+<<<<<<< HEAD
  * @param[in]  args  A list of items to serialize starting at nPos.
+=======
+ * @param[in]  args  A list of items to serialize starting at nPosIn.
+>>>>>>> upstream/0.16
 */
     template <typename... Args>
     CVectorWriter(int nTypeIn, int nVersionIn, std::vector<unsigned char>& vchDataIn, size_t nPosIn, Args&&... args) : CVectorWriter(nTypeIn, nVersionIn, vchDataIn, nPosIn)
@@ -241,8 +258,13 @@ public:
     const_reference operator[](size_type pos) const  { return vch[pos + nReadPos]; }
     reference operator[](size_type pos)              { return vch[pos + nReadPos]; }
     void clear()                                     { vch.clear(); nReadPos = 0; }
+<<<<<<< HEAD
     iterator insert(iterator it, const char& x=char()) { return vch.insert(it, x); }
     void insert(iterator it, size_type n, const char& x) { vch.insert(it, n, x); }
+=======
+    iterator insert(iterator it, const char x=char()) { return vch.insert(it, x); }
+    void insert(iterator it, size_type n, const char x) { vch.insert(it, n, x); }
+>>>>>>> upstream/0.16
     value_type* data()                               { return vch.data() + nReadPos; }
     const value_type* data() const                   { return vch.data() + nReadPos; }
 
@@ -332,7 +354,11 @@ public:
     //
     bool eof() const             { return size() == 0; }
     CDataStream* rdbuf()         { return this; }
+<<<<<<< HEAD
     int in_avail()               { return size(); }
+=======
+    int in_avail() const         { return size(); }
+>>>>>>> upstream/0.16
 
     void SetType(int n)          { nType = n; }
     int GetType() const          { return nType; }
@@ -345,6 +371,7 @@ public:
 
         // Read from the beginning of the buffer
         unsigned int nReadPosNext = nReadPos + nSize;
+<<<<<<< HEAD
         if (nReadPosNext >= vch.size())
         {
             if (nReadPosNext > vch.size())
@@ -352,11 +379,22 @@ public:
                 throw std::ios_base::failure("CDataStream::read(): end of data");
             }
             memcpy(pch, &vch[nReadPos], nSize);
+=======
+        if (nReadPosNext > vch.size()) {
+            throw std::ios_base::failure("CDataStream::read(): end of data");
+        }
+        memcpy(pch, &vch[nReadPos], nSize);        
+        if (nReadPosNext == vch.size())
+        {
+>>>>>>> upstream/0.16
             nReadPos = 0;
             vch.clear();
             return;
         }
+<<<<<<< HEAD
         memcpy(pch, &vch[nReadPos], nSize);
+=======
+>>>>>>> upstream/0.16
         nReadPos = nReadPosNext;
     }
 
@@ -455,10 +493,13 @@ public:
 class CAutoFile
 {
 private:
+<<<<<<< HEAD
     // Disallow copies
     CAutoFile(const CAutoFile&);
     CAutoFile& operator=(const CAutoFile&);
 
+=======
+>>>>>>> upstream/0.16
     const int nType;
     const int nVersion;
 
@@ -475,6 +516,13 @@ public:
         fclose();
     }
 
+<<<<<<< HEAD
+=======
+    // Disallow copies
+    CAutoFile(const CAutoFile&) = delete;
+    CAutoFile& operator=(const CAutoFile&) = delete;
+
+>>>>>>> upstream/0.16
     void fclose()
     {
         if (file) {
@@ -564,10 +612,13 @@ public:
 class CBufferedFile
 {
 private:
+<<<<<<< HEAD
     // Disallow copies
     CBufferedFile(const CBufferedFile&);
     CBufferedFile& operator=(const CBufferedFile&);
 
+=======
+>>>>>>> upstream/0.16
     const int nType;
     const int nVersion;
 
@@ -609,6 +660,13 @@ public:
         fclose();
     }
 
+<<<<<<< HEAD
+=======
+    // Disallow copies
+    CBufferedFile(const CBufferedFile&) = delete;
+    CBufferedFile& operator=(const CBufferedFile&) = delete;
+
+>>>>>>> upstream/0.16
     int GetVersion() const { return nVersion; }
     int GetType() const { return nType; }
 
@@ -648,7 +706,11 @@ public:
     }
 
     // return the current reading position
+<<<<<<< HEAD
     uint64_t GetPos() {
+=======
+    uint64_t GetPos() const {
+>>>>>>> upstream/0.16
         return nReadPos;
     }
 

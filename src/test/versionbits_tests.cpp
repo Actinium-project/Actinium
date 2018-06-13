@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2014-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -8,6 +9,18 @@
 #include "chainparams.h"
 #include "validation.h"
 #include "consensus/params.h"
+=======
+// Copyright (c) 2014-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <chain.h>
+#include <versionbits.h>
+#include <test/test_bitcoin.h>
+#include <chainparams.h>
+#include <validation.h>
+#include <consensus/params.h>
+>>>>>>> upstream/0.16
 
 #include <boost/test/unit_test.hpp>
 
@@ -32,6 +45,15 @@ public:
     int GetStateSinceHeightFor(const CBlockIndex* pindexPrev) const { return AbstractThresholdConditionChecker::GetStateSinceHeightFor(pindexPrev, paramsDummy, cache); }
 };
 
+<<<<<<< HEAD
+=======
+class TestAlwaysActiveConditionChecker : public TestConditionChecker
+{
+public:
+    int64_t BeginTime(const Consensus::Params& params) const override { return Consensus::BIP9Deployment::ALWAYS_ACTIVE; }
+};
+
+>>>>>>> upstream/0.16
 #define CHECKERS 6
 
 class VersionBitsTester
@@ -43,6 +65,11 @@ class VersionBitsTester
     // The first one performs all checks, the second only 50%, the third only 25%, etc...
     // This is to test whether lack of cached information leads to the same results.
     TestConditionChecker checker[CHECKERS];
+<<<<<<< HEAD
+=======
+    // Another 6 that assume always active activation
+    TestAlwaysActiveConditionChecker checker_always[CHECKERS];
+>>>>>>> upstream/0.16
 
     // Test counter (to identify failures)
     int num;
@@ -56,6 +83,10 @@ public:
         }
         for (unsigned int  i = 0; i < CHECKERS; i++) {
             checker[i] = TestConditionChecker();
+<<<<<<< HEAD
+=======
+            checker_always[i] = TestAlwaysActiveConditionChecker();
+>>>>>>> upstream/0.16
         }
         vpblock.clear();
         return *this;
@@ -82,6 +113,10 @@ public:
         for (int i = 0; i < CHECKERS; i++) {
             if (InsecureRandBits(i) == 0) {
                 BOOST_CHECK_MESSAGE(checker[i].GetStateSinceHeightFor(vpblock.empty() ? nullptr : vpblock.back()) == height, strprintf("Test %i for StateSinceHeight", num));
+<<<<<<< HEAD
+=======
+                BOOST_CHECK_MESSAGE(checker_always[i].GetStateSinceHeightFor(vpblock.empty() ? nullptr : vpblock.back()) == 0, strprintf("Test %i for StateSinceHeight (always active)", num));
+>>>>>>> upstream/0.16
             }
         }
         num++;
@@ -92,6 +127,10 @@ public:
         for (int i = 0; i < CHECKERS; i++) {
             if (InsecureRandBits(i) == 0) {
                 BOOST_CHECK_MESSAGE(checker[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_DEFINED, strprintf("Test %i for DEFINED", num));
+<<<<<<< HEAD
+=======
+                BOOST_CHECK_MESSAGE(checker_always[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_ACTIVE, strprintf("Test %i for ACTIVE (always active)", num));
+>>>>>>> upstream/0.16
             }
         }
         num++;
@@ -102,6 +141,10 @@ public:
         for (int i = 0; i < CHECKERS; i++) {
             if (InsecureRandBits(i) == 0) {
                 BOOST_CHECK_MESSAGE(checker[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_STARTED, strprintf("Test %i for STARTED", num));
+<<<<<<< HEAD
+=======
+                BOOST_CHECK_MESSAGE(checker_always[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_ACTIVE, strprintf("Test %i for ACTIVE (always active)", num));
+>>>>>>> upstream/0.16
             }
         }
         num++;
@@ -112,6 +155,10 @@ public:
         for (int i = 0; i < CHECKERS; i++) {
             if (InsecureRandBits(i) == 0) {
                 BOOST_CHECK_MESSAGE(checker[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_LOCKED_IN, strprintf("Test %i for LOCKED_IN", num));
+<<<<<<< HEAD
+=======
+                BOOST_CHECK_MESSAGE(checker_always[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_ACTIVE, strprintf("Test %i for ACTIVE (always active)", num));
+>>>>>>> upstream/0.16
             }
         }
         num++;
@@ -122,6 +169,10 @@ public:
         for (int i = 0; i < CHECKERS; i++) {
             if (InsecureRandBits(i) == 0) {
                 BOOST_CHECK_MESSAGE(checker[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_ACTIVE, strprintf("Test %i for ACTIVE", num));
+<<<<<<< HEAD
+=======
+                BOOST_CHECK_MESSAGE(checker_always[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_ACTIVE, strprintf("Test %i for ACTIVE (always active)", num));
+>>>>>>> upstream/0.16
             }
         }
         num++;
@@ -132,6 +183,10 @@ public:
         for (int i = 0; i < CHECKERS; i++) {
             if (InsecureRandBits(i) == 0) {
                 BOOST_CHECK_MESSAGE(checker[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_FAILED, strprintf("Test %i for FAILED", num));
+<<<<<<< HEAD
+=======
+                BOOST_CHECK_MESSAGE(checker_always[i].GetStateFor(vpblock.empty() ? nullptr : vpblock.back()) == THRESHOLD_ACTIVE, strprintf("Test %i for ACTIVE (always active)", num));
+>>>>>>> upstream/0.16
             }
         }
         num++;
@@ -314,20 +369,34 @@ BOOST_AUTO_TEST_CASE(versionbits_computeblockversion)
 
     // Mine one period worth of blocks, and check that the bit will be on for the
     // next period.
+<<<<<<< HEAD
     lastBlock = secondChain.Mine(8064, nStartTime, VERSIONBITS_LAST_OLD_BLOCK_VERSION).Tip();
     BOOST_CHECK((ComputeBlockVersion(lastBlock, mainnetParams) & (1<<bit)) != 0);
 
     // Mine another period worth of blocks, signaling the new bit.
     lastBlock = secondChain.Mine(16128, nStartTime, VERSIONBITS_TOP_BITS | (1<<bit)).Tip();
+=======
+    lastBlock = secondChain.Mine(8064, nTime, VERSIONBITS_LAST_OLD_BLOCK_VERSION).Tip();
+    BOOST_CHECK((ComputeBlockVersion(lastBlock, mainnetParams) & (1<<bit)) != 0);
+
+    // Mine another period worth of blocks, signaling the new bit.
+    lastBlock = secondChain.Mine(16128, nTime, VERSIONBITS_TOP_BITS | (1<<bit)).Tip();
+>>>>>>> upstream/0.16
     // After one period of setting the bit on each block, it should have locked in.
     // We keep setting the bit for one more period though, until activation.
     BOOST_CHECK((ComputeBlockVersion(lastBlock, mainnetParams) & (1<<bit)) != 0);
 
     // Now check that we keep mining the block until the end of this period, and
     // then stop at the beginning of the next period.
+<<<<<<< HEAD
     lastBlock = secondChain.Mine(24191, nStartTime, VERSIONBITS_LAST_OLD_BLOCK_VERSION).Tip();
     BOOST_CHECK((ComputeBlockVersion(lastBlock, mainnetParams) & (1<<bit)) != 0);
     lastBlock = secondChain.Mine(24192, nStartTime, VERSIONBITS_LAST_OLD_BLOCK_VERSION).Tip();
+=======
+    lastBlock = secondChain.Mine(24191, nTime, VERSIONBITS_LAST_OLD_BLOCK_VERSION).Tip();
+    BOOST_CHECK((ComputeBlockVersion(lastBlock, mainnetParams) & (1<<bit)) != 0);
+    lastBlock = secondChain.Mine(24192, nTime, VERSIONBITS_LAST_OLD_BLOCK_VERSION).Tip();
+>>>>>>> upstream/0.16
     BOOST_CHECK_EQUAL(ComputeBlockVersion(lastBlock, mainnetParams) & (1<<bit), 0);
 
     // Finally, verify that after a soft fork has activated, CBV no longer uses

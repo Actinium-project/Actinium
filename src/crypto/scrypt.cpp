@@ -313,7 +313,11 @@ std::string scrypt_detect_sse2()
     if (cpuid_edx & 1<<26)
     {
         scrypt_1024_1_1_256_sp_detected = &scrypt_1024_1_1_256_sp_sse2;
+<<<<<<< HEAD
         ret = "scrypt: using scrypt-sse2 as detected";
+=======
+        ret = "scrypt: using scrypt-sse2 as detected");
+>>>>>>> upstream/0.16
     }
     else
     {

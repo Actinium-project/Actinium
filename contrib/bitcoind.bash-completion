@@ -30,7 +30,11 @@ _bitcoind() {
             ;;
         *)
 
+<<<<<<< HEAD
             # only parse -help if senseful
+=======
+            # only parse -help if sensible
+>>>>>>> upstream/0.16
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
                 local helpopts
                 helpopts=$($bitcoind -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )

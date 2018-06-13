@@ -860,4 +860,7 @@ public:
 int64_t PoissonNextSend(int64_t nNow, int average_interval_seconds);
 
 #endif // BITCOIN_NET_H
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

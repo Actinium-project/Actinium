@@ -1424,7 +1424,11 @@
   <customwidget>
    <class>TrafficGraphWidget</class>
    <extends>QWidget</extends>
+<<<<<<< HEAD
    <header>trafficgraphwidget.h</header>
+=======
+   <header>qt/trafficgraphwidget.h</header>
+>>>>>>> upstream/0.16
    <container>1</container>
    <slots>
     <slot>clear()</slot>

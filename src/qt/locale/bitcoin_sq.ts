@@ -38,6 +38,17 @@
         <translation>Zgjidh adresen ku do te dergoni monedhat</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Choose the address to receive coins with</source>
+        <translation>Zgjidh adresën ku do të merrni monedhat</translation>
+    </message>
+    <message>
+        <source>C&amp;hoose</source>
+        <translation>Zgjidh</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Sending addresses</source>
         <translation>Duke derguar adresen</translation>
     </message>
@@ -46,12 +57,21 @@
         <translation>Duke marr adresen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Actinium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Këto janë Actinium adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
     </message>
     <message>
         <source>These are your Actinium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Këto janë Actinium adresat e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
+=======
+        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Këto janë Litecoin adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
+    </message>
+    <message>
+        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Këto janë Litecoin adresat e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -101,6 +121,7 @@
     <name>AskPassphraseDialog</name>
     <message>
         <source>Enter passphrase</source>
+<<<<<<< HEAD
         <translation>Futni frazkalimin</translation>
     </message>
     <message>
@@ -110,6 +131,21 @@
     <message>
         <source>Repeat new passphrase</source>
         <translation>Përsërisni frazkalimin e ri</translation>
+=======
+        <translation>Futni fjalëkalimin</translation>
+    </message>
+    <message>
+        <source>New passphrase</source>
+        <translation>Fjalëkalimi i ri</translation>
+    </message>
+    <message>
+        <source>Repeat new passphrase</source>
+        <translation>Përsërisni fjalëkalimin e ri</translation>
+    </message>
+    <message>
+        <source>Show password</source>
+        <translation>Trego fjalëkalimin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -117,11 +153,19 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+<<<<<<< HEAD
         <translation>Ky veprim ka nevojë per frazkalimin e portofolit tuaj që të ç'kyç portofolin.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
         <translation>ç'kyç portofolin.</translation>
+=======
+        <translation>Ky veprim ka nevojë per fjalëkalimin e portofolit tuaj që të hapë portofolin.</translation>
+    </message>
+    <message>
+        <source>Unlock wallet</source>
+        <translation>Hap portofolin.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
@@ -133,7 +177,15 @@
     </message>
     <message>
         <source>Change passphrase</source>
+<<<<<<< HEAD
         <translation>Ndrysho frazkalimin</translation>
+=======
+        <translation>Ndrysho fjalëkalimin</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Fusni fjalëkalimin e vjetër dhe fjalëkalimin e ri që të hapni portofolin.</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Confirm wallet encryption</source>
@@ -214,8 +266,13 @@
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium</source>
         <translation>Actinium</translation>
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Wallet</source>
@@ -385,6 +442,13 @@
         <translation>Miresevini</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>Litecoin</source>
+        <translation>Litecoin</translation>
+    </message>
+    <message>
+>>>>>>> upstream/0.16
         <source>Error</source>
         <translation>Problem</translation>
     </message>
@@ -409,6 +473,13 @@
         <source>W&amp;allet</source>
         <translation>Portofol</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>Problem</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -433,7 +504,15 @@
         <source>%1 and %2</source>
         <translation>%1 dhe %2</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>unknown</source>
+        <translation>i/e panjohur</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -451,10 +530,13 @@
         <translation>&amp;Hap</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Clear</source>
         <translation>&amp;Pastro</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>never</source>
         <translation>asnjehere</translation>
     </message>
@@ -769,7 +851,11 @@
         <source>Send Coins</source>
         <translation>Dërgo Monedha</translation>
     </message>
+<<<<<<< HEAD
 </context>
+=======
+    </context>
+>>>>>>> upstream/0.16
 <context>
     <name>WalletView</name>
     <message>
@@ -784,8 +870,13 @@
         <translation>Opsionet:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Actinium Core</source>
         <translation>Berthama Actinium</translation>
+=======
+        <source>Litecoin Core</source>
+        <translation>Berthama Litecoin</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Information</source>

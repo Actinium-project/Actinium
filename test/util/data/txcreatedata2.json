@@ -29,7 +29,11 @@
                     "LiTVReQ6N8rWc2pNg2XMwCWq7A9P15teWg"
                 ]
             }
+<<<<<<< HEAD
         }, 
+=======
+        },
+>>>>>>> upstream/0.16
         {
             "value": 0.00000000,
             "n": 1,

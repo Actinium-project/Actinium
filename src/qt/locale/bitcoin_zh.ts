@@ -53,6 +53,13 @@
     </context>
 <context>
     <name>OptionsDialog</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>错误</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -107,7 +114,11 @@
         <translation>仅支付全额的%1</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: Invalid Actinium address</source>
+=======
+        <source>Warning: Invalid Litecoin address</source>
+>>>>>>> upstream/0.16
         <translation>警告：莱特币地址无效</translation>
     </message>
     </context>
@@ -180,10 +191,13 @@
         <translation>警告</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>正在载入地址...</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Insufficient funds</source>
         <translation>余额不足</translation>
     </message>

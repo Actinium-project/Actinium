@@ -6,7 +6,11 @@
 IF="eth0"
 #limit of the network interface in question
 LINKCEIL="1gbit"
+<<<<<<< HEAD
 #limit outbound Actinium protocol traffic to this rate
+=======
+#limit outbound Litecoin protocol traffic to this rate
+>>>>>>> upstream/0.16
 LIMIT="160kbit"
 #defines the address space for which you wish to disable rate limiting
 LOCALNET="192.168.0.0/16"

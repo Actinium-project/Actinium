@@ -328,4 +328,7 @@ void WalletView::requestedSyncWarningInfo()
 {
     Q_EMIT outOfSyncWarningClicked();
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

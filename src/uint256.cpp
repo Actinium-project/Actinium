@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -6,6 +7,15 @@
 #include "uint256.h"
 
 #include "utilstrencodings.h"
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <uint256.h>
+
+#include <utilstrencodings.h>
+>>>>>>> upstream/0.16
 
 #include <stdio.h>
 #include <string.h>
@@ -14,7 +24,11 @@ template <unsigned int BITS>
 base_blob<BITS>::base_blob(const std::vector<unsigned char>& vch)
 {
     assert(vch.size() == sizeof(data));
+<<<<<<< HEAD
     memcpy(data, &vch[0], sizeof(data));
+=======
+    memcpy(data, vch.data(), sizeof(data));
+>>>>>>> upstream/0.16
 }
 
 template <unsigned int BITS>

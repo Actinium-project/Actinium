@@ -41,6 +41,17 @@
         <source>&amp;Delete</source>
         <translation>&amp;Delete</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Choose the address to send coins to</source>
+        <translation>Choose the address to send coins to</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>Choose the address to receive coins with</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>AddressTableModel</name>
@@ -168,6 +179,17 @@
     </context>
 <context>
     <name>WalletView</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;Export</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Export the data in the current tab to a file</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>

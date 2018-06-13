@@ -3,7 +3,11 @@ Reduce Traffic
 
 Some node operators need to deal with bandwidth caps imposed by their ISPs.
 
+<<<<<<< HEAD
 By default, Actinium-core allows up to 125 connections to different peers, 8 of
+=======
+By default, litecoin-core allows up to 125 connections to different peers, 8 of
+>>>>>>> upstream/0.16
 which are outbound. You can therefore, have at most 117 inbound connections.
 
 The default settings can result in relatively significant traffic consumption.
@@ -33,5 +37,9 @@ blocks and transactions to fewer nodes.
 ## 3. Reduce maximum connections (`-maxconnections=<num>`)
 
 Reducing the maximum connected nodes to a minimum could be desirable if traffic
+<<<<<<< HEAD
 limits are tiny. Keep in mind that Actinium's trustless model works best if you are
+=======
+limits are tiny. Keep in mind that litecoin's trustless model works best if you are
+>>>>>>> upstream/0.16
 connected to a handful of nodes.

@@ -4,8 +4,13 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
+<<<<<<< HEAD
 #ifndef _SECP256K1_NUM_IMPL_H_
 #define _SECP256K1_NUM_IMPL_H_
+=======
+#ifndef SECP256K1_NUM_IMPL_H
+#define SECP256K1_NUM_IMPL_H
+>>>>>>> upstream/0.16
 
 #if defined HAVE_CONFIG_H
 #include "libsecp256k1-config.h"
@@ -21,4 +26,8 @@
 #error "Please select num implementation"
 #endif
 
+<<<<<<< HEAD
 #endif
+=======
+#endif /* SECP256K1_NUM_IMPL_H */
+>>>>>>> upstream/0.16

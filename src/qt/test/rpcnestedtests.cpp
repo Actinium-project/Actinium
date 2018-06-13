@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -14,6 +15,24 @@
 #include "test/test_bitcoin.h"
 #include "univalue.h"
 #include "util.h"
+=======
+// Copyright (c) 2016-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <qt/test/rpcnestedtests.h>
+
+#include <chainparams.h>
+#include <consensus/validation.h>
+#include <fs.h>
+#include <validation.h>
+#include <rpc/register.h>
+#include <rpc/server.h>
+#include <qt/rpcconsole.h>
+#include <test/test_bitcoin.h>
+#include <univalue.h>
+#include <util.h>
+>>>>>>> upstream/0.16
 
 #include <QDir>
 #include <QtGlobal>
@@ -28,7 +47,11 @@ static UniValue rpcNestedTest_rpc(const JSONRPCRequest& request)
 
 static const CRPCCommand vRPCCommands[] =
 {
+<<<<<<< HEAD
     { "test", "rpcNestedTest", &rpcNestedTest_rpc, true, {} },
+=======
+    { "test", "rpcNestedTest", &rpcNestedTest_rpc, {} },
+>>>>>>> upstream/0.16
 };
 
 void RPCNestedTests::rpcNestedTests()
@@ -63,13 +86,21 @@ void RPCNestedTests::rpcNestedTests()
     RPCConsole::RPCExecuteCommandLine(result, "getblockchaininfo "); //whitespace at the end will be tolerated
     QVERIFY(result.substr(0,1) == "{");
 
+<<<<<<< HEAD
     (RPCConsole::RPCExecuteCommandLine(result, "getblockchaininfo()[\"chain\"]")); //Quote path identifier are allowed, but look after a child contaning the quotes in the key
+=======
+    (RPCConsole::RPCExecuteCommandLine(result, "getblockchaininfo()[\"chain\"]")); //Quote path identifier are allowed, but look after a child containing the quotes in the key
+>>>>>>> upstream/0.16
     QVERIFY(result == "null");
 
     (RPCConsole::RPCExecuteCommandLine(result, "createrawtransaction [] {} 0")); //parameter not in brackets are allowed
     (RPCConsole::RPCExecuteCommandLine(result2, "createrawtransaction([],{},0)")); //parameter in brackets are allowed
     QVERIFY(result == result2);
+<<<<<<< HEAD
     (RPCConsole::RPCExecuteCommandLine(result2, "createrawtransaction( [],  {} , 0   )")); //whitespace between parametres is allowed
+=======
+    (RPCConsole::RPCExecuteCommandLine(result2, "createrawtransaction( [],  {} , 0   )")); //whitespace between parameters is allowed
+>>>>>>> upstream/0.16
     QVERIFY(result == result2);
 
     RPCConsole::RPCExecuteCommandLine(result, "getblock(getbestblockhash())[tx][0]", &filtered);

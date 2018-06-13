@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_OPTIONSMODEL_H
 #define BITCOIN_QT_OPTIONSMODEL_H
 
+<<<<<<< HEAD
 #include "amount.h"
+=======
+#include <amount.h>
+>>>>>>> upstream/0.16
 
 #include <QAbstractListModel>
 
@@ -13,6 +21,12 @@ QT_BEGIN_NAMESPACE
 class QNetworkProxy;
 QT_END_NAMESPACE
 
+<<<<<<< HEAD
+=======
+extern const char *DEFAULT_GUI_PROXY_HOST;
+static constexpr unsigned short DEFAULT_GUI_PROXY_PORT = 9050;
+
+>>>>>>> upstream/0.16
 /** Interface from Qt to configuration data structure for Bitcoin client.
    To Qt, the options are presented as a list with the different options
    laid out vertically.
@@ -59,6 +73,7 @@ public:
     void setDisplayUnit(const QVariant &value);
 
     /* Explicit getters */
+<<<<<<< HEAD
     bool getHideTrayIcon() { return fHideTrayIcon; }
     bool getMinimizeToTray() { return fMinimizeToTray; }
     bool getMinimizeOnClose() { return fMinimizeOnClose; }
@@ -66,11 +81,24 @@ public:
     QString getThirdPartyTxUrls() { return strThirdPartyTxUrls; }
     bool getProxySettings(QNetworkProxy& proxy) const;
     bool getCoinControlFeatures() { return fCoinControlFeatures; }
+=======
+    bool getHideTrayIcon() const { return fHideTrayIcon; }
+    bool getMinimizeToTray() const { return fMinimizeToTray; }
+    bool getMinimizeOnClose() const { return fMinimizeOnClose; }
+    int getDisplayUnit() const { return nDisplayUnit; }
+    QString getThirdPartyTxUrls() const { return strThirdPartyTxUrls; }
+    bool getProxySettings(QNetworkProxy& proxy) const;
+    bool getCoinControlFeatures() const { return fCoinControlFeatures; }
+>>>>>>> upstream/0.16
     const QString& getOverriddenByCommandLine() { return strOverriddenByCommandLine; }
 
     /* Restart flag helper */
     void setRestartRequired(bool fRequired);
+<<<<<<< HEAD
     bool isRestartRequired();
+=======
+    bool isRestartRequired() const;
+>>>>>>> upstream/0.16
 
 private:
     /* Qt-only settings */

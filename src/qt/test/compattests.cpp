@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,6 +8,17 @@
 #include "compattests.h"
 
 #include "compat/byteswap.h"
+=======
+// Copyright (c) 2016-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <qt/paymentrequestplus.h> // this includes protobuf's port.h which defines its own bswap macos
+
+#include <qt/test/compattests.h>
+
+#include <compat/byteswap.h>
+>>>>>>> upstream/0.16
 
 void CompatTests::bswapTests()
 {

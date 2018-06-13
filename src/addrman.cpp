@@ -1,4 +1,5 @@
 // Copyright (c) 2012 Pieter Wuille
+<<<<<<< HEAD
 // Copyright (c) 2012-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -8,6 +9,17 @@
 #include "hash.h"
 #include "serialize.h"
 #include "streams.h"
+=======
+// Copyright (c) 2012-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <addrman.h>
+
+#include <hash.h>
+#include <serialize.h>
+#include <streams.h>
+>>>>>>> upstream/0.16
 
 int CAddrInfo::GetTriedBucket(const uint256& nKey) const
 {
@@ -387,12 +399,21 @@ int CAddrMan::Check_()
     std::set<int> setTried;
     std::map<int, int> mapNew;
 
+<<<<<<< HEAD
     if (vRandom.size() != nTried + nNew)
         return -7;
 
     for (std::map<int, CAddrInfo>::iterator it = mapInfo.begin(); it != mapInfo.end(); it++) {
         int n = (*it).first;
         CAddrInfo& info = (*it).second;
+=======
+    if (vRandom.size() != (size_t)(nTried + nNew))
+        return -7;
+
+    for (const auto& entry : mapInfo) {
+        int n = entry.first;
+        const CAddrInfo& info = entry.second;
+>>>>>>> upstream/0.16
         if (info.fInTried) {
             if (!info.nLastSuccess)
                 return -1;
@@ -408,7 +429,11 @@ int CAddrMan::Check_()
         }
         if (mapAddr[info] != n)
             return -5;
+<<<<<<< HEAD
         if (info.nRandomPos < 0 || info.nRandomPos >= vRandom.size() || vRandom[info.nRandomPos] != n)
+=======
+        if (info.nRandomPos < 0 || (size_t)info.nRandomPos >= vRandom.size() || vRandom[info.nRandomPos] != n)
+>>>>>>> upstream/0.16
             return -14;
         if (info.nLastTry < 0)
             return -6;
@@ -416,9 +441,15 @@ int CAddrMan::Check_()
             return -8;
     }
 
+<<<<<<< HEAD
     if (setTried.size() != nTried)
         return -9;
     if (mapNew.size() != nNew)
+=======
+    if (setTried.size() != (size_t)nTried)
+        return -9;
+    if (mapNew.size() != (size_t)nNew)
+>>>>>>> upstream/0.16
         return -10;
 
     for (int n = 0; n < ADDRMAN_TRIED_BUCKET_COUNT; n++) {

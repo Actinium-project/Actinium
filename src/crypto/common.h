@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Copyright (c) 2014 The Bitcoin Core developers
+=======
+// Copyright (c) 2014-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,13 +10,21 @@
 #define BITCOIN_CRYPTO_COMMON_H
 
 #if defined(HAVE_CONFIG_H)
+<<<<<<< HEAD
 #include "bitcoin-config.h"
+=======
+#include <config/bitcoin-config.h>
+>>>>>>> upstream/0.16
 #endif
 
 #include <stdint.h>
 #include <string.h>
 
+<<<<<<< HEAD
 #include "compat/endian.h"
+=======
+#include <compat/endian.h>
+>>>>>>> upstream/0.16
 
 uint16_t static inline ReadLE16(const unsigned char* ptr)
 {

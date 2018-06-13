@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 // Copyright (c) 2015-2016 The Bitcoin Core developers
+=======
+// Copyright (c) 2015-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <vector>
+<<<<<<< HEAD
 #include "prevector.h"
 
 #include "reverse_iterator.h"
@@ -10,6 +15,15 @@
 #include "streams.h"
 
 #include "test/test_bitcoin.h"
+=======
+#include <prevector.h>
+
+#include <reverse_iterator.h>
+#include <serialize.h>
+#include <streams.h>
+
+#include <test/test_bitcoin.h>
+>>>>>>> upstream/0.16
 
 #include <boost/test/unit_test.hpp>
 
@@ -152,11 +166,19 @@ public:
         pre_vector.assign(n, value);
     }
 
+<<<<<<< HEAD
     Size size() {
         return real_vector.size();
     }
 
     Size capacity() {
+=======
+    Size size() const {
+        return real_vector.size();
+    }
+
+    Size capacity() const {
+>>>>>>> upstream/0.16
         return pre_vector.capacity();
     }
 

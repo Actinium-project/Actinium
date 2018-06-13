@@ -75,4 +75,7 @@ private:
 };
 
 #endif // BITCOIN_QT_SENDCOINSENTRY_H
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

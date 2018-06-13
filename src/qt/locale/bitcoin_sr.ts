@@ -3,7 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
+<<<<<<< HEAD
         <translation>Kliknite desnim klikom radi izmene adrese ili oznake</translation>
+=======
+        <translation>Desni klik za izmenu adrese ili oznake</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Create a new address</source>
@@ -34,8 +38,17 @@
         <translation>Eksportuj podatke iz izabrane kartice u fajl</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Delete</source>
         <translation>&amp;Избриши</translation>
+=======
+        <source>&amp;Export</source>
+        <translation>&amp;Izvedi</translation>
+    </message>
+    <message>
+        <source>&amp;Delete</source>
+        <translation>&amp;Izbriši</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -56,6 +69,13 @@
     </context>
 <context>
     <name>AddressTableModel</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>AskPassphraseDialog</name>
@@ -130,8 +150,13 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Actinium address</source>
         <translation>Пошаљите новац на Actinium адресу</translation>
+=======
+        <source>Send coins to a Litecoin address</source>
+        <translation>Пошаљите новац на litecoin адресу</translation>
+>>>>>>> upstream/0.16
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -273,6 +298,13 @@
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Error</source>
+        <translation>Greška</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>OverviewPage</name>
@@ -293,7 +325,15 @@
         <source>Amount</source>
         <translation>iznos</translation>
     </message>
+<<<<<<< HEAD
     </context>
+=======
+    <message>
+        <source>unknown</source>
+        <translation>nepoznato</translation>
+    </message>
+</context>
+>>>>>>> upstream/0.16
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -336,6 +376,13 @@
         <source>Copy &amp;Address</source>
         <translation>Kopirajte adresu</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -428,6 +475,13 @@
     </context>
 <context>
     <name>TransactionView</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -440,6 +494,13 @@
     </context>
 <context>
     <name>WalletView</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;Izvedi</translation>
+    </message>
+>>>>>>> upstream/0.16
     </context>
 <context>
     <name>bitcoin-core</name>
@@ -468,10 +529,13 @@
         <translation>Lozinka za JSON-RPC konekcije</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Loading addresses...</source>
         <translation>učitavam adrese....</translation>
     </message>
     <message>
+=======
+>>>>>>> upstream/0.16
         <source>Insufficient funds</source>
         <translation>Nedovoljno sredstava</translation>
     </message>

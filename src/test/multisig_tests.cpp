@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -12,6 +13,22 @@
 #include "script/ismine.h"
 #include "uint256.h"
 #include "test/test_bitcoin.h"
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <key.h>
+#include <keystore.h>
+#include <policy/policy.h>
+#include <script/script.h>
+#include <script/script_error.h>
+#include <script/interpreter.h>
+#include <script/sign.h>
+#include <script/ismine.h>
+#include <uint256.h>
+#include <test/test_bitcoin.h>
+>>>>>>> upstream/0.16
 
 
 #include <boost/test/unit_test.hpp>

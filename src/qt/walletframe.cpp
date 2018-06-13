@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,6 +8,18 @@
 #include "bitcoingui.h"
 #include "walletview.h"
 
+=======
+// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <qt/walletframe.h>
+
+#include <qt/bitcoingui.h>
+#include <qt/walletview.h>
+
+#include <cassert>
+>>>>>>> upstream/0.16
 #include <cstdio>
 
 #include <QHBoxLayout>
@@ -69,6 +82,10 @@ bool WalletFrame::setCurrentWallet(const QString& name)
 
     WalletView *walletView = mapWalletViews.value(name);
     walletStack->setCurrentWidget(walletView);
+<<<<<<< HEAD
+=======
+    assert(walletView);
+>>>>>>> upstream/0.16
     walletView->updateEncryptionStatus();
     return true;
 }

@@ -4,8 +4,13 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
+<<<<<<< HEAD
 #ifndef _SECP256K1_FIELD_REPR_
 #define _SECP256K1_FIELD_REPR_
+=======
+#ifndef SECP256K1_FIELD_REPR_H
+#define SECP256K1_FIELD_REPR_H
+>>>>>>> upstream/0.16
 
 #include <stdint.h>
 
@@ -44,4 +49,8 @@ typedef struct {
     (d6) | (((uint64_t)(d7)) << 32) \
 }}
 
+<<<<<<< HEAD
 #endif
+=======
+#endif /* SECP256K1_FIELD_REPR_H */
+>>>>>>> upstream/0.16

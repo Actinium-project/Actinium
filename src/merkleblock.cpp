@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -36,6 +37,20 @@ CMerkleBlock::CMerkleBlock(const CBlock& block, CBloomFilter& filter)
 }
 
 CMerkleBlock::CMerkleBlock(const CBlock& block, const std::set<uint256>& txids)
+=======
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <merkleblock.h>
+
+#include <hash.h>
+#include <consensus/consensus.h>
+#include <utilstrencodings.h>
+
+
+CMerkleBlock::CMerkleBlock(const CBlock& block, CBloomFilter* filter, const std::set<uint256>* txids)
+>>>>>>> upstream/0.16
 {
     header = block.GetBlockHeader();
 
@@ -48,10 +63,21 @@ CMerkleBlock::CMerkleBlock(const CBlock& block, const std::set<uint256>& txids)
     for (unsigned int i = 0; i < block.vtx.size(); i++)
     {
         const uint256& hash = block.vtx[i]->GetHash();
+<<<<<<< HEAD
         if (txids.count(hash))
             vMatch.push_back(true);
         else
             vMatch.push_back(false);
+=======
+        if (txids && txids->count(hash)) {
+            vMatch.push_back(true);
+        } else if (filter && filter->IsRelevantAndUpdate(*block.vtx[i])) {
+            vMatch.push_back(true);
+            vMatchedTxn.emplace_back(i, hash);
+        } else {
+            vMatch.push_back(false);
+        }
+>>>>>>> upstream/0.16
         vHashes.push_back(hash);
     }
 

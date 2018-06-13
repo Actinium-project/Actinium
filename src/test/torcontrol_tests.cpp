@@ -2,8 +2,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
+<<<<<<< HEAD
 #include "test/test_bitcoin.h"
 #include "torcontrol.cpp"
+=======
+#include <test/test_bitcoin.h>
+#include <torcontrol.cpp>
+>>>>>>> upstream/0.16
 
 #include <boost/test/unit_test.hpp>
 

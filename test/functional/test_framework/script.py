@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
+<<<<<<< HEAD
 # Copyright (c) 2015-2016 The Bitcoin Core developers
+=======
+# Copyright (c) 2015-2017 The Bitcoin Core developers
+>>>>>>> upstream/0.16
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Functionality to build scripts, as well as SignatureHash().
@@ -23,9 +27,13 @@ import struct
 
 from .bignum import bn2vch
 
+<<<<<<< HEAD
 MAX_SCRIPT_SIZE = 10000
 MAX_SCRIPT_ELEMENT_SIZE = 520
 MAX_SCRIPT_OPCODES = 201
+=======
+MAX_SCRIPT_ELEMENT_SIZE = 520
+>>>>>>> upstream/0.16
 
 OPCODE_NAMES = {}
 
@@ -242,6 +250,7 @@ OP_PUBKEY = CScriptOp(0xfe)
 
 OP_INVALIDOPCODE = CScriptOp(0xff)
 
+<<<<<<< HEAD
 VALID_OPCODES = {
     OP_1NEGATE,
     OP_RESERVED,
@@ -367,6 +376,8 @@ VALID_OPCODES = {
     OP_PUBKEY,
 }
 
+=======
+>>>>>>> upstream/0.16
 OPCODE_NAMES.update({
     OP_0 : 'OP_0',
     OP_PUSHDATA1 : 'OP_PUSHDATA1',
@@ -486,6 +497,7 @@ OPCODE_NAMES.update({
     OP_INVALIDOPCODE : 'OP_INVALIDOPCODE',
 })
 
+<<<<<<< HEAD
 OPCODES_BY_NAME = {
     'OP_0' : OP_0,
     'OP_PUSHDATA1' : OP_PUSHDATA1,
@@ -604,6 +616,8 @@ OPCODES_BY_NAME = {
     'OP_PUBKEY' : OP_PUBKEY,
 }
 
+=======
+>>>>>>> upstream/0.16
 class CScriptInvalidError(Exception):
     """Base class for CScript exceptions"""
     pass
@@ -615,7 +629,11 @@ class CScriptTruncatedPushDataError(CScriptInvalidError):
         super(CScriptTruncatedPushDataError, self).__init__(msg)
 
 # This is used, eg, for blockchain heights in coinbase scripts (bip34)
+<<<<<<< HEAD
 class CScriptNum(object):
+=======
+class CScriptNum():
+>>>>>>> upstream/0.16
     def __init__(self, d=0):
         self.value = d
 
@@ -886,7 +904,11 @@ def SignatureHash(script, txTo, inIdx, hashtype):
         txtmp.vin = []
         txtmp.vin.append(tmp)
 
+<<<<<<< HEAD
     s = txtmp.serialize()
+=======
+    s = txtmp.serialize_without_witness()
+>>>>>>> upstream/0.16
     s += struct.pack(b"<I", hashtype)
 
     hash = hash256(s)

@@ -108,7 +108,11 @@ void SendCoinsEntry::clear()
     ui->memoTextLabel_s->clear();
     ui->payAmount_s->clear();
 
+<<<<<<< HEAD
     // update the display unit, to not use the default ("ACM")
+=======
+    // update the display unit, to not use the default ("BTC")
+>>>>>>> upstream/0.16
     updateDisplayUnit();
 }
 
@@ -279,4 +283,7 @@ bool SendCoinsEntry::updateLabel(const QString &address)
 
     return false;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/0.16

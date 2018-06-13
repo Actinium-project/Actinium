@@ -2,14 +2,23 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+<<<<<<< HEAD
 #include "bech32.h"
 #include "test/test_bitcoin.h"
+=======
+#include <bech32.h>
+#include <test/test_bitcoin.h>
+>>>>>>> upstream/0.16
 
 #include <boost/test/unit_test.hpp>
 
 BOOST_FIXTURE_TEST_SUITE(bech32_tests, BasicTestingSetup)
 
+<<<<<<< HEAD
 bool CaseInsensitiveEqual(const std::string& s1, const std::string& s2)
+=======
+bool CaseInsensitiveEqual(const std::string &s1, const std::string &s2)
+>>>>>>> upstream/0.16
 {
     if (s1.size() != s2.size()) return false;
     for (size_t i = 0; i < s1.size(); ++i) {
@@ -46,10 +55,15 @@ BOOST_AUTO_TEST_CASE(bip173_testvectors_invalid)
 {
     static const std::string CASES[] = {
         " 1nwldj5",
+<<<<<<< HEAD
         "\x7f"
         "1axkwrx",
         "\x80"
         "1eym55h",
+=======
+        "\x7f""1axkwrx",
+        "\x80""1eym55h",
+>>>>>>> upstream/0.16
         "an84characterslonghumanreadablepartthatcontainsthenumber1andtheexcludedcharactersbio1569pvx",
         "pzry9x0s0muk",
         "1pzry9x0s0muk",
@@ -66,4 +80,8 @@ BOOST_AUTO_TEST_CASE(bip173_testvectors_invalid)
     }
 }
 
+<<<<<<< HEAD
 BOOST_AUTO_TEST_SUITE_END()
+=======
+BOOST_AUTO_TEST_SUITE_END()
+>>>>>>> upstream/0.16

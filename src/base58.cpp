@@ -34,7 +34,11 @@ bool DecodeBase58(const char* psz, std::vector<unsigned char>& vch)
         psz++;
     }
     // Allocate enough space in big-endian base256 representation.
+<<<<<<< HEAD
     int size = strlen(psz) * 733 / 1000 + 1; // log(58) / log(256), rounded up.
+=======
+    int size = strlen(psz) * 733 /1000 + 1; // log(58) / log(256), rounded up.
+>>>>>>> upstream/0.16
     std::vector<unsigned char> b256(size);
     // Process the characters.
     while (*psz && !isspace(*psz)) {
