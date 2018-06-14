@@ -10,6 +10,7 @@ libtool
 share/qt/Info.plist
 share/setup.nsi
 src/config/bitcoin-config.h
+src/qt/qrc_bitcoin_locale.cpp
 
 # Compiled Object files
 *.slo
