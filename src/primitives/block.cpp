@@ -10,17 +10,36 @@
 #include <utilstrencodings.h>
 #include <crypto/common.h>
 #include <crypto/scrypt.h>
+#include <crypto/neoscrypt.h>
+#include <versionbits.h>
 
 uint256 CBlockHeader::GetHash() const
 {
     return SerializeHash(*this);
 }
 
-uint256 CBlockHeader::GetPoWHash() const
+uint256 CBlockHeader::GetPoWScryptHash() const
 {
     uint256 thash;
     scrypt_1024_1_1_256(BEGIN(nVersion), BEGIN(thash));
     return thash;
+}
+
+uint256 CBlockHeader::GetPoWNeoScryptHash() const
+{
+    uint256 thash;
+    unsigned int profile = 0x0;
+    neoscrypt((unsigned char *) &nVersion, (unsigned char *) &thash, profile);
+    return thash;
+
+}
+
+uint256 CBlockHeader::GetPoWHash() const
+{
+	if (nVersion & VERSIONBITS_FORK_GPU_SUPPORT)
+		return GetPoWNeoScryptHash();
+	else
+		return GetPoWScryptHash();
 }
 
 std::string CBlock::ToString() const
