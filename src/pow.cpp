@@ -151,9 +151,9 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
         bnNew = bnPowLimit;
     }
 
-    LogPrintf("Difficulty Retarget - Dark Gravity Wave 3\n");
+    LogPrintf("Diff Retarget - Dark Gravity Wave v3\n");
     LogPrintf("Before: %08x %s\n", pindexLast->nBits, arith_uint256().SetCompact(pindexLast->nBits).ToString().c_str());
-    LogPrintf("After: %08x  %s\n", bnNew.GetCompact(), bnNew.ToString().c_str());
+    LogPrintf("After:  %08x %s\n", bnNew.GetCompact(), bnNew.ToString().c_str());
 
     return bnNew.GetCompact();
 }
