@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <pow.h>
-
+#include <util.h>
 #include <arith_uint256.h>
 #include <chain.h>
 #include <primitives/block.h>
@@ -150,6 +150,10 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
     if (bnNew > bnPowLimit) {
         bnNew = bnPowLimit;
     }
+
+    LogPrintf("Difficulty Retarget - Dark Gravity Wave 3\n");
+    LogPrintf("Before: %08x %s", pindexLast->nBits, arith_uint256().SetCompact(pindexLast->nBits).ToString().c_str());
+    LogPrintf("After: %08x  %s \n", bnNew.GetCompact(), bnNew.ToString().c_str());
 
     return bnNew.GetCompact();
 }
