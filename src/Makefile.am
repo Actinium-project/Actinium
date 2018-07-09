@@ -268,13 +268,20 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/hmac_sha256.h \
   crypto/hmac_sha512.cpp \
   crypto/hmac_sha512.h \
+  crypto/Lyra2Z/Lyra2.h \
+  crypto/Lyra2Z/Lyra2.c \
+  crypto/Lyra2Z/Lyra2Z.h \
+  crypto/Lyra2Z/Lyra2Z.c \
+  crypto/Lyra2Z/blake.c \
+  crypto/Lyra2Z/sph_blake.h \
+  crypto/Lyra2Z/sph_types.h \
+  crypto/Lyra2Z/Sponge.c \
+  crypto/Lyra2Z/Sponge.h \
   crypto/ripemd160.cpp \
   crypto/ripemd160.h \
   crypto/scrypt.cpp \
   crypto/scrypt-sse2.cpp \
   crypto/scrypt.h \
-  crypto/neoscrypt.c \
-  crypto/neoscrypt.h \
   crypto/sha1.cpp \
   crypto/sha1.h \
   crypto/sha256.cpp \
@@ -283,8 +290,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sha512.h
 
 if USE_ASM
-crypto_libbitcoin_crypto_a_SOURCES += crypto/sha256_sse4.cpp \
-                                      crypto/neoscrypt_asm.S
+crypto_libbitcoin_crypto_a_SOURCES += crypto/sha256_sse4.cpp
 endif
 
 # consensus: shared between all executables that validate any consensus rules.

@@ -10,7 +10,7 @@
 #include <utilstrencodings.h>
 #include <crypto/common.h>
 #include <crypto/scrypt.h>
-#include <crypto/neoscrypt.h>
+#include <crypto/Lyra2Z/Lyra2Z.h>
 #include <versionbits.h>
 
 uint256 CBlockHeader::GetHash() const
@@ -25,11 +25,10 @@ uint256 CBlockHeader::GetPoWScryptHash() const
     return thash;
 }
 
-uint256 CBlockHeader::GetPoWNeoScryptHash() const
+uint256 CBlockHeader::GetPoWLyra2ZHash() const
 {
     uint256 thash;
-    unsigned int profile = 0x0;
-    neoscrypt((unsigned char *) &nVersion, (unsigned char *) &thash, profile);
+    lyra2z_hash(BEGIN(nVersion), BEGIN(thash));
     return thash;
 
 }
@@ -37,7 +36,7 @@ uint256 CBlockHeader::GetPoWNeoScryptHash() const
 uint256 CBlockHeader::GetPoWHash() const
 {
 	if (nVersion & VERSIONBITS_FORK_GPU_SUPPORT)
-		return GetPoWNeoScryptHash();
+		return GetPoWLyra2ZHash();
 	else
 		return GetPoWScryptHash();
 }

@@ -66,7 +66,7 @@ public:
 
     uint256 GetPoWScryptHash() const;
 
-	uint256 GetPoWNeoScryptHash() const;
+	uint256 GetPoWLyra2ZHash() const;
 
     int64_t GetBlockTime() const
     {
