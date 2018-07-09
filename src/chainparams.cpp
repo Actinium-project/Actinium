@@ -187,7 +187,7 @@ public:
         consensus.BIP34Hash = uint256();
         consensus.BIP65Height = 76; 
         consensus.BIP66Height = 76; 
-        consensus.GPUSupportHeight = 250;
+        consensus.GPUSupportHeight = 190;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         consensus.nPowTargetSpacing = 2.5 * 60;
