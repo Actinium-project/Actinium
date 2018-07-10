@@ -30,7 +30,6 @@ uint256 CBlockHeader::GetPoWLyra2ZHash() const
     uint256 thash;
     lyra2z_hash(BEGIN(nVersion), BEGIN(thash));
     return thash;
-
 }
 
 uint256 CBlockHeader::GetPoWHash() const
