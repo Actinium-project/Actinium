@@ -167,7 +167,7 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
  int DiffType = 1;
- if (pindexLast->nHeight+1 < params.GPUSupportHeight+1)    { DiffType = 1; }
+ if (pindexLast->nHeight+1 < params.GPUSupportHeight)    { DiffType = 1; }
  if (pindexLast->nHeight+1 >= params.GPUSupportHeight)   { DiffType = 2; }
 
  if (DiffType == 1) { return GetNextWorkRequired_Legacy(pindexLast, pblock, params); }
