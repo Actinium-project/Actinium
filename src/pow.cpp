@@ -111,6 +111,12 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
     /* current difficulty formula, dash - DarkGravity v3, written by Evan Duffield - evan@dash.org */
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
     int64_t nPastBlocks = 24;
+
+    // reset to zero at HF height
+    if (pindexLast->nHeight+1 == params.GPUSupportHeight) {
+        return bnPowLimit.GetCompact();
+    }
+
     // make sure we have at least (nPastBlocks + 1) blocks, otherwise just return powLimit
     if (!pindexLast || pindexLast->nHeight < nPastBlocks) {
         return bnPowLimit.GetCompact();
@@ -151,9 +157,9 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
         bnNew = bnPowLimit;
     }
 
-    LogPrintf("Diff Retarget - Dark Gravity Wave v3\n");
-    LogPrintf("Before: %08x %s\n", pindexLast->nBits, arith_uint256().SetCompact(pindexLast->nBits).ToString().c_str());
-    LogPrintf("After:  %08x %s\n", bnNew.GetCompact(), bnNew.ToString().c_str());
+    // LogPrintf("Diff Retarget - Dark Gravity Wave v3\n");
+    // LogPrintf("Before: %08x %s\n", pindexLast->nBits, arith_uint256().SetCompact(pindexLast->nBits).ToString().c_str());
+    // LogPrintf("After:  %08x %s\n", bnNew.GetCompact(), bnNew.ToString().c_str());
 
     return bnNew.GetCompact();
 }
