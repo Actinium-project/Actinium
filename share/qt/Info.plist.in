@@ -71,7 +71,7 @@
         <string>application/x-Actinium-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>litecoinpaymentrequest</string>
+          <string>Actiniumpaymentrequest</string>
         </array>
       </dict>
     </dict>

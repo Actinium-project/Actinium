@@ -54,6 +54,16 @@ Build Actinium Core
 
         make deploy
 
+5.  Installation into user directories (optional):
+
+        make install
+
+    or
+
+        cd ~/Actinium/src
+        cp Actiniumd /usr/local/bin/
+        cp Actinium-cli /usr/local/bin/
+
 Running
 -------
 
@@ -61,7 +71,7 @@ Actinium Core is now available at `./src/Actiniumd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=litecoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Actinium/Actinium.conf"
+    echo -e "rpcuser=Actiniumrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Actinium/Actinium.conf"
 
     chmod 600 "/Users/${USER}/Library/Application Support/Actinium/Actinium.conf"
 

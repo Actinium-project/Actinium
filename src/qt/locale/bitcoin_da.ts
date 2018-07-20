@@ -419,7 +419,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and Actinium: URIs)</source>
-        <translation>Anmod om betalinger (genererer QR-koder og “litecoin:”-URI'er)</translation>
+        <translation>Anmod om betalinger (genererer QR-koder og “Actinium:”-URI'er)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -431,7 +431,7 @@
     </message>
     <message>
         <source>Open a Actinium: URI or payment request</source>
-        <translation>Åbn en “litecoin:”-URI eller betalingsanmodning</translation>
+        <translation>Åbn en “Actinium:”-URI eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

@@ -212,7 +212,7 @@ def main():
     logging.basicConfig(format='%(message)s', level=logging_level)
 
     # Create base test directory
-    tmpdir = "%s/litecoin_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
+    tmpdir = "%s/Actinium_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
     os.makedirs(tmpdir)
 
     logging.debug("Temporary test directory at %s" % tmpdir)
@@ -228,7 +228,7 @@ def main():
         sys.exit(0)
 
     if not (enable_wallet and enable_utils and enable_bitcoind):
-        print("No functional tests to run. Wallet, utils, and litecoind must all be enabled")
+        print("No functional tests to run. Wallet, utils, and Actiniumd must all be enabled")
         print("Rerun `configure` with -enable-wallet, -with-utils and -with-daemon and rerun make")
         sys.exit(0)
 
@@ -283,8 +283,8 @@ def main():
 def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_coverage=False, args=[], combined_logs_len=0):
     # Warn if bitcoind is already running (unix only)
     try:
-        if subprocess.check_output(["pidof", "litecoind"]) is not None:
-            print("%sWARNING!%s There is already a litecoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
+        if subprocess.check_output(["pidof", "Actiniumd"]) is not None:
+            print("%sWARNING!%s There is already a Actiniumd process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
     except (OSError, subprocess.SubprocessError):
         pass
 
@@ -295,7 +295,7 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
 
     #Set env vars
     if "ACTINIUMD" not in os.environ:
-        os.environ["ACTINIUMD"] = build_dir + '/src/litecoind' + exeext
+        os.environ["ACTINIUMD"] = build_dir + '/src/Actiniumd' + exeext
         os.environ["ACTINIUMCLI"] = build_dir + '/src/Actinium-cli' + exeext
 
     tests_dir = src_dir + '/test/functional/'

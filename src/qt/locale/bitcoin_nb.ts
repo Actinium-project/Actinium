@@ -2341,7 +2341,7 @@
     </message>
     <message>
         <source>A message that was attached to the Actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.</source>
-        <translation>En melding som var tilknyttet litecoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Actinium-nettverket.</translation>
+        <translation>En melding som var tilknyttet Actiniumen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Actinium-nettverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>

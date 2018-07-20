@@ -13,7 +13,7 @@ Construct a linear, no-fork, best version of the blockchain.
 
 ### [Qos](/contrib/qos) ###
 
-A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Actinium network. This means one can have an always-on litecoind instance running, and another local litecoind/Actinium-qt instance which connects to this node and receives blocks from it.
+A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Actinium network. This means one can have an always-on Actiniumd instance running, and another local Actiniumd/Actinium-qt instance which connects to this node and receives blocks from it.
 
 ### [Seeds](/contrib/seeds) ###
 Utility to generate the pnSeed[] array that is compiled into the client.
@@ -22,8 +22,8 @@ Build Tools and Keys
 ---------------------
 
 ### [Debian](/contrib/debian) ###
-Contains files used to package litecoind/Actinium-qt
-for Debian-based Linux systems. If you compile litecoind/Actinium-qt yourself, there are some useful files here.
+Contains files used to package Actiniumd/Actinium-qt
+for Debian-based Linux systems. If you compile Actiniumd/Actinium-qt yourself, there are some useful files here.
 
 ### [Gitian-descriptors](/contrib/gitian-descriptors) ###
 Files used during the gitian build process. For more information about gitian, see the [the Bitcoin Core documentation repository](https://github.com/bitcoin-core/docs).
@@ -35,7 +35,7 @@ PGP keys used for signing Actinium Core [Gitian release](/doc/release-process.md
 Scripts and notes for Mac builds. 
 
 ### [RPM](/contrib/rpm) ###
-RPM spec file for building blitecoin-core on RPM based distributions.
+RPM spec file for building bActinium-core on RPM based distributions.
 
 ### [Gitian-build](/contrib/gitian-build.sh) ###
 Script for running full Gitian builds.

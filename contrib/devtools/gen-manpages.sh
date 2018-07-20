@@ -4,7 +4,7 @@ TOPDIR=${TOPDIR:-$(git rev-parse --show-toplevel)}
 SRCDIR=${SRCDIR:-$TOPDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-ACTINIUMD=${ACTINIUMD:-$SRCDIR/litecoind}
+ACTINIUMD=${ACTINIUMD:-$SRCDIR/Actiniumd}
 ACTINIUMCLI=${ACTINIUMCLI:-$SRCDIR/Actinium-cli}
 ACTINIUMTX=${ACTINIUMTX:-$SRCDIR/Actinium-tx}
 ACTINIUMQT=${ACTINIUMQT:-$SRCDIR/qt/Actinium-qt}

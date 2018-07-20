@@ -52,7 +52,7 @@ class TestNode():
             # Wait for up to 60 seconds for the RPC server to respond
             self.rpc_timeout = 60
         if binary is None:
-            self.binary = os.getenv("ACTINIUMD", "litecoind")
+            self.binary = os.getenv("ACTINIUMD", "Actiniumd")
         else:
             self.binary = binary
         self.stderr = stderr
@@ -89,14 +89,14 @@ class TestNode():
             stderr = self.stderr
         self.process = subprocess.Popen(self.args + extra_args, stderr=stderr, *args, **kwargs)
         self.running = True
-        self.log.debug("litecoind started, waiting for RPC to come up")
+        self.log.debug("Actiniumd started, waiting for RPC to come up")
 
     def wait_for_rpc_connection(self):
         """Sets up an RPC connection to the bitcoind process. Returns False if unable to connect."""
         # Poll at a rate of four times per second
         poll_per_s = 4
         for _ in range(poll_per_s * self.rpc_timeout):
-            assert self.process.poll() is None, "litecoind exited with status %i during initialization" % self.process.returncode
+            assert self.process.poll() is None, "Actiniumd exited with status %i during initialization" % self.process.returncode
             try:
                 self.rpc = get_rpc_proxy(rpc_url(self.datadir, self.index, self.rpchost), self.index, timeout=self.rpc_timeout, coveragedir=self.coverage_dir)
                 self.rpc.getblockcount()
@@ -115,7 +115,7 @@ class TestNode():
                 if "No RPC credentials" not in str(e):
                     raise
             time.sleep(1.0 / poll_per_s)
-        raise AssertionError("Unable to connect to litecoind")
+        raise AssertionError("Unable to connect to Actiniumd")
 
     def get_wallet_rpc(self, wallet_name):
         if self.use_cli:
