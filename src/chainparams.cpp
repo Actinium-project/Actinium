@@ -183,11 +183,11 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 840000;
-        consensus.BIP34Height = 76;
+        consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256();
-        consensus.BIP65Height = 76; 
-        consensus.BIP66Height = 76; 
-        consensus.GPUSupportHeight = 5;
+        consensus.BIP65Height = 1; 
+        consensus.BIP66Height = 1; 
+        consensus.GPUSupportHeight = 1;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         consensus.nPowTargetSpacing = 2.5 * 60;
