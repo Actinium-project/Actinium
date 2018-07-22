@@ -255,6 +255,9 @@ def runStrip(binaryPath, verbose):
     subprocess.check_call([stripbin, "-x", binaryPath])
 
 def copyFramework(framework, path, verbose):
+
+    os.system("cp contrib/Frameworks/libboost_system-mt.dylib dist/Actinium-Qt.app/Contents/Frameworks/")
+
     if framework.sourceFilePath.startswith("Qt"):
         #standard place for Nokia Qt installer's frameworks
         fromPath = "/Library/Frameworks/" + framework.sourceFilePath
@@ -331,10 +334,10 @@ def deployFrameworks(frameworks, bundlePath, binaryPath, strip, verbose, deploym
         if deploymentInfo.qtPath is None and framework.isQtFramework():
             deploymentInfo.detectQtPath(framework.frameworkDirectory)
         
-        if framework.installName.startswith("@executable_path") or framework.installName.startswith(bundlePath):
-            if verbose >= 2:
-                print(framework.frameworkName, "already deployed, skipping.")
-            continue
+        #if framework.installName.startswith("@executable_path") or framework.installName.startswith(bundlePath):
+        #    if verbose >= 2:
+        #        print(framework.frameworkName, "already deployed, skipping.")
+        #    continue
         
         # install_name_tool the new id into the binary
         changeInstallName(framework.installName, framework.deployedInstallName, binaryPath, verbose)
@@ -785,10 +788,10 @@ if config.dmg is not None:
         if verbose >= 3:
             print("Attaching temp image...")
         try:
-            output = runHDIUtil("attach", dmg_name + ".temp", readwrite=True, noverify=True, noautoopen=True, capture_stdout=True)
+            output = runHDIUtil("attach", dmg_name + ".temp", readwrite=True, noverify=True, noautoopen=True, capture_stdout=True)       
         except subprocess.CalledProcessError as e:
             sys.exit(e.returncode)
-        
+
         m = re.search("/Volumes/(.+$)", output.decode())
         disk_root = m.group(0)
         disk_name = m.group(1)
@@ -873,7 +876,7 @@ if config.dmg is not None:
         if verbose >= 2:
             print("+ Finalizing .dmg disk image +")
             time.sleep(5)
-        
+
         try:
             runHDIUtil("convert", dmg_name + ".temp", format="UDBZ", o=dmg_name + ".dmg", ov=True)
         except subprocess.CalledProcessError as e:
