@@ -71,6 +71,11 @@ public Q_SLOTS:
     /** Switch to send coins page */
     void gotoSendCoinsPage(QString addr = "");
 
+    /** Show used sending addresses */
+    void gotoSendingAddressesPage();
+    /** Show used receiving addresses */
+    void gotoReceivingAddressesPage();
+
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
     /** Show Sign/Verify Message dialog and switch to verify message tab */
@@ -84,11 +89,6 @@ public Q_SLOTS:
     void changePassphrase();
     /** Ask for passphrase to unlock wallet temporarily */
     void unlockWallet();
-
-    /** Show used sending addresses */
-    void usedSendingAddresses();
-    /** Show used receiving addresses */
-    void usedReceivingAddresses();
     /** Pass on signal over requested out-of-sync-warning information */
     void outOfSyncWarningClicked();
 };

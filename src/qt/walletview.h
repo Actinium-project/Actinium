@@ -65,6 +65,9 @@ private:
     AddressBookPage *usedSendingAddressesPage;
     AddressBookPage *usedReceivingAddressesPage;
 
+    QWidget *receivingAddressesPageEx;
+    QWidget *sendingAddressesPageEx;
+
     TransactionView *transactionView;
 
     QProgressDialog *progressDialog;

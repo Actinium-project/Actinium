@@ -180,14 +180,14 @@ void WalletFrame::unlockWallet()
         walletView->unlockWallet();
 }
 
-void WalletFrame::usedSendingAddresses()
+void WalletFrame::gotoSendingAddressesPage()
 {
     WalletView *walletView = currentWalletView();
     if (walletView)
         walletView->usedSendingAddresses();
 }
 
-void WalletFrame::usedReceivingAddresses()
+void WalletFrame::gotoReceivingAddressesPage()
 {
     WalletView *walletView = currentWalletView();
     if (walletView)

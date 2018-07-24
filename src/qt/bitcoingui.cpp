@@ -306,11 +306,23 @@ void BitcoinGUI::createActions()
     receiveCoinsMenuAction->setStatusTip(receiveCoinsAction->statusTip());
     receiveCoinsMenuAction->setToolTip(receiveCoinsMenuAction->statusTip());
 
+    usedSendingAddressesAction = new QAction(platformStyle->TextColorIcon(":/icons/address-book"), tr("&Sending addresses..."), this);
+    usedSendingAddressesAction->setStatusTip(tr("Show the list of used sending addresses and labels"));
+    usedSendingAddressesAction->setCheckable(true);
+    usedSendingAddressesAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_4));
+    tabGroup->addAction(usedSendingAddressesAction);
+
+    usedReceivingAddressesAction = new QAction(platformStyle->TextColorIcon(":/icons/address-book"), tr("&Receiving addresses..."), this);
+    usedReceivingAddressesAction->setStatusTip(tr("Show the list of used receiving addresses and labels"));
+    usedReceivingAddressesAction->setCheckable(true);
+    usedReceivingAddressesAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
+    tabGroup->addAction(usedReceivingAddressesAction);
+
     historyAction = new QAction(platformStyle->SingleColorIcon(":/icons/history"), tr("&Transactions"), this);
     historyAction->setStatusTip(tr("Browse transaction history"));
     historyAction->setToolTip(historyAction->statusTip());
     historyAction->setCheckable(true);
-    historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_4));
+    historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(historyAction);
 
 #ifdef ENABLE_WALLET
@@ -326,6 +338,8 @@ void BitcoinGUI::createActions()
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(gotoReceiveCoinsPage()));
     connect(receiveCoinsMenuAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(receiveCoinsMenuAction, SIGNAL(triggered()), this, SLOT(gotoReceiveCoinsPage()));
+    connect(usedSendingAddressesAction, SIGNAL(triggered()), this, SLOT(gotoSendingAddressesPage()));
+    connect(usedReceivingAddressesAction, SIGNAL(triggered()), this, SLOT(gotoReceivingAddressesPage()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
 #endif // ENABLE_WALLET
@@ -365,11 +379,6 @@ void BitcoinGUI::createActions()
     // initially disable the debug window menu item
     openRPCConsoleAction->setEnabled(false);
 
-    usedSendingAddressesAction = new QAction(platformStyle->TextColorIcon(":/icons/address-book"), tr("&Sending addresses..."), this);
-    usedSendingAddressesAction->setStatusTip(tr("Show the list of used sending addresses and labels"));
-    usedReceivingAddressesAction = new QAction(platformStyle->TextColorIcon(":/icons/address-book"), tr("&Receiving addresses..."), this);
-    usedReceivingAddressesAction->setStatusTip(tr("Show the list of used receiving addresses and labels"));
-
     openAction = new QAction(platformStyle->TextColorIcon(":/icons/open"), tr("Open &URI..."), this);
     openAction->setStatusTip(tr("Open a Actinium: URI or payment request"));
 
@@ -395,8 +404,6 @@ void BitcoinGUI::createActions()
         connect(changePassphraseAction, SIGNAL(triggered()), walletFrame, SLOT(changePassphrase()));
         connect(signMessageAction, SIGNAL(triggered()), this, SLOT(gotoSignMessageTab()));
         connect(verifyMessageAction, SIGNAL(triggered()), this, SLOT(gotoVerifyMessageTab()));
-        connect(usedSendingAddressesAction, SIGNAL(triggered()), walletFrame, SLOT(usedSendingAddresses()));
-        connect(usedReceivingAddressesAction, SIGNAL(triggered()), walletFrame, SLOT(usedReceivingAddresses()));
         connect(openAction, SIGNAL(triggered()), this, SLOT(openClicked()));
     }
 #endif // ENABLE_WALLET
@@ -457,10 +464,12 @@ void BitcoinGUI::createToolBars()
         QToolBar *toolbar = addToolBar(tr("Tabs toolbar"));
         toolbar->setContextMenuPolicy(Qt::PreventContextMenu);
         toolbar->setMovable(false);
-        toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+        toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         toolbar->addAction(overviewAction);
         toolbar->addAction(sendCoinsAction);
         toolbar->addAction(receiveCoinsAction);
+        toolbar->addAction(usedSendingAddressesAction);
+        toolbar->addAction(usedReceivingAddressesAction);
         toolbar->addAction(historyAction);
         overviewAction->setChecked(true);
     }
@@ -701,6 +710,18 @@ void BitcoinGUI::gotoSendCoinsPage(QString addr)
 {
     sendCoinsAction->setChecked(true);
     if (walletFrame) walletFrame->gotoSendCoinsPage(addr);
+}
+
+void BitcoinGUI::gotoSendingAddressesPage()
+{
+    usedSendingAddressesAction->setChecked(true);
+    if (walletFrame) walletFrame->gotoSendingAddressesPage();
+}
+
+void BitcoinGUI::gotoReceivingAddressesPage()
+{
+    usedReceivingAddressesAction->setChecked(true);
+    if (walletFrame) walletFrame->gotoReceivingAddressesPage();
 }
 
 void BitcoinGUI::gotoSignMessageTab(QString addr)

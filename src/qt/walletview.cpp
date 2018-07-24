@@ -56,13 +56,24 @@ WalletView::WalletView(const PlatformStyle *_platformStyle, QWidget *parent):
     receiveCoinsPage = new ReceiveCoinsDialog(platformStyle);
     sendCoinsPage = new SendCoinsDialog(platformStyle);
 
-    usedSendingAddressesPage = new AddressBookPage(platformStyle, AddressBookPage::ForEditing, AddressBookPage::SendingTab, this);
+    receivingAddressesPageEx = new QWidget(this);
+    QVBoxLayout *vbox2 = new QVBoxLayout();
     usedReceivingAddressesPage = new AddressBookPage(platformStyle, AddressBookPage::ForEditing, AddressBookPage::ReceivingTab, this);
+    vbox2->addWidget(usedReceivingAddressesPage);
+    receivingAddressesPageEx->setLayout(vbox2);
+
+    sendingAddressesPageEx = new QWidget(this);
+    QVBoxLayout *vbox3 = new QVBoxLayout();
+    usedSendingAddressesPage = new AddressBookPage(platformStyle, AddressBookPage::ForEditing, AddressBookPage::SendingTab, this);
+    vbox3->addWidget(usedSendingAddressesPage);
+    sendingAddressesPageEx->setLayout(vbox3);
 
     addWidget(overviewPage);
     addWidget(transactionsPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
+    addWidget(receivingAddressesPageEx);
+    addWidget(sendingAddressesPageEx);
 
     // Clicking on a transaction on the overview pre-selects the transaction on the transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), transactionView, SLOT(focusTransaction(QModelIndex)));
@@ -100,7 +111,7 @@ void WalletView::setBitcoinGUI(BitcoinGUI *gui)
         // Pass through transaction notifications
         connect(this, SIGNAL(incomingTransaction(QString,int,CAmount,QString,QString,QString)), gui, SLOT(incomingTransaction(QString,int,CAmount,QString,QString,QString)));
 
-        // Connect HD enabled state signal 
+        // Connect HD enabled state signal
         connect(this, SIGNAL(hdEnabledStatusChanged(int)), gui, SLOT(setHDStatus(int)));
     }
 }
@@ -285,20 +296,14 @@ void WalletView::usedSendingAddresses()
 {
     if(!walletModel)
         return;
-
-    usedSendingAddressesPage->show();
-    usedSendingAddressesPage->raise();
-    usedSendingAddressesPage->activateWindow();
+    setCurrentWidget(sendingAddressesPageEx);
 }
 
 void WalletView::usedReceivingAddresses()
 {
     if(!walletModel)
         return;
-
-    usedReceivingAddressesPage->show();
-    usedReceivingAddressesPage->raise();
-    usedReceivingAddressesPage->activateWindow();
+    setCurrentWidget(receivingAddressesPageEx);
 }
 
 void WalletView::showProgress(const QString &title, int nProgress)
