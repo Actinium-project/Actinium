@@ -19,6 +19,7 @@ class SendCoinsRecipient;
 class TransactionView;
 class WalletModel;
 class AddressBookPage;
+class LogfilePage;
 
 QT_BEGIN_NAMESPACE
 class QModelIndex;
@@ -67,6 +68,8 @@ private:
 
     QWidget *receivingAddressesPageEx;
     QWidget *sendingAddressesPageEx;
+    LogfilePage *logfilePage;
+    QWidget *debugLogPageWrapper;
 
     TransactionView *transactionView;
 
@@ -106,6 +109,8 @@ public Q_SLOTS:
     void usedSendingAddresses();
     /** Show used receiving addresses */
     void usedReceivingAddresses();
+    /** Show Debug log **/
+    void debugLog();
 
     /** Re-emit encryption status signal */
     void updateEncryptionStatus();

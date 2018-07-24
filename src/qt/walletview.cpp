@@ -14,6 +14,7 @@
 #include <qt/platformstyle.h>
 #include <qt/receivecoinsdialog.h>
 #include <qt/sendcoinsdialog.h>
+#include <qt/logfilepage.h>
 #include <qt/signverifymessagedialog.h>
 #include <qt/transactiontablemodel.h>
 #include <qt/transactionview.h>
@@ -68,12 +69,19 @@ WalletView::WalletView(const PlatformStyle *_platformStyle, QWidget *parent):
     vbox3->addWidget(usedSendingAddressesPage);
     sendingAddressesPageEx->setLayout(vbox3);
 
+    debugLogPageWrapper = new QWidget(this);
+    QVBoxLayout *vbox4 = new QVBoxLayout();
+    logfilePage = new LogfilePage(this);
+    vbox4->addWidget(logfilePage);
+    debugLogPageWrapper->setLayout(vbox4);
+
     addWidget(overviewPage);
     addWidget(transactionsPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
     addWidget(receivingAddressesPageEx);
     addWidget(sendingAddressesPageEx);
+    addWidget(debugLogPageWrapper);
 
     // Clicking on a transaction on the overview pre-selects the transaction on the transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), transactionView, SLOT(focusTransaction(QModelIndex)));
@@ -304,6 +312,13 @@ void WalletView::usedReceivingAddresses()
     if(!walletModel)
         return;
     setCurrentWidget(receivingAddressesPageEx);
+}
+
+void WalletView::debugLog()
+{
+    if(!walletModel)
+       return;
+    setCurrentWidget(debugLogPageWrapper);
 }
 
 void WalletView::showProgress(const QString &title, int nProgress)
