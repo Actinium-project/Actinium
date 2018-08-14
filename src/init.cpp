@@ -898,11 +898,10 @@ void RunTor()
         argv.push_back("--UseBridges");
         argv.push_back("1");
     }
-     std::vector<char *> argv_c;
-    std::transform(argv.begin(), argv.end(), std::back_inserter(argv_c),
-            convert_str);
+    std::vector<char *> argv_c;
+    std::transform(argv.begin(), argv.end(), std::back_inserter(argv_c), convert_str);
     tor_main(argv_c.size(), &argv_c[0]);
- }
+}
 
 struct event_base *baseTor;
 boost::thread torEnabledThread;
@@ -923,7 +922,7 @@ void StartTorEnabled(boost::thread_group& threadGroup, CScheduler& scheduler) {
         LogPrintf("tor: Unable to create event_base\n");
         return;
     }
-     torEnabledThread = boost::thread(boost::bind(&TraceThread<void (*)()>, "torcontrol", &TorEnabledThread));
+    torEnabledThread = boost::thread(boost::bind(&TraceThread<void (*)()>, "torcontrol", &TorEnabledThread));
 }
 void InterruptTorEnabled()
 {
@@ -939,6 +938,11 @@ void StopTorEnabled()
         event_base_free(baseTor);
         baseTor = 0;
     }
+}
+
+bool IsEmbeddedTorActive()
+{
+   return torEnabledThread.joinable();
 }
 
 void InitLogging()
