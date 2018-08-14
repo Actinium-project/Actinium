@@ -216,6 +216,8 @@ public:
 
     bool hdEnabled() const;
 
+    bool torEnabled() const;
+
     OutputType getDefaultAddressType() const;
 
     int getDefaultConfirmTarget() const;

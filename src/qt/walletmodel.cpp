@@ -24,6 +24,7 @@
 #include <sync.h>
 #include <ui_interface.h>
 #include <util.h> // for GetBoolArg
+#include <init.h> // for IsEmbeddedTorActive
 #include <wallet/coincontrol.h>
 #include <wallet/feebumper.h>
 #include <wallet/wallet.h>
@@ -731,6 +732,11 @@ bool WalletModel::isWalletEnabled()
 bool WalletModel::hdEnabled() const
 {
     return wallet->IsHDEnabled();
+}
+
+bool WalletModel::torEnabled() const
+{
+    return IsEmbeddedTorActive();
 }
 
 OutputType WalletModel::getDefaultAddressType() const

@@ -84,6 +84,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
     labelWalletHDStatusIcon(0),
     connectionsControl(0),
     labelBlocksIcon(0),
+    labelTorStatusIcon(0),
     progressBarLabel(0),
     progressBar(0),
     progressDialog(0),
@@ -200,6 +201,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
     unitDisplayControl = new UnitDisplayStatusBarControl(platformStyle);
     labelWalletEncryptionIcon = new QLabel();
     labelWalletHDStatusIcon = new QLabel();
+    labelTorStatusIcon = new QLabel();
     connectionsControl = new GUIUtil::ClickableLabel();
     labelBlocksIcon = new GUIUtil::ClickableLabel();
     if(enableWallet)
@@ -207,6 +209,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
         frameBlocksLayout->addStretch();
         frameBlocksLayout->addWidget(unitDisplayControl);
         frameBlocksLayout->addStretch();
+        frameBlocksLayout->addWidget(labelTorStatusIcon);
         frameBlocksLayout->addWidget(labelWalletEncryptionIcon);
         frameBlocksLayout->addWidget(labelWalletHDStatusIcon);
     }
@@ -1087,6 +1090,15 @@ void BitcoinGUI::setHDStatus(int hdEnabled)
 
     // eventually disable the QLabel to set its opacity to 50% 
     labelWalletHDStatusIcon->setEnabled(hdEnabled);
+}
+
+void BitcoinGUI::setTorStatus(int torEnabled)
+{
+    labelTorStatusIcon->setPixmap(platformStyle->SingleColorIcon(torEnabled ? ":/icons/onion_enabled" : ":/icons/onion_disabled").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
+    labelTorStatusIcon->setToolTip(torEnabled ? tr("Tor is <b>enabled</b>") : tr("Tor is <b>disabled</b>"));
+
+    // eventually disable the QLabel to set its opacity to 50% 
+    labelTorStatusIcon->setEnabled(torEnabled);
 }
 
 void BitcoinGUI::setEncryptionStatus(int status)

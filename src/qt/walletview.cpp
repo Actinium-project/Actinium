@@ -121,6 +121,8 @@ void WalletView::setBitcoinGUI(BitcoinGUI *gui)
 
         // Connect HD enabled state signal
         connect(this, SIGNAL(hdEnabledStatusChanged(int)), gui, SLOT(setHDStatus(int)));
+        // Connect TOR enabled state signal
+        connect(this, SIGNAL(torEnabledStatusChanged(int)), gui, SLOT(setTorStatus(int)));
     }
 }
 
@@ -155,6 +157,9 @@ void WalletView::setWalletModel(WalletModel *_walletModel)
 
         // update HD status
         Q_EMIT hdEnabledStatusChanged(_walletModel->hdEnabled());
+
+        // update TOR status
+        Q_EMIT torEnabledStatusChanged(_walletModel->torEnabled());
 
         // Balloon pop-up for new transaction
         connect(_walletModel->getTransactionTableModel(), SIGNAL(rowsInserted(QModelIndex,int,int)),

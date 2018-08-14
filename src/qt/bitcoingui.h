@@ -85,6 +85,7 @@ private:
     QLabel *labelWalletHDStatusIcon;
     QLabel *connectionsControl;
     QLabel *labelBlocksIcon;
+    QLabel *labelTorStatusIcon;
     QLabel *progressBarLabel;
     QProgressBar *progressBar;
     QProgressDialog *progressDialog;
@@ -180,9 +181,14 @@ public Q_SLOTS:
 
     /** Set the hd-enabled status as shown in the UI.
      @param[in] status            current hd enabled status
-     @see WalletModel::EncryptionStatus
+     @see WalletModel::HDtatus
      */
     void setHDStatus(int hdEnabled);
+    /** Set the tor-enabled status as shown in the UI.
+     @param[in] status            current tor enabled status
+     @see WalletModel::TorStatus
+     */
+    void setTorStatus(int torEnabled);
 
     bool handlePaymentRequest(const SendCoinsRecipient& recipient);
 
