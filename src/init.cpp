@@ -53,6 +53,7 @@
 
 #ifndef WIN32
 #include <signal.h>
+#include <string.h>
 #endif
 
 #include <boost/algorithm/string/classification.hpp>
@@ -62,6 +63,15 @@
 #include <boost/interprocess/sync/file_lock.hpp>
 #include <boost/thread.hpp>
 #include <openssl/crypto.h>
+
+#include <sys/stat.h>
+#include <boost/optional.hpp>
+#include <boost/thread.hpp>
+#include <event2/bufferevent.h>
+#include <event2/buffer.h>
+#include <event2/util.h>
+#include <event2/event.h>
+#include <event2/thread.h>
 
 #if ENABLE_ZMQ
 #include <zmq/zmqnotificationinterface.h>
@@ -93,6 +103,20 @@ static CZMQNotificationInterface* pzmqNotificationInterface = nullptr;
 #endif
 
 static const char* FEE_ESTIMATES_FILENAME="fee_estimates.dat";
+
+namespace fs = boost::filesystem;
+extern const char tor_git_revision[];
+
+const char tor_git_revision[] = "";
+extern "C" {
+  int tor_main(int argc, char *argv[]);
+  void tor_cleanup(void);
+}
+static char *convert_str(const std::string &s) {
+  char *pc = new char[s.size()+1];
+  std::strcpy(pc, s.c_str());
+  return pc;
+}
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -808,6 +832,115 @@ static std::string ResolveErrMsg(const char * const optname, const std::string& 
     return strprintf(_("Cannot resolve -%s address: '%s'"), optname, strBind);
 }
 
+void SetupPluggableTransport(boost::optional<std::string> &plugin, struct stat *sb)
+{
+    std::string torPlugin = gArgs.GetArg("-torplugin", "");
+    std::string torPluginPath = gArgs.GetArg("-torpluginpath", "");
+    if (torPlugin == "meek")
+    {
+        printf("Running Tor with Meek\n");
+#ifdef WIN32
+        if (stat("meek-client.exe", sb) == 0 && (*sb).st_mode & S_IXUSR)
+        {
+            plugin = std::string("meek exec ") + std::string(torPluginPath);
+        }
+#else
+        if ((stat("meek-client", sb) == 0 && (*sb).st_mode & S_IXUSR) || !std::system("which meek-client"))
+        {
+            plugin = std::string("meek exec ") + std::string(torPluginPath);
+        }
+#endif
+    }
+    else if (torPlugin == "obfs4")
+    {
+        printf("Running Tor with OBFS4\n");
+#ifdef WIN32
+        if (stat("obfs4proxy.exe", sb) == 0 && (*sb).st_mode & S_IXUSR)
+        {
+            plugin = std::string("obfs4 exec ") + std::string(torPluginPath);
+        }
+#else
+        if ((stat("obfs4proxy", sb) == 0 && (*sb).st_mode & S_IXUSR) || !std::system("which obfs4proxy"))
+        {
+            plugin = std::string("obfs4 exec ") + std::string(torPluginPath);
+        }
+#endif
+    }
+}
+
+void RunTor()
+{
+    printf("TOR thread started.\n");
+    boost::optional <std::string> clientTransportPlugin;
+    struct stat sb;
+    SetupPluggableTransport(clientTransportPlugin, &sb);
+
+    fs::path tor_dir = GetDataDir() / "tor";
+    fs::create_directory(tor_dir);
+    fs::path log_file = tor_dir / "tor.log";
+     std::vector < std::string > argv;
+    argv.push_back("tor");
+    argv.push_back("--Log");
+    argv.push_back("notice file " + log_file.string());
+    argv.push_back("--SocksPort");
+    argv.push_back("9050");
+    argv.push_back("--ignore-missing-torrc");
+    argv.push_back("-f");
+    argv.push_back((tor_dir / "torrc").string());
+    argv.push_back("--HiddenServiceDir");
+    argv.push_back((tor_dir / "onion").string());
+    argv.push_back("--HiddenServicePort");
+    argv.push_back("8255");
+    if (clientTransportPlugin) {
+        printf("Using OBFS4.\n");
+        argv.push_back("--ClientTransportPlugin");
+        argv.push_back(*clientTransportPlugin);
+        argv.push_back("--UseBridges");
+        argv.push_back("1");
+    }
+     std::vector<char *> argv_c;
+    std::transform(argv.begin(), argv.end(), std::back_inserter(argv_c),
+            convert_str);
+    tor_main(argv_c.size(), &argv_c[0]);
+ }
+
+struct event_base *baseTor;
+boost::thread torEnabledThread;
+static void TorEnabledThread()
+{
+    RunTor();
+    event_base_dispatch(baseTor);
+}
+void StartTorEnabled(boost::thread_group& threadGroup, CScheduler& scheduler) {
+    assert(!baseTor);
+#ifdef WIN32
+    evthread_use_windows_threads();
+#else
+    evthread_use_pthreads();
+#endif
+    baseTor = event_base_new();
+    if (!baseTor) {
+        LogPrintf("tor: Unable to create event_base\n");
+        return;
+    }
+     torEnabledThread = boost::thread(boost::bind(&TraceThread<void (*)()>, "torcontrol", &TorEnabledThread));
+}
+void InterruptTorEnabled()
+{
+    if (baseTor) {
+        LogPrintf("tor: Thread interrupt\n");
+        event_base_loopbreak(baseTor);
+    }
+}
+void StopTorEnabled()
+{
+    if (baseTor) {
+        torEnabledThread.join();
+        event_base_free(baseTor);
+        baseTor = 0;
+    }
+}
+
 void InitLogging()
 {
     fPrintToConsole = gArgs.GetBoolArg("-printtoconsole", false);
@@ -1324,6 +1457,21 @@ bool AppInitMain()
 
     // Check for host lookup allowed before parsing any network related parameters
     fNameLookup = gArgs.GetBoolArg("-dns", DEFAULT_NAME_LOOKUP);
+
+    // start tor
+    if(gArgs.GetBoolArg("-torenabled", false)){
+        StartTorEnabled(threadGroup, scheduler);
+        SetLimited(NET_TOR);
+        SetLimited(NET_IPV4);
+        SetLimited(NET_IPV6);
+        proxyType addrProxy = proxyType(CService(LookupNumeric("127.0.0.1", 9050)), true);
+        SetProxy(NET_IPV4, addrProxy);
+        SetProxy(NET_IPV6, addrProxy);
+        SetProxy(NET_TOR, addrProxy);
+        SetLimited(NET_IPV4, false);
+        SetLimited(NET_IPV6, false);
+        SetLimited(NET_TOR, false);
+    }
 
     bool proxyRandomize = gArgs.GetBoolArg("-proxyrandomize", DEFAULT_PROXYRANDOMIZE);
     // -proxy sets a proxy for all outgoing network traffic
