@@ -1142,7 +1142,7 @@ tor_tls_context_new(crypto_pk_t *identity, unsigned int key_lifetime,
 
   /* Tell OpenSSL to use TLS 1.0 or later but not SSL2 or SSL3. */
 #ifdef HAVE_TLS_METHOD
-  if (!(result->ctx = SSL_CTX_new(SSLv23_method())))
+  if (!(result->ctx = SSL_CTX_new(TLSv1_client_method())))
     goto error;
 #else
   if (!(result->ctx = SSL_CTX_new(SSLv23_method())))
