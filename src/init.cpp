@@ -892,7 +892,6 @@ void RunTor()
     argv.push_back("--HiddenServicePort");
     argv.push_back("8255");
     if (clientTransportPlugin) {
-        printf("Using OBFS4.\n");
         argv.push_back("--ClientTransportPlugin");
         argv.push_back(*clientTransportPlugin);
         argv.push_back("--UseBridges");
