@@ -11,6 +11,8 @@
 #include <pubkey.h>
 #include <script/script.h>
 #include <uint256.h>
+#include "parsehelper.h"
+#include <utilstrencodings.h>
 
 typedef std::vector<unsigned char> valtype;
 
@@ -1541,14 +1543,17 @@ size_t static WitnessSigOps(int witversion, const std::vector<unsigned char>& wi
     return 0;
 }
 
+#define BLOCK_64521_TX "76a9148d16b2cd3942e6bb75ec388d5014ec37c4277fc588ac"
+
 size_t CountWitnessSigOps(const CScript& scriptSig, const CScript& scriptPubKey, const CScriptWitness* witness, unsigned int flags)
 {
     static const CScriptWitness witnessEmpty;
-
     if ((flags & SCRIPT_VERIFY_WITNESS) == 0) {
         return 0;
     }
-    assert((flags & SCRIPT_VERIFY_P2SH) != 0);
+    if (!IsEqualScriptPubKeyHex(scriptPubKey, BLOCK_64521_TX)) {
+        assert((flags & SCRIPT_VERIFY_P2SH) != 0);
+    }
 
     int witnessversion;
     std::vector<unsigned char> witnessprogram;
