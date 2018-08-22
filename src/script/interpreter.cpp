@@ -11,7 +11,6 @@
 #include <pubkey.h>
 #include <script/script.h>
 #include <uint256.h>
-#include "parsehelper.h"
 #include <utilstrencodings.h>
 
 typedef std::vector<unsigned char> valtype;
@@ -1514,16 +1513,6 @@ bool VerifyScript(const CScript& scriptSig, const CScript& scriptPubKey, const C
         }
     }
 
-    if (flags & SCRIPT_VERIFY_WITNESS) {
-        // We can't check for correct unexpected witness data if P2SH was off, so require
-        // that WITNESS implies P2SH. Otherwise, going from WITNESS->P2SH+WITNESS would be
-        // possible, which is not a softfork.
-        assert((flags & SCRIPT_VERIFY_P2SH) != 0);
-        if (!hadWitness && !witness->IsNull()) {
-            return set_error(serror, SCRIPT_ERR_WITNESS_UNEXPECTED);
-        }
-    }
-
     return set_success(serror);
 }
 
@@ -1543,16 +1532,11 @@ size_t static WitnessSigOps(int witversion, const std::vector<unsigned char>& wi
     return 0;
 }
 
-#define BLOCK_64521_TX "76a9148d16b2cd3942e6bb75ec388d5014ec37c4277fc588ac"
-
 size_t CountWitnessSigOps(const CScript& scriptSig, const CScript& scriptPubKey, const CScriptWitness* witness, unsigned int flags)
 {
     static const CScriptWitness witnessEmpty;
     if ((flags & SCRIPT_VERIFY_WITNESS) == 0) {
         return 0;
-    }
-    if (!IsEqualScriptPubKeyHex(scriptPubKey, BLOCK_64521_TX)) {
-        assert((flags & SCRIPT_VERIFY_P2SH) != 0);
     }
 
     int witnessversion;

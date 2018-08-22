@@ -346,8 +346,6 @@ libbitcoin_consensus_a_SOURCES = \
   script/script.h \
   script/script_error.cpp \
   script/script_error.h \
-  script/parsehelper.h \
-  script/parsehelper.cpp \
   serialize.h \
   tinyformat.h \
   uint256.cpp \
@@ -442,6 +440,19 @@ Actiniumd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
+if TARGET_WINDOWS
+Actiniumd_LDADD += $(TOR_LIBS) \
+   $(BOOST_LIBS) \
+   $(BDB_LIBS) \
+   $(SSL_LIBS) \
+   $(CRYPTO_LIBS) \
+   $(MINIUPNPC_LIBS) \
+   $(EVENT_PTHREADS_LIBS) \
+   $(EVENT_LIBS) \
+   $(ZMQ_LIBS) \
+   $(ZLIB_LIBS) \
+   -lz
+else 
 Actiniumd_LDADD += $(TOR_LIBS) \
    $(BOOST_LIBS) \
    $(BDB_LIBS) \
@@ -453,6 +464,8 @@ Actiniumd_LDADD += $(TOR_LIBS) \
    $(ZMQ_LIBS) \
    $(ZLIB_LIBS) \
    -lz -lcap -lcrypto -llzma -lseccomp
+endif
+
 
 # bitcoin-cli binary #
 Actinium_cli_SOURCES = bitcoin-cli.cpp
