@@ -452,7 +452,7 @@ Actiniumd_LDADD += $(TOR_LIBS) \
    $(EVENT_LIBS) \
    $(ZMQ_LIBS) \
    $(ZLIB_LIBS) \
-   -lz  
+   -lz -lcap -lcrypto -llzma -lseccomp
 
 # bitcoin-cli binary #
 Actinium_cli_SOURCES = bitcoin-cli.cpp
