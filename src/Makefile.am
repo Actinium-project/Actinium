@@ -452,7 +452,20 @@ Actiniumd_LDADD += $(TOR_LIBS) \
    $(ZMQ_LIBS) \
    $(ZLIB_LIBS) \
    -lz
-else 
+endif
+if TARGET_DARWIN
+Actiniumd_LDADD += $(TOR_LIBS) \
+   $(BOOST_LIBS) \
+   $(BDB_LIBS) \
+   $(SSL_LIBS) \
+   $(CRYPTO_LIBS) \
+   $(MINIUPNPC_LIBS) \
+   $(EVENT_PTHREADS_LIBS) \
+   $(EVENT_LIBS) \
+   $(ZMQ_LIBS) \
+   $(ZLIB_LIBS) \
+   -lz
+else
 Actiniumd_LDADD += $(TOR_LIBS) \
    $(BOOST_LIBS) \
    $(BDB_LIBS) \
