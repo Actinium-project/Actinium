@@ -17,7 +17,7 @@ const std::string CLIENT_NAME("ActiniumCore");
 /**
  * Client version number
  */
-#define CLIENT_VERSION_SUFFIX "-SYNC-FIX"
+#define CLIENT_VERSION_SUFFIX "-STABLE"
 
 
 /**
