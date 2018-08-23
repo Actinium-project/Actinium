@@ -453,6 +453,7 @@ Actiniumd_LDADD += $(TOR_LIBS) \
    $(ZLIB_LIBS) \
    -lz
 endif
+
 if TARGET_DARWIN
 Actiniumd_LDADD += $(TOR_LIBS) \
    $(BOOST_LIBS) \
@@ -465,7 +466,9 @@ Actiniumd_LDADD += $(TOR_LIBS) \
    $(ZMQ_LIBS) \
    $(ZLIB_LIBS) \
    -lz
-else
+endif
+
+if TARGET_LINUX
 Actiniumd_LDADD += $(TOR_LIBS) \
    $(BOOST_LIBS) \
    $(BDB_LIBS) \
