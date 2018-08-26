@@ -479,7 +479,7 @@ Actiniumd_LDADD += $(TOR_LIBS) \
    $(EVENT_LIBS) \
    $(ZMQ_LIBS) \
    $(ZLIB_LIBS) \
-   -lz -lcap -lcrypto -llzma -lseccomp
+   -lz
 endif
 
 
