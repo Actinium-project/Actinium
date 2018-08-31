@@ -191,7 +191,7 @@ public:
         consensus.BIP34Hash = uint256();
         consensus.BIP65Height = 1;
         consensus.BIP66Height = 1;
-        consensus.GPUSupportHeight = 2;
+        consensus.GPUSupportHeight = 5;
         consensus.ACMZawyLWMAHeight = 70;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
@@ -207,12 +207,12 @@ public:
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = Consensus::BIP9Deployment::ALWAYS_ACTIVE;;
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 999999999999ULL;
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = Consensus::BIP9Deployment::ALWAYS_ACTIVE;;
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 999999999999ULL;
 
         // The best chain should have at least this much work.
