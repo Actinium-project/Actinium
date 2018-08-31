@@ -216,9 +216,12 @@ unsigned int LwmaGetNextWorkRequired(const CBlockIndex* pindexLast, const CBlock
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
  int DiffType = 1;
- if (pindexLast->nHeight+1 < params.GPUSupportHeight)    { DiffType = 1; }
- if (pindexLast->nHeight+1 >= params.GPUSupportHeight)   { DiffType = 2; }
- if (pindexLast->nHeight+1 >= params.ACMZawyLWMAHeight)  { DiffType = 3; }
+ int height = pindexLast->nHeight+1;
+
+ if (height < params.GPUSupportHeight)    { DiffType = 1; }
+ if (height < params.ACMZawyLWMAHeight &&
+     height >= params.GPUSupportHeight)   { DiffType = 2; }
+ if (height >= params.ACMZawyLWMAHeight)  { DiffType = 3; }
 
  if (DiffType == 1) { return GetNextWorkRequired_Legacy(pindexLast, pblock, params); }
  if (DiffType == 2) { return DarkGravityWave(pindexLast, params); }
