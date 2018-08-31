@@ -1137,8 +1137,11 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
         return 0;
 
     CAmount nSubsidy = 50 * COIN;
-    // After GPUSupport HF there will be only 50 blocks with 50ACM reward
-    if (nHeight >= consensusParams.GPUSupportHeight + 50) {
+    // After GPUSupport HF at block 55,000 there will be only 50 blocks with 50ACM reward.
+    // Afterwards we will give only 40ACM per block.
+    // At block 85,000 we switch back to 50ACM.
+    if ((nHeight < consensusParams.ACMZawyLWMAHeight) &&
+        (nHeight >= consensusParams.GPUSupportHeight + 50)) {
         nSubsidy = 40 * COIN;
     }
 

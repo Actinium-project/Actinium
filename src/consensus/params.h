@@ -58,8 +58,10 @@ struct Params {
     int BIP65Height;
     /** Block height at which BIP66 becomes active */
     int BIP66Height;
-    /** Block height at which GPU support (NeoScrypt) becomes active */
+    /** Block height at which GPU support (Lyra2z) becomes active */
     int GPUSupportHeight;
+    /** Block height at which we switch to Zawy's LWMA difficulty algorithm */
+    int ACMZawyLWMAHeight;
     /**
      * Minimum blocks including miner confirmation of the total of 2016 blocks in a retargeting period,
      * (nPowTargetTimespan / nPowTargetSpacing) which is also used for BIP9 deployments.
@@ -77,6 +79,7 @@ struct Params {
     int64_t DifficultyAdjustmentInterval() const { return nPowTargetTimespan / nPowTargetSpacing; }
     uint256 nMinimumChainWork;
     uint256 defaultAssumeValid;
+    int64_t nZawyLwmaAveragingWindow;  // N
 };
 } // namespace Consensus
 

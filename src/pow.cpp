@@ -157,11 +157,59 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
         bnNew = bnPowLimit;
     }
 
-    // LogPrintf("Diff Retarget - Dark Gravity Wave v3\n");
-    // LogPrintf("Before: %08x %s\n", pindexLast->nBits, arith_uint256().SetCompact(pindexLast->nBits).ToString().c_str());
-    // LogPrintf("After:  %08x %s\n", bnNew.GetCompact(), bnNew.ToString().c_str());
-
     return bnNew.GetCompact();
+}
+
+unsigned int LwmaGetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
+{
+    // Special difficulty rule for testnet:
+    // If the new block's timestamp is more than 2 * 10 minutes
+    // then allow mining of a min-difficulty block.
+    if (params.fPowAllowMinDifficultyBlocks &&
+        pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing * 2)
+    {
+        return UintToArith256(params.powLimit).GetCompact();
+    }
+    return LwmaCalculateNextWorkRequired(pindexLast, params);
+}
+/*
+* More info on LWMA: https://github.com/zawy12/difficulty-algorithms/issues/3
+* Difficulty Watch: http://wordsgalore.com/diff/index.html 
+*/
+unsigned int LwmaCalculateNextWorkRequired(const CBlockIndex* pindexLast, const Consensus::Params& params)
+{
+    const int64_t T = params.nPowTargetSpacing;
+    // N=45 for T=600.
+    // N=60 for T=150.
+    // N=90 for T=60.
+    const int64_t N = params.nZawyLwmaAveragingWindow;
+    const int64_t k = N*(N+1)*T/2;
+    const int height = pindexLast->nHeight;
+    assert(height > N);
+
+    arith_uint256 sum_target;
+    int64_t t = 0, j = 0, solvetime;
+
+    // Loop through N most recent blocks.
+    for (int i = height - N+1; i <= height; i++) {
+        const CBlockIndex* block = pindexLast->GetAncestor(i);
+        const CBlockIndex* block_Prev = block->GetAncestor(i - 1);
+        solvetime = block->GetBlockTime() - block_Prev->GetBlockTime();
+        solvetime = std::max(-6*T, std::min(solvetime, 6*T));
+        j++;
+        t += solvetime * j;  // Weighted solvetime sum.
+        arith_uint256 target;
+        target.SetCompact(block->nBits);
+        sum_target += target / (k * N);
+    }
+    // Keep t reasonable to >= 1/10 of expected t.
+    if (t < k/10 )
+    {
+        t = k/10;
+    }
+    arith_uint256 next_target = t * sum_target;
+
+    return next_target.GetCompact();
 }
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
@@ -169,9 +217,11 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
  int DiffType = 1;
  if (pindexLast->nHeight+1 < params.GPUSupportHeight)    { DiffType = 1; }
  if (pindexLast->nHeight+1 >= params.GPUSupportHeight)   { DiffType = 2; }
+ if (pindexLast->nHeight+1 >= params.ACMZawyLWMAHeight)  { DiffType = 3; }
 
  if (DiffType == 1) { return GetNextWorkRequired_Legacy(pindexLast, pblock, params); }
  if (DiffType == 2) { return DarkGravityWave(pindexLast, params); }
+ if (DiffType == 3) { return LwmaGetNextWorkRequired(pindexLast, pblock, params); }
 
  return DarkGravityWave(pindexLast, params);
 }
