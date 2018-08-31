@@ -423,7 +423,7 @@
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>%n بلاک از تاریخچه تراکنش، پردازش شد.</numerusform></translation>
+        <translation><numerusform>%n بلاک از تاریخچه تراکنش، پردازش شد.</numerusform><numerusform>%n بلاک از تاریخچه تراکنش، پردازش شد.</numerusform></translation>
     </message>
     <message>
         <source>Error</source>

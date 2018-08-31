@@ -160,18 +160,6 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
     return bnNew.GetCompact();
 }
 
-unsigned int LwmaGetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
-{
-    // Special difficulty rule for testnet:
-    // If the new block's timestamp is more than 2 * 10 minutes
-    // then allow mining of a min-difficulty block.
-    if (params.fPowAllowMinDifficultyBlocks &&
-        pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing * 2)
-    {
-        return UintToArith256(params.powLimit).GetCompact();
-    }
-    return LwmaCalculateNextWorkRequired(pindexLast, params);
-}
 /*
 * More info on LWMA: https://github.com/zawy12/difficulty-algorithms/issues/3
 * Difficulty Watch: http://wordsgalore.com/diff/index.html 
@@ -210,6 +198,19 @@ unsigned int LwmaCalculateNextWorkRequired(const CBlockIndex* pindexLast, const 
     arith_uint256 next_target = t * sum_target;
 
     return next_target.GetCompact();
+}
+
+unsigned int LwmaGetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
+{
+    // Special difficulty rule for testnet:
+    // If the new block's timestamp is more than 2 * 10 minutes
+    // then allow mining of a min-difficulty block.
+    if (params.fPowAllowMinDifficultyBlocks &&
+        pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing * 2)
+    {
+        return UintToArith256(params.powLimit).GetCompact();
+    }
+    return LwmaCalculateNextWorkRequired(pindexLast, params);
 }
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)

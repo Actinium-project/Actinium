@@ -14,6 +14,8 @@
 #include <txdb.h>
 #include <txmempool.h>
 
+#include <memory>
+
 #include <boost/thread.hpp>
 
 extern uint256 insecure_rand_seed;
@@ -116,5 +118,8 @@ struct TestMemPoolEntryHelper
 };
 
 CBlock getBlock13b8a();
+
+// define an implicit conversion here so that uint256 may be used directly in BOOST_CHECK_*
+std::ostream& operator<<(std::ostream& os, const uint256& num);
 
 #endif

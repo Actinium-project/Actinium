@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Клик правой кнопкой для редактирования адреса или метки</translation>
+        <translation>Кликните правой кнопкой для редактирования адреса или метки</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -27,11 +27,11 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Удалить выбранный адрес из списка</translation>
+        <translation>Удалить текущий выбранный адрес из списка</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Экспортировать данные из вкладки в файл</translation>
+        <translation>Экспортировать данные текущей вкладки в файл</translation>
     </message>
     <message>
         <source>&amp;Export</source>
@@ -95,7 +95,7 @@
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Произошла ошибка при сохранении списка адресов в %1. Пожалуйста, попробуйте еще раз.</translation>
+        <translation>Произошла ошибка сохранения списка адресов в %1. Пожалуйста, повторите попытку.</translation>
     </message>
 </context>
 <context>
@@ -117,7 +117,7 @@
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Диалог ввода пароля</translation>
+        <translation>Пароль</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
@@ -136,24 +136,16 @@
         <translation>Показать пароль</translation>
     </message>
     <message>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Введите новый пароль бумажника.&lt;br/&gt;Используйте пароль, состоящий из &lt;b&gt;десяти или более случайных символов&lt;/b&gt;, или &lt;b&gt;восьми или более слов&lt;/b&gt;.</translation>
-    </message>
-    <message>
         <source>Encrypt wallet</source>
-        <translation>Зашифровать бумажник</translation>
+        <translation>Зашифровать электронный кошелёк</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Для выполнения операции требуется пароль вашего бумажника.</translation>
+        <translation>Для выполнения операции требуется пароль от вашего кошелька.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
         <translation>Разблокировать бумажник</translation>
-    </message>
-    <message>
-        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Для выполнения операции требуется пароль вашего бумажника.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -161,11 +153,11 @@
     </message>
     <message>
         <source>Change passphrase</source>
-        <translation>Сменить пароль</translation>
+        <translation>Изменить пароль</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase to the wallet.</source>
-        <translation>Введите старый и новый пароль для бумажника.</translation>
+        <translation>Введите старый и новый пароль для кошелька.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
@@ -177,7 +169,7 @@
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Вы уверены, что хотите зашифровать ваш бумажник?</translation>
+        <translation>Вы уверены, что хотите зашифровать ваш кошелёк?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -213,22 +205,14 @@
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>Расшифровка бумажника не удалась</translation>
+        <translation>Расшифровка кошелька не удалась</translation>
     </message>
-    <message>
-        <source>Wallet passphrase was successfully changed.</source>
-        <translation>Пароль бумажника успешно изменён.</translation>
-    </message>
-    <message>
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>Внимание: Caps Lock включен!</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>BanTableModel</name>
     <message>
         <source>IP/Netmask</source>
-        <translation>IP/префикс</translation>
+        <translation>IP/Маска подсети</translation>
     </message>
     <message>
         <source>Banned Until</source>
@@ -239,7 +223,7 @@
     <name>BitcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
-        <translation>&amp;Подписать сообщение...</translation>
+        <translation>Подписать &amp;сообщение...</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -254,16 +238,12 @@
         <translation>Узел</translation>
     </message>
     <message>
-        <source>Show general overview of wallet</source>
-        <translation>Показать общий обзор действий с бумажником</translation>
-    </message>
-    <message>
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакции</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>Показать историю транзакций</translation>
+        <translation>Просмотр истории транзакций</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -275,19 +255,7 @@
     </message>
     <message>
         <source>&amp;About %1</source>
-        <translation>&amp;О %1</translation>
-    </message>
-    <message>
-        <source>Show information about %1</source>
-        <translation>Показать информацию о %1</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>О &amp;Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Показать информацию о Qt</translation>
+        <translation>&amp;Около %1</translation>
     </message>
     <message>
         <source>&amp;Options...</source>
@@ -295,7 +263,7 @@
     </message>
     <message>
         <source>Modify configuration options for %1</source>
-        <translation>Изменить конфигурационные настройки для %1</translation>
+        <translation>Изменить параметры конфигурации для %1</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
@@ -531,108 +499,187 @@
         <source>Sent transaction</source>
         <translation>Исходящая транзакция</translation>
     </message>
+    </context>
+<context>
+    <name>CoinControlDialog</name>
     <message>
-        <source>Incoming transaction</source>
-        <translation>Входящая транзакция</translation>
+        <source>(no label)</source>
+        <translation>(нет метки)</translation>
+    </message>
+    </context>
+<context>
+    <name>EditAddressDialog</name>
+    </context>
+<context>
+    <name>FreespaceChecker</name>
+    </context>
+<context>
+    <name>HelpMessageDialog</name>
+    </context>
+<context>
+    <name>Intro</name>
+    </context>
+<context>
+    <name>ModalOverlay</name>
+    </context>
+<context>
+    <name>OpenURIDialog</name>
+    </context>
+<context>
+    <name>OptionsDialog</name>
+    </context>
+<context>
+    <name>OverviewPage</name>
+    </context>
+<context>
+    <name>PaymentServer</name>
+    </context>
+<context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>QObject</name>
+    </context>
+<context>
+    <name>QObject::QObject</name>
+    </context>
+<context>
+    <name>QRImageWidget</name>
+    </context>
+<context>
+    <name>RPCConsole</name>
+    </context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    </context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
     </message>
     <message>
-        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>Генерация HD-ключей &lt;b&gt;разрешена&lt;/b&gt;</translation>
+        <source>Label</source>
+        <translation>Метка</translation>
+    </message>
+    </context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>Метка</translation>
     </message>
     <message>
-        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>Генерация HD-ключей &lt;b&gt;запрещена&lt;/b&gt;</translation>
+        <source>(no label)</source>
+        <translation>(нет метки)</translation>
     </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Бумажник &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;разблокирован&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Бумажник &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;заблокирован&lt;/b&gt;</translation>
-    </message>
+    </context>
+<context>
+    <name>SendCoinsDialog</name>
     <message>
         <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
         <translation>Произошла неисправимая ошибка. Actinium не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
-    <name>CoinControlDialog</name>
+    <name>SendCoinsEntry</name>
+    </context>
+<context>
+    <name>SendConfirmationDialog</name>
+    </context>
+<context>
+    <name>ShutdownWindow</name>
+    </context>
+<context>
+    <name>SignVerifyMessageDialog</name>
+    </context>
+<context>
+    <name>SplashScreen</name>
+    </context>
+<context>
+    <name>TrafficGraphWidget</name>
+    </context>
+<context>
+    <name>TransactionDesc</name>
+    </context>
+<context>
+    <name>TransactionDescDialog</name>
+    </context>
+<context>
+    <name>TransactionTableModel</name>
     <message>
-        <source>Coin Selection</source>
-        <translation>Выбор монет</translation>
+        <source>Label</source>
+        <translation>Метка</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Количество:</translation>
+        <source>(no label)</source>
+        <translation>(нет метки)</translation>
+    </message>
+    </context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Текст, разделённый запятыми (*.csv)</translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Байт:</translation>
+        <source>Label</source>
+        <translation>Метка</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Сумма:</translation>
+        <source>Address</source>
+        <translation>Адрес</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Комиссия:</translation>
+        <source>Exporting Failed</source>
+        <translation>Экспорт не удался</translation>
+    </message>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletFrame</name>
+    </context>
+<context>
+    <name>WalletModel</name>
+    </context>
+<context>
+    <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;Экспорт</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Пыль:</translation>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Экспортировать данные текущей вкладки в файл</translation>
+    </message>
+    </context>
+<context>
+    <name>bitcoin-core</name>
+    <message>
+        <source>The wallet will avoid paying less than the minimum relay fee.</source>
+        <translation>Кошелёк постарается не платить меньше, чем минимальная комиссия передачи.</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>После комиссии:</translation>
+        <source>Transaction amounts must not be negative</source>
+        <translation>Сумма транзакции не должна быть отрицательной</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Сдача:</translation>
+        <source>Insufficient funds</source>
+        <translation>Недостаточно средств</translation>
     </message>
     <message>
-        <source>(un)select all</source>
-        <translation>Отменить выбор всего</translation>
+        <source>Loading wallet...</source>
+        <translation>Загрузка электронного кошелька...</translation>
     </message>
     <message>
-        <source>Tree mode</source>
-        <translation>Режим дерева</translation>
+        <source>Cannot downgrade wallet</source>
+        <translation>Не удаётся понизить версию электронного кошелька</translation>
     </message>
     <message>
-        <source>List mode</source>
-        <translation>Режим списка</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Сумма</translation>
-    </message>
-    <message>
-        <source>Received with label</source>
-        <translation>Получено с пометкой</translation>
-    </message>
-    <message>
-        <source>Received with address</source>
-        <translation>Получено с адреса</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Дата</translation>
-    </message>
-    <message>
-        <source>Confirmations</source>
-        <translation>Подтверждений</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Подтверждено</translation>
-    </message>
-    <message>
-        <source>Copy address</source>
-        <translation>Копировать адрес</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Копировать метку</translation>
+        <source>Done loading</source>
+        <translation>Загрузка завершена</translation>
     </message>
     <message>
         <source>Copy amount</source>
