@@ -187,10 +187,10 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 840000;
-        consensus.BIP34Height = 1;
+        consensus.BIP34Height = 1000;
         consensus.BIP34Hash = uint256();
-        consensus.BIP65Height = 1;
-        consensus.BIP66Height = 1;
+        consensus.BIP65Height = 1000;
+        consensus.BIP66Height = 1000;
         consensus.GPUSupportHeight = 5;
         consensus.ACMZawyLWMAHeight = 70;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
