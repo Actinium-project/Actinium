@@ -555,7 +555,7 @@ std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/actinium-project/actinium>";
     const std::string URL_WEBSITE = "<https://actinium.org>";
-    const std::string URL_DISCORD = "<https://discord.gg/5xRppjz>";
+    const std::string URL_DISCORD = "<https://discord.actinium.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") +
       _("\n\nThis is experimental software.  Use at your own risk.\n\n") +
