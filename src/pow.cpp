@@ -210,6 +210,11 @@ unsigned int LwmaGetNextWorkRequired(const CBlockIndex* pindexLast, const CBlock
     {
         return UintToArith256(params.powLimit).GetCompact();
     }
+    // Set min diff when not enough blocks
+    if (pindexLast->nHeight <= params.nZawyLwmaAveragingWindow)
+    {
+        return UintToArith256(params.powLimit).GetCompact();
+    }
     return LwmaCalculateNextWorkRequired(pindexLast, params);
 }
 
