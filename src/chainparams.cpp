@@ -192,7 +192,7 @@ public:
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.GPUSupportHeight = 5;
-        consensus.ACMZawyLWMAHeight = 70;
+        consensus.ACMZawyLWMAHeight = 200;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         consensus.nPowTargetSpacing = 2.5 * 60;
