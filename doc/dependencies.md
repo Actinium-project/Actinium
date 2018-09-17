@@ -27,5 +27,5 @@ These are the dependencies currently used by Actinium Core. You can find instruc
 | Qt | [5.7.1](https://download.qt.io/official_releases/qt/) | 4.7+ | No |  |  |
 | XCB |  |  |  |  | [Yes](https://github.com/bitcoin/bitcoin/blob/master/depends/packages/qt.mk#L94) (Linux only) |
 | xkbcommon |  |  |  |  | [Yes](https://github.com/bitcoin/bitcoin/blob/master/depends/packages/qt.mk#L93) (Linux only) |
-| ZeroMQ | [4.2.2](https://github.com/zeromq/libzmq/releases) |  | No |  |  |
+| ZeroMQ | [4.2.5](https://github.com/zeromq/libzmq/releases) | 4.0.0 | No |  |  |
 | zlib | [1.2.11](http://zlib.net/) |  |  |  | No |
