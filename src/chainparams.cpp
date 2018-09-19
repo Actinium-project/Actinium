@@ -79,7 +79,7 @@ public:
         consensus.BIP34Height = 1000;
         consensus.BIP34Hash = uint256S("f1d584601e77187e22daa8d551d8307295474a49a54055a0e3feb182223da7ee");
         consensus.BIP65Height = 1000;
-        consensus.BIP66Height = 1000; 
+        consensus.BIP66Height = 1000;
         consensus.GPUSupportHeight = 55000;
         consensus.ACMZawyLWMAHeight = 85000;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -105,7 +105,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 999999999999ULL;
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000a6aeb8fe16b116f");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000a7e8e4c4a8652ec");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x3f6243a04732bd9bc8b2a5af87dfe528d3fcfa457d1078bb44a4b9320f98b363"); //1300
@@ -166,7 +166,8 @@ public:
                 {42384, uint256S("0x26f08f68ff269ae5f98fdb5e484bd9cefabdfd8f01291858909c0f57b1b2ec27")},
                 {43545, uint256S("0xb4e80c89a411a67b3598891cbe132f6518c5c7a7a47971ba6e35939644a403f3")},
                 {43700, uint256S("0x11cf0da27f67c1cb0d81b28d238dd28ee1c06d6e5e7c7a96cc1727b9d634d814")},
-                {79769, uint256S("0x45c689944af98e91071ec5429778b8716b802f9c6632704d29abe34b2f8cc0ae")}
+                {79769, uint256S("0x45c689944af98e91071ec5429778b8716b802f9c6632704d29abe34b2f8cc0ae")},
+                {90690, uint256S("0xb9270df40c471556893a5a6538c20119f03ddf55ec394dd322e4a204be22d7fb")}
             }};
 
         // Data as of block 3f6243a04732bd9bc8b2a5af87dfe528d3fcfa457d1078bb44a4b9320f98b363 (height 1300).
