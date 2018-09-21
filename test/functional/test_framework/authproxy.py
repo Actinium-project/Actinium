@@ -45,7 +45,7 @@ import urllib.parse
 HTTP_TIMEOUT = 30
 USER_AGENT = "AuthServiceProxy/0.1"
 
-log = logging.getLogger("BitcoinRPC")
+log = logging.getLogger("ActiniumRPC")
 
 class JSONRPCException(Exception):
     def __init__(self, rpc_error):
