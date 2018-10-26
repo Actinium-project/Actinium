@@ -4680,9 +4680,6 @@ bool DumpMempool(void)
 
     std::map<uint256, CAmount> mapDeltas;
     std::vector<TxMempoolInfo> vinfo;
-
-    static Mutex dump_mutex;
-    LOCK(dump_mutex);
     
     {
         LOCK(mempool.cs);
