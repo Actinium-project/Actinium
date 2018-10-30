@@ -802,8 +802,29 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 margin-left:3px;
 }
 
+QLabel#unitDisplayControl {
+color: white;
+}
+
+QLabel#walletEncryption {
+color:white;
+}
+
+QLabel#walletHDStatus {
+color: white;
+}
+
+QLabel#blockHeight {
+color: white;
+}
+
+QFrame#frameBlocks {
+    color: white;
+}
+
 QWidget .QFrame#frame .QLabel#labelSpendable { /* Spendable Header */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
+color: black;
 font-size:12px;
 margin-left:18px;
 }
@@ -829,16 +850,14 @@ min-height:35px;
 QWidget .QFrame#frame .QLabel#labelBalance { /* Available Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
-color: white;
 margin-left:0px;
-    font-weight: bold;
+font-weight: bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchAvailable { /* Watch-only Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 margin-left:16px;
-color: white;
 }
 
 QWidget .QFrame#frame .QLabel#labelPendingText { /* Pending Balance Label */
@@ -846,6 +865,7 @@ qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:12px;
 background-color:#F8F6F6;
+color: black;
 margin-right:5px;
 padding-right:5px;
 }
@@ -868,7 +888,8 @@ QWidget .QFrame#frame .QLabel#labelImmatureText { /* Immature Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:12px;
-background-color:#F8F6F6;
+background-color: white;
+color: black;
 margin-right:5px;
 padding-right:5px;
 }
@@ -891,7 +912,8 @@ QWidget .QFrame#frame .QLabel#labelTotalText { /* Total Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:12px;
-background-color:#F8F6F6;
+background-color:white;
+color: black;
 margin-right:5px;
 padding-right:5px;
 }
@@ -1120,16 +1142,16 @@ outline: 0;
 }
 
 QStackedWidget#SendCoinsEntry .QToolButton#addressBookButton { /* Address Book Button */
+background-color: wheat;
 padding-left:10px;
 }
 
-QStackedWidget#SendCoinsEntry .QToolButton#addressBookButton {
-}
-
 QStackedWidget#SendCoinsEntry .QToolButton#pasteButton {
+    background-color: wheat;
 }
 
 QStackedWidget#SendCoinsEntry .QToolButton#deleteButton {
+    background-color: wheat;
 }
 
 QStackedWidget#SendCoinsEntry .QLineEdit#addAsLabel { /* Pay To Input Field */

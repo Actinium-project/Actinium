@@ -303,6 +303,8 @@ RES_ICONS = \
   qt/res/icons/fontsmaller.png \
   qt/res/icons/hd_disabled.png \
   qt/res/icons/hd_enabled.png \
+  qt/res/icons/hd_disabled_inverted.png \
+  qt/res/icons/hd_enabled_inverted.png \
   qt/res/icons/onion_enabled.png \
   qt/res/icons/onion_disabled.png \
   qt/res/icons/history.png \
@@ -319,6 +321,7 @@ RES_ICONS = \
   qt/res/icons/remove.png \
   qt/res/icons/send.png \
   qt/res/icons/synced.png \
+  qt/res/icons/synced_inverted.png \
   qt/res/icons/transaction0.png \
   qt/res/icons/transaction2.png \
   qt/res/icons/transaction_abandoned.png \
@@ -365,6 +368,8 @@ RES_ICONS = \
   qt/res/icons/default/fontsmaller.png \
   qt/res/icons/default/hd_disabled.png \
   qt/res/icons/default/hd_enabled.png \
+  qt/res/icons/default/hd_disabled_inverted.png \
+  qt/res/icons/default/hd_enabled_inverted.png \
   qt/res/icons/default/onion_enabled.png \
   qt/res/icons/default/onion_disabled.png \
   qt/res/icons/default/history.png \
@@ -381,6 +386,7 @@ RES_ICONS = \
   qt/res/icons/default/remove.png \
   qt/res/icons/default/send.png \
   qt/res/icons/default/synced.png \
+  qt/res/icons/default/synced_inverted.png \
   qt/res/icons/default/transaction0.png \
   qt/res/icons/default/transaction2.png \
   qt/res/icons/default/transaction_abandoned.png \
