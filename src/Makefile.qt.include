@@ -465,8 +465,6 @@ RES_IMAGES = \
   qt/res/images/default/drkblue_leftArrow_small.png \
   qt/res/images/default/drkblue_qtreeview_selected.png \
   qt/res/images/default/drkblue_rightArrow_small.png \
-  qt/res/images/default/splash.png \
-  qt/res/images/default/splash_testnet.png \
   qt/res/images/default/unchecked.png \
   qt/res/images/default/drkblue_upArrow_small.png \
   qt/res/images/default/drkblue_walletFrame_bg.png
