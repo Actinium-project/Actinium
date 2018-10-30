@@ -313,6 +313,8 @@ RES_ICONS = \
   qt/res/icons/Actinium_splash.png \
   qt/res/icons/lock_closed.png \
   qt/res/icons/lock_open.png \
+  qt/res/icons/lock_closed_inverted.png \
+  qt/res/icons/lock_open_inverted.png \
   qt/res/icons/network_disabled.png \
   qt/res/icons/open.png \
   qt/res/icons/overview.png \
@@ -378,6 +380,8 @@ RES_ICONS = \
   qt/res/icons/default/Actinium_splash.png \
   qt/res/icons/default/lock_closed.png \
   qt/res/icons/default/lock_open.png \
+  qt/res/icons/default/lock_closed_inverted.png \
+  qt/res/icons/default/lock_open_inverted.png \
   qt/res/icons/default/network_disabled.png \
   qt/res/icons/default/open.png \
   qt/res/icons/default/overview.png \
