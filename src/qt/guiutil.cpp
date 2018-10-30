@@ -881,7 +881,7 @@ QString loadStyleSheet()
     QSettings settings;
     QString cssName;
     QString theme = QString::fromStdString(gArgs.GetArg("-theme", "default"));
-    // QString theme = settings.value("theme", "").toString();
+    settings.setValue("theme", theme);
 
     if(!theme.isEmpty()){
         cssName = QString(":/css/") + theme;
