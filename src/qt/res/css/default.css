@@ -905,8 +905,8 @@ font-size:12px;
 margin-left:16px;
 }
 
-QWidget .QFrame#frame_3 { /* Actinium Logo Widget */
-    min-width:410px;
+QWidget .QFrame#frame_2 { /* Actinium Logo Widget */
+    min-width:295px;
     margin-right:20px;
     margin-left:0;
     margin-top:15px;
@@ -920,7 +920,7 @@ QWidget .QFrame#frame_2 .QLabel#label_4 { /* Recent Transactions Label */
 min-width:180px;
 color: black;
 margin-left:67px;
-margin-top:33px;
+margin-top:83px;
 margin-right:5px;
 padding-right:5px;
 font-weight:normal;
