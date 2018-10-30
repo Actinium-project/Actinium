@@ -738,10 +738,12 @@ background:#ff0000;
 /* Command Line Options Dialog */
 QDialog#HelpMessageDialog {
 background-color:#F8F6F6;
+color: black;
 }
 
 QDialog#HelpMessageDialog QScrollArea * {
 background-color:#ffffff;
+color: black;
 }
 
 QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScrollBar:horizontal {
@@ -751,6 +753,7 @@ border:0;
 /* About Actinium Dialog */
 QDialog#AboutDialog {
 background-color:#F8F6F6;
+color: black;
 }
 
 QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Actinium Contents */
