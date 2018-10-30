@@ -179,6 +179,12 @@ namespace GUIUtil
     bool GetStartOnSystemStartup();
     bool SetStartOnSystemStartup(bool fAutoStart);
 
+    /** Load theme stylesheet */
+    QString loadStyleSheet();
+
+    /** Get current theme name */
+    QString getThemeName();
+
     /* Convert QString to OS specific boost path through UTF-8 */
     fs::path qstringToBoostPath(const QString &path);
 
