@@ -332,6 +332,10 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
+  qt/res/icons/tx_inout_yellow.png \
+  qt/res/icons/tx_input_yellow.png \
+  qt/res/icons/tx_output_yellow.png \
+  qt/res/icons/tx_mined_yellow.png \
   qt/res/icons/warning.png \
   qt/res/icons/warning_inverted.png \
   qt/res/icons/warning_yellow.png \
@@ -401,6 +405,10 @@ RES_ICONS = \
   qt/res/icons/default/tx_input.png \
   qt/res/icons/default/tx_output.png \
   qt/res/icons/default/tx_mined.png \
+  qt/res/icons/default/tx_inout_yellow.png \
+  qt/res/icons/default/tx_input_yellow.png \
+  qt/res/icons/default/tx_output_yellow.png \
+  qt/res/icons/default/tx_mined_yellow.png \
   qt/res/icons/default/warning.png \
   qt/res/icons/default/warning_inverted.png \
   qt/res/icons/default/verify.png \
