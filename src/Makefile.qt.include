@@ -333,6 +333,7 @@ RES_ICONS = \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
   qt/res/icons/warning.png \
+  qt/res/icons/warning_inverted.png \
   qt/res/icons/verify.png \
   qt/res/icons/wallet-log.png \
   qt/res/icons/default/add.png \
@@ -400,6 +401,7 @@ RES_ICONS = \
   qt/res/icons/default/tx_output.png \
   qt/res/icons/default/tx_mined.png \
   qt/res/icons/default/warning.png \
+  qt/res/icons/default/warning_inverted.png \
   qt/res/icons/default/verify.png \
   qt/res/icons/default/wallet-log.png
 

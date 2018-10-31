@@ -32,7 +32,7 @@
    <item>
     <widget class="QWidget" name="bgWidget" native="true">
      <property name="styleSheet">
-      <string notr="true">#bgWidget { background: rgba(0,0,0,220); }</string>
+     <string notr="true"/>
      </property>
      <layout class="QVBoxLayout" name="verticalLayoutMain" stretch="1">
       <property name="leftMargin">
@@ -50,9 +50,7 @@
       <item>
        <widget class="QWidget" name="contentWidget" native="true">
         <property name="styleSheet">
-         <string notr="true">#contentWidget { background: rgba(255,255,255,240); border-radius: 6px; }
-
-QLabel { color: rgb(40,40,40);  }</string>
+        <string notr="true"/>
         </property>
         <layout class="QVBoxLayout" name="verticalLayoutSub" stretch="1,0,0,0">
          <property name="spacing">
