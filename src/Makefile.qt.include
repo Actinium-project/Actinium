@@ -334,6 +334,7 @@ RES_ICONS = \
   qt/res/icons/tx_mined.png \
   qt/res/icons/warning.png \
   qt/res/icons/warning_inverted.png \
+  qt/res/icons/warning_yellow.png \
   qt/res/icons/verify.png \
   qt/res/icons/wallet-log.png \
   qt/res/icons/default/add.png \
