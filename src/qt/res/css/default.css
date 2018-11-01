@@ -641,10 +641,14 @@ QDialog#AskPassphraseDialog {
 background-color:#F8F6F6;
 }
 
-QDialog#AskPassphraseDialog QLabel#passLabel1, QDialog#AskPassphraseDialog QLabel#passLabel2, QDialog#AskPassphraseDialog QLabel#passLabel3 {
+QDialog#AskPassphraseDialog QLabel#passLabel1, QDialog#AskPassphraseDialog QLabel#passLabel2,
+QDialog#AskPassphraseDialog QLabel#passLabel3, QDialog#AskPassphraseDialog QLabel#warningLabel,
+QDialog#AskPassphraseDialog QCheckBox#toggleShowPasswordButton, QDialog#AskPassphraseDialog QLabel#capsLabel,
+QDialog#AskPassphraseDialog QLabel#passLabel2 {
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:170px;
 min-height:33px; /* base width of 25px for QLineEdit, plus padding and border */
+color: black;
 }
 
 /* Options Dialog */
@@ -652,43 +656,50 @@ QDialog#OptionsDialog {
 background-color:#F8F6F6;
 }
 
-QDialog#OptionsDialog QValueComboBox, QDialog#OptionsDialog QSpinBox {
+QDialog#OptionsDialog QValueComboBox, QDialog#OptionsDialog QSpinBox, QDialog#OptionsDialog QLabel {
 margin-top:5px;
 margin-bottom:5px;
+color: black;
 }
 
-QDialog#OptionsDialog QValidatedLineEdit, QDialog#OptionsDialog QValidatedLineEdit:disabled, QDialog#OptionsDialog QLineEdit, QDialog#OptionsDialog QLineEdit:disabled {
+QDialog#OptionsDialog QValidatedLineEdit, QDialog#OptionsDialog QValidatedLineEdit:disabled,
+QDialog#OptionsDialog QLineEdit, QDialog#OptionsDialog QLineEdit:disabled {
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-height:20px;
 margin-top:0px;
 margin-bottom:0px;
 padding-top:1px;
 padding-bottom:1px;
+color: black;
 }
 
 QDialog#OptionsDialog > QLabel {
 qproperty-alignment: 'AlignVCenter';
 min-height:20px;
+color: black;
 }
 
 QDialog#OptionsDialog QWidget#tabDisplay QValueComboBox {
 margin-top:0px;
 margin-bottom:0px;
+color: black;
 }
 
 QDialog#OptionsDialog QLabel#label_3 { /* Translations Missing? Label */
 qproperty-alignment: 'AlignVCenter | AlignCenter';
 color:#818181;
 padding-bottom:8px;
+color: black;
 }
 
 QDialog#OptionsDialog QCheckBox {
 min-height:20px;
+color: black;
 }
 
 QDialog#OptionsDialog QCheckBox#displayAddresses {
 min-height:33px;
-
+color: black;
 }
 
 /* TOOLS MENU */
