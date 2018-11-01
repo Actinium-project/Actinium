@@ -24,7 +24,7 @@ static const char* pszBase58 = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnop
 bool DecodeBase58(const char* psz, std::vector<unsigned char>& vch)
 {
     // Skip leading spaces.
-    while (*psz && isspace(*psz))
+    while (*psz && IsSpace(*psz))
         psz++;
     // Skip and count leading '1's.
     int zeroes = 0;
@@ -37,7 +37,7 @@ bool DecodeBase58(const char* psz, std::vector<unsigned char>& vch)
     int size = strlen(psz) * 733 /1000 + 1; // log(58) / log(256), rounded up.
     std::vector<unsigned char> b256(size);
     // Process the characters.
-    while (*psz && !isspace(*psz)) {
+    while (*psz && !IsSpace(*psz)) {
         // Decode base58 character
         const char* ch = strchr(pszBase58, *psz);
         if (ch == nullptr)
@@ -55,7 +55,7 @@ bool DecodeBase58(const char* psz, std::vector<unsigned char>& vch)
         psz++;
     }
     // Skip trailing spaces.
-    while (isspace(*psz))
+    while (IsSpace(*psz))
         psz++;
     if (*psz != 0)
         return false;
