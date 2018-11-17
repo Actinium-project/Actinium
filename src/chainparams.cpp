@@ -131,6 +131,8 @@ public:
 
         vSeeds.emplace_back("seeder1.shit.supply");
         vSeeds.emplace_back("seeder2.shit.supply");
+        vSeeds.emplace_back("seeder3.shit.supply");
+        vSeeds.emplace_back("seeder4.shit.supply");
 
         base58Prefixes[PUBKEY_ADDRESS]  = std::vector<unsigned char>(1,53);  // N
         base58Prefixes[SCRIPT_ADDRESS]  = std::vector<unsigned char>(1,5);   // 3
