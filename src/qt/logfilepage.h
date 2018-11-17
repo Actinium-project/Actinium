@@ -74,9 +74,9 @@ private:
 
 private Q_SLOTS:
     void showContextMenu(const QPoint &);
-    void on_copyEntry_selected();
-    void on_webSearch_selected();
+    void onCopyEntrySelected();
+    void onWebSearchSelected();
     void on_cbxSearchEngine_currentIndexChanged(int index);
-    void on_btnResetLogger_clicked();
+    void onBtnResetLoggerClicked();
 };
 #endif // LogfilePage_H

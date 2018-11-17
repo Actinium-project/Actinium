@@ -37,8 +37,8 @@ LogfilePage::LogfilePage(QWidget *parent) :
     contextMenu->addAction(copyEntryAction);
     contextMenu->addAction(webSearchAction);
     connect(ui->tblLogs, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(showContextMenu(const QPoint&)));
-    connect(copyEntryAction, SIGNAL(triggered()), this, SLOT(on_copyEntry_selected()));
-    connect(webSearchAction, SIGNAL(triggered()), this, SLOT(on_webSearch_selected()));
+    connect(copyEntryAction, SIGNAL(triggered()), this, SLOT(onCopyEntrySelected()));
+    connect(webSearchAction, SIGNAL(triggered()), this, SLOT(onWebSearchSelected()));
 
 
     timer = new QTimer(this);
@@ -128,7 +128,7 @@ void LogfilePage::updateLogTable()
     }
 }
 
-void LogfilePage::on_copyEntry_selected()
+void LogfilePage::onCopyEntrySelected()
 {
     LOCK(cs_loglist);
     QItemSelectionModel* selectionModel = ui->tblLogs->selectionModel();
@@ -143,7 +143,7 @@ void LogfilePage::on_copyEntry_selected()
     clipboard->setText(message);
 }
 
-void LogfilePage::on_webSearch_selected()
+void LogfilePage::onWebSearchSelected()
 {
     LOCK(cs_loglist);
     QItemSelectionModel* selectionModel = ui->tblLogs->selectionModel();
@@ -168,7 +168,7 @@ void LogfilePage::on_cbxSearchEngine_currentIndexChanged(int index)
     selectedQuery = searchEngines[ui->cbxSearchEngine->currentText()];
 }
 
-void LogfilePage::on_btnResetLogger_clicked()
+void LogfilePage::onBtnResetLoggerClicked()
 {
     qiLastPos = 0;
 }
