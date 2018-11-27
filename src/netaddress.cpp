@@ -17,7 +17,6 @@ static const unsigned char g_internal_prefix[] = {0xFD, 0xB9, 0x44, 0x21, 0x8B, 
 void CNetAddr::Init()
 {
     memset(ip, 0, sizeof(ip));
-    scopeId = 0;
 }
 
 void CNetAddr::SetIP(const CNetAddr& ipIn)
