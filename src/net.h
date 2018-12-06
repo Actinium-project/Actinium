@@ -87,6 +87,9 @@ static const size_t DEFAULT_MAXSENDBUFFER    = 1 * 1000;
 // NOTE: When adjusting this, update rpcnet:setban's help ("24h")
 static const unsigned int DEFAULT_MISBEHAVING_BANTIME = 60 * 60 * 24;  // Default 24-hour ban
 
+/** -peertimeout default */
+static const int64_t DEFAULT_PEER_CONNECT_TIMEOUT = 60;
+
 typedef int64_t NodeId;
 
 struct AddedNodeInfo
@@ -139,6 +142,7 @@ public:
         unsigned int nReceiveFloodSize = 0;
         uint64_t nMaxOutboundTimeframe = 0;
         uint64_t nMaxOutboundLimit = 0;
+        int64_t m_peer_connect_timeout = DEFAULT_PEER_CONNECT_TIMEOUT;
         std::vector<std::string> vSeedNodes;
         std::vector<CSubNet> vWhitelistedRange;
         std::vector<CService> vBinds, vWhiteBinds;
@@ -159,6 +163,7 @@ public:
         m_msgproc = connOptions.m_msgproc;
         nSendBufferMaxSize = connOptions.nSendBufferMaxSize;
         nReceiveFloodSize = connOptions.nReceiveFloodSize;
+        m_peer_connect_timeout = connOptions.m_peer_connect_timeout;
         {
             LOCK(cs_totalBytesSent);
             nMaxOutboundTimeframe = connOptions.nMaxOutboundTimeframe;
@@ -380,6 +385,9 @@ private:
     uint64_t nMaxOutboundCycleStartTime GUARDED_BY(cs_totalBytesSent);
     uint64_t nMaxOutboundLimit GUARDED_BY(cs_totalBytesSent);
     uint64_t nMaxOutboundTimeframe GUARDED_BY(cs_totalBytesSent);
+
+    // P2P timeout in seconds
+    int64_t m_peer_connect_timeout;
 
     // Whitelisted ranges. Any node connecting from these is automatically
     // whitelisted (as well as those connecting to whitelisted binds).
