@@ -345,7 +345,7 @@ get_next_token(memarea_t *area,
     goto check_object;
 
   obstart = *s; /* Set obstart to start of object spec */
-  if (*s+16 >= eol || memchr(*s+11,'\0',eol-*s-16) || /* no short lines, */
+  if (eol - *s <= 16 || memchr(*s+11,'\0',eol-*s-16) || /* no short lines, */
       strcmp_len(eol-5, "-----", 5) ||           /* nuls or invalid endings */
       (eol-*s) > MAX_UNPARSED_OBJECT_SIZE) {     /* name too long */
     RET_ERR("Malformed object: bad begin line");
@@ -426,7 +426,7 @@ find_by_keyword_(smartlist_t *s, directory_keyword keyword,
  * NULL if no such keyword is found.
  */
 directory_token_t *
-find_opt_by_keyword(smartlist_t *s, directory_keyword keyword)
+find_opt_by_keyword(const smartlist_t *s, directory_keyword keyword)
 {
   SMARTLIST_FOREACH(s, directory_token_t *, t, if (t->tp == keyword) return t);
   return NULL;
@@ -448,4 +448,3 @@ find_all_by_keyword(const smartlist_t *s, directory_keyword k)
                     });
   return out;
 }
-

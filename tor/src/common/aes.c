@@ -16,8 +16,9 @@
   #include <ws2tcpip.h>
 #endif
 
+#include "compat_openssl.h"
 #include <openssl/opensslv.h>
-#include "crypto.h"
+#include "crypto_openssl_mgt.h"
 
 #if OPENSSL_VERSION_NUMBER < OPENSSL_V_SERIES(1,0,0)
 #error "We require OpenSSL >= 1.0.0"
@@ -40,6 +41,7 @@ ENABLE_GCC_WARNING(redundant-decls)
 #include "util.h"
 #include "torlog.h"
 #include "di_ops.h"
+#include "crypto_util.h"
 
 #ifdef ANDROID
 /* Android's OpenSSL seems to have removed all of its Engine support. */
@@ -99,23 +101,27 @@ aes_cnt_cipher_t *
 aes_new_cipher(const uint8_t *key, const uint8_t *iv, int key_bits)
 {
   EVP_CIPHER_CTX *cipher = EVP_CIPHER_CTX_new();
-  const EVP_CIPHER *c;
+  const EVP_CIPHER *c = NULL;
   switch (key_bits) {
     case 128: c = EVP_aes_128_ctr(); break;
     case 192: c = EVP_aes_192_ctr(); break;
     case 256: c = EVP_aes_256_ctr(); break;
-    default: tor_assert(0); // LCOV_EXCL_LINE
+    default: tor_assert_unreached(); // LCOV_EXCL_LINE
   }
   EVP_EncryptInit(cipher, c, key, iv);
   return (aes_cnt_cipher_t *) cipher;
 }
 void
-aes_cipher_free(aes_cnt_cipher_t *cipher_)
+aes_cipher_free_(aes_cnt_cipher_t *cipher_)
 {
   if (!cipher_)
     return;
   EVP_CIPHER_CTX *cipher = (EVP_CIPHER_CTX *) cipher_;
+#ifdef OPENSSL_1_1_API
+  EVP_CIPHER_CTX_reset(cipher);
+#else
   EVP_CIPHER_CTX_cleanup(cipher);
+#endif
   EVP_CIPHER_CTX_free(cipher);
 }
 void
@@ -254,7 +260,7 @@ evaluate_ctr_for_aes(void)
     /* LCOV_EXCL_START */
     log_err(LD_CRYPTO, "This OpenSSL has a buggy version of counter mode; "
                   "quitting tor.");
-    exit(1);
+    exit(1); // exit ok: openssl is broken.
     /* LCOV_EXCL_STOP */
   }
   return 0;
@@ -324,7 +330,7 @@ aes_set_key(aes_cnt_cipher_t *cipher, const uint8_t *key, int key_bits)
 /** Release storage held by <b>cipher</b>
  */
 void
-aes_cipher_free(aes_cnt_cipher_t *cipher)
+aes_cipher_free_(aes_cnt_cipher_t *cipher)
 {
   if (!cipher)
     return;
@@ -402,4 +408,3 @@ aes_set_iv(aes_cnt_cipher_t *cipher, const uint8_t *iv)
 }
 
 #endif /* defined(USE_EVP_AES_CTR) */
-

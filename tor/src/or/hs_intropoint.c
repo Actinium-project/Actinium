@@ -12,7 +12,6 @@
 #include "config.h"
 #include "circuitlist.h"
 #include "circuituse.h"
-#include "config.h"
 #include "relay.h"
 #include "rendmid.h"
 #include "rephist.h"
@@ -59,7 +58,7 @@ get_auth_key_from_cell(ed25519_public_key_t *auth_key_out,
   default:
     /* Getting here is really bad as it means we got a unknown cell type from
      * this file where every call has an hardcoded value. */
-    tor_assert(0); /* LCOV_EXCL_LINE */
+    tor_assert_unreached(); /* LCOV_EXCL_LINE */
   }
   tor_assert(key_array);
   tor_assert(auth_key_len == sizeof(auth_key_out->pubkey));
@@ -424,7 +423,7 @@ validate_introduce1_parsed_cell(const trn_cell_introduce1_t *cell)
 
 /* We just received a non legacy INTRODUCE1 cell on <b>client_circ</b> with
  * the payload in <b>request</b> of size <b>request_len</b>. Return 0 if
- * everything went well, or -1 if an error occured. This function is in charge
+ * everything went well, or -1 if an error occurred. This function is in charge
  * of sending back an INTRODUCE_ACK cell and will close client_circ on error.
  */
 STATIC int
@@ -610,4 +609,3 @@ hs_intropoint_clear(hs_intropoint_t *ip)
   smartlist_free(ip->link_specifiers);
   memset(ip, 0, sizeof(hs_intropoint_t));
 }
-

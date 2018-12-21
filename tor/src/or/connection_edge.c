@@ -70,6 +70,7 @@
 #include "connection_edge.h"
 #include "connection_or.h"
 #include "control.h"
+#include "crypto_util.h"
 #include "dns.h"
 #include "dnsserv.h"
 #include "directory.h"
@@ -339,6 +340,10 @@ relay_send_end_cell_from_edge(streamid_t stream_id, circuit_t *circ,
 
   payload[0] = (char) reason;
 
+  /* Note: we have to use relay_send_command_from_edge here, not
+   * connection_edge_end or connection_edge_send_command, since those require
+   * that we have a stream connected to a circuit, and we don't connect to a
+   * circuit until we have a pending/successful resolve. */
   return relay_send_command_from_edge(stream_id, circ, RELAY_COMMAND_END,
                                       payload, 1, cpath_layer);
 }
@@ -425,6 +430,12 @@ connection_edge_end(edge_connection_t *conn, uint8_t reason)
   if (circ && !circ->marked_for_close) {
     log_debug(LD_EDGE,"Sending end on conn (fd "TOR_SOCKET_T_FORMAT").",
               conn->base_.s);
+
+    if (CIRCUIT_IS_ORIGIN(circ)) {
+      origin_circuit_t *origin_circ = TO_ORIGIN_CIRCUIT(circ);
+      connection_half_edge_add(conn, origin_circ);
+    }
+
     connection_edge_send_command(conn, RELAY_COMMAND_END,
                                  payload, payload_len);
     /* We'll log warn if the connection was an hidden service and couldn't be
@@ -439,6 +450,236 @@ connection_edge_end(edge_connection_t *conn, uint8_t reason)
   conn->edge_has_sent_end = 1;
   conn->end_reason = control_reason;
   return 0;
+}
+
+/**
+ * Helper function for bsearch.
+ *
+ * As per smartlist_bsearch, return < 0 if key preceeds member,
+ * > 0 if member preceeds key, and 0 if they are equal.
+ *
+ * This is equivalent to subtraction of the values of key - member
+ * (why does no one ever say that explicitly?).
+ */
+static int
+connection_half_edge_compare_bsearch(const void *key, const void **member)
+{
+  const half_edge_t *e2;
+  tor_assert(key);
+  tor_assert(member && *(half_edge_t**)member);
+  e2 = *(const half_edge_t **)member;
+
+  return *(const streamid_t*)key - e2->stream_id;
+}
+
+/** Total number of half_edge_t objects allocated */
+static size_t n_half_conns_allocated = 0;
+
+/**
+ * Add a half-closed connection to the list, to watch for activity.
+ *
+ * These connections are removed from the list upon receiving an end
+ * cell.
+ */
+STATIC void
+connection_half_edge_add(const edge_connection_t *conn,
+                         origin_circuit_t *circ)
+{
+  half_edge_t *half_conn = NULL;
+  int insert_at = 0;
+  int ignored;
+
+  /* Double-check for re-insertion. This should not happen,
+   * but this check is cheap compared to the sort anyway */
+  if (connection_half_edge_find_stream_id(circ->half_streams,
+                                          conn->stream_id)) {
+    log_warn(LD_BUG, "Duplicate stream close for stream %d on circuit %d",
+             conn->stream_id, circ->global_identifier);
+    return;
+  }
+
+  half_conn = tor_malloc_zero(sizeof(half_edge_t));
+  ++n_half_conns_allocated;
+
+  if (!circ->half_streams) {
+    circ->half_streams = smartlist_new();
+  }
+
+  half_conn->stream_id = conn->stream_id;
+
+  // How many sendme's should I expect?
+  half_conn->sendmes_pending =
+   (STREAMWINDOW_START-conn->package_window)/STREAMWINDOW_INCREMENT;
+
+   // Is there a connected cell pending?
+  half_conn->connected_pending = conn->base_.state ==
+      AP_CONN_STATE_CONNECT_WAIT;
+
+  /* Data should only arrive if we're not waiting on a resolved cell.
+   * It can arrive after waiting on connected, because of optimistic
+   * data. */
+  if (conn->base_.state != AP_CONN_STATE_RESOLVE_WAIT) {
+    // How many more data cells can arrive on this id?
+    half_conn->data_pending = conn->deliver_window;
+  }
+
+  insert_at = smartlist_bsearch_idx(circ->half_streams, &half_conn->stream_id,
+                                    connection_half_edge_compare_bsearch,
+                                    &ignored);
+  smartlist_insert(circ->half_streams, insert_at, half_conn);
+}
+
+/** Release space held by <b>he</b> */
+void
+half_edge_free_(half_edge_t *he)
+{
+  if (!he)
+    return;
+  --n_half_conns_allocated;
+  tor_free(he);
+}
+
+/** Return the number of bytes devoted to storing info on half-open streams. */
+size_t
+half_streams_get_total_allocation(void)
+{
+  return n_half_conns_allocated * sizeof(half_edge_t);
+}
+
+/**
+ * Find a stream_id_t in the list in O(lg(n)).
+ *
+ * Returns NULL if the list is empty or element is not found.
+ * Returns a pointer to the element if found.
+ */
+STATIC half_edge_t *
+connection_half_edge_find_stream_id(const smartlist_t *half_conns,
+                                    streamid_t stream_id)
+{
+  if (!half_conns)
+    return NULL;
+
+  return smartlist_bsearch(half_conns, &stream_id,
+                           connection_half_edge_compare_bsearch);
+}
+
+/**
+ * Check if this stream_id is in a half-closed state. If so,
+ * check if it still has data cells pending, and decrement that
+ * window if so.
+ *
+ * Return 1 if the data window was not empty.
+ * Return 0 otherwise.
+ */
+int
+connection_half_edge_is_valid_data(const smartlist_t *half_conns,
+                                   streamid_t stream_id)
+{
+  half_edge_t *half = connection_half_edge_find_stream_id(half_conns,
+                                                          stream_id);
+
+  if (!half)
+    return 0;
+
+  if (half->data_pending > 0) {
+    half->data_pending--;
+    return 1;
+  }
+
+  return 0;
+}
+
+/**
+ * Check if this stream_id is in a half-closed state. If so,
+ * check if it still has a connected cell pending, and decrement
+ * that window if so.
+ *
+ * Return 1 if the connected window was not empty.
+ * Return 0 otherwise.
+ */
+int
+connection_half_edge_is_valid_connected(const smartlist_t *half_conns,
+                                        streamid_t stream_id)
+{
+  half_edge_t *half = connection_half_edge_find_stream_id(half_conns,
+                                                          stream_id);
+
+  if (!half)
+    return 0;
+
+  if (half->connected_pending) {
+    half->connected_pending = 0;
+    return 1;
+  }
+
+  return 0;
+}
+
+/**
+ * Check if this stream_id is in a half-closed state. If so,
+ * check if it still has sendme cells pending, and decrement that
+ * window if so.
+ *
+ * Return 1 if the sendme window was not empty.
+ * Return 0 otherwise.
+ */
+int
+connection_half_edge_is_valid_sendme(const smartlist_t *half_conns,
+                                     streamid_t stream_id)
+{
+  half_edge_t *half = connection_half_edge_find_stream_id(half_conns,
+                                                          stream_id);
+
+  if (!half)
+    return 0;
+
+  if (half->sendmes_pending > 0) {
+    half->sendmes_pending--;
+    return 1;
+  }
+
+  return 0;
+}
+
+/**
+ * Check if this stream_id is in a half-closed state. If so, remove
+ * it from the list. No other data should come after the END cell.
+ *
+ * Return 1 if stream_id was in half-closed state.
+ * Return 0 otherwise.
+ */
+int
+connection_half_edge_is_valid_end(smartlist_t *half_conns,
+                                  streamid_t stream_id)
+{
+  half_edge_t *half;
+  int found, remove_idx;
+
+  if (!half_conns)
+    return 0;
+
+  remove_idx = smartlist_bsearch_idx(half_conns, &stream_id,
+                                    connection_half_edge_compare_bsearch,
+                                    &found);
+  if (!found)
+    return 0;
+
+  half = smartlist_get(half_conns, remove_idx);
+  smartlist_del_keeporder(half_conns, remove_idx);
+  half_edge_free(half);
+  return 1;
+}
+
+/**
+ * Streams that were used to send a RESOLVE cell are closed
+ * when they get the RESOLVED, without an end. So treat
+ * a RESOLVED just like an end, and remove from the list.
+ */
+int
+connection_half_edge_is_valid_resolved(smartlist_t *half_conns,
+                                       streamid_t stream_id)
+{
+  return connection_half_edge_is_valid_end(half_conns, stream_id);
 }
 
 /** An error has just occurred on an operation on an edge connection
@@ -607,6 +848,12 @@ static smartlist_t *pending_entry_connections = NULL;
 
 static int untried_pending_connections = 0;
 
+/**
+ * Mainloop event to tell us to scan for pending connections that can
+ * be attached.
+ */
+static mainloop_event_t *attach_pending_entry_connections_ev = NULL;
+
 /** Common code to connection_(ap|exit)_about_to_close. */
 static void
 connection_edge_about_to_close(edge_connection_t *edge_conn)
@@ -735,7 +982,7 @@ connection_ap_expire_beginning(void)
     /* if it's an internal linked connection, don't yell its status. */
     severity = (tor_addr_is_null(&base_conn->addr) && !base_conn->port)
       ? LOG_INFO : LOG_NOTICE;
-    seconds_idle = (int)( now - base_conn->timestamp_lastread );
+    seconds_idle = (int)( now - base_conn->timestamp_last_read_allowed );
     seconds_since_born = (int)( now - base_conn->timestamp_created );
 
     if (base_conn->state == AP_CONN_STATE_OPEN)
@@ -788,7 +1035,10 @@ connection_ap_expire_beginning(void)
       }
       continue;
     }
+
     if (circ->purpose != CIRCUIT_PURPOSE_C_GENERAL &&
+        circ->purpose != CIRCUIT_PURPOSE_C_HSDIR_GET &&
+        circ->purpose != CIRCUIT_PURPOSE_S_HSDIR_POST &&
         circ->purpose != CIRCUIT_PURPOSE_C_MEASURE_TIMEOUT &&
         circ->purpose != CIRCUIT_PURPOSE_PATH_BIAS_TESTING) {
       log_warn(LD_BUG, "circuit->purpose == CIRCUIT_PURPOSE_C_GENERAL failed. "
@@ -818,7 +1068,7 @@ connection_ap_expire_beginning(void)
     mark_circuit_unusable_for_new_conns(TO_ORIGIN_CIRCUIT(circ));
 
     /* give our stream another 'cutoff' seconds to try */
-    conn->base_.timestamp_lastread += cutoff;
+    conn->base_.timestamp_last_read_allowed += cutoff;
     if (entry_conn->num_socks_retries < 250) /* avoid overflow */
       entry_conn->num_socks_retries++;
     /* move it back into 'pending' state, and try to attach. */
@@ -949,6 +1199,14 @@ connection_ap_attach_pending(int retry)
   untried_pending_connections = 0;
 }
 
+static void
+attach_pending_entry_connections_cb(mainloop_event_t *ev, void *arg)
+{
+  (void)ev;
+  (void)arg;
+  connection_ap_attach_pending(0);
+}
+
 /** Mark <b>entry_conn</b> as needing to get attached to a circuit.
  *
  * And <b>entry_conn</b> must be in AP_CONN_STATE_CIRCUIT_WAIT,
@@ -966,9 +1224,13 @@ connection_ap_mark_as_pending_circuit_(entry_connection_t *entry_conn,
   if (conn->marked_for_close)
     return;
 
-  if (PREDICT_UNLIKELY(NULL == pending_entry_connections))
+  if (PREDICT_UNLIKELY(NULL == pending_entry_connections)) {
     pending_entry_connections = smartlist_new();
-
+  }
+  if (PREDICT_UNLIKELY(NULL == attach_pending_entry_connections_ev)) {
+    attach_pending_entry_connections_ev = mainloop_event_postloop_new(
+                                  attach_pending_entry_connections_cb, NULL);
+  }
   if (PREDICT_UNLIKELY(smartlist_contains(pending_entry_connections,
                                           entry_conn))) {
     log_warn(LD_BUG, "What?? pending_entry_connections already contains %p! "
@@ -992,14 +1254,7 @@ connection_ap_mark_as_pending_circuit_(entry_connection_t *entry_conn,
   untried_pending_connections = 1;
   smartlist_add(pending_entry_connections, entry_conn);
 
-  /* Work-around for bug 19969: we handle pending_entry_connections at
-   * the end of run_main_loop_once(), but in many cases that function will
-   * take a very long time, if ever, to finish its call to event_base_loop().
-   *
-   * So the fix is to tell it right now that it ought to finish its loop at
-   * its next available opportunity.
-   */
-  tell_event_loop_to_finish();
+  mainloop_event_activate(attach_pending_entry_connections_ev);
 }
 
 /** Mark <b>entry_conn</b> as no longer waiting for a circuit. */
@@ -1128,7 +1383,7 @@ connection_ap_detach_retriable(entry_connection_t *conn,
                                int reason)
 {
   control_event_stream_status(conn, STREAM_EVENT_FAILED_RETRIABLE, reason);
-  ENTRY_TO_CONN(conn)->timestamp_lastread = time(NULL);
+  ENTRY_TO_CONN(conn)->timestamp_last_read_allowed = time(NULL);
 
   /* Roll back path bias use state so that we probe the circuit
    * if nothing else succeeds on it */
@@ -2537,8 +2792,11 @@ connection_ap_process_http_connect(entry_connection_t *conn)
  err:
   if (BUG(errmsg == NULL))
     errmsg = "HTTP/1.0 400 Bad Request\r\n\r\n";
-  log_warn(LD_EDGE, "Saying %s", escaped(errmsg));
+  log_info(LD_EDGE, "HTTP tunnel error: saying %s", escaped(errmsg));
   connection_buf_add(errmsg, strlen(errmsg), ENTRY_TO_CONN(conn));
+  /* Mark it as "has_finished" so that we don't try to send an extra socks
+   * reply. */
+  conn->socks_request->has_finished = 1;
   connection_mark_unattached_ap(conn,
                                 END_STREAM_REASON_HTTPPROTOCOL|
                                 END_STREAM_REASON_FLAG_ALREADY_SOCKS_REPLIED);
@@ -2574,6 +2832,11 @@ get_unique_stream_id_by_circ(origin_circuit_t *circ)
   for (tmpconn = circ->p_streams; tmpconn; tmpconn=tmpconn->next_stream)
     if (tmpconn->stream_id == test_stream_id)
       goto again;
+
+  if (connection_half_edge_find_stream_id(circ->half_streams,
+                                           test_stream_id))
+    goto again;
+
   return test_stream_id;
 }
 
@@ -2588,6 +2851,8 @@ connection_ap_supports_optimistic_data(const entry_connection_t *conn)
   if (edge_conn->on_circuit == NULL ||
       edge_conn->on_circuit->state != CIRCUIT_STATE_OPEN ||
       (edge_conn->on_circuit->purpose != CIRCUIT_PURPOSE_C_GENERAL &&
+       edge_conn->on_circuit->purpose != CIRCUIT_PURPOSE_C_HSDIR_GET &&
+       edge_conn->on_circuit->purpose != CIRCUIT_PURPOSE_S_HSDIR_POST &&
        edge_conn->on_circuit->purpose != CIRCUIT_PURPOSE_C_REND_JOINED))
     return 0;
 
@@ -3327,7 +3592,7 @@ handle_hs_exit_conn(circuit_t *circ, edge_connection_t *conn)
     relay_send_end_cell_from_edge(conn->stream_id, circ,
                                   END_STREAM_REASON_DONE,
                                   origin_circ->cpath->prev);
-    connection_free(TO_CONN(conn));
+    connection_free_(TO_CONN(conn));
 
     /* Drop the circuit here since it might be someone deliberately
      * scanning the hidden service ports. Note that this mitigates port
@@ -3404,11 +3669,6 @@ connection_exit_begin_conn(cell_t *cell, circuit_t *circ)
   relay_header_unpack(&rh, cell->payload);
   if (rh.length > RELAY_PAYLOAD_SIZE)
     return -END_CIRC_REASON_TORPROTOCOL;
-
-  /* Note: we have to use relay_send_command_from_edge here, not
-   * connection_edge_end or connection_edge_send_command, since those require
-   * that we have a stream connected to a circuit, and we don't connect to a
-   * circuit until we have a pending/successful resolve. */
 
   if (!server_mode(options) &&
       circ->purpose != CIRCUIT_PURPOSE_S_REND_JOINED) {
@@ -3511,20 +3771,28 @@ connection_exit_begin_conn(cell_t *cell, circuit_t *circ)
   n_stream->deliver_window = STREAMWINDOW_START;
 
   if (circ->purpose == CIRCUIT_PURPOSE_S_REND_JOINED) {
+    int ret;
     tor_free(address);
     /* We handle this circuit and stream in this function for all supported
      * hidden service version. */
-    return handle_hs_exit_conn(circ, n_stream);
+    ret = handle_hs_exit_conn(circ, n_stream);
+
+    if (ret == 0) {
+      /* This was a valid cell. Count it as delivered + overhead. */
+      circuit_read_valid_data(origin_circ, rh.length);
+    }
+    return ret;
   }
   tor_strlower(address);
   n_stream->base_.address = address;
   n_stream->base_.state = EXIT_CONN_STATE_RESOLVEFAILED;
   /* default to failed, change in dns_resolve if it turns out not to fail */
 
+  /* If we're hibernating or shutting down, we refuse to open new streams. */
   if (we_are_hibernating()) {
     relay_send_end_cell_from_edge(rh.stream_id, circ,
                                   END_STREAM_REASON_HIBERNATING, NULL);
-    connection_free(TO_CONN(n_stream));
+    connection_free_(TO_CONN(n_stream));
     return 0;
   }
 
@@ -3602,7 +3870,7 @@ connection_exit_begin_resolve(cell_t *cell, or_circuit_t *circ)
       return 0;
     case 1: /* The result was cached; a resolved cell was sent. */
       if (!dummy_conn->base_.marked_for_close)
-        connection_free(TO_CONN(dummy_conn));
+        connection_free_(TO_CONN(dummy_conn));
       return 0;
     case 0: /* resolve added to pending list */
       assert_circuit_ok(TO_CIRCUIT(circ));
@@ -3775,8 +4043,8 @@ connection_exit_connect_dir(edge_connection_t *exitconn)
 
   if (connection_add(TO_CONN(exitconn))<0) {
     connection_edge_end(exitconn, END_STREAM_REASON_RESOURCELIMIT);
-    connection_free(TO_CONN(exitconn));
-    connection_free(TO_CONN(dirconn));
+    connection_free_(TO_CONN(exitconn));
+    connection_free_(TO_CONN(dirconn));
     return 0;
   }
 
@@ -3788,7 +4056,7 @@ connection_exit_connect_dir(edge_connection_t *exitconn)
     connection_edge_end(exitconn, END_STREAM_REASON_RESOURCELIMIT);
     connection_close_immediate(TO_CONN(exitconn));
     connection_mark_for_close(TO_CONN(exitconn));
-    connection_free(TO_CONN(dirconn));
+    connection_free_(TO_CONN(dirconn));
     return 0;
   }
 
@@ -4161,5 +4429,5 @@ connection_edge_free_all(void)
   untried_pending_connections = 0;
   smartlist_free(pending_entry_connections);
   pending_entry_connections = NULL;
+  mainloop_event_free(attach_pending_entry_connections_ev);
 }
-

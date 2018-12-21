@@ -29,13 +29,13 @@ if [ "${BITCOIN_GENBUILD_NO_GIT}" != "1" -a -e "$(which git 2>/dev/null)" -a "$(
 
     # if latest commit is tagged and not dirty, then override using the tag name
     RAWDESC=$(git describe --abbrev=0 2>/dev/null)
-    #if [ "$(git rev-parse HEAD)" = "$(git rev-list -1 $RAWDESC 2>/dev/null)" ]; then
+    if [ "$(git rev-parse HEAD)" = "$(git rev-list -1 $RAWDESC 2>/dev/null)" ]; then
         git diff-index --quiet HEAD -- && DESC=$RAWDESC
-    #fi
+    fi
 
     # otherwise generate suffix from git, i.e. string like "59887e8-dirty"
-    #SUFFIX=$(git rev-parse --short HEAD)
-    #git diff-index --quiet HEAD -- || SUFFIX="$SUFFIX-dirty"
+    SUFFIX=$(git rev-parse --short HEAD)
+    git diff-index --quiet HEAD -- || SUFFIX="$SUFFIX-dirty"
 fi
 
 if [ -n "$DESC" ]; then

@@ -42,6 +42,9 @@
 
 #include "or.h"
 #include "address.h"
+#include "address_set.h"
+#include "backtrace.h"
+#include "bridges.h"
 #include "config.h"
 #include "control.h"
 #include "dirserv.h"
@@ -61,19 +64,31 @@
 #include "routerparse.h"
 #include "routerset.h"
 #include "torcert.h"
+#include "util_format.h"
 
 #include <string.h>
 
+#include "dirauth/mode.h"
+
 static void nodelist_drop_node(node_t *node, int remove_from_ht);
-static void node_free(node_t *node);
+#define node_free(val) \
+  FREE_AND_NULL(node_t, node_free_, (val))
+static void node_free_(node_t *node);
 
 /** count_usable_descriptors counts descriptors with these flag(s)
  */
 typedef enum {
-  /* All descriptors regardless of flags */
-  USABLE_DESCRIPTOR_ALL = 0,
-  /* Only descriptors with the Exit flag */
-  USABLE_DESCRIPTOR_EXIT_ONLY = 1
+  /* All descriptors regardless of flags or exit policies */
+  USABLE_DESCRIPTOR_ALL         = 0U,
+  /* Only count descriptors with an exit policy that allows at least one port
+   */
+  USABLE_DESCRIPTOR_EXIT_POLICY = 1U << 0,
+  /* Only count descriptors for relays that have the exit flag in the
+   * consensus */
+  USABLE_DESCRIPTOR_EXIT_FLAG   = 1U << 1,
+  /* Only count descriptors for relays that have the policy and the flag */
+  USABLE_DESCRIPTOR_EXIT_POLICY_AND_FLAG = (USABLE_DESCRIPTOR_EXIT_POLICY |
+                                            USABLE_DESCRIPTOR_EXIT_FLAG)
 } usable_descriptor_t;
 static void count_usable_descriptors(int *num_present,
                                      int *num_usable,
@@ -85,6 +100,7 @@ static void count_usable_descriptors(int *num_present,
 static void update_router_have_minimum_dir_info(void);
 static double get_frac_paths_needed_for_circs(const or_options_t *options,
                                               const networkstatus_t *ns);
+static void node_add_to_address_set(const node_t *node);
 
 /** A nodelist_t holds a node_t object for every router we're "willing to use
  * for something".  Specifically, it should hold a node_t for every node that
@@ -103,6 +119,14 @@ typedef struct nodelist_t {
    * you should add it to this map with node_add_to_ed25519_map().
    */
   HT_HEAD(nodelist_ed_map, node_t) nodes_by_ed_id;
+
+  /* Set of addresses that belong to nodes we believe in. */
+  address_set_t *node_addrs;
+
+  /* The valid-after time of the last live consensus that initialized the
+   * nodelist.  We use this to detect outdated nodelists that need to be
+   * rebuilt using a newer consensus. */
+  time_t live_consensus_valid_after;
 } nodelist_t;
 
 static inline unsigned int
@@ -154,8 +178,8 @@ init_nodelist(void)
 }
 
 /** As node_get_by_id, but returns a non-const pointer */
-node_t *
-node_get_mutable_by_id(const char *identity_digest)
+MOCK_IMPL(node_t *,
+node_get_mutable_by_id,(const char *identity_digest))
 {
   node_t search, *node;
   if (PREDICT_UNLIKELY(the_nodelist == NULL))
@@ -217,7 +241,6 @@ node_get_or_create(const char *identity_digest)
 
   smartlist_add(the_nodelist->nodes, node);
   node->nodelist_idx = smartlist_len(the_nodelist->nodes) - 1;
-  node->hsdir_index = tor_malloc_zero(sizeof(hsdir_index_t));
 
   node->country = -1;
 
@@ -252,6 +275,20 @@ node_remove_from_ed25519_map(node_t *node)
   return rv;
 }
 
+/** Helper function to log details of duplicated ed2559_ids */
+static void
+node_log_dup_ed_id(const node_t *old, const node_t *node, const char *ed_id)
+{
+  char *s;
+  char *olddesc = tor_strdup(node_describe(old));
+
+  tor_asprintf(&s, "Reused ed25519_id %s: old %s new %s", ed_id,
+               olddesc, node_describe(node));
+  log_backtrace(LOG_NOTICE, LD_DIR, s);
+  tor_free(olddesc);
+  tor_free(s);
+}
+
 /** If <b>node</b> has an ed25519 id, and it is not already in the ed25519 id
  * map, set its ed25519_id field, and add it to the ed25519 map.
  */
@@ -273,11 +310,24 @@ node_add_to_ed25519_map(node_t *node)
   node_t *old;
   memcpy(&node->ed25519_id, key, sizeof(node->ed25519_id));
   old = HT_FIND(nodelist_ed_map, &the_nodelist->nodes_by_ed_id, node);
-  if (BUG(old)) {
-    /* XXXX order matters here, and this may mean that authorities aren't
-     * pinning. */
-    if (old != node)
+  if (old) {
+    char ed_id[BASE32_BUFSIZE(sizeof(key->pubkey))];
+
+    base32_encode(ed_id, sizeof(ed_id), (const char *)key->pubkey,
+                  sizeof(key->pubkey));
+    if (BUG(old == node)) {
+      /* Actual bug: all callers of this function call
+       * node_remove_from_ed25519_map first. */
+      log_err(LD_BUG,
+              "Unexpectedly found deleted node with ed25519_id %s", ed_id);
+    } else {
+      /* Distinct nodes sharing a ed25519 id, possibly due to relay
+       * misconfiguration.  The key pinning might not catch this,
+       * possibly due to downloading a missing descriptor during
+       * consensus voting. */
+      node_log_dup_ed_id(old, node, ed_id);
       memset(&node->ed25519_id, 0, sizeof(node->ed25519_id));
+    }
     return 0;
   }
 
@@ -342,26 +392,26 @@ node_set_hsdir_index(node_t *node, const networkstatus_t *ns)
 
   /* Build the fetch index. */
   hs_build_hsdir_index(node_identity_pk, fetch_srv, fetch_tp,
-                       node->hsdir_index->fetch);
+                       node->hsdir_index.fetch);
 
   /* If we are in the time segment between SRV#N and TP#N, the fetch index is
      the same as the first store index */
   if (!hs_in_period_between_tp_and_srv(ns, now)) {
-    memcpy(node->hsdir_index->store_first, node->hsdir_index->fetch,
-           sizeof(node->hsdir_index->store_first));
+    memcpy(node->hsdir_index.store_first, node->hsdir_index.fetch,
+           sizeof(node->hsdir_index.store_first));
   } else {
     hs_build_hsdir_index(node_identity_pk, store_first_srv, store_first_tp,
-                         node->hsdir_index->store_first);
+                         node->hsdir_index.store_first);
   }
 
   /* If we are in the time segment between TP#N and SRV#N+1, the fetch index is
      the same as the second store index */
   if (hs_in_period_between_tp_and_srv(ns, now)) {
-    memcpy(node->hsdir_index->store_second, node->hsdir_index->fetch,
-           sizeof(node->hsdir_index->store_second));
+    memcpy(node->hsdir_index.store_second, node->hsdir_index.fetch,
+           sizeof(node->hsdir_index.store_second));
   } else {
     hs_build_hsdir_index(node_identity_pk, store_second_srv, store_second_tp,
-                         node->hsdir_index->store_second);
+                         node->hsdir_index.store_second);
   }
 
  done:
@@ -371,33 +421,56 @@ node_set_hsdir_index(node_t *node, const networkstatus_t *ns)
   return;
 }
 
-/** Recompute all node hsdir indices. */
-void
-nodelist_recompute_all_hsdir_indices(void)
-{
-  networkstatus_t *consensus;
-  if (!the_nodelist) {
-    return;
-  }
-
-  /* Get a live consensus. Abort if not found */
-  consensus = networkstatus_get_live_consensus(approx_time());
-  if (!consensus) {
-    return;
-  }
-
-  /* Recompute all hsdir indices */
-  SMARTLIST_FOREACH_BEGIN(the_nodelist->nodes, node_t *, node) {
-    node_set_hsdir_index(node, consensus);
-  } SMARTLIST_FOREACH_END(node);
-}
-
 /** Called when a node's address changes. */
 static void
 node_addrs_changed(node_t *node)
 {
   node->last_reachable = node->last_reachable6 = 0;
   node->country = -1;
+}
+
+/** Add all address information about <b>node</b> to the current address
+ * set (if there is one).
+ */
+static void
+node_add_to_address_set(const node_t *node)
+{
+  if (!the_nodelist || !the_nodelist->node_addrs)
+    return;
+
+  /* These various address sources can be redundant, but it's likely faster
+   * to add them all than to compare them all for equality. */
+
+  if (node->rs) {
+    if (node->rs->addr)
+      address_set_add_ipv4h(the_nodelist->node_addrs, node->rs->addr);
+    if (!tor_addr_is_null(&node->rs->ipv6_addr))
+      address_set_add(the_nodelist->node_addrs, &node->rs->ipv6_addr);
+  }
+  if (node->ri) {
+    if (node->ri->addr)
+      address_set_add_ipv4h(the_nodelist->node_addrs, node->ri->addr);
+    if (!tor_addr_is_null(&node->ri->ipv6_addr))
+      address_set_add(the_nodelist->node_addrs, &node->ri->ipv6_addr);
+  }
+  if (node->md) {
+    if (!tor_addr_is_null(&node->md->ipv6_addr))
+      address_set_add(the_nodelist->node_addrs, &node->md->ipv6_addr);
+  }
+}
+
+/** Return true if <b>addr</b> is the address of some node in the nodelist.
+ * If not, probably return false. */
+int
+nodelist_probably_contains_address(const tor_addr_t *addr)
+{
+  if (BUG(!addr))
+    return 0;
+
+  if (!the_nodelist || !the_nodelist->node_addrs)
+    return 0;
+
+  return address_set_probably_contains(the_nodelist->node_addrs, addr);
 }
 
 /** Add <b>ri</b> to an appropriate node in the nodelist.  If we replace an
@@ -445,10 +518,12 @@ nodelist_set_routerinfo(routerinfo_t *ri, routerinfo_t **ri_old_out)
   /* Setting the HSDir index requires the ed25519 identity key which can
    * only be found either in the ri or md. This is why this is called here.
    * Only nodes supporting HSDir=2 protocol version needs this index. */
-  if (node->rs && node->rs->supports_v3_hsdir) {
+  if (node->rs && node->rs->pv.supports_v3_hsdir) {
     node_set_hsdir_index(node,
                          networkstatus_get_latest_consensus());
   }
+
+  node_add_to_address_set(node);
 
   return node;
 }
@@ -475,23 +550,36 @@ nodelist_add_microdesc(microdesc_t *md)
   if (rs == NULL)
     return NULL;
   node = node_get_mutable_by_id(rs->identity_digest);
-  if (node) {
-    node_remove_from_ed25519_map(node);
-    if (node->md)
-      node->md->held_by_nodes--;
+  if (node == NULL)
+    return NULL;
 
-    node->md = md;
-    md->held_by_nodes++;
-    /* Setting the HSDir index requires the ed25519 identity key which can
-     * only be found either in the ri or md. This is why this is called here.
-     * Only nodes supporting HSDir=2 protocol version needs this index. */
-    if (rs->supports_v3_hsdir) {
-      node_set_hsdir_index(node, ns);
-    }
-    node_add_to_ed25519_map(node);
+  node_remove_from_ed25519_map(node);
+  if (node->md)
+    node->md->held_by_nodes--;
+
+  node->md = md;
+  md->held_by_nodes++;
+  /* Setting the HSDir index requires the ed25519 identity key which can
+   * only be found either in the ri or md. This is why this is called here.
+   * Only nodes supporting HSDir=2 protocol version needs this index. */
+  if (rs->pv.supports_v3_hsdir) {
+    node_set_hsdir_index(node, ns);
   }
+  node_add_to_ed25519_map(node);
+  node_add_to_address_set(node);
 
   return node;
+}
+
+/* Default value. */
+#define ESTIMATED_ADDRESS_PER_NODE 2
+
+/* Return the estimated number of address per node_t. This is used for the
+ * size of the bloom filter in the nodelist (node_addrs). */
+MOCK_IMPL(int,
+get_estimated_address_per_node, (void))
+{
+  return ESTIMATED_ADDRESS_PER_NODE;
 }
 
 /** Tell the nodelist that the current usable consensus is <b>ns</b>.
@@ -512,6 +600,12 @@ nodelist_set_consensus(networkstatus_t *ns)
   SMARTLIST_FOREACH(the_nodelist->nodes, node_t *, node,
                     node->rs = NULL);
 
+  /* Conservatively estimate that every node will have 2 addresses. */
+  const int estimated_addresses = smartlist_len(ns->routerstatus_list) *
+                                  get_estimated_address_per_node();
+  address_set_free(the_nodelist->node_addrs);
+  the_nodelist->node_addrs = address_set_new(estimated_addresses);
+
   SMARTLIST_FOREACH_BEGIN(ns->routerstatus_list, routerstatus_t *, rs) {
     node_t *node = node_get_or_create(rs->identity_digest);
     node->rs = rs;
@@ -529,7 +623,7 @@ nodelist_set_consensus(networkstatus_t *ns)
       }
     }
 
-    if (rs->supports_v3_hsdir) {
+    if (rs->pv.supports_v3_hsdir) {
       node_set_hsdir_index(node, ns);
     }
     node_set_country(node);
@@ -555,6 +649,11 @@ nodelist_set_consensus(networkstatus_t *ns)
 
   nodelist_purge();
 
+  /* Now add all the nodes we have to the address set. */
+  SMARTLIST_FOREACH_BEGIN(the_nodelist->nodes, node_t *, node) {
+    node_add_to_address_set(node);
+  } SMARTLIST_FOREACH_END(node);
+
   if (! authdir) {
     SMARTLIST_FOREACH_BEGIN(the_nodelist->nodes, node_t *, node) {
       /* We have no routerstatus for this router. Clear flags so we can skip
@@ -571,6 +670,12 @@ nodelist_set_consensus(networkstatus_t *ns)
         }
       }
     } SMARTLIST_FOREACH_END(node);
+  }
+
+  /* If the consensus is live, note down the consensus valid-after that formed
+   * the nodelist. */
+  if (networkstatus_is_live(ns, approx_time())) {
+    the_nodelist->live_consensus_valid_after = ns->valid_after;
   }
 }
 
@@ -656,14 +761,13 @@ nodelist_find_nodes_with_microdesc(const microdesc_t *md)
 
 /** Release storage held by <b>node</b>  */
 static void
-node_free(node_t *node)
+node_free_(node_t *node)
 {
   if (!node)
     return;
   if (node->md)
     node->md->held_by_nodes--;
   tor_assert(node->nodelist_idx == -1);
-  tor_free(node->hsdir_index);
   tor_free(node);
 }
 
@@ -712,6 +816,9 @@ nodelist_free_all(void)
   } SMARTLIST_FOREACH_END(node);
 
   smartlist_free(the_nodelist->nodes);
+
+  address_set_free(the_nodelist->node_addrs);
+  the_nodelist->node_addrs = NULL;
 
   tor_free(the_nodelist);
 }
@@ -794,6 +901,25 @@ nodelist_assert_ok(void)
   digestmap_free(dm, NULL);
 }
 
+/** Ensure that the nodelist has been created with the most recent consensus.
+ *  If that's not the case, make it so.  */
+void
+nodelist_ensure_freshness(networkstatus_t *ns)
+{
+  tor_assert(ns);
+
+  /* We don't even have a nodelist: this is a NOP. */
+  if (!the_nodelist) {
+    return;
+  }
+
+  if (the_nodelist->live_consensus_valid_after != ns->valid_after) {
+    log_info(LD_GENERAL, "Nodelist was not fresh: rebuilding. (%d / %d)",
+             (int) the_nodelist->live_consensus_valid_after,
+             (int) ns->valid_after);
+    nodelist_set_consensus(ns);
+  }
+}
 /** Return a list of a node_t * for every node we know about.  The caller
  * MUST NOT modify the list. (You can set and clear flags in the nodes if
  * you must, but you must not add or remove nodes.) */
@@ -906,9 +1032,12 @@ node_get_ed25519_id(const node_t *node)
 {
   const ed25519_public_key_t *ri_pk = NULL;
   const ed25519_public_key_t *md_pk = NULL;
+
   if (node->ri) {
     if (node->ri->cache_info.signing_key_cert) {
       ri_pk = &node->ri->cache_info.signing_key_cert->signing_key;
+      /* Checking whether routerinfo ed25519 is all zero.
+       * Our descriptor parser should make sure this never happens. */
       if (BUG(ed25519_public_key_is_zero(ri_pk)))
         ri_pk = NULL;
     }
@@ -917,6 +1046,10 @@ node_get_ed25519_id(const node_t *node)
   if (node->md) {
     if (node->md->ed25519_identity_pkey) {
       md_pk = node->md->ed25519_identity_pkey;
+      /* Checking whether microdesc ed25519 is all zero.
+       * Our descriptor parser should make sure this never happens. */
+      if (BUG(ed25519_public_key_is_zero(md_pk)))
+        md_pk = NULL;
     }
   }
 
@@ -950,27 +1083,47 @@ node_ed25519_id_matches(const node_t *node, const ed25519_public_key_t *id)
   }
 }
 
-/** Return true iff <b>node</b> supports authenticating itself
- * by ed25519 ID during the link handshake in a way that we can understand
- * when we probe it. */
-int
-node_supports_ed25519_link_authentication(const node_t *node)
+/** Dummy object that should be unreturnable.  Used to ensure that
+ * node_get_protover_summary_flags() always returns non-NULL. */
+static const protover_summary_flags_t zero_protover_flags = {
+  0,0,0,0,0,0,0
+};
+
+/** Return the protover_summary_flags for a given node. */
+static const protover_summary_flags_t *
+node_get_protover_summary_flags(const node_t *node)
 {
-  /* XXXX Oh hm. What if some day in the future there are link handshake
-   * versions that aren't 3 but which are ed25519 */
+  if (node->rs) {
+    return &node->rs->pv;
+  } else if (node->ri) {
+    return &node->ri->pv;
+  } else {
+    /* This should be impossible: every node should have a routerstatus or a
+     * router descriptor or both. But just in case we've messed up somehow,
+     * return a nice empty set of flags to indicate "this node supports
+     * nothing." */
+    tor_assert_nonfatal_unreached_once();
+    return &zero_protover_flags;
+  }
+}
+
+/** Return true iff <b>node</b> supports authenticating itself
+ * by ed25519 ID during the link handshake.  If <b>compatible_with_us</b>,
+ * it needs to be using a link authentication method that we understand.
+ * If not, any plausible link authentication method will do. */
+int
+node_supports_ed25519_link_authentication(const node_t *node,
+                                          int compatible_with_us)
+{
   if (! node_get_ed25519_id(node))
     return 0;
-  if (node->ri) {
-    const char *protos = node->ri->protocol_list;
-    if (protos == NULL)
-      return 0;
-    return protocol_list_supports_protocol(protos, PRT_LINKAUTH, 3);
-  }
-  if (node->rs) {
-    return node->rs->supports_ed25519_link_handshake;
-  }
-  tor_assert_nonfatal_unreached_once();
-  return 0;
+
+  const protover_summary_flags_t *pv = node_get_protover_summary_flags(node);
+
+  if (compatible_with_us)
+    return pv->supports_ed25519_link_handshake_compat;
+  else
+    return pv->supports_ed25519_link_handshake_any;
 }
 
 /** Return true iff <b>node</b> supports the hidden service directory version
@@ -980,27 +1133,7 @@ node_supports_v3_hsdir(const node_t *node)
 {
   tor_assert(node);
 
-  if (node->rs) {
-    return node->rs->supports_v3_hsdir;
-  }
-  if (node->ri) {
-    if (node->ri->protocol_list == NULL) {
-      return 0;
-    }
-    /* Bug #22447 forces us to filter on tor version:
-     * If platform is a Tor version, and older than 0.3.0.8, return False.
-     * Else, obey the protocol list. */
-    if (node->ri->platform) {
-      if (!strcmpstart(node->ri->platform, "Tor ") &&
-          !tor_version_as_new_as(node->ri->platform, "0.3.0.8")) {
-        return 0;
-      }
-    }
-    return protocol_list_supports_protocol(node->ri->protocol_list,
-                                           PRT_HSDIR, PROTOVER_HSDIR_V3);
-  }
-  tor_assert_nonfatal_unreached_once();
-  return 0;
+  return node_get_protover_summary_flags(node)->supports_v3_hsdir;
 }
 
 /** Return true iff <b>node</b> supports ed25519 authentication as an hidden
@@ -1010,18 +1143,7 @@ node_supports_ed25519_hs_intro(const node_t *node)
 {
   tor_assert(node);
 
-  if (node->rs) {
-    return node->rs->supports_ed25519_hs_intro;
-  }
-  if (node->ri) {
-    if (node->ri->protocol_list == NULL) {
-      return 0;
-    }
-    return protocol_list_supports_protocol(node->ri->protocol_list,
-                                           PRT_HSINTRO, PROTOVER_HS_INTRO_V3);
-  }
-  tor_assert_nonfatal_unreached_once();
-  return 0;
+  return node_get_protover_summary_flags(node)->supports_ed25519_hs_intro;
 }
 
 /** Return true iff <b>node</b> supports to be a rendezvous point for hidden
@@ -1031,19 +1153,12 @@ node_supports_v3_rendezvous_point(const node_t *node)
 {
   tor_assert(node);
 
-  if (node->rs) {
-    return node->rs->supports_v3_rendezvous_point;
+  /* We can't use a v3 rendezvous point without the curve25519 onion pk. */
+  if (!node_get_curve25519_onion_key(node)) {
+    return 0;
   }
-  if (node->ri) {
-    if (node->ri->protocol_list == NULL) {
-      return 0;
-    }
-    return protocol_list_supports_protocol(node->ri->protocol_list,
-                                           PRT_HSREND,
-                                           PROTOVER_HS_RENDEZVOUS_POINT_V3);
-  }
-  tor_assert_nonfatal_unreached_once();
-  return 0;
+
+  return node_get_protover_summary_flags(node)->supports_v3_rendezvous_point;
 }
 
 /** Return the RSA ID key's SHA1 digest for the provided node. */
@@ -1087,13 +1202,42 @@ node_is_dir(const node_t *node)
   }
 }
 
-/** Return true iff <b>node</b> has either kind of usable descriptor -- that
- * is, a routerdescriptor or a microdescriptor. */
+/** Return true iff <b>node</b> has either kind of descriptor -- that
+ * is, a routerdescriptor or a microdescriptor.
+ *
+ * You should probably use node_has_preferred_descriptor() instead.
+ **/
 int
-node_has_descriptor(const node_t *node)
+node_has_any_descriptor(const node_t *node)
 {
   return (node->ri ||
           (node->rs && node->md));
+}
+
+/** Return true iff <b>node</b> has the kind of descriptor we would prefer to
+ * use for it, given our configuration and how we intend to use the node.
+ *
+ * If <b>for_direct_connect</b> is true, we intend to connect to the node
+ * directly, as the first hop of a circuit; otherwise, we intend to connect to
+ * it indirectly, or use it as if we were connecting to it indirectly. */
+int
+node_has_preferred_descriptor(const node_t *node,
+                              int for_direct_connect)
+{
+  const int is_bridge = node_is_a_configured_bridge(node);
+  const int we_use_mds = we_use_microdescriptors_for_circuits(get_options());
+
+  if ((is_bridge && for_direct_connect) || !we_use_mds) {
+    /* We need an ri in this case. */
+    if (!node->ri)
+      return 0;
+  } else {
+    /* Otherwise we need an rs and an md. */
+    if (node->rs == NULL || node->md == NULL)
+      return 0;
+  }
+
+  return 1;
 }
 
 /** Return the router_purpose of <b>node</b>. */
@@ -1413,9 +1557,11 @@ node_ipv6_or_preferred(const node_t *node)
   /* XX/teor - node->ipv6_preferred is set from
    * fascist_firewall_prefer_ipv6_orport() each time the consensus is loaded.
    */
+  node_get_prim_orport(node, &ipv4_addr);
   if (!fascist_firewall_use_ipv6(options)) {
     return 0;
-  } else if (node->ipv6_preferred || node_get_prim_orport(node, &ipv4_addr)) {
+  } else if (node->ipv6_preferred ||
+             !tor_addr_port_is_valid_ap(&ipv4_addr, 0)) {
     return node_has_ipv6_orport(node);
   }
   return 0;
@@ -1426,14 +1572,12 @@ node_ipv6_or_preferred(const node_t *node)
     if (r && tor_addr_port_is_valid_ipv4h((r)->addr, (r)->port_field, 0)) { \
       tor_addr_from_ipv4h(&(ap_out)->addr, (r)->addr); \
       (ap_out)->port = (r)->port_field; \
-      return 0; \
     } \
   STMT_END
 
-/** Copy the primary (IPv4) OR port (IP address and TCP port) for
- * <b>node</b> into *<b>ap_out</b>. Return 0 if a valid address and
- * port was copied, else return non-zero.*/
-int
+/** Copy the primary (IPv4) OR port (IP address and TCP port) for <b>node</b>
+ * into *<b>ap_out</b>. */
+void
 node_get_prim_orport(const node_t *node, tor_addr_port_t *ap_out)
 {
   node_assert_ok(node);
@@ -1450,8 +1594,6 @@ node_get_prim_orport(const node_t *node, tor_addr_port_t *ap_out)
   RETURN_IPV4_AP(node->ri, or_port, ap_out);
   RETURN_IPV4_AP(node->rs, or_port, ap_out);
   /* Microdescriptors only have an IPv6 address */
-
-  return -1;
 }
 
 /** Copy the preferred OR port (IP address and TCP port) for
@@ -1476,6 +1618,7 @@ node_get_pref_ipv6_orport(const node_t *node, tor_addr_port_t *ap_out)
 {
   node_assert_ok(node);
   tor_assert(ap_out);
+  memset(ap_out, 0, sizeof(*ap_out));
 
   /* Check ri first, because rewrite_node_address_for_bridge() updates
    * node->ri with the configured bridge address.
@@ -1523,23 +1666,28 @@ node_ipv6_dir_preferred(const node_t *node)
    * so we can't use it to determine DirPort IPv6 preference.
    * This means that bridge clients will use IPv4 DirPorts by default.
    */
+  node_get_prim_dirport(node, &ipv4_addr);
   if (!fascist_firewall_use_ipv6(options)) {
     return 0;
-  } else if (node_get_prim_dirport(node, &ipv4_addr)
+  } else if (!tor_addr_port_is_valid_ap(&ipv4_addr, 0)
       || fascist_firewall_prefer_ipv6_dirport(get_options())) {
     return node_has_ipv6_dirport(node);
   }
   return 0;
 }
 
-/** Copy the primary (IPv4) Dir port (IP address and TCP port) for
- * <b>node</b> into *<b>ap_out</b>. Return 0 if a valid address and
- * port was copied, else return non-zero.*/
-int
+/** Copy the primary (IPv4) Dir port (IP address and TCP port) for <b>node</b>
+ * into *<b>ap_out</b>. */
+void
 node_get_prim_dirport(const node_t *node, tor_addr_port_t *ap_out)
 {
   node_assert_ok(node);
   tor_assert(ap_out);
+
+  /* Clear the address, as a safety precaution if calling functions ignore the
+   * return value */
+  tor_addr_make_null(&ap_out->addr, AF_INET);
+  ap_out->port = 0;
 
   /* Check ri first, because rewrite_node_address_for_bridge() updates
    * node->ri with the configured bridge address. */
@@ -1547,8 +1695,6 @@ node_get_prim_dirport(const node_t *node, tor_addr_port_t *ap_out)
   RETURN_IPV4_AP(node->ri, dir_port, ap_out);
   RETURN_IPV4_AP(node->rs, dir_port, ap_out);
   /* Microdescriptors only have an IPv6 address */
-
-  return -1;
 }
 
 #undef RETURN_IPV4_AP
@@ -1622,15 +1768,21 @@ microdesc_has_curve25519_onion_key(const microdesc_t *md)
 int
 node_has_curve25519_onion_key(const node_t *node)
 {
-  if (!node)
-    return 0;
+  return node_get_curve25519_onion_key(node) != NULL;
+}
 
-  if (node->ri)
-    return routerinfo_has_curve25519_onion_key(node->ri);
-  else if (node->md)
-    return microdesc_has_curve25519_onion_key(node->md);
+/** Return the curve25519 key of <b>node</b>, or NULL if none. */
+const curve25519_public_key_t *
+node_get_curve25519_onion_key(const node_t *node)
+{
+  if (!node)
+    return NULL;
+  if (routerinfo_has_curve25519_onion_key(node->ri))
+    return node->ri->onion_curve25519_pkey;
+  else if (microdesc_has_curve25519_onion_key(node->md))
+    return node->md->onion_curve25519_pkey;
   else
-    return 0;
+    return NULL;
 }
 
 /** Refresh the country code of <b>ri</b>.  This function MUST be called on
@@ -1999,8 +2151,11 @@ get_dir_info_status_string(void)
  * *<b>num_present</b>).
  *
  * If <b>in_set</b> is non-NULL, only consider those routers in <b>in_set</b>.
- * If <b>exit_only</b> is USABLE_DESCRIPTOR_EXIT_ONLY, only consider nodes
- * with the Exit flag.
+ * If <b>exit_only</b> & USABLE_DESCRIPTOR_EXIT_POLICY, only consider nodes
+ * present if they have an exit policy that accepts at least one port.
+ * If <b>exit_only</b> & USABLE_DESCRIPTOR_EXIT_FLAG, only consider nodes
+ * usable if they have the exit flag in the consensus.
+ *
  * If *<b>descs_out</b> is present, add a node_t for each usable descriptor
  * to it.
  */
@@ -2021,7 +2176,7 @@ count_usable_descriptors(int *num_present, int *num_usable,
        if (!node)
          continue; /* This would be a bug: every entry in the consensus is
                     * supposed to have a node. */
-       if (exit_only == USABLE_DESCRIPTOR_EXIT_ONLY && ! rs->is_exit)
+       if ((exit_only & USABLE_DESCRIPTOR_EXIT_FLAG) && ! rs->is_exit)
          continue;
        if (in_set && ! routerset_contains_routerstatus(in_set, rs, -1))
          continue;
@@ -2034,7 +2189,14 @@ count_usable_descriptors(int *num_present, int *num_usable,
          else
            present = NULL != router_get_by_descriptor_digest(digest);
          if (present) {
-           /* we have the descriptor listed in the consensus. */
+           /* Do the policy check last, because it requires a descriptor,
+            * and is potentially expensive */
+           if ((exit_only & USABLE_DESCRIPTOR_EXIT_POLICY) &&
+               node_exit_policy_rejects_all(node)) {
+               continue;
+           }
+           /* we have the descriptor listed in the consensus, and it
+            * satisfies our exit constraints (if any) */
            ++*num_present;
          }
          if (descs_out)
@@ -2043,10 +2205,17 @@ count_usable_descriptors(int *num_present, int *num_usable,
      }
   SMARTLIST_FOREACH_END(rs);
 
-  log_debug(LD_DIR, "%d usable, %d present (%s%s).",
+  log_debug(LD_DIR, "%d usable, %d present (%s%s%s%s%s).",
             *num_usable, *num_present,
             md ? "microdesc" : "desc",
-            exit_only == USABLE_DESCRIPTOR_EXIT_ONLY ? " exits" : "s");
+            (exit_only & USABLE_DESCRIPTOR_EXIT_POLICY_AND_FLAG) ?
+              " exit"     : "s",
+            (exit_only & USABLE_DESCRIPTOR_EXIT_POLICY) ?
+              " policies" : "" ,
+            (exit_only == USABLE_DESCRIPTOR_EXIT_POLICY_AND_FLAG) ?
+              " and" : "" ,
+            (exit_only & USABLE_DESCRIPTOR_EXIT_FLAG) ?
+              " flags"    : "" );
 }
 
 /** Return an estimate of which fraction of usable paths through the Tor
@@ -2081,9 +2250,20 @@ compute_frac_paths_available(const networkstatus_t *consensus,
   count_usable_descriptors(num_present_out, num_usable_out,
                            mid, consensus, now, NULL,
                            USABLE_DESCRIPTOR_ALL);
+  log_debug(LD_NET,
+            "%s: %d present, %d usable",
+            "mid",
+            np,
+            nu);
+
   if (options->EntryNodes) {
     count_usable_descriptors(&np, &nu, guards, consensus, now,
                              options->EntryNodes, USABLE_DESCRIPTOR_ALL);
+    log_debug(LD_NET,
+              "%s: %d present, %d usable",
+              "guard",
+              np,
+              nu);
   } else {
     SMARTLIST_FOREACH(mid, const node_t *, node, {
       if (authdir) {
@@ -2094,42 +2274,45 @@ compute_frac_paths_available(const networkstatus_t *consensus,
           smartlist_add(guards, (node_t*)node);
       }
     });
+    log_debug(LD_NET,
+              "%s: %d possible",
+              "guard",
+              smartlist_len(guards));
   }
 
-  /* All nodes with exit flag
-   * If we're in a network with TestingDirAuthVoteExit set,
-   * this can cause false positives on have_consensus_path,
-   * incorrectly setting it to CONSENSUS_PATH_EXIT. This is
-   * an unavoidable feature of forcing authorities to declare
-   * certain nodes as exits.
-   */
+  /* All nodes with exit policy and flag */
   count_usable_descriptors(&np, &nu, exits, consensus, now,
-                           NULL, USABLE_DESCRIPTOR_EXIT_ONLY);
+                           NULL, USABLE_DESCRIPTOR_EXIT_POLICY_AND_FLAG);
   log_debug(LD_NET,
             "%s: %d present, %d usable",
             "exits",
             np,
             nu);
 
-  /* We need at least 1 exit present in the consensus to consider
+  /* We need at least 1 exit (flag and policy) in the consensus to consider
    * building exit paths */
   /* Update our understanding of whether the consensus has exits */
   consensus_path_type_t old_have_consensus_path = have_consensus_path;
-  have_consensus_path = ((nu > 0) ?
+  have_consensus_path = ((np > 0) ?
                          CONSENSUS_PATH_EXIT :
                          CONSENSUS_PATH_INTERNAL);
 
-  if (have_consensus_path == CONSENSUS_PATH_INTERNAL
-      && old_have_consensus_path != have_consensus_path) {
-    log_notice(LD_NET,
-               "The current consensus has no exit nodes. "
-               "Tor can only build internal paths, "
-               "such as paths to hidden services.");
+  if (old_have_consensus_path != have_consensus_path) {
+    if (have_consensus_path == CONSENSUS_PATH_INTERNAL) {
+      log_notice(LD_NET,
+                 "The current consensus has no exit nodes. "
+                 "Tor can only build internal paths, "
+                 "such as paths to onion services.");
 
-    /* However, exit nodes can reachability self-test using this consensus,
-     * join the network, and appear in a later consensus. This will allow
-     * the network to build exit paths, such as paths for world wide web
-     * browsing (as distinct from hidden service web browsing). */
+      /* However, exit nodes can reachability self-test using this consensus,
+       * join the network, and appear in a later consensus. This will allow
+       * the network to build exit paths, such as paths for world wide web
+       * browsing (as distinct from hidden service web browsing). */
+    } else if (old_have_consensus_path == CONSENSUS_PATH_INTERNAL) {
+      log_notice(LD_NET,
+                 "The current consensus contains exit nodes. "
+                 "Tor can build exit and internal paths.");
+    }
   }
 
   f_guard = frac_nodes_with_descriptors(guards, WEIGHT_FOR_GUARD);
@@ -2151,39 +2334,25 @@ compute_frac_paths_available(const networkstatus_t *consensus,
     smartlist_t *myexits= smartlist_new();
     smartlist_t *myexits_unflagged = smartlist_new();
 
-    /* All nodes with exit flag in ExitNodes option */
+    /* All nodes with exit policy and flag in ExitNodes option */
     count_usable_descriptors(&np, &nu, myexits, consensus, now,
-                             options->ExitNodes, USABLE_DESCRIPTOR_EXIT_ONLY);
+                             options->ExitNodes,
+                             USABLE_DESCRIPTOR_EXIT_POLICY_AND_FLAG);
     log_debug(LD_NET,
               "%s: %d present, %d usable",
               "myexits",
               np,
               nu);
 
-    /* Now compute the nodes in the ExitNodes option where which we don't know
-     * what their exit policy is, or we know it permits something. */
+    /* Now compute the nodes in the ExitNodes option where we know their exit
+     * policy permits something. */
     count_usable_descriptors(&np, &nu, myexits_unflagged,
                              consensus, now,
-                             options->ExitNodes, USABLE_DESCRIPTOR_ALL);
+                             options->ExitNodes,
+                             USABLE_DESCRIPTOR_EXIT_POLICY);
     log_debug(LD_NET,
               "%s: %d present, %d usable",
               "myexits_unflagged (initial)",
-              np,
-              nu);
-
-    SMARTLIST_FOREACH_BEGIN(myexits_unflagged, const node_t *, node) {
-      if (node_has_descriptor(node) && node_exit_policy_rejects_all(node)) {
-        SMARTLIST_DEL_CURRENT(myexits_unflagged, node);
-        /* this node is not actually an exit */
-        np--;
-        /* this node is unusable as an exit */
-        nu--;
-      }
-    } SMARTLIST_FOREACH_END(node);
-
-    log_debug(LD_NET,
-              "%s: %d present, %d usable",
-              "myexits_unflagged (final)",
               np,
               nu);
 
@@ -2227,14 +2396,14 @@ compute_frac_paths_available(const networkstatus_t *consensus,
     tor_asprintf(status_out,
                  "%d%% of guards bw, "
                  "%d%% of midpoint bw, and "
-                 "%d%% of exit bw%s = "
+                 "%d%% of %s = "
                  "%d%% of path bw",
                  (int)(f_guard*100),
                  (int)(f_mid*100),
                  (int)(f_exit*100),
                  (router_have_consensus_path() == CONSENSUS_PATH_EXIT ?
-                  "" :
-                  " (no exits in consensus)"),
+                  "exit bw" :
+                  "end bw (no exits in consensus)"),
                  (int)(f_path*100));
 
   return f_path;
