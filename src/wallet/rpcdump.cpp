@@ -65,11 +65,7 @@ static std::string DecodeDumpString(const std::string &str) {
     return ret.str();
 }
 
-<<<<<<< HEAD
-bool GetWalletAddressesForKey(CWallet * const pwallet, const CKeyID &keyid, std::string &strAddr, std::string &strLabel)
-=======
 static bool GetWalletAddressesForKey(CWallet * const pwallet, const CKeyID &keyid, std::string &strAddr, std::string &strLabel)
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 {
     bool fLabelFound = false;
     CKey key;
@@ -85,17 +81,11 @@ static bool GetWalletAddressesForKey(CWallet * const pwallet, const CKeyID &keyi
         }
     }
     if (!fLabelFound) {
-<<<<<<< HEAD
-        strAddr = EncodeDestination(GetDestinationForKey(key.GetPubKey(), g_address_type));
-=======
         strAddr = EncodeDestination(GetDestinationForKey(key.GetPubKey(), pwallet->m_default_address_type));
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
     }
     return fLabelFound;
 }
 
-<<<<<<< HEAD
-=======
 static const int64_t TIMESTAMP_MIN = 0;
 
 static void RescanWallet(CWallet& wallet, const WalletRescanReserver& reserver, int64_t time_begin = TIMESTAMP_MIN, bool update = true)
@@ -107,7 +97,6 @@ static void RescanWallet(CWallet& wallet, const WalletRescanReserver& reserver, 
         throw JSONRPCError(RPC_WALLET_ERROR, "Rescan was unable to fully rescan the blockchain. Some transactions may be missing.");
     }
 }
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 
 UniValue importprivkey(const JSONRPCRequest& request)
 {
@@ -329,11 +318,7 @@ UniValue importaddress(const JSONRPCRequest& request)
             std::vector<unsigned char> data(ParseHex(request.params[0].get_str()));
             ImportScript(pwallet, CScript(data.begin(), data.end()), strLabel, fP2SH);
         } else {
-<<<<<<< HEAD
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Actinium address or script");
-=======
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Litecoin address or script");
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
         }
     }
     if (fRescan)
@@ -661,11 +646,7 @@ UniValue dumpprivkey(const JSONRPCRequest& request)
             "\nReveals the private key corresponding to 'address'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-<<<<<<< HEAD
-            "1. \"address\"   (string, required) The Actinium address for the private key\n"
-=======
             "1. \"address\"   (string, required) The litecoin address for the private key\n"
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n"
@@ -681,11 +662,7 @@ UniValue dumpprivkey(const JSONRPCRequest& request)
     std::string strAddress = request.params[0].get_str();
     CTxDestination dest = DecodeDestination(strAddress);
     if (!IsValidDestination(dest)) {
-<<<<<<< HEAD
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Actinium address");
-=======
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Litecoin address");
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
     }
     auto keyid = GetKeyForDestination(*pwallet, dest);
     if (keyid.IsNull()) {
@@ -715,11 +692,7 @@ UniValue dumpwallet(const JSONRPCRequest& request)
             "Note that if your wallet contains keys which are not derived from your HD seed (e.g. imported keys), these are not covered by\n"
             "only backing up the seed itself, and must be backed up too (e.g. ensure you back up the whole dumpfile).\n"
             "\nArguments:\n"
-<<<<<<< HEAD
-            "1. \"filename\"    (string, required) The filename with path (either absolute or relative to Actiniumd)\n"
-=======
             "1. \"filename\"    (string, required) The filename with path (either absolute or relative to litecoind)\n"
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
             "\nResult:\n"
             "{                           (json object)\n"
             "  \"filename\" : {        (string) The filename with full absolute path\n"
@@ -768,13 +741,8 @@ UniValue dumpwallet(const JSONRPCRequest& request)
     std::sort(vKeyBirth.begin(), vKeyBirth.end());
 
     // produce output
-<<<<<<< HEAD
-    file << strprintf("# Wallet dump created by Actinium %s\n", CLIENT_BUILD);
-    file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
-=======
     file << strprintf("# Wallet dump created by Litecoin %s\n", CLIENT_BUILD);
     file << strprintf("# * Created on %s\n", FormatISO8601DateTime(GetTime()));
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
     file << strprintf("# * Best block at time of backup was %i (%s),\n", chainActive.Height(), chainActive.Tip()->GetBlockHash().ToString());
     file << strprintf("#   mined on %s\n", FormatISO8601DateTime(chainActive.Tip()->GetBlockTime()));
     file << "\n";
@@ -793,28 +761,16 @@ UniValue dumpwallet(const JSONRPCRequest& request)
     }
     for (std::vector<std::pair<int64_t, CKeyID> >::const_iterator it = vKeyBirth.begin(); it != vKeyBirth.end(); it++) {
         const CKeyID &keyid = it->second;
-<<<<<<< HEAD
-        std::string strTime = EncodeDumpTime(it->first);
-=======
         std::string strTime = FormatISO8601DateTime(it->first);
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
         std::string strAddr;
         std::string strLabel;
         CKey key;
         if (pwallet->GetKey(keyid, key)) {
-<<<<<<< HEAD
-            file << strprintf("%s %s ", CBitcoinSecret(key).ToString(), strTime);
-            if (GetWalletAddressesForKey(pwallet, keyid, strAddr, strLabel)) {
-               file << strprintf("label=%s", strLabel);
-            } else if (keyid == masterKeyID) {
-                file << "hdmaster=1";
-=======
             file << strprintf("%s %s ", EncodeSecret(key), strTime);
             if (GetWalletAddressesForKey(pwallet, keyid, strAddr, strLabel)) {
                file << strprintf("label=%s", strLabel);
             } else if (keyid == seed_id) {
                 file << "hdseed=1";
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
             } else if (mapKeyPool.count(keyid)) {
                 file << "reserve=1";
             } else if (pwallet->mapKeyMetadata[keyid].hdKeypath == "s") {
@@ -1306,11 +1262,7 @@ UniValue importmulti(const JSONRPCRequest& mainRequest)
                                       "block from time %d, which is after or within %d seconds of key creation, and "
                                       "could contain transactions pertaining to the key. As a result, transactions "
                                       "and coins using this key may not appear in the wallet. This error could be "
-<<<<<<< HEAD
-                                      "caused by pruning or data corruption (see Actiniumd log for details) and could "
-=======
                                       "caused by pruning or data corruption (see litecoind log for details) and could "
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
                                       "be dealt with by downloading and rescanning the relevant blocks (see -reindex "
                                       "and -rescan options).",
                                 GetImportTimestamp(request, now), scannedTime - TIMESTAMP_WINDOW - 1, TIMESTAMP_WINDOW)));
