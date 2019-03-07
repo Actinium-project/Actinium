@@ -34,7 +34,7 @@ static const int8_t mapBase58[256] = {
 bool DecodeBase58(const char* psz, std::vector<unsigned char>& vch)
 {
     // Skip leading spaces.
-    while (*psz && IsSpace(*psz))
+    while (*psz && isspace(*psz))
         psz++;
     // Skip and count leading '1's.
     int zeroes = 0;
@@ -64,7 +64,7 @@ bool DecodeBase58(const char* psz, std::vector<unsigned char>& vch)
         psz++;
     }
     // Skip trailing spaces.
-    while (IsSpace(*psz))
+    while (isspace(*psz))
         psz++;
     if (*psz != 0)
         return false;

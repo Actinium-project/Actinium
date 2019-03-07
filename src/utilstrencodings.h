@@ -195,7 +195,7 @@ bool ConvertBits(const O& outfn, I it, I end) {
  * @param[in] c     character to test
  * @return          true if the argument is a whitespace character; otherwise false
  */
-constexpr inline bool IsSpace(char c) noexcept {
+constexpr inline bool isspace(char c) noexcept {
     return c == ' ' || c == '\f' || c == '\n' || c == '\r' || c == '\t' || c == '\v';
 }
 
