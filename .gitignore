@@ -1,3 +1,6 @@
+aclocal4.mk
+test/config.ini
+
 # Prerequisites
 *.d
 
