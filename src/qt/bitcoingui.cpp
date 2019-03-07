@@ -1148,12 +1148,13 @@ void BitcoinGUI::updateProxyIcon()
 {
     std::string ip_port;
     bool proxy_enabled = clientModel->getProxyInfo(ip_port);
+    QString theme = GUIUtil::getThemeName();
 
     if (proxy_enabled) {
         if (labelProxyIcon->pixmap() == 0) {
             QString ip_port_q = QString::fromStdString(ip_port);
-            labelProxyIcon->setPixmap(platformStyle->SingleColorIcon(":/icons/proxy").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
-            labelProxyIcon->setToolTip(tr("Proxy is <b>enabled</b>: %1").arg(ip_port_q));
+            labelProxyIcon->setPixmap(QIcon(":/icons/" + theme + "/onion_enabled").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
+            labelProxyIcon->setToolTip(tr("Tor is <b>enabled</b>: %1").arg(ip_port_q));
         } else {
             labelProxyIcon->show();
         }
