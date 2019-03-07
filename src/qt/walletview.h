@@ -130,7 +130,7 @@ Q_SIGNALS:
     /** Encryption status of wallet changed */
     void encryptionStatusChanged();
     /** HD-Enabled status of wallet changed (only possible during startup) */
-    void hdEnabledStatusChanged(int hdEnabled);
+    void hdEnabledStatusChanged();
     /** TOR-Enabled status of wallet changed (only possible during startup) */
     void torEnabledStatusChanged(int torEnabled);
     /** Notify that a new transaction appeared */

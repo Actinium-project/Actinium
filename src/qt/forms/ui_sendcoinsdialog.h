@@ -822,7 +822,9 @@ public:
 #endif // QT_NO_TOOLTIP
         buttonMinimizeFee->setText(QApplication::translate("SendCoinsDialog", "Hide", nullptr));
 #ifndef QT_NO_TOOLTIP
-        labelCustomPerKilobyte->setToolTip(QApplication::translate("SendCoinsDialog", "If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then \"per kilobyte\" only pays 250 satoshis in fee, while \"total at least\" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.", nullptr));
+        labelCustomPerKilobyte->setToolTip(QApplication::translate("SendCoinsDialog", "Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.\n"
+"\n"
+"Note:  Since the fee is calculated on a per-byte basis, a fee of \"100 satoshis per kB\" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.", nullptr));
 #endif // QT_NO_TOOLTIP
         labelCustomPerKilobyte->setText(QApplication::translate("SendCoinsDialog", "per kilobyte", nullptr));
 #ifndef QT_NO_TOOLTIP

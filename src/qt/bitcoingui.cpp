@@ -157,7 +157,7 @@ BitcoinGUI::BitcoinGUI(interfaces::Node& node, const PlatformStyle *_platformSty
         frameBlocksLayout->addStretch();
         frameBlocksLayout->addWidget(unitDisplayControl);
         frameBlocksLayout->addStretch();
-        frameBlocksLayout->addWidget(labelTorStatusIcon);
+        frameBlocksLayout->addWidget(labelProxyIcon);
         frameBlocksLayout->addWidget(labelWalletEncryptionIcon);
         frameBlocksLayout->addWidget(labelWalletHDStatusIcon);
     }
@@ -278,13 +278,6 @@ void BitcoinGUI::createActions()
     historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(historyAction);
 
-    loggerAction = new QAction(QIcon(":/icons/" + theme + "/wallet-log"), tr("&Logfile"), this);
-    loggerAction->setStatusTip(tr("Browse Debug file"));
-    loggerAction->setToolTip(loggerAction->statusTip());
-    loggerAction->setCheckable(true);
-    loggerAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
-    tabGroup->addAction(loggerAction);
-
 #ifdef ENABLE_WALLET
     // These showNormalIfMinimized are needed because Send Coins and Receive Coins
     // can be triggered from the tray menu, and need to show the GUI to be useful.
@@ -302,7 +295,6 @@ void BitcoinGUI::createActions()
     connect(usedReceivingAddressesAction, SIGNAL(triggered()), this, SLOT(gotoReceivingAddressesPage()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
-    connect(loggerAction, SIGNAL(triggered()), this, SLOT(gotoDebugLogPage()));
 #endif // ENABLE_WALLET
 
     quitAction = new QAction(QIcon(":/icons/" + theme + "/quit"), tr("E&xit"), this);
@@ -404,7 +396,6 @@ void BitcoinGUI::createMenuBar()
         settings->addAction(encryptWalletAction);
         settings->addAction(changePassphraseAction);
         settings->addSeparator();
-        settings->addAction(loggerAction);
     }
     settings->addAction(optionsAction);
 
@@ -434,7 +425,6 @@ void BitcoinGUI::createToolBars()
         toolbar->addAction(usedSendingAddressesAction);
         toolbar->addAction(usedReceivingAddressesAction);
         toolbar->addAction(historyAction);
-        toolbar->addAction(loggerAction);
         overviewAction->setChecked(true);
 
 #ifdef ENABLE_WALLET
@@ -593,7 +583,6 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
     verifyMessageAction->setEnabled(enabled);
     usedSendingAddressesAction->setEnabled(enabled);
     usedReceivingAddressesAction->setEnabled(enabled);
-    loggerAction->setEnabled(true);
     openAction->setEnabled(enabled);
 }
 
@@ -741,12 +730,6 @@ void BitcoinGUI::gotoReceivingAddressesPage()
     if (walletFrame) walletFrame->gotoReceivingAddressesPage();
 }
 
-void BitcoinGUI::gotoDebugLogPage()
-{
-    loggerAction->setChecked(true);
-    if (walletFrame) walletFrame->gotoDebugLogPage();
-}
-
 void BitcoinGUI::gotoSignMessageTab(QString addr)
 {
     if (walletFrame) walletFrame->gotoSignMessageTab(addr);
@@ -774,11 +757,11 @@ void BitcoinGUI::updateNetworkState()
 
     QString tooltip;
 
-    if (clientModel->getNetworkActive()) {
-        tooltip = tr("%n active connection(s) to Actinium network", "", count) + QString(".<br>") + tr("Click to disable network activity.");
+    if (m_node.getNetworkActive()) {
+        tooltip = tr("%n active connection(s) to Litecoin network", "", count) + QString(".<br>") + tr("Click to disable network activity.");
     } else {
         tooltip = tr("Network activity disabled.") + QString("<br>") + tr("Click to enable network activity again.");
-        icon = ":/icons/" + theme + "/network_disabled";
+        icon = ":/icons/network_disabled";
     }
 
     // Don't word-wrap this (fixed-width) tooltip
@@ -1109,11 +1092,11 @@ void BitcoinGUI::setHDStatus(int hdEnabled)
 void BitcoinGUI::setTorStatus(int torEnabled)
 {
     QString theme = GUIUtil::getThemeName();
-    labelTorStatusIcon->setPixmap(QIcon(torEnabled ? ":/icons/" + theme + "/onion_enabled" : ":/icons/" + theme + "/onion_disabled").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-    labelTorStatusIcon->setToolTip(torEnabled ? tr("Tor is <b>enabled</b>") : tr("Tor is <b>disabled</b>"));
+    labelProxyIcon->setPixmap(QIcon(torEnabled ? ":/icons/" + theme + "/onion_enabled" : ":/icons/" + theme + "/onion_disabled").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
+    labelProxyIcon->setToolTip(torEnabled ? tr("Tor is <b>enabled</b>") : tr("Tor is <b>disabled</b>"));
 
     // eventually disable the QLabel to set its opacity to 50% 
-    labelTorStatusIcon->setEnabled(torEnabled);
+    labelProxyIcon->setEnabled(torEnabled);
 }
 
 void BitcoinGUI::setEncryptionStatus(int status)

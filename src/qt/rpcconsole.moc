@@ -19,8 +19,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_RPCExecutor_t {
-    QByteArrayData data[6];
-    char stringdata0[44];
+    QByteArrayData data[7];
+    char stringdata0[53];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,11 +34,12 @@ QT_MOC_LITERAL(1, 12, 5), // "reply"
 QT_MOC_LITERAL(2, 18, 0), // ""
 QT_MOC_LITERAL(3, 19, 8), // "category"
 QT_MOC_LITERAL(4, 28, 7), // "command"
-QT_MOC_LITERAL(5, 36, 7) // "request"
+QT_MOC_LITERAL(5, 36, 7), // "request"
+QT_MOC_LITERAL(6, 44, 8) // "walletID"
 
     },
     "RPCExecutor\0reply\0\0category\0command\0"
-    "request"
+    "request\0walletID"
 };
 #undef QT_MOC_LITERAL
 
@@ -59,13 +60,13 @@ static const uint qt_meta_data_RPCExecutor[] = {
        1,    2,   24,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       5,    1,   29,    2, 0x0a /* Public */,
+       5,    2,   29,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Int, QMetaType::QString,    3,    4,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,    4,    6,
 
        0        // eod
 };
@@ -77,7 +78,7 @@ void RPCExecutor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->reply((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2]))); break;
-        case 1: _t->request((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 1: _t->request((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

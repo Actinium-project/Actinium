@@ -569,7 +569,6 @@ bool WalletModel::torEnabled() const
     return IsEmbeddedTorActive();
 }
 
-OutputType WalletModel::getDefaultAddressType() const
 QString WalletModel::getWalletName() const
 {
     return QString::fromStdString(m_wallet->getWalletName());

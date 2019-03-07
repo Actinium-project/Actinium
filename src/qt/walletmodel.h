@@ -204,7 +204,6 @@ public:
 
     bool torEnabled() const;
 
-    OutputType getDefaultAddressType() const;
     QString getWalletName() const;
 
     bool isMultiwallet();

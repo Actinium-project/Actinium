@@ -237,8 +237,6 @@ private Q_SLOTS:
     void gotoReceivingAddressesPage();
     /** Switch to Sending Addresses page **/
     void gotoSendingAddressesPage();
-    /** Switch to Debug File page **/
-    void gotoDebugLogPage();
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
     /** Show Sign/Verify Message dialog and switch to verify message tab */

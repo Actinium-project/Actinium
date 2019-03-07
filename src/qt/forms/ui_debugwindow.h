@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
@@ -72,6 +73,8 @@ public:
     QWidget *tab_console;
     QVBoxLayout *verticalLayout_3;
     QHBoxLayout *horizontalLayout;
+    QLabel *WalletSelectorLabel;
+    QComboBox *WalletSelector;
     QSpacerItem *horizontalSpacer;
     QPushButton *fontSmallerButton;
     QPushButton *fontBiggerButton;
@@ -370,6 +373,17 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(4);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        WalletSelectorLabel = new QLabel(tab_console);
+        WalletSelectorLabel->setObjectName(QString::fromUtf8("WalletSelectorLabel"));
+
+        horizontalLayout->addWidget(WalletSelectorLabel);
+
+        WalletSelector = new QComboBox(tab_console);
+        WalletSelector->addItem(QString());
+        WalletSelector->setObjectName(QString::fromUtf8("WalletSelector"));
+
+        horizontalLayout->addWidget(WalletSelector);
+
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout->addItem(horizontalSpacer);
@@ -944,6 +958,9 @@ public:
 #endif // QT_NO_TOOLTIP
         openDebugLogfileButton->setText(QApplication::translate("RPCConsole", "&Open", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_info), QApplication::translate("RPCConsole", "&Information", nullptr));
+        WalletSelectorLabel->setText(QApplication::translate("RPCConsole", "Wallet: ", nullptr));
+        WalletSelector->setItemText(0, QApplication::translate("RPCConsole", "(none)", nullptr));
+
         fontSmallerButton->setText(QString());
 #ifndef QT_NO_TOOLTIP
         fontSmallerButton->setToolTip(QApplication::translate("RPCConsole", "Decrease font size", nullptr));

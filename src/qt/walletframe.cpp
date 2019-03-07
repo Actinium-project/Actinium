@@ -207,13 +207,6 @@ void WalletFrame::gotoReceivingAddressesPage()
         walletView->usedReceivingAddresses();
 }
 
-void WalletFrame::gotoDebugLogPage()
-{
-    WalletView *walletView = currentWalletView();
-    if (walletView)
-        walletView->debugLog();
-}
-
 WalletView *WalletFrame::currentWalletView()
 {
     return qobject_cast<WalletView*>(walletStack->currentWidget());

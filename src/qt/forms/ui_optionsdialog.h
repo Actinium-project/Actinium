@@ -37,15 +37,22 @@ public:
     QWidget *tabMain;
     QVBoxLayout *verticalLayout_Main;
     QCheckBox *bitcoinAtStartup;
+    QSpacerItem *horizontalSpacer_0_Main;
+    QHBoxLayout *horizontalLayout_Main_Prune;
+    QCheckBox *prune;
+    QSpinBox *pruneSize;
+    QLabel *pruneSizeUnitLabel;
+    QSpacerItem *horizontalSpacer_Main_Prune;
+    QLabel *pruneWarning;
     QHBoxLayout *horizontalLayout_2_Main;
     QLabel *databaseCacheLabel;
     QSpinBox *databaseCache;
     QLabel *databaseCacheUnitLabel;
     QSpacerItem *horizontalSpacer_2_Main;
-    QHBoxLayout *horizontalLayout_3_Main;
+    QHBoxLayout *horizontalLayout_Main_VerifyLabel;
     QLabel *threadsScriptVerifLabel;
     QSpinBox *threadsScriptVerif;
-    QSpacerItem *horizontalSpacer_3_Main;
+    QSpacerItem *horizontalSpacer_Main_Threads;
     QSpacerItem *verticalSpacer_Main;
     QWidget *tabWallet;
     QVBoxLayout *verticalLayout_Wallet;
@@ -138,6 +145,41 @@ public:
 
         verticalLayout_Main->addWidget(bitcoinAtStartup);
 
+        horizontalSpacer_0_Main = new QSpacerItem(40, 5, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        verticalLayout_Main->addItem(horizontalSpacer_0_Main);
+
+        horizontalLayout_Main_Prune = new QHBoxLayout();
+        horizontalLayout_Main_Prune->setObjectName(QString::fromUtf8("horizontalLayout_Main_Prune"));
+        prune = new QCheckBox(tabMain);
+        prune->setObjectName(QString::fromUtf8("prune"));
+
+        horizontalLayout_Main_Prune->addWidget(prune);
+
+        pruneSize = new QSpinBox(tabMain);
+        pruneSize->setObjectName(QString::fromUtf8("pruneSize"));
+
+        horizontalLayout_Main_Prune->addWidget(pruneSize);
+
+        pruneSizeUnitLabel = new QLabel(tabMain);
+        pruneSizeUnitLabel->setObjectName(QString::fromUtf8("pruneSizeUnitLabel"));
+        pruneSizeUnitLabel->setTextFormat(Qt::PlainText);
+
+        horizontalLayout_Main_Prune->addWidget(pruneSizeUnitLabel);
+
+        horizontalSpacer_Main_Prune = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_Main_Prune->addItem(horizontalSpacer_Main_Prune);
+
+
+        verticalLayout_Main->addLayout(horizontalLayout_Main_Prune);
+
+        pruneWarning = new QLabel(tabMain);
+        pruneWarning->setObjectName(QString::fromUtf8("pruneWarning"));
+        pruneWarning->setTextFormat(Qt::PlainText);
+
+        verticalLayout_Main->addWidget(pruneWarning);
+
         horizontalLayout_2_Main = new QHBoxLayout();
         horizontalLayout_2_Main->setObjectName(QString::fromUtf8("horizontalLayout_2_Main"));
         databaseCacheLabel = new QLabel(tabMain);
@@ -164,25 +206,25 @@ public:
 
         verticalLayout_Main->addLayout(horizontalLayout_2_Main);
 
-        horizontalLayout_3_Main = new QHBoxLayout();
-        horizontalLayout_3_Main->setObjectName(QString::fromUtf8("horizontalLayout_3_Main"));
+        horizontalLayout_Main_VerifyLabel = new QHBoxLayout();
+        horizontalLayout_Main_VerifyLabel->setObjectName(QString::fromUtf8("horizontalLayout_Main_VerifyLabel"));
         threadsScriptVerifLabel = new QLabel(tabMain);
         threadsScriptVerifLabel->setObjectName(QString::fromUtf8("threadsScriptVerifLabel"));
         threadsScriptVerifLabel->setTextFormat(Qt::PlainText);
 
-        horizontalLayout_3_Main->addWidget(threadsScriptVerifLabel);
+        horizontalLayout_Main_VerifyLabel->addWidget(threadsScriptVerifLabel);
 
         threadsScriptVerif = new QSpinBox(tabMain);
         threadsScriptVerif->setObjectName(QString::fromUtf8("threadsScriptVerif"));
 
-        horizontalLayout_3_Main->addWidget(threadsScriptVerif);
+        horizontalLayout_Main_VerifyLabel->addWidget(threadsScriptVerif);
 
-        horizontalSpacer_3_Main = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer_Main_Threads = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        horizontalLayout_3_Main->addItem(horizontalSpacer_3_Main);
+        horizontalLayout_Main_VerifyLabel->addItem(horizontalSpacer_Main_Threads);
 
 
-        verticalLayout_Main->addLayout(horizontalLayout_3_Main);
+        verticalLayout_Main->addLayout(horizontalLayout_Main_VerifyLabel);
 
         verticalSpacer_Main = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -573,6 +615,12 @@ public:
         bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start %1 after logging in to the system.", nullptr));
 #endif // QT_NO_TOOLTIP
         bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start %1 on system login", nullptr));
+#ifndef QT_NO_TOOLTIP
+        prune->setToolTip(QApplication::translate("OptionsDialog", "Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.", nullptr));
+#endif // QT_NO_TOOLTIP
+        prune->setText(QApplication::translate("OptionsDialog", "Prune &block storage to", nullptr));
+        pruneSizeUnitLabel->setText(QApplication::translate("OptionsDialog", "GB", nullptr));
+        pruneWarning->setText(QApplication::translate("OptionsDialog", "Reverting this setting requires re-downloading the entire blockchain.", nullptr));
         databaseCacheLabel->setText(QApplication::translate("OptionsDialog", "Size of &database cache", nullptr));
         databaseCacheUnitLabel->setText(QApplication::translate("OptionsDialog", "MB", nullptr));
         threadsScriptVerifLabel->setText(QApplication::translate("OptionsDialog", "Number of script &verification threads", nullptr));

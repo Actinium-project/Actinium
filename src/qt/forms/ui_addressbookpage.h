@@ -15,6 +15,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTableView>
@@ -28,6 +29,7 @@ class Ui_AddressBookPage
 public:
     QVBoxLayout *verticalLayout;
     QLabel *labelExplanation;
+    QLineEdit *searchLineEdit;
     QTableView *tableView;
     QHBoxLayout *horizontalLayout;
     QPushButton *newAddress;
@@ -49,6 +51,11 @@ public:
         labelExplanation->setWordWrap(true);
 
         verticalLayout->addWidget(labelExplanation);
+
+        searchLineEdit = new QLineEdit(AddressBookPage);
+        searchLineEdit->setObjectName(QString::fromUtf8("searchLineEdit"));
+
+        verticalLayout->addWidget(searchLineEdit);
 
         tableView = new QTableView(AddressBookPage);
         tableView->setObjectName(QString::fromUtf8("tableView"));
@@ -115,6 +122,7 @@ public:
 
     void retranslateUi(QWidget *AddressBookPage)
     {
+        searchLineEdit->setPlaceholderText(QApplication::translate("AddressBookPage", "Enter address or label to search", nullptr));
 #ifndef QT_NO_TOOLTIP
         tableView->setToolTip(QApplication::translate("AddressBookPage", "Right-click to edit address or label", nullptr));
 #endif // QT_NO_TOOLTIP
