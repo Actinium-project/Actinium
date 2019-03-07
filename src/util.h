@@ -367,20 +367,6 @@ inline void insert(std::set<TsetT>& dst, const Tsrc& src) {
     dst.insert(src.begin(), src.end());
 }
 
-} // namespace util
-
-namespace util {
-
-//! Simplification of std insertion
-template <typename Tdst, typename Tsrc>
-inline void insert(Tdst& dst, const Tsrc& src) {
-    dst.insert(dst.begin(), src.begin(), src.end());
-}
-template <typename TsetT, typename Tsrc>
-inline void insert(std::set<TsetT>& dst, const Tsrc& src) {
-    dst.insert(src.begin(), src.end());
-}
-
 #ifdef WIN32
 class WinCmdLineArgs
 {
