@@ -918,13 +918,8 @@ bool CWallet::MarkReplaced(const uint256& originalHash, const uint256& newHash)
     WalletBatch batch(*database, "r+");
 
     bool success = true;
-<<<<<<< HEAD
-    if (!walletdb.WriteTx(wtx)) {
-        LogPrintf("%s: Updating walletdb tx %s failed\n", __func__, wtx.GetHash().ToString());
-=======
     if (!batch.WriteTx(wtx)) {
         WalletLogPrintf("%s: Updating batch tx %s failed\n", __func__, wtx.GetHash().ToString());
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
         success = false;
     }
 
@@ -948,11 +943,7 @@ bool CWallet::AddToWallet(const CWalletTx& wtxIn, bool fFlushOnClose)
     bool fInsertedNew = ret.second;
     if (fInsertedNew) {
         wtx.nTimeReceived = GetAdjustedTime();
-<<<<<<< HEAD
-        wtx.nOrderPos = IncOrderPosNext(&walletdb);
-=======
         wtx.nOrderPos = IncOrderPosNext(&batch);
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
         wtx.m_it_wtxOrdered = wtxOrdered.insert(std::make_pair(wtx.nOrderPos, TxPair(&wtx, nullptr)));
         wtx.nTimeSmart = ComputeTimeSmart(wtx);
         AddToSpends(hash);
@@ -1551,8 +1542,6 @@ int64_t CWalletTx::GetTxTime() const
     return n ? n : nTimeReceived;
 }
 
-<<<<<<< HEAD
-=======
 // Helper for producing a max-sized low-S low-R signature (eg 71 bytes)
 // or a max-sized low-S signature (e.g. 72 bytes) if use_max_sig is true
 bool CWallet::DummySignInput(CTxIn &tx_in, const CTxOut &txout, bool use_max_sig) const
@@ -1623,7 +1612,6 @@ int CalculateMaximumSignedInputSize(const CTxOut& txout, const CWallet* wallet, 
     return GetVirtualTransactionInputSize(txn.vin[0]);
 }
 
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 void CWalletTx::GetAmounts(std::list<COutputEntry>& listReceived,
                            std::list<COutputEntry>& listSent, CAmount& nFee, std::string& strSentAccount, const isminefilter& filter) const
 {
@@ -3182,11 +3170,7 @@ DBErrors CWallet::LoadWallet(bool& fFirstRunRet)
 DBErrors CWallet::ZapSelectTx(std::vector<uint256>& vHashIn, std::vector<uint256>& vHashOut)
 {
     AssertLockHeld(cs_wallet); // mapWallet
-<<<<<<< HEAD
-    DBErrors nZapSelectTxRet = CWalletDB(*dbw,"cr+").ZapSelectTx(vHashIn, vHashOut);
-=======
     DBErrors nZapSelectTxRet = WalletBatch(*database,"cr+").ZapSelectTx(vHashIn, vHashOut);
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
     for (uint256 hash : vHashOut) {
         const auto& it = mapWallet.find(hash);
         wtxOrdered.erase(it->second.m_it_wtxOrdered);
@@ -4268,11 +4252,7 @@ std::shared_ptr<CWallet> CWallet::CreateWalletFromFile(const std::string& name, 
     // Try to top up keypool. No-op if the wallet is locked.
     walletInstance->TopUpKeyPool();
 
-<<<<<<< HEAD
-    LOCK2(cs_main, walletInstance->cs_wallet);
-=======
     LOCK(cs_main);
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 
     CBlockIndex *pindexRescan = chainActive.Genesis();
     if (!gArgs.GetBoolArg("-rescan", false))
@@ -4358,16 +4338,10 @@ std::shared_ptr<CWallet> CWallet::CreateWalletFromFile(const std::string& name, 
     walletInstance->SetBroadcastTransactions(gArgs.GetBoolArg("-walletbroadcast", DEFAULT_WALLETBROADCAST));
 
     {
-<<<<<<< HEAD
-        LogPrintf("setKeyPool.size() = %u\n",      walletInstance->GetKeyPoolSize());
-        LogPrintf("mapWallet.size() = %u\n",       walletInstance->mapWallet.size());
-        LogPrintf("mapAddressBook.size() = %u\n",  walletInstance->mapAddressBook.size());
-=======
         LOCK(walletInstance->cs_wallet);
         walletInstance->WalletLogPrintf("setKeyPool.size() = %u\n",      walletInstance->GetKeyPoolSize());
         walletInstance->WalletLogPrintf("mapWallet.size() = %u\n",       walletInstance->mapWallet.size());
         walletInstance->WalletLogPrintf("mapAddressBook.size() = %u\n",  walletInstance->mapAddressBook.size());
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
     }
 
     return walletInstance;
