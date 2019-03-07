@@ -1,4 +1,4 @@
-aclocal4.mk
+aclocal.m4
 test/config.ini
 
 # Prerequisites
