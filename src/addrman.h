@@ -249,11 +249,7 @@ protected:
     void ClearNew(int nUBucket, int nUBucketPos) EXCLUSIVE_LOCKS_REQUIRED(cs);
 
     //! Mark an entry "good", possibly moving it from "new" to "tried".
-<<<<<<< HEAD
-    void Good_(const CService &addr, int64_t nTime) EXCLUSIVE_LOCKS_REQUIRED(cs);
-=======
     void Good_(const CService &addr, bool test_before_evict, int64_t time);
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 
     //! Add an entry to the "new" table.
     bool Add_(const CAddress &addr, const CNetAddr& source, int64_t nTimePenalty) EXCLUSIVE_LOCKS_REQUIRED(cs);
