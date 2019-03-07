@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The Bitcoin Core developers
+// Copyright (c) 2014-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -31,7 +31,11 @@ NetworkStyle::NetworkStyle(const QString &_appName, const int iconColorHueShift,
     if (std::char_traits<char>::length(_titleAddText) == 0) {
         pixmap.load(":/icons/bitcoin");
     } else {
+<<<<<<< HEAD
         pixmap.load(":/icons/Actinium_splash");
+=======
+        pixmap.load(":/icons/litecoin_splash");
+>>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
     }
 
     if(iconColorHueShift != 0 && iconColorSaturationReduction != 0)
@@ -73,11 +77,7 @@ NetworkStyle::NetworkStyle(const QString &_appName, const int iconColorHueShift,
         }
 
         //convert back to QPixmap
-#if QT_VERSION >= 0x040700
         pixmap.convertFromImage(img);
-#else
-        pixmap = QPixmap::fromImage(img);
-#endif
     }
 
     appIcon             = QIcon(pixmap);

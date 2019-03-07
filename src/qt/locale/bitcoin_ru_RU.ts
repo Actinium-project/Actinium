@@ -30,6 +30,10 @@
         <translation>Удалить выбранный адрес из списка</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Введите адрес или метку для поиска</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Экспортировать данные текущей вкладки в файл</translation>
     </message>
@@ -314,6 +318,14 @@
         <translation>Открыть &amp;URI...</translation>
     </message>
     <message>
+        <source>Wallet:</source>
+        <translation>Кошелек:</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>Кошелек по умолчанию</translation>
+    </message>
+    <message>
         <source>Click to disable network activity.</source>
         <translation>Нажмите для отключения взаимодействия с сетью.</translation>
     </message>
@@ -386,6 +398,14 @@
         <translation>Зашифровать приватные ключи, принадлежащие вашему кошельку</translation>
     </message>
     <message>
+        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <translation>Подписывайте сообщения Litecoin адресами чтобы подтвердить что это написали именно Вы</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <translation>Проверяйте сообщения чтобы убедиться что они подписаны конкретными Litecoin адресами</translation>
+    </message>
+    <message>
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
@@ -396,6 +416,22 @@
     <message>
         <source>&amp;Help</source>
         <translation>&amp;Помощь</translation>
+    </message>
+    <message>
+        <source>Tabs toolbar</source>
+        <translation>Панель вкладок</translation>
+    </message>
+    <message>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Показать список использованных адресов и меток получателей</translation>
+    </message>
+    <message>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Показать список использованных адресов и меток получателей</translation>
+    </message>
+    <message>
+        <source>Open a litecoin: URI or payment request</source>
+        <translation>Открыть Litecoin: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -544,7 +580,11 @@
         <source>(no label)</source>
         <translation>(нет метки)</translation>
     </message>
-    </context>
+    <message>
+        <source>(change)</source>
+        <translation>(сдача)</translation>
+    </message>
+</context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -691,7 +731,11 @@
         <source>Hide</source>
         <translation>Спрятать</translation>
     </message>
-    </context>
+    <message>
+        <source>Unknown. Syncing Headers (%1)...</source>
+        <translation>Не известно. Синхронизация заголовков (%1)...</translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -702,7 +746,15 @@
         <source>URI:</source>
         <translation>URI:</translation>
     </message>
-    </context>
+    <message>
+        <source>Select payment request file</source>
+        <translation>Выберите файл запроса платежа</translation>
+    </message>
+    <message>
+        <source>Select payment request file to open</source>
+        <translation>Выберите файл запроса платежа для открытия</translation>
+    </message>
+</context>
 <context>
     <name>OptionsDialog</name>
     <message>
@@ -750,12 +802,20 @@
         <translation>&amp;Сеть</translation>
     </message>
     <message>
+        <source>GB</source>
+        <translation>ГБ</translation>
+    </message>
+    <message>
         <source>W&amp;allet</source>
         <translation>К&amp;ошелёк</translation>
     </message>
     <message>
         <source>Expert</source>
         <translation>Эксперт</translation>
+    </message>
+    <message>
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp;Тратить неподтвержденную сдачу</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -845,6 +905,18 @@
 <context>
     <name>OverviewPage</name>
     <message>
+        <source>Form</source>
+        <translation>Форма</translation>
+    </message>
+    <message>
+        <source>Your current spendable balance</source>
+        <translation>Ваш доступный баланс</translation>
+    </message>
+    <message>
+        <source>Pending:</source>
+        <translation>В ожидании:</translation>
+    </message>
+    <message>
         <source>Immature:</source>
         <translation>Незрелые:</translation>
     </message>
@@ -863,6 +935,10 @@
     <message>
         <source>Your current balance in watch-only addresses</source>
         <translation>Ваш текущий баланс (только чтение):</translation>
+    </message>
+    <message>
+        <source>Spendable:</source>
+        <translation>Доступно:</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -895,6 +971,77 @@
         <translation>Отправлено</translation>
     </message>
     <message>
+        <source>Invalid payment address %1</source>
+        <translation>Неверный адрес %1</translation>
+    </message>
+    <message>
+        <source>Enter a Actinium address (e.g. %1)</source>
+        <translation>Введите биткоин-адрес (напр. %1)</translation>
+    </message>
+    <message>
+        <source>%1 d</source>
+        <translation>%1 д</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1 ч</translation>
+    </message>
+    <message>
+        <source>%1 m</source>
+        <translation>%1 м</translation>
+    </message>
+    <message>
+        <source>%1 s</source>
+        <translation>%1 с</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Н/Д</translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 и %2</translation>
+    </message>
+    <message>
+        <source>Payment request is not initialized.</source>
+        <translation>Запрос платежа не инициализирован</translation>
+    </message>
+    <message>
+        <source>Invalid payment request.</source>
+        <translation>Неверный запрос платежа.</translation>
+    </message>
+    <message>
+        <source>Error communicating with %1: %2</source>
+        <translation>Ошибка связи с %1: %2</translation>
+    </message>
+    <message>
+        <source>Bad response from server %1</source>
+        <translation>Неправильный ответ от сервера %1</translation>
+    </message>
+    <message>
+        <source>Payment acknowledged</source>
+        <translation>Оплата подтверждена</translation>
+    </message>
+</context>
+<context>
+    <name>PeerTableModel</name>
+    <message>
+        <source>User Agent</source>
+        <translation>Пользовательский агент</translation>
+    </message>
+    <message>
+        <source>Node/Service</source>
+        <translation>Узел/служба</translation>
+    </message>
+    <message>
+        <source>NodeId</source>
+        <translation>Идентификатор узла</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Отправлено</translation>
+    </message>
+    <message>
         <source>Received</source>
         <translation>Получено</translation>
     </message>
@@ -902,8 +1049,12 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Actinium address (e.g. %1)</source>
-        <translation>Введите биткоин-адрес (напр. %1)</translation>
+        <source>Amount</source>
+        <translation>Количество</translation>
+    </message>
+    <message>
+        <source>Enter a Litecoin address (e.g. %1)</source>
+        <translation>Введите лайткоин-адрес (напр. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1067,6 +1218,18 @@
         <translation>&amp;Консоль</translation>
     </message>
     <message>
+        <source>&amp;Network Traffic</source>
+        <translation>&amp;Сетевой трафик</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>Вход:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>Выход:</translation>
+    </message>
+    <message>
         <source>1 &amp;hour</source>
         <translation>1 &amp;час</translation>
     </message>
@@ -1165,6 +1328,10 @@
         <translation>Адрес</translation>
     </message>
     <message>
+        <source>Amount</source>
+        <translation>Количество</translation>
+    </message>
+    <message>
         <source>Label</source>
         <translation>Метка</translation>
     </message>
@@ -1237,6 +1404,18 @@
     <message>
         <source>Choose...</source>
         <translation>Выбрать...</translation>
+    </message>
+    <message>
+        <source>Warning: Fee estimation is currently not possible.</source>
+        <translation>Предупреждение: оценка комиссии в данный момент невозможна.</translation>
+    </message>
+    <message>
+        <source>collapse fee-settings</source>
+        <translation>свернуть настройки комиссионных</translation>
+    </message>
+    <message>
+        <source>per kilobyte</source>
+        <translation>за килобайт</translation>
     </message>
     <message>
         <source>Hide</source>
@@ -1456,6 +1635,22 @@
     <message>
         <source>Label</source>
         <translation>Метка</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Получено на</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Отправить</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Добыто</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>только просмотр</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1696,8 +1891,20 @@
         <translation>Опции кошелька:</translation>
     </message>
     <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>bitcoin-core</translation>
+        <source>Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Неподдерживаемый аргумент -debugnet пропущен, необходимо использовать -debug=net.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -tor found, use -onion.</source>
+        <translation>Обнаружен неподдерживаемый аргумент -tor, необходимо использовать -onion.</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>Проверка блоков...</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>Ошибка чтения с базы данных, выполняется закрытие.</translation>
     </message>
     <message>
         <source>(default: %u)</source>
@@ -1724,8 +1931,44 @@
         <translation>Предупреждение</translation>
     </message>
     <message>
-        <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
-        <translation>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</translation>
+        <source>This is the minimum transaction fee you pay on every transaction.</source>
+        <translation>Это минимальная комиссия, которую вы платите для любой транзакции</translation>
+    </message>
+    <message>
+        <source>This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>Это размер комиссии, которую вы заплатите при отправке транзакции </translation>
+    </message>
+    <message>
+        <source>Transaction amounts must not be negative</source>
+        <translation>Размер транзакции не может быть отрицательным</translation>
+    </message>
+    <message>
+        <source>Transaction must have at least one recipient</source>
+        <translation>Транзакция должна иметь хотя бы одного получателя</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation>Недостаточно средств</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>Загрузка индекса блоков...</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Выполняется загрузка кошелька...</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>Невозможно выполнить переход на более раннюю версию кошелька</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>Выполняется повторное сканирование...</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation>Загрузка завершена</translation>
     </message>
     <message>
         <source>(default: %s)</source>

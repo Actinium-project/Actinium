@@ -14,6 +14,10 @@
         <translation>Dele active selectam inscriptionem ex enumeratione</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Insere inscriptionem vel titulum ut quaeras</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporta data in hac tabella in plicam</translation>
     </message>
@@ -289,15 +293,7 @@
         <source>Command-line options</source>
         <translation>Optiones mandati initiantis</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Usus:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>Optiones mandati intiantis</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
@@ -552,6 +548,10 @@
         <source>Copy &amp;Address</source>
         <translation>&amp;Copia Inscriptionem</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Cassidile</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -597,6 +597,10 @@
     <message>
         <source>S&amp;end</source>
         <translation>&amp;Mitte</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Transactionis merces</translation>
     </message>
     </context>
 <context>
@@ -836,14 +840,6 @@
         <translation>Informatio</translation>
     </message>
     <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Mitte informationem vestigii/debug ad terminale potius quam plicam debug.log</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Diminue plicam debug.log ad initium clientis (praedefinitum: 1 nisi -debug)</translation>
-    </message>
-    <message>
         <source>Signing transaction failed</source>
         <translation>Signandum transactionis abortum est</translation>
     </message>
@@ -856,24 +852,8 @@
         <translation>Transactio nimis magna</translation>
     </message>
     <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Nomen utentis pro conexionibus JSON-RPC</translation>
-    </message>
-    <message>
         <source>Warning</source>
         <translation>Monitio</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Tessera pro conexionibus JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Pelle mandatum quando optissimum frustum mutat (%s in mandato substituitur ab hash frusti)</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Permitte quaerenda DNS pro -addnode, -seednode, et -connect</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>

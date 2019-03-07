@@ -33,13 +33,13 @@ The ZMQ functional test requires a python ZMQ library. To install it:
 Individual tests can be run by directly calling the test script, eg:
 
 ```
-test/functional/replace-by-fee.py
+test/functional/feature_rbf.py
 ```
 
 or can be run through the test_runner harness, eg:
 
 ```
-test/functional/test_runner.py replace-by-fee.py
+test/functional/test_runner.py feature_rbf.py
 ```
 
 You can run any combination (incl. duplicates) of tests by calling:
@@ -87,6 +87,23 @@ Actiniumd processes are being run.**
 
 ```bash
 killall Actiniumd
+The P2P and RPC ports used by the litecoind nodes-under-test are chosen to make
+conflicts with other processes unlikely. However, if there is another litecoind
+process running on the system (perhaps from a previous test which hasn't successfully
+killed all its litecoind nodes), then there may be a port conflict which will
+cause the test to fail. It is recommended that you run the tests on a system
+where no other litecoind processes are running.
+
+On linux, the test_framework will warn if there is another
+litecoind process running when the tests are started.
+
+If there are zombie litecoind processes after test failure, you can kill them
+by running the following commands. **Note that these commands will kill all
+litecoind processes running on the system, so should not be used if any non-test
+litecoind processes are being run.**
+
+```bash
+killall litecoind
 ```
 
 or
@@ -108,6 +125,11 @@ sure Actiniumd processes are stopped as above):
 ```bash
 rm -rf cache
 killall Actiniumd
+sure litecoind processes are stopped as above):
+
+```bash
+rm -rf cache
+killall litecoind
 ```
 
 ##### Test logging
@@ -177,11 +199,11 @@ Note: gdb attach step may require `sudo`
 
 ### Util tests
 
-Util tests can be run locally by running `test/util/bitcoin-util-test.py`. 
+Util tests can be run locally by running `test/util/bitcoin-util-test.py`.
 Use the `-v` option for verbose output.
 
 # Writing functional tests
 
 You are encouraged to write functional tests for new or existing features.
-Further information about the functional test framework and individual 
+Further information about the functional test framework and individual
 tests is found in [test/functional](/test/functional).

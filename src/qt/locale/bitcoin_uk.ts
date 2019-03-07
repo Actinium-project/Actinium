@@ -30,6 +30,10 @@
         <translation>Вилучити вибрані адреси з переліку</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Введіть адресу чи мітку для пошуку</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Експортувати дані з поточної вкладки в файл</translation>
     </message>
@@ -322,6 +326,14 @@
         <translation>Відкрити &amp;URI</translation>
     </message>
     <message>
+        <source>Wallet:</source>
+        <translation>Гаманець:</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>типовий гаманець</translation>
+    </message>
+    <message>
         <source>Click to disable network activity.</source>
         <translation>Натисніть, щоб вимкнути активність мережі.</translation>
     </message>
@@ -507,6 +519,12 @@
         <source>Amount: %1
 </source>
         <translation>Кількість: %1
+</translation>
+    </message>
+    <message>
+        <source>Wallet: %1
+</source>
+        <translation>Гаманець: %1
 </translation>
     </message>
     <message>
@@ -726,10 +744,6 @@
         <translation>&amp;Адреса</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Нова адреса для отримання</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Нова адреса для відправлення</translation>
     </message>
@@ -746,8 +760,8 @@
         <translation>Введена адреса "%1" не є адресою в мережі Actinium.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>Введена адреса "%1" вже присутня в адресній книзі.</translation>
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>Введена адреса "%1" вже присутня в адресній книзі з міткою "%2".</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -798,42 +812,6 @@
     <message>
         <source>Command-line options</source>
         <translation>Параметри командного рядка</translation>
-    </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Використання:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>параметри командного рядка</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>Параметри інтерфейсу:</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>Обирати каталог даних під час запуску (типово: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Встановити мову (наприклад: "de_DE") (типово: системна)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Запускати згорнутим</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Вказати кореневі SSL-сертифікати для запиту платежу (типово: -системні-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>Показувати заставку під час запуску (типово: %u)</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>Скинути налаштування, які було змінено через графічний інтерфейс користувача</translation>
     </message>
 </context>
 <context>
@@ -1050,6 +1028,22 @@
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Мережа</translation>
+    </message>
+    <message>
+        <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
+        <translation>Вимикає деякі нові властивості але всі блоки будуть повністю перевірені. Повернення цієї опції вимагає перезавантаження вього ланцюжка блоків. Фактичний розмір бази може бути дещо більший.</translation>
+    </message>
+    <message>
+        <source>Prune &amp;block storage to</source>
+        <translation>Скоротити місце під блоки...</translation>
+    </message>
+    <message>
+        <source>GB</source>
+        <translation>ГБ</translation>
+    </message>
+    <message>
+        <source>Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation>Повернення цієї опції вимагає перезавантаження вього ланцюжка блоків.</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1308,6 +1302,10 @@
     <message>
         <source>URI handling</source>
         <translation>Обробка URI</translation>
+    </message>
+    <message>
+        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
+        <translation>'litecoin://' не вірний URI. Використовуйте 'litecoin:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1799,6 +1797,14 @@
         <translation>Мережева активність вимкнена.</translation>
     </message>
     <message>
+        <source>Executing command without any wallet</source>
+        <translation>Виконати команду без гаманця</translation>
+    </message>
+    <message>
+        <source>Executing command using "%1" wallet</source>
+        <translation>Виконати команду для "%1" гаманця</translation>
+    </message>
+    <message>
         <source>(node id: %1)</source>
         <translation>(ІД вузла: %1)</translation>
     </message>
@@ -1868,6 +1874,14 @@
     <message>
         <source>Clear</source>
         <translation>Очистити</translation>
+    </message>
+    <message>
+        <source>Native segwit addresses (aka Bech32 or BIP-173) reduce your transaction fees later on and offer better protection against typos, but old wallets don't support them. When unchecked, an address compatible with older wallets will be created instead.</source>
+        <translation>Чиста сегвіт адреса (segwit, Bech32, BIP-173) знижує комісію та пропонує кращий захист від помилок, але старі гаманці її не підтримують. Якщо позначка знята, буде створено адресу, сумісну зі старими гаманцями.</translation>
+    </message>
+    <message>
+        <source>Generate native segwit (Bech32) address</source>
+        <translation>Згенерувати чисту SegWit (Bech32) адресу</translation>
     </message>
     <message>
         <source>Requested payments history</source>
@@ -2071,12 +2085,16 @@
         <translation>згорнути налаштування оплат</translation>
     </message>
     <message>
-        <source>per kilobyte</source>
-        <translation>за кілобайт</translation>
+        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
+
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+        <translation>Вкажіть комісію за кБ (1,000 байт) віртуального розміру транзакції.
+
+Примітка: Так як комісія нараховується за байт, комісія "100 сатоші за кБ" для транзакції розміром 500 байт (пів 1 кБ) буде приблизно 50 сатоші. </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 satoshis in fee, while "total at least" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Якщо комісія встановлюється в 1000 сатоші і розмір транзакції лише 250 байтів, то опція "за кілобайт" встановлює комісію в 250 сатоші, в той час, як "всього щонайменше" - в 1000 сатоші. Для транзакцій більших за кілобайт в обох випадках буде знято комісію за кілобайт.</translation>
+        <source>per kilobyte</source>
+        <translation>за кілобайт</translation>
     </message>
     <message>
         <source>Hide</source>
@@ -2742,10 +2760,6 @@
         <translation>Відкрито до %1</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation>Поза мережею</translation>
-    </message>
-    <message>
         <source>Unconfirmed</source>
         <translation>Не підтверджено</translation>
     </message>
@@ -2768,10 +2782,6 @@
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Повністтю не підтверджено (%1 підтверджень, будуть доступні після %2)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Цей блок не був отриманий жодними іншими вузлами і, ймовірно, не буде прийнятий!</translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
@@ -3084,6 +3094,10 @@
         <source>The wallet data was successfully saved to %1.</source>
         <translation>Дані гаманця успішно збережено в %1.</translation>
     </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Скасувати</translation>
+    </message>
 </context>
 <context>
     <name>bitcoin-core</name>
@@ -3132,16 +3146,8 @@
         <translation>Помилка: Сталася фатальна помилка (детальніший опис наведено в debug.log)</translation>
     </message>
     <message>
-        <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
-        <translation>Комісія (в %s/КБ), що додаватиметься до вихідних транзакцій (типово: %s)</translation>
-    </message>
-    <message>
         <source>Pruning blockstore...</source>
         <translation>Скорочення кількості блоків...</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Запустити в фоновому режимі (як демон) та приймати команди</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
@@ -3168,8 +3174,8 @@
         <translation>Додайте вузол для підключення та утримання відкритого з'єднання (дивіться команду `addnode` RPC для отримання додаткової інформації).</translation>
     </message>
     <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Прив'язатися до даної адреси та прослуховувати її. Використовуйте запис виду [хост]:порт для IPv6</translation>
+        <source>The %s developers</source>
+        <translation>Розробники %s</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
@@ -3296,12 +3302,12 @@
         <translation>-maxmempool має бути не менше %d МБ</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; може бути:</translation>
+        <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
+        <translation>Неможливо відтворити блоки. Вам потрібно буде перебудувати базу даних, використовуючи -reindex-chainstate.</translation>
     </message>
     <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Приймати підключення ззовні (типово: 1 за відсутності -proxy чи -connect)</translation>
+        <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
+        <translation>Неможливо повернути базу даних в стан до розвилки. Вам потрібно буде перезавантажити ланцюжок блоків</translation>
     </message>
     <message>
         <source>Append comment to the user agent string</source>
@@ -3332,6 +3338,26 @@
         <translation>Параметри з'єднання:</translation>
     </message>
     <message>
+        <source>%d of last 100 blocks have unexpected version</source>
+        <translation>%d з останніх 100 блоків мають неочікувану версію</translation>
+    </message>
+    <message>
+        <source>%s corrupt, salvage failed</source>
+        <translation>%s пошкоджено, відновлення невдале</translation>
+    </message>
+    <message>
+        <source>-maxmempool must be at least %d MB</source>
+        <translation>-maxmempool має бути не менше %d МБ</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -%s address: '%s'</source>
+        <translation>Не можу вирішити -%s адресу: '%s'</translation>
+    </message>
+    <message>
+        <source>Change index out of range</source>
+        <translation>Індекс решти за межами діапазону</translation>
+    </message>
+    <message>
         <source>Copyright (C) %i-%i</source>
         <translation>Всі права збережено. %i-%i</translation>
     </message>
@@ -3340,32 +3366,12 @@
         <translation>Виявлено пошкоджений блок бази даних</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Параметри тестування/налагодження:</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>Не завантажувати гаманець та вимкнути звернення до нього через RPC</translation>
-    </message>
-    <message>
         <source>Do you want to rebuild the block database now?</source>
         <translation>Ви хочете перебудувати базу даних блоків зараз?</translation>
     </message>
     <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Дозволено введення хеш блоку в рядок &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Дозволено введення хеш транзакції в рядок &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Дозволено введення RAW блоку в рядок &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Дозволено введення RAW транзакції в рядок &lt;address&gt;</translation>
+        <source>Error creating %s: You can't create non-HD wallets with this version.</source>
+        <translation>Помилка створення %s: Ви не можете створювати не-HD гаманці з цією версією.</translation>
     </message>
     <message>
         <source>Enable transaction replacement in the memory pool (default: %u)</source>
@@ -3460,16 +3466,16 @@
         <translation>Бракує доступних дескрипторів файлів.</translation>
     </message>
     <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Підключатися тільки до вузлів в мережі &lt;net&gt; (ipv4, ipv6 або onion)</translation>
+        <source>Loading P2P addresses...</source>
+        <translation>Завантаження P2P адрес...</translation>
     </message>
     <message>
-        <source>Print this help message and exit</source>
-        <translation>Надрукувати це довідкове повідомлення та вийти</translation>
+        <source>Loading banlist...</source>
+        <translation>Завантаження бан-списку...</translation>
     </message>
     <message>
-        <source>Print version and exit</source>
-        <translation>Версія для друку і виходу</translation>
+        <source>Not enough file descriptors available.</source>
+        <translation>Бракує доступних дескрипторів файлів.</translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
@@ -3504,8 +3510,12 @@
         <translation>Встановити розмір кешу бази даних в мегабайтах (від %d до %d, типово: %d)</translation>
     </message>
     <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Вкажіть файл гаманця (в межах каталогу даних)</translation>
+        <source>Unable to bind to %s on this computer. %s is probably already running.</source>
+        <translation>Неможливо прив'язати %s на цьому комп'ютері. %s, ймовірно, вже працює.</translation>
+    </message>
+    <message>
+        <source>Unable to generate keys</source>
+        <translation>Не вдається створити ключі</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>
@@ -3588,56 +3598,20 @@
         <translation>Помилка: Не вдалося налаштувати прослуховування вхідних підключень (listen повернув помилку: %s)</translation>
     </message>
     <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Виконати команду при надходженні важливого сповіщення або при спостереженні тривалого розгалуження ланцюжка (замість %s буде підставлено повідомлення)</translation>
-    </message>
-    <message>
-        <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
-        <translation>Комісії (в %s/kB), що менші за вказану, вважатимуться нульовими для зміни, аналізу та створення транзакцій (типово: %s)</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Якщо параметр paytxfee не встановлено, включити комісію для отримання перших підтверджень транзакцій протягом n блоків (типово: %u)</translation>
-    </message>
-    <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation>Неприпустима сума для -maxtxfee = &lt;amount&gt;: «%s» ( плата повинна бути, принаймні %s, щоб запобігти зависанню транзакцій)</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Максимальний розмір даних в транзакціях носіїв даних, що ми передаємо і добуваємо (за замовчуванням: %u)</translation>
-    </message>
-    <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Надавати випадкові дані доступу для кожного проксі-з'єднання. Це дозволяє ввімкнути ізоляцію потоків Tor'у (типово: %u)</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>Залишок від суми транзакції зі сплатою комісії занадто малий </translation>
     </message>
     <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Учасники, що знаходяться в білому списку, не можуть бути заблоковані за DoS та їхні транзакції завжди ретранслюватимуться (навіть якщо вони є в пам'яті), що може бути корисним, наприклад, для шлюзу</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>Вам необхідно перебудувати базу даних з використанням -reindex для завантаження повного ланцюжка блоків.</translation>
     </message>
     <message>
-        <source>(default: %u)</source>
-        <translation>(типово: %u)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>Приймати публічні REST-запити (типово: %u)</translation>
-    </message>
-    <message>
-        <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>Автоматичне з'єднання з прихованим сервісом Tor (типово: %d)</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Підключитись через SOCKS5-проксі</translation>
+        <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
+        <translation>Помилка завантаження %s: Ви не можете відключити режим HD в існуючому HD-гаманці</translation>
     </message>
     <message>
         <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
@@ -3676,44 +3650,28 @@
         <translation>Вказано неправильну маску підмережі для -whitelist: «%s»</translation>
     </message>
     <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Утримувати в пам'яті щонайбільше &lt;n&gt; транзакцій, що споживають невідомі входи (типово: %u)</translation>
-    </message>
-    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Необхідно вказати порт для -whitebind: «%s»</translation>
-    </message>
-    <message>
-        <source>Node relay options:</source>
-        <translation>Параметри вузла ретрансляції:</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>Параметри сервера RPC:</translation>
     </message>
     <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
         <translation>Зменшення значення -maxconnections з %d до %d із-за обмежень системи.</translation>
     </message>
     <message>
-        <source>Rescan the block chain for missing wallet transactions on startup</source>
-        <translation>Спочатку переглянте ланцюжок блоків на наявність втрачених транзакцій гаманця</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Відсилати налагоджувальну інформацію на консоль, а не у файл debug.log</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Показати всі налагоджувальні параметри (використання: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Стискати файл debug.log під час старту клієнта (типово: 1 коли відсутній параметр -debug)</translation>
-    </message>
-    <message>
         <source>Signing transaction failed</source>
         <translation>Підписання транзакції не вдалося</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation>Вказаний каталог гаманця -walletdir "%s" не існує</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation>Вказаний каталог гаманця -walletdir "%s" є відносним шляхом</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is not a directory</source>
+        <translation>Вказаний шлях -walletdir "%s" не є каталогом</translation>
     </message>
     <message>
         <source>Specified -walletdir "%s" does not exist</source>
@@ -3734,14 +3692,6 @@
     <message>
         <source>This is experimental software.</source>
         <translation>Це програмне забезпечення є експериментальним.</translation>
-    </message>
-    <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>Пароль управління порт протоколом Tor (типово: empty)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>Скористайтесь управлінням порт протоколом Tor, в разі перехоплення обміну цибулевої маршрутизації (типово: %s)</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
@@ -3800,26 +3750,6 @@
         <translation>Видалення всіх транзакцій з гаманця...</translation>
     </message>
     <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>Параметри сповіщень ZeroMQ:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Пароль для JSON-RPC-з'єднань</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Виконати команду, коли з'явиться новий блок (%s в команді змінюється на хеш блоку)</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Дозволити пошук в DNS для команд -addnode, -seednode та -connect</translation>
-    </message>
-    <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = утримувати метадані транзакцій (до яких відноситься інформація про власника рахунку та запити платежів), 2 - відкинути)</translation>
-    </message>
-    <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation>Встановлено дуже велике значення -maxtxfee! Такі великі комісії можуть бути сплачені окремою транзакцією.</translation>
     </message>
@@ -3856,8 +3786,8 @@
         <translation>Рівень ретельності перевірки блоків (0-4, типово: %u)</translation>
     </message>
     <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Утримувати повний індекс транзакцій (використовується RPC-викликом getrawtransaction) (типово: %u)</translation>
+        <source>This is the transaction fee you may pay when fee estimates are not available.</source>
+        <translation>Це комісія за транзакцію, яку ви можете сплатити, коли кошторисна вартість недоступна.</translation>
     </message>
     <message>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
@@ -3898,10 +3828,6 @@
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
         <translation>Загальна довжина рядку мережевої версії (%i) перевищує максимально допустиму (%i). Зменшіть число чи розмір коментарів клієнта користувача.</translation>
-    </message>
-    <message>
-        <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
-        <translation>Намагається зберегти вихідний трафік відповідно до зданого значення (в MIB за 24 години), 0 = без обмежень (типово: %d)</translation>
     </message>
     <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -3976,56 +3902,24 @@
         <translation>Підтримувати щонайбільше &lt;n&gt; з'єднань з учасниками (типово: %u)</translation>
     </message>
     <message>
-        <source>Make the wallet broadcast transactions</source>
-        <translation>Дозволити гаманцю розповсюджувати транзакції</translation>
+        <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
+        <translation>Попередження: видобуваються невідомі версії блоків! Можливо активовано невідомі правила</translation>
     </message>
     <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Максимальний розмір вхідного буферу на одне з'єднання, &lt;n&gt;*1000 байтів (типово: %u)</translation>
+        <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation>Попередження: файл гаманця пошкоджено, дані врятовано! Оригінальний %s збережено як %s в %s; якщо ваш баланс або транзакції некорректно відображаються, ви повинні відновити його з резервної копії.</translation>
     </message>
     <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Максимальний розмір вихідного буферу на одне з'єднання, &lt;n&gt;*1000 байтів (типово: %u)</translation>
+        <source>%s is set very high!</source>
+        <translation>%s встановлено дуже високо!</translation>
     </message>
     <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Доповнювати налагоджувальний вивід відміткою часу (типово: %u)</translation>
+        <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
+        <translation>Помилка завантаження гаманця %s. Значення параметра -wallet дублюється.</translation>
     </message>
     <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Ретранслювати та створювати транзакції носіїв даних (типово: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Ретранслювати не-P2SH транзакції з мультипідписом (типово: %u)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Встановити розмір пулу ключів &lt;n&gt; (типово: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum BIP141 block weight (default: %d)</source>
-        <translation>Встановити максимальний розмір блоку BIP141 (за замовчуванням: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Встановити число потоків для обслуговування викликів RPC (типово: %d)</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>Вказати файл конфігурації (типово: %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Вказати тайм-аут підключення в мілісекундах (щонайменше: 1, типово: %d)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>Вказати pid-файл (типово: %s)</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Витрачати непідтверджену решту при відправленні транзакцій (типово: %u)</translation>
+        <source>Keypool ran out, please call keypoolrefill first</source>
+        <translation>Пул ключів скінчився, потрібно викликати keypoolrefill</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
@@ -4042,10 +3936,6 @@
     <message>
         <source>This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Це транзакційна комісія, яку ви сплатите, якщо будете надсилати транзакцію.</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Поріг відключення учасників з поганою поведінкою (типово: %u)</translation>
     </message>
     <message>
         <source>Transaction amounts must not be negative</source>
@@ -4066,6 +3956,26 @@
     <message>
         <source>Insufficient funds</source>
         <translation>Недостатньо коштів</translation>
+    </message>
+    <message>
+        <source>Can't generate a change-address key. Private keys are disabled for this wallet.</source>
+        <translation>Неможливо створити ключ зміни адреси. Власні ключі вимкнено для цього гаманця.</translation>
+    </message>
+    <message>
+        <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use -upgradewallet=169900 or -upgradewallet with no version specified.</source>
+        <translation>Неможливо оновити не-HD гаманець без оновлення підтримки пулу ключів. Будь-ласка використовуйте -upgradewallet=169900 чи -upgradewallet без вказівки версії. </translation>
+    </message>
+    <message>
+        <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
+        <translation>Оцінка комісії не вдалася. Fallbackfee вимкнено. Зачекайте кілька блоків або ввімкніть -fallbackfee. </translation>
+    </message>
+    <message>
+        <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
+        <translation>Попередження: Власні ключі виявлено в гаманці {%s} з забороненими власними ключами</translation>
+    </message>
+    <message>
+        <source>Cannot write to data directory '%s'; check permissions.</source>
+        <translation>Неможливо записати до каталог даних '%s'; перевірте дозвіл.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

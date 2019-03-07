@@ -498,6 +498,10 @@
         <source>&amp;Save Image...</source>
         <translation>&amp;Сними Слика...</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Паричник</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>

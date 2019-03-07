@@ -1,7 +1,4 @@
 TOR SUPPORT IN ACTINIUM
-======================
-
-It is possible to run Actinium as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many distributions default to having a SOCKS proxy listening on port 9050, but others may not. In particular, the Tor Browser Bundle defaults to listening on port 9150. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort) for how to properly
 configure Tor.
@@ -16,7 +13,7 @@ outgoing connections be anonymized, but more is possible.
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
 	                server will be used to try to reach .onion addresses as well.
 
-	-onion=ip:port  Set the proxy server to use for tor hidden services. You do not
+	-onion=ip:port  Set the proxy server to use for Tor hidden services. You do not
 	                need to set this if it's the same as -proxy. You can use -noonion
 	                to explicitly disable access to hidden service.
 
@@ -39,7 +36,8 @@ In a typical situation, this suffices to run behind a Tor proxy:
 
 If you configure your Tor system accordingly, it is possible to make your node also
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
-config file):
+config file): *Needed for Tor version 0.2.7.0 and older versions of Tor only. For newer
+versions of Tor see [Section 3](#3-automatically-listen-on-tor).*
 
 	HiddenServiceDir /var/lib/tor/Actinium-service/
 	HiddenServicePort 4334 127.0.0.1:4334
@@ -54,7 +52,8 @@ your Actiniumd's P2P listen port (4334 by default).
 	                /var/lib/tor/Actinium-service/hostname. Onion addresses are given
 	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
-	                Tor proxy typically runs).
+	                Tor proxy typically runs), .onion addresses are given
+	                preference for your node to advertise itself with.
 
 	-listen         You'll need to enable listening for incoming connections, as this
 	                is off by default behind a proxy.
@@ -70,7 +69,7 @@ In a typical situation, where you're only reachable via Tor, this should suffice
 
 	./Actiniumd -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
 
-(obviously, replace the Onion address with your own). It should be noted that you still
+(obviously, replace the .onion address with your own). It should be noted that you still
 listen on all devices and another node could establish a clearnet connection, when knowing
 your address. To mitigate this, additionally bind the address of your Tor proxy:
 
@@ -83,13 +82,12 @@ as well, use `discover` instead:
 
 and open port 9333 on your firewall (or use -upnp).
 
-If you only want to use Tor to reach onion addresses, but not use it as a proxy
+If you only want to use Tor to reach .onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
 	./Actinium -onion=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
 
-3. Automatically listen on Tor
---------------------------------
+## 3. Automatically listen on Tor
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
@@ -115,8 +113,7 @@ which has the appropriate permissions. An alternative authentication method is t
 of the `-torpassword` flag and a `hash-password` which can be enabled and specified in 
 Tor configuration.
 
-4. Privacy recommendations
----------------------------
+## 4. Privacy recommendations
 
 - Do not add anything but Actinium ports to the hidden service created in section 2.
   If you run a web service too, create a new hidden service for that.

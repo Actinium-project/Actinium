@@ -192,6 +192,14 @@
         <translation>Η κρυπτογράφηση του πορτοφολιού απέτυχε</translation>
     </message>
     <message>
+        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <translation>Η κρυπτογράφηση του πορτοφολιού απέτυχε λογω εσωτερικού σφάλματος. Το πορτοφολι δεν κρυπτογραφηθηκε.</translation>
+    </message>
+    <message>
+        <source>The supplied passphrases do not match.</source>
+        <translation>Οι εισαχθέντες κωδικοί δεν ταιριάζουν.</translation>
+    </message>
+    <message>
         <source>Wallet unlock failed</source>
         <translation>Το ξεκλείδωμα του πορτοφολιού απέτυχε</translation>
     </message>
@@ -203,9 +211,29 @@
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Η φράση πρόσβασης άλλαξε επιτυχώς</translation>
     </message>
-    </context>
+    <message>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <translation>Ο κωδικος που εισήχθη για την αποκρυπτογραφηση του πορτοφολιού ήταν λαθος.</translation>
+    </message>
+    <message>
+        <source>Wallet decryption failed</source>
+        <translation> Η αποκρυπτογράφηση του πορτοφολιού απέτυχε </translation>
+    </message>
+    <message>
+        <source>Wallet passphrase was successfully changed.</source>
+        <translation>Η φράση πρόσβασης άλλαξε επιτυχώς</translation>
+    </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Προσοχη: το πλήκτρο Caps Lock είναι ενεργο.</translation>
+    </message>
+</context>
 <context>
     <name>BanTableModel</name>
+    <message>
+        <source>IP/Netmask</source>
+        <translation>IP/Netmask</translation>
+    </message>
     </context>
 <context>
     <name>BitcoinGUI</name>
@@ -250,6 +278,10 @@
         <translation>&amp;Περί %1</translation>
     </message>
     <message>
+        <source>Show information about %1</source>
+        <translation>Εμφάνισε πληροφορίες σχετικά με %1</translation>
+    </message>
+    <message>
         <source>About &amp;Qt</source>
         <translation>Σχετικά με &amp;Qt</translation>
     </message>
@@ -260,6 +292,10 @@
     <message>
         <source>&amp;Options...</source>
         <translation>&amp;Επιλογές...</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for %1</source>
+        <translation>Επεργασία ρυθμισεων επιλογών για το %1</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
@@ -284,6 +320,22 @@
     <message>
         <source>Open &amp;URI...</source>
         <translation>'Ανοιγμα &amp;URI</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Πορτοφόλι</translation>
+    </message>
+    <message>
+        <source>Click to disable network activity.</source>
+        <translation>Κάντε κλικ για να απενεργοποιήσετε το δίκτυο.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>Η δραστηριότητα δικτύου είναι απενεργοποιημένη.</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>Κάντε κλικ για να ενεργοποιήσετε τo δίκτυο ξανά.</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
@@ -384,6 +436,14 @@
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Επιλογές γραμμής εντολών</translation>
+    </message>
+    <message>
+        <source>Indexing blocks on disk...</source>
+        <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρο δισκο...</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk...</source>
+        <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρο δισκο...</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -590,10 +650,6 @@
         <translation>&amp;Διεύθυνση</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Νέα Διεύθυνση Λήψης</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Νέα Διεύθυνση Αποστολής</translation>
     </message>
@@ -651,7 +707,7 @@
         <source>command-line options</source>
         <translation>επιλογές γραμμής εντολών</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
@@ -1310,6 +1366,10 @@
         <source>Label</source>
         <translation>Ετικέτα</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Πορτοφόλι</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -1439,6 +1499,14 @@
     <message>
         <source>Copy amount</source>
         <translation>Αντιγραφή ποσού</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Αντιγραφή τελών</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Κόστος συναλλαγής</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1612,10 +1680,6 @@
     <message>
         <source>Open until %1</source>
         <translation>Ανοιχτό μέχρι %1</translation>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation>%1/αποσυνδεδεμένο</translation>
     </message>
     <message>
         <source>0/unconfirmed, %1</source>

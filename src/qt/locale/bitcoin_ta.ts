@@ -580,6 +580,10 @@
         <source>Address</source>
         <translation>முகவரி</translation>
     </message>
+    <message>
+        <source>Wallet</source>
+        <translation>பணப்பை</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -722,10 +726,6 @@
     <message>
         <source>Warning</source>
         <translation>எச்சரிக்கை</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(default: %s)</translation>
     </message>
     <message>
         <source>Error</source>

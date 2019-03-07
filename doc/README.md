@@ -22,7 +22,7 @@ Unpack the files into a directory and run:
 
 Unpack the files into a directory, and then run Actinium-qt.exe.
 
-### OS X
+### macOS
 
 Drag Actinium-Core to your applications folder, and then run Actinium-Core.
 
@@ -41,6 +41,7 @@ The following are developer notes on how to build Actinium on your native platfo
 - [Unix Build Notes](build-unix.md)
 - [Windows Build Notes](build-windows.md)
 - [OpenBSD Build Notes](build-openbsd.md)
+- [NetBSD Build Notes](build-netbsd.md)
 - [Gitian Building Guide](gitian-building.md)
 
 Development

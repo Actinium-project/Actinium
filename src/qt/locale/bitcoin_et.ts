@@ -30,6 +30,10 @@
         <translation>Kustuta märgistatud aadress loetelust</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Otsimiseks sisesta märgis või aadress</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Ekspordi kuvatava vahelehe sisu faili</translation>
     </message>
@@ -610,10 +614,6 @@
         <translation>&amp;Aadress</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Uus vastu võttev aadress</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Uus saatev aadress</translation>
     </message>
@@ -659,23 +659,7 @@
         <source>Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Kasutus:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>käsurea valikud</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>Kasutajaliidese Suvandid:</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>Käivitamisel kuva laadimisekraani (vaikimisi %u)</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
@@ -1175,6 +1159,10 @@
         <translation>Sõnum</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Rahakott</translation>
+    </message>
+    <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
         <translation>URI liiga pikk, proovi vähendada märke / sõnumi pikkust.</translation>
     </message>
@@ -1329,12 +1317,12 @@
         <translation>Oled kindel, et soovid saata?</translation>
     </message>
     <message>
-        <source>added as transaction fee</source>
-        <translation>lisatud kui tehingutasu</translation>
-    </message>
-    <message>
         <source>or</source>
         <translation>või</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Tehingutasu</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -1586,10 +1574,6 @@
         <translation>Avatud kuni %1</translation>
     </message>
     <message>
-        <source>%1/offline</source>
-        <translation>%1/offline'is</translation>
-    </message>
-    <message>
         <source>%1/unconfirmed</source>
         <translation>%1/kinnitamata</translation>
     </message>
@@ -1600,10 +1584,6 @@
     <message>
         <source>Status</source>
         <translation>Olek</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, veel esitlemata</translation>
     </message>
     <message>
         <source>Date</source>
@@ -1730,10 +1710,6 @@
     <message>
         <source>Confirmed (%1 confirmations)</source>
         <translation>Kinnitatud (%1 kinnitust)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Antud klotsi pole saanud ükski osapool ning tõenäoliselt seda ei aktsepteerita!</translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
@@ -1986,14 +1962,6 @@
         <translation>See on test-versioon - kasutamine omal riisikol - ära kasuta mining'uks ega kaupmeeste programmides</translation>
     </message>
     <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Luba välisühendusi (vaikeväärtus: 1 kui puudub -proxy või -connect)</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>Blokeeri loomise valikud:</translation>
-    </message>
-    <message>
         <source>Corrupted block database detected</source>
         <translation>Tuvastati vigane bloki andmebaas</translation>
     </message>
@@ -2030,28 +1998,8 @@
         <translation>Kontrollin blokke...</translation>
     </message>
     <message>
-        <source>Wallet options:</source>
-        <translation>Rahakoti valikud:</translation>
-    </message>
-    <message>
-        <source>(default: %u)</source>
-        <translation>(vaikimisi: %u)</translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>Informatsioon</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>RPC serveri valikud:</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Saada jälitus/debug, debug.log faili asemel, konsooli</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Kahanda programmi käivitamisel debug.log faili (vaikeväärtus: 1, kui ei ole -debug)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -2070,28 +2018,8 @@
         <translation>Tehing liiga suur</translation>
     </message>
     <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>JSON-RPC ühenduste kasutajatunnus</translation>
-    </message>
-    <message>
         <source>Warning</source>
         <translation>Hoiatus</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>JSON-RPC ühenduste salasõna</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Käivita käsklus, kui parim plokk muutub (käskluse %s asendatakse ploki hash'iga)</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>-addnode, -seednode ja -connect tohivad kasutada DNS lookup'i</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(vaikimisi: %s)</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>

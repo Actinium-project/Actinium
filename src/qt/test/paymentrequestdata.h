@@ -1,6 +1,9 @@
-// Copyright (c) 2009-2015 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOIN_QT_TEST_PAYMENTREQUESTDATA_H
+#define BITCOIN_QT_TEST_PAYMENTREQUESTDATA_H
 
 //
 // Data for paymentservertests.cpp
@@ -435,7 +438,7 @@ d2hj739GDLz0b5KuJ2SG6VknMRQM976w/m2qlq0ccVGaaZ2zMIGfpzL3p6adwx/5\
 ";
 
 //
-// Payment request with amount overflow (amount is set to 84000001 ACM)
+// Payment request with amount overflow (amount is set to 84000001 LTC)
 //
 const char* paymentrequest5_cert2_BASE64 =
 "\
@@ -458,3 +461,5 @@ s7WGhoR2oeePOiH8WF9rNnZYfNR9t26afph2vTTHPMQQoS6o7HeKA9RcPxbdl441\
 4Mt8Ii0Fds+15AUPAfCjQ6YFuYfxO+HuMyhzJh6sFJbpZU7GrBNvqjn5kx52F6nn\
 KuPIpNvaauPm/XqqdoQfqtj+AlQWLZF8pQeTbEU=\
 ";
+
+#endif // BITCOIN_QT_TEST_PAYMENTREQUESTDATA_H

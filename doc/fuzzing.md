@@ -1,7 +1,4 @@
 Fuzz-testing Actinium Core
-==========================
-
-A special test harness `test_Actinium_fuzzy` is provided to provide an easy
 entry point for fuzzers and the like. In this document we'll describe how to
 use it with AFL.
 
@@ -35,7 +32,7 @@ in.
 The fuzzing can be sped up significantly (~200x) by using `afl-clang-fast` and
 `afl-clang-fast++` in place of `afl-gcc` and `afl-g++` when compiling. When
 compiling using `afl-clang-fast`/`afl-clang-fast++` the resulting
-`test_bitcoin_fuzzy` binary will be instrumented in such a way that the AFL
+`test_litecoin_fuzzy` binary will be instrumented in such a way that the AFL
 features "persistent mode" and "deferred forkserver" can be used. See
 https://github.com/mcarpenter/afl/tree/master/llvm_mode for details.
 

@@ -30,6 +30,10 @@
         <translation>Eliminar la dirección seleccionada de la lista</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Introduce una dirección o etiqueta para  buscar</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportar los datos de la pestaña actual a un archivo</translation>
     </message>
@@ -1114,16 +1118,16 @@
 </translation>
     </message>
     <message>
-        <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Muestra solo un ícono en la bandeja después de minimizar la ventana</translation>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Archivo de respaldo (*.dat)</translation>
     </message>
     <message>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimiza a la bandeja en vez de la barra de tareas</translation>
+        <source>Backup Failed</source>
+        <translation>Ha fallado el respaldo</translation>
     </message>
     <message>
-        <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimiza a la bandeja al cerrar</translation>
+        <source>There was an error trying to save the wallet data to %1.</source>
+        <translation>Ha habido un error al intentar guardar los datos del monedero a %1.</translation>
     </message>
     <message>
         <source>&amp;Display</source>
@@ -3249,6 +3253,9 @@
         <source>Signing transaction failed</source>
         <translation>Firma de transacción fallida</translation>
     </message>
+    </context>
+<context>
+    <name>bitcoin-core</name>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
         <translation>El monto a transferir es muy pequeño para pagar el impuesto</translation>

@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-# Copyright (c) 2013-2017 The Bitcoin Core developers
+# Copyright (c) 2013-2018 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
 # Generate seeds.txt from Pieter's DNS seeder
 #
+
+import re
+import sys
+import dns.resolver
+import collections
 
 NSEEDS=512
 
@@ -21,11 +26,6 @@ SUSPICIOUS_HOSTS = {
     "54.66.214.167", "54.66.220.137", "54.67.33.14", "54.77.251.214",
     "54.94.195.96", "54.94.200.247"
 }
-
-import re
-import sys
-import dns.resolver
-import collections
 
 PATTERN_IPV4 = re.compile(r"^((\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})):(\d+)$")
 PATTERN_IPV6 = re.compile(r"^\[([0-9a-z:]+)\]:(\d+)$")

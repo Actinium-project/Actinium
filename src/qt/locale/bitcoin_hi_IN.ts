@@ -226,10 +226,6 @@
         <source>version</source>
         <translation>संस्करण</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>खपत :</translation>
-    </message>
     </context>
 <context>
     <name>Intro</name>
@@ -338,6 +334,10 @@
     <message>
         <source>Copy &amp;Address</source>
         <translation>&amp;पता कॉपी करे</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>वॉलेट</translation>
     </message>
     </context>
 <context>
@@ -470,18 +470,6 @@
     </context>
 <context>
     <name>bitcoin-core</name>
-    <message>
-        <source>Options:</source>
-        <translation>विकल्प:</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>डेटा डायरेक्टरी बताएं </translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>बैकग्राउंड में डेमॉन बन कर रन करे तथा कमांड्स स्वीकार करें </translation>
-    </message>
     <message>
         <source>Verifying blocks...</source>
         <translation>ब्लॉक्स जाँचे जा रहा है...</translation>

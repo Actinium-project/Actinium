@@ -30,6 +30,10 @@
         <translation>Brisanje trenutno odabrane adrese s popisa.</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Unesite adresu ili oznaku za pretraživanje</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Izvoz podataka iz trenutnog lista u datoteku</translation>
     </message>
@@ -602,10 +606,6 @@
         <translation>&amp;Adresa</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Nova adresa za primanje</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Nova adresa za slanje</translation>
     </message>
@@ -663,19 +663,7 @@
         <source>Command-line options</source>
         <translation>Opcije programa u naredbenoj liniji</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Upotreba:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>opcije programa u naredbenoj liniji</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Pokreni minimiziran</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
@@ -1075,6 +1063,10 @@
         <translation>Poruka</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Novčanik</translation>
+    </message>
+    <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
         <translation>URI je predug, probajte skratiti tekst za naslov / poruku.</translation>
     </message>
@@ -1179,6 +1171,10 @@
     <message>
         <source>or</source>
         <translation>ili</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Naknada za transakciju</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -1314,10 +1310,6 @@
         <translation>Otvoren do %1</translation>
     </message>
     <message>
-        <source>%1/offline</source>
-        <translation>%1 nije dostupan</translation>
-    </message>
-    <message>
         <source>%1/unconfirmed</source>
         <translation>%1/nepotvrđeno</translation>
     </message>
@@ -1328,10 +1320,6 @@
     <message>
         <source>Status</source>
         <translation>Status</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, još nije bio uspješno emitiran</translation>
     </message>
     <message>
         <source>Date</source>
@@ -1438,10 +1426,6 @@
     <message>
         <source>Confirmed (%1 confirmations)</source>
         <translation>Potvrđen (%1 potvrda)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Ovaj blok nije bio primljen od strane bilo kojeg drugog čvora i vjerojatno neće biti prihvaćen!</translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
@@ -1686,28 +1670,8 @@
         <translation>Informacija</translation>
     </message>
     <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Šalji trace/debug informacije na konzolu umjesto u debug.log datoteku</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Korisničko ime za JSON-RPC veze</translation>
-    </message>
-    <message>
         <source>Warning</source>
         <translation>Upozorenje</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Lozinka za JSON-RPC veze</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Izvršite naredbu kada se najbolji blok promjeni (%s u cmd je zamjenjen sa block hash)</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Dozvoli DNS upite za -addnode, -seednode i -connect</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

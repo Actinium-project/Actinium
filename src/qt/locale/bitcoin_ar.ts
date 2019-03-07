@@ -30,6 +30,10 @@
         <translation>حذف العنوان المحدد من القائمة</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>ادخل عنوان أووصف للبحث</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>تحميل البيانات في علامة التبويب الحالية إلى ملف.</translation>
     </message>
@@ -724,10 +728,6 @@
         <translation>&amp;العنوان</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>عنوان أستلام جديد</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>عنوان إرسال جديد</translation>
     </message>
@@ -742,10 +742,6 @@
     <message>
         <source>The entered address "%1" is not a valid Actinium address.</source>
         <translation>العنوان المدخل "%1" ليس عنوان بيت كوين صحيح.</translation>
-    </message>
-    <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>هدا العنوان "%1" موجود مسبقا في دفتر العناوين</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -1663,6 +1659,54 @@
         <translation>آخر استقبال</translation>
     </message>
     <message>
+        <source>User Agent</source>
+        <translation>وكيل المستخدم</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>وقت الرنين</translation>
+    </message>
+    <message>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation>مدة الرنين المعلقة حالياً.</translation>
+    </message>
+    <message>
+        <source>Ping Wait</source>
+        <translation>انتظار الرنين</translation>
+    </message>
+    <message>
+        <source>Min Ping</source>
+        <translation>أقل رنين</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>إزاحة الوقت</translation>
+    </message>
+    <message>
+        <source>Last block time</source>
+        <translation>اخر وقت الكتلة</translation>
+    </message>
+    <message>
+        <source>Increase font size</source>
+        <translation>تكبير حجم الخط</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation>خدمات</translation>
+    </message>
+    <message>
+        <source>Ban Score</source>
+        <translation>نقاط الحظر</translation>
+    </message>
+    <message>
+        <source>Connection Time</source>
+        <translation>مدة الاتصال</translation>
+    </message>
+    <message>
+        <source>Last Send</source>
+        <translation>آخر استقبال</translation>
+    </message>
+    <message>
         <source>Last Receive</source>
         <translation>آخر إرسال</translation>
     </message>
@@ -1693,6 +1737,10 @@
     <message>
         <source>&amp;Open</source>
         <translation>الفتح</translation>
+    </message>
+    <message>
+        <source>&amp;Console</source>
+        <translation>وحدة التحكم</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2528,10 +2576,6 @@
         <translation>الحالة.</translation>
     </message>
     <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>,  لم يتم حتى الآن البث بنجاح</translation>
-    </message>
-    <message>
         <source>Date</source>
         <translation>تاريخ</translation>
     </message>
@@ -2682,8 +2726,16 @@
         <translation>مفتوح حتى %1</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation>غير متصل</translation>
+        <source>Unconfirmed</source>
+        <translation>غير مؤكد</translation>
+    </message>
+    <message>
+        <source>Abandoned</source>
+        <translation>مهجور</translation>
+    </message>
+    <message>
+        <source>Confirming (%1 of %2 recommended confirmations)</source>
+        <translation>قيد التأكيد (%1 من %2 تأكيد موصى به)</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -3016,12 +3068,12 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>خيارات: </translation>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>خطأ: حدث خطأ داخلي فادح، راجع debug.log للحصول على التفاصيل</translation>
     </message>
     <message>
-        <source>Specify data directory</source>
-        <translation>حدد مجلد المعلومات</translation>
+        <source>Pruning blockstore...</source>
+        <translation>تجريد مخزن الكتل...</translation>
     </message>
     <message>
         <source>Actinium Core</source>
@@ -3052,8 +3104,8 @@
         <translation>&lt;category&gt; يمكن أن يكون</translation>
     </message>
     <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>قبول الاتصالات من خارج</translation>
+        <source>Litecoin Core</source>
+        <translation>جوهر Litecoin</translation>
     </message>
     <message>
         <source>Append comment to the user agent string</source>

@@ -15,19 +15,20 @@ bench_bench_Actinium_SOURCES = \
   bench/bench_bitcoin.cpp \
   bench/bench.cpp \
   bench/bench.h \
+  bench/block_assemble.cpp \
   bench/checkblock.cpp \
   bench/checkqueue.cpp \
-  bench/Examples.cpp \
+  bench/examples.cpp \
   bench/rollingbloom.cpp \
   bench/crypto_hash.cpp \
   bench/ccoins_caching.cpp \
+  bench/merkle_root.cpp \
   bench/mempool_eviction.cpp \
   bench/verify_script.cpp \
   bench/base58.cpp \
+  bench/bech32.cpp \
   bench/lockedpool.cpp \
-  bench/perf.cpp \
-  bench/perf.h \
-  bench/prevector_destructor.cpp
+  bench/prevector.cpp
 
 nodist_bench_bench_Actinium_SOURCES = $(GENERATED_BENCH_FILES)
 

@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Подтвердите шифрование бумажника</translation>
+        <translation>Подтвердить шифрование кошелька</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ACTINIUMS&lt;/b&gt;!</source>
@@ -188,20 +188,8 @@
         <translation>Не удалось зашифровать бумажник</translation>
     </message>
     <message>
-        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Шифрование бумажника не удалось из-за внутренней ошибки. Ваш бумажник не был зашифрован.</translation>
-    </message>
-    <message>
-        <source>The supplied passphrases do not match.</source>
-        <translation>Введённые пароли не совпадают.</translation>
-    </message>
-    <message>
         <source>Wallet unlock failed</source>
         <translation>Разблокировка бумажника не удалась</translation>
-    </message>
-    <message>
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Неверный пароль для расшифровки бумажника.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
@@ -622,6 +610,137 @@
         <source>Comma separated file (*.csv)</source>
         <translation>Текст, разделённый запятыми (*.csv)</translation>
     </message>
+    </context>
+<context>
+    <name>ModalOverlay</name>
+    </context>
+<context>
+    <name>OpenURIDialog</name>
+    </context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <source>Label</source>
+        <translation>Метка</translation>
+    </message>
+    </context>
+<context>
+    <name>OverviewPage</name>
+    </context>
+<context>
+    <name>PaymentServer</name>
+    </context>
+<context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>QObject</name>
+    </context>
+<context>
+    <name>QObject::QObject</name>
+    </context>
+<context>
+    <name>QRImageWidget</name>
+    </context>
+<context>
+    <name>RPCConsole</name>
+    </context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    </context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Экспорт не удался</translation>
+    </message>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletFrame</name>
+    </context>
+<context>
+    <name>WalletModel</name>
+    </context>
+<context>
+    <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;Экспорт</translation>
+    </message>
+    </context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Экспортировать данные текущей вкладки в файл</translation>
+    </message>
+    </context>
+<context>
+    <name>bitcoin-core</name>
+    <message>
+        <source>The wallet will avoid paying less than the minimum relay fee.</source>
+        <translation>Кошелёк постарается не платить меньше, чем минимальная комиссия передачи.</translation>
+    </message>
+    </context>
+<context>
+    <name>SendCoinsDialog</name>
+    <message>
+        <source>Transaction amounts must not be negative</source>
+        <translation>Сумма транзакции не должна быть отрицательной</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation>Недостаточно средств</translation>
+    </message>
+</context>
+<context>
+    <name>SendCoinsEntry</name>
+    </context>
+<context>
+    <name>SendConfirmationDialog</name>
+    </context>
+<context>
+    <name>ShutdownWindow</name>
+    </context>
+<context>
+    <name>SignVerifyMessageDialog</name>
+    </context>
+<context>
+    <name>SplashScreen</name>
+    </context>
+<context>
+    <name>TrafficGraphWidget</name>
+    </context>
+<context>
+    <name>TransactionDesc</name>
+    </context>
+<context>
+    <name>TransactionDescDialog</name>
+    </context>
+<context>
+    <name>TransactionTableModel</name>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Загрузка электронного кошелька...</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>Не удаётся понизить версию электронного кошелька</translation>
+    </message>
+    </context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>Done loading</source>
+        <translation>Загрузка завершена</translation>
+    </message>
     <message>
         <source>Label</source>
         <translation>Метка</translation>
@@ -658,52 +777,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>The wallet will avoid paying less than the minimum relay fee.</source>
-        <translation>Кошелёк постарается не платить меньше, чем минимальная комиссия передачи.</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must not be negative</source>
-        <translation>Сумма транзакции не должна быть отрицательной</translation>
-    </message>
-    <message>
-        <source>Insufficient funds</source>
-        <translation>Недостаточно средств</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Загрузка электронного кошелька...</translation>
-    </message>
-    <message>
-        <source>Cannot downgrade wallet</source>
-        <translation>Не удаётся понизить версию электронного кошелька</translation>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation>Загрузка завершена</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Копировать сумму</translation>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation>Копировать ID транзакции</translation>
-    </message>
-    <message>
-        <source>Lock unspent</source>
-        <translation>Заблокировать непотраченное</translation>
-    </message>
-    <message>
-        <source>Unlock unspent</source>
-        <translation>Разблокировать непотраченное</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Копировать количество</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Копировать комиссию</translation>
+        <source>Error initializing block database</source>
+        <translation>Ошибка инициализации БД блоков</translation>
     </message>
     <message>
         <source>Copy after fee</source>
@@ -4122,23 +4197,11 @@
     </message>
     <message>
         <source>Transaction amounts must not be negative</source>
-        <translation>Сумма транзакции не должна быть негативной</translation>
-    </message>
-    <message>
-        <source>Transaction has too long of a mempool chain</source>
-        <translation>У транзакции слишком длинная цепочка в пуле в памяти.</translation>
-    </message>
-    <message>
-        <source>Transaction must have at least one recipient</source>
-        <translation>У транзакции должен быть как минимум один получатель</translation>
-    </message>
-    <message>
-        <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>В параметре -onlynet указана неизвестная сеть: '%s'</translation>
+        <translation>Сумма транзакции не должна быть отрицательной</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Недостаточно монет</translation>
+        <translation>Недостаточно средств</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4146,11 +4209,11 @@
     </message>
     <message>
         <source>Loading wallet...</source>
-        <translation>Загрузка бумажника...</translation>
+        <translation>Загрузка электронного кошелька...</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
-        <translation>Не удаётся понизить версию бумажника</translation>
+        <translation>Не удаётся понизить версию электронного кошелька</translation>
     </message>
     <message>
         <source>Rescanning...</source>

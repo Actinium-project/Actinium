@@ -1,4 +1,19 @@
-### Actinium Core integration/staging tree
+Actinium Core integration/staging tree
+=====================================
+
+https://actinium.org
+
+What is Actinium?
+----------------
+
+Actinium is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Actinium uses peer-to-peer technology to operate
+with no central authority: managing transactions and issuing money are carried
+out collectively by the network. Actinium Core is the name of open source
+software which enables the use of this currency.
+
+For more information, as well as an immediately useable, binary version of
+the Actinium Core software, see [https://actinium.org](https://actinium.org).
 
 License
 -------
@@ -40,7 +55,7 @@ There are also [regression and integration tests](/test), written
 in Python, that are run automatically on the build server.
 These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
 
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
+The Travis CI system makes sure that every pull request is built for Windows, Linux, and macOS, and that unit/sanity tests are run automatically.
 
 ### Manual Quality Assurance (QA) Testing
 

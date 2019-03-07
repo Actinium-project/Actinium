@@ -44,7 +44,7 @@ Only supports JSON as output format.
 * verificationprogress : (numeric) estimate of verification progress [0..1]
 * chainwork : (string) total amount of work in active chain, in hexadecimal
 * pruned : (boolean) if the blocks are subject to pruning
-* pruneheight : (numeric) heighest block available
+* pruneheight : (numeric) highest block available
 * softforks : (array) status of softforks in progress
 * bip9_softforks : (object) status of BIP9 softforks in progress
 
@@ -90,7 +90,7 @@ Only supports JSON as output format.
 * bytes : (numeric) size of the TX mempool in bytes
 * usage : (numeric) total TX mempool memory usage
 * maxmempool : (numeric) maximum memory usage for the mempool in bytes
-* mempoolminfee : (numeric) minimum feerate (BTC per KB) for tx to be accepted
+* mempoolminfee : (numeric) minimum feerate (LTC per KB) for tx to be accepted
 
 `GET /rest/mempool/contents.json`
 

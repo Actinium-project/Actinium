@@ -15,7 +15,7 @@ can be found in the contrib/init folder.
 
 All three Linux startup configurations assume the existence of a "bitcoin" user
 and group.  They must be created before attempting to use these scripts.
-The OS X configuration assumes bitcoind will be set up for the current user.
+The macOS configuration assumes bitcoind will be set up for the current user.
 
 2. Configuration
 ---------------------------------
@@ -44,7 +44,7 @@ This allows for running bitcoind without having to do any manual configuration.
 relative to the data directory. `wallet` *only* supports relative paths.
 
 For an example configuration file that describes the configuration settings,
-see `contrib/debian/examples/bitcoin.conf`.
+see `share/examples/bitcoin.conf`.
 
 3. Paths
 ---------------------------------
@@ -92,6 +92,8 @@ check ownership and permissions and make it executable.  Test it with
 `rc-update add bitcoind`
 
 4c) Upstart (for Debian/Ubuntu based distributions)
+
+Upstart is the default init system for Debian/Ubuntu versions older than 15.04. If you are using version 15.04 or newer and haven't manually configured upstart you should follow the systemd instructions instead.
 
 Drop bitcoind.conf in /etc/init.  Test by running `service bitcoind start`
 it will automatically start on reboot.

@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2017 The Bitcoin Core developers
+// Copyright (c) 2011-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,9 +15,13 @@ OpenURIDialog::OpenURIDialog(QWidget *parent) :
     ui(new Ui::OpenURIDialog)
 {
     ui->setupUi(this);
+<<<<<<< HEAD
 #if QT_VERSION >= 0x040700
     ui->uriEdit->setPlaceholderText("actinium:");
 #endif
+=======
+    ui->uriEdit->setPlaceholderText("litecoin:");
+>>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 }
 
 OpenURIDialog::~OpenURIDialog()
@@ -48,5 +52,9 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if(filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
+<<<<<<< HEAD
     ui->uriEdit->setText("actinium:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+=======
+    ui->uriEdit->setText("litecoin:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+>>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 }

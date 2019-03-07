@@ -30,6 +30,10 @@
         <translation>Verwijder het geselecteerde adres van de lijst</translation>
     </message>
     <message>
+        <source>Enter address or label to search</source>
+        <translation>Vul adres of label in om te zoeken</translation>
+    </message>
+    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporteer de data in de huidige tab naar een bestand</translation>
     </message>
@@ -322,6 +326,14 @@
         <translation>Open &amp;URI...</translation>
     </message>
     <message>
+        <source>Wallet:</source>
+        <translation>Portemonnee:</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>standaard portemonnee</translation>
+    </message>
+    <message>
         <source>Click to disable network activity.</source>
         <translation>Klik om de netwerkactiviteit te stoppen.</translation>
     </message>
@@ -507,6 +519,12 @@
         <source>Amount: %1
 </source>
         <translation>Aantal: %1
+</translation>
+    </message>
+    <message>
+        <source>Wallet: %1
+</source>
+        <translation>Portemonnee: %1
 </translation>
     </message>
     <message>
@@ -730,10 +748,6 @@
         <translation>&amp;Adres</translation>
     </message>
     <message>
-        <source>New receiving address</source>
-        <translation>Nieuw ontvangstadres</translation>
-    </message>
-    <message>
         <source>New sending address</source>
         <translation>Nieuw verzendadres</translation>
     </message>
@@ -750,8 +764,8 @@
         <translation>Het opgegeven adres "%1" is een ongeldig Actiniumadres.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is already in the address book.</source>
-        <translation>Het opgegeven adres "%1" bestaat al in uw adresboek.</translation>
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>Het opgegeven adres "%1" bestaat al in uw adresboek onder label "%2".</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -802,42 +816,6 @@
     <message>
         <source>Command-line options</source>
         <translation>Opdrachtregelopties</translation>
-    </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Gebruik:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>opdrachtregelopties</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>UI-opties:</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>Kies gegevensmap bij opstarten (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Stel taal in, bijvoorbeeld "nl_NL" (standaard: systeemlocale)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Geminimaliseerd starten</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Zet SSL-rootcertificaat voor betalingsverzoeken (standaard: -systeem-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>Toon opstartscherm bij opstarten (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Reset all settings changed in the GUI</source>
-        <translation>Reset alle wijzigingen aan instellingen gedaan in de GUI</translation>
     </message>
 </context>
 <context>
@@ -1066,6 +1044,22 @@
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Netwerk</translation>
+    </message>
+    <message>
+        <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
+        <translation>Geavanceerde functionaliteit wordt uitgeschakeld maar alle blokken worden nog steed volledig gevalideerd. Om deze instelling weer ongedaan te maken, moet de volledige blockchain opnieuw gedownload worden. Schijfgebruik kan iets toenemen.</translation>
+    </message>
+    <message>
+        <source>Prune &amp;block storage to</source>
+        <translation>Prune &amp; block opslag op</translation>
+    </message>
+    <message>
+        <source>GB</source>
+        <translation>GB</translation>
+    </message>
+    <message>
+        <source>Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation>Deze instelling terugzetten vereist het opnieuw downloaden van de gehele blockchain.</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1334,6 +1328,10 @@
         <translation>URI-behandeling</translation>
     </message>
     <message>
+        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
+        <translation>'litecoin://' is niet een geldige URI. Gebruik 'litecoin:' in plaats daarvan.</translation>
+    </message>
+    <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>URL om betalingsverzoek te verkrijgen is ongeldig: %1</translation>
     </message>
@@ -1531,12 +1529,16 @@
 <context>
     <name>QObject::QObject</name>
     <message>
+        <source>Error parsing command line arguments: %1.</source>
+        <translation>Fout bij het parsen van command line arguments: %1.</translation>
+    </message>
+    <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
         <translation>Fout: Opgegeven gegevensmap "%1" bestaat niet.</translation>
     </message>
     <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Fout: Kan configuratiebestand niet verwerken: %1. Gebruik enkel de key=value syntax.</translation>
+        <source>Error: Cannot parse configuration file: %1.</source>
+        <translation>Fout: Kan niet het configuratie bestand parsen: %1.</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -1627,6 +1629,14 @@
     <message>
         <source>Memory usage</source>
         <translation>Geheugengebruik</translation>
+    </message>
+    <message>
+        <source>Wallet: </source>
+        <translation>Portemonnee:</translation>
+    </message>
+    <message>
+        <source>(none)</source>
+        <translation>(geen)</translation>
     </message>
     <message>
         <source>&amp;Reset</source>
@@ -1821,6 +1831,14 @@
         <translation>Netwerkactiviteit uitgeschakeld</translation>
     </message>
     <message>
+        <source>Executing command without any wallet</source>
+        <translation>Uitvoeren van commando zonder gebruik van een portemonnee</translation>
+    </message>
+    <message>
+        <source>Executing command using "%1" wallet</source>
+        <translation>Uitvoeren van commando met portemonnee "%1"</translation>
+    </message>
+    <message>
         <source>(node id: %1)</source>
         <translation>(node id: %1)</translation>
     </message>
@@ -1987,6 +2005,10 @@
         <translation>Bericht</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Portemonnee</translation>
+    </message>
+    <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
         <translation>Resulterende URI te lang, probeer de tekst korter te maken voor het label/bericht.</translation>
     </message>
@@ -2101,12 +2123,16 @@
         <translation>verberg vergoeding-instellingen</translation>
     </message>
     <message>
-        <source>per kilobyte</source>
-        <translation>per kilobyte</translation>
+        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
+
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+        <translation>Specificeer handmatig een vergoeding per kB (1,000 bytes) voor de virtuele grootte van de transactie.
+
+Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "100 satoshis per kB" voor een transactie ten grootte van 500 bytes (de helft van 1 kB) uiteindelijk een vergoeding van maar liefst 50 satoshis betekenen.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 satoshis in fee, while "total at least" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste toeslag is ingesteld op 1000 satoshis en de transactie is maar 250 bytes, dan wordt bij "per kilobyte" 250 satoshis aan toeslag berekend, terwijl er bij "totaal tenminste" 1000 satoshis worden berekend. Voor transacties die groter zijn dan een kilobyte, wordt in beide gevallen per kilobyte de toeslag berekend.</translation>
+        <source>per kilobyte</source>
+        <translation>per kilobyte</translation>
     </message>
     <message>
         <source>Hide</source>
@@ -2221,12 +2247,28 @@
         <translation>toegevoegd als transactie vergoeding</translation>
     </message>
     <message>
-        <source>Total Amount %1</source>
-        <translation>Totaalbedrag %1</translation>
+        <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
+        <translation>Je kunt de vergoeding later verhogen (signaleert Replace-By-Fee, BIP-125).</translation>
     </message>
     <message>
-        <source>or</source>
-        <translation>of</translation>
+        <source>from wallet %1</source>
+        <translation>van portemonnee %1</translation>
+    </message>
+    <message>
+        <source>Please, review your transaction.</source>
+        <translation>Controleer uw transactie aub.</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Transactiekosten</translation>
+    </message>
+    <message>
+        <source>Not signalling Replace-By-Fee, BIP-125.</source>
+        <translation>Signaleert geen Replace-By-Fee, BIP-125.</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>Totaalbedrag</translation>
     </message>
     <message>
         <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
@@ -2578,10 +2620,6 @@
         <translation>geconflicteerd met een transactie met %1 confirmaties</translation>
     </message>
     <message>
-        <source>%1/offline</source>
-        <translation>%1/offline</translation>
-    </message>
-    <message>
         <source>0/unconfirmed, %1</source>
         <translation>0/onbevestigd, %1</translation>
     </message>
@@ -2608,10 +2646,6 @@
     <message>
         <source>Status</source>
         <translation>Status</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, is nog niet met succes uitgezonden</translation>
     </message>
     <message>
         <source>Date</source>
@@ -2698,6 +2732,10 @@
         <translation>Transactie totale grootte</translation>
     </message>
     <message>
+        <source>Transaction virtual size</source>
+        <translation>Transactie virtuele grootte</translation>
+    </message>
+    <message>
         <source>Output index</source>
         <translation>Output index</translation>
     </message>
@@ -2768,10 +2806,6 @@
         <translation>Open tot %1</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation>Offline</translation>
-    </message>
-    <message>
         <source>Unconfirmed</source>
         <translation>Onbevestigd</translation>
     </message>
@@ -2794,10 +2828,6 @@
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Niet beschikbaar (%1 bevestigingen, zal beschikbaar zijn na %2)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Dit blok is niet ontvangen bij andere nodes en zal waarschijnlijk niet worden geaccepteerd!</translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
@@ -3110,36 +3140,16 @@
         <source>The wallet data was successfully saved to %1.</source>
         <translation>De portemonneedata is succesvol opgeslagen in %1.</translation>
     </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Annuleren</translation>
+    </message>
 </context>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Opties:</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Stel gegevensmap in</translation>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Verbind naar een node om adressen van anderen op te halen, en verbreek vervolgens de verbinding</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Specificeer uw eigen publieke adres</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Aanvaard opdrachtregel- en JSON-RPC-opdrachten</translation>
-    </message>
-    <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Uitgegeven onder de MIT software licentie, zie het bijgevoegde bestand %s of %s</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
-        <translation>Als er geen &lt;categorie&gt; is opgegeven of als de &lt;categorie&gt; 1 is, laat dan alle debugginginformatie zien.</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
@@ -3306,10 +3316,6 @@
         <translation>Waarschuwing: Het lijkt erop dat we geen consensus kunnen vinden met onze peers! Mogelijk dient u te upgraden, of andere nodes moeten wellicht upgraden.</translation>
     </message>
     <message>
-        <source>Whether to save the mempool on shutdown and load on restart (default: %u)</source>
-        <translation>Of de mempool opgeslagen moet worden bij afsluiten en ingeladen moet worden tijdens herstarten (standaard: %u)</translation>
-    </message>
-    <message>
         <source>%d of last 100 blocks have unexpected version</source>
         <translation>%d van de laatste 100 blokken hebben een onverwachte versie</translation>
     </message>
@@ -3346,16 +3352,8 @@
         <translation>Kan -%s adres niet herleiden: '%s'</translation>
     </message>
     <message>
-        <source>Chain selection options:</source>
-        <translation>Keten selectie opties:</translation>
-    </message>
-    <message>
         <source>Change index out of range</source>
         <translation>Wijzigingsindex buiten bereik</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Verbindingsopties:</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
@@ -3364,14 +3362,6 @@
     <message>
         <source>Corrupted block database detected</source>
         <translation>Corrupte blokkendatabase gedetecteerd</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Foutopsporing/Testopties:</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>Laad de wallet niet en schakel wallet RPC oproepen uit</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -3412,6 +3402,10 @@
     <message>
         <source>Error loading %s</source>
         <translation>Fout bij het laden van %s</translation>
+    </message>
+    <message>
+        <source>Error loading %s: Private keys can only be disabled during creation</source>
+        <translation>Fout bij het laden van %s: Geheime sleutels kunnen alleen worden uitgeschakeld tijdens het aanmaken</translation>
     </message>
     <message>
         <source>Error loading %s: Wallet corrupted</source>
@@ -3466,8 +3460,8 @@
         <translation>Ongeldig bedrag voor -fallbackfee=&lt;bedrag&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
-        <translation>De transactiegeheugenpool moet onder de &lt;n&gt; megabytes blijven (standaard: %u)</translation>
+        <source>Upgrading txindex database</source>
+        <translation>Upgraden txindex database</translation>
     </message>
     <message>
         <source>Loading P2P addresses...</source>
@@ -3478,24 +3472,8 @@
         <translation>Verbanningslijst aan het laden...</translation>
     </message>
     <message>
-        <source>Location of the auth cookie (default: data dir)</source>
-        <translation>Locatie van de auth cookie (standaard: data dir)</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Niet genoeg file descriptors beschikbaar.</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Verbind alleen met nodes in netwerk &lt;net&gt; (ipv4, ipv6 of onion)</translation>
-    </message>
-    <message>
-        <source>Print this help message and exit</source>
-        <translation>Print dit helpbericht en sluit af</translation>
-    </message>
-    <message>
-        <source>Print version and exit</source>
-        <translation>Laat versie zien en sluit af</translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
@@ -3546,6 +3524,10 @@
         <translation>Niet in staat om %s te verbinden op deze computer. %s draait waarschijnlijk al.</translation>
     </message>
     <message>
+        <source>Unable to generate keys</source>
+        <translation>Niet mogelijk sleutels te genereren</translation>
+    </message>
+    <message>
         <source>Unsupported argument -benchmark ignored, use -debug=bench.</source>
         <translation>Niet-ondersteund argument -benchmark genegeerd, gebruik -debug=bench.</translation>
     </message>
@@ -3566,14 +3548,6 @@
         <translation>Upgraden UTXO-database</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Gebruik UPnP om de luisterende poort te mappen (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Use the test chain</source>
-        <translation>Gebruik de test keten</translation>
-    </message>
-    <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation>User Agentcommentaar (%s) bevat onveilige karakters.</translation>
     </message>
@@ -3588,26 +3562,6 @@
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
         <translation>Portemonnee moest herschreven worden: Herstart %s om te voltooien</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Portemonnee instellingen:</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Sta JSON-RPC verbindingen toe vanuit een gespecificeerde bron. Geldig voor &lt;ip&gt; zijn een enkel IP (bijv. 1.2.3.4), een netwerk/netmask (bijv. 1.2.3.4/255.255.255.0) of een netwerk/CIDR (bijv. 1.2.3.4/24). Deze optie kan meerdere keren gespecificeerd worden.</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Bind aan opgegeven adres en keur peers die ermee verbinden goed. Gebruik [host]:poort notatie voor IPv6</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Creër nieuwe bestanden met standaard systeem bestandsrechten in plaats van umask 077 (alleen effectief met uitgeschakelde portemonnee functionaliteit)</translation>
-    </message>
-    <message>
-        <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
-        <translation>Ontdek eigen IP-adressen (standaard: 1 voor luisteren en geen -externalip of -proxy)</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3678,10 +3632,6 @@
         <translation>Fout bij het upgraden van de ketenstaat database</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file on startup</source>
-        <translation>Importeer blokken van externe blk000??.dat-bestand bij opstarten</translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>Informatie</translation>
     </message>
@@ -3702,10 +3652,6 @@
         <translation>Ongeldig netmask gespecificeerd in -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Houd maximaal &lt;n&gt; onverbonden transacties in geheugen (standaard: %u)</translation>
-    </message>
-    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Verplicht een poort met -whitebind op te geven: '%s'</translation>
     </message>
@@ -3722,24 +3668,20 @@
         <translation>Verminder -maxconnections van %d naar %d, vanwege systeembeperkingen.</translation>
     </message>
     <message>
-        <source>Rescan the block chain for missing wallet transactions on startup</source>
-        <translation>Herscan de blokketen voor missende portemonneetransacties bij opstarten</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Verzend trace/debug-info naar de console in plaats van het debug.log-bestand</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Toon alle foutopsporingsopties (gebruik: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Verklein debug.log-bestand bij het opstarten van de client (standaard: 1 als geen -debug)</translation>
-    </message>
-    <message>
         <source>Signing transaction failed</source>
         <translation>Ondertekenen van transactie mislukt</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation>Opgegeven -walletdir "%s" bestaat niet</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation>Opgegeven -walletdir "%s" is een relatief pad</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is not a directory</source>
+        <translation>Opgegeven -walletdir "%s" is geen map</translation>
     </message>
     <message>
         <source>Specified -walletdir "%s" does not exist</source>
@@ -3762,14 +3704,6 @@
         <translation>Dit is experimentele software.</translation>
     </message>
     <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>Tor bepaalt poortwachtwoord (standaard: empty)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>Tor bepaalt welke poort te gebruiken als luisteren naar onion wordt gebruikt (standaard: %s)</translation>
-    </message>
-    <message>
         <source>Transaction amount too small</source>
         <translation>Transactiebedrag te klein</translation>
     </message>
@@ -3790,14 +3724,6 @@
         <translation>Niet mogelijk initiële sleutels te genereren</translation>
     </message>
     <message>
-        <source>Upgrade wallet to latest format on startup</source>
-        <translation>Upgrade portemonee naar laatste formaat bij opstarten</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Gebruikersnaam voor JSON-RPC-verbindingen</translation>
-    </message>
-    <message>
         <source>Verifying wallet(s)...</source>
         <translation>Portomenee(n) aan het verifiëren...</translation>
     </message>
@@ -3814,36 +3740,8 @@
         <translation>Waarschuwing: onbekende nieuwe regels geactiveerd (versionbit %i)</translation>
     </message>
     <message>
-        <source>Whether to operate in a blocks only mode (default: %u)</source>
-        <translation>Om in alleen een blokmodus te opereren (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>De database moet opnieuw opgebouwd worden met behulp van -reindex om -txindex te veranderen</translation>
-    </message>
-    <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Bezig met het zappen van alle transacties van de portemonnee...</translation>
-    </message>
-    <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>ZeroMQ notificatieopties:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Wachtwoord voor JSON-RPC-verbindingen</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Voer opdracht uit zodra het beste blok verandert (%s in cmd wordt vervangen door blokhash)</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Sta DNS-naslag toe voor -addnode, -seednode en -connect</translation>
-    </message>
-    <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = behoudt tx meta data bijv. account eigenaar en betalingsverzoek informatie, 2. sla tx meta data niet op)</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -3922,20 +3820,12 @@
         <translation>Totale lengte van netwerkversiestring (%i) overschrijdt maximale lengte (%i). Verminder het aantal of grootte van uacomments.</translation>
     </message>
     <message>
-        <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
-        <translation>Pogingen om uitgaand verkeer onder een bepaald doel te houden (in MiB per 24u), 0 = geen limiet (standaard: %d)</translation>
-    </message>
-    <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Niet-ondersteund argument -socks gevonden. Instellen van SOCKS-versie is niet meer mogelijk, alleen SOCKS5-proxies worden ondersteund.</translation>
     </message>
     <message>
         <source>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</source>
         <translation>Niet ondersteund argument -whitelistalwaysrelay genegeerd, gebruik -whitelistrelay en/of -whitelistforcerelay.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Gebruik een aparte SOCKS5 proxy om verborgen diensten van Tor te bereiken (standaard: %s)</translation>
     </message>
     <message>
         <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
@@ -3954,32 +3844,8 @@
         <translation>%s is zeer hoog ingesteld!</translation>
     </message>
     <message>
-        <source>(default: %s)</source>
-        <translation>(standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Vind anderen door middel van een DNS-naslag (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Error loading wallet %s. -wallet filename must be a regular file.</source>
-        <translation>Fout bij laden van portemonnee %s. -wallet bestandsnaam met een regulier bestand zijn.</translation>
-    </message>
-    <message>
         <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
         <translation>Fout bij laden van portemonnee %s. Duplicaat -wallet bestandsnaam opgegeven.</translation>
-    </message>
-    <message>
-        <source>Error loading wallet %s. Invalid characters in -wallet filename.</source>
-        <translation>Fout bij laden van portemonnee %s. Ongeldige tekens in -wallet bestandsnaam.</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>Aantal te checken blokken bij het opstarten (standaard: %u, 0 = allemaal)</translation>
-    </message>
-    <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>IP-adressen toevoegen in de debuguitvoer (standaard: %u)</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
@@ -4088,6 +3954,26 @@
     <message>
         <source>Insufficient funds</source>
         <translation>Ontoereikend saldo</translation>
+    </message>
+    <message>
+        <source>Can't generate a change-address key. Private keys are disabled for this wallet.</source>
+        <translation>Kan geen sleutel genereren voor een wisselgeldadres. Geheime sleutels zijn uitgeschakeld voor deze portemonnee.</translation>
+    </message>
+    <message>
+        <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use -upgradewallet=169900 or -upgradewallet with no version specified.</source>
+        <translation>Het is niet mogelijk een non HD split portemonnee te upgraden zonder pre split keypool te ondersteunen. Gebruik -upgradewallet=169900 of -upgradewallet zonder een specifiek versie nummer.</translation>
+    </message>
+    <message>
+        <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
+        <translation>Het inschatten van de vergoeding is gefaald. Fallbackfee is uitgeschakeld. Wacht een aantal blocks of schakel -fallbackfee in.</translation>
+    </message>
+    <message>
+        <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
+        <translation>Waarschuwing: Geheime sleutels gedetecteerd in portemonnee {%s} met uitgeschakelde geheime sleutels</translation>
+    </message>
+    <message>
+        <source>Cannot write to data directory '%s'; check permissions.</source>
+        <translation>Mag niet schrijven naar gegevensmap '%s'; controleer bestandsrechten.</translation>
     </message>
     <message>
         <source>Loading block index...</source>
