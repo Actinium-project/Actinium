@@ -44,19 +44,11 @@ static const unsigned int DEFAULT_KEYPOOL_SIZE = 1000;
 //! -paytxfee default
 constexpr CAmount DEFAULT_PAY_TX_FEE = 0;
 //! -fallbackfee default
-<<<<<<< HEAD
-static const CAmount DEFAULT_FALLBACK_FEE = 2000000;
-//! -m_discard_rate default
-static const CAmount DEFAULT_DISCARD_FEE = 10000;
-//! -mintxfee default
-static const CAmount DEFAULT_TRANSACTION_MINFEE = 100000;
-=======
 static const CAmount DEFAULT_FALLBACK_FEE = 200000;
 //! -discardfee default
 static const CAmount DEFAULT_DISCARD_FEE = 10000;
 //! -mintxfee default
 static const CAmount DEFAULT_TRANSACTION_MINFEE = 10000;
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 //! minimum recommended increment for BIP 125 replacement txs
 static const CAmount WALLET_INCREMENTAL_RELAY_FEE = 5000;
 //! Default for -spendzeroconfchange
@@ -836,13 +828,8 @@ public:
     typedef std::multimap<int64_t, TxPair > TxItems;
     TxItems wtxOrdered;
 
-<<<<<<< HEAD
-    int64_t nOrderPosNext;
-    uint64_t nAccountingEntryNumber;
-=======
     int64_t nOrderPosNext = 0;
     uint64_t nAccountingEntryNumber = 0;
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 
     std::map<CTxDestination, CAddressBookData> mapAddressBook;
 
@@ -1083,11 +1070,7 @@ public:
 
     bool DelAddressBook(const CTxDestination& address);
 
-<<<<<<< HEAD
-    const std::string& GetAccountName(const CScript& scriptPubKey) const;
-=======
     const std::string& GetLabelName(const CScript& scriptPubKey) const;
->>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 
     void GetScriptForMining(std::shared_ptr<CReserveScript> &script);
 
