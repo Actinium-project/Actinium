@@ -105,9 +105,9 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
 
         parser = argparse.ArgumentParser(usage="%(prog)s [options]")
         parser.add_argument("--nocleanup", dest="nocleanup", default=False, action="store_true",
-                            help="Leave litecoinds and test.* datadir on exit or error")
+                            help="Leave actiniumds and test.* datadir on exit or error")
         parser.add_argument("--noshutdown", dest="noshutdown", default=False, action="store_true",
-                            help="Don't stop litecoinds after the test execution")
+                            help="Don't stop actiniumds after the test execution")
         parser.add_argument("--cachedir", dest="cachedir", default=os.path.abspath(os.path.dirname(os.path.realpath(__file__)) + "/../../cache"),
                             help="Directory for caching pregenerated datadirs (default: %(default)s)")
         parser.add_argument("--tmpdir", dest="tmpdir", help="Root directory for datadirs")
@@ -137,8 +137,8 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
 
         config = configparser.ConfigParser()
         config.read_file(open(self.options.configfile))
-        self.options.bitcoind = os.getenv("LITECOIND", default=config["environment"]["BUILDDIR"] + '/src/Actiniumd' + config["environment"]["EXEEXT"])
-        self.options.bitcoincli = os.getenv("LITECOINCLI", default=config["environment"]["BUILDDIR"] + '/src/actinium-cli' + config["environment"]["EXEEXT"])
+        self.options.bitcoind = os.getenv("ACTINIUMD", default=config["environment"]["BUILDDIR"] + '/src/Actiniumd' + config["environment"]["EXEEXT"])
+        self.options.bitcoincli = os.getenv("ACTINIUMCLI", default=config["environment"]["BUILDDIR"] + '/src/actinium-cli' + config["environment"]["EXEEXT"])
 
         os.environ['PATH'] = os.pathsep.join([
             os.path.join(config['environment']['BUILDDIR'], 'src'),

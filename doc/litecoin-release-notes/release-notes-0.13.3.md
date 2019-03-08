@@ -61,7 +61,7 @@ Testnet3 has been deprecated and replaced with Testnet4. The server port has bee
 the same (19332).
 
 Testnet faucets can be located at:
-- http://testnet.litecointools.com
+- http://testnet.actiniumtools.com
 - http://testnet.thrasher.io
 
 Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/actinium-project/actinium/blob/0.13/src/chainparams.cpp#L214).

@@ -112,7 +112,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_litecoin.coverage/
+test_actinium.coverage/
 total.coverage/
 coverage_percent.txt
 
