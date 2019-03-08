@@ -1328,8 +1328,8 @@
         <translation>URI-Verarbeitung</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin://' ist kein gültiger URL. Bitte 'litecoin:' nutzen.</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium://' ist kein gültiger URL. Bitte 'actinium:' nutzen.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -3164,8 +3164,8 @@ Hinweis: Eine Gebühr von "100 Satoshis pro kB" bei einer Größe der Transaktio
         <translation>Kann HTTP Server nicht starten. Siehe debug log für Details.</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Core</translation>
+        <source>Actinium Core</source>
+        <translation>Actinium Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

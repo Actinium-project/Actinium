@@ -620,8 +620,8 @@
         <translation>ویرایش آدرس ارسالی</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Litecoin address.</source>
-        <translation>آدرس وارد شده "%1" آدرس معتبر litecoin نیست.</translation>
+        <source>The entered address "%1" is not a valid Actinium address.</source>
+        <translation>آدرس وارد شده "%1" آدرس معتبر actinium نیست.</translation>
     </message>
     </context>
 <context>

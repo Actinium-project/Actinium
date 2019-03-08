@@ -1310,8 +1310,8 @@
         <translation>Zpracování URI</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin://' není platné URI. Místo toho použij 'litecoin:'.</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium://' není platné URI. Místo toho použij 'actinium:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

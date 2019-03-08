@@ -651,7 +651,7 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
         <translation>Gösterilen bilgi geçerli olmayabilir. Bağlantı tekrar sağlandıktan sonra cüzdanınız otomatik olarak senkronize olacaktır. Henüz senkronize olma işlemi tamamlanmadı.</translation>
     </message>
     <message>
@@ -1200,8 +1200,8 @@
         <translation>Gönderim adresini düzenleyin</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Litecoin address.</source>
-        <translation>Girilen adres "%1" Litecoin adresiyle eşleşmiyor.</translation>
+        <source>The entered address "%1" is not a valid Actinium address.</source>
+        <translation>Girilen adres "%1" Actinium adresiyle eşleşmiyor.</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
@@ -1523,7 +1523,7 @@
         <translation>Bu yardım mesajını yazdır ve çıkış yap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Actinium network after a connection is established, but this process has not completed yet.</source>
         <translation>Gösterilen bilgi geçerli olmayabilir. Bağlantı tekrar sağlandıktan sonra cüzdanınız otomatik olarak senkronize olacaktır. Henüz senkronize olma işlemi tamamlanmadı.</translation>
     </message>
     <message>
@@ -1644,8 +1644,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Litecoin address (e.g. %1)</source>
-        <translation>Litecoin adresinizi girin (örneğin %1)</translation>
+        <source>Enter a Actinium address (e.g. %1)</source>
+        <translation>Actinium adresinizi girin (örneğin %1)</translation>
     </message>
     <message>
         <source>N/A</source>
@@ -2029,8 +2029,8 @@
         <translation>Coin gönderimini onaylayın</translation>
     </message>
     <message>
-        <source>Warning: Invalid Litecoin address</source>
-        <translation>Uyarı: Hatalı Litecoin adresi</translation>
+        <source>Warning: Invalid Actinium address</source>
+        <translation>Uyarı: Hatalı Actinium adresi</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2322,8 +2322,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Çekirdeği</translation>
+        <source>Actinium Core</source>
+        <translation>Actinium Çekirdeği</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>

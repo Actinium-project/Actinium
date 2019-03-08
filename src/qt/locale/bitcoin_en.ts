@@ -1691,7 +1691,7 @@
     </message>
     <message>
         <location line="-41"/>
-        <source>&apos;litecoin://&apos; is not a valid URI. Use &apos;litecoin:&apos; instead.</source>
+        <source>&apos;actinium://&apos; is not a valid URI. Use &apos;actinium:&apos; instead.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

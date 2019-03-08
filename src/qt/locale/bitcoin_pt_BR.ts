@@ -1364,8 +1364,8 @@
         <translation>Manipulação de URI</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin://' não é um URI válido. Use 'litecoin:'.</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium://' não é um URI válido. Use 'actinium:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

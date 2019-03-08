@@ -450,8 +450,8 @@
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
-        <translation><numerusform>%n aktiivinen yhteys Litecoin-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Litecoin-verkkoon</numerusform></translation>
+        <source>%n active connection(s) to Actinium network</source>
+        <translation><numerusform>%n aktiivinen yhteys Actinium-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Actinium-verkkoon</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>

@@ -1312,8 +1312,8 @@
         <translation>URI 處理</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>字首為 litecoin:// 不是有效的 URI，請改用 litecoin: 開頭。</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>字首為 actinium:// 不是有效的 URI，請改用 actinium: 開頭。</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

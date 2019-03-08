@@ -1328,8 +1328,8 @@
         <translation>URI-behandeling</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin://' is niet een geldige URI. Gebruik 'litecoin:' in plaats daarvan.</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium://' is niet een geldige URI. Gebruik 'actinium:' in plaats daarvan.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

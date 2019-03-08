@@ -16,7 +16,7 @@ Construct a linear, no-fork, best version of the blockchain.
 <<<<<<< HEAD
 A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Actinium network. This means one can have an always-on Actiniumd instance running, and another local Actiniumd/Actinium-qt instance which connects to this node and receives blocks from it.
 =======
-A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Litecoin network. This means one can have an always-on litecoind instance running, and another local litecoind/litecoin-qt instance which connects to this node and receives blocks from it.
+A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Actinium network. This means one can have an always-on Actiniumd instance running, and another local Actiniumd/actinium-qt instance which connects to this node and receives blocks from it.
 >>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 
 ### [Seeds](/contrib/seeds) ###
@@ -43,7 +43,7 @@ Files used during the gitian build process. For more information about gitian, s
 <<<<<<< HEAD
 PGP keys used for signing Actinium Core [Gitian release](/doc/release-process.md) results.
 =======
-PGP keys used for signing Litecoin Core [Gitian release](/doc/release-process.md) results.
+PGP keys used for signing Actinium Core [Gitian release](/doc/release-process.md) results.
 >>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 
 ### [MacDeploy](/contrib/macdeploy) ###
@@ -69,8 +69,8 @@ Utilities to generate test vectors for the data-driven Actinium tests.
 ### [Verify Binaries](/contrib/verifybinaries) ###
 This script attempts to download and verify the signature file SHA256SUMS.asc from Actinium.org.
 =======
-Utilities to generate test vectors for the data-driven Litecoin tests.
+Utilities to generate test vectors for the data-driven Actinium tests.
 
 ### [Verify Binaries](/contrib/verifybinaries) ###
-This script attempts to download and verify the signature file SHA256SUMS.asc from litecoin.org.
+This script attempts to download and verify the signature file SHA256SUMS.asc from actinium.org.
 >>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d

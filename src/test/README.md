@@ -5,18 +5,18 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the litecoind tests manually, launch `src/test/test_litecoin`. To recompile
+To run the Actiniumd tests manually, launch `src/test/test_litecoin`. To recompile
 after a test file was modified, run `make` and then run the test again. If you
 modify a non-test file, use `make -C src/test` to recompile only what's needed
-to run the litecoind tests.
+to run the Actiniumd tests.
 
-To add more litecoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more Actiniumd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the litecoin-qt tests manually, launch `src/qt/test/test_litecoin-qt`
+To run the actinium-qt tests manually, launch `src/qt/test/test_litecoin-qt`
 
-To add more litecoin-qt tests, add them to the `src/qt/test/` directory and
+To add more actinium-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.
 
 ### Running individual tests
@@ -35,7 +35,7 @@ Run `test_litecoin --help` for the full list.
 ### Note on adding test cases
 
 The sources in this directory are unit test cases.  Boost includes a
-unit testing framework, and since litecoin already uses boost, it makes
+unit testing framework, and since actinium already uses boost, it makes
 sense to simply use this framework rather than require developers to
 configure some other framework (we want as few impediments to creating
 unit tests as possible).

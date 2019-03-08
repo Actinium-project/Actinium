@@ -2622,8 +2622,8 @@
         <translation>Parancssoros és JSON-RPC parancsok elfogadása</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin Mag</translation>
+        <source>Actinium Core</source>
+        <translation>Actinium Mag</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>

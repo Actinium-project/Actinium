@@ -1042,8 +1042,8 @@
         <translation>Σφάλμα αίτησης πληρωμής</translation>
     </message>
     <message>
-        <source>Cannot start litecoin: click-to-pay handler</source>
-        <translation>Δεν είναι δυνατή η εκκίνηση του litecoin: χειριστής click-to-pay</translation>
+        <source>Cannot start actinium: click-to-pay handler</source>
+        <translation>Δεν είναι δυνατή η εκκίνηση του actinium: χειριστής click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>

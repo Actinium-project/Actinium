@@ -450,8 +450,8 @@
         <translation>Opcions de la &amp;línia d'ordres</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
-        <translation><numerusform>%n connexions actives a la xarxa Litecoin</numerusform><numerusform>%n connexions actives a la xarxa Litecoin</numerusform></translation>
+        <source>%n active connection(s) to Actinium network</source>
+        <translation><numerusform>%n connexions actives a la xarxa Actinium</numerusform><numerusform>%n connexions actives a la xarxa Actinium</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -1320,8 +1320,8 @@
         <translation>Gestió d'URI</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin://' no és una URI vàlida. Usi 'litecoin:' en lloc seu.</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium://' no és una URI vàlida. Usi 'actinium:' en lloc seu.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

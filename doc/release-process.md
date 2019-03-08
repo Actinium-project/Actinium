@@ -95,7 +95,7 @@ Create the macOS SDK tarball, see the [macOS readme](README_osx.md) for details,
 
 NOTE: Gitian is sometimes unable to download files. If you have errors, try the step below.
 
-By default, Gitian will fetch source files as needed. To cache them ahead of time, make sure you have checked out the tag you want to build in litecoin, then:
+By default, Gitian will fetch source files as needed. To cache them ahead of time, make sure you have checked out the tag you want to build in actinium, then:
 
     pushd ./gitian-builder
     make -C ../Actinium/depends download SOURCES_PATH=`pwd`/cache/common

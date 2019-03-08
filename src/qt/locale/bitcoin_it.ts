@@ -1329,8 +1329,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Gestione URI</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin: //' non è un URI valido. Usa invece "litecoin:".</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium: //' non è un URI valido. Usa invece "actinium:".</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

@@ -395,9 +395,9 @@ void PaymentServer::handleURIOrFile(const QString& s)
         return;
     }
 
-    if (s.startsWith("litecoin://", Qt::CaseInsensitive))
+    if (s.startsWith("actinium://", Qt::CaseInsensitive))
     {
-        Q_EMIT message(tr("URI handling"), tr("'litecoin://' is not a valid URI. Use 'litecoin:' instead."),
+        Q_EMIT message(tr("URI handling"), tr("'actinium://' is not a valid URI. Use 'actinium:' instead."),
             CClientUIInterface::MSG_ERROR);
     }
     else if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // bitcoin: URI

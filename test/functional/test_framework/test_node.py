@@ -2,7 +2,7 @@
 # Copyright (c) 2017-2018 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Class for litecoind node under test"""
+"""Class for Actiniumd node under test"""
 
 import contextlib
 import decimal
@@ -45,7 +45,7 @@ class ErrorMatch(Enum):
 
 
 class TestNode():
-    """A class for representing a litecoind node under test.
+    """A class for representing a Actiniumd node under test.
 
     This class contains:
 
@@ -166,7 +166,7 @@ class TestNode():
         self.log.debug("Actiniumd started, waiting for RPC to come up")
 
     def wait_for_rpc_connection(self):
-        """Sets up an RPC connection to the litecoind process. Returns False if unable to connect."""
+        """Sets up an RPC connection to the Actiniumd process. Returns False if unable to connect."""
         # Poll at a rate of four times per second
         poll_per_s = 4
         for _ in range(poll_per_s * self.rpc_timeout):
@@ -266,11 +266,11 @@ class TestNode():
     def assert_start_raises_init_error(self, extra_args=None, expected_msg=None, match=ErrorMatch.FULL_TEXT, *args, **kwargs):
         """Attempt to start the node and expect it to raise an error.
 
-        extra_args: extra arguments to pass through to litecoind
-        expected_msg: regex that stderr should match when litecoind fails
+        extra_args: extra arguments to pass through to Actiniumd
+        expected_msg: regex that stderr should match when Actiniumd fails
 
-        Will throw if litecoind starts without an error.
-        Will throw if an expected_msg is provided and it does not match litecoind's stdout."""
+        Will throw if Actiniumd starts without an error.
+        Will throw if an expected_msg is provided and it does not match Actiniumd's stdout."""
         with tempfile.NamedTemporaryFile(dir=self.stderr_dir, delete=False) as log_stderr, \
              tempfile.NamedTemporaryFile(dir=self.stdout_dir, delete=False) as log_stdout:
             try:
@@ -279,7 +279,7 @@ class TestNode():
                 self.stop_node()
                 self.wait_until_stopped()
             except FailedToStartError as e:
-                self.log.debug('litecoind failed to start: %s', e)
+                self.log.debug('Actiniumd failed to start: %s', e)
                 self.running = False
                 self.process = None
                 # Check stderr for expected message
@@ -300,15 +300,15 @@ class TestNode():
                                 'Expected message "{}" does not fully match stderr:\n"{}"'.format(expected_msg, stderr))
             else:
                 if expected_msg is None:
-                    assert_msg = "litecoind should have exited with an error"
+                    assert_msg = "Actiniumd should have exited with an error"
                 else:
-                    assert_msg = "litecoind should have exited with expected error " + expected_msg
+                    assert_msg = "Actiniumd should have exited with expected error " + expected_msg
                 self._raise_assertion_error(assert_msg)
 
     def node_encrypt_wallet(self, passphrase):
         """"Encrypts the wallet.
 
-        This causes litecoind to shutdown, so this method takes
+        This causes Actiniumd to shutdown, so this method takes
         care of cleaning up resources."""
         self.encryptwallet(passphrase)
         self.wait_until_stopped()
@@ -357,7 +357,7 @@ class TestNodeCLIAttr:
         return lambda: self(*args, **kwargs)
 
 class TestNodeCLI():
-    """Interface to litecoin-cli for an individual node"""
+    """Interface to actinium-cli for an individual node"""
 
     def __init__(self, binary, datadir):
         self.options = []

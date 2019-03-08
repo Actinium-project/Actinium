@@ -1332,8 +1332,8 @@
         <translation>URI-håndtering</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin://' er ikke et gyldigt URI. Brug 'litecoin:' istedet. </translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium://' er ikke et gyldigt URI. Brug 'actinium:' istedet. </translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

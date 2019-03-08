@@ -159,10 +159,10 @@ script: |
     find . -name "lib*.la" -delete
     find . -name "lib*.a" -delete
     
-    # Litecoin: Delete libbitcoin from binary distribution for now, see #192
+    # Actinium: Delete libbitcoin from binary distribution for now, see #192
     rm -rf ${DISTNAME}/lib/
     rm -rf ${DISTNAME}/include/
-    # Litecoin: ends
+    # Actinium: ends
     
     rm -rf ${DISTNAME}/lib/pkgconfig
     find ${DISTNAME} | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-${i}.tar.gz

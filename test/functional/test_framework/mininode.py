@@ -4,7 +4,7 @@
 # Copyright (c) 2010-2018 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Litecoin P2P network half-a-node.
+"""Actinium P2P network half-a-node.
 
 This python code was modified from ArtForz' public domain half-a-node, as
 found in the mini-node branch of http://github.com/jgarzik/pynode.
@@ -92,7 +92,7 @@ class P2PConnection(asyncio.Protocol):
 
         logger.info('Connecting to Actinium Node: %s:%d' % (self.dstaddr, self.dstport))
 =======
-        logger.debug('Connecting to Litecoin Node: %s:%d' % (self.dstaddr, self.dstport))
+        logger.debug('Connecting to Actinium Node: %s:%d' % (self.dstaddr, self.dstport))
 >>>>>>> f22cd116c597213753b8cc77ff675ed5be18ec1d
 
         loop = NetworkThread.network_event_loop
@@ -226,7 +226,7 @@ class P2PConnection(asyncio.Protocol):
 
 
 class P2PInterface(P2PConnection):
-    """A high-level P2P interface class for communicating with a Litecoin node.
+    """A high-level P2P interface class for communicating with a Actinium node.
 
     This class provides high-level callbacks for processing P2P message
     payloads, as well as convenience methods for interacting with the

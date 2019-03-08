@@ -87,23 +87,23 @@ Actiniumd processes are being run.**
 
 ```bash
 killall Actiniumd
-The P2P and RPC ports used by the litecoind nodes-under-test are chosen to make
-conflicts with other processes unlikely. However, if there is another litecoind
+The P2P and RPC ports used by the Actiniumd nodes-under-test are chosen to make
+conflicts with other processes unlikely. However, if there is another Actiniumd
 process running on the system (perhaps from a previous test which hasn't successfully
-killed all its litecoind nodes), then there may be a port conflict which will
+killed all its Actiniumd nodes), then there may be a port conflict which will
 cause the test to fail. It is recommended that you run the tests on a system
-where no other litecoind processes are running.
+where no other Actiniumd processes are running.
 
 On linux, the test_framework will warn if there is another
-litecoind process running when the tests are started.
+Actiniumd process running when the tests are started.
 
-If there are zombie litecoind processes after test failure, you can kill them
+If there are zombie Actiniumd processes after test failure, you can kill them
 by running the following commands. **Note that these commands will kill all
-litecoind processes running on the system, so should not be used if any non-test
-litecoind processes are being run.**
+Actiniumd processes running on the system, so should not be used if any non-test
+Actiniumd processes are being run.**
 
 ```bash
-killall litecoind
+killall Actiniumd
 ```
 
 or
@@ -125,11 +125,11 @@ sure Actiniumd processes are stopped as above):
 ```bash
 rm -rf cache
 killall Actiniumd
-sure litecoind processes are stopped as above):
+sure Actiniumd processes are stopped as above):
 
 ```bash
 rm -rf cache
-killall litecoind
+killall Actiniumd
 ```
 
 ##### Test logging

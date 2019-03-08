@@ -857,8 +857,8 @@
         <translation>Aproximadamente %1 GB de dados irão ser guardados nesta directoria. </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Litecoin block chain.</source>
-        <translation>%1 irá descarregar e armazenar uma cópia da cadeia de blocos da Litecoin.</translation>
+        <source>%1 will download and store a copy of the Actinium block chain.</source>
+        <translation>%1 irá descarregar e armazenar uma cópia da cadeia de blocos da Actinium.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1301,8 +1301,8 @@
         <translation>Manuseamento de URI</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin://' não é um URI válido. Utilize 'litecoin:'.</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium://' não é um URI válido. Utilize 'actinium:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

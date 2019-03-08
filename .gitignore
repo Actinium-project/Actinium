@@ -2,6 +2,7 @@ aclocal.m4
 test/config.ini
 src/qt/paymentrequest.pb.cc
 src/qt/paymentrequest.pb.h
+src/config/bitcoin-config.h.in~
 
 # Prerequisites
 *.d

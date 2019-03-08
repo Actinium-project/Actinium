@@ -1328,8 +1328,8 @@
         <translation>URI 핸들링</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin://"은 잘못된 URI입니다. 'litecoin:'을 사용하십시오.</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium://"은 잘못된 URI입니다. 'actinium:'을 사용하십시오.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

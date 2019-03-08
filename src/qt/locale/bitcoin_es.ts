@@ -1327,8 +1327,8 @@
         <translation>Manejo de URI</translation>
     </message>
     <message>
-        <source>'litecoin://' is not a valid URI. Use 'litecoin:' instead.</source>
-        <translation>'litecoin: //' no es un URI válido. Use 'litecoin:' en su lugar.</translation>
+        <source>'actinium://' is not a valid URI. Use 'actinium:' instead.</source>
+        <translation>'actinium: //' no es un URI válido. Use 'actinium:' en su lugar.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>

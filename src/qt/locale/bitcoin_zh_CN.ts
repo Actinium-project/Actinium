@@ -442,7 +442,7 @@
         <translation>命令行选项(&amp;C)</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
+        <source>%n active connection(s) to Actinium network</source>
         <translation><numerusform>%n 个到莱特币网络的活动连接</numerusform></translation>
     </message>
     <message>

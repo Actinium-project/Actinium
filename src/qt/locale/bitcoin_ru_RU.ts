@@ -398,12 +398,12 @@
         <translation>Зашифровать приватные ключи, принадлежащие вашему кошельку</translation>
     </message>
     <message>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
-        <translation>Подписывайте сообщения Litecoin адресами чтобы подтвердить что это написали именно Вы</translation>
+        <source>Sign messages with your Actinium addresses to prove you own them</source>
+        <translation>Подписывайте сообщения Actinium адресами чтобы подтвердить что это написали именно Вы</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
-        <translation>Проверяйте сообщения чтобы убедиться что они подписаны конкретными Litecoin адресами</translation>
+        <source>Verify messages to ensure they were signed with specified Actinium addresses</source>
+        <translation>Проверяйте сообщения чтобы убедиться что они подписаны конкретными Actinium адресами</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -430,8 +430,8 @@
         <translation>Показать список использованных адресов и меток получателей</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>Открыть Litecoin: URI или запрос платежа</translation>
+        <source>Open a actinium: URI or payment request</source>
+        <translation>Открыть Actinium: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -510,8 +510,8 @@
         <translation>Кошелек &lt;b&gt;зашифрован&lt;/b&gt; и сейчас &lt;b&gt;заблокирован&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
-        <translation>Произошла критическая ошибка. Litecoin больше не может продолжать безопасную работу и будет закрыт.</translation>
+        <source>A fatal error occurred. Actinium can no longer continue safely and will quit.</source>
+        <translation>Произошла критическая ошибка. Actinium больше не может продолжать безопасную работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -1053,7 +1053,7 @@
         <translation>Количество</translation>
     </message>
     <message>
-        <source>Enter a Litecoin address (e.g. %1)</source>
+        <source>Enter a Actinium address (e.g. %1)</source>
         <translation>Введите лайткоин-адрес (напр. %1)</translation>
     </message>
     <message>
