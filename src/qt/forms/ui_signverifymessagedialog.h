@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'signverifymessagedialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.0
+** Created by: Qt User Interface Compiler version 5.9.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,10 +10,12 @@
 #define UI_SIGNVERIFYMESSAGEDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QIcon>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPlainTextEdit>
@@ -67,19 +69,19 @@ public:
     void setupUi(QDialog *SignVerifyMessageDialog)
     {
         if (SignVerifyMessageDialog->objectName().isEmpty())
-            SignVerifyMessageDialog->setObjectName(QString::fromUtf8("SignVerifyMessageDialog"));
+            SignVerifyMessageDialog->setObjectName(QStringLiteral("SignVerifyMessageDialog"));
         SignVerifyMessageDialog->resize(700, 380);
         SignVerifyMessageDialog->setModal(true);
         verticalLayout = new QVBoxLayout(SignVerifyMessageDialog);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         tabWidget = new QTabWidget(SignVerifyMessageDialog);
-        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setObjectName(QStringLiteral("tabWidget"));
         tabSignMessage = new QWidget();
-        tabSignMessage->setObjectName(QString::fromUtf8("tabSignMessage"));
+        tabSignMessage->setObjectName(QStringLiteral("tabSignMessage"));
         verticalLayout_SM = new QVBoxLayout(tabSignMessage);
-        verticalLayout_SM->setObjectName(QString::fromUtf8("verticalLayout_SM"));
+        verticalLayout_SM->setObjectName(QStringLiteral("verticalLayout_SM"));
         infoLabel_SM = new QLabel(tabSignMessage);
-        infoLabel_SM->setObjectName(QString::fromUtf8("infoLabel_SM"));
+        infoLabel_SM->setObjectName(QStringLiteral("infoLabel_SM"));
         infoLabel_SM->setTextFormat(Qt::PlainText);
         infoLabel_SM->setWordWrap(true);
 
@@ -87,25 +89,25 @@ public:
 
         horizontalLayout_1_SM = new QHBoxLayout();
         horizontalLayout_1_SM->setSpacing(0);
-        horizontalLayout_1_SM->setObjectName(QString::fromUtf8("horizontalLayout_1_SM"));
+        horizontalLayout_1_SM->setObjectName(QStringLiteral("horizontalLayout_1_SM"));
         addressIn_SM = new QValidatedLineEdit(tabSignMessage);
-        addressIn_SM->setObjectName(QString::fromUtf8("addressIn_SM"));
+        addressIn_SM->setObjectName(QStringLiteral("addressIn_SM"));
 
         horizontalLayout_1_SM->addWidget(addressIn_SM);
 
         addressBookButton_SM = new QPushButton(tabSignMessage);
-        addressBookButton_SM->setObjectName(QString::fromUtf8("addressBookButton_SM"));
+        addressBookButton_SM->setObjectName(QStringLiteral("addressBookButton_SM"));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/icons/address-book"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/icons/address-book"), QSize(), QIcon::Normal, QIcon::Off);
         addressBookButton_SM->setIcon(icon);
         addressBookButton_SM->setAutoDefault(false);
 
         horizontalLayout_1_SM->addWidget(addressBookButton_SM);
 
         pasteButton_SM = new QPushButton(tabSignMessage);
-        pasteButton_SM->setObjectName(QString::fromUtf8("pasteButton_SM"));
+        pasteButton_SM->setObjectName(QStringLiteral("pasteButton_SM"));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/icons/editpaste"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QStringLiteral(":/icons/editpaste"), QSize(), QIcon::Normal, QIcon::Off);
         pasteButton_SM->setIcon(icon1);
         pasteButton_SM->setAutoDefault(false);
 
@@ -115,21 +117,21 @@ public:
         verticalLayout_SM->addLayout(horizontalLayout_1_SM);
 
         messageIn_SM = new QPlainTextEdit(tabSignMessage);
-        messageIn_SM->setObjectName(QString::fromUtf8("messageIn_SM"));
+        messageIn_SM->setObjectName(QStringLiteral("messageIn_SM"));
 
         verticalLayout_SM->addWidget(messageIn_SM);
 
         signatureLabel_SM = new QLabel(tabSignMessage);
-        signatureLabel_SM->setObjectName(QString::fromUtf8("signatureLabel_SM"));
+        signatureLabel_SM->setObjectName(QStringLiteral("signatureLabel_SM"));
         signatureLabel_SM->setTextFormat(Qt::PlainText);
 
         verticalLayout_SM->addWidget(signatureLabel_SM);
 
         horizontalLayout_2_SM = new QHBoxLayout();
         horizontalLayout_2_SM->setSpacing(0);
-        horizontalLayout_2_SM->setObjectName(QString::fromUtf8("horizontalLayout_2_SM"));
+        horizontalLayout_2_SM->setObjectName(QStringLiteral("horizontalLayout_2_SM"));
         signatureOut_SM = new QLineEdit(tabSignMessage);
-        signatureOut_SM->setObjectName(QString::fromUtf8("signatureOut_SM"));
+        signatureOut_SM->setObjectName(QStringLiteral("signatureOut_SM"));
         QFont font;
         font.setItalic(true);
         signatureOut_SM->setFont(font);
@@ -138,9 +140,9 @@ public:
         horizontalLayout_2_SM->addWidget(signatureOut_SM);
 
         copySignatureButton_SM = new QPushButton(tabSignMessage);
-        copySignatureButton_SM->setObjectName(QString::fromUtf8("copySignatureButton_SM"));
+        copySignatureButton_SM->setObjectName(QStringLiteral("copySignatureButton_SM"));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/icons/editcopy"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QStringLiteral(":/icons/editcopy"), QSize(), QIcon::Normal, QIcon::Off);
         copySignatureButton_SM->setIcon(icon2);
         copySignatureButton_SM->setAutoDefault(false);
 
@@ -150,20 +152,20 @@ public:
         verticalLayout_SM->addLayout(horizontalLayout_2_SM);
 
         horizontalLayout_3_SM = new QHBoxLayout();
-        horizontalLayout_3_SM->setObjectName(QString::fromUtf8("horizontalLayout_3_SM"));
+        horizontalLayout_3_SM->setObjectName(QStringLiteral("horizontalLayout_3_SM"));
         signMessageButton_SM = new QPushButton(tabSignMessage);
-        signMessageButton_SM->setObjectName(QString::fromUtf8("signMessageButton_SM"));
+        signMessageButton_SM->setObjectName(QStringLiteral("signMessageButton_SM"));
         QIcon icon3;
-        icon3.addFile(QString::fromUtf8(":/icons/edit"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QStringLiteral(":/icons/edit"), QSize(), QIcon::Normal, QIcon::Off);
         signMessageButton_SM->setIcon(icon3);
         signMessageButton_SM->setAutoDefault(false);
 
         horizontalLayout_3_SM->addWidget(signMessageButton_SM);
 
         clearButton_SM = new QPushButton(tabSignMessage);
-        clearButton_SM->setObjectName(QString::fromUtf8("clearButton_SM"));
+        clearButton_SM->setObjectName(QStringLiteral("clearButton_SM"));
         QIcon icon4;
-        icon4.addFile(QString::fromUtf8(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
+        icon4.addFile(QStringLiteral(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
         clearButton_SM->setIcon(icon4);
         clearButton_SM->setAutoDefault(false);
 
@@ -174,7 +176,7 @@ public:
         horizontalLayout_3_SM->addItem(horizontalSpacer_1_SM);
 
         statusLabel_SM = new QLabel(tabSignMessage);
-        statusLabel_SM->setObjectName(QString::fromUtf8("statusLabel_SM"));
+        statusLabel_SM->setObjectName(QStringLiteral("statusLabel_SM"));
         QFont font1;
         font1.setBold(true);
         font1.setWeight(75);
@@ -192,11 +194,11 @@ public:
 
         tabWidget->addTab(tabSignMessage, QString());
         tabVerifyMessage = new QWidget();
-        tabVerifyMessage->setObjectName(QString::fromUtf8("tabVerifyMessage"));
+        tabVerifyMessage->setObjectName(QStringLiteral("tabVerifyMessage"));
         verticalLayout_VM = new QVBoxLayout(tabVerifyMessage);
-        verticalLayout_VM->setObjectName(QString::fromUtf8("verticalLayout_VM"));
+        verticalLayout_VM->setObjectName(QStringLiteral("verticalLayout_VM"));
         infoLabel_VM = new QLabel(tabVerifyMessage);
-        infoLabel_VM->setObjectName(QString::fromUtf8("infoLabel_VM"));
+        infoLabel_VM->setObjectName(QStringLiteral("infoLabel_VM"));
         infoLabel_VM->setTextFormat(Qt::PlainText);
         infoLabel_VM->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         infoLabel_VM->setWordWrap(true);
@@ -205,14 +207,14 @@ public:
 
         horizontalLayout_1_VM = new QHBoxLayout();
         horizontalLayout_1_VM->setSpacing(0);
-        horizontalLayout_1_VM->setObjectName(QString::fromUtf8("horizontalLayout_1_VM"));
+        horizontalLayout_1_VM->setObjectName(QStringLiteral("horizontalLayout_1_VM"));
         addressIn_VM = new QValidatedLineEdit(tabVerifyMessage);
-        addressIn_VM->setObjectName(QString::fromUtf8("addressIn_VM"));
+        addressIn_VM->setObjectName(QStringLiteral("addressIn_VM"));
 
         horizontalLayout_1_VM->addWidget(addressIn_VM);
 
         addressBookButton_VM = new QPushButton(tabVerifyMessage);
-        addressBookButton_VM->setObjectName(QString::fromUtf8("addressBookButton_VM"));
+        addressBookButton_VM->setObjectName(QStringLiteral("addressBookButton_VM"));
         addressBookButton_VM->setIcon(icon);
         addressBookButton_VM->setAutoDefault(false);
 
@@ -222,28 +224,28 @@ public:
         verticalLayout_VM->addLayout(horizontalLayout_1_VM);
 
         messageIn_VM = new QPlainTextEdit(tabVerifyMessage);
-        messageIn_VM->setObjectName(QString::fromUtf8("messageIn_VM"));
+        messageIn_VM->setObjectName(QStringLiteral("messageIn_VM"));
 
         verticalLayout_VM->addWidget(messageIn_VM);
 
         signatureIn_VM = new QValidatedLineEdit(tabVerifyMessage);
-        signatureIn_VM->setObjectName(QString::fromUtf8("signatureIn_VM"));
+        signatureIn_VM->setObjectName(QStringLiteral("signatureIn_VM"));
 
         verticalLayout_VM->addWidget(signatureIn_VM);
 
         horizontalLayout_2_VM = new QHBoxLayout();
-        horizontalLayout_2_VM->setObjectName(QString::fromUtf8("horizontalLayout_2_VM"));
+        horizontalLayout_2_VM->setObjectName(QStringLiteral("horizontalLayout_2_VM"));
         verifyMessageButton_VM = new QPushButton(tabVerifyMessage);
-        verifyMessageButton_VM->setObjectName(QString::fromUtf8("verifyMessageButton_VM"));
+        verifyMessageButton_VM->setObjectName(QStringLiteral("verifyMessageButton_VM"));
         QIcon icon5;
-        icon5.addFile(QString::fromUtf8(":/icons/transaction_0"), QSize(), QIcon::Normal, QIcon::Off);
+        icon5.addFile(QStringLiteral(":/icons/transaction_0"), QSize(), QIcon::Normal, QIcon::Off);
         verifyMessageButton_VM->setIcon(icon5);
         verifyMessageButton_VM->setAutoDefault(false);
 
         horizontalLayout_2_VM->addWidget(verifyMessageButton_VM);
 
         clearButton_VM = new QPushButton(tabVerifyMessage);
-        clearButton_VM->setObjectName(QString::fromUtf8("clearButton_VM"));
+        clearButton_VM->setObjectName(QStringLiteral("clearButton_VM"));
         clearButton_VM->setIcon(icon4);
         clearButton_VM->setAutoDefault(false);
 
@@ -254,7 +256,7 @@ public:
         horizontalLayout_2_VM->addItem(horizontalSpacer_1_VM);
 
         statusLabel_VM = new QLabel(tabVerifyMessage);
-        statusLabel_VM->setObjectName(QString::fromUtf8("statusLabel_VM"));
+        statusLabel_VM->setObjectName(QStringLiteral("statusLabel_VM"));
         statusLabel_VM->setFont(font1);
         statusLabel_VM->setWordWrap(true);
 
@@ -282,64 +284,64 @@ public:
 
     void retranslateUi(QDialog *SignVerifyMessageDialog)
     {
-        SignVerifyMessageDialog->setWindowTitle(QApplication::translate("SignVerifyMessageDialog", "Signatures - Sign / Verify a Message", nullptr));
-        infoLabel_SM->setText(QApplication::translate("SignVerifyMessageDialog", "You can sign messages/agreements with your addresses to prove you can receive actiniums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.", nullptr));
+        SignVerifyMessageDialog->setWindowTitle(QApplication::translate("SignVerifyMessageDialog", "Signatures - Sign / Verify a Message", Q_NULLPTR));
+        infoLabel_SM->setText(QApplication::translate("SignVerifyMessageDialog", "You can sign messages/agreements with your addresses to prove you can receive actiniums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        addressIn_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "The Actinium address to sign the message with", nullptr));
+        addressIn_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "The Actinium address to sign the message with", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        addressBookButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Choose previously used address", nullptr));
+        addressBookButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Choose previously used address", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         addressBookButton_SM->setText(QString());
 #ifndef QT_NO_SHORTCUT
-        addressBookButton_SM->setShortcut(QApplication::translate("SignVerifyMessageDialog", "Alt+A", nullptr));
+        addressBookButton_SM->setShortcut(QApplication::translate("SignVerifyMessageDialog", "Alt+A", Q_NULLPTR));
 #endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        pasteButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Paste address from clipboard", nullptr));
+        pasteButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Paste address from clipboard", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         pasteButton_SM->setText(QString());
 #ifndef QT_NO_SHORTCUT
-        pasteButton_SM->setShortcut(QApplication::translate("SignVerifyMessageDialog", "Alt+P", nullptr));
+        pasteButton_SM->setShortcut(QApplication::translate("SignVerifyMessageDialog", "Alt+P", Q_NULLPTR));
 #endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        messageIn_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Enter the message you want to sign here", nullptr));
+        messageIn_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Enter the message you want to sign here", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        signatureLabel_SM->setText(QApplication::translate("SignVerifyMessageDialog", "Signature", nullptr));
+        signatureLabel_SM->setText(QApplication::translate("SignVerifyMessageDialog", "Signature", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        copySignatureButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Copy the current signature to the system clipboard", nullptr));
+        copySignatureButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Copy the current signature to the system clipboard", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         copySignatureButton_SM->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        signMessageButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Sign the message to prove you own this Actinium address", nullptr));
+        signMessageButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Sign the message to prove you own this Actinium address", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        signMessageButton_SM->setText(QApplication::translate("SignVerifyMessageDialog", "Sign &Message", nullptr));
+        signMessageButton_SM->setText(QApplication::translate("SignVerifyMessageDialog", "Sign &Message", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        clearButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Reset all sign message fields", nullptr));
+        clearButton_SM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Reset all sign message fields", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        clearButton_SM->setText(QApplication::translate("SignVerifyMessageDialog", "Clear &All", nullptr));
+        clearButton_SM->setText(QApplication::translate("SignVerifyMessageDialog", "Clear &All", Q_NULLPTR));
         statusLabel_SM->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tabSignMessage), QApplication::translate("SignVerifyMessageDialog", "&Sign Message", nullptr));
-        infoLabel_VM->setText(QApplication::translate("SignVerifyMessageDialog", "Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabSignMessage), QApplication::translate("SignVerifyMessageDialog", "&Sign Message", Q_NULLPTR));
+        infoLabel_VM->setText(QApplication::translate("SignVerifyMessageDialog", "Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        addressIn_VM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "The Actinium address the message was signed with", nullptr));
+        addressIn_VM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "The Actinium address the message was signed with", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        addressBookButton_VM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Choose previously used address", nullptr));
+        addressBookButton_VM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Choose previously used address", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         addressBookButton_VM->setText(QString());
 #ifndef QT_NO_SHORTCUT
-        addressBookButton_VM->setShortcut(QApplication::translate("SignVerifyMessageDialog", "Alt+A", nullptr));
+        addressBookButton_VM->setShortcut(QApplication::translate("SignVerifyMessageDialog", "Alt+A", Q_NULLPTR));
 #endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        verifyMessageButton_VM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Verify the message to ensure it was signed with the specified Actinium address", nullptr));
+        verifyMessageButton_VM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Verify the message to ensure it was signed with the specified Actinium address", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        verifyMessageButton_VM->setText(QApplication::translate("SignVerifyMessageDialog", "Verify &Message", nullptr));
+        verifyMessageButton_VM->setText(QApplication::translate("SignVerifyMessageDialog", "Verify &Message", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        clearButton_VM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Reset all verify message fields", nullptr));
+        clearButton_VM->setToolTip(QApplication::translate("SignVerifyMessageDialog", "Reset all verify message fields", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        clearButton_VM->setText(QApplication::translate("SignVerifyMessageDialog", "Clear &All", nullptr));
+        clearButton_VM->setText(QApplication::translate("SignVerifyMessageDialog", "Clear &All", Q_NULLPTR));
         statusLabel_VM->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tabVerifyMessage), QApplication::translate("SignVerifyMessageDialog", "&Verify Message", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabVerifyMessage), QApplication::translate("SignVerifyMessageDialog", "&Verify Message", Q_NULLPTR));
     } // retranslateUi
 
 };

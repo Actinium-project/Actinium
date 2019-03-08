@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'receiverequestdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.0
+** Created by: Qt User Interface Compiler version 5.9.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,10 +10,13 @@
 #define UI_RECEIVEREQUESTDIALOG_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTextEdit>
@@ -38,12 +41,12 @@ public:
     void setupUi(QDialog *ReceiveRequestDialog)
     {
         if (ReceiveRequestDialog->objectName().isEmpty())
-            ReceiveRequestDialog->setObjectName(QString::fromUtf8("ReceiveRequestDialog"));
+            ReceiveRequestDialog->setObjectName(QStringLiteral("ReceiveRequestDialog"));
         ReceiveRequestDialog->resize(487, 597);
         verticalLayout_3 = new QVBoxLayout(ReceiveRequestDialog);
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         lblQRCode = new QRImageWidget(ReceiveRequestDialog);
-        lblQRCode->setObjectName(QString::fromUtf8("lblQRCode"));
+        lblQRCode->setObjectName(QStringLiteral("lblQRCode"));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -57,7 +60,7 @@ public:
         verticalLayout_3->addWidget(lblQRCode);
 
         outUri = new QTextEdit(ReceiveRequestDialog);
-        outUri->setObjectName(QString::fromUtf8("outUri"));
+        outUri->setObjectName(QStringLiteral("outUri"));
         QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -72,21 +75,21 @@ public:
         verticalLayout_3->addWidget(outUri);
 
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         btnCopyURI = new QPushButton(ReceiveRequestDialog);
-        btnCopyURI->setObjectName(QString::fromUtf8("btnCopyURI"));
+        btnCopyURI->setObjectName(QStringLiteral("btnCopyURI"));
         btnCopyURI->setAutoDefault(false);
 
         horizontalLayout->addWidget(btnCopyURI);
 
         btnCopyAddress = new QPushButton(ReceiveRequestDialog);
-        btnCopyAddress->setObjectName(QString::fromUtf8("btnCopyAddress"));
+        btnCopyAddress->setObjectName(QStringLiteral("btnCopyAddress"));
         btnCopyAddress->setAutoDefault(false);
 
         horizontalLayout->addWidget(btnCopyAddress);
 
         btnSaveAs = new QPushButton(ReceiveRequestDialog);
-        btnSaveAs->setObjectName(QString::fromUtf8("btnSaveAs"));
+        btnSaveAs->setObjectName(QStringLiteral("btnSaveAs"));
         btnSaveAs->setAutoDefault(false);
 
         horizontalLayout->addWidget(btnSaveAs);
@@ -96,7 +99,7 @@ public:
         horizontalLayout->addItem(horizontalSpacer_2);
 
         buttonBox = new QDialogButtonBox(ReceiveRequestDialog);
-        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
+        buttonBox->setObjectName(QStringLiteral("buttonBox"));
         buttonBox->setStandardButtons(QDialogButtonBox::Close);
 
         horizontalLayout->addWidget(buttonBox);
@@ -115,11 +118,11 @@ public:
     void retranslateUi(QDialog *ReceiveRequestDialog)
     {
 #ifndef QT_NO_TOOLTIP
-        lblQRCode->setToolTip(QApplication::translate("ReceiveRequestDialog", "QR Code", nullptr));
+        lblQRCode->setToolTip(QApplication::translate("ReceiveRequestDialog", "QR Code", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        btnCopyURI->setText(QApplication::translate("ReceiveRequestDialog", "Copy &URI", nullptr));
-        btnCopyAddress->setText(QApplication::translate("ReceiveRequestDialog", "Copy &Address", nullptr));
-        btnSaveAs->setText(QApplication::translate("ReceiveRequestDialog", "&Save Image...", nullptr));
+        btnCopyURI->setText(QApplication::translate("ReceiveRequestDialog", "Copy &URI", Q_NULLPTR));
+        btnCopyAddress->setText(QApplication::translate("ReceiveRequestDialog", "Copy &Address", Q_NULLPTR));
+        btnSaveAs->setText(QApplication::translate("ReceiveRequestDialog", "&Save Image...", Q_NULLPTR));
         Q_UNUSED(ReceiveRequestDialog);
     } // retranslateUi
 

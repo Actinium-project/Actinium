@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'sendcoinsentry.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.0
+** Created by: Qt User Interface Compiler version 5.9.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,12 +10,14 @@
 #define UI_SENDCOINSENTRY_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QIcon>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
@@ -71,54 +73,54 @@ public:
     void setupUi(QStackedWidget *SendCoinsEntry)
     {
         if (SendCoinsEntry->objectName().isEmpty())
-            SendCoinsEntry->setObjectName(QString::fromUtf8("SendCoinsEntry"));
+            SendCoinsEntry->setObjectName(QStringLiteral("SendCoinsEntry"));
         SendCoinsEntry->resize(729, 150);
         SendCoinsEntry->setFocusPolicy(Qt::TabFocus);
         SendCoinsEntry->setAutoFillBackground(false);
         SendCoins = new QFrame();
-        SendCoins->setObjectName(QString::fromUtf8("SendCoins"));
+        SendCoins->setObjectName(QStringLiteral("SendCoins"));
         SendCoins->setFrameShape(QFrame::NoFrame);
         gridLayout = new QGridLayout(SendCoins);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setHorizontalSpacing(12);
         gridLayout->setVerticalSpacing(8);
         gridLayout->setContentsMargins(-1, 8, -1, 4);
         payToLabel = new QLabel(SendCoins);
-        payToLabel->setObjectName(QString::fromUtf8("payToLabel"));
+        payToLabel->setObjectName(QStringLiteral("payToLabel"));
         payToLabel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout->addWidget(payToLabel, 0, 0, 1, 1);
 
         payToLayout = new QHBoxLayout();
         payToLayout->setSpacing(0);
-        payToLayout->setObjectName(QString::fromUtf8("payToLayout"));
+        payToLayout->setObjectName(QStringLiteral("payToLayout"));
         payTo = new QValidatedLineEdit(SendCoins);
-        payTo->setObjectName(QString::fromUtf8("payTo"));
+        payTo->setObjectName(QStringLiteral("payTo"));
 
         payToLayout->addWidget(payTo);
 
         addressBookButton = new QToolButton(SendCoins);
-        addressBookButton->setObjectName(QString::fromUtf8("addressBookButton"));
+        addressBookButton->setObjectName(QStringLiteral("addressBookButton"));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/icons/address-book"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/icons/address-book"), QSize(), QIcon::Normal, QIcon::Off);
         addressBookButton->setIcon(icon);
         addressBookButton->setIconSize(QSize(22, 22));
 
         payToLayout->addWidget(addressBookButton);
 
         pasteButton = new QToolButton(SendCoins);
-        pasteButton->setObjectName(QString::fromUtf8("pasteButton"));
+        pasteButton->setObjectName(QStringLiteral("pasteButton"));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/icons/editpaste"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QStringLiteral(":/icons/editpaste"), QSize(), QIcon::Normal, QIcon::Off);
         pasteButton->setIcon(icon1);
         pasteButton->setIconSize(QSize(22, 22));
 
         payToLayout->addWidget(pasteButton);
 
         deleteButton = new QToolButton(SendCoins);
-        deleteButton->setObjectName(QString::fromUtf8("deleteButton"));
+        deleteButton->setObjectName(QStringLiteral("deleteButton"));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QStringLiteral(":/icons/remove"), QSize(), QIcon::Normal, QIcon::Off);
         deleteButton->setIcon(icon2);
         deleteButton->setIconSize(QSize(22, 22));
 
@@ -128,36 +130,36 @@ public:
         gridLayout->addLayout(payToLayout, 0, 1, 1, 1);
 
         labellLabel = new QLabel(SendCoins);
-        labellLabel->setObjectName(QString::fromUtf8("labellLabel"));
+        labellLabel->setObjectName(QStringLiteral("labellLabel"));
         labellLabel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout->addWidget(labellLabel, 1, 0, 1, 1);
 
         addAsLabel = new QLineEdit(SendCoins);
-        addAsLabel->setObjectName(QString::fromUtf8("addAsLabel"));
+        addAsLabel->setObjectName(QStringLiteral("addAsLabel"));
 
         gridLayout->addWidget(addAsLabel, 1, 1, 1, 1);
 
         amountLabel = new QLabel(SendCoins);
-        amountLabel->setObjectName(QString::fromUtf8("amountLabel"));
+        amountLabel->setObjectName(QStringLiteral("amountLabel"));
         amountLabel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout->addWidget(amountLabel, 2, 0, 1, 1);
 
         horizontalLayoutAmount = new QHBoxLayout();
-        horizontalLayoutAmount->setObjectName(QString::fromUtf8("horizontalLayoutAmount"));
+        horizontalLayoutAmount->setObjectName(QStringLiteral("horizontalLayoutAmount"));
         payAmount = new BitcoinAmountField(SendCoins);
-        payAmount->setObjectName(QString::fromUtf8("payAmount"));
+        payAmount->setObjectName(QStringLiteral("payAmount"));
 
         horizontalLayoutAmount->addWidget(payAmount);
 
         checkboxSubtractFeeFromAmount = new QCheckBox(SendCoins);
-        checkboxSubtractFeeFromAmount->setObjectName(QString::fromUtf8("checkboxSubtractFeeFromAmount"));
+        checkboxSubtractFeeFromAmount->setObjectName(QStringLiteral("checkboxSubtractFeeFromAmount"));
 
         horizontalLayoutAmount->addWidget(checkboxSubtractFeeFromAmount);
 
         useAvailableBalanceButton = new QPushButton(SendCoins);
-        useAvailableBalanceButton->setObjectName(QString::fromUtf8("useAvailableBalanceButton"));
+        useAvailableBalanceButton->setObjectName(QStringLiteral("useAvailableBalanceButton"));
 
         horizontalLayoutAmount->addWidget(useAvailableBalanceButton);
 
@@ -166,19 +168,19 @@ public:
         gridLayout->addLayout(horizontalLayoutAmount, 2, 1, 1, 1);
 
         messageLabel = new QLabel(SendCoins);
-        messageLabel->setObjectName(QString::fromUtf8("messageLabel"));
+        messageLabel->setObjectName(QStringLiteral("messageLabel"));
         messageLabel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout->addWidget(messageLabel, 3, 0, 1, 1);
 
         messageTextLabel = new QLabel(SendCoins);
-        messageTextLabel->setObjectName(QString::fromUtf8("messageTextLabel"));
+        messageTextLabel->setObjectName(QStringLiteral("messageTextLabel"));
         messageTextLabel->setTextFormat(Qt::PlainText);
 
         gridLayout->addWidget(messageTextLabel, 3, 1, 1, 1);
 
         line = new QFrame(SendCoins);
-        line->setObjectName(QString::fromUtf8("line"));
+        line->setObjectName(QStringLiteral("line"));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
 
@@ -186,7 +188,7 @@ public:
 
         SendCoinsEntry->addWidget(SendCoins);
         SendCoins_UnauthenticatedPaymentRequest = new QFrame();
-        SendCoins_UnauthenticatedPaymentRequest->setObjectName(QString::fromUtf8("SendCoins_UnauthenticatedPaymentRequest"));
+        SendCoins_UnauthenticatedPaymentRequest->setObjectName(QStringLiteral("SendCoins_UnauthenticatedPaymentRequest"));
         QPalette palette;
         QBrush brush(QColor(0, 0, 0, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -252,23 +254,23 @@ public:
         SendCoins_UnauthenticatedPaymentRequest->setFrameShape(QFrame::NoFrame);
         gridLayout_is = new QGridLayout(SendCoins_UnauthenticatedPaymentRequest);
         gridLayout_is->setSpacing(12);
-        gridLayout_is->setObjectName(QString::fromUtf8("gridLayout_is"));
+        gridLayout_is->setObjectName(QStringLiteral("gridLayout_is"));
         payToLabel_is = new QLabel(SendCoins_UnauthenticatedPaymentRequest);
-        payToLabel_is->setObjectName(QString::fromUtf8("payToLabel_is"));
+        payToLabel_is->setObjectName(QStringLiteral("payToLabel_is"));
         payToLabel_is->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout_is->addWidget(payToLabel_is, 0, 0, 1, 1);
 
         payToLayout_is = new QHBoxLayout();
         payToLayout_is->setSpacing(0);
-        payToLayout_is->setObjectName(QString::fromUtf8("payToLayout_is"));
+        payToLayout_is->setObjectName(QStringLiteral("payToLayout_is"));
         payTo_is = new QLabel(SendCoins_UnauthenticatedPaymentRequest);
-        payTo_is->setObjectName(QString::fromUtf8("payTo_is"));
+        payTo_is->setObjectName(QStringLiteral("payTo_is"));
 
         payToLayout_is->addWidget(payTo_is);
 
         deleteButton_is = new QToolButton(SendCoins_UnauthenticatedPaymentRequest);
-        deleteButton_is->setObjectName(QString::fromUtf8("deleteButton_is"));
+        deleteButton_is->setObjectName(QStringLiteral("deleteButton_is"));
         deleteButton_is->setIcon(icon2);
 
         payToLayout_is->addWidget(deleteButton_is);
@@ -277,32 +279,32 @@ public:
         gridLayout_is->addLayout(payToLayout_is, 0, 1, 1, 1);
 
         memoLabel_is = new QLabel(SendCoins_UnauthenticatedPaymentRequest);
-        memoLabel_is->setObjectName(QString::fromUtf8("memoLabel_is"));
+        memoLabel_is->setObjectName(QStringLiteral("memoLabel_is"));
         memoLabel_is->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout_is->addWidget(memoLabel_is, 1, 0, 1, 1);
 
         memoTextLabel_is = new QLabel(SendCoins_UnauthenticatedPaymentRequest);
-        memoTextLabel_is->setObjectName(QString::fromUtf8("memoTextLabel_is"));
+        memoTextLabel_is->setObjectName(QStringLiteral("memoTextLabel_is"));
         memoTextLabel_is->setTextFormat(Qt::PlainText);
 
         gridLayout_is->addWidget(memoTextLabel_is, 1, 1, 1, 1);
 
         amountLabel_is = new QLabel(SendCoins_UnauthenticatedPaymentRequest);
-        amountLabel_is->setObjectName(QString::fromUtf8("amountLabel_is"));
+        amountLabel_is->setObjectName(QStringLiteral("amountLabel_is"));
         amountLabel_is->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout_is->addWidget(amountLabel_is, 2, 0, 1, 1);
 
         payAmount_is = new BitcoinAmountField(SendCoins_UnauthenticatedPaymentRequest);
-        payAmount_is->setObjectName(QString::fromUtf8("payAmount_is"));
+        payAmount_is->setObjectName(QStringLiteral("payAmount_is"));
         payAmount_is->setAcceptDrops(false);
 
         gridLayout_is->addWidget(payAmount_is, 2, 1, 1, 1);
 
         SendCoinsEntry->addWidget(SendCoins_UnauthenticatedPaymentRequest);
         SendCoins_AuthenticatedPaymentRequest = new QFrame();
-        SendCoins_AuthenticatedPaymentRequest->setObjectName(QString::fromUtf8("SendCoins_AuthenticatedPaymentRequest"));
+        SendCoins_AuthenticatedPaymentRequest->setObjectName(QStringLiteral("SendCoins_AuthenticatedPaymentRequest"));
         QPalette palette1;
         palette1.setBrush(QPalette::Active, QPalette::WindowText, brush);
         QBrush brush7(QColor(140, 232, 119, 255));
@@ -375,24 +377,24 @@ public:
         SendCoins_AuthenticatedPaymentRequest->setFrameShape(QFrame::NoFrame);
         gridLayout_s = new QGridLayout(SendCoins_AuthenticatedPaymentRequest);
         gridLayout_s->setSpacing(12);
-        gridLayout_s->setObjectName(QString::fromUtf8("gridLayout_s"));
+        gridLayout_s->setObjectName(QStringLiteral("gridLayout_s"));
         payToLabel_s = new QLabel(SendCoins_AuthenticatedPaymentRequest);
-        payToLabel_s->setObjectName(QString::fromUtf8("payToLabel_s"));
+        payToLabel_s->setObjectName(QStringLiteral("payToLabel_s"));
         payToLabel_s->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout_s->addWidget(payToLabel_s, 0, 0, 1, 1);
 
         payToLayout_s = new QHBoxLayout();
         payToLayout_s->setSpacing(0);
-        payToLayout_s->setObjectName(QString::fromUtf8("payToLayout_s"));
+        payToLayout_s->setObjectName(QStringLiteral("payToLayout_s"));
         payTo_s = new QLabel(SendCoins_AuthenticatedPaymentRequest);
-        payTo_s->setObjectName(QString::fromUtf8("payTo_s"));
+        payTo_s->setObjectName(QStringLiteral("payTo_s"));
         payTo_s->setTextFormat(Qt::PlainText);
 
         payToLayout_s->addWidget(payTo_s);
 
         deleteButton_s = new QToolButton(SendCoins_AuthenticatedPaymentRequest);
-        deleteButton_s->setObjectName(QString::fromUtf8("deleteButton_s"));
+        deleteButton_s->setObjectName(QStringLiteral("deleteButton_s"));
         deleteButton_s->setIcon(icon2);
 
         payToLayout_s->addWidget(deleteButton_s);
@@ -401,25 +403,25 @@ public:
         gridLayout_s->addLayout(payToLayout_s, 0, 1, 1, 1);
 
         memoLabel_s = new QLabel(SendCoins_AuthenticatedPaymentRequest);
-        memoLabel_s->setObjectName(QString::fromUtf8("memoLabel_s"));
+        memoLabel_s->setObjectName(QStringLiteral("memoLabel_s"));
         memoLabel_s->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout_s->addWidget(memoLabel_s, 1, 0, 1, 1);
 
         memoTextLabel_s = new QLabel(SendCoins_AuthenticatedPaymentRequest);
-        memoTextLabel_s->setObjectName(QString::fromUtf8("memoTextLabel_s"));
+        memoTextLabel_s->setObjectName(QStringLiteral("memoTextLabel_s"));
         memoTextLabel_s->setTextFormat(Qt::PlainText);
 
         gridLayout_s->addWidget(memoTextLabel_s, 1, 1, 1, 1);
 
         amountLabel_s = new QLabel(SendCoins_AuthenticatedPaymentRequest);
-        amountLabel_s->setObjectName(QString::fromUtf8("amountLabel_s"));
+        amountLabel_s->setObjectName(QStringLiteral("amountLabel_s"));
         amountLabel_s->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         gridLayout_s->addWidget(amountLabel_s, 2, 0, 1, 1);
 
         payAmount_s = new BitcoinAmountField(SendCoins_AuthenticatedPaymentRequest);
-        payAmount_s->setObjectName(QString::fromUtf8("payAmount_s"));
+        payAmount_s->setObjectName(QStringLiteral("payAmount_s"));
         payAmount_s->setAcceptDrops(false);
 
         gridLayout_s->addWidget(payAmount_s, 2, 1, 1, 1);
@@ -450,64 +452,64 @@ public:
     void retranslateUi(QStackedWidget *SendCoinsEntry)
     {
 #ifndef QT_NO_TOOLTIP
-        SendCoins->setToolTip(QApplication::translate("SendCoinsEntry", "This is a normal payment.", nullptr));
+        SendCoins->setToolTip(QApplication::translate("SendCoinsEntry", "This is a normal payment.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        payToLabel->setText(QApplication::translate("SendCoinsEntry", "Pay &To:", nullptr));
+        payToLabel->setText(QApplication::translate("SendCoinsEntry", "Pay &To:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        payTo->setToolTip(QApplication::translate("SendCoinsEntry", "The Actinium address to send the payment to", nullptr));
+        payTo->setToolTip(QApplication::translate("SendCoinsEntry", "The Actinium address to send the payment to", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        addressBookButton->setToolTip(QApplication::translate("SendCoinsEntry", "Choose previously used address", nullptr));
+        addressBookButton->setToolTip(QApplication::translate("SendCoinsEntry", "Choose previously used address", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         addressBookButton->setText(QString());
 #ifndef QT_NO_SHORTCUT
-        addressBookButton->setShortcut(QApplication::translate("SendCoinsEntry", "Alt+A", nullptr));
+        addressBookButton->setShortcut(QApplication::translate("SendCoinsEntry", "Alt+A", Q_NULLPTR));
 #endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        pasteButton->setToolTip(QApplication::translate("SendCoinsEntry", "Paste address from clipboard", nullptr));
+        pasteButton->setToolTip(QApplication::translate("SendCoinsEntry", "Paste address from clipboard", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         pasteButton->setText(QString());
 #ifndef QT_NO_SHORTCUT
-        pasteButton->setShortcut(QApplication::translate("SendCoinsEntry", "Alt+P", nullptr));
+        pasteButton->setShortcut(QApplication::translate("SendCoinsEntry", "Alt+P", Q_NULLPTR));
 #endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        deleteButton->setToolTip(QApplication::translate("SendCoinsEntry", "Remove this entry", nullptr));
+        deleteButton->setToolTip(QApplication::translate("SendCoinsEntry", "Remove this entry", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         deleteButton->setText(QString());
-        labellLabel->setText(QApplication::translate("SendCoinsEntry", "&Label:", nullptr));
+        labellLabel->setText(QApplication::translate("SendCoinsEntry", "&Label:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        addAsLabel->setToolTip(QApplication::translate("SendCoinsEntry", "Enter a label for this address to add it to the list of used addresses", nullptr));
+        addAsLabel->setToolTip(QApplication::translate("SendCoinsEntry", "Enter a label for this address to add it to the list of used addresses", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        amountLabel->setText(QApplication::translate("SendCoinsEntry", "A&mount:", nullptr));
+        amountLabel->setText(QApplication::translate("SendCoinsEntry", "A&mount:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        checkboxSubtractFeeFromAmount->setToolTip(QApplication::translate("SendCoinsEntry", "The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.", nullptr));
+        checkboxSubtractFeeFromAmount->setToolTip(QApplication::translate("SendCoinsEntry", "The fee will be deducted from the amount being sent. The recipient will receive less actiniums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        checkboxSubtractFeeFromAmount->setText(QApplication::translate("SendCoinsEntry", "S&ubtract fee from amount", nullptr));
-        useAvailableBalanceButton->setText(QApplication::translate("SendCoinsEntry", "Use available balance", nullptr));
-        messageLabel->setText(QApplication::translate("SendCoinsEntry", "Message:", nullptr));
+        checkboxSubtractFeeFromAmount->setText(QApplication::translate("SendCoinsEntry", "S&ubtract fee from amount", Q_NULLPTR));
+        useAvailableBalanceButton->setText(QApplication::translate("SendCoinsEntry", "Use available balance", Q_NULLPTR));
+        messageLabel->setText(QApplication::translate("SendCoinsEntry", "Message:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        messageTextLabel->setToolTip(QApplication::translate("SendCoinsEntry", "A message that was attached to the actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.", nullptr));
+        messageTextLabel->setToolTip(QApplication::translate("SendCoinsEntry", "A message that was attached to the actinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Actinium network.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        SendCoins_UnauthenticatedPaymentRequest->setToolTip(QApplication::translate("SendCoinsEntry", "This is an unauthenticated payment request.", nullptr));
+        SendCoins_UnauthenticatedPaymentRequest->setToolTip(QApplication::translate("SendCoinsEntry", "This is an unauthenticated payment request.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        payToLabel_is->setText(QApplication::translate("SendCoinsEntry", "Pay To:", nullptr));
+        payToLabel_is->setText(QApplication::translate("SendCoinsEntry", "Pay To:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        deleteButton_is->setToolTip(QApplication::translate("SendCoinsEntry", "Remove this entry", nullptr));
+        deleteButton_is->setToolTip(QApplication::translate("SendCoinsEntry", "Remove this entry", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         deleteButton_is->setText(QString());
-        memoLabel_is->setText(QApplication::translate("SendCoinsEntry", "Memo:", nullptr));
-        amountLabel_is->setText(QApplication::translate("SendCoinsEntry", "A&mount:", nullptr));
+        memoLabel_is->setText(QApplication::translate("SendCoinsEntry", "Memo:", Q_NULLPTR));
+        amountLabel_is->setText(QApplication::translate("SendCoinsEntry", "A&mount:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        SendCoins_AuthenticatedPaymentRequest->setToolTip(QApplication::translate("SendCoinsEntry", "This is an authenticated payment request.", nullptr));
+        SendCoins_AuthenticatedPaymentRequest->setToolTip(QApplication::translate("SendCoinsEntry", "This is an authenticated payment request.", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        payToLabel_s->setText(QApplication::translate("SendCoinsEntry", "Pay To:", nullptr));
+        payToLabel_s->setText(QApplication::translate("SendCoinsEntry", "Pay To:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        deleteButton_s->setToolTip(QApplication::translate("SendCoinsEntry", "Remove this entry", nullptr));
+        deleteButton_s->setToolTip(QApplication::translate("SendCoinsEntry", "Remove this entry", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         deleteButton_s->setText(QString());
-        memoLabel_s->setText(QApplication::translate("SendCoinsEntry", "Memo:", nullptr));
-        amountLabel_s->setText(QApplication::translate("SendCoinsEntry", "A&mount:", nullptr));
+        memoLabel_s->setText(QApplication::translate("SendCoinsEntry", "Memo:", Q_NULLPTR));
+        amountLabel_s->setText(QApplication::translate("SendCoinsEntry", "A&mount:", Q_NULLPTR));
         Q_UNUSED(SendCoinsEntry);
     } // retranslateUi
 

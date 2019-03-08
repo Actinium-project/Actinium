@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'transactiondescdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.0
+** Created by: Qt User Interface Compiler version 5.9.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,9 +10,12 @@
 #define UI_TRANSACTIONDESCDIALOG_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 
@@ -28,19 +31,19 @@ public:
     void setupUi(QDialog *TransactionDescDialog)
     {
         if (TransactionDescDialog->objectName().isEmpty())
-            TransactionDescDialog->setObjectName(QString::fromUtf8("TransactionDescDialog"));
+            TransactionDescDialog->setObjectName(QStringLiteral("TransactionDescDialog"));
         TransactionDescDialog->resize(620, 250);
-        TransactionDescDialog->setWindowTitle(QString::fromUtf8("Transaction details"));
+        TransactionDescDialog->setWindowTitle(QStringLiteral("Transaction details"));
         verticalLayout = new QVBoxLayout(TransactionDescDialog);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         detailText = new QTextEdit(TransactionDescDialog);
-        detailText->setObjectName(QString::fromUtf8("detailText"));
+        detailText->setObjectName(QStringLiteral("detailText"));
         detailText->setReadOnly(true);
 
         verticalLayout->addWidget(detailText);
 
         buttonBox = new QDialogButtonBox(TransactionDescDialog);
-        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
+        buttonBox->setObjectName(QStringLiteral("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Close);
 
@@ -57,7 +60,7 @@ public:
     void retranslateUi(QDialog *TransactionDescDialog)
     {
 #ifndef QT_NO_TOOLTIP
-        detailText->setToolTip(QApplication::translate("TransactionDescDialog", "This pane shows a detailed description of the transaction", nullptr));
+        detailText->setToolTip(QApplication::translate("TransactionDescDialog", "This pane shows a detailed description of the transaction", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         Q_UNUSED(TransactionDescDialog);
     } // retranslateUi

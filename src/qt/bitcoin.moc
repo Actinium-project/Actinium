@@ -10,7 +10,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'bitcoin.cpp' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.0. It"
+#error "This file was generated using the moc from 5.9.6. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -49,7 +49,7 @@ QT_MOC_LITERAL(8, 89, 8) // "shutdown"
 static const uint qt_meta_data_BitcoinCore[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        5,   14, // methods
@@ -96,21 +96,21 @@ void BitcoinCore::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (BitcoinCore::*)(bool );
+            typedef void (BitcoinCore::*_t)(bool );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BitcoinCore::initializeResult)) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (BitcoinCore::*)();
+            typedef void (BitcoinCore::*_t)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BitcoinCore::shutdownResult)) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (BitcoinCore::*)(const QString & );
+            typedef void (BitcoinCore::*_t)(const QString & );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BitcoinCore::runawayException)) {
                 *result = 2;
                 return;
@@ -119,14 +119,10 @@ void BitcoinCore::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject BitcoinCore::staticMetaObject = { {
-    &QObject::staticMetaObject,
-    qt_meta_stringdata_BitcoinCore.data,
-    qt_meta_data_BitcoinCore,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject BitcoinCore::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_BitcoinCore.data,
+      qt_meta_data_BitcoinCore,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *BitcoinCore::metaObject() const
@@ -220,7 +216,7 @@ QT_MOC_LITERAL(16, 206, 12) // "removeWallet"
 static const uint qt_meta_data_BitcoinApplication[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        9,   14, // methods
@@ -297,28 +293,28 @@ void BitcoinApplication::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (BitcoinApplication::*)();
+            typedef void (BitcoinApplication::*_t)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BitcoinApplication::requestedInitialize)) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (BitcoinApplication::*)();
+            typedef void (BitcoinApplication::*_t)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BitcoinApplication::requestedShutdown)) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (BitcoinApplication::*)();
+            typedef void (BitcoinApplication::*_t)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BitcoinApplication::stopThread)) {
                 *result = 2;
                 return;
             }
         }
         {
-            using _t = void (BitcoinApplication::*)(QWidget * );
+            typedef void (BitcoinApplication::*_t)(QWidget * );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&BitcoinApplication::splashFinished)) {
                 *result = 3;
                 return;
@@ -327,14 +323,10 @@ void BitcoinApplication::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject BitcoinApplication::staticMetaObject = { {
-    &QApplication::staticMetaObject,
-    qt_meta_stringdata_BitcoinApplication.data,
-    qt_meta_data_BitcoinApplication,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject BitcoinApplication::staticMetaObject = {
+    { &QApplication::staticMetaObject, qt_meta_stringdata_BitcoinApplication.data,
+      qt_meta_data_BitcoinApplication,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *BitcoinApplication::metaObject() const

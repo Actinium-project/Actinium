@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'openuridialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.0
+** Created by: Qt User Interface Compiler version 5.9.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,10 +10,13 @@
 #define UI_OPENURIDIALOG_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
@@ -37,29 +40,29 @@ public:
     void setupUi(QDialog *OpenURIDialog)
     {
         if (OpenURIDialog->objectName().isEmpty())
-            OpenURIDialog->setObjectName(QString::fromUtf8("OpenURIDialog"));
+            OpenURIDialog->setObjectName(QStringLiteral("OpenURIDialog"));
         OpenURIDialog->resize(564, 109);
         verticalLayout = new QVBoxLayout(OpenURIDialog);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         label_2 = new QLabel(OpenURIDialog);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setObjectName(QStringLiteral("label_2"));
 
         verticalLayout->addWidget(label_2);
 
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         label = new QLabel(OpenURIDialog);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName(QStringLiteral("label"));
 
         horizontalLayout->addWidget(label);
 
         uriEdit = new QValidatedLineEdit(OpenURIDialog);
-        uriEdit->setObjectName(QString::fromUtf8("uriEdit"));
+        uriEdit->setObjectName(QStringLiteral("uriEdit"));
 
         horizontalLayout->addWidget(uriEdit);
 
         selectFileButton = new QPushButton(OpenURIDialog);
-        selectFileButton->setObjectName(QString::fromUtf8("selectFileButton"));
+        selectFileButton->setObjectName(QStringLiteral("selectFileButton"));
         selectFileButton->setText(QString::fromUtf8("\342\200\246"));
         selectFileButton->setAutoDefault(false);
 
@@ -73,7 +76,7 @@ public:
         verticalLayout->addItem(verticalSpacer);
 
         buttonBox = new QDialogButtonBox(OpenURIDialog);
-        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
+        buttonBox->setObjectName(QStringLiteral("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
@@ -89,11 +92,11 @@ public:
 
     void retranslateUi(QDialog *OpenURIDialog)
     {
-        OpenURIDialog->setWindowTitle(QApplication::translate("OpenURIDialog", "Open URI", nullptr));
-        label_2->setText(QApplication::translate("OpenURIDialog", "Open payment request from URI or file", nullptr));
-        label->setText(QApplication::translate("OpenURIDialog", "URI:", nullptr));
+        OpenURIDialog->setWindowTitle(QApplication::translate("OpenURIDialog", "Open URI", Q_NULLPTR));
+        label_2->setText(QApplication::translate("OpenURIDialog", "Open payment request from URI or file", Q_NULLPTR));
+        label->setText(QApplication::translate("OpenURIDialog", "URI:", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        selectFileButton->setToolTip(QApplication::translate("OpenURIDialog", "Select payment request file", nullptr));
+        selectFileButton->setToolTip(QApplication::translate("OpenURIDialog", "Select payment request file", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
     } // retranslateUi
 
