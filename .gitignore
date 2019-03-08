@@ -1,5 +1,7 @@
 aclocal.m4
 test/config.ini
+src/qt/paymentrequest.pb.cc
+src/qt/paymentrequest.pb.h
 
 # Prerequisites
 *.d
