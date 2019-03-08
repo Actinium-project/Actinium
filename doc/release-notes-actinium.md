@@ -1,246 +1,328 @@
-Actinium Core version *0.18.0* is now available from:
+Notable changes
+===============
 
-  <https://download.Actinium.org/Actinium-0.18.0/>
+`listtransactions` label support
+--------------------------------
 
-This is a new minor version release, including various bugfixes and
-performance improvements, as well as updated translations.
+The `listtransactions` RPC `account` parameter which was deprecated in 0.18.x
+and renamed to `dummy` has been un-deprecated and renamed again to `label`.
 
-Please report bugs using the issue tracker at GitHub:
+When Actinium is configured with the `-deprecatedrpc=accounts` setting, specifying
+a label/account/dummy argument will return both outgoing and incoming
+transactions. Without the `-deprecatedrpc=accounts` setting, it will only return
+incoming transactions (because it used to be possible to create transactions
+spending from specific accounts, but this is no longer possible with labels).
 
-  <https://github.com/Actinium-project/Actinium/issues>
+When `-deprecatedrpc=accounts` is set, it's possible to pass the empty string ""
+to list transactions that don't have any label. Without
+`-deprecatedrpc=accounts`, passing the empty string is an error because returning
+only non-labeled transactions is not generally useful behavior and can cause
+confusion.
 
-To receive security and update notifications, please subscribe to:
+Changed configuration options
+-----------------------------
 
-  <https://groups.google.com/forum/#!forum/Actinium-dev>
+- `-includeconf=<file>` can be used to include additional configuration files.
+  Only works inside the `Actinium.conf` file, not inside included files or from
+  command-line. Multiple files may be included. Can be disabled from command-
+  line via `-noincludeconf`. Note that multi-argument commands like
+  `-includeconf` will override preceding `-noincludeconf`, i.e.
+  ```
+  noincludeconf=1
+  includeconf=relative.conf
+  ```
 
-How to Upgrade
-==============
+  as Actinium.conf will still include `relative.conf`.
 
-If you are running an older version, shut it down. Wait until it has completely
-shut down (which might take a few minutes for older versions), then run the 
-installer (on Windows) or just copy over `/Applications/Actinium-Qt` (on Mac)
-or `Actiniumd`/`Actinium-qt` (on Linux).
+GUI changes
+-----------
 
-The first time you run version 0.15.0 or higher, your chainstate database will
-be converted to a new format, which will take anywhere from a few minutes to
-half an hour, depending on the speed of your machine.
+- Block storage can be limited under Preferences, in the Main tab. Undoing this setting requires downloading the full blockchain again. This mode is incompatible with `-txindex` and `-rescan`.
 
-The file format of `fee_estimates.dat` changed in version 0.15.0. Hence, a
-downgrade from version 0.15 or upgrade to version 0.15 will cause all fee
-estimates to be discarded.
+External wallet files
+---------------------
 
-Note that the block database format also changed in version 0.8.0 and there is no
-automatic upgrade code from before version 0.8 to version 0.15.0. Upgrading
-directly from 0.7.x and earlier without redownloading the blockchain is not supported.
-However, as usual, old wallet versions are still supported.
+The `-wallet=<path>` option now accepts full paths instead of requiring wallets
+to be located in the -walletdir directory.
 
-Downgrading warning
--------------------
+Newly created wallet format
+---------------------------
 
-The chainstate database for this release is not compatible with previous
-releases, so if you run 0.15 and then decide to switch back to any
-older version, you will need to run the old release with the `-reindex-chainstate`
-option to rebuild the chainstate data structures in the old format.
+If `-wallet=<path>` is specified with a path that does not exist, it will now
+create a wallet directory at the specified location (containing a wallet.dat
+data file, a db.log file, and database/log.?????????? files) instead of just
+creating a data file at the path and storing log files in the parent
+directory. This should make backing up wallets more straightforward than
+before because the specified wallet path can just be directly archived without
+having to look in the parent directory for transaction log files.
 
-If your node has pruning enabled, this will entail re-downloading and
-processing the entire blockchain.
+For backwards compatibility, wallet paths that are names of existing data files
+in the `-walletdir` directory will continue to be accepted and interpreted the
+same as before.
 
-Compatibility
-==============
+Dynamic loading and creation of wallets
+---------------------------------------
 
-Actinium Core is extensively tested on multiple operating systems using
-the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
+Previously, wallets could only be loaded or created at startup, by specifying `-wallet` parameters on the command line or in the Actinium.conf file. It is now possible to load, create and unload wallets dynamically at runtime:
 
-Actinium Core should also work on most other Unix-like systems but is not
-frequently tested on them.
+- Existing wallets can be loaded by calling the `loadwallet` RPC. The wallet can be specified as file/directory basename (which must be located in the `walletdir` directory), or as an absolute path to a file/directory.
+- New wallets can be created (and loaded) by calling the `createwallet` RPC. The provided name must not match a wallet file in the `walletdir` directory or the name of a wallet that is currently loaded.
+- Loaded wallets can be unloaded by calling the `unloadwallet` RPC.
 
+This feature is currently only available through the RPC interface.
 
-### New `rescanblockchain` RPC
+Coin selection
+--------------
 
-A new RPC `rescanblockchain` has been added to manually invoke a blockchain rescan.
-The RPC supports start and end-height arguments for the rescan, and can be used in a
-multiwallet environment to rescan the blockchain at runtime.
+### Partial spend avoidance
 
-### New `savemempool` RPC
-A new `savemempool` RPC has been added which allows the current mempool to be saved to
-disk at any time to avoid it being lost due to crashes / power loss.
+When an address is paid multiple times the coins from those separate payments can be spent separately which hurts privacy due to linking otherwise separate addresses. A new `-avoidpartialspends` flag has been added (default=false). If enabled, the wallet will always spend existing UTXO to the same address together even if it results in higher fees. If someone were to send coins to an address after it was used, those coins will still be included in future coin selections.
 
-### Safe mode disabled by default
-
-Safe mode is now disabled by default and must be manually enabled (with `-disablesafemode=0`) if you wish to use it. Safe mode is a feature that disables a subset of RPC calls - mostly related to the wallet and sending - automatically in case certain problem conditions with the network are detected. However, developers have come to regard these checks as not reliable enough to act on automatically. Even with safe mode disabled, they will still cause warnings in the `warnings` field of the `getneworkinfo` RPC and launch the `-alertnotify` command.
-
-### Renamed script for creating JSON-RPC credentials
-
-The `share/rpcuser/rpcuser.py` script was renamed to `share/rpcauth/rpcauth.py`. This script can be
-used to create `rpcauth` credentials for a JSON-RPC user.
-
-### Validateaddress improvements
-
-The `validateaddress` RPC output has been extended with a few new fields, and support for segwit addresses (both P2SH and Bech32). Specifically:
-* A new field `iswitness` is True for P2WPKH and P2WSH addresses ("ltc1..." addresses), but not for P2SH-wrapped segwit addresses (see below).
-* The existing field `isscript` will now also report True for P2WSH addresses.
-* A new field `embedded` is present for all script addresses where the script is known and matches something that can be interpreted as a known address. This is particularly true for P2SH-P2WPKH and P2SH-P2WSH addresses. The value for `embedded` includes much of the information `validateaddress` would report if invoked directly on the embedded address.
-* For multisig scripts a new `pubkeys` field was added that reports the full public keys involved in the script (if known). This is a replacement for the existing `addresses` field (which reports the same information but encoded as P2PKH addresses), represented in a more useful and less confusing way. The `addresses` field remains present for non-segwit addresses for backward compatibility.
-* For all single-key addresses with known key (even when wrapped in P2SH or P2WSH), the `pubkey` field will be present. In particular, this means that invoking `validateaddress` on the output of `getnewaddress` will always report the `pubkey`, even when the address type is P2SH-P2WPKH.
-
-### Low-level changes
-
-- The deprecated RPC `getinfo` was removed. It is recommended that the more specific RPCs are used:
-  * `getblockchaininfo`
-  * `getnetworkinfo`
-  * `getwalletinfo`
-  * `getmininginfo`
-- The wallet RPC `getreceivedbyaddress` will return an error if called with an address not in the wallet.
-- The wallet RPC `addwitnessaddress` was deprecated and will be removed in version 0.17,
-  set the `address_type` argument of `getnewaddress`, or option `-addresstype=[bech32|p2sh-segwit]` instead.
-- `dumpwallet` now includes hex-encoded scripts from the wallet in the dumpfile, and
-  `importwallet` now imports these scripts, but corresponding addresses may not be added
-  correctly or a manual rescan may be required to find relevant transactions.
-- The RPC `getblockchaininfo` now includes an `errors` field.
-- A new `blockhash` parameter has been added to the `getrawtransaction` RPC which allows for a raw transaction to be fetched from a specific block if known, even without `-txindex` enabled.
-- The `decoderawtransaction` and `fundrawtransaction` RPCs now have optional `iswitness` parameters to override the
-  heuristic witness checks if necessary.
-- The `walletpassphrase` timeout is now clamped to 2^30 seconds.
-- Using addresses with the `createmultisig` RPC is now deprecated, and will be removed in a later version. Public keys should be used instead.
-- Blockchain rescans now no longer lock the wallet for the entire rescan process, so other RPCs can now be used at the same time (although results of balances / transactions may be incorrect or incomplete until the rescan is complete).
-- The `logging` RPC has now been made public rather than hidden.
-- An `initialblockdownload` boolean has been added to the `getblockchaininfo` RPC to indicate whether the node is currently in IBD or not.
-- `minrelaytxfee` is now included in the output of `getmempoolinfo`
-
-Other changed command-line options
-----------------------------------
-- `-debuglogfile=<file>` can be used to specify an alternative debug logging file.
-- Actinium-cli now has an `-stdinrpcpass` option to allow the RPC password to be read from standard input.
-- The `-usehd` option has been removed.
-- Actinium-cli now supports a new `-getinfo` flag which returns an output like that of the now-removed `getinfo` RPC.
-
-Testing changes
-----------------
-- The default regtest JSON-RPC port has been changed to 19443 to avoid conflict with testnet's default of 19332.
-- Segwit is now always active in regtest mode by default. Thus, if you upgrade a regtest node you will need to either -reindex or use the old rules by adding `vbparams=segwit:0:999999999999` to your regtest Actinium.conf. Failure to do this will result in a CheckBlockIndex() assertion failure that will look like: Assertion `(pindexFirstNeverProcessed != nullptr) == (pindex->nChainTx == 0)' failed.
-
-0.16.0 change log
+Fee policy changes
 ------------------
 
-### Block and transaction handling
-- #13199 `c71e535` Bugfix: ensure consistency of m_failed_blocks after reconsiderblock (sdaftuar)
-- #13023 `bb79aaf` Fix some concurrency issues in ActivateBestChain() (skeees)
+The default minimum transaction fee `-mintxfee` has been lowered to 0.0001 ACM/kB after relaxing the minimum relay and dust relay fee rates in prior releases. 
 
-### P2P protocol and network code
-- #12626 `f60e84d` Limit the number of IPs addrman learns from each DNS seeder (EthanHeilman)
+Configuration sections for testnet and regtest
+----------------------------------------------
 
-### Wallet
-- #13265 `5d8de76` Exit SyncMetaData if there are no transactions to sync (laanwj)
-- #13030 `5ff571e` Fix zapwallettxes/multiwallet interaction. (jnewbery)
-- #13622 `c04a4a5` Remove mapRequest tracking that just effects Qt display. (TheBlueMatt)
-- #12905 `cfc6f74` [rpcwallet] Clamp walletpassphrase value at 100M seconds (sdaftuar)
-- #13437 `ed82e71` wallet: Erase wtxOrderd wtx pointer on removeprunedfunds (MarcoFalke)
+It is now possible for a single configuration file to set different
+options for different networks. This is done by using sections or by
+prefixing the option with the network, such as:
 
-### RPC and other APIs
-- #13451 `cbd2f70` rpc: expose CBlockIndex::nTx in getblock(header) (instagibbs)
-- #13507 `f7401c8` RPC: Fix parameter count check for importpubkey (kristapsk)
-- #13452 `6b9dc8c` rpc: have verifytxoutproof check the number of txns in proof structure (instagibbs)
-- #12837 `bf1f150` rpc: fix type mistmatch in `listreceivedbyaddress` (joemphilips)
-- #12743 `657dfc5` Fix csBestBlock/cvBlockChange waiting in rpc/mining (sipa)
+    main.uacomment=Actinium
+    test.uacomment=Actinium-testnet
+    regtest.uacomment=regtest
+    [main]
+    mempoolsize=300
+    [test]
+    mempoolsize=100
+    [regtest]
+    mempoolsize=20
 
-### GUI
-- #12999 `1720eb3` Show the Window when double clicking the taskbar icon (ken2812221)
-- #12650 `f118a7a` Fix issue: "default port not shown correctly in settings dialog" (251Labs)
-- #13251 `ea487f9` Rephrase Bech32 checkbox texts, and enable it with legacy address default (fanquake)
-- #12432 `f78e7f6` [qt] send: Clear All also resets coin control options (Sjors)
-- #12617 `21dd512` gui: Show messages as text not html (laanwj)
-- #12793 `cf6feb7` qt: Avoid reseting on resetguisettigs=0 (MarcoFalke)
+If the following options are not in a section, they will only apply to mainnet:
+`addnode=`, `connect=`, `port=`, `bind=`, `rpcport=`, `rpcbind=` and `wallet=`.
+The options to choose a network (`regtest=` and `testnet=`) must be specified
+outside of sections.
 
-### Build system
-- #12474 `b0f692f` Allow depends system to support armv7l (hkjn)
-- #12585 `72a3290` depends: Switch to downloading expat from GitHub (fanquake)
-- #12648 `46ca8f3` test: Update trusted git root (MarcoFalke)
-- #11995 `686cb86` depends: Fix Qt build with Xcode 9 (fanquake)
-- #12636 `845838c` backport: #11995 Fix Qt build with Xcode 9 (fanquake)
-- #12946 `e055bc0` depends: Fix Qt build with XCode 9.3 (fanquake)
-- #12998 `7847b92` Default to defining endian-conversion DECLs in compat w/o config (TheBlueMatt)
-- #13544 `9fd3e00` depends: Update Qt download url (fanquake)
-- #12573 `88d1a64` Fix compilation when compiler do not support `__builtin_clz*` (532479301)
+'label' and 'account' APIs for wallet
+-------------------------------------
 
-### Tests and QA
-- #12447 `01f931b` Add missing signal.h header (laanwj)
-- #12545 `1286f3e` Use wait_until to ensure ping goes out (Empact)
-- #12804 `4bdb0ce` Fix intermittent rpc_net.py failure. (jnewbery)
-- #12553 `0e98f96` Prefer wait_until over polling with time.sleep (Empact)
-- #12486 `cfebd40` Round target fee to 8 decimals in assert_fee_amount (kallewoof)
-- #12843 `df38b13` Test starting bitcoind with -h and -version (jnewbery)
-- #12475 `41c29f6` Fix python TypeError in script.py (MarcoFalke)
-- #12638 `0a76ed2` Cache only chain and wallet for regtest datadir (MarcoFalke)
-- #12902 `7460945` Handle potential cookie race when starting node (sdaftuar)
-- #12904 `6c26df0` Ensure bitcoind processes are cleaned up when tests end (sdaftuar)
-- #13049 `9ea62a3` Backports (MarcoFalke)
-- #13201 `b8aacd6` Handle disconnect_node race (sdaftuar)
-- #13061 `170b309` Make tests pass after 2020 (bmwiedemann)
-- #13192 `79c4fff` [tests] Fixed intermittent failure in `p2p_sendheaders.py` (lmanners)
-- #13300 `d9c5630` qa: Initialize lockstack to prevent null pointer deref (MarcoFalke)
-- #13545 `e15e3a9` tests: Fix test case `streams_serializedata_xor` Remove Boost dependency. (practicalswift)
-- #13304 `cbdabef` qa: Fix `wallet_listreceivedby` race (MarcoFalke)
-- #13852 `b64f02f` Make signrawtransaction give an error when amount is needed but missing (ajtowns)
-- #13797 `6518bcd` bitcoinconsensus: invalid flags should be set to bitcoinconsensus_error type, add test cases covering bitcoinconsensus error codes (Thomas Kerin)
+A new 'label' API has been introduced for the wallet. This is intended as a
+replacement for the deprecated 'account' API. The `account` can continue to
+be used in V0.18.6.0 by starting Actiniumd with the `-deprecatedrpc=accounts`
+argument, and will be fully removed in V0.18.7.0.
 
-### Miscellaneous
-- #11246 `777519b` github-merge: Coalesce git fetches (laanwj)
-- #10871 `c9a4aa8` Handle getinfo in bitcoin-cli w/ -getinfo (revival of #8843) (achow101)
-- #11419 `093074b` Utils: Fix launchctl not being able to stop bitcoind (OmeGak)
-- #11394 `6e4e98e` Perform a weaker subtree check in Travis (sipa)
-- #11702 `4122112` [build] Add a script for installing db4 (jamesob)
-- #11794 `dd49862` Prefix leveldb debug logging (laanwj)
-- #11781 `24df9af` Add `-debuglogfile` option (laanwj)
-- #10773 `c17f11f` Shell script cleanups (practicalswift)
-- #11829 `7630a1f` Test datadir specified in conf file exists (MeshCollider)
-- #11836 `d44535d` Rename rpcuser.py to rpcauth.py (hkjn)
-- #11831 `d48ab83` Always return true if AppInitMain got to the end (TheBlueMatt)
-- #11943 `1808660` contrib: fix typo in install_db4.sh help message (laanwj)
-- #12075 `c991b30` [scripts] Add missing univalue file to copyright_header.py (fanquake)
-- #12197 `000ac4f` Log debug build status and warn when running benchmarks (laanwj)
-- #10672 `6ab0e4c` Avoid division by zero in the case of a corrupt estimates file (practicalswift)
-- #11273 `cdd6bbf` Ignore old format estimation file (Xekyo)
-- #11951 `1fb34e0` Remove dead feeest-file read code for old versions (TheBlueMatt)
-- #11421 `9ccafb1` Merge current secp256k1 subtree (MarcoFalke)
-- #11573 `2631d55` [Util] Update tinyformat.h (fanquake)
-- #10529 `331352f` Improve bitcoind systemd service file (Flowdalic)
-- #11620 `70fec9e` [build] .gitignore: add background.tiff (Sjors)
-- #11558 `68e021e` Minimal code changes to allow msvc compilation (sipsorcery)
-- #11284 `10bee0d` Fix invalid memory access in CScript::operator+= (guidovranken, ajtowns)
-- #10939 `a1f7f18` [init] Check non-emptiness of -blocknotify command prior to executing (practicalswift)
-- #11467 `937613d` Fix typos. Use nullptr instead of NULL (practicalswift)
-- #11834 `5bea05b` [verify-commits] Fix gpg.sh's echoing for commits with '\n' (TheBlueMatt)
-- #11830 `a13e443` rpcuser.py: Use 'python' not 'python2' (hkjn)
-- #12194 `7abb0f0` Add change type option to fundrawtransaction (promag)
-- #12269 `2ae7cf8` Update defaultAssumeValid to block 506067 (gmaxwell)
-- #11952 `9ab9963` univalue: Bump subtree (MarcoFalke)
-- #12367 `09fc859` Fix two fast-shutdown bugs (TheBlueMatt)
-- #12422 `4d54e7a` util: Make LockDirectory thread-safe, consistent, and fix OpenBSD 6.2 build (laanwj)
-- #482 `5c8e26d` Actinium: Basic changes for v0.16 release (thrasher-)
+The label RPC methods mirror the account functionality, with the following functional differences:
 
-Credits
-=======
+- Labels can be set on any address, not just receiving addresses. This functionality was previously only available through the GUI.
+- Labels can be deleted by reassigning all addresses using the `setlabel` RPC method.
+- There isn't support for sending transactions _from_ a label, or for determining which label a transaction was sent from.
+- Labels do not have a balance.
 
-Thanks to everyone who directly contributed to this release:
+Here are the changes to RPC methods:
 
-- [The Bitcoin Core Developers](/doc/release-notes)
-- Adrian Gallagher
-- aunyks
-- coblee
-- gabrieldov
-- Martin Smith 
-- ppm0
-- romanornr
-- shaolinfry
-- spl0i7
-- stedwms
-- ultragtx
-- VKoskiv
-- voidmain
-- wbsmolen
-- xinxi
+| Deprecated Method       | New Method            | Notes       |
+| :---------------------- | :-------------------- | :-----------|
+| `getaccount`            | `getaddressinfo`      | `getaddressinfo` returns a json object with address information instead of just the name of the account as a string. |
+| `getaccountaddress`     | n/a                   | There is no replacement for `getaccountaddress` since labels do not have an associated receive address. |
+| `getaddressesbyaccount` | `getaddressesbylabel` | `getaddressesbylabel` returns a json object with the addresses as keys, instead of a list of strings. |
+| `getreceivedbyaccount`  | `getreceivedbylabel`  | _no change in behavior_ |
+| `listaccounts`          | `listlabels`          | `listlabels` does not return a balance or accept `minconf` and `watchonly` arguments. |
+| `listreceivedbyaccount` | `listreceivedbylabel` | Both methods return new `label` fields, along with `account` fields for backward compatibility. |
+| `move`                  | n/a                   | _no replacement_ |
+| `sendfrom`              | n/a                   | _no replacement_ |
+| `setaccount`            | `setlabel`            | Both methods now: <ul><li>allow assigning labels to any address, instead of raising an error if the address is not receiving address.<li>delete the previous label associated with an address when the final address using that label is reassigned to a different label, instead of making an implicit `getaccountaddress` call to ensure the previous label still has a receiving address. |
 
-And to those that reported security issues:
+| Changed Method         | Notes   |
+| :--------------------- | :------ |
+| `addmultisigaddress`   | Renamed `account` named parameter to `label`. Still accepts `account` for backward compatibility if running with '-deprecatedrpc=accounts'. |
+| `getnewaddress`        | Renamed `account` named parameter to `label`. Still accepts `account` for backward compatibility. if running with '-deprecatedrpc=accounts' |
+| `listunspent`          | Returns new `label` fields. `account` field will be returned for backward compatibility if running with '-deprecatedrpc=accounts' |
+| `sendmany`             | The `account` named parameter has been renamed to `dummy`. If provided, the `dummy` parameter must be set to the empty string, unless running with the `-deprecatedrpc=accounts` argument (in which case functionality is unchanged). |
+| `listtransactions`     | The `account` named parameter has been renamed to `dummy`. If provided, the `dummy` parameter must be set to the string `*`, unless running with the `-deprecatedrpc=accounts` argument (in which case functionality is unchanged). |
+| `getbalance`           | `account`, `minconf` and `include_watchonly` parameters are deprecated, and can only be used if running with '-deprecatedrpc=accounts' |
 
-- Braydon Fuller
-- Himanshu Mehta
+BIP 174 Partially Signed Actinium Transactions support
+-----------------------------------------------------
+
+[BIP 174 PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki) is an interchange format for Actinium transactions that are not fully signed
+yet, together with relevant metadata to help entities work towards signing it.
+It is intended to simplify workflows where multiple parties need to cooperate to
+produce a transaction. Examples include hardware wallets, multisig setups, and
+[CoinJoin](https://bitcointalk.org/?topic=279249) transactions.
+
+For backend RPC convenience, the Actinium devs have supported to keep the acronym `PSBT`
+instead of `PSLT` to make crosschain application support easier.
+
+### Overall workflow
+
+Overall, the construction of a fully signed Actinium transaction goes through the
+following steps:
+
+- A **Creator** proposes a particular transaction to be created. He constructs
+  a PSBT that contains certain inputs and outputs, but no additional metadata.
+- For each input, an **Updater** adds information about the UTXOs being spent by
+  the transaction to the PSBT.
+- A potentially other Updater adds information about the scripts and public keys
+  involved in each of the inputs (and possibly outputs) of the PSBT.
+- **Signers** inspect the transaction and its metadata to decide whether they
+  agree with the transaction. They can use amount information from the UTXOs
+  to assess the values and fees involved. If they agree, they produce a
+  partial signature for the inputs for which they have relevant key(s).
+- A **Finalizer** is run for each input to convert the partial signatures and
+  possibly script information into a final `scriptSig` and/or `scriptWitness`.
+- An **Extractor** produces a valid Actinium transaction (in network format)
+  from a PSBT for which all inputs are finalized.
+
+Generally, each of the above (excluding Creator and Extractor) will simply
+add more and more data to a particular PSBT. In a naive workflow, they all have
+to operate sequentially, passing the PSBT from one to the next, until the
+Extractor can convert it to a real transaction. In order to permit parallel
+operation, **Combiners** can be employed which merge metadata from different
+PSBTs for the same unsigned transaction.
+
+The names above in bold are the names of the roles defined in BIP174. They're
+useful in understanding the underlying steps, but in practice, software and
+hardware implementations will typically implement multiple roles simultaneously.
+
+### RPCs
+
+- **`converttopsbt` (Creator)** is a utility RPC that converts an
+  unsigned raw transaction to PSBT format. It ignores existing signatures.
+- **`createpsbt` (Creator)** is a utility RPC that takes a list of inputs and
+  outputs and converts them to a PSBT with no additional information. It is
+  equivalent to calling `createrawtransaction` followed by `converttopsbt`.
+- **`walletcreatefundedpsbt` (Creator, Updater)** is a wallet RPC that creates a
+  PSBT with the specified inputs and outputs, adds additional inputs and change
+  to it to balance it out, and adds relevant metadata. In particular, for inputs
+  that the wallet knows about (counting towards its normal or watch-only
+  balance), UTXO information will be added. For outputs and inputs with UTXO
+  information present, key and script information will be added which the wallet
+  knows about. It is equivalent to running `createrawtransaction`, followed by
+  `fundrawtransaction`, and `converttopsbt`.
+- **`walletprocesspsbt` (Updater, Signer, Finalizer)** is a wallet RPC that takes as
+  input a PSBT, adds UTXO, key, and script data to inputs and outputs that miss
+  it, and optionally signs inputs. Where possible it also finalizes the partial
+  signatures.
+- **`finalizepsbt` (Finalizer, Extractor)** is a utility RPC that finalizes any
+  partial signatures, and if all inputs are finalized, converts the result to a
+  fully signed transaction which can be broadcast with `sendrawtransaction`.
+- **`combinepsbt` (Combiner)** is a utility RPC that implements a Combiner. It
+  can be used at any point in the workflow to merge information added to
+  different versions of the same PSBT. In particular it is useful to combine the
+  output of multiple Updaters or Signers.
+- **`decodepsbt`** is a diagnostic utility RPC which will show all information in
+  a PSBT in human-readable form, as well as compute its eventual fee if known.
+
+Upgrading non-HD wallets to HD wallets
+--------------------------------------
+
+Since Actinium Core 0.15.0, creating new BIP 32 Hierarchical Deterministic wallets has been supported by Actinium Core but old non-HD wallets could not be upgraded to HD. Now non-HD wallets can be upgraded to HD using the `-upgradewallet` command line option. This upgrade will result in the all keys in the keypool being marked as used and a new keypool generated. **A new backup must be made when this upgrade is performed.**
+
+Additionally, `-upgradewallet` can be used to upgraded from a non-split HD chain (all keys generated with `m/0'/0'/i'`) to a split HD chain (receiving keys generated with `'m/0'/0'/i'` and change keys generated with `m'/0'/1'/i'`). When this upgrade occurs, all keys already in the keypool will remain in the keypool to be used until all keys from before the upgrade are exhausted. This is to avoid issues with backups and downgrades when some keys may come from the change key keypool. Users can begin using the new split HD chain keypools by using the `newkeypool` RPC to mark all keys in the keypool as used and begin using a new keypool generated from the split HD chain.
+
+HD Master key rotation
+----------------------
+
+A new RPC, `sethdseed`, has been introduced which allows users to set a new HD seed or set their own HD seed. This allows for a new HD seed to be used. **A new backup must be made when a new HD seed is set.**
+
+Low-level RPC changes
+---------------------
+
+- The new RPC `scantxoutset` can be used to scan the UTXO set for entries
+  that match certain output descriptors. Refer to the [output descriptors
+  reference documentation](descriptors.md) for more details. This call
+  is similar to `listunspent` but does not use a wallet, meaning that the
+  wallet can be disabled at compile or run time. This call is experimental,
+  as such, is subject to changes or removal in future releases.
+
+- The `createrawtransaction` RPC will now accept an array or dictionary (kept for compatibility) for the `outputs` parameter. This means the order of transaction outputs can be specified by the client.
+- The `fundrawtransaction` RPC will reject the previously deprecated `reserveChangeKey` option.
+- `sendmany` now shuffles outputs to improve privacy, so any previously expected behavior with regards to output ordering can no longer be relied upon.
+- The new RPC `testmempoolaccept` can be used to test acceptance of a transaction to the mempool without adding it.
+- JSON transaction decomposition now includes a `weight` field which provides
+  the transaction's exact weight. This is included in REST /rest/tx/ and
+  /rest/block/ endpoints when in json mode. This is also included in `getblock`
+  (with verbosity=2), `listsinceblock`, `listtransactions`, and
+  `getrawtransaction` RPC commands.
+- New `fees` field introduced in `getrawmempool`, `getmempoolancestors`, `getmempooldescendants` and
+   `getmempoolentry` when verbosity is set to `true` with sub-fields `ancestor`, `base`, `modified`
+   and `descendant` denominated in ACM. This new field deprecates previous fee fields, such as
+   `fee`, `modifiedfee`, `ancestorfee` and `descendantfee`.
+- The new RPC `getzmqnotifications` returns information about active ZMQ
+  notifications.
+- When Actinium is not started with any `-wallet=<path>` options, the name of
+  the default wallet returned by `getwalletinfo` and `listwallets` RPCs is
+  now the empty string `""` instead of `"wallet.dat"`. If Actinium is started
+  with any `-wallet=<path>` options, there is no change in behavior, and the
+  name of any wallet is just its `<path>` string.
+- Passing an empty string (`""`) as the `address_type` parameter to
+  `getnewaddress`, `getrawchangeaddress`, `addmultisigaddress`,
+  `fundrawtransaction` RPCs is now an error. Previously, this would fall back
+  to using the default address type. It is still possible to pass null or leave
+  the parameter unset to use the default address type.
+
+- Bare multisig outputs to our keys are no longer automatically treated as
+  incoming payments. As this feature was only available for multisig outputs for
+  which you had all private keys in your wallet, there was generally no use for
+  them compared to single-key schemes. Furthermore, no address format for such
+  outputs is defined, and wallet software can't easily send to it. These outputs
+  will no longer show up in `listtransactions`, `listunspent`, or contribute to
+  your balance, unless they are explicitly watched (using `importaddress` or
+  `importmulti` with hex script argument). `signrawtransaction*` also still
+  works for them.
+
+- The `getwalletinfo` RPC method now returns an `hdseedid` value, which is always the same as the incorrectly-named `hdmasterkeyid` value. `hdmasterkeyid` will be removed in V0.18.7.0.
+- The `getaddressinfo` RPC method now returns an `hdseedid` value, which is always the same as the incorrectly-named `hdmasterkeyid` value. `hdmasterkeyid` will be removed in V0.18.7.0.
+
+- Parts of the `validateaddress` RPC method have been deprecated and moved to
+  `getaddressinfo`. Clients must transition to using `getaddressinfo` to access
+  this information before upgrading to v0.18.6.0. The following deprecated fields
+  have moved to `getaddressinfo` and will only be shown with
+  `-deprecatedrpc=validateaddress`: `ismine`, `iswatchonly`, `script`, `hex`,
+  `pubkeys`, `sigsrequired`, `pubkey`, `addresses`, `embedded`, `iscompressed`,
+  `account`, `timestamp`, `hdkeypath`, `hdmasterkeyid`.
+- `signrawtransaction` is deprecated and will be fully removed in v0.18. To use
+  `signrawtransaction` in v0.18.6.0, restart Actiniumd with
+  `-deprecatedrpc=signrawtransaction`. Projects should transition to using
+  `signrawtransactionwithkey` and `signrawtransactionwithwallet` before
+  upgrading to v0.18.6.0.
+
+Other API changes
+-----------------
+
+- The `inactivehdmaster` property in the `dumpwallet` output has been corrected to `inactivehdseed`
+
+### Logging
+
+- The log timestamp format is now ISO 8601 (e.g. "2018-02-28T12:34:56Z").
+
+- When running Actiniumd with `-debug` but without `-daemon`, logging to stdout
+  is now the default behavior. Setting `-printtoconsole=1` no longer implicitly
+  disables logging to debug.log. Instead, logging to file can be explicitly disabled
+  by setting `-debuglogfile=0`.
+
+Transaction index changes
+-------------------------
+
+The transaction index is now built separately from the main node procedure,
+meaning the `-txindex` flag can be toggled without a full reindex. If Actiniumd
+is run with `-txindex` on a node that is already partially or fully synced
+without one, the transaction index will be built in the background and become
+available once caught up. When switching from running `-txindex` to running
+without the flag, the transaction index database will *not* be deleted
+automatically, meaning it could be turned back on at a later time without a full
+resync.
+
+Miner block size removed
+------------------------
+
+The `-blockmaxsize` option for miners to limit their blocks' sizes was
+deprecated in V0.15.1, and has now been removed. Miners should use the
+`-blockmaxweight` option if they want to limit the weight of their blocks.
+
+Python Support
+--------------
+
+Support for Python 2 has been discontinued for all test files and tools.
